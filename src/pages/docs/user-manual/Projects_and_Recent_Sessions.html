@@ -1,0 +1,1340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.6.9" />
+<title>Projects and Recent Sessions</title>
+<style type="text/css">
+/* Shared CSS for AsciiDoc xhtml11 and html5 backends */
+
+/* Default font. */
+body {
+  font-family: Georgia,serif;
+}
+
+/* Title font. */
+h1, h2, h3, h4, h5, h6,
+div.title, caption.title,
+thead, p.table.header,
+#toctitle,
+#author, #revnumber, #revdate, #revremark,
+#footer {
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+  color: navy;
+}
+
+strong {
+  font-weight: bold;
+  color: #083194;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+h5 {
+  font-size: 1.0em;
+}
+
+div.sectionbody {
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul, ol, li > p {
+  margin-top: 0;
+}
+ul > li     { color: #aaa; }
+ul > li > * { color: black; }
+
+.monospaced, code, pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
+  padding: 0;
+  margin: 0;
+}
+pre {
+  white-space: pre-wrap;
+}
+
+#author {
+  color: #527bbd;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#email {
+}
+#revnumber, #revdate, #revremark {
+}
+
+#footer {
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+#preamble {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.0em;
+  margin-bottom: 2.0em;
+  margin-right: 10%;
+  color: #606060;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  color: #527bbd;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid #dddddd;
+  border-left: 4px solid #f0f0f0;
+  padding: 0.5em;
+}
+
+div.listingblock > div.content {
+  border: 1px solid #dddddd;
+  border-left: 5px solid #f0f0f0;
+  background: #f8f8f8;
+  padding: 0.5em;
+}
+
+div.quoteblock, div.verseblock {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  margin-right: 10%;
+  border-left: 5px solid #f0f0f0;
+  color: #888;
+}
+
+div.quoteblock > div.attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock > pre.content {
+  font-family: inherit;
+  font-size: inherit;
+}
+div.verseblock > div.attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+/* DEPRECATED: Pre version 8.2.7 verse style literal block. */
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 3px solid #dddddd;
+}
+
+div.exampleblock > div.content {
+  border-left: 3px solid #dddddd;
+  padding-left: 0.5em;
+}
+
+div.imageblock div.content { padding-left: 0; }
+span.image img { border-style: none; vertical-align: text-bottom; }
+a.image:visited { color: white; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: normal;
+  color: navy;
+}
+dd > *:first-child {
+  margin-top: 0.1em;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+ol.arabic {
+  list-style-type: decimal;
+}
+ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+ol.lowerroman {
+  list-style-type: lower-roman;
+}
+ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+div.compact ul, div.compact ol,
+div.compact p, div.compact p,
+div.compact div, div.compact div {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+tfoot {
+  font-weight: bold;
+}
+td > div.verse {
+  white-space: pre;
+}
+
+div.hdlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hdlist tr {
+  padding-bottom: 15px;
+}
+dt.hdlist1.strong, td.hdlist1.strong {
+  font-weight: bold;
+}
+td.hdlist1 {
+  vertical-align: top;
+  font-style: normal;
+  padding-right: 0.8em;
+  color: navy;
+}
+td.hdlist2 {
+  vertical-align: top;
+}
+div.hdlist.compact tr {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.comment {
+  background: yellow;
+}
+
+.footnote, .footnoteref {
+  font-size: 0.8em;
+}
+
+span.footnote, span.footnoteref {
+  vertical-align: super;
+}
+
+#footnotes {
+  margin: 20px 0 20px 0;
+  padding: 7px 0 0 0;
+}
+
+#footnotes div.footnote {
+  margin: 0 0 5px 0;
+}
+
+#footnotes hr {
+  border: none;
+  border-top: 1px solid silver;
+  height: 1px;
+  text-align: left;
+  margin-left: 0;
+  width: 20%;
+  min-width: 100px;
+}
+
+div.colist td {
+  padding-right: 0.5em;
+  padding-bottom: 0.3em;
+  vertical-align: top;
+}
+div.colist td img {
+  margin-top: 0.3em;
+}
+
+@media print {
+  #footer-badges { display: none; }
+}
+
+#toc {
+  margin-bottom: 2.5em;
+}
+
+#toctitle {
+  color: #527bbd;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel0, div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+
+span.aqua { color: aqua; }
+span.black { color: black; }
+span.blue { color: blue; }
+span.fuchsia { color: fuchsia; }
+span.gray { color: gray; }
+span.green { color: green; }
+span.lime { color: lime; }
+span.maroon { color: maroon; }
+span.navy { color: navy; }
+span.olive { color: olive; }
+span.purple { color: purple; }
+span.red { color: red; }
+span.silver { color: silver; }
+span.teal { color: teal; }
+span.white { color: white; }
+span.yellow { color: yellow; }
+
+span.aqua-background { background: aqua; }
+span.black-background { background: black; }
+span.blue-background { background: blue; }
+span.fuchsia-background { background: fuchsia; }
+span.gray-background { background: gray; }
+span.green-background { background: green; }
+span.lime-background { background: lime; }
+span.maroon-background { background: maroon; }
+span.navy-background { background: navy; }
+span.olive-background { background: olive; }
+span.purple-background { background: purple; }
+span.red-background { background: red; }
+span.silver-background { background: silver; }
+span.teal-background { background: teal; }
+span.white-background { background: white; }
+span.yellow-background { background: yellow; }
+
+span.big { font-size: 2em; }
+span.small { font-size: 0.6em; }
+
+span.underline { text-decoration: underline; }
+span.overline { text-decoration: overline; }
+span.line-through { text-decoration: line-through; }
+
+div.unbreakable { page-break-inside: avoid; }
+
+
+/*
+ * xhtml11 specific
+ *
+ * */
+
+div.tableblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead, p.table.header {
+  font-weight: bold;
+  color: #527bbd;
+}
+p.table {
+  margin-top: 0;
+}
+/* Because the table frame attribute is overriden by CSS in most browsers. */
+div.tableblock > table[frame="void"] {
+  border-style: none;
+}
+div.tableblock > table[frame="hsides"] {
+  border-left-style: none;
+  border-right-style: none;
+}
+div.tableblock > table[frame="vsides"] {
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+
+/*
+ * html5 specific
+ *
+ * */
+
+table.tableblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+thead, p.tableblock.header {
+  font-weight: bold;
+  color: #527bbd;
+}
+p.tableblock {
+  margin-top: 0;
+}
+table.tableblock {
+  border-width: 3px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-color: #527bbd;
+  border-collapse: collapse;
+}
+th.tableblock, td.tableblock {
+  border-width: 1px;
+  padding: 4px;
+  border-style: solid;
+  border-color: #527bbd;
+}
+
+table.tableblock.frame-topbot {
+  border-left-style: hidden;
+  border-right-style: hidden;
+}
+table.tableblock.frame-sides {
+  border-top-style: hidden;
+  border-bottom-style: hidden;
+}
+table.tableblock.frame-none {
+  border-style: hidden;
+}
+
+th.tableblock.halign-left, td.tableblock.halign-left {
+  text-align: left;
+}
+th.tableblock.halign-center, td.tableblock.halign-center {
+  text-align: center;
+}
+th.tableblock.halign-right, td.tableblock.halign-right {
+  text-align: right;
+}
+
+th.tableblock.valign-top, td.tableblock.valign-top {
+  vertical-align: top;
+}
+th.tableblock.valign-middle, td.tableblock.valign-middle {
+  vertical-align: middle;
+}
+th.tableblock.valign-bottom, td.tableblock.valign-bottom {
+  vertical-align: bottom;
+}
+
+
+/*
+ * manpage specific
+ *
+ * */
+
+body.manpage h1 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver;
+}
+body.manpage h2 {
+  border-style: none;
+}
+body.manpage div.sectionbody {
+  margin-left: 3em;
+}
+
+@media print {
+  body.manpage div#toc { display: none; }
+}
+
+
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+var asciidoc = {  // Namespace.
+
+/////////////////////////////////////////////////////////////////////
+// Table Of Contents generator
+/////////////////////////////////////////////////////////////////////
+
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, 2006, 2009. License: GPL */
+
+// toclevels = 1..4.
+toc: function (toclevels) {
+
+  function getText(el) {
+    var text = "";
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+        text += i.data;
+      else if (i.firstChild != null)
+        text += getText(i);
+    }
+    return text;
+  }
+
+  function TocEntry(el, text, toclevel) {
+    this.element = el;
+    this.text = text;
+    this.toclevel = toclevel;
+  }
+
+  function tocEntries(el, toclevels) {
+    var result = new Array;
+    var re = new RegExp('[hH]([1-'+(toclevels+1)+'])');
+    // Function that scans the DOM tree for header elements (the DOM2
+    // nodeIterator API would be a better technique but not supported by all
+    // browsers).
+    var iterate = function (el) {
+      for (var i = el.firstChild; i != null; i = i.nextSibling) {
+        if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+          var mo = re.exec(i.tagName);
+          if (mo && (i.getAttribute("class") || i.getAttribute("className")) != "float") {
+            result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+          }
+          iterate(i);
+        }
+      }
+    }
+    iterate(el);
+    return result;
+  }
+
+  var toc = document.getElementById("toc");
+  if (!toc) {
+    return;
+  }
+
+  // Delete existing TOC entries in case we're reloading the TOC.
+  var tocEntriesToRemove = [];
+  var i;
+  for (i = 0; i < toc.childNodes.length; i++) {
+    var entry = toc.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div'
+     && entry.getAttribute("class")
+     && entry.getAttribute("class").match(/^toclevel/))
+      tocEntriesToRemove.push(entry);
+  }
+  for (i = 0; i < tocEntriesToRemove.length; i++) {
+    toc.removeChild(tocEntriesToRemove[i]);
+  }
+
+  // Rebuild TOC entries.
+  var entries = tocEntries(document.getElementById("content"), toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "_toc_" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    toc.parentNode.removeChild(toc);
+},
+
+
+/////////////////////////////////////////////////////////////////////
+// Footnotes generator
+/////////////////////////////////////////////////////////////////////
+
+/* Based on footnote generation code from:
+ * http://www.brandspankingnew.net/archive/2005/07/format_footnote.html
+ */
+
+footnotes: function () {
+  // Delete existing footnote entries in case we're reloading the footnodes.
+  var i;
+  var noteholder = document.getElementById("footnotes");
+  if (!noteholder) {
+    return;
+  }
+  var entriesToRemove = [];
+  for (i = 0; i < noteholder.childNodes.length; i++) {
+    var entry = noteholder.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div' && entry.getAttribute("class") == "footnote")
+      entriesToRemove.push(entry);
+  }
+  for (i = 0; i < entriesToRemove.length; i++) {
+    noteholder.removeChild(entriesToRemove[i]);
+  }
+
+  // Rebuild footnote entries.
+  var cont = document.getElementById("content");
+  var spans = cont.getElementsByTagName("span");
+  var refs = {};
+  var n = 0;
+  for (i=0; i<spans.length; i++) {
+    if (spans[i].className == "footnote") {
+      n++;
+      var note = spans[i].getAttribute("data-note");
+      if (!note) {
+        // Use [\s\S] in place of . so multi-line matches work.
+        // Because JavaScript has no s (dotall) regex flag.
+        note = spans[i].innerHTML.match(/\s*\[([\s\S]*)]\s*/)[1];
+        spans[i].innerHTML =
+          "[<a id='_footnoteref_" + n + "' href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+        spans[i].setAttribute("data-note", note);
+      }
+      noteholder.innerHTML +=
+        "<div class='footnote' id='_footnote_" + n + "'>" +
+        "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
+        n + "</a>. " + note + "</div>";
+      var id =spans[i].getAttribute("id");
+      if (id != null) refs["#"+id] = n;
+    }
+  }
+  if (n == 0)
+    noteholder.parentNode.removeChild(noteholder);
+  else {
+    // Process footnoterefs.
+    for (i=0; i<spans.length; i++) {
+      if (spans[i].className == "footnoteref") {
+        var href = spans[i].getElementsByTagName("a")[0].getAttribute("href");
+        href = href.match(/#.*/)[0];  // Because IE return full URL.
+        n = refs[href];
+        spans[i].innerHTML =
+          "[<a href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+      }
+    }
+  }
+},
+
+install: function(toclevels) {
+  var timerId;
+
+  function reinstall() {
+    asciidoc.footnotes();
+    if (toclevels) {
+      asciidoc.toc(toclevels);
+    }
+  }
+
+  function reinstallAndRemoveTimer() {
+    clearInterval(timerId);
+    reinstall();
+  }
+
+  timerId = setInterval(reinstall, 500);
+  if (document.addEventListener)
+    document.addEventListener("DOMContentLoaded", reinstallAndRemoveTimer, false);
+  else
+    window.onload = reinstallAndRemoveTimer;
+}
+
+}
+asciidoc.install(2);
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+<h1>Projects and Recent Sessions</h1>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_sessions">1. Sessions</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>A session consists of loaded feature collection files and layers (including individual layer settings).</p></div>
+<div class="paragraph"><p>Unlike previous versions, GPlates 2.0 now saves and restores <em>all</em> layer information including layer order, visibility and all settings within each layer (such as colour styles and colour palette filenames).</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_projects_and_recent_sessions">2. Projects and Recent Sessions</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>A previous GPlates session can be restored by either opening a <em>project</em> or opening a <em>recent session</em>.</p></div>
+<div class="paragraph"><p>A <em>project</em> is a session that a user has saved to a project file, whereas a <em>recent session</em> is a session that has been <a href="#automatic_save">automatically saved</a> and stored internally by GPlates.</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/RecentSession-1.png" alt="screenshots/RecentSession-1.png" />
+</span></p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_open_project_a_opening_and_project">3. <a id="open_project"></a> Opening and Project</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>There is more than one way to open a project file.</p></div>
+<div class="paragraph"><p>These include the <strong>File</strong> menu, dragging a project file onto GPlates, double-clicking a project file, and starting up GPlates (with a project file) on the command-line.</p></div>
+<div class="sect2">
+<h3 id="_file_menu">3.1. File Menu</h3>
+<div class="paragraph"><p>Select a project file using the <strong>File</strong> menu (<strong>File &gt; Open Project</strong>)&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Open-Project.png" alt="screenshots/Open-Project.png" />
+</span></p></div>
+</div>
+<div class="sect2">
+<h3 id="_drag_8217_n_drop">3.2. Drag&#8217;n'drop</h3>
+<div class="paragraph"><p>Select a project file in the file system (Windows Explorer, Mac Finder, etc) and drag it onto an open GPlates main window&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Drag-n-drop-project.png" alt="screenshots/Drag-n-drop-project.png" />
+</span></p></div>
+</div>
+<div class="sect2">
+<h3 id="_double_click_em_mac_os_em">3.3. Double-click (<em>Mac OS</em>)</h3>
+<div class="paragraph"><p>Double-click a project file (in Finder) to open it with GPlates (note that GPlates will start up first if it is not already running).</p></div>
+<div class="paragraph"><p>For this to work you first need to associate project files with a specific GPlates application. To do this right-click (<em>CTRL</em> + click) on any project file and select <strong>Open With &gt; Other</strong> &#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Open-Project-Mac.png" alt="screenshots/Open-Project-Mac.png" />
+</span></p></div>
+<div class="paragraph"><p>Then select the GPlates 2.0 application. Also ensure the <em>'Always Open With'</em> checkbox is checked&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Choose-Application.png" alt="screenshots/Choose-Application.png" />
+</span></p></div>
+</div>
+<div class="sect2">
+<h3 id="_command_line">3.4. Command Line</h3>
+<div class="paragraph"><p>Start GPlates in a command-line terminal (Windows console, Mac Terminal, etc) and supply the project filename as the <em>'-p'</em> option:</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Command-Line.png" alt="screenshots/Command-Line.png" />
+</span></p></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_open_rs_a_opening_a_recent_session">4. <a id="open_rs"></a> Opening a recent session</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>A list of the most recent sessions is available in the <strong>File</strong> menu (<strong>File &gt; Open Recent Session</strong>).</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/RecentSession-2.png" alt="screenshots/RecentSession-2.png" />
+</span></p></div>
+<div class="paragraph"><p>These are sessions that have been <a href="#automatic_save">automatically saved</a> and stored internally by GPlates.</p></div>
+<div class="paragraph"><p>Each recent session in the list has a description containing:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+The number of feature collections in the session.
+</p>
+</li>
+<li>
+<p>
+A common ancestor directory:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Common directory path of all feature collection files in the session.
+</p>
+</li>
+<li>
+<p>
+Note: if there is no common directory then this field is missing.
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+The time and date that the session was automatically saved.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>When the mouse hovers over a recent session, its feature collection files will be displayed in the status bar (bottom of GPlates). Though there is usually only room to display at most one or two files.</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Path-name.png" alt="screenshots/Path-name.png" />
+</span></p></div>
+<div class="paragraph"><p>The maximum number of stored recent sessions defaults to 8, but this can be changed in the <strong>Preferences</strong> dialog (<strong>GPlates &gt; Preferences</strong> on Mac OS and <strong>Edit &gt; Preferences</strong> on Windows and Linux).</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Preferences.png" alt="screenshots/Preferences.png" />
+</span></p></div>
+<div class="paragraph"><p>In the <strong>Preferences</strong> dialog you can also configure the directories to open feature collection files and project files, and whether to (1) always use the default directory, (2) use the default the first time after start-up and then use the last-used directory, or (3) always use the last-used directory.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_rmfs_a_restoring_missing_files_in_a_session">5. <a id="rmfs"></a> Restoring missing files in a session</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>When GPlates restores a session (<a href="#open_project">opening a project</a> or <a href="#open_rs">opening a recent session</a>) the data files associated with the session are also restored. The data files are the feature collections (and any colour palette files used in the colouring styles or layer settings).</p></div>
+<div class="paragraph"><p>If any data files associated with a restored session are missing then a dialog lists the missing files and gives you the opportunity to individually locate each file before loading the session, or abort loading the session altogether. This is useful if data files were moved after the session (project file or recent session) was saved.</p></div>
+<div class="paragraph"><p>The following dialog lists the files missing in a restored project (note that only missing files are listed). Initially all listed files are highlighted red to indicate they are missing&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Missing-Files-3.png" alt="screenshots/Missing-Files-3.png" />
+</span></p></div>
+<div class="paragraph"><p>Files that have been located are no longer highlighted in red&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Missing-Files-2.png" alt="screenshots/Missing-Files-2.png" />
+</span></p></div>
+<div class="paragraph"><p>You do not need to locate all the files (or any of them). Any missing files that were not located will fail to load.</p></div>
+<div class="paragraph"><p>In the following case we selected <em>'Load project'</em> and the two remaining missing files show up in the <strong>Read Errors</strong> dialog as <em>'Error opening file'</em>&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Read-Errors.png" alt="screenshots/Read-Errors.png" />
+</span></p></div>
+<div class="paragraph"><p>And the layers associated with those two files are also absent in the restored session.</p></div>
+<div class="paragraph"><p>However if we instead locate all three missing files then all is restored including the layer settings in the associated layers&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Missing-Files-1.png" alt="screenshots/Missing-Files-1.png" />
+</span></p></div>
+<div class="paragraph"><p>Note that our restored project now has an <a href="#unsaved_change">unsaved change</a> since the names of the located files are different to what was stored in the project file. So we will want to save our restored project, otherwise if we try to open a different project then we will get the following unsaved changes warning&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Unsaved-Changes.png" alt="screenshots/Unsaved-Changes.png" />
+</span></p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_pro_open_a_when_is_a_project_open">6. <a id="pro_open"></a> When is a project open?</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>When a project is open the GPlates window title includes the name of the project file. This is the easiest way to determine whether a project is currently open or not.</p></div>
+<div class="paragraph"><p>For example, the following shows the <em>'DataBundleForNovices.gproj'</em> project file open in GPlates&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Project-Open.png" alt="screenshots/Project-Open.png" />
+</span></p></div>
+<div class="paragraph"><p>More formally, a project is open when:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+A project file has been opened (see <a href="#open_project">Opening a project</a>), or
+</p>
+</li>
+<li>
+<p>
+The current session has been saved to a project file (see <a href="#save_project">Saving a project</a>).
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>A project is not open when:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+GPlates first starts up (without a project), or
+</p>
+</li>
+<li>
+<p>
+A <em>recent session</em> has been opened (see <a href="#open_rs">Opening a recent session</a>), or
+</p>
+</li>
+<li>
+<p>
+The current session has been cleared (see <a href="#clear_session">Clearing a session</a>).
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_clear_session_a_clearing_the_current_session">7. <a id="clear_session"></a> Clearing the current session</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The current session can be cleared using the <strong>File</strong> menu (<strong>File&gt;Clear Session</strong>).</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Clear-Session.png" alt="screenshots/Clear-Session.png" />
+</span></p></div>
+<div class="paragraph"><p>This unloads all feature collections and clears all layers</p></div>
+<div class="paragraph"><p>Note that if a project is <a href="#pro_open">currently open</a> then this will also close the project.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_save_project_a_saving_a_project">8. <a id="save_project"></a> Saving a project</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The <strong>File</strong> menu (<strong>File &gt; Save Project</strong> and <strong>File&gt;Save Project As</strong>) can be used to save the current session to a project file.</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Project-Save.png" alt="screenshots/Project-Save.png" />
+</span></p></div>
+<div class="paragraph"><p><strong>File &gt; Save Project</strong> will save the currently open project file (<a href="#pro_open">if a project is open</a>). However if a project is not currently open then you will be asked to select a project file, which will then become the currently open project.</p></div>
+<div class="paragraph"><p>In contrast, <strong>File &gt; Save Project As</strong> will always ask you to select a project file (even if a project is already open). This can be used to save the currently open project to a different project file.</p></div>
+<div class="paragraph"><p>Note that <strong>File &gt; Save Project</strong> and <strong>File &gt; Save Project As</strong> behave the same if a project is <em>not</em> currently open (both will ask you to select a project file).</p></div>
+<div class="paragraph"><p>Also note that any <a href="#usfc">unsaved feature collections</a> must first be saved before you can save a project otherwise you will get the following message&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Unsaved-Feature-Collections.png" alt="screenshots/Unsaved-Feature-Collections.png" />
+</span></p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_automatic_save_a_automatic_saving_of_sessions">9. <a id="automatic_save"></a> Automatic saving of sessions</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>In contrast to projects (which are manually saved by the user) the current session is automatically saved immediately prior to losing the current session. This happens when:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<a href="#open_project">Opening a new project</a>, or
+</p>
+</li>
+<li>
+<p>
+<a href="#open_rs">Opening a recent session</a>, or
+</p>
+</li>
+<li>
+<p>
+<a href="#clear_session">Clearing the current session</a>, or
+</p>
+</li>
+<li>
+<p>
+Closing GPlates.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>However, note that if there are any unsaved <em>feature collections</em> then you will have the choice to discard those unsaved changes (and the current session will not be saved) or to remain in the current session. Please see <a href="#uscw">unsaved changes warning</a> for more details.</p></div>
+<div class="paragraph"><p>Saving the current session either replaces an existing session in the list of <em>recent sessions</em> (if any have the same feature collections) or inserts a new session (and pops the least recent session off the list). In both cases the current session becomes the most recent session in the list.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_unsaved_change_a_unsaved_changes">10. <a id="unsaved_change"></a> Unsaved Changes</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Unsaved changes are classified into:</p></div>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+Unsaved <em>feature collections</em>:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Modified feature collections not yet saved, and
+</p>
+</li>
+<li>
+<p>
+Unnamed feature collections (new collections not yet saved).
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+Unsaved <em>session</em> changes:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Modified layer settings not yet saved.
+</p>
+</li>
+<li>
+<p>
+<a href="#rmfs">Missing files restored in session</a>.
+</p>
+</li>
+</ul></div>
+</li>
+</ol></div>
+<div class="sect2">
+<h3 id="_a_id_uscw_a_unsaved_changes_warning">10.1. <a id="uscw"></a> Unsaved changes warning</h3>
+<div class="paragraph"><p>If the current session has unsaved changes then a warning will pop up if you attempt an action that will lose the current session including:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<a href="#open_project">Opening a new project</a>, or
+</p>
+</li>
+<li>
+<p>
+<a href="#open_rs">Opening a recent session</a>, or
+</p>
+</li>
+<li>
+<p>
+<a href="#clear_session">Clearing the current session</a>, or
+</p>
+</li>
+<li>
+<p>
+Closing GPlates.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>You will then have the choice to either:</p></div>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+Discard the unsaved changes (and continue with your chosen action), or
+</p>
+</li>
+<li>
+<p>
+Abort your chosen action.
+</p>
+</li>
+</ol></div>
+<div class="paragraph"><p>The following sections cover a project with (i) unsaved <em>feature collections</em>, (ii) unsaved <em>session changes</em> and (iii) both unsaved <em>feature collections</em> and unsaved <em>session changes</em>.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_a_id_usfc_a_unsaved_feature_collections">10.2. <a id="usfc"></a> Unsaved feature collections</h3>
+<div class="paragraph"><p>To demonstrate unsaved <em>feature collections</em> we will start with a newly opened project called <em>'Test3D'</em> (containing a 3D scalar field)&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Test-3D.png" alt="screenshots/Test-3D.png" />
+</span></p></div>
+<div class="paragraph"><p>If we modify a feature collection (eg, change the plate ID of a coastline feature) and then attempt to open another project (<strong>File &gt; Open Project</strong>), without first saving our change, then we will get the following unsaved changes warning&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Test-3D-unsaved.png" alt="screenshots/Test-3D-unsaved.png" />
+</span></p></div>
+<div class="paragraph"><p>The warning displays a list of unsaved feature collections and gives us the option to <em>'Discard changes, open project'</em> or <em>'Do not open new project'</em>&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Unsaved-Changes-1.png" alt="screenshots/Unsaved-Changes-1.png" />
+</span></p></div>
+<div class="paragraph"><p>If we do not care about saving our modified feature collection then we can choose <em>'Discard changes, open project'</em> and then select a new project to open.</p></div>
+<div class="paragraph"><p>However, if we want to save our change then we need to choose <em>'Do not open new project'</em> and then save our modified feature collection. The modified feature collection is highlighted in red in the <strong>Manage Feature Collections</strong> dialog and must be manually saved&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/MFC-unsaved.png" alt="screenshots/MFC-unsaved.png" />
+</span></p></div>
+<div class="paragraph"><p>Once we have saved our modified feature collection we can open a new project (<strong>File &gt; Open Project</strong>) without getting an unsaved changes warning.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_unsaved_session_changes">10.3. Unsaved session changes</h3>
+<div class="paragraph"><p>To demonstrate unsaved <em>session changes</em> we will again start with a newly opened 3D scalar field project&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Test-3D-1.png" alt="screenshots/Test-3D-1.png" />
+</span></p></div>
+<div class="paragraph"><p>But this time we will change the isosurface colour mode (in the layer settings) and then attempt to open another project (<strong>File &gt; Open Project</strong>), without first saving our change, and get a slightly different unsaved changes warning&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Test-3D-2.png" alt="screenshots/Test-3D-2.png" />
+</span></p></div>
+<div class="paragraph"><p>There is no longer a list of unsaved feature collections, but we do have the same option to <em>'Discard changes, open project'</em> or <em>'Do not open new project'</em>&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Unsaved-Changes.png" alt="screenshots/Unsaved-Changes.png" />
+</span></p></div>
+<div class="paragraph"><p>If we do not care about saving our isosurface change then we can choose <em>'Discard changes, open project'</em> and then select a new project to open.</p></div>
+<div class="paragraph"><p>However, if we want to save our change then we need to choose <em>'Do not open new project'</em> and then save our current project (<strong>File &gt; Save Project</strong>). Then we can open a new project (<strong>File &gt; Open Project</strong>) without getting an unsaved changes warning.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_unsaved_feature_collection_and_session_changes">10.4. Unsaved feature collection and session changes</h3>
+<div class="paragraph"><p>If a currently open project has both unsaved feature collections and unsaved session changes then the unsaved changes warning will indicate this&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Unsaved-Changes-2.png" alt="screenshots/Unsaved-Changes-2.png" />
+</span></p></div>
+<div class="paragraph"><p>If we do not care about saving our modified feature collections or our session changes then we can choose <em>'Discard changes, open project'</em> and then select a new project to open.</p></div>
+<div class="paragraph"><p>However, if we choose to save any of our changes then we need to choose <em>'Do not open new project;'</em>. If we only want to save our <em>modified feature collection</em> (and not our <em>session changes</em>) then we can do that, and then open a new project and select <em>'Discard changes, open project'</em> to discard our unsaved <em>session changes</em>. However, if we want to save both our modified feature collection and our session changes, then we first need to save our modified feature collection&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/MFC-1.png" alt="screenshots/MFC-1.png" />
+</span></p></div>
+<div class="paragraph"><p>&#8230;and then save our project&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Save-Project.png" alt="screenshots/Save-Project.png" />
+</span></p></div>
+<div class="paragraph"><p>Note that you will need to save the feature collection before saving the project otherwise you will get the following message&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Unsaved-FC.png" alt="screenshots/Unsaved-FC.png" />
+</span></p></div>
+<div class="paragraph"><p>This is primarily because the project file stores the <em>filenames</em> of the feature collections and so we first need to give a filename to each <em>unnamed</em> feature collection (by saving it) before we can save the project file.</p></div>
+<div class="paragraph"><p>In the following example, cross-sections (for the 3D scalar field) have been digitised into a new <em>unnamed</em> feature collection which needs to be saved before the project can be saved&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/MFC-save.png" alt="screenshots/MFC-save.png" />
+</span></p></div>
+</div>
+<div class="sect2">
+<h3 id="_project_versus_recent_sessions">10.5. Project versus recent sessions</h3>
+<div class="paragraph"><p>Changes to <em>feature collections</em> are saved to feature collection files (such as .gpml). Whereas <em>session changes</em> are automatically saved as recent sessions, and can also be saved to project files (.gproj).</p></div>
+<div class="paragraph"><p>As such you are always warned of unsaved <em>feature collections</em> (in case you want to save the feature collection files). However you are only warned of unsaved <em>session changes</em> when a <a href="#pro_open">project is currently open</a> (in case you want to save the project file), otherwise no warning is necessary because unsaved <em>session changes</em> are automatically saved as a recent session.</p></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_relocating_projects">11. Relocating projects</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>A project consists of a project file and the data files used in that project (such as feature collection files, and any colour palette files used in the colouring styles or layer settings). When GPlates opens a project file it also opens the associated data files. This is possible because the project file stores the names and locations of the data files.</p></div>
+<div class="paragraph"><p>A project has been relocated if its project file is in a different location from where GPlates saved it.</p></div>
+<div class="paragraph"><p>There are two ways to relocate a project:</p></div>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+Relocate <em>only</em> the project file:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Useful when moving a project within your <em>local</em> computer.
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+Relocate <em>both</em> the project file and associated data files:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Useful when copying a project to <em>another</em> computer.
+</p>
+</li>
+</ul></div>
+</li>
+</ol></div>
+<div class="sect2">
+<h3 id="_moving_a_project_within_your_em_local_em_computer">11.1. Moving a project within your <em>local</em> computer</h3>
+<div class="paragraph"><p>Moving only a project file (but not its associated data files) works well when moving a project within your <em>local</em> computer.</p></div>
+<div class="paragraph"><p>This is because the full (<em>absolute</em>) path of each data file is recorded in the project file and hence the data files can still be found when the project file is moved. This enables several projects, referencing the same set of data files, to be reorganised without having to move the data files.</p></div>
+<div class="paragraph"><p>However if you copied only the project file to <em>another</em> computer then the same data files would need to be accessible from both computers. This could work if the data files were on a network share (which was mapped to the same path on both computers). A more reliable option is to copy <em>both</em> the project file and its associated data files to the second computer as covered in the next section.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_copying_a_project_to_em_another_em_computer">11.2. Copying a project to <em>another</em> computer</h3>
+<div class="paragraph"><p>Copying a project file, together with its associated data files, works well when copying a project to <em>another</em> computer.</p></div>
+<div class="paragraph"><p>In this case, the path of each data file relative to the project file must be maintained when copying. The easiest way to achieve this is to copy the entire sub-directory tree containing the project file and its associated data files. For example, the sub-directory tree could be zipped up on the source computer and unzipped anywhere on the destination computer. The following example copies the <em>'C:/paleogeography/<em></em> directory tree on the source computer (Windows) to the <em></em>/home/john/paleogeography/'</em> directory on the destination computer (Linux):</p></div>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+Source computer:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Project file: <em>'C:/paleogeography/paleogeography.gproj'</em>
+</p>
+</li>
+<li>
+<p>
+Data file 1: <em>'C:/paleogeography/data/paleogeography.gpml'</em>
+</p>
+</li>
+<li>
+<p>
+Data file 2: <em>'C:/paleogeography/colouring/paleogeography.cpt'</em>
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+Destination computer:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Project file: <em>'/home/john/paleogeography/paleogeography.gproj'</em>
+</p>
+</li>
+<li>
+<p>
+Data file 1: <em>'/home/john/paleogeography/data/paleogeography.gpml'</em>
+</p>
+</li>
+<li>
+<p>
+Data file 2: <em>'/home/john/paleogeography/colouring/paleogeography.cpt'</em>
+</p>
+</li>
+</ul></div>
+</li>
+</ol></div>
+<div class="paragraph"><p>Note that any colour palette files (<em>'*.cpt'</em>) used by layers in the project should be included when copying the project, otherwise the user on the destination computer will be asked to <a href="#rmfs">locate them</a>.</p></div>
+<div class="sect3">
+<h4 id="_including_colour_palette_files">11.2.1. Including colour palette files</h4>
+<div class="paragraph"><p>A project can use colour palette files <em>indirectly</em> in colour styles and <em>directly</em> in some layers (such as Rasters, 3D Scalar Fields, Resolved Topological Networks and Reconstructed Scalar Coverages). Colour palette files used directly in layers need to be included, but only those colour palette files in colour styles that are actually used by layers in the project need to be included (unused styles can be ignored).</p></div>
+<div class="paragraph"><p>If a colour palette file is not in the directory you are copying (zipping up) to send to another computer then you will first need to copy it there and also set up your project to use that file. In our current paleogeography example, the project is using a colour style named <em>'PaleoGeography'</em> which references a <em>'paleogeography.cpt'</em> colour palette file. However let us assume the referenced colour palette file is not the one in the <em>'C:/paleogeography/</em> directory tree that we want to copy (zip up). To rectify this we create a new colour style using the <em>'Add'</em> button and give it the same name <em>(<em>PaleoGeography</em>)</em>. GPlates then automatically changes the name to <em>'PaleoGeography_1'</em> to avoid a name clash. We then copy the <em>'property_name'</em> value across and then select the <em>'C:/paleogeography/colouring/paleogeography.cpt'</em> colour palette file using the <em>'open'</em> button.</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Draw-Style.png" alt="screenshots/Draw-Style.png" />
+</span></p></div>
+<div class="paragraph"><p>Now our <em>'paleogeography'</em> layer is using the colour palette file that we will be copying (zipping up). So we can save the project file (as <em>'C:/paleogeography/paleogeography.gproj'</em>) and then copy (zip up) the <em>'C:/paleogeography/'</em> directory tree and send it to another computer.</p></div>
+<div class="paragraph"><p>When the copied (unzipped) project is opened on the destination computer, a new <em>'PaleoGeography'</em> colour style will appear in the <strong>Draw Style</strong> dialog (referencing the destination colour palette file <em>'/home/john/paleogeography/colouring/paleogeography.cpt'</em>) and it will be used to colour the <em>'paleogeography'</em> layer.</p></div>
+<div class="paragraph"><p>Note that when a project is opened it will only create a new colour style if a matching one does not already exist in the <strong>Draw Style</strong> dialog.  Matching colour styles have compatible names (differing only by <em>'1'</em>, <em>'2'</em>, etc, suffixes) and their configuration parameters match. So in our paleogeography example, colour styles <em>'PaleoGeography'</em> and <em>'PaleoGeography_1'</em> are matching if they reference the same colour palette filename (and have the same <em>'property_name'</em> value). So if prior to opening the project, the destination computer already had a colour style <em>'PaleoGeography'</em> referencing <em>'/home/john/paleogeography/colouring/paleogeography.cpt'</em> (and same <em>'property_name'</em> value) then it would be used (instead of creating a new colour style).</p></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ambiguous_projects">11.3. Ambiguous projects</h3>
+<div class="paragraph"><p>An ambiguous project is a relocated project that has some data files in original locations and some in current locations (relative to the relocated project file).</p></div>
+<div class="paragraph"><p>When GPlates opens a project, it detects if the project file has moved from the location it was saved. If so, then GPlates will either open <strong>all</strong> data files from their <em>original</em> locations or open <strong>all</strong> data files from their <em>current</em> locations (relative to current project file location). If GPlates finds data files in both locations then it resolves the ambiguity by asking the user to choose (all original or all current).</p></div>
+<div class="paragraph"><p>In the following example, the <em>'DataBundleForNovices.gproj'</em> project file was moved from the <em>'D:/GPlatesProjectFileTest/'</em> directory to <em>'C:/Users/John/Documents/GPlatesProjectFileTest/'</em>, but only some of the associated data files were moved with it. So opening the project produces the following <strong>Project Has Moved</strong> dialog&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Project-Has-Moved.png" alt="screenshots/Project-Has-Moved.png" />
+</span></p></div>
+<div class="paragraph"><p>Roughly half the data files remain in the original location and the other half in the current location. GPlates is unsure whether to use the original or current locations and so it asks us whether to <em>'Load Original Files'</em>, or <em>'Load Current Files'</em>, or <em>'Abort'</em> opening the project altogether.</p></div>
+<div class="paragraph"><p>If we select <em>'Load Current Files'</em> then the <strong>Files Missing in Project</strong> dialog asks us to locate the missing files in the current location&#8230;</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="screenshots/Files-Missing-Project.png" alt="screenshots/Files-Missing-Project.png" />
+</span></p></div>
+<div class="paragraph"><p>Note that a similar dialog would have appeared if we had selected <em>'Load Original Files'</em> instead.</p></div>
+<div class="paragraph"><p>At this point we have probably realised that we forgot to move half of the data files when we moved our project. In which case we would select <em>'Do not load project'</em> (or <em>'Abort'</em> in the prior <strong>Project Has Moved</strong> dialog) and then move the remaining files over. Opening the project again should then succeed without presenting the <strong>Project has moved</strong> dialog again (since no files remain in the original location).</p></div>
+<div class="paragraph"><p>A more obscure example of an ambiguous project can happen on a Windows computer when the data files of a relocated project exist on multiple drives (eg, <em>C:</em> and <em>D:</em>). In the following example we moved a project file and its data files on drive <em>C:</em> but we did not move its data file on drive <em>D:</em> (because that data file has no path relative to the project):</p></div>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+Original location:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Project file: <em>'C:/original/projects/project.gproj'</em>
+</p>
+</li>
+<li>
+<p>
+Data file 1: <em>'C:/original /data/data1.gpml'</em>
+</p>
+</li>
+<li>
+<p>
+Data file 2: <em>'C:/original /data/data2.gpml'</em>
+</p>
+</li>
+<li>
+<p>
+Data file 3: <em>'D:/raster_data/raster.gpml'</em>
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+Current location:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Project file: <em>'C:/Users/John/current/projects/project.gproj'</em>
+</p>
+</li>
+<li>
+<p>
+Data file 1: <em>'C:/Users/John/current/data/data1.gpml'</em>
+</p>
+</li>
+<li>
+<p>
+Data file 2: <em>'C:/Users/John/current/data/data2.gpml'</em>
+</p>
+</li>
+<li>
+<p>
+Data file 3: <em>'D:/raster_data/raster.gpml'</em>
+</p>
+</li>
+</ul></div>
+</li>
+</ol></div>
+<div class="paragraph"><p>Note that <em>D:/raster_data/raster.gpml</em> is the same in both locations. This is because a relative path cannot be formed between <em>'C:/original/projects/'</em> and <em>'D:/raster_data/'</em> due to different drive letters and so GPlates uses the original location as the current location. In this case GPlates will ask us to choose the <em>original</em> or <em>current</em> location (since <em>'D:/raster_data/raster.gpml'</em> is in both locations).</p></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_compatibility_of_sessions_across_gplates_versions">12. Compatibility of sessions across GPlates versions</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>GPlates 1.5 (and older versions) save and restore the feature collection filenames, the associated layer types and their layer connections. GPlates 2.0 additionally saves and restores all layer information including layer order, visibility and all layer settings within each layer (including colour styles and colour palette filenames).</p></div>
+<div class="paragraph"><p>GPlates 2.0 can open projects and recent sessions saved by all prior versions of GPlates. However the information saved by those versions is limited (the feature collections, layer types and layer connections).</p></div>
+<div class="paragraph"><p>GPlates 1.5 can open projects and recent sessions saved by GPlates 2.0 (provided the data files were not moved after the project or recent session was saved). However the information restored is limited to the feature collections, layer types and layer connections (the extra information saved by GPlates 2.0 is ignored).</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/note.png" alt="Note" />
+</td>
+<td class="content">This means if you work on a project (or recent session) in GPlates 2.0, then work on it in GPlates 1.5 and then work on it again in GPlates 2.0 then it will not get completely restored the second time it is opened in GPlates 2.0 (like it was the first time). This is because the session information saved by GPlates 1.5 is limited.</td>
+</tr></table>
+</div>
+<div class="paragraph"><p><span class="image">
+<a class="image" href="LoadingAndSaving.html">
+<img src="images/icons/prev.png" alt="images/icons/prev.png" />
+</a>
+</span> <span class="image">
+<a class="image" href="index.html">
+<img src="images/icons/home.png" alt="images/icons/home.png" />
+</a>
+</span> <span class="image">
+<a class="image" href="Controlling_View.html">
+<img src="images/icons/next.png" alt="images/icons/next.png" />
+</a>
+</span></p></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2016-10-24 09:45:35 AUS Eastern Daylight Time
+</div>
+</div>
+</body>
+</html>

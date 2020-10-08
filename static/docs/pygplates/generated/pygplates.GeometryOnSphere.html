@@ -1,0 +1,485 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pygplates.GeometryOnSphere &#8212; pygplates 2.2.0.28 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pygplates.GreatCircleArc" href="pygplates.GreatCircleArc.html" />
+    <link rel="prev" title="pygplates.PolygonOnSphere" href="pygplates.PolygonOnSphere.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pygplates.GreatCircleArc.html" title="pygplates.GreatCircleArc"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.PolygonOnSphere.html" title="pygplates.PolygonOnSphere"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" accesskey="U">Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pygplates-geometryonsphere">
+<h1>pygplates.GeometryOnSphere<a class="headerlink" href="#pygplates-geometryonsphere" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pygplates.GeometryOnSphere">
+<em class="property">class </em><code class="descclassname">pygplates.</code><code class="descname">GeometryOnSphere</code><a class="headerlink" href="#pygplates.GeometryOnSphere" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Boost.Python.instance</span></code></p>
+<p>The base class inherited by all derived classes representing geometries on the sphere.</p>
+<p>The list of derived geometry on sphere classes is:</p>
+<ul class="simple">
+<li><a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a></li>
+<li><a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a></li>
+<li><a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a></li>
+<li><a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a></li>
+</ul>
+<dl class="method">
+<dt id="pygplates.GeometryOnSphere.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GeometryOnSphere.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raises an exception
+This class cannot be instantiated from Python</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GeometryOnSphere.__init__" title="pygplates.GeometryOnSphere.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a></td>
+<td>Raises an exception This class cannot be instantiated from Python</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GeometryOnSphere.clone" title="pygplates.GeometryOnSphere.clone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clone</span></code></a>()</td>
+<td>Create a duplicate of this geometry (derived) instance.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GeometryOnSphere.distance" title="pygplates.GeometryOnSphere.distance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">distance</span></code></a>(geometry1,&nbsp;geometry2,&nbsp;…)</td>
+<td>[<em>staticmethod</em>] Returns the (minimum) distance between two geometries (in radians).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GeometryOnSphere.get_points" title="pygplates.GeometryOnSphere.get_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_points</span></code></a>()</td>
+<td>Returns a <em>read-only</em> sequence of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a> in this geometry.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GeometryOnSphere.to_lat_lon_array" title="pygplates.GeometryOnSphere.to_lat_lon_array"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_lat_lon_array</span></code></a>()</td>
+<td>Returns the sequence of points, in this geometry, as a numpy array of (latitude,longitude) pairs (in degrees).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GeometryOnSphere.to_lat_lon_list" title="pygplates.GeometryOnSphere.to_lat_lon_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_lat_lon_list</span></code></a>()</td>
+<td>Returns the sequence of points, in this geometry, as (latitude,longitude) tuples (in degrees).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GeometryOnSphere.to_lat_lon_point_list" title="pygplates.GeometryOnSphere.to_lat_lon_point_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_lat_lon_point_list</span></code></a>()</td>
+<td>Returns the sequence of points, in this geometry, as <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">lat</span> <span class="pre">lon</span> <span class="pre">points</span></code></a>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GeometryOnSphere.to_xyz_array" title="pygplates.GeometryOnSphere.to_xyz_array"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_xyz_array</span></code></a>()</td>
+<td>Returns the sequence of points, in this geometry, as a numpy array of (x,y,z) triplets.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GeometryOnSphere.to_xyz_list" title="pygplates.GeometryOnSphere.to_xyz_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_xyz_list</span></code></a>()</td>
+<td>Returns the sequence of points, in this geometry, as (x,y,z) cartesian coordinate tuples.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pygplates.GeometryOnSphere.clone">
+<code class="descname">clone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GeometryOnSphere.clone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a duplicate of this geometry (derived) instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pygplates.GeometryOnSphere.distance">
+<em class="property">static </em><code class="descname">distance</code><span class="sig-paren">(</span><em>geometry1</em>, <em>geometry2</em><span class="optional">[</span>, <em>distance_threshold_radians</em><span class="optional">]</span><span class="optional">[</span>, <em>return_closest_positions=False</em><span class="optional">]</span><span class="optional">[</span>, <em>return_closest_indices=False</em><span class="optional">]</span><span class="optional">[</span>, <em>geometry1_is_solid=False</em><span class="optional">]</span><span class="optional">[</span>, <em>geometry2_is_solid=False</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GeometryOnSphere.distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>[<em>staticmethod</em>] Returns the (minimum) distance between two geometries (in radians).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>geometry1</strong> (<a class="reference internal" href="#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a>) – the first geometry</li>
+<li><strong>geometry2</strong> (<a class="reference internal" href="#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a>) – the second geometry</li>
+<li><strong>distance_threshold_radians</strong> (<em>float</em><em> or </em><em>None</em>) – optional distance threshold in radians - threshold should be in the range [0,PI] if specified</li>
+<li><strong>return_closest_positions</strong> (<em>bool</em>) – whether to also return the closest point on each geometry - default is <code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+<li><strong>return_closest_indices</strong> (<em>bool</em>) – whether to also return the index of the closest <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">point</span></code></a> (for multi-points) or the index of the closest <a class="reference internal" href="pygplates.GreatCircleArc.html#pygplates.GreatCircleArc" title="pygplates.GreatCircleArc"><code class="xref py py-class docutils literal notranslate"><span class="pre">segment</span></code></a> (for polylines and polygons) - default is <code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+<li><strong>geometry1_is_solid</strong> (<em>bool</em>) – whether the interior of <em>geometry1</em> is solid or not - this parameter is ignored if <em>geometry1</em> is not a <a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a> - default is <code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+<li><strong>geometry2_is_solid</strong> (<em>bool</em>) – whether the interior of <em>geometry2</em> is solid or not - this parameter is ignored if <em>geometry2</em> is not a <a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a> - default is <code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">distance (in radians), or a tuple containing distance and the closest point on each geometry if <em>return_closest_positions</em> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, or a tuple containing distance and the indices of the closest <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">point</span></code></a> (for multi-points) or <a class="reference internal" href="pygplates.GreatCircleArc.html#pygplates.GreatCircleArc" title="pygplates.GreatCircleArc"><code class="xref py py-class docutils literal notranslate"><span class="pre">segment</span></code></a> (for polylines and polygons) on each geometry if <em>return_closest_indices</em> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, or a tuple containing distance and the closest point on each geometry and the indices of the closest <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">point</span></code></a> (for multi-points) or <a class="reference internal" href="pygplates.GreatCircleArc.html#pygplates.GreatCircleArc" title="pygplates.GreatCircleArc"><code class="xref py py-class docutils literal notranslate"><span class="pre">segment</span></code></a> (for polylines and polygons) on each geometry if both <em>return_closest_positions</em> and <em>return_closest_indices</em> are <code class="docutils literal notranslate"><span class="pre">True</span></code>, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if <em>distance_threshold_radians</em> is specified and exceeded</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float, or tuple (float, <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>, <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>) if <em>return_closest_positions</em> is True, or tuple (float, int, int) if <em>return_closest_indices</em> is True, or tuple (float, <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>, <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>, int, int) if both <em>return_closest_positions</em> and <em>return_closest_indices</em> are True, or None</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The returned distance is the shortest path between <em>geometry1</em> and <em>geometry2</em> along the surface of the sphere (great circle arc path). To convert the distance from radians (distance on a unit radius sphere) to real distance you will need to multiply it by the Earth’s radius (see <a class="reference internal" href="pygplates.Earth.html#pygplates.Earth" title="pygplates.Earth"><code class="xref py py-class docutils literal notranslate"><span class="pre">Earth</span></code></a>).</p>
+<p>Each geometry (<em>geometry1</em> and <em>geometry2</em>) can be any of the four geometry types (<a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>, <a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a>, <a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> and <a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a>) allowing all combinations of distance calculations:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">point1</span><span class="p">,</span> <span class="n">point2</span><span class="p">)</span>
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">point1</span><span class="p">,</span> <span class="n">multi_point2</span><span class="p">)</span>
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">point1</span><span class="p">,</span> <span class="n">polyline2</span><span class="p">)</span>
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">point1</span><span class="p">,</span> <span class="n">polygon2</span><span class="p">)</span>
+
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">multi_point1</span><span class="p">,</span> <span class="n">point2</span><span class="p">)</span>
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">multi_point1</span><span class="p">,</span> <span class="n">multi_point2</span><span class="p">)</span>
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">multi_point1</span><span class="p">,</span> <span class="n">polyline2</span><span class="p">)</span>
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">multi_point1</span><span class="p">,</span> <span class="n">polygon2</span><span class="p">)</span>
+
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">polyline1</span><span class="p">,</span> <span class="n">point2</span><span class="p">)</span>
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">polyline1</span><span class="p">,</span> <span class="n">multi_point2</span><span class="p">)</span>
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">polyline1</span><span class="p">,</span> <span class="n">polyline2</span><span class="p">)</span>
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">polyline1</span><span class="p">,</span> <span class="n">polygon2</span><span class="p">)</span>
+
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">polygon1</span><span class="p">,</span> <span class="n">point2</span><span class="p">)</span>
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">polygon1</span><span class="p">,</span> <span class="n">multi_point2</span><span class="p">)</span>
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">polygon1</span><span class="p">,</span> <span class="n">polyline2</span><span class="p">)</span>
+<span class="n">distance_radians</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">polygon1</span><span class="p">,</span> <span class="n">polygon2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If <em>distance_threshold_radians</em> is specified and the (minimum) distance between the two geometries exceeds this threshold then <code class="docutils literal notranslate"><span class="pre">None</span></code> is returned.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Perform a region-of-interest query between two geometries to see if</span>
+<span class="c1"># they are within 1 degree of each other.</span>
+<span class="c1">#</span>
+<span class="c1"># Note that we explicitly test against None because a distance of zero is equilavent to False.</span>
+<span class="k">if</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">geometry1</span><span class="p">,</span> <span class="n">geometry2</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>Note that it is more efficient to specify a distance threshold parameter (as shown in the above example) than it is to explicitly compare the returned distance to a threshold yourself. This is because internally each polyline/polygon geometry has an inbuilt spatial tree that optimises distance queries.</p>
+<p>The minimum distance between two geometries is zero (and hence does not exceed any distance threshold) <strong>if</strong>:</p>
+<ul class="simple">
+<li>both geometries are a polyline/polygon and they intersect each other, or</li>
+<li><em>geometry1_is_solid</em> is <code class="docutils literal notranslate"><span class="pre">True</span></code> and <em>geometry1</em> is a <a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a> and <em>geometry2</em> overlaps the interior of the polygon (even if it doesn’t intersect the polygon boundary) - similarly for <em>geometry2_is_solid</em>. However note that <em>geometry1_is_solid</em> is ignored if <em>geometry1</em> is not a <a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a> - similarly for <em>geometry2_is_solid</em>.</li>
+</ul>
+<p>If <em>return_closest_positions</em> is <code class="docutils literal notranslate"><span class="pre">True</span></code> then the closest point on each geometry is returned (unless the distance threshold is exceeded, if specified). Note that for polygons the closest point is always on the polygon boundary regardless of whether the polygon is solid or not (see <em>geometry1_is_solid</em> and <em>geometry2_is_solid</em>). Also note that the closest position on a polyline/polygon can be anywhere along any of its <a class="reference internal" href="pygplates.GreatCircleArc.html#pygplates.GreatCircleArc" title="pygplates.GreatCircleArc"><code class="xref py py-class docutils literal notranslate"><span class="pre">segments</span></code></a>. In other words it’s not the nearest vertex of the polyline/polygon - it’s the nearest point <em>on</em> the polyline/polygon itself. If both geometries are polyline/polygon and they intersect then the intersection point is returned (same point for both geometries). If both geometries are polyline/polygon and they intersect more than once then any intersection point can be returned (but the same point is returned for both geometries). If one geometry is a solid <a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a> and the other geometry is a <a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a> with more than one of its points inside the interior of the polygon then the closest point in the multi-point could be any of those inside points.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">distance_radians</span><span class="p">,</span> <span class="n">closest_point_on_geometry1</span><span class="p">,</span> <span class="n">closest_point_on_geometry2</span> <span class="o">=</span> \
+    <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">geometry1</span><span class="p">,</span> <span class="n">geometry2</span><span class="p">,</span> <span class="n">return_closest_positions</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If <em>return_closest_indices</em> is <code class="docutils literal notranslate"><span class="pre">True</span></code> then the index of the closest <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">point</span></code></a> (for multi-points) or the index of the closest <a class="reference internal" href="pygplates.GreatCircleArc.html#pygplates.GreatCircleArc" title="pygplates.GreatCircleArc"><code class="xref py py-class docutils literal notranslate"><span class="pre">segment</span></code></a> (for polylines and polygons) is returned (unless the threshold is exceeded, if specified). Note that for <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">point</span></code></a> geometries the index will always be zero. The point indices can be used to index directly into <a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a> and the segment indices can be used with <a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere.get_segments" title="pygplates.PolylineOnSphere.get_segments"><code class="xref py py-meth docutils literal notranslate"><span class="pre">PolylineOnSphere.get_segments()</span></code></a> or <a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere.get_segments" title="pygplates.PolygonOnSphere.get_segments"><code class="xref py py-meth docutils literal notranslate"><span class="pre">PolygonOnSphere.get_segments()</span></code></a> as shown in the following example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">distance_radians</span><span class="p">,</span> <span class="n">closest_point_index_on_multipoint</span><span class="p">,</span> <span class="n">closest_segment_index_on_polyline</span> <span class="o">=</span> \
+    <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">multipoint</span><span class="p">,</span> <span class="n">polyline</span><span class="p">,</span> <span class="n">return_closest_indices</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">closest_point_on_multipoint</span> <span class="o">=</span> <span class="n">multipoint</span><span class="p">[</span><span class="n">closest_point_index_on_multipoint</span><span class="p">]</span>
+<span class="n">closest_segment_on_polyline</span> <span class="o">=</span> <span class="n">polyline</span><span class="o">.</span><span class="n">get_segments</span><span class="p">()[</span><span class="n">closest_segment_index_on_polyline</span><span class="p">]</span>
+<span class="n">closest_segment_normal_vector</span> <span class="o">=</span> <span class="n">closest_segment_on_polyline</span><span class="o">.</span><span class="n">get_great_circle_normal</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>If both <em>return_closest_positions</em> and <em>return_closest_indices</em> are <code class="docutils literal notranslate"><span class="pre">True</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Distance between a polyline and a solid polygon.</span>
+<span class="n">distance_radians</span><span class="p">,</span> <span class="n">polyline_point</span><span class="p">,</span> <span class="n">polygon_point</span><span class="p">,</span> <span class="n">polyline_segment_index</span><span class="p">,</span> <span class="n">polygon_segment_index</span> <span class="o">=</span> \
+    <span class="n">pygplates</span><span class="o">.</span><span class="n">GeometryOnSphere</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span>
+        <span class="n">polyline</span><span class="p">,</span>
+        <span class="n">polygon</span><span class="p">,</span>
+        <span class="n">return_closest_positions</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">return_closest_indices</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">geometry2_is_solid</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GeometryOnSphere.get_points">
+<code class="descname">get_points</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GeometryOnSphere.get_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a <em>read-only</em> sequence of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a> in this geometry.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">a read-only sequence of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following operations for accessing the points in the returned read-only sequence are supported:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Operation</th>
+<th class="head">Result</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">len(seq)</span></code></td>
+<td>length of <em>seq</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">p</span> <span class="pre">in</span> <span class="pre">seq</span></code></td>
+<td>iterates over the points <em>p</em> of <em>seq</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">in</span> <span class="pre">seq</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">True</span></code> if <em>p</em> is equal to a point in <em>seq</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">seq</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">False</span></code> if <em>p</em> is equal to a point in <em>seq</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">seq[i]</span></code></td>
+<td>the point of <em>seq</em> at index <em>i</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">seq[i:j]</span></code></td>
+<td>slice of <em>seq</em> from <em>i</em> to <em>j</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">seq[i:j:k]</span></code></td>
+<td>slice of <em>seq</em> from <em>i</em> to <em>j</em> with step <em>k</em></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The returned sequence is <em>read-only</em> and cannot be modified.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you want a modifiable sequence consider wrapping the returned sequence in a <code class="docutils literal notranslate"><span class="pre">list</span></code>
+using something like <code class="docutils literal notranslate"><span class="pre">points</span> <span class="pre">=</span> <span class="pre">list(geometry.get_points())</span></code> <strong>but</strong> note that modifying
+the <code class="docutils literal notranslate"><span class="pre">list</span></code> (eg, inserting a new point) will <strong>not</strong> modify the original geometry.</p>
+</div>
+<p>If this geometry is a <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> then the returned sequence has length one.
+For other geometry types (<a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a>, <a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> and
+<a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a>) the length will equal the number of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a>
+contained within.</p>
+<p>The following example demonstrates some uses of the above operations:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">points</span> <span class="o">=</span> <span class="n">geometry</span><span class="o">.</span><span class="n">get_points</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">points</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="n">point</span>
+<span class="n">first_point</span> <span class="o">=</span> <span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">last_point</span> <span class="o">=</span> <span class="n">points</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">However if you know you have a <a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a>, <a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> or <a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a>
+(ie, not a <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>) it’s actually easier to iterate directly over the geometry itself.</div>
+<div class="line">For example with a <a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a>:</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">polyline</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="n">point</span>
+<span class="n">first_point</span> <span class="o">=</span> <span class="n">polyline</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">last_point</span> <span class="o">=</span> <span class="n">polyline</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There are also methods that return the sequence of points as (latitude,longitude)
+values and (x,y,z) values contained in lists and numpy arrays
+(<a class="reference internal" href="#pygplates.GeometryOnSphere.to_lat_lon_list" title="pygplates.GeometryOnSphere.to_lat_lon_list"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_lat_lon_list()</span></code></a>, <a class="reference internal" href="#pygplates.GeometryOnSphere.to_lat_lon_array" title="pygplates.GeometryOnSphere.to_lat_lon_array"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_lat_lon_array()</span></code></a>, <a class="reference internal" href="#pygplates.GeometryOnSphere.to_xyz_list" title="pygplates.GeometryOnSphere.to_xyz_list"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_xyz_list()</span></code></a> and <a class="reference internal" href="#pygplates.GeometryOnSphere.to_xyz_array" title="pygplates.GeometryOnSphere.to_xyz_array"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_xyz_array()</span></code></a>).</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GeometryOnSphere.to_lat_lon_array">
+<code class="descname">to_lat_lon_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GeometryOnSphere.to_lat_lon_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the sequence of points, in this geometry, as a numpy array of (latitude,longitude) pairs (in degrees).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an array of (latitude,longitude) pairs (in degrees)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">2D numpy array with number of points as outer dimension and an inner dimension of two</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This method should only be called if the <code class="docutils literal notranslate"><span class="pre">numpy</span></code> module is available.</p>
+</div>
+<p>If this geometry is a <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> then the returned sequence has length one.
+For other geometry types (<a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a>, <a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> and
+<a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a>) the length will equal the number of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a>
+contained within.</p>
+<p>If you want the latitude/longitude order swapped in the returned tuples then the following is one way to achieve this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert (latitude,longitude) to (longitude,latitude).</span>
+<span class="n">geometry</span><span class="o">.</span><span class="n">to_lat_lon_array</span><span class="p">()[:,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)]</span>
+</pre></div>
+</div>
+<p>If you need a flat 1D numpy array then you can do something like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">geometry</span><span class="o">.</span><span class="n">to_lat_lon_array</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GeometryOnSphere.to_lat_lon_list">
+<code class="descname">to_lat_lon_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GeometryOnSphere.to_lat_lon_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the sequence of points, in this geometry, as (latitude,longitude) tuples (in degrees).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a list of (latitude,longitude) tuples (in degrees)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list of (float,float) tuples</td>
+</tr>
+</tbody>
+</table>
+<p>If this geometry is a <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> then the returned sequence has length one.
+For other geometry types (<a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a>, <a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> and
+<a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a>) the length will equal the number of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a>
+contained within.</p>
+<p>If you want the latitude/longitude order swapped in the returned tuples then the following is one way to achieve this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert (latitude,longitude) to (longitude,latitude).</span>
+<span class="p">[(</span><span class="n">lon</span><span class="p">,</span><span class="n">lat</span><span class="p">)</span> <span class="k">for</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span> <span class="ow">in</span> <span class="n">geometry</span><span class="o">.</span><span class="n">to_lat_lon_list</span><span class="p">()]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GeometryOnSphere.to_lat_lon_point_list">
+<code class="descname">to_lat_lon_point_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GeometryOnSphere.to_lat_lon_point_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the sequence of points, in this geometry, as <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">lat</span> <span class="pre">lon</span> <span class="pre">points</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list of <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If this geometry is a <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> then the returned sequence has length one.
+For other geometry types (<a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a>, <a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> and
+<a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a>) the length will equal the number of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a>
+contained within.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GeometryOnSphere.to_xyz_array">
+<code class="descname">to_xyz_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GeometryOnSphere.to_xyz_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the sequence of points, in this geometry, as a numpy array of (x,y,z) triplets.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an array of (x,y,z) triplets</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">2D numpy array with number of points as outer dimension and an inner dimension of three</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This method should only be called if the <code class="docutils literal notranslate"><span class="pre">numpy</span></code> module is available.</p>
+</div>
+<p>If you need a flat 1D numpy array then you can do something like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">geometry</span><span class="o">.</span><span class="n">to_xyz_array</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>If this geometry is a <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> then the returned sequence has length one.
+For other geometry types (<a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a>, <a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> and
+<a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a>) the length will equal the number of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a>
+contained within.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GeometryOnSphere.to_xyz_list">
+<code class="descname">to_xyz_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GeometryOnSphere.to_xyz_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the sequence of points, in this geometry, as (x,y,z) cartesian coordinate tuples.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a list of (x,y,z) tuples</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list of (float,float,float) tuples</td>
+</tr>
+</tbody>
+</table>
+<p>If this geometry is a <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> then the returned sequence has length one.
+For other geometry types (<a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a>, <a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> and
+<a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a>) the length will equal the number of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a>
+contained within.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pygplates.PolygonOnSphere.html"
+                        title="previous chapter">pygplates.PolygonOnSphere</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pygplates.GreatCircleArc.html"
+                        title="next chapter">pygplates.GreatCircleArc</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/generated/pygplates.GeometryOnSphere.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pygplates.GreatCircleArc.html" title="pygplates.GreatCircleArc"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.PolygonOnSphere.html" title="pygplates.PolygonOnSphere"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" >Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
+(C) 2004-2020 California Institute of Technology
+(C) 2007-2020 The Geological Survey of Norway
+.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,617 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pygplates.Vector3D &#8212; pygplates 2.2.0.28 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pygplates.EnumerationType" href="pygplates.EnumerationType.html" />
+    <link rel="prev" title="pygplates.LocalCartesian" href="pygplates.LocalCartesian.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pygplates.EnumerationType.html" title="pygplates.EnumerationType"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.LocalCartesian.html" title="pygplates.LocalCartesian"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" accesskey="U">Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pygplates-vector3d">
+<h1>pygplates.Vector3D<a class="headerlink" href="#pygplates-vector3d" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pygplates.Vector3D">
+<em class="property">class </em><code class="descclassname">pygplates.</code><code class="descname">Vector3D</code><a class="headerlink" href="#pygplates.Vector3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Boost.Python.instance</span></code></p>
+<p>Represents a vector in 3D cartesian coordinates. Vectors are equality (<code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">!=</span></code>) comparable (but not hashable - cannot be used as a key in a <code class="docutils literal notranslate"><span class="pre">dict</span></code>).</p>
+<p>The following operations can be used:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="78%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Operation</th>
+<th class="head">Result</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-vector</span></code></td>
+<td>Creates a new <em>Vector3D</em> that points in the opposite direction to <em>vector</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">scalar</span> <span class="pre">*</span> <span class="pre">vector</span></code></td>
+<td>Creates a new <em>Vector3D</em> from <em>vector</em> with each component of (x,y,z) multiplied by <em>scalar</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">vector</span> <span class="pre">*</span> <span class="pre">scalar</span></code></td>
+<td>Creates a new <em>Vector3D</em> from <em>vector</em> with each component of (x,y,z) multiplied by <em>scalar</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">vector1</span> <span class="pre">+</span> <span class="pre">vector2</span></code></td>
+<td>Creates a new <em>Vector3D</em> that is the sum of <em>vector1</em> and <em>vector2</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">vector1</span> <span class="pre">-</span> <span class="pre">vector2</span></code></td>
+<td>Creates a new <em>Vector3D</em> that is <em>vector2</em> subtracted from <em>vector1</em></td>
+</tr>
+</tbody>
+</table>
+<p>For example, to interpolate between two vectors:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vector1</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="n">vector2</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="n">vector_interp</span> <span class="o">=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">vector1</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">vector2</span>
+</pre></div>
+</div>
+<p>Convenience class static data are available for the zero vector (all zero components) and the x, y and z axes (unit vectors in the respective directions):</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">pygplates.Vector3D.zero</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">pygplates.Vector3D.x_axis</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">pygplates.Vector3D.y_axis</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">pygplates.Vector3D.z_axis</span></code></li>
+</ul>
+<p>For example, to create a vector from a triplet of axis basis weights (triplet of scalars):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vector</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">x_weight</span> <span class="o">*</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">x_axis</span> <span class="o">+</span>
+    <span class="n">y_weight</span> <span class="o">*</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">y_axis</span> <span class="o">+</span>
+    <span class="n">z_weight</span> <span class="o">*</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">z_axis</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="pygplates.Vector3D.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>A <em>Vector3D</em> object can be constructed in more than one way…</p>
+<dl class="docutils">
+<dt>__init__(x, y, z)</dt>
+<dd><p class="first">Construct a <em>Vector3D</em> instance from 3D cartesian coordinates consisting of the floating-point numbers <em>x</em>, <em>y</em> and <em>z</em>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">param x:</th><td class="field-body">the <em>x</em> component of the 3D vector</td>
+</tr>
+<tr class="field-even field"><th class="field-name">type x:</th><td class="field-body">float</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">param y:</th><td class="field-body">the <em>y</em> component of the 3D vector</td>
+</tr>
+<tr class="field-even field"><th class="field-name">type y:</th><td class="field-body">float</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">param z:</th><td class="field-body">the <em>z</em> component of the 3D vector</td>
+</tr>
+<tr class="field-even field"><th class="field-name">type z:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vector</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+<dt>__init__(vector)</dt>
+<dd><p class="first">Create a <em>Vector3D</em> instance from an (x,y,z) sequence (or <em>Vector3D</em>).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">param point:</th><td class="field-body">(x,y,z) vector</td>
+</tr>
+<tr class="field-even field"><th class="field-name">type point:</th><td class="field-body">sequence, such as list or tuple, of (float,float,float), or <a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following example shows a few different ways to use this method:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vector</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">((</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">))</span>
+<span class="n">vector</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">([</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">])</span>
+<span class="n">vector</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">]))</span>
+<span class="n">vector</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span><span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.Vector3D.__init__" title="pygplates.Vector3D.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(…)</td>
+<td>A <em>Vector3D</em> object can be constructed in more than one way…</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.Vector3D.angle_between" title="pygplates.Vector3D.angle_between"><code class="xref py py-obj docutils literal notranslate"><span class="pre">angle_between</span></code></a>(vector1,&nbsp;vector2)</td>
+<td>[<em>staticmethod</em>] Returns the angle between two vectors (in radians).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.Vector3D.create_normalised" title="pygplates.Vector3D.create_normalised"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_normalised</span></code></a>(…)</td>
+<td>[<em>staticmethod</em>] Returns a new vector that is a normalised (unit length) version of another.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.Vector3D.create_normalized" title="pygplates.Vector3D.create_normalized"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_normalized</span></code></a>(…)</td>
+<td>[<em>staticmethod</em>] See <a class="reference internal" href="#pygplates.Vector3D.create_normalised" title="pygplates.Vector3D.create_normalised"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_normalised()</span></code></a>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.Vector3D.cross" title="pygplates.Vector3D.cross"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cross</span></code></a>(vector1,&nbsp;vector2)</td>
+<td>[<em>staticmethod</em>] Returns the cross product of two vectors.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.Vector3D.dot" title="pygplates.Vector3D.dot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dot</span></code></a>(vector1,&nbsp;vector2)</td>
+<td>[<em>staticmethod</em>] Returns the dot product of two vectors.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.Vector3D.get_magnitude" title="pygplates.Vector3D.get_magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_magnitude</span></code></a>()</td>
+<td>Returns the magnitude, or length, of the vector.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.Vector3D.get_x" title="pygplates.Vector3D.get_x"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_x</span></code></a>()</td>
+<td>Returns the <em>x</em> coordinate.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.Vector3D.get_y" title="pygplates.Vector3D.get_y"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_y</span></code></a>()</td>
+<td>Returns the <em>y</em> coordinate.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.Vector3D.get_z" title="pygplates.Vector3D.get_z"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_z</span></code></a>()</td>
+<td>Returns the <em>z</em> coordinate.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.Vector3D.is_zero_magnitude" title="pygplates.Vector3D.is_zero_magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_zero_magnitude</span></code></a>()</td>
+<td>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the magnitude of this vector is zero.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.Vector3D.to_normalised" title="pygplates.Vector3D.to_normalised"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_normalised</span></code></a>()</td>
+<td>Returns a new vector that is a normalised (unit length) version of this vector.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.Vector3D.to_normalized" title="pygplates.Vector3D.to_normalized"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_normalized</span></code></a>()</td>
+<td>See <a class="reference internal" href="#pygplates.Vector3D.to_normalised" title="pygplates.Vector3D.to_normalised"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_normalised()</span></code></a>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.Vector3D.to_xyz" title="pygplates.Vector3D.to_xyz"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_xyz</span></code></a>()</td>
+<td>Returns the cartesian coordinates as the tuple (x,y,z).</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">x_axis</span></code></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">y_axis</span></code></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">z_axis</span></code></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">zero</span></code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="staticmethod">
+<dt id="pygplates.Vector3D.angle_between">
+<em class="property">static </em><code class="descname">angle_between</code><span class="sig-paren">(</span><em>vector1</em>, <em>vector2</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.angle_between" title="Permalink to this definition">¶</a></dt>
+<dd><p>[<em>staticmethod</em>] Returns the angle between two vectors (in radians).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vector1</strong> (<a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a>, or sequence (such as list or tuple) of (float,float,float)) – the first vector</li>
+<li><strong>vector2</strong> (<a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a>, or sequence (such as list or tuple) of (float,float,float)) – the second vector</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">float</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last">UnableToNormaliseZeroVectorError if either <em>vector1</em> or <em>vector2</em> is (0,0,0) (ie, <a class="reference internal" href="#pygplates.Vector3D.is_zero_magnitude" title="pygplates.Vector3D.is_zero_magnitude"><code class="xref py py-meth docutils literal notranslate"><span class="pre">has</span> <span class="pre">zero</span> <span class="pre">magnitude</span></code></a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Note that the angle between a vector (<code class="docutils literal notranslate"><span class="pre">vec</span></code>) and its opposite (<code class="docutils literal notranslate"><span class="pre">-vec</span></code>) is <code class="docutils literal notranslate"><span class="pre">math.pi</span></code> (and not zero) even though both vectors are parallel. This is because they point in opposite directions.</p>
+<p>The following example shows a few different ways to use this function:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vec1</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">)</span>
+<span class="n">vec2</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.3</span><span class="p">)</span>
+<span class="n">angle</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">angle_between</span><span class="p">(</span><span class="n">vec1</span><span class="p">,</span> <span class="n">vec2</span><span class="p">)</span>
+
+<span class="n">angle</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">angle_between</span><span class="p">((</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.3</span><span class="p">))</span>
+
+<span class="n">angle</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">angle_between</span><span class="p">(</span><span class="n">vec1</span><span class="p">,</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.3</span><span class="p">))</span>
+
+<span class="n">angle</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">angle_between</span><span class="p">((</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">),</span> <span class="n">vec2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This function is the equivalent of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">vector1</span><span class="o">.</span><span class="n">is_zero_magnitude</span><span class="p">()</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">vector2</span><span class="o">.</span><span class="n">is_zero_magnitude</span><span class="p">():</span>
+    <span class="n">angle_between</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">acos</span><span class="p">(</span>
+        <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">vector1</span><span class="o">.</span><span class="n">to_normalised</span><span class="p">(),</span> <span class="n">vector2</span><span class="o">.</span><span class="n">to_normalised</span><span class="p">()))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">UnableToNormaliseZeroVectorError</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pygplates.Vector3D.create_normalised">
+<em class="property">static </em><code class="descname">create_normalised</code><span class="sig-paren">(</span><em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.create_normalised" title="Permalink to this definition">¶</a></dt>
+<dd><p>[<em>staticmethod</em>] Returns a new vector that is a normalised (unit length) version of another.</p>
+<p>This function can be called in more than one way…</p>
+<dl class="docutils">
+<dt>create_normalised(xyz)</dt>
+<dd><p class="first">Returns a new vector that is a normalised (unit length) version of <em>vector</em>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">param xyz:</th><td class="field-body">the vector (x,y,z) components</td>
+</tr>
+<tr class="field-even field"><th class="field-name">type xyz:</th><td class="field-body">sequence (such as list or tuple) of (float,float,float), or <a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">rtype:</th><td class="field-body"><a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">raises:</th><td class="field-body">UnableToNormaliseZeroVectorError if <em>xyz</em> is (0,0,0) (ie, <a class="reference internal" href="#pygplates.Vector3D.is_zero_magnitude" title="pygplates.Vector3D.is_zero_magnitude"><code class="xref py py-meth docutils literal notranslate"><span class="pre">has</span> <span class="pre">zero</span> <span class="pre">magnitude</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">normalised_vector</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">create_normalised</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+</pre></div>
+</div>
+<p class="last">This function is similar to <a class="reference internal" href="#pygplates.Vector3D.to_normalised" title="pygplates.Vector3D.to_normalised"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_normalised()</span></code></a> but is typically used when you don’t have a <a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a> object to call <a class="reference internal" href="#pygplates.Vector3D.to_normalised" title="pygplates.Vector3D.to_normalised"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_normalised()</span></code></a> on. Such as <code class="docutils literal notranslate"><span class="pre">pygplates.Vector3D.create_normalised((2,</span> <span class="pre">1,</span> <span class="pre">0))</span></code>.</p>
+</dd>
+<dt>create_normalised(x, y, z)</dt>
+<dd><p class="first">Returns a new vector that is a normalised (unit length) version of vector (x, y, z).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">param x:</th><td class="field-body">the <em>x</em> component of the 3D vector</td>
+</tr>
+<tr class="field-even field"><th class="field-name">type x:</th><td class="field-body">float</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">param y:</th><td class="field-body">the <em>y</em> component of the 3D vector</td>
+</tr>
+<tr class="field-even field"><th class="field-name">type y:</th><td class="field-body">float</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">param z:</th><td class="field-body">the <em>z</em> component of the 3D vector</td>
+</tr>
+<tr class="field-even field"><th class="field-name">type z:</th><td class="field-body">float</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">rtype:</th><td class="field-body"><a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">raises:</th><td class="field-body">UnableToNormaliseZeroVectorError if (x,y,z) is (0,0,0) (ie, <a class="reference internal" href="#pygplates.Vector3D.is_zero_magnitude" title="pygplates.Vector3D.is_zero_magnitude"><code class="xref py py-meth docutils literal notranslate"><span class="pre">has</span> <span class="pre">zero</span> <span class="pre">magnitude</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">normalised_vector</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">create_normalised</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="last">This function is similar to the <em>create_normalised</em> function above but takes three arguments <em>x</em>, <em>y</em> and <em>z</em> instead of a single argument (such as a tuple or list).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pygplates.Vector3D.create_normalized">
+<em class="property">static </em><code class="descname">create_normalized</code><span class="sig-paren">(</span><em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.create_normalized" title="Permalink to this definition">¶</a></dt>
+<dd><p>[<em>staticmethod</em>] See <a class="reference internal" href="#pygplates.Vector3D.create_normalised" title="pygplates.Vector3D.create_normalised"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_normalised()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pygplates.Vector3D.cross">
+<em class="property">static </em><code class="descname">cross</code><span class="sig-paren">(</span><em>vector1</em>, <em>vector2</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.cross" title="Permalink to this definition">¶</a></dt>
+<dd><p>[<em>staticmethod</em>] Returns the cross product of two vectors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vector1</strong> (<a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a>, or sequence (such as list or tuple) of (float,float,float)) – the first vector</li>
+<li><strong>vector2</strong> (<a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a>, or sequence (such as list or tuple) of (float,float,float)) – the second vector</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The following example shows a few different ways to use this function:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vec1</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">)</span>
+<span class="n">vec2</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.3</span><span class="p">)</span>
+<span class="n">cross_product</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">vec1</span><span class="p">,</span> <span class="n">vec2</span><span class="p">)</span>
+
+<span class="n">cross_product</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">cross</span><span class="p">((</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.3</span><span class="p">))</span>
+
+<span class="n">cross_product</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">vec1</span><span class="p">,</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.3</span><span class="p">))</span>
+
+<span class="n">cross_product</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">cross</span><span class="p">((</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">),</span> <span class="n">vec2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The cross product is the equivalent of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cross_product</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span>
+    <span class="n">vector1</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span> <span class="o">*</span> <span class="n">vector2</span><span class="o">.</span><span class="n">get_z</span><span class="p">()</span> <span class="o">-</span> <span class="n">vector1</span><span class="o">.</span><span class="n">get_z</span><span class="p">()</span> <span class="o">*</span> <span class="n">vector2</span><span class="o">.</span><span class="n">get_y</span><span class="p">(),</span>
+    <span class="n">vector1</span><span class="o">.</span><span class="n">get_z</span><span class="p">()</span> <span class="o">*</span> <span class="n">vector2</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">-</span> <span class="n">vector1</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">*</span> <span class="n">vector2</span><span class="o">.</span><span class="n">get_z</span><span class="p">(),</span>
+    <span class="n">vector1</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">*</span> <span class="n">vector2</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span> <span class="o">-</span> <span class="n">vector1</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span> <span class="o">*</span> <span class="n">vector2</span><span class="o">.</span><span class="n">get_x</span><span class="p">())</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pygplates.Vector3D.dot">
+<em class="property">static </em><code class="descname">dot</code><span class="sig-paren">(</span><em>vector1</em>, <em>vector2</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.dot" title="Permalink to this definition">¶</a></dt>
+<dd><p>[<em>staticmethod</em>] Returns the dot product of two vectors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vector1</strong> (<a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a>, or sequence (such as list or tuple) of (float,float,float)) – the first vector</li>
+<li><strong>vector2</strong> (<a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a>, or sequence (such as list or tuple) of (float,float,float)) – the second vector</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The following example shows a few different ways to use this function:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vec1</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">)</span>
+<span class="n">vec2</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.3</span><span class="p">)</span>
+<span class="n">dot_product</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">vec1</span><span class="p">,</span> <span class="n">vec2</span><span class="p">)</span>
+
+<span class="n">dot_product</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">dot</span><span class="p">((</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.3</span><span class="p">))</span>
+
+<span class="n">dot_product</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">vec1</span><span class="p">,</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.3</span><span class="p">))</span>
+
+<span class="n">dot_product</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="o">.</span><span class="n">dot</span><span class="p">((</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">),</span> <span class="n">vec2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The dot product is the equivalent of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dot_product</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">vector1</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">*</span> <span class="n">vector2</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">+</span>
+    <span class="n">vector1</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span> <span class="o">*</span> <span class="n">vector2</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span> <span class="o">+</span>
+    <span class="n">vector1</span><span class="o">.</span><span class="n">get_z</span><span class="p">()</span> <span class="o">*</span> <span class="n">vector2</span><span class="o">.</span><span class="n">get_z</span><span class="p">())</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.Vector3D.get_magnitude">
+<code class="descname">get_magnitude</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.get_magnitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the magnitude, or length, of the vector.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">magnitude</span> <span class="o">=</span> <span class="n">vector</span><span class="o">.</span><span class="n">get_magnitude</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The magnitude is the equivalent of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">magnitude</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span>
+    <span class="n">vector</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">*</span> <span class="n">vector</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">+</span>
+    <span class="n">vector</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span> <span class="o">*</span> <span class="n">vector</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span> <span class="o">+</span>
+    <span class="n">vector</span><span class="o">.</span><span class="n">get_z</span><span class="p">()</span> <span class="o">*</span> <span class="n">vector</span><span class="o">.</span><span class="n">get_z</span><span class="p">())</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.Vector3D.get_x">
+<code class="descname">get_x</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.get_x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the <em>x</em> coordinate.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.Vector3D.get_y">
+<code class="descname">get_y</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.get_y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the <em>y</em> coordinate.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.Vector3D.get_z">
+<code class="descname">get_z</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.get_z" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the <em>z</em> coordinate.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.Vector3D.is_zero_magnitude">
+<code class="descname">is_zero_magnitude</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.is_zero_magnitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the magnitude of this vector is zero.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+<p>This method will also return <code class="docutils literal notranslate"><span class="pre">True</span></code> for tiny, non-zero magnitudes that would cause <a class="reference internal" href="#pygplates.Vector3D.to_normalised" title="pygplates.Vector3D.to_normalised"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_normalised()</span></code></a> to raise <em>UnableToNormaliseZeroVectorError</em>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.Vector3D.to_normalised">
+<code class="descname">to_normalised</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.to_normalised" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a new vector that is a normalised (unit length) version of this vector.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body">UnableToNormaliseZeroVectorError if this vector is (0,0,0) (ie, <a class="reference internal" href="#pygplates.Vector3D.is_zero_magnitude" title="pygplates.Vector3D.is_zero_magnitude"><code class="xref py py-meth docutils literal notranslate"><span class="pre">has</span> <span class="pre">zero</span> <span class="pre">magnitude</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<p>If a vector is not <a class="reference internal" href="#pygplates.Vector3D.is_zero_magnitude" title="pygplates.Vector3D.is_zero_magnitude"><code class="xref py py-meth docutils literal notranslate"><span class="pre">zero</span> <span class="pre">magnitude</span></code></a> then it can return a normalised version of itself:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">vector</span><span class="o">.</span><span class="n">is_zero_magnitude</span><span class="p">():</span>
+    <span class="n">normalised_vector</span> <span class="o">=</span> <span class="n">vector</span><span class="o">.</span><span class="n">to_normalised</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>NOTE:</strong> This does not normalise this vector. Instead it returns a new vector object that is the equivalent of this vector but has a magnitude of 1.0.</p>
+<p>This function is the equivalent of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">vector</span><span class="o">.</span><span class="n">is_zero_magnitude</span><span class="p">():</span>
+    <span class="n">scale</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">vector</span><span class="o">.</span><span class="n">get_magnitude</span><span class="p">()</span>
+    <span class="n">normalised_vector</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Vector3D</span><span class="p">(</span>
+        <span class="n">scale</span> <span class="o">*</span> <span class="n">vector</span><span class="o">.</span><span class="n">get_x</span><span class="p">(),</span>
+        <span class="n">scale</span> <span class="o">*</span> <span class="n">vector</span><span class="o">.</span><span class="n">get_y</span><span class="p">(),</span>
+        <span class="n">scale</span> <span class="o">*</span> <span class="n">vector</span><span class="o">.</span><span class="n">get_z</span><span class="p">())</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">UnableToNormaliseZeroVectorError</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.Vector3D.to_normalized">
+<code class="descname">to_normalized</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.to_normalized" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="#pygplates.Vector3D.to_normalised" title="pygplates.Vector3D.to_normalised"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_normalised()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.Vector3D.to_xyz">
+<code class="descname">to_xyz</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.Vector3D.to_xyz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the cartesian coordinates as the tuple (x,y,z).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">the tuple (float,float,float)</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">vector</span><span class="o">.</span><span class="n">to_xyz</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pygplates.LocalCartesian.html"
+                        title="previous chapter">pygplates.LocalCartesian</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pygplates.EnumerationType.html"
+                        title="next chapter">pygplates.EnumerationType</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/generated/pygplates.Vector3D.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pygplates.EnumerationType.html" title="pygplates.EnumerationType"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.LocalCartesian.html" title="pygplates.LocalCartesian"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" >Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
+(C) 2004-2020 California Institute of Technology
+(C) 2007-2020 The Geological Survey of Norway
+.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>

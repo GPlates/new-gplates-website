@@ -1,0 +1,481 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pygplates.GpmlPiecewiseAggregation &#8212; pygplates 2.2.0.28 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pygplates.GpmlPropertyDelegateList" href="pygplates.GpmlPropertyDelegateList.html" />
+    <link rel="prev" title="pygplates.GpmlIrregularSampling" href="pygplates.GpmlIrregularSampling.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pygplates.GpmlPropertyDelegateList.html" title="pygplates.GpmlPropertyDelegateList"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.GpmlIrregularSampling.html" title="pygplates.GpmlIrregularSampling"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" accesskey="U">Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pygplates-gpmlpiecewiseaggregation">
+<h1>pygplates.GpmlPiecewiseAggregation<a class="headerlink" href="#pygplates-gpmlpiecewiseaggregation" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pygplates.GpmlPiecewiseAggregation">
+<em class="property">class </em><code class="descclassname">pygplates.</code><code class="descname">GpmlPiecewiseAggregation</code><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pygplates.PropertyValue.html#pygplates.PropertyValue" title="pygplates.PropertyValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.PropertyValue</span></code></a></p>
+<p>A time-dependent property consisting of a sequence of time windows each with a <em>constant</em> property value.</p>
+<p>GpmlPiecewiseAggregation behaves like a regular python <code class="docutils literal notranslate"><span class="pre">list</span></code> (of <a class="reference internal" href="pygplates.GpmlTimeWindow.html#pygplates.GpmlTimeWindow" title="pygplates.GpmlTimeWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlTimeWindow</span></code></a> elements) in that the following operations are supported:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Operation</th>
+<th class="head">Result</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">s</span></code></td>
+<td>iterates over the elements <em>x</em> of <em>s</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">in</span> <span class="pre">s</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">True</span></code> if <em>x</em> is an item of <em>s</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">s</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">False</span></code> if <em>x</em> is an item of <em>s</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">+=</span> <span class="pre">t</span></code></td>
+<td>the <em>GpmlPiecewiseAggregation</em> instance <em>s</em> is extended by sequence <em>t</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">+</span> <span class="pre">t</span></code></td>
+<td>the concatenation of sequences <em>s</em> and <em>t</em> where either, or both, is a <em>GpmlPiecewiseAggregation</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">s[i]</span></code></td>
+<td>the item of <em>s</em> at index <em>i</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">s[i]</span> <span class="pre">=</span> <span class="pre">x</span></code></td>
+<td>replace the item of <em>s</em> at index <em>i</em> with <em>x</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">s[i]</span></code></td>
+<td>remove the item at index <em>i</em> from <em>s</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">s[i:j]</span></code></td>
+<td>slice of <em>s</em> from <em>i</em> to <em>j</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">s[i:j]</span> <span class="pre">=</span> <span class="pre">t</span></code></td>
+<td>slice of <em>s</em> from <em>i</em> to <em>j</em> is replaced by the contents of the sequence <em>t</em> (the slice and <em>t</em> can be different lengths)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">s[i:j]</span></code></td>
+<td>same as <code class="docutils literal notranslate"><span class="pre">s[i:j]</span> <span class="pre">=</span> <span class="pre">[]</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">s[i:j:k]</span></code></td>
+<td>slice of <em>s</em> from <em>i</em> to <em>j</em> with step <em>k</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">s[i:j:k]</span></code></td>
+<td>removes the elements of <code class="docutils literal notranslate"><span class="pre">s[i:j:k]</span></code> from the list</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">s[i:j:k]</span> <span class="pre">=</span> <span class="pre">t</span></code></td>
+<td>the elements of <code class="docutils literal notranslate"><span class="pre">s[i:j:k]</span></code> are replaced by those of <em>t</em> (the slice and <em>t</em> <strong>must</strong> be the same length if <code class="docutils literal notranslate"><span class="pre">k</span> <span class="pre">!=</span> <span class="pre">1</span></code>)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">len(s)</span></code></td>
+<td>length of <em>s</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">s.append(x)</span></code></td>
+<td>add element <em>x</em> to the end of <em>s</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">s.extend(t)</span></code></td>
+<td>add the elements in sequence <em>t</em> to the end of <em>s</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">s.insert(i,x)</span></code></td>
+<td>insert element <em>x</em> at index <em>i</em> in <em>s</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">s.pop([i])</span></code></td>
+<td>removes the element at index <em>i</em> in <em>s</em> and returns it (defaults to last element)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">s.remove(x)</span></code></td>
+<td>removes the first element in <em>s</em> that equals <em>x</em> (raises <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> if not found)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">s.count(x)</span></code></td>
+<td>number of occurrences of <em>x</em> in <em>s</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">s.index(x[,i[,j]])</span></code></td>
+<td>smallest <em>k</em> such that <code class="docutils literal notranslate"><span class="pre">s[k]</span> <span class="pre">==</span> <span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;=</span> <span class="pre">k</span> <span class="pre">&lt;</span> <span class="pre">j</span></code> (raises <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> if not found)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">s.reverse()</span></code></td>
+<td>reverses the items of <em>s</em> in place</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">s.sort(key[,reverse])</span></code></td>
+<td>sort the items of <em>s</em> in place (note that <em>key</em> is <strong>not</strong> optional and, like python 3.0, we removed <em>cmp</em>)</td>
+</tr>
+</tbody>
+</table>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Replace the second and third time windows with a new time window that spans both.</span>
+<span class="n">piecewise_aggregation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GpmlPiecewiseAggregation</span><span class="p">([</span><span class="n">pygplates</span><span class="o">.</span><span class="n">GpmlTimeWindow</span><span class="p">(</span><span class="o">...</span><span class="p">),</span> <span class="o">...</span><span class="p">])</span>
+<span class="o">...</span>
+<span class="n">piecewise_aggregation</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">pygplates</span><span class="o">.</span><span class="n">GpmlTimeWindow</span><span class="p">(</span>
+        <span class="n">new_property_value</span><span class="p">,</span>
+        <span class="n">piecewise_aggregation</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">get_begin_time</span><span class="p">(),</span>
+        <span class="n">piecewise_aggregation</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">get_end_time</span><span class="p">())]</span>
+</pre></div>
+</div>
+<p>In addition to the above <code class="docutils literal notranslate"><span class="pre">list</span></code>-style operations there are also the following methods…</p>
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>time_windows</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a piecewise-constant time-dependent property from a sequence of time windows.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>time_windows</strong> (Any sequence such as a <code class="docutils literal notranslate"><span class="pre">list</span></code> or a <code class="docutils literal notranslate"><span class="pre">tuple</span></code>) – A sequence of <a class="reference internal" href="pygplates.GpmlTimeWindow.html#pygplates.GpmlTimeWindow" title="pygplates.GpmlTimeWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlTimeWindow</span></code></a> elements.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body">RuntimeError if time window sequence is empty</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The sequence of time windows must <strong>not</strong> be empty (for technical implementation reasons), otherwise a <em>RuntimeError</em> exception will be thrown.</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">piecewise_aggregation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GpmlPiecewiseAggregation</span><span class="p">(</span><span class="n">time_windows</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.__init__" title="pygplates.GpmlPiecewiseAggregation.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(time_windows)</td>
+<td>Create a piecewise-constant time-dependent property from a sequence of time windows.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">accept_visitor</span></code>(visitor)</td>
+<td>Accept a property value visitor so that it can visit this property value.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.append" title="pygplates.GpmlPiecewiseAggregation.append"><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code></a>(x)</td>
+<td>Add element <em>x</em> to the end.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">clone</span></code>()</td>
+<td>Create a duplicate of this property value (derived) instance, including a recursive copy of any nested property values that this instance might contain.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.count" title="pygplates.GpmlPiecewiseAggregation.count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code></a>(x)</td>
+<td>Number of occurrences of <em>x</em>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.extend" title="pygplates.GpmlPiecewiseAggregation.extend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code></a>(t)</td>
+<td>Add the elements in sequence <em>t</em> to the end.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_geometry</span></code>()</td>
+<td>Extracts the <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">geometry</span></code></a> if this property value contains a geometry.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.get_time_window_containing_time" title="pygplates.GpmlPiecewiseAggregation.get_time_window_containing_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_time_window_containing_time</span></code></a>(time)</td>
+<td>Return the <a class="reference internal" href="pygplates.GpmlTimeWindow.html#pygplates.GpmlTimeWindow" title="pygplates.GpmlTimeWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">time</span> <span class="pre">window</span></code></a> that contains <em>time</em>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.get_time_windows" title="pygplates.GpmlPiecewiseAggregation.get_time_windows"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_time_windows</span></code></a>()</td>
+<td>Returns the <a class="reference internal" href="pygplates.GpmlTimeWindow.html#pygplates.GpmlTimeWindow" title="pygplates.GpmlTimeWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">time</span> <span class="pre">windows</span></code></a> in a sequence that behaves as a python <code class="docutils literal notranslate"><span class="pre">list</span></code>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.get_value" title="pygplates.GpmlPiecewiseAggregation.get_value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_value</span></code></a>([time=0])</td>
+<td>Extracts the value at the reconstruction <em>time</em>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.get_value_type" title="pygplates.GpmlPiecewiseAggregation.get_value_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_value_type</span></code></a>()</td>
+<td>Returns the type of property value returned by <a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.get_value" title="pygplates.GpmlPiecewiseAggregation.get_value"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_value()</span></code></a>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.index" title="pygplates.GpmlPiecewiseAggregation.index"><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code></a>(x[,i[,j]])</td>
+<td>Smallest <em>k</em> such that the <em>k</em> th element equals <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;=</span> <span class="pre">k</span> <span class="pre">&lt;</span> <span class="pre">j</span></code> (raises <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> if not found).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.insert" title="pygplates.GpmlPiecewiseAggregation.insert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code></a>(i,x)</td>
+<td>Insert element <em>x</em> at index <em>i</em>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.pop" title="pygplates.GpmlPiecewiseAggregation.pop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code></a>([i])</td>
+<td>Removes the element at index <em>i</em> and returns it (defaults to last element).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.remove" title="pygplates.GpmlPiecewiseAggregation.remove"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove</span></code></a>(x)</td>
+<td>Removes the first element that equals <em>x</em> (raises <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> if not found).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.reverse" title="pygplates.GpmlPiecewiseAggregation.reverse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code></a>()</td>
+<td>Reverses the items in place.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.set_value" title="pygplates.GpmlPiecewiseAggregation.set_value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_value</span></code></a>(property_value,&nbsp;begin_time,&nbsp;end_time)</td>
+<td>Sets the value in the specified time window.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.sort" title="pygplates.GpmlPiecewiseAggregation.sort"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sort</span></code></a>(key[,reverse])</td>
+<td>Sort the items in place (note that <em>key</em> is <strong>not</strong> optional and, like python 3.0, we removed <em>cmp</em>).</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.append">
+<code class="descname">append</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.append" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add element <em>x</em> to the end.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.count">
+<code class="descname">count</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of occurrences of <em>x</em>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.extend">
+<code class="descname">extend</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.extend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add the elements in sequence <em>t</em> to the end.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.get_time_window_containing_time">
+<code class="descname">get_time_window_containing_time</code><span class="sig-paren">(</span><em>time</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.get_time_window_containing_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the <a class="reference internal" href="pygplates.GpmlTimeWindow.html#pygplates.GpmlTimeWindow" title="pygplates.GpmlTimeWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">time</span> <span class="pre">window</span></code></a> that contains <em>time</em>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>) – the time</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.GpmlTimeWindow.html#pygplates.GpmlTimeWindow" title="pygplates.GpmlTimeWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlTimeWindow</span></code></a> or None</td>
+</tr>
+</tbody>
+</table>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">None</span></code> if <em>time</em> is outside the time ranges of all time windows.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.get_time_windows">
+<code class="descname">get_time_windows</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.get_time_windows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the <a class="reference internal" href="pygplates.GpmlTimeWindow.html#pygplates.GpmlTimeWindow" title="pygplates.GpmlTimeWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">time</span> <span class="pre">windows</span></code></a> in a sequence that behaves as a python <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.GpmlTimeWindowList.html#pygplates.GpmlTimeWindowList" title="pygplates.GpmlTimeWindowList"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlTimeWindowList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Modifying the returned sequence will modify the internal state of the <em>GpmlPiecewiseAggregation</em> instance:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">time_windows</span> <span class="o">=</span> <span class="n">piecewise_aggregation</span><span class="o">.</span><span class="n">get_time_windows</span><span class="p">()</span>
+
+<span class="c1"># Sort windows by begin time</span>
+<span class="n">time_windows</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">tw</span><span class="p">:</span> <span class="n">tw</span><span class="o">.</span><span class="n">get_begin_time</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>The same effect can be achieved by working directly on the <em>GpmlPiecewiseAggregation</em> instance:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sort windows by begin time.</span>
+<span class="n">piecewise_aggregation</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">tw</span><span class="p">:</span> <span class="n">tw</span><span class="o">.</span><span class="n">get_begin_time</span><span class="p">())</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.get_value">
+<code class="descname">get_value</code><span class="sig-paren">(</span><span class="optional">[</span><em>time=0</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.get_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extracts the value at the reconstruction <em>time</em>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>) – the time to extract value (defaults to present day)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.PropertyValue.html#pygplates.PropertyValue" title="pygplates.PropertyValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">PropertyValue</span></code></a> or None</td>
+</tr>
+</tbody>
+</table>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">None</span></code> if <em>time</em> is outside the time ranges of all <a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.get_time_windows" title="pygplates.GpmlPiecewiseAggregation.get_time_windows"><code class="xref py py-meth docutils literal notranslate"><span class="pre">time</span> <span class="pre">windows</span></code></a>.</p>
+<p>This method overrides <a class="reference internal" href="pygplates.PropertyValue.html#pygplates.PropertyValue.get_value" title="pygplates.PropertyValue.get_value"><code class="xref py py-meth docutils literal notranslate"><span class="pre">PropertyValue.get_value()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.get_value_type">
+<code class="descname">get_value_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.get_value_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the type of property value returned by <a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.get_value" title="pygplates.GpmlPiecewiseAggregation.get_value"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_value()</span></code></a>.</p>
+<p>For example, it might return <code class="docutils literal notranslate"><span class="pre">pygplates.GmlLineString</span></code> which is a <em>class</em> object (not an instance).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">a class object of the property type (derived from <a class="reference internal" href="pygplates.PropertyValue.html#pygplates.PropertyValue" title="pygplates.PropertyValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">PropertyValue</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 21.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.index">
+<code class="descname">index</code><span class="sig-paren">(</span><em>x</em><span class="optional">[</span>, <em>i</em><span class="optional">[</span>, <em>j</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Smallest <em>k</em> such that the <em>k</em> th element equals <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;=</span> <span class="pre">k</span> <span class="pre">&lt;</span> <span class="pre">j</span></code> (raises <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> if not found).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.insert">
+<code class="descname">insert</code><span class="sig-paren">(</span><em>i</em>, <em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert element <em>x</em> at index <em>i</em>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.pop">
+<code class="descname">pop</code><span class="sig-paren">(</span><span class="optional">[</span><em>i</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.pop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the element at index <em>i</em> and returns it (defaults to last element).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.remove">
+<code class="descname">remove</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the first element that equals <em>x</em> (raises <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> if not found).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.reverse">
+<code class="descname">reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.reverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reverses the items in place.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.set_value">
+<code class="descname">set_value</code><span class="sig-paren">(</span><em>property_value</em>, <em>begin_time</em>, <em>end_time</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.set_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the value in the specified time window.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>property_value</strong> (<a class="reference internal" href="pygplates.PropertyValue.html#pygplates.PropertyValue" title="pygplates.PropertyValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">PropertyValue</span></code></a>) – the property value to set</li>
+<li><strong>begin_time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>) – the begin time of the time window for the new property value</li>
+<li><strong>end_time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>) – the end time of the time window for the new property value</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the time window that is inserted into the time window sequence</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="pygplates.GpmlTimeWindow.html#pygplates.GpmlTimeWindow" title="pygplates.GpmlTimeWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlTimeWindow</span></code></a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last">GmlTimePeriodBeginTimeLaterThanEndTimeError if begin time is later than end time</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Any existing <a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.get_time_windows" title="pygplates.GpmlPiecewiseAggregation.get_time_windows"><code class="xref py py-meth docutils literal notranslate"><span class="pre">time</span> <span class="pre">windows</span></code></a> that overlap the new time window
+(<em>begin_time</em>, <em>end_time</em>) are clipped, removed or split (depending on how they overlap) such
+that they no longer overlap with the new time window. The new time window is then inserted into
+the existing sequence such that the <a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.get_time_windows" title="pygplates.GpmlPiecewiseAggregation.get_time_windows"><code class="xref py py-meth docutils literal notranslate"><span class="pre">time</span> <span class="pre">windows</span></code></a> remained ordered by time.</p>
+<p>This method assumes the precondition that the <a class="reference internal" href="#pygplates.GpmlPiecewiseAggregation.get_time_windows" title="pygplates.GpmlPiecewiseAggregation.get_time_windows"><code class="xref py py-meth docutils literal notranslate"><span class="pre">time</span> <span class="pre">windows</span></code></a> are
+ordered by time from most recent to least recent.</p>
+<p>Note that <em>begin_time</em> can be <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant.create_distant_past" title="pygplates.GeoTimeInstant.create_distant_past"><code class="xref py py-meth docutils literal notranslate"><span class="pre">distant</span> <span class="pre">past</span></code></a> and/or
+<em>end_time</em> can be <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant.create_distant_future" title="pygplates.GeoTimeInstant.create_distant_future"><code class="xref py py-meth docutils literal notranslate"><span class="pre">distant</span> <span class="pre">future</span></code></a></p>
+<p>Set the property value between <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant.create_distant_past" title="pygplates.GeoTimeInstant.create_distant_past"><code class="xref py py-meth docutils literal notranslate"><span class="pre">distant</span> <span class="pre">past</span></code></a> and 10Ma:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">piecewise_aggregation</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="n">property_value</span><span class="p">,</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GeoTimeInstant</span><span class="o">.</span><span class="n">create_distant_past</span><span class="p">(),</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Alternatively you can change the value in an existing time window (if you just want to change
+the value within that time window and not affect other time windows):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">time_window</span> <span class="o">=</span> <span class="n">piecewise_aggregation</span><span class="o">.</span><span class="n">get_time_window_containing_time</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">time_window</span><span class="p">:</span>
+    <span class="n">time_window</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="n">property_value</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPiecewiseAggregation.sort">
+<code class="descname">sort</code><span class="sig-paren">(</span><em>key</em><span class="optional">[</span>, <em>reverse</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPiecewiseAggregation.sort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sort the items in place (note that <em>key</em> is <strong>not</strong> optional and, like python 3.0, we removed <em>cmp</em>).</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pygplates.GpmlIrregularSampling.html"
+                        title="previous chapter">pygplates.GpmlIrregularSampling</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pygplates.GpmlPropertyDelegateList.html"
+                        title="next chapter">pygplates.GpmlPropertyDelegateList</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/generated/pygplates.GpmlPiecewiseAggregation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pygplates.GpmlPropertyDelegateList.html" title="pygplates.GpmlPropertyDelegateList"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.GpmlIrregularSampling.html" title="pygplates.GpmlIrregularSampling"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" >Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
+(C) 2004-2020 California Institute of Technology
+(C) 2007-2020 The Geological Survey of Norway
+.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>

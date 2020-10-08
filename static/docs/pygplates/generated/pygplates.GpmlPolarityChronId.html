@@ -1,0 +1,283 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pygplates.GpmlPolarityChronId &#8212; pygplates 2.2.0.28 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pygplates.XsBoolean" href="pygplates.XsBoolean.html" />
+    <link rel="prev" title="pygplates.GpmlPlateId" href="pygplates.GpmlPlateId.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pygplates.XsBoolean.html" title="pygplates.XsBoolean"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.GpmlPlateId.html" title="pygplates.GpmlPlateId"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" accesskey="U">Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pygplates-gpmlpolaritychronid">
+<h1>pygplates.GpmlPolarityChronId<a class="headerlink" href="#pygplates-gpmlpolaritychronid" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pygplates.GpmlPolarityChronId">
+<em class="property">class </em><code class="descclassname">pygplates.</code><code class="descname">GpmlPolarityChronId</code><a class="headerlink" href="#pygplates.GpmlPolarityChronId" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pygplates.PropertyValue.html#pygplates.PropertyValue" title="pygplates.PropertyValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.PropertyValue</span></code></a></p>
+<p>A property value that identifies an <a class="reference internal" href="pygplates.FeatureType.html#pygplates.FeatureType" title="pygplates.FeatureType"><code class="xref py py-class docutils literal notranslate"><span class="pre">Isochron</span></code></a> or <a class="reference internal" href="pygplates.FeatureType.html#pygplates.FeatureType" title="pygplates.FeatureType"><code class="xref py py-class docutils literal notranslate"><span class="pre">MagneticAnomalyIdentification</span></code></a>.</p>
+<dl class="method">
+<dt id="pygplates.GpmlPolarityChronId.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="optional">[</span><em>era</em><span class="optional">]</span><span class="optional">[</span>, <em>major_region</em><span class="optional">]</span><span class="optional">[</span>, <em>minor_region</em><span class="optional">]</span><span class="optional">[</span>, <em>verify_information_model=VerifyInformationModel.yes</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPolarityChronId.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a polarity chron id property value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>era</strong> (<em>string</em>) – the era of the chron (‘Cenozoic’ or ‘Mesozoic’)</li>
+<li><strong>major_region</strong> (<em>int</em>) – the number indicating the major region the chron is in - Cenozoic isochrons have been classified into broad regions identified by the numbers 1 to 34, Mesozoic isochrons use the numbers 1 to 29</li>
+<li><strong>minor_region</strong> (<em>string</em>) – the sequence of letters indicating the sub-region the chron is located in - the letters a-z are used for the initial sub-region, and if further polarity reversals have been discovered within that chron, a second letter is appended, and so on</li>
+<li><strong>verify_information_model</strong> (<em>VerifyInformationModel.yes</em> or <em>VerifyInformationModel.no</em>) – whether to check the information model for valid <em>era</em></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last">InformationModelError if <em>verify_information_model</em> is <em>VerifyInformationModel.yes</em> and <em>era</em> is not a recognised era value</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create the identifier &#39;C34ad&#39; for Cenozoic isochron, major region 34, sub region a, sub region d:</span>
+<span class="n">polarity_chron_id_property</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GpmlPolarityChronId</span><span class="p">(</span><span class="s1">&#39;Cenozoic&#39;</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="s1">&#39;ad&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GpmlPolarityChronId.__init__" title="pygplates.GpmlPolarityChronId.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([era],&nbsp;[major_region],&nbsp;…)</td>
+<td>Create a polarity chron id property value.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">accept_visitor</span></code>(visitor)</td>
+<td>Accept a property value visitor so that it can visit this property value.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">clone</span></code>()</td>
+<td>Create a duplicate of this property value (derived) instance, including a recursive copy of any nested property values that this instance might contain.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GpmlPolarityChronId.get_era" title="pygplates.GpmlPolarityChronId.get_era"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_era</span></code></a>()</td>
+<td>Returns the era.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_geometry</span></code>()</td>
+<td>Extracts the <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">geometry</span></code></a> if this property value contains a geometry.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GpmlPolarityChronId.get_major_region" title="pygplates.GpmlPolarityChronId.get_major_region"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_major_region</span></code></a>()</td>
+<td>Returns the major region.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GpmlPolarityChronId.get_minor_region" title="pygplates.GpmlPolarityChronId.get_minor_region"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_minor_region</span></code></a>()</td>
+<td>Returns the minor region.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_value</span></code>([time=0])</td>
+<td>Extracts the value, of this possibly time-dependent property value, at the reconstruction <em>time</em>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GpmlPolarityChronId.set_era" title="pygplates.GpmlPolarityChronId.set_era"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_era</span></code></a>(era,&nbsp;…)</td>
+<td>Sets the era.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.GpmlPolarityChronId.set_major_region" title="pygplates.GpmlPolarityChronId.set_major_region"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_major_region</span></code></a>(major_region)</td>
+<td>Sets the major region.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GpmlPolarityChronId.set_minor_region" title="pygplates.GpmlPolarityChronId.set_minor_region"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_minor_region</span></code></a>(minor_region)</td>
+<td>Sets the minor region.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pygplates.GpmlPolarityChronId.get_era">
+<code class="descname">get_era</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPolarityChronId.get_era" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the era.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the era, or None if the era was not initialised</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string or None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPolarityChronId.get_major_region">
+<code class="descname">get_major_region</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPolarityChronId.get_major_region" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the major region.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the major region, or None if the major region was not initialised</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int or None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPolarityChronId.get_minor_region">
+<code class="descname">get_minor_region</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPolarityChronId.get_minor_region" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the minor region.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the minor region, or None if the minor region was not initialised</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string or None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPolarityChronId.set_era">
+<code class="descname">set_era</code><span class="sig-paren">(</span><em>era</em><span class="optional">[</span>, <em>verify_information_model=VerifyInformationModel.yes</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPolarityChronId.set_era" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the era.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>era</strong> (<em>string</em>) – the era of the chron (‘Cenozoic’ or ‘Mesozoic’)</li>
+<li><strong>verify_information_model</strong> (<em>VerifyInformationModel.yes</em> or <em>VerifyInformationModel.no</em>) – whether to check the information model for valid <em>era</em></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last">InformationModelError if <em>verify_information_model</em> is <em>VerifyInformationModel.yes</em> and <em>era</em> is not a recognised era string value</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPolarityChronId.set_major_region">
+<code class="descname">set_major_region</code><span class="sig-paren">(</span><em>major_region</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPolarityChronId.set_major_region" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the major region.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>major_region</strong> (<em>int</em>) – the number indicating the major region the chron is in - Cenozoic isochrons have been classified into broad regions identified by the numbers 1 to 34, Mesozoic isochrons use the numbers 1 to 29</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GpmlPolarityChronId.set_minor_region">
+<code class="descname">set_minor_region</code><span class="sig-paren">(</span><em>minor_region</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GpmlPolarityChronId.set_minor_region" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the minor region.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>minor_region</strong> (<em>string</em>) – the sequence of letters indicating the sub-region the chron is located in - the letters a-z are used for the initial sub-region, and if further polarity reversals have been discovered within that chron, a second letter is appended, and so on</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pygplates.GpmlPlateId.html"
+                        title="previous chapter">pygplates.GpmlPlateId</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pygplates.XsBoolean.html"
+                        title="next chapter">pygplates.XsBoolean</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/generated/pygplates.GpmlPolarityChronId.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pygplates.XsBoolean.html" title="pygplates.XsBoolean"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.GpmlPlateId.html" title="pygplates.GpmlPlateId"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" >Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
+(C) 2004-2020 California Institute of Technology
+(C) 2007-2020 The Geological Survey of Norway
+.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>

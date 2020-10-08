@@ -1,0 +1,27 @@
+pygplates.ReconstructedFeatureGeometry
+======================================
+
+.. currentmodule:: pygplates
+
+.. autoclass:: ReconstructedFeatureGeometry
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ReconstructedFeatureGeometry.__init__
+      ~ReconstructedFeatureGeometry.get_feature
+      ~ReconstructedFeatureGeometry.get_present_day_geometry
+      ~ReconstructedFeatureGeometry.get_property
+      ~ReconstructedFeatureGeometry.get_reconstructed_geometry
+      ~ReconstructedFeatureGeometry.get_reconstruction_time
+   
+   
+
+   
+   
+   

@@ -1,0 +1,286 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pygplates.FeatureCollectionFileFormatRegistry &#8212; pygplates 2.2.0.28 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pygplates.Feature" href="pygplates.Feature.html" />
+    <link rel="prev" title="pygplates.FeatureCollection" href="pygplates.FeatureCollection.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pygplates.Feature.html" title="pygplates.Feature"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.FeatureCollection.html" title="pygplates.FeatureCollection"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" accesskey="U">Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pygplates-featurecollectionfileformatregistry">
+<h1>pygplates.FeatureCollectionFileFormatRegistry<a class="headerlink" href="#pygplates-featurecollectionfileformatregistry" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pygplates.FeatureCollectionFileFormatRegistry">
+<em class="property">class </em><code class="descclassname">pygplates.</code><code class="descname">FeatureCollectionFileFormatRegistry</code><a class="headerlink" href="#pygplates.FeatureCollectionFileFormatRegistry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Boost.Python.instance</span></code></p>
+<p>Reads and writes <em>feature collections</em> from/to various <em>feature collection</em> file formats.</p>
+<p>The following default file formats are currently supported by GPlates:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="27%" />
+<col width="16%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">File Format</th>
+<th class="head">Filename Extension</th>
+<th class="head">Supports Read</th>
+<th class="head">Supports Write</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>GPlates Markup Language</td>
+<td>‘.gpml’</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="row-odd"><td>Compressed GPML</td>
+<td>‘.gpmlz’ or ‘.gpml.gz’</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="row-even"><td>PLATES4 line</td>
+<td>‘.dat’ or ‘.pla’</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="row-odd"><td>PLATES4 rotation</td>
+<td>‘.rot’</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="row-even"><td>GPlates rotation</td>
+<td>‘.grot’</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="row-odd"><td>ESRI Shapefile</td>
+<td>‘.shp’</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="row-even"><td>OGR GMT</td>
+<td>‘.gmt’</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="row-odd"><td>GMT xy</td>
+<td>‘.xy’</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr class="row-even"><td>GMAP Virtual Geomagnetic Poles</td>
+<td>‘.vgp’</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>In the future, support will be added to enable users to implement and register readers/writers for other file formats (or their own non-standard file formats).</p>
+<dl class="method">
+<dt id="pygplates.FeatureCollectionFileFormatRegistry.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FeatureCollectionFileFormatRegistry.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new registry of feature collection readers/writers and registers the default file formats supported by GPlates.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">feature_collection_file_format_registry</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureCollectionFileFormatRegistry</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.FeatureCollectionFileFormatRegistry.__init__" title="pygplates.FeatureCollectionFileFormatRegistry.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>()</td>
+<td>Create a new registry of feature collection readers/writers and registers the default file formats supported by GPlates.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.FeatureCollectionFileFormatRegistry.read" title="pygplates.FeatureCollectionFileFormatRegistry.read"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read</span></code></a>(filename)</td>
+<td>Reads one or more feature collections (from one or more files).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.FeatureCollectionFileFormatRegistry.write" title="pygplates.FeatureCollectionFileFormatRegistry.write"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write</span></code></a>(feature_collection,&nbsp;filename)</td>
+<td>Writes a feature collection to the file with name <em>filename</em>.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pygplates.FeatureCollectionFileFormatRegistry.read">
+<code class="descname">read</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FeatureCollectionFileFormatRegistry.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads one or more feature collections (from one or more files).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<em>string</em><em>, or </em><em>sequence of strings</em>) – the name of the file (or files) to read</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.FeatureCollection.html#pygplates.FeatureCollection" title="pygplates.FeatureCollection"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureCollection</span></code></a>, list of <a class="reference internal" href="pygplates.FeatureCollection.html#pygplates.FeatureCollection" title="pygplates.FeatureCollection"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureCollection</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">OpenFileForReadingError if any file is not readable</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body">FileFormatNotSupportedError if any file format (identified by a filename extension) does not support reading</td>
+</tr>
+</tbody>
+</table>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">feature_collection</span> <span class="o">=</span> <span class="n">feature_collection_file_format_registry</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">OpenFileForReadingError</span><span class="p">:</span>
+    <span class="c1"># Handle inability to read from file.</span>
+    <span class="o">...</span>
+<span class="k">except</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FileFormatNotSupportedError</span><span class="p">:</span>
+    <span class="c1"># Handle unsupported file format (for reading).</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The returned <em>feature collection</em> may contain fewer features than are stored in the file if there were read errors. <em>TODO:</em> return read errors.</p>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="pygplates.FeatureCollection.html#pygplates.FeatureCollection.read" title="pygplates.FeatureCollection.read"><code class="xref py py-meth docutils literal notranslate"><span class="pre">FeatureCollection.read()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.FeatureCollectionFileFormatRegistry.write">
+<code class="descname">write</code><span class="sig-paren">(</span><em>feature_collection</em>, <em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FeatureCollectionFileFormatRegistry.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes a feature collection to the file with name <em>filename</em>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>feature_collection</strong> (<a class="reference internal" href="pygplates.FeatureCollection.html#pygplates.FeatureCollection" title="pygplates.FeatureCollection"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureCollection</span></code></a>) – the feature collection to write</li>
+<li><strong>filename</strong> (<em>string</em>) – the name of the file to write</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first">OpenFileForWritingError if the file is not writable</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last">FileFormatNotSupportedError if the file format (identified by the filename extension) does not support writing</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">feature_collection_file_format_registry</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">feature_collection</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">OpenFileForWritingError</span><span class="p">:</span>
+    <span class="c1"># Handle inability to write to file.</span>
+    <span class="o">...</span>
+<span class="k">except</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FileFormatNotSupportedError</span><span class="p">:</span>
+    <span class="c1"># Handle unsupported file format (for writing).</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="pygplates.FeatureCollection.html#pygplates.FeatureCollection.write" title="pygplates.FeatureCollection.write"><code class="xref py py-meth docutils literal notranslate"><span class="pre">FeatureCollection.write()</span></code></a></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pygplates.FeatureCollection.html"
+                        title="previous chapter">pygplates.FeatureCollection</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pygplates.Feature.html"
+                        title="next chapter">pygplates.Feature</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/generated/pygplates.FeatureCollectionFileFormatRegistry.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pygplates.Feature.html" title="pygplates.Feature"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.FeatureCollection.html" title="pygplates.FeatureCollection"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" >Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
+(C) 2004-2020 California Institute of Technology
+(C) 2007-2020 The Geological Survey of Norway
+.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,581 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pygplates.FiniteRotation &#8212; pygplates 2.2.0.28 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pygplates.ReconstructionTree" href="pygplates.ReconstructionTree.html" />
+    <link rel="prev" title="pygplates.RotationModel" href="pygplates.RotationModel.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pygplates.ReconstructionTree.html" title="pygplates.ReconstructionTree"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.RotationModel.html" title="pygplates.RotationModel"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" accesskey="U">Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pygplates-finiterotation">
+<h1>pygplates.FiniteRotation<a class="headerlink" href="#pygplates-finiterotation" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pygplates.FiniteRotation">
+<em class="property">class </em><code class="descclassname">pygplates.</code><code class="descname">FiniteRotation</code><a class="headerlink" href="#pygplates.FiniteRotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Boost.Python.instance</span></code></p>
+<p>Represents the motion of plates on the surface of the globe.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For general information on composing finite rotations in various plate tectonic scenarios see <a class="reference internal" href="../pygplates_foundations.html#pygplates-foundations-working-with-finite-rotations"><span class="std std-ref">Working with finite rotations</span></a>.</p>
+</div>
+<p>A finite rotation is a rotation about an <em>Euler pole</em> by an angular distance. An Euler pole is represented by a point on the surface of the globe where a rotation vector (radially extending from the centre of the globe) intersects the surface of the (unit radius) globe.</p>
+<p>An Euler pole is specified by a point on the surface of the globe.</p>
+<p>A rotation angle is specified in radians, with the usual sense of rotation:</p>
+<ul class="simple">
+<li>a positive angle represents an anti-clockwise rotation around the rotation vector,</li>
+<li>a negative angle corresponds to a clockwise rotation.</li>
+</ul>
+<p>A finite rotation can be <a class="reference internal" href="#pygplates.FiniteRotation.__init__" title="pygplates.FiniteRotation.__init__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">created</span></code></a>:</p>
+<ul class="simple">
+<li>explicitly from an Euler pole and an angle, or</li>
+<li>from two points (rotates one point to the other along great circle arc), or</li>
+<li>as an <a class="reference internal" href="#pygplates.FiniteRotation.create_identity_rotation" title="pygplates.FiniteRotation.create_identity_rotation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">identity</span></code></a> rotation (no rotation).</li>
+</ul>
+<p>The Euler pole and angle can be retrieved using:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#pygplates.FiniteRotation.get_euler_pole_and_angle" title="pygplates.FiniteRotation.get_euler_pole_and_angle"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_euler_pole_and_angle()</span></code></a> as a tuple of Euler pole and angle (radians), or</li>
+<li><a class="reference internal" href="#pygplates.FiniteRotation.get_lat_lon_euler_pole_and_angle_degrees" title="pygplates.FiniteRotation.get_lat_lon_euler_pole_and_angle_degrees"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_lat_lon_euler_pole_and_angle_degrees()</span></code></a> as a tuple of Euler pole latitude and longitude and angle (all in degrees).</li>
+</ul>
+<p>Multiplication operations can be used to rotate various geometry types:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Operation</th>
+<th class="head">Result</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">fr</span> <span class="pre">*</span> <span class="pre">vector</span></code></td>
+<td>Rotates <a class="reference internal" href="pygplates.Vector3D.html#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a> <em>vector</em> using finite rotation <em>fr</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">fr</span> <span class="pre">*</span> <span class="pre">point</span></code></td>
+<td>Rotates <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> <em>point</em> using finite rotation <em>fr</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">fr</span> <span class="pre">*</span> <span class="pre">multi_point</span></code></td>
+<td>Rotates <a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a> <em>multi_point</em> using finite rotation <em>fr</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">fr</span> <span class="pre">*</span> <span class="pre">polyline</span></code></td>
+<td>Rotates <a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> <em>polyline</em> using finite rotation <em>fr</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">fr</span> <span class="pre">*</span> <span class="pre">polygon</span></code></td>
+<td>Rotates <a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere" title="pygplates.PolygonOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonOnSphere</span></code></a> <em>polygon</em> using finite rotation <em>fr</em></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">fr</span> <span class="pre">*</span> <span class="pre">great_circle_arc</span></code></td>
+<td>Rotates <a class="reference internal" href="pygplates.GreatCircleArc.html#pygplates.GreatCircleArc" title="pygplates.GreatCircleArc"><code class="xref py py-class docutils literal notranslate"><span class="pre">GreatCircleArc</span></code></a> <em>great_circle_arc</em> using finite rotation <em>fr</em></td>
+</tr>
+</tbody>
+</table>
+<p>For example, the rotation of a <a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">polyline</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">PolylineOnSphere</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">(</span><span class="n">pole</span><span class="p">,</span> <span class="n">angle</span><span class="p">)</span>
+<span class="n">rotated_polyline</span> <span class="o">=</span> <span class="n">finite_rotation</span> <span class="o">*</span> <span class="n">polyline</span>
+</pre></div>
+</div>
+<p>The distance that a point is rotated along its small circle rotation arc can be found using <a class="reference internal" href="#pygplates.FiniteRotation.get_rotation_distance" title="pygplates.FiniteRotation.get_rotation_distance"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_rotation_distance()</span></code></a>.</p>
+<p>Two finite rotations can be composed in either of the following equivalent ways:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">composed_finite_rotation</span> <span class="pre">=</span> <span class="pre">finite_rotation1</span> <span class="pre">*</span> <span class="pre">finite_rotation2</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">composed_finite_rotation</span> <span class="pre">=</span> <span class="pre">pygplates.FiniteRotation.compose(finite_rotation1,</span> <span class="pre">finite_rotation2)</span></code></li>
+</ul>
+<p>The latter technique uses <a class="reference internal" href="#pygplates.FiniteRotation.compose" title="pygplates.FiniteRotation.compose"><code class="xref py py-meth docutils literal notranslate"><span class="pre">compose()</span></code></a>. Note that rotation composition is <em>not</em> commutative (<span class="math notranslate nohighlight">\(A \times B \neq B \times A\)</span>).</p>
+<p>The reverse, or inverse, of a finite rotation can be found using <a class="reference internal" href="#pygplates.FiniteRotation.get_inverse" title="pygplates.FiniteRotation.get_inverse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_inverse()</span></code></a>.</p>
+<p>Two finite rotations can be interpolated using <a class="reference internal" href="#pygplates.FiniteRotation.interpolate" title="pygplates.FiniteRotation.interpolate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">interpolate()</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">interpolated_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">finite_rotation1</span><span class="p">,</span> <span class="n">finite_rotation2</span><span class="p">,</span> <span class="n">time1</span><span class="p">,</span> <span class="n">time2</span><span class="p">,</span> <span class="n">target_time</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Finite rotations are equality (<code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">!=</span></code>) comparable (but not hashable - cannot be used as a key in a <code class="docutils literal notranslate"><span class="pre">dict</span></code>).</p>
+<p>Finite rotations can also be compared using <a class="reference internal" href="#pygplates.FiniteRotation.are_equivalent" title="pygplates.FiniteRotation.are_equivalent"><code class="xref py py-meth docutils literal notranslate"><span class="pre">are_equivalent()</span></code></a> to detect equivalent rotations (that rotate a geometry to the same final position but might rotate in opposite directions around the globe). A finite rotation can be tested to see if it is an <a class="reference internal" href="#pygplates.FiniteRotation.represents_identity_rotation" title="pygplates.FiniteRotation.represents_identity_rotation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">identity</span></code></a> rotation (no rotation).</p>
+<dl class="method">
+<dt id="pygplates.FiniteRotation.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FiniteRotation.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>A <em>FiniteRotation</em> object can be constructed in more than one way…</p>
+<dl class="docutils">
+<dt>__init__(pole, angle_radians)</dt>
+<dd><p class="first">Create a finite rotation from an Euler pole and a rotation angle (in <em>radians</em>).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">param pole:</th><td class="field-body">the Euler pole.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">type pole:</th><td class="field-body"><a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (latitude,longitude), in degrees, or tuple (x,y,z)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">param angle_radians:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">the rotation angle (in <em>radians</em>).</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">type angle_radians:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">float</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">raises:</th><td class="field-body">InvalidLatLonError if <em>latitude</em> or <em>longitude</em> is invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">raises:</th><td class="field-body">ViolatedUnitVectorInvariantError if (x,y,z) is not unit magnitude</td>
+</tr>
+</tbody>
+</table>
+<p>The following example shows a few different ways to use this method:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">(</span><span class="n">pygplates</span><span class="o">.</span><span class="n">PointOnSphere</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">),</span> <span class="n">angle_radians</span><span class="p">)</span>
+<span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">((</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">),</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">angle_degrees</span><span class="p">))</span>
+<span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">([</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">],</span> <span class="n">angle_radians</span><span class="p">)</span>
+<span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">]),</span> <span class="n">angle_radians</span><span class="p">)</span>
+<span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">(</span><span class="n">pygplates</span><span class="o">.</span><span class="n">LatLonPoint</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span><span class="n">longitude</span><span class="p">),</span> <span class="n">angle_radians</span><span class="p">)</span>
+<span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">((</span><span class="n">latitude</span><span class="p">,</span><span class="n">longitude</span><span class="p">),</span> <span class="n">angle_radians</span><span class="p">)</span>
+<span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">([</span><span class="n">latitude</span><span class="p">,</span><span class="n">longitude</span><span class="p">],</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">angle_degrees</span><span class="p">))</span>
+<span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">latitude</span><span class="p">,</span><span class="n">longitude</span><span class="p">]),</span> <span class="n">angle_radians</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+<dt>__init__(from_point, to_point)</dt>
+<dd><p class="first">Create a finite rotation that rotates one point to another along the great circle arc connecting them.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">param from_point:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">the point to rotate <em>from</em></td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">type from_point:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (latitude,longitude), in degrees, or tuple (x,y,z)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">param to_point:</th><td class="field-body">the point to rotate <em>to</em></td>
+</tr>
+<tr class="field-even field"><th class="field-name">type to_point:</th><td class="field-body"><a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (latitude,longitude), in degrees, or tuple (x,y,z)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">raises:</th><td class="field-body">InvalidLatLonError if <em>latitude</em> or <em>longitude</em> is invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">raises:</th><td class="field-body">ViolatedUnitVectorInvariantError if (x,y,z) is not unit magnitude</td>
+</tr>
+</tbody>
+</table>
+<p>If <em>from_point</em> and <em>to_point</em> are the same or antipodal (opposite sides of globe) then an arbitrary rotation axis (among the infinite possible choices) is selected.</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">(</span><span class="n">from_point</span><span class="p">,</span> <span class="n">to_point</span><span class="p">)</span>
+<span class="c1"># assert(to_point == finite_rotation * from_point)</span>
+</pre></div>
+</div>
+</dd>
+<dt>__init__()</dt>
+<dd><p class="first">Creates a finite rotation that does not rotate (it maps a vector onto the same vector).</p>
+<p>Equivalent to <a class="reference internal" href="#pygplates.FiniteRotation.create_identity_rotation" title="pygplates.FiniteRotation.create_identity_rotation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_identity_rotation()</span></code></a>.</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">identity_finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.FiniteRotation.__init__" title="pygplates.FiniteRotation.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(…)</td>
+<td>A <em>FiniteRotation</em> object can be constructed in more than one way…</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.FiniteRotation.are_equal" title="pygplates.FiniteRotation.are_equal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">are_equal</span></code></a>(finite_rotation1,&nbsp;…)</td>
+<td>[<em>staticmethod</em>] Return whether two finite rotations have equal pole latitude, longitude and angle to within a threshold in degrees.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.FiniteRotation.are_equivalent" title="pygplates.FiniteRotation.are_equivalent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">are_equivalent</span></code></a>(finite_rotation1,&nbsp;…)</td>
+<td>[<em>staticmethod</em>] Return whether two finite rotations represent equivalent rotations.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.FiniteRotation.compose" title="pygplates.FiniteRotation.compose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compose</span></code></a>(finite_rotation1,&nbsp;finite_rotation2)</td>
+<td>[<em>staticmethod</em>] Composes two finite rotations and returns the composed finite rotation.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.FiniteRotation.create_identity_rotation" title="pygplates.FiniteRotation.create_identity_rotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_identity_rotation</span></code></a>()</td>
+<td>[<em>staticmethod</em>] Creates a finite rotation that does not rotate (it maps a vector onto the same vector).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.FiniteRotation.get_euler_pole_and_angle" title="pygplates.FiniteRotation.get_euler_pole_and_angle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_euler_pole_and_angle</span></code></a>(…)</td>
+<td>Return the (pole, angle) representing finite rotation.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.FiniteRotation.get_inverse" title="pygplates.FiniteRotation.get_inverse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_inverse</span></code></a>()</td>
+<td>Return the inverse of this finite rotation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.FiniteRotation.get_lat_lon_euler_pole_and_angle_degrees" title="pygplates.FiniteRotation.get_lat_lon_euler_pole_and_angle_degrees"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_lat_lon_euler_pole_and_angle_degrees</span></code></a>(…)</td>
+<td>Return the finite rotation as a tuple of pole latitude, pole longitude and  angle (all in degrees).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.FiniteRotation.get_rotation_distance" title="pygplates.FiniteRotation.get_rotation_distance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_rotation_distance</span></code></a>(point)</td>
+<td>Return the distance that a point rotates along its small circle rotation arc (in radians).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.FiniteRotation.interpolate" title="pygplates.FiniteRotation.interpolate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">interpolate</span></code></a>(finite_rotation1,&nbsp;…)</td>
+<td>[<em>staticmethod</em>] Calculate the finite rotation which is the interpolation of two finite rotations.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.FiniteRotation.represents_identity_rotation" title="pygplates.FiniteRotation.represents_identity_rotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">represents_identity_rotation</span></code></a>()</td>
+<td>Return whether this finite rotation represents an identity rotation (a rotation which maps a vector onto the same vector).</td>
+</tr>
+</tbody>
+</table>
+<dl class="staticmethod">
+<dt id="pygplates.FiniteRotation.are_equal">
+<em class="property">static </em><code class="descname">are_equal</code><span class="sig-paren">(</span><em>finite_rotation1</em>, <em>finite_rotation2</em><span class="optional">[</span>, <em>threshold_degrees</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FiniteRotation.are_equal" title="Permalink to this definition">¶</a></dt>
+<dd><p>[<em>staticmethod</em>] Return whether two finite rotations have equal pole latitude, longitude and angle to within a threshold in degrees.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>finite_rotation1</strong> (<a class="reference internal" href="#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a>) – the first finite rotation</li>
+<li><strong>finite_rotation2</strong> (<a class="reference internal" href="#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a>) – the second finite rotation</li>
+<li><strong>threshold_degrees</strong> (<em>float</em>) – optional closeness threshold in degrees</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>If <em>threshold_degrees</em> is <em>not</em> specified then this function is the same as equality comparison (<code class="docutils literal notranslate"><span class="pre">==</span></code>).</p>
+<p>If <em>threshold_degrees</em> is specified then <em>finite_rotation1</em> and <em>finite_rotation2</em> compare equal if both pole latitudes and both pole longitudes and both angles are within <em>threshold_degrees</em> degrees of each other.</p>
+<p>Using a threshold in latitude/longitude coordinates is subject to longitude compression at the North and South poles. However these coordinates are useful when comparing finite rotations loaded from a text file that stores rotations using these coordinates (such as PLATES rotation format) and that typically stores values with limited precision.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Are two finite rotations equal to within 0.01 degrees.</span>
+<span class="c1"># This is useful when the rotations were loaded from a PLATES rotation file</span>
+<span class="c1"># that stored rotation lat/lon/angle to 2 decimal places accuracy.</span>
+<span class="k">if</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="o">.</span><span class="n">are_equal</span><span class="p">(</span><span class="n">finite_rotation1</span><span class="p">,</span> <span class="n">finite_rotation2</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">):</span>
+    <span class="o">....</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pygplates.FiniteRotation.are_equivalent">
+<em class="property">static </em><code class="descname">are_equivalent</code><span class="sig-paren">(</span><em>finite_rotation1</em>, <em>finite_rotation2</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FiniteRotation.are_equivalent" title="Permalink to this definition">¶</a></dt>
+<dd><p>[<em>staticmethod</em>] Return whether two finite rotations represent equivalent rotations.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>finite_rotation1</strong> (<a class="reference internal" href="#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a>) – the first finite rotation</li>
+<li><strong>finite_rotation2</strong> (<a class="reference internal" href="#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a>) – the second finite rotation</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Two rotations are equivalent if they rotate a geometry to the same final location. This includes rotating in opposite directions around the globe.</p>
+<p>Some examples of equivalent rotations:</p>
+<ol class="arabic simple">
+<li>Negating a finite rotation’s Euler pole (making it antipodal) and negating its angle.</li>
+<li>Negating a finite rotation’s Euler pole (making it antipodal) and setting its angle to ‘360 - angle’ degrees (making the rotation go the other way around the globe).</li>
+<li>Setting a finite rotation’s angle to ‘angle - 360’ degrees (making the rotation go the other way around the globe).</li>
+</ol>
+<p>Note that in (1) the finite rotations also compare equal (<code class="docutils literal notranslate"><span class="pre">==</span></code>), even though they were created with a different pole/angle, whereas in (2) and (3) the finite rotations compare unequal (<code class="docutils literal notranslate"><span class="pre">!=</span></code>). This is because (1) generates the exact same rotation whereas (2) and (3) generate rotations that go the opposite direction around the globe. Note however that all three rotations are still <em>equivalent</em>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="o">.</span><span class="n">are_equivalent</span><span class="p">(</span><span class="n">finite_rotation1</span><span class="p">,</span> <span class="n">finite_rotation2</span><span class="p">):</span>
+    <span class="o">....</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pygplates.FiniteRotation.compose">
+<em class="property">static </em><code class="descname">compose</code><span class="sig-paren">(</span><em>finite_rotation1</em>, <em>finite_rotation2</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FiniteRotation.compose" title="Permalink to this definition">¶</a></dt>
+<dd><p>[<em>staticmethod</em>] Composes two finite rotations and returns the composed finite rotation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>finite_rotation1</strong> (<a class="reference internal" href="#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a>) – the left-hand-side finite rotation</li>
+<li><strong>finite_rotation2</strong> (<a class="reference internal" href="#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a>) – the right-hand-side finite rotation</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This method does the same as <code class="docutils literal notranslate"><span class="pre">finite_rotation1</span> <span class="pre">*</span> <span class="pre">finite_rotation2</span></code>.</p>
+<p>See <a class="reference internal" href="../pygplates_foundations.html#pygplates-foundations-working-with-finite-rotations"><span class="std std-ref">Working with finite rotations</span></a> for more details on composing finite rotations.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">composed_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="o">.</span><span class="n">compose</span><span class="p">(</span><span class="n">finite_rotation1</span><span class="p">,</span> <span class="n">finite_rotation2</span><span class="p">)</span>
+<span class="c1">#...or...</span>
+<span class="n">composed_rotation</span> <span class="o">=</span> <span class="n">finite_rotation1</span> <span class="o">*</span> <span class="n">finite_rotation2</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pygplates.FiniteRotation.create_identity_rotation">
+<em class="property">static </em><code class="descname">create_identity_rotation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FiniteRotation.create_identity_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>[<em>staticmethod</em>] Creates a finite rotation that does not rotate (it maps a vector onto the same vector).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>To determine if a finite rotation is an identity rotation use <a class="reference internal" href="#pygplates.FiniteRotation.represents_identity_rotation" title="pygplates.FiniteRotation.represents_identity_rotation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">represents_identity_rotation()</span></code></a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">identity_finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="o">.</span><span class="n">create_identity_rotation</span><span class="p">()</span>
+<span class="c1"># assert(identity_finite_rotation.represents_identity_rotation())</span>
+
+<span class="c1"># The rotated point and original point are at the same position.</span>
+<span class="n">rotated_point</span> <span class="o">=</span> <span class="n">identity_finite_rotation</span> <span class="o">*</span> <span class="n">point</span>
+</pre></div>
+</div>
+<p>An alternative way to create an identity rotation is with <em>any</em> Euler pole and a <em>zero</em> angle:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">identity_finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">(</span><span class="n">any_euler_pole</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.FiniteRotation.get_euler_pole_and_angle">
+<code class="descname">get_euler_pole_and_angle</code><span class="sig-paren">(</span><span class="optional">[</span><em>use_north_pole_for_identity=True</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FiniteRotation.get_euler_pole_and_angle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the (pole, angle) representing finite rotation.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The returned angle is in <em>radians</em>.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>use_north_pole_for_identity</strong> (<em>bool</em>) – whether to return the north pole axis (and zero angle) for an <a class="reference internal" href="#pygplates.FiniteRotation.represents_identity_rotation" title="pygplates.FiniteRotation.represents_identity_rotation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">identity</span> <span class="pre">rotation</span></code></a> or raise IndeterminateResultError (default is to return north pole axis)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the tuple of (pole, angle_radians)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tuple (<a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>, float)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body">IndeterminateResultError if <em>use_north_pole_for_identity</em> is <code class="docutils literal notranslate"><span class="pre">False</span></code> and this finite rotation represents the identity rotation</td>
+</tr>
+</tbody>
+</table>
+<p>If <a class="reference internal" href="#pygplates.FiniteRotation.represents_identity_rotation" title="pygplates.FiniteRotation.represents_identity_rotation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">represents_identity_rotation()</span></code></a> returns <code class="docutils literal notranslate"><span class="pre">True</span></code> then this method will return the north pole axis (and zero angle) if <em>use_north_pole_for_identity</em> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, otherwise <em>IndeterminateResultError</em> is raised.</p>
+<p>Alternatively <a class="reference internal" href="#pygplates.FiniteRotation.get_lat_lon_euler_pole_and_angle_degrees" title="pygplates.FiniteRotation.get_lat_lon_euler_pole_and_angle_degrees"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_lat_lon_euler_pole_and_angle_degrees()</span></code></a> can be used to return the euler pole as latitude/longitude and angle (all in degrees).</p>
+<p>Note that (pole, angle) and (-pole, -angle) represent equivalent rotations (see <a class="reference internal" href="#pygplates.FiniteRotation.are_equivalent" title="pygplates.FiniteRotation.are_equivalent"><code class="xref py py-meth docutils literal notranslate"><span class="pre">are_equivalent()</span></code></a>) and either could be returned. However, if this finite rotation was created with <em>__init__(pole, angle)</em> then the same pole and angle will be returned here.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">(</span><span class="n">pole</span><span class="p">,</span> <span class="n">angle_radians</span><span class="p">)</span>
+<span class="n">pole</span><span class="p">,</span> <span class="n">angle_radians</span> <span class="o">=</span> <span class="n">finite_rotation</span><span class="o">.</span><span class="n">get_euler_pole_and_angle</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.FiniteRotation.get_inverse">
+<code class="descname">get_inverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FiniteRotation.get_inverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the inverse of this finite rotation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The inverse represents the reverse rotation as the following code demonstrates:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotated_point</span> <span class="o">=</span> <span class="n">finite_rotation</span> <span class="o">*</span> <span class="n">point</span>
+<span class="n">original_point</span> <span class="o">=</span> <span class="n">finite_rotation</span><span class="o">.</span><span class="n">get_inverse</span><span class="p">()</span> <span class="o">*</span> <span class="n">rotated_point</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.FiniteRotation.get_lat_lon_euler_pole_and_angle_degrees">
+<code class="descname">get_lat_lon_euler_pole_and_angle_degrees</code><span class="sig-paren">(</span><span class="optional">[</span><em>use_north_pole_for_identity=True</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FiniteRotation.get_lat_lon_euler_pole_and_angle_degrees" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the finite rotation as a tuple of pole latitude, pole longitude and  angle (all in degrees).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The returned angle is in <em>degrees</em> (as are the latitude and longitude).</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>use_north_pole_for_identity</strong> (<em>bool</em>) – whether to return the north pole axis (and zero angle) for an <a class="reference internal" href="#pygplates.FiniteRotation.represents_identity_rotation" title="pygplates.FiniteRotation.represents_identity_rotation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">identity</span> <span class="pre">rotation</span></code></a> or raise IndeterminateResultError (default is to return north pole axis)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the tuple of (pole_latitude, pole_longitude, angle_degrees) all in <em>degrees</em></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tuple (float, float, float)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body">IndeterminateResultError if <em>use_north_pole_for_identity</em> is <code class="docutils literal notranslate"><span class="pre">False</span></code> and this finite rotation represents the identity rotation</td>
+</tr>
+</tbody>
+</table>
+<p>If <a class="reference internal" href="#pygplates.FiniteRotation.represents_identity_rotation" title="pygplates.FiniteRotation.represents_identity_rotation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">represents_identity_rotation()</span></code></a> returns <code class="docutils literal notranslate"><span class="pre">True</span></code> then this method will return the north pole axis (and zero angle) if <em>use_north_pole_for_identity</em> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, otherwise <em>IndeterminateResultError</em> is raised.</p>
+<p>Note that (latitude, longitude, angle) and (-latitude, longitude-180, -angle) represent equivalent rotations (see <a class="reference internal" href="#pygplates.FiniteRotation.are_equivalent" title="pygplates.FiniteRotation.are_equivalent"><code class="xref py py-meth docutils literal notranslate"><span class="pre">are_equivalent()</span></code></a>) and either could be returned. However, if this finite rotation was created with <em>__init__(pole, angle)</em> then the same pole and angle will be returned here.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">(</span><span class="n">pole</span><span class="p">,</span> <span class="n">angle_radians</span><span class="p">)</span>
+<span class="n">pole_latitude</span><span class="p">,</span> <span class="n">pole_longitude</span><span class="p">,</span> <span class="n">angle_degrees</span> <span class="o">=</span> <span class="n">finite_rotation</span><span class="o">.</span><span class="n">get_lat_lon_euler_pole_and_angle_degrees</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.FiniteRotation.get_rotation_distance">
+<code class="descname">get_rotation_distance</code><span class="sig-paren">(</span><em>point</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FiniteRotation.get_rotation_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the distance that a point rotates along its small circle rotation arc (in radians).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>point</strong> (<a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (latitude,longitude), in degrees, or tuple (x,y,z)) – the point being rotated (the start point of the rotation arc)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+<p>Returns the distance along the (small circle) rotation arc from the start point <em>point</em> to the end point <code class="docutils literal notranslate"><span class="pre">finite_rotation</span> <span class="pre">*</span> <span class="pre">point</span></code>. Note that the returned distance is not the angle of rotation - it is the actual distance on the unit radius sphere (hence radians). To convert to distance on the Earth’s surface multiply by the Earth radius (see <a class="reference internal" href="pygplates.Earth.html#pygplates.Earth" title="pygplates.Earth"><code class="xref py py-class docutils literal notranslate"><span class="pre">Earth</span></code></a>).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotated_distance_radians</span> <span class="o">=</span> <span class="n">finite_rotation</span><span class="o">.</span><span class="n">get_rotation_distance</span><span class="p">(</span><span class="n">point</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pygplates.FiniteRotation.interpolate">
+<em class="property">static </em><code class="descname">interpolate</code><span class="sig-paren">(</span><em>finite_rotation1</em>, <em>finite_rotation2</em>, <em>time1</em>, <em>time2</em>, <em>target_time</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FiniteRotation.interpolate" title="Permalink to this definition">¶</a></dt>
+<dd><p>[<em>staticmethod</em>] Calculate the finite rotation which is the interpolation of two finite rotations.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>finite_rotation1</strong> (<a class="reference internal" href="#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a>) – the left-hand-side finite rotation</li>
+<li><strong>finite_rotation2</strong> (<a class="reference internal" href="#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a>) – the right-hand-side finite rotation</li>
+<li><strong>time1</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>) – the time associated with the left-hand-side finite rotation</li>
+<li><strong>time2</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>) – the time associated with the right-hand-side finite rotation</li>
+<li><strong>target_time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>) – the time associated with the result of the interpolation</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last">InterpolationError if any time value is <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant.is_distant_past" title="pygplates.GeoTimeInstant.is_distant_past"><code class="xref py py-meth docutils literal notranslate"><span class="pre">distant</span> <span class="pre">past</span></code></a> or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant.is_distant_future" title="pygplates.GeoTimeInstant.is_distant_future"><code class="xref py py-meth docutils literal notranslate"><span class="pre">distant</span> <span class="pre">future</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The finite rotations <em>finite_rotation1</em> and <em>finite_rotation2</em> are associated with times <em>time1</em> and <em>time2</em>, respectively. The result of the interpolation is associated with <em>target_time</em>. The interpolated finite rotation is generated using Spherical Linear intERPolation (SLERP) with the interpolation factor <code class="docutils literal notranslate"><span class="pre">(target_time</span> <span class="pre">-</span> <span class="pre">time1)</span> <span class="pre">/</span> <span class="pre">(time2</span> <span class="pre">-</span> <span class="pre">time1)</span></code>.</p>
+<p><em>target_time</em> can be any time - it does not have to be between <em>time1</em> and <em>time2</em>.</p>
+<p>If <em>time1</em> and <em>time2</em> are equal then <em>finite_rotation1</em> is returned.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">interpolated_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">finite_rotation1</span><span class="p">,</span> <span class="n">finite_rotation2</span><span class="p">,</span> <span class="n">time1</span><span class="p">,</span> <span class="n">time2</span><span class="p">,</span> <span class="n">target_time</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.FiniteRotation.represents_identity_rotation">
+<code class="descname">represents_identity_rotation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FiniteRotation.represents_identity_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether this finite rotation represents an identity rotation (a rotation which maps a vector onto the same vector).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create an identity rotation using zero angle and any pole location.</span>
+<span class="n">identity_finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="p">(</span><span class="n">any_pole</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="c1"># assert(identity_finite_rotation.represents_identity_rotation())</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pygplates.RotationModel.html"
+                        title="previous chapter">pygplates.RotationModel</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pygplates.ReconstructionTree.html"
+                        title="next chapter">pygplates.ReconstructionTree</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/generated/pygplates.FiniteRotation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pygplates.ReconstructionTree.html" title="pygplates.ReconstructionTree"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.RotationModel.html" title="pygplates.RotationModel"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" >Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
+(C) 2004-2020 California Institute of Technology
+(C) 2007-2020 The Geological Survey of Norway
+.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>

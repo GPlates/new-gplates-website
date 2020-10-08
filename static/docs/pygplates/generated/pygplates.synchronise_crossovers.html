@@ -1,0 +1,363 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pygplates.synchronise_crossovers &#8212; pygplates 2.2.0.28 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pygplates.partition_into_plates" href="pygplates.partition_into_plates.html" />
+    <link rel="prev" title="pygplates.find_crossovers" href="pygplates.find_crossovers.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pygplates.partition_into_plates.html" title="pygplates.partition_into_plates"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.find_crossovers.html" title="pygplates.find_crossovers"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" accesskey="U">Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pygplates-synchronise-crossovers">
+<h1>pygplates.synchronise_crossovers<a class="headerlink" href="#pygplates-synchronise-crossovers" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pygplates.synchronise_crossovers">
+<code class="descclassname">pygplates.</code><code class="descname">synchronise_crossovers</code><span class="sig-paren">(</span><em>rotation_features</em><span class="optional">[</span>, <em>crossover_filter</em><span class="optional">]</span><span class="optional">[</span>, <em>crossover_threshold_degrees</em><span class="optional">]</span><span class="optional">[</span>, <em>crossover_type_function=CrossoverTypeFunction.type_from_xo_tags_in_comment</em><span class="optional">]</span><span class="optional">[</span>, <em>crossover_results</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.synchronise_crossovers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Synchronise crossovers in rotation features.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>rotation_features</strong> (<a class="reference internal" href="pygplates.FeatureCollection.html#pygplates.FeatureCollection" title="pygplates.FeatureCollection"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureCollection</span></code></a>, or string, or <a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>,         or sequence of <a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>, or sequence of any combination of those four types) – A rotation feature collection, or rotation filename, or         rotation feature, or sequence of rotation features, or a sequence (eg, <code class="docutils literal notranslate"><span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">tuple</span></code>)         of any combination of those four types - all features are used as input and output</li>
+<li><strong>crossover_filter</strong> (<em>a callable accepting a single named-tuple 'Crossover' argument</em><em>, or         </em><em>a sequence of named-tuple 'Crossover'</em><em>, or </em><em>None</em>) – Optional predicate function (accepting a single crossover argument) that determines         which crossovers (in <em>rotation_features</em>) to synchronise, or an optional sequence of crossovers (in any order) to         synchronise - if nothing is specified then all crossovers (in <em>rotation_features</em>) are synchronised -         a crossover is a named-tuple ‘Crossover’ (see table below)</li>
+<li><strong>crossover_threshold_degrees</strong> (<em>float</em><em> or </em><em>None</em>) – If specified then crossovers are synchronised only if the         old-crossover rotation latitude, longitude or angle differ from those in young-crossover rotation by         more than this amount</li>
+<li><strong>crossover_type_function</strong> (a callable, or a <em>CrossoverType</em> enumerated value,         or can also be None if <em>crossover_filter</em> is a sequence (since it then gets ignored)) – A function that determines a crossover’s type, or one of the         <em>CrossoverType</em> enumerated values, or <em>CrossoverTypeFunction.type_from_xo_tags_in_comment</em> if using default         scheme for determining crossover type (see below) - default is <em>CrossoverTypeFunction.type_from_xo_tags_in_comment</em></li>
+<li><strong>crossover_results</strong> (<em>list</em><em> or </em><em>None</em>) – If specified then a tuple of (Crossover, int) is appended for each filtered         crossover where the integer value is <em>CrossoverResult.synchronised</em> if the crossover was synchronised, or         <em>CrossoverResult.not_synchronised</em> if the crossover did not require synchronising, or         <em>CrossoverResult.ignored</em> if the crossover was ignored (due to a crossover type of <em>CrossoverType.ignore</em>), or         <em>CrossoverResult.error</em> if the crossover was unable to be processed (due to a crossover type of         <em>CrossoverType.unknown</em>) - the list is sorted by crossover time - default is None</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">True on success. False if the type of any crossover is <em>CrossoverType.unknown</em> (which         generates a <em>CrossoverResult.error</em> in <em>crossover_results</em>, if specified, due to inability to         process crossover). Also returns False if unable to synchronise all crossovers due to an infinite         cycle between crossovers. In all cases (success or failure) as many crossovers as possible will be         processed and results saved to rotation features (and rotation files, if any).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A crossover occurs when the motion of a (moving) plate crosses over from one (fixed) plate to move relative
+to another (fixed) plate at a particular geological time. Synchronising a crossover involves adjusting the finite rotations
+before (older) the crossover to match the finite rotation after (younger) the crossover, or vice versa depending on
+the type of crossover.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Younger means more recent (smaller time values) and older means less recent (larger time values).</p>
+</div>
+<p>A crossover is represented as a named-tuple ‘Crossover’ with the following named elements:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="23%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><em>type</em></td>
+<td>int</td>
+<td>One of the enumerated values of <em>CrossoverType</em> (see table below).</td>
+</tr>
+<tr class="row-odd"><td><em>time</em></td>
+<td>float</td>
+<td>The crossover time.</td>
+</tr>
+<tr class="row-even"><td><em>moving_plate_id</em></td>
+<td>int</td>
+<td>The moving plate ID.</td>
+</tr>
+<tr class="row-odd"><td><em>young_crossover_fixed_plate_id</em></td>
+<td>int</td>
+<td>The fixed plate ID after (younger than) the crossover.</td>
+</tr>
+<tr class="row-even"><td><em>old_crossover_fixed_plate_id</em></td>
+<td>int</td>
+<td>The fixed plate ID before (older than) the crossover.</td>
+</tr>
+<tr class="row-odd"><td><em>young_crossover_rotation_sequence</em></td>
+<td>list of <a class="reference internal" href="pygplates.GpmlFiniteRotation.html#pygplates.GpmlFiniteRotation" title="pygplates.GpmlFiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlFiniteRotation</span></code></a></td>
+<td>The time sequence of <em>enabled</em> finite rotations after (younger than) the crossover.</td>
+</tr>
+<tr class="row-even"><td><em>old_crossover_rotation_sequence</em></td>
+<td>list of <a class="reference internal" href="pygplates.GpmlFiniteRotation.html#pygplates.GpmlFiniteRotation" title="pygplates.GpmlFiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlFiniteRotation</span></code></a></td>
+<td>The time sequence of <em>enabled</em> finite rotations before (older than) the crossover.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="pygplates.find_crossovers.html#pygplates.find_crossovers" title="pygplates.find_crossovers"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_crossovers()</span></code></a> for more information on the young/old rotation sequences in named-tuple ‘Crossover’.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><em>rotation_features</em> should contain all features that directly or indirectly affect the crossovers to be
+synchronised (typically <em>rotation_features</em> is one or more rotation files), otherwise crossovers may not be correctly synchronised.</p>
+</div>
+<p>Synchronising crossovers results in modifications to <em>rotation_features</em>.
+The modified rotation features can then be used to create a new <a class="reference internal" href="pygplates.RotationModel.html#pygplates.RotationModel" title="pygplates.RotationModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">RotationModel</span></code></a> with updated rotations.
+If any filenames are specified in <em>rotation_features</em> then the modified feature collection(s) (containing synchronised crossovers)
+that are associated with those files are written back out to those same files.
+<a class="reference internal" href="pygplates.FeatureCollectionFileFormatRegistry.html#pygplates.FeatureCollectionFileFormatRegistry" title="pygplates.FeatureCollectionFileFormatRegistry"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureCollectionFileFormatRegistry</span></code></a> is used internally to read/write feature collections from/to those files.</p>
+<p><em>crossover_filter</em> can optionally be used to limit (or specify) the crossovers to synchronise. It can either be a predicate function
+(accepting a single crossover argument) or a sequence of crossovers. If <em>crossover_filter</em> is not specified then all
+crossovers (found using <a class="reference internal" href="pygplates.find_crossovers.html#pygplates.find_crossovers" title="pygplates.find_crossovers"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_crossovers()</span></code></a> on <em>rotation_features</em>) will be synchronised. If <em>crossover_filter</em> is a
+predicate function then only those crossovers (found using <a class="reference internal" href="pygplates.find_crossovers.html#pygplates.find_crossovers" title="pygplates.find_crossovers"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_crossovers()</span></code></a> on <em>rotation_features</em>) that pass the
+predicate test will be synchronised. If <em>crossover_filter</em> is a sequence of crossovers then only crossovers in that sequence will be
+synchronised (and you must ensure that both the young and old sequences in each crossover have at least one enabled time sample
+otherwise the crossover can’t really be a crossover).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><em>crossover_type_function</em> is ignored if <em>crossover_filter</em> is a sequence of crossovers (since the crossover types are already known).</p>
+</div>
+<p><em>crossover_threshold_degrees</em> can optionally be used to synchronise (fix) only those crossovers whose
+difference in young and old crossover rotation latitudes, longitudes or angles exceeds this amount. This is
+useful since some PLATES rotation files are typically only accurate to 2 decimal places (or threshold of 0.01).</p>
+<p><em>CrossoverType</em> supports the following enumeration values:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><em>CrossoverType.unknown</em></td>
+<td>The crossover is of unknown type
+(it will not be <a class="reference internal" href="#pygplates.synchronise_crossovers" title="pygplates.synchronise_crossovers"><code class="xref py py-func docutils literal notranslate"><span class="pre">synchronised</span></code></a>).</td>
+</tr>
+<tr class="row-odd"><td><em>CrossoverType.ignore</em></td>
+<td>The crossover will be ignored
+(it will not be <a class="reference internal" href="#pygplates.synchronise_crossovers" title="pygplates.synchronise_crossovers"><code class="xref py py-func docutils literal notranslate"><span class="pre">synchronised</span></code></a>).</td>
+</tr>
+<tr class="row-even"><td><em>CrossoverType.synch_old_crossover_and_stages</em></td>
+<td>All finite rotations in the <em>old</em> crossover
+sequence will be synchronised (such that old <em>stage</em>
+rotations are preserved). All finite rotations in the
+<em>young</em> crossover sequence are preserved.</td>
+</tr>
+<tr class="row-odd"><td><em>CrossoverType.synch_old_crossover_only</em></td>
+<td>Only the crossover finite rotation in the <em>old</em> crossover
+sequence will be synchronised (such that the older
+<em>finite</em> rotations are preserved). All finite rotations
+in the <em>young</em> crossover sequence are preserved.</td>
+</tr>
+<tr class="row-even"><td><em>CrossoverType.synch_young_crossover_and_stages</em></td>
+<td>All finite rotations in the <em>young</em> crossover
+sequence will be synchronised (such that <em>young</em> stage
+rotations are preserved). All finite rotations in the
+<em>old</em> crossover sequence are preserved.
+<strong>Note:</strong> This can result in non-zero finite rotations at
+present day if the younger sequence includes present day.</td>
+</tr>
+<tr class="row-odd"><td><em>CrossoverType.synch_young_crossover_only</em></td>
+<td>Only the crossover finite rotation in the <em>young</em> crossover
+sequence will be synchronised (such that the younger
+<em>finite</em> rotations are preserved). All finite rotations
+in the <em>old</em> crossover sequence are preserved.</td>
+</tr>
+</tbody>
+</table>
+<p><em>crossover_type_function</em> supports the following arguments:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Arbitrary callable (function)</td>
+<td><p class="first">A callable accepting the following arguments:</p>
+<ul class="simple">
+<li>crossover_time</li>
+<li>moving_plate_id</li>
+<li>young_crossover_fixed_plate_id</li>
+<li>old_crossover_fixed_plate_id</li>
+<li>young_crossover_rotation_sequence</li>
+<li>old_crossover_rotation_sequence</li>
+</ul>
+<p class="last">…and returning a <em>CrossoverType</em> enumerated value.</p>
+</td>
+</tr>
+<tr class="row-odd"><td>CrossoverTypeFunction.type_from_xo_tags_in_comment</td>
+<td><p class="first">A callable (with same arguments as arbitrary callable) that
+uses the comment/description field of the <em>young</em> crossover
+pole to determine the crossover type according to the
+presence of the following strings/tags:</p>
+<ul class="simple">
+<li>&#64;xo_ig : <em>CrossoverType.ignore</em></li>
+<li>&#64;xo_ys : <em>CrossoverType.synch_old_crossover_and_stages</em></li>
+<li>&#64;xo_yf : <em>CrossoverType.synch_old_crossover_only</em></li>
+<li>&#64;xo_os : <em>CrossoverType.synch_young_crossover_and_stages</em></li>
+<li>&#64;xo_of : <em>CrossoverType.synch_young_crossover_only</em></li>
+</ul>
+<p>…and if none of those tags are present then the crossover
+type is <em>CrossoverType.unknown</em>.</p>
+<p class="last">This is the default for <em>crossover_type_function</em>.</p>
+</td>
+</tr>
+<tr class="row-even"><td>CrossoverTypeFunction.type_from_xo_tags_in_comment_default_xo_ys</td>
+<td>Same as <em>CrossoverTypeFunction.type_from_xo_tags_in_comment</em>
+except defaults to <em>CrossoverType.synch_old_crossover_and_stages</em> if no tags
+are present in the comment/description field of the <em>young</em> crossover pole.</td>
+</tr>
+<tr class="row-odd"><td>CrossoverTypeFunction.type_from_xo_tags_in_comment_default_xo_ig</td>
+<td>Same as <em>CrossoverTypeFunction.type_from_xo_tags_in_comment</em>
+except defaults to <em>CrossoverType.ignore</em> if no tags
+are present in the comment/description field of the <em>young</em> crossover pole.</td>
+</tr>
+<tr class="row-even"><td><em>CrossoverType.unknown</em></td>
+<td>All crossovers will be of type <em>CrossoverType.unknown</em>.</td>
+</tr>
+<tr class="row-odd"><td><em>CrossoverType.ignore</em></td>
+<td>All crossovers will be of type <em>CrossoverType.ignore</em>.</td>
+</tr>
+<tr class="row-even"><td><em>CrossoverType.synch_old_crossover_and_stages</em></td>
+<td>All crossovers will be of type <em>CrossoverType.synch_old_crossover_and_stages</em>.</td>
+</tr>
+<tr class="row-odd"><td><em>CrossoverType.synch_old_crossover_only</em></td>
+<td>All crossovers will be of type <em>CrossoverType.synch_old_crossover_only</em>.</td>
+</tr>
+<tr class="row-even"><td><em>CrossoverType.synch_young_crossover_and_stages</em></td>
+<td>All crossovers will be of type <em>CrossoverType.synch_young_crossover_and_stages</em>.</td>
+</tr>
+<tr class="row-odd"><td><em>CrossoverType.synch_young_crossover_only</em></td>
+<td>All crossovers will be of type <em>CrossoverType.synch_young_crossover_only</em>.</td>
+</tr>
+</tbody>
+</table>
+<p><em>crossover_results</em> can optionally be used to obtain a list of the synchronisation results of all
+filtered crossovers (see <em>crossover_filter</em>). Each appended list element is a tuple of (Crossover, int)
+where the integer value is <em>CrossoverResult.synchronised</em> if the crossover was synchronised, or
+<em>CrossoverResult.not_synchronised</em> if the crossover did not require synchronising, or
+<em>CrossoverResult.ignored</em> if the crossover was ignored (due to a crossover type of <em>CrossoverType.ignore</em>), or
+<em>CrossoverResult.error</em> if the crossover was unable to be processed (due to a crossover type of
+<em>CrossoverType.unknown</em>). The appended list elements are sorted by crossover time.</p>
+<p>Synchronise all crossovers found in a rotation file (and save modifications back to the same rotation file)
+where crossover types are determined by ‘&#64;xo_’ tags in the young crossover description/comment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pygplates</span><span class="o">.</span><span class="n">synchronise_crossovers</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Synchronise crossovers between present day and 20Ma found in a PLATES rotation file that has rotation
+latitudes, longitudes and angles rounded to 2 decimal places (and save modifications back to the same
+rotation file) assuming all crossovers are of type <em>CrossoverType.synch_old_crossover_and_stages</em>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">crossover_results</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">pygplates</span><span class="o">.</span><span class="n">synchronise_crossovers</span><span class="p">(</span>
+    <span class="s1">&#39;rotations.rot&#39;</span><span class="p">,</span>
+    <span class="k">lambda</span> <span class="n">crossover</span><span class="p">:</span> <span class="n">crossover</span><span class="o">.</span><span class="n">time</span> <span class="o">&lt;=</span> <span class="mi">20</span><span class="p">,</span>
+    <span class="mf">0.01</span><span class="p">,</span> <span class="c1"># Equivalent to 2 decimal places</span>
+    <span class="n">pygplates</span><span class="o">.</span><span class="n">CrossoverType</span><span class="o">.</span><span class="n">synch_old_crossover_and_stages</span><span class="p">,</span>
+    <span class="n">crossover_results</span><span class="p">)</span>
+<span class="nb">print</span> <span class="s1">&#39;Fixed </span><span class="si">%d</span><span class="s1"> crossovers&#39;</span> <span class="o">%</span> <span class="nb">sum</span><span class="p">(</span>
+    <span class="mi">1</span> <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">crossover_results</span> <span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="n">pygplates</span><span class="o">.</span><span class="n">CrossoverResult</span><span class="o">.</span><span class="n">synchronised</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pygplates.find_crossovers.html"
+                        title="previous chapter">pygplates.find_crossovers</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pygplates.partition_into_plates.html"
+                        title="next chapter">pygplates.partition_into_plates</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/generated/pygplates.synchronise_crossovers.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pygplates.partition_into_plates.html" title="pygplates.partition_into_plates"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.find_crossovers.html" title="pygplates.find_crossovers"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" >Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
+(C) 2004-2020 California Institute of Technology
+(C) 2007-2020 The Geological Survey of Norway
+.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>

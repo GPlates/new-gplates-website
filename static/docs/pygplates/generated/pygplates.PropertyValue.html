@@ -1,0 +1,297 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pygplates.PropertyValue &#8212; pygplates 2.2.0.28 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pygplates.PropertyValueVisitor" href="pygplates.PropertyValueVisitor.html" />
+    <link rel="prev" title="pygplates.PropertyName" href="pygplates.PropertyName.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pygplates.PropertyValueVisitor.html" title="pygplates.PropertyValueVisitor"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.PropertyName.html" title="pygplates.PropertyName"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" accesskey="U">Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pygplates-propertyvalue">
+<h1>pygplates.PropertyValue<a class="headerlink" href="#pygplates-propertyvalue" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pygplates.PropertyValue">
+<em class="property">class </em><code class="descclassname">pygplates.</code><code class="descname">PropertyValue</code><a class="headerlink" href="#pygplates.PropertyValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Boost.Python.instance</span></code></p>
+<p>The base class inherited by all derived property value classes. Property values are equality (<code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">!=</span></code>) comparable (but not hashable - cannot be used as a key in a <code class="docutils literal notranslate"><span class="pre">dict</span></code>). Two property values will only compare equal if they have the same derived property value <em>type</em> (and the same internal values). For example, a <a class="reference internal" href="pygplates.GpmlPlateId.html#pygplates.GpmlPlateId" title="pygplates.GpmlPlateId"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlPlateId</span></code></a> property value instance and a <a class="reference internal" href="pygplates.XsInteger.html#pygplates.XsInteger" title="pygplates.XsInteger"><code class="xref py py-class docutils literal notranslate"><span class="pre">XsInteger</span></code></a> property value instance will always compare as <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>The list of derived property value classes includes:</p>
+<ul class="simple">
+<li><a class="reference internal" href="pygplates.Enumeration.html#pygplates.Enumeration" title="pygplates.Enumeration"><code class="xref py py-class docutils literal notranslate"><span class="pre">Enumeration</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GmlDataBlock.html#pygplates.GmlDataBlock" title="pygplates.GmlDataBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlDataBlock</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GmlLineString.html#pygplates.GmlLineString" title="pygplates.GmlLineString"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlLineString</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GmlMultiPoint.html#pygplates.GmlMultiPoint" title="pygplates.GmlMultiPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlMultiPoint</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GmlOrientableCurve.html#pygplates.GmlOrientableCurve" title="pygplates.GmlOrientableCurve"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlOrientableCurve</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GmlPoint.html#pygplates.GmlPoint" title="pygplates.GmlPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlPoint</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GmlPolygon.html#pygplates.GmlPolygon" title="pygplates.GmlPolygon"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlPolygon</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GmlTimeInstant.html#pygplates.GmlTimeInstant" title="pygplates.GmlTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlTimeInstant</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GmlTimePeriod.html#pygplates.GmlTimePeriod" title="pygplates.GmlTimePeriod"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlTimePeriod</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlArray.html#pygplates.GpmlArray" title="pygplates.GpmlArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlArray</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlConstantValue.html#pygplates.GpmlConstantValue" title="pygplates.GpmlConstantValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlConstantValue</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlFiniteRotation.html#pygplates.GpmlFiniteRotation" title="pygplates.GpmlFiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlFiniteRotation</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlIrregularSampling.html#pygplates.GpmlIrregularSampling" title="pygplates.GpmlIrregularSampling"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlIrregularSampling</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlKeyValueDictionary.html#pygplates.GpmlKeyValueDictionary" title="pygplates.GpmlKeyValueDictionary"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlKeyValueDictionary</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlOldPlatesHeader.html#pygplates.GpmlOldPlatesHeader" title="pygplates.GpmlOldPlatesHeader"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlOldPlatesHeader</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlPiecewiseAggregation.html#pygplates.GpmlPiecewiseAggregation" title="pygplates.GpmlPiecewiseAggregation"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlPiecewiseAggregation</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlPlateId.html#pygplates.GpmlPlateId" title="pygplates.GpmlPlateId"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlPlateId</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlPolarityChronId.html#pygplates.GpmlPolarityChronId" title="pygplates.GpmlPolarityChronId"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlPolarityChronId</span></code></a></li>
+<li><a class="reference internal" href="pygplates.XsBoolean.html#pygplates.XsBoolean" title="pygplates.XsBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">XsBoolean</span></code></a></li>
+<li><a class="reference internal" href="pygplates.XsDouble.html#pygplates.XsDouble" title="pygplates.XsDouble"><code class="xref py py-class docutils literal notranslate"><span class="pre">XsDouble</span></code></a></li>
+<li><a class="reference internal" href="pygplates.XsInteger.html#pygplates.XsInteger" title="pygplates.XsInteger"><code class="xref py py-class docutils literal notranslate"><span class="pre">XsInteger</span></code></a></li>
+<li><a class="reference internal" href="pygplates.XsString.html#pygplates.XsString" title="pygplates.XsString"><code class="xref py py-class docutils literal notranslate"><span class="pre">XsString</span></code></a></li>
+</ul>
+<p>The following subset of derived property value classes are topological geometries:</p>
+<ul class="simple">
+<li><a class="reference internal" href="pygplates.GpmlTopologicalLine.html#pygplates.GpmlTopologicalLine" title="pygplates.GpmlTopologicalLine"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlTopologicalLine</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlTopologicalPolygon.html#pygplates.GpmlTopologicalPolygon" title="pygplates.GpmlTopologicalPolygon"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlTopologicalPolygon</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlTopologicalNetwork.html#pygplates.GpmlTopologicalNetwork" title="pygplates.GpmlTopologicalNetwork"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlTopologicalNetwork</span></code></a></li>
+</ul>
+<p>The following subset of derived property value classes are time-dependent wrappers:</p>
+<ul class="simple">
+<li><a class="reference internal" href="pygplates.GpmlConstantValue.html#pygplates.GpmlConstantValue" title="pygplates.GpmlConstantValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlConstantValue</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlIrregularSampling.html#pygplates.GpmlIrregularSampling" title="pygplates.GpmlIrregularSampling"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlIrregularSampling</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GpmlPiecewiseAggregation.html#pygplates.GpmlPiecewiseAggregation" title="pygplates.GpmlPiecewiseAggregation"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlPiecewiseAggregation</span></code></a></li>
+</ul>
+<p>You can use <a class="reference internal" href="#pygplates.PropertyValue.get_value" title="pygplates.PropertyValue.get_value"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_value()</span></code></a> to extract a value at a specific time from a time-dependent wrapper.</p>
+<p>A property value can be deep copied using <a class="reference internal" href="#pygplates.PropertyValue.clone" title="pygplates.PropertyValue.clone"><code class="xref py py-meth docutils literal notranslate"><span class="pre">clone()</span></code></a>.</p>
+<dl class="method">
+<dt id="pygplates.PropertyValue.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PropertyValue.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raises an exception
+This class cannot be instantiated from Python</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.PropertyValue.__init__" title="pygplates.PropertyValue.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a></td>
+<td>Raises an exception This class cannot be instantiated from Python</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.PropertyValue.accept_visitor" title="pygplates.PropertyValue.accept_visitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">accept_visitor</span></code></a>(visitor)</td>
+<td>Accept a property value visitor so that it can visit this property value.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.PropertyValue.clone" title="pygplates.PropertyValue.clone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clone</span></code></a>()</td>
+<td>Create a duplicate of this property value (derived) instance, including a recursive copy of any nested property values that this instance might contain.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.PropertyValue.get_geometry" title="pygplates.PropertyValue.get_geometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_geometry</span></code></a>()</td>
+<td>Extracts the <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">geometry</span></code></a> if this property value contains a geometry.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.PropertyValue.get_value" title="pygplates.PropertyValue.get_value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_value</span></code></a>([time=0])</td>
+<td>Extracts the value, of this possibly time-dependent property value, at the reconstruction <em>time</em>.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pygplates.PropertyValue.accept_visitor">
+<code class="descname">accept_visitor</code><span class="sig-paren">(</span><em>visitor</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PropertyValue.accept_visitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accept a property value visitor so that it can visit this property value. As part of the visitor pattern, this enables the visitor instance to discover the derived class type of this property. Note that there is no common interface shared by all property value types, hence the visitor pattern provides one way to find out which type of property value is being visited.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>visitor</strong> (<a class="reference internal" href="pygplates.PropertyValueVisitor.html#pygplates.PropertyValueVisitor" title="pygplates.PropertyValueVisitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">PropertyValueVisitor</span></code></a>) – the visitor instance visiting this property value</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.PropertyValue.clone">
+<code class="descname">clone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PropertyValue.clone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a duplicate of this property value (derived) instance, including a recursive copy of any nested property values that this instance might contain.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pygplates.PropertyValue" title="pygplates.PropertyValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">PropertyValue</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.PropertyValue.get_geometry">
+<code class="descname">get_geometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PropertyValue.get_geometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extracts the <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">geometry</span></code></a> if this property value contains a geometry.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a> or None</td>
+</tr>
+</tbody>
+</table>
+<p>This function searches for a geometry in the following standard geometry property value types:</p>
+<ul class="simple">
+<li><a class="reference internal" href="pygplates.GmlPoint.html#pygplates.GmlPoint" title="pygplates.GmlPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlPoint</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GmlMultiPoint.html#pygplates.GmlMultiPoint" title="pygplates.GmlMultiPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlMultiPoint</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GmlPolygon.html#pygplates.GmlPolygon" title="pygplates.GmlPolygon"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlPolygon</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GmlLineString.html#pygplates.GmlLineString" title="pygplates.GmlLineString"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlLineString</span></code></a></li>
+<li><a class="reference internal" href="pygplates.GmlOrientableCurve.html#pygplates.GmlOrientableCurve" title="pygplates.GmlOrientableCurve"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlOrientableCurve</span></code></a> (a possible wrapper around <a class="reference internal" href="pygplates.GmlLineString.html#pygplates.GmlLineString" title="pygplates.GmlLineString"><code class="xref py py-class docutils literal notranslate"><span class="pre">GmlLineString</span></code></a>)</li>
+<li><a class="reference internal" href="pygplates.GpmlConstantValue.html#pygplates.GpmlConstantValue" title="pygplates.GpmlConstantValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlConstantValue</span></code></a> (a possible wrapper around any of the above)</li>
+</ul>
+<p>If this property value does not contain a geometry then <code class="docutils literal notranslate"><span class="pre">None</span></code> is returned.</p>
+<p>Time-dependent geometry properties are <em>not</em> yet supported, so the only time-dependent property value wrapper currently supported by this function is <a class="reference internal" href="pygplates.GpmlConstantValue.html#pygplates.GpmlConstantValue" title="pygplates.GpmlConstantValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlConstantValue</span></code></a>.</p>
+<p>To extract geometry from a specific feature property:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">property_value</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">pygplates</span><span class="o">.</span><span class="n">PropertyName</span><span class="o">.</span><span class="n">gpml_pole_position</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">property_value</span><span class="p">:</span>
+    <span class="n">geometry</span> <span class="o">=</span> <span class="n">property_value</span><span class="o">.</span><span class="n">get_geometry</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>…however <a class="reference internal" href="pygplates.Feature.html#pygplates.Feature.get_geometry" title="pygplates.Feature.get_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Feature.get_geometry()</span></code></a> provides an easier way to extract geometry from a feature with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">geometry</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">get_geometry</span><span class="p">(</span><span class="n">pygplates</span><span class="o">.</span><span class="n">PropertyName</span><span class="o">.</span><span class="n">gpml_pole_position</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To extract all geometries from a feature (regardless of which properties they came from):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">all_geometries</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="nb">property</span> <span class="ow">in</span> <span class="n">feature</span><span class="p">:</span>
+    <span class="n">property_value</span> <span class="o">=</span> <span class="nb">property</span><span class="o">.</span><span class="n">get_value</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">property_value</span><span class="p">:</span>
+        <span class="n">geometry</span> <span class="o">=</span> <span class="n">property_value</span><span class="o">.</span><span class="n">get_geometry</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">geometry</span><span class="p">:</span>
+            <span class="n">all_geometries</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">geometry</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>…however again <a class="reference internal" href="pygplates.Feature.html#pygplates.Feature.get_geometry" title="pygplates.Feature.get_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Feature.get_geometry()</span></code></a> does this more easily with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">all_geometries</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">get_geometry</span><span class="p">(</span><span class="k">lambda</span> <span class="nb">property</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">PropertyReturn</span><span class="o">.</span><span class="n">all</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.PropertyValue.get_value">
+<code class="descname">get_value</code><span class="sig-paren">(</span><span class="optional">[</span><em>time=0</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PropertyValue.get_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extracts the value, of this possibly time-dependent property value, at the reconstruction <em>time</em>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>) – the time to extract value (defaults to present day)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pygplates.PropertyValue" title="pygplates.PropertyValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">PropertyValue</span></code></a> or None</td>
+</tr>
+</tbody>
+</table>
+<p>If this property value is a time-dependent property (<a class="reference internal" href="pygplates.GpmlConstantValue.html#pygplates.GpmlConstantValue" title="pygplates.GpmlConstantValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlConstantValue</span></code></a>,
+<a class="reference internal" href="pygplates.GpmlIrregularSampling.html#pygplates.GpmlIrregularSampling" title="pygplates.GpmlIrregularSampling"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlIrregularSampling</span></code></a> or <a class="reference internal" href="pygplates.GpmlPiecewiseAggregation.html#pygplates.GpmlPiecewiseAggregation" title="pygplates.GpmlPiecewiseAggregation"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlPiecewiseAggregation</span></code></a>) then a nested property
+value is extracted at the reconstruction <em>time</em> and returned. Otherwise this property value
+instance is simply returned as is (since it’s not a time-dependent property value).</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">None</span></code> if this property value is a time-dependent property (<a class="reference internal" href="pygplates.GpmlConstantValue.html#pygplates.GpmlConstantValue" title="pygplates.GpmlConstantValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlConstantValue</span></code></a>,
+<a class="reference internal" href="pygplates.GpmlIrregularSampling.html#pygplates.GpmlIrregularSampling" title="pygplates.GpmlIrregularSampling"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlIrregularSampling</span></code></a> or <a class="reference internal" href="pygplates.GpmlPiecewiseAggregation.html#pygplates.GpmlPiecewiseAggregation" title="pygplates.GpmlPiecewiseAggregation"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlPiecewiseAggregation</span></code></a>) and <em>time</em> is outside its
+time range (of time samples or time windows).</p>
+<p>Note that if this property value is a <a class="reference internal" href="pygplates.GpmlIrregularSampling.html#pygplates.GpmlIrregularSampling" title="pygplates.GpmlIrregularSampling"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlIrregularSampling</span></code></a> instance then the extracted
+property value is interpolated (at reconstruction <em>time</em>) if property value can be interpolated
+(currently only <a class="reference internal" href="pygplates.GpmlFiniteRotation.html#pygplates.GpmlFiniteRotation" title="pygplates.GpmlFiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpmlFiniteRotation</span></code></a> and <a class="reference internal" href="pygplates.XsDouble.html#pygplates.XsDouble" title="pygplates.XsDouble"><code class="xref py py-class docutils literal notranslate"><span class="pre">XsDouble</span></code></a>), otherwise <code class="docutils literal notranslate"><span class="pre">None</span></code> is returned.</p>
+<p>The following example demonstrates extracting an interpolated finite rotation from a
+<a class="reference internal" href="pygplates.GpmlIrregularSampling.html#pygplates.GpmlIrregularSampling" title="pygplates.GpmlIrregularSampling"><code class="xref py py-class docutils literal notranslate"><span class="pre">total</span> <span class="pre">reconstruction</span> <span class="pre">pole</span></code></a> at time 20Ma:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gpml_finite_rotation_20Ma</span> <span class="o">=</span> <span class="n">total_reconstruction_pole</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">gpml_finite_rotation_20Ma</span><span class="p">:</span>
+  <span class="nb">print</span> <span class="s1">&#39;Interpolated finite rotation at 20Ma: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">gpml_finite_rotation_20Ma</span><span class="o">.</span><span class="n">get_finite_rotation</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pygplates.PropertyName.html"
+                        title="previous chapter">pygplates.PropertyName</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pygplates.PropertyValueVisitor.html"
+                        title="next chapter">pygplates.PropertyValueVisitor</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/generated/pygplates.PropertyValue.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pygplates.PropertyValueVisitor.html" title="pygplates.PropertyValueVisitor"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.PropertyName.html" title="pygplates.PropertyName"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" >Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
+(C) 2004-2020 California Institute of Technology
+(C) 2007-2020 The Geological Survey of Norway
+.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>

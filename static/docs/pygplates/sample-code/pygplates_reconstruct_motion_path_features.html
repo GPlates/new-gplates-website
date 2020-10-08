@@ -1,0 +1,434 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Reconstruct motion path features &#8212; pygplates 2.2.0.28 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Reconstruct flowline features" href="pygplates_reconstruct_flowline_features.html" />
+    <link rel="prev" title="Reconstruct regular features" href="pygplates_reconstruct_regular_features.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pygplates_reconstruct_flowline_features.html" title="Reconstruct flowline features"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pygplates_reconstruct_regular_features.html" title="Reconstruct regular features"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_sample_code.html" accesskey="U">Sample code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="reconstruct-motion-path-features">
+<span id="pygplates-reconstruct-motion-path-features"></span><h1>Reconstruct motion path features<a class="headerlink" href="#reconstruct-motion-path-features" title="Permalink to this headline">¶</a></h1>
+<p>This example shows a couple of different scenarios involving the reconstruction of
+<a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:MotionPath">motion path</a> features to geological times.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="pygplates_reconstruct_flowline_features.html#pygplates-reconstruct-flowline-features"><span class="std std-ref">Reconstruct flowline features</span></a></p>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="pygplates_reconstruct_regular_features.html#pygplates-reconstruct-regular-features"><span class="std std-ref">Reconstruct regular features</span></a></p>
+</div>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#exported-reconstructed-motion-paths-to-a-file" id="id5">Exported reconstructed motion paths to a file</a><ul>
+<li><a class="reference internal" href="#sample-code" id="id6">Sample code</a></li>
+<li><a class="reference internal" href="#details" id="id7">Details</a></li>
+<li><a class="reference internal" href="#output" id="id8">Output</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#query-a-reconstructed-motion-path" id="id9">Query a reconstructed motion path</a><ul>
+<li><a class="reference internal" href="#id2" id="id10">Sample code</a></li>
+<li><a class="reference internal" href="#id3" id="id11">Details</a></li>
+<li><a class="reference internal" href="#id4" id="id12">Output</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="exported-reconstructed-motion-paths-to-a-file">
+<span id="pygplates-export-reconstructed-motion-paths-to-a-file"></span><h2><a class="toc-backref" href="#id5">Exported reconstructed motion paths to a file</a><a class="headerlink" href="#exported-reconstructed-motion-paths-to-a-file" title="Permalink to this headline">¶</a></h2>
+<p>In this example we reconstruct <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:MotionPath">motion path</a>
+features and export the results to a Shapefile.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="pygplates_create_common_feature_types.html#pygplates-create-motion-path-feature"><span class="std std-ref">Create a motion path feature</span></a> and <a class="reference internal" href="pygplates_query_common_feature_types.html#pygplates-query-motion-path-feature"><span class="std std-ref">Query a motion path feature</span></a></p>
+</div>
+<div class="section" id="sample-code">
+<h3><a class="toc-backref" href="#id6">Sample code</a><a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
+
+
+<span class="c1"># Load one or more rotation files into a rotation model.</span>
+<span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
+
+<span class="c1"># Load some motion path features.</span>
+<span class="n">motion_path_features</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="s1">&#39;motion_path_features.gpml&#39;</span><span class="p">)</span>
+
+<span class="c1"># Reconstruct features to this geological time.</span>
+<span class="n">reconstruction_time</span> <span class="o">=</span> <span class="mi">50</span>
+
+<span class="c1"># The filename of the exported reconstructed motion paths.</span>
+<span class="c1"># It&#39;s a shapefile called &#39;motion_path_output_50Ma.shp&#39;.</span>
+<span class="n">export_filename</span> <span class="o">=</span> <span class="s1">&#39;motion_path_output_</span><span class="si">{0}</span><span class="s1">Ma.shp&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">reconstruction_time</span><span class="p">)</span>
+
+<span class="c1"># Reconstruct the motion paths to the reconstruction time and export them to a shapefile.</span>
+<span class="n">pygplates</span><span class="o">.</span><span class="n">reconstruct</span><span class="p">(</span><span class="n">motion_path_features</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">,</span> <span class="n">export_filename</span><span class="p">,</span> <span class="n">reconstruction_time</span><span class="p">,</span>
+    <span class="n">reconstruct_type</span><span class="o">=</span><span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructType</span><span class="o">.</span><span class="n">motion_path</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="details">
+<h3><a class="toc-backref" href="#id7">Details</a><a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h3>
+<p>The rotations are loaded from a rotation file into a <a class="reference internal" href="../generated/pygplates.RotationModel.html#pygplates.RotationModel" title="pygplates.RotationModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.RotationModel</span></code></a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The motion path features are loaded into a <a class="reference internal" href="../generated/pygplates.FeatureCollection.html#pygplates.FeatureCollection" title="pygplates.FeatureCollection"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.FeatureCollection</span></code></a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">motion_path_features</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="s1">&#39;motion_path_features.gpml&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The motion path features will be reconstructed to their 50Ma positions.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconstruction_time</span> <span class="o">=</span> <span class="mi">50</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">All motion path features are reconstructed to 50Ma using <a class="reference internal" href="../generated/pygplates.reconstruct.html#pygplates.reconstruct" title="pygplates.reconstruct"><code class="xref py py-func docutils literal notranslate"><span class="pre">pygplates.reconstruct()</span></code></a>.</div>
+<div class="line">We specify we only want to reconstruct motion path features by specifying
+<code class="docutils literal notranslate"><span class="pre">pygplates.ReconstructType.motion_path</span></code> for the <em>reconstruct_type</em> argument.</div>
+<div class="line">We specify a filename to export the reconstructed geometries to.</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pygplates</span><span class="o">.</span><span class="n">reconstruct</span><span class="p">(</span><span class="n">motion_path_features</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">,</span> <span class="n">export_filename</span><span class="p">,</span> <span class="n">reconstruction_time</span><span class="p">,</span>
+    <span class="n">reconstruct_type</span><span class="o">=</span><span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructType</span><span class="o">.</span><span class="n">motion_path</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="output">
+<h3><a class="toc-backref" href="#id8">Output</a><a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h3>
+<p>We should now have a file called <code class="docutils literal notranslate"><span class="pre">motion_path_output_50Ma.shp</span></code> containing the motion paths
+reconstructed to their 50Ma positions.</p>
+</div>
+</div>
+<div class="section" id="query-a-reconstructed-motion-path">
+<span id="pygplates-query-reconstructed-motion-path"></span><h2><a class="toc-backref" href="#id9">Query a reconstructed motion path</a><a class="headerlink" href="#query-a-reconstructed-motion-path" title="Permalink to this headline">¶</a></h2>
+<p>In this example we print out the point locations in a reconstructed motion path.</p>
+<div class="section" id="id2">
+<h3><a class="toc-backref" href="#id10">Sample code</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
+
+
+<span class="c1"># Specify two (lat/lon) seed points on the present-day African coastline.</span>
+<span class="n">seed_points</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">MultiPointOnSphere</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="p">(</span><span class="o">-</span><span class="mi">19</span><span class="p">,</span> <span class="mf">12.5</span><span class="p">),</span>
+        <span class="p">(</span><span class="o">-</span><span class="mi">28</span><span class="p">,</span> <span class="mf">15.7</span><span class="p">)</span>
+    <span class="p">])</span>
+
+<span class="c1"># A list of times to sample the motion path - from 0 to 90Ma in 1My intervals.</span>
+<span class="n">times</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Create a motion path feature.</span>
+<span class="n">motion_path_feature</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Feature</span><span class="o">.</span><span class="n">create_motion_path</span><span class="p">(</span>
+        <span class="n">seed_points</span><span class="p">,</span>
+        <span class="n">times</span><span class="p">,</span>
+        <span class="n">valid_time</span><span class="o">=</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">times</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">times</span><span class="p">)),</span>
+        <span class="n">relative_plate</span><span class="o">=</span><span class="mi">201</span><span class="p">,</span>
+        <span class="n">reconstruction_plate_id</span><span class="o">=</span><span class="mi">701</span><span class="p">)</span>
+
+<span class="c1"># Load one or more rotation files into a rotation model.</span>
+<span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
+
+<span class="c1"># Reconstruct features to this geological time.</span>
+<span class="n">reconstruction_time</span> <span class="o">=</span> <span class="mi">50</span>
+
+<span class="c1"># Reconstruct the motion path feature to the reconstruction time.</span>
+<span class="n">reconstructed_motion_paths</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">pygplates</span><span class="o">.</span><span class="n">reconstruct</span><span class="p">(</span><span class="n">motion_path_feature</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">,</span> <span class="n">reconstructed_motion_paths</span><span class="p">,</span> <span class="n">reconstruction_time</span><span class="p">,</span>
+    <span class="n">reconstruct_type</span><span class="o">=</span><span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructType</span><span class="o">.</span><span class="n">motion_path</span><span class="p">)</span>
+
+<span class="c1"># Iterate over all reconstructed motion paths.</span>
+<span class="c1"># There will be two (one for each seed point).</span>
+<span class="k">for</span> <span class="n">reconstructed_motion_path</span> <span class="ow">in</span> <span class="n">reconstructed_motion_paths</span><span class="p">:</span>
+
+    <span class="c1"># Print the motion path plate IDs.</span>
+    <span class="nb">print</span> <span class="s1">&#39;Motion path: </span><span class="si">%d</span><span class="s1"> relative to </span><span class="si">%d</span><span class="s1"> at </span><span class="si">%f</span><span class="s1">Ma&#39;</span> <span class="o">%</span> <span class="p">(</span>
+        <span class="n">reconstructed_motion_path</span><span class="o">.</span><span class="n">get_feature</span><span class="p">()</span><span class="o">.</span><span class="n">get_reconstruction_plate_id</span><span class="p">(),</span>
+        <span class="n">reconstructed_motion_path</span><span class="o">.</span><span class="n">get_feature</span><span class="p">()</span><span class="o">.</span><span class="n">get_relative_plate</span><span class="p">(),</span>
+        <span class="n">reconstruction_time</span><span class="p">)</span>
+
+    <span class="c1"># Print the reconstructed seed point location.</span>
+    <span class="nb">print</span> <span class="s1">&#39;  reconstructed seed point: lat: </span><span class="si">%f</span><span class="s1">, lon: </span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">reconstructed_motion_path</span><span class="o">.</span><span class="n">get_reconstructed_seed_point</span><span class="p">()</span><span class="o">.</span><span class="n">to_lat_lon</span><span class="p">()</span>
+
+    <span class="n">motion_path_times</span> <span class="o">=</span> <span class="n">reconstructed_motion_path</span><span class="o">.</span><span class="n">get_feature</span><span class="p">()</span><span class="o">.</span><span class="n">get_times</span><span class="p">()</span>
+
+    <span class="c1"># Iterate over the points in the motion path.</span>
+    <span class="k">for</span> <span class="n">point_index</span><span class="p">,</span> <span class="n">point</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">reconstructed_motion_path</span><span class="o">.</span><span class="n">get_motion_path</span><span class="p">()):</span>
+
+        <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span> <span class="o">=</span> <span class="n">point</span><span class="o">.</span><span class="n">to_lat_lon</span><span class="p">()</span>
+
+        <span class="c1"># The first point in the path is the oldest and the last point is the youngest.</span>
+        <span class="c1"># So we need to start at the last time and work our way backwards.</span>
+        <span class="n">time</span> <span class="o">=</span> <span class="n">motion_path_times</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">point_index</span><span class="p">]</span>
+
+        <span class="c1"># Print the point location and the time associated with it.</span>
+        <span class="nb">print</span> <span class="s1">&#39;  time: </span><span class="si">%f</span><span class="s1">, lat: </span><span class="si">%f</span><span class="s1">, lon: </span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3><a class="toc-backref" href="#id11">Details</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">The first part of this example comes from <a class="reference internal" href="pygplates_create_common_feature_types.html#pygplates-create-motion-path-feature"><span class="std std-ref">Create a motion path feature</span></a>.</div>
+<div class="line">It creates a motion path feature specifying the seed point locations that each motion path emanates
+from as well as a list of times to plot points in the path.</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">seed_points</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">MultiPointOnSphere</span><span class="p">([(</span><span class="o">-</span><span class="mi">19</span><span class="p">,</span> <span class="mf">12.5</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">28</span><span class="p">,</span> <span class="mf">15.7</span><span class="p">)])</span>
+<span class="n">times</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">motion_path_feature</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Feature</span><span class="o">.</span><span class="n">create_motion_path</span><span class="p">(</span>
+        <span class="n">seed_points</span><span class="p">,</span>
+        <span class="n">times</span><span class="p">,</span>
+        <span class="n">valid_time</span><span class="o">=</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">times</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">times</span><span class="p">)),</span>
+        <span class="n">relative_plate</span><span class="o">=</span><span class="mi">201</span><span class="p">,</span>
+        <span class="n">reconstruction_plate_id</span><span class="o">=</span><span class="mi">701</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The rotations are loaded from a rotation file into a <a class="reference internal" href="../generated/pygplates.RotationModel.html#pygplates.RotationModel" title="pygplates.RotationModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.RotationModel</span></code></a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The features will be reconstructed to their 50Ma positions.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconstruction_time</span> <span class="o">=</span> <span class="mi">50</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">The motion path feature is reconstructed to 50Ma using <a class="reference internal" href="../generated/pygplates.reconstruct.html#pygplates.reconstruct" title="pygplates.reconstruct"><code class="xref py py-func docutils literal notranslate"><span class="pre">pygplates.reconstruct()</span></code></a>.</div>
+<div class="line">We specify a <code class="docutils literal notranslate"><span class="pre">list</span></code> for <em>reconstructed_motion_paths</em> instead of a filename so that we
+can query the reconstructed motion paths easily.</div>
+<div class="line">We also specify we only want to reconstruct motion path features by specifying
+<code class="docutils literal notranslate"><span class="pre">pygplates.ReconstructType.motion_path</span></code> for the <em>reconstruct_type</em> argument.</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconstructed_motion_paths</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">pygplates</span><span class="o">.</span><span class="n">reconstruct</span><span class="p">(</span><span class="n">motion_path_feature</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">,</span> <span class="n">reconstructed_motion_paths</span><span class="p">,</span> <span class="n">reconstruction_time</span><span class="p">,</span>
+    <span class="n">reconstruct_type</span><span class="o">=</span><span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructType</span><span class="o">.</span><span class="n">motion_path</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">We iterate over the points in the <a class="reference internal" href="../generated/pygplates.ReconstructedMotionPath.html#pygplates.ReconstructedMotionPath.get_motion_path" title="pygplates.ReconstructedMotionPath.get_motion_path"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reconstructed</span> <span class="pre">motion</span> <span class="pre">path</span></code></a>
+and print each point location and its associated time.</div>
+<div class="line">The first point in the path is the oldest and the last point is the youngest.
+So we need to start at the last (oldest) time and work our way backwards.
+The last sample is at index <code class="docutils literal notranslate"><span class="pre">-1</span></code> and <code class="docutils literal notranslate"><span class="pre">point_index</span></code> starts at zero.
+So our time indices are <code class="docutils literal notranslate"><span class="pre">-1</span></code>, <code class="docutils literal notranslate"><span class="pre">-2</span></code>, etc, which means last sample, then second last sample, etc.</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">point_index</span><span class="p">,</span> <span class="n">point</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">reconstructed_motion_path</span><span class="o">.</span><span class="n">get_motion_path</span><span class="p">()):</span>
+    <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span> <span class="o">=</span> <span class="n">point</span><span class="o">.</span><span class="n">to_lat_lon</span><span class="p">()</span>
+    <span class="n">time</span> <span class="o">=</span> <span class="n">motion_path_times</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">point_index</span><span class="p">]</span>
+    <span class="nb">print</span> <span class="s1">&#39;  time: </span><span class="si">%f</span><span class="s1">, lat: </span><span class="si">%f</span><span class="s1">, lon: </span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h3><a class="toc-backref" href="#id12">Output</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Our time range is 90Ma to 0Ma, but since the reconstruction time is 50Ma the output is only
+from 90Ma to 50Ma.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Motion</span> <span class="n">path</span><span class="p">:</span> <span class="mi">701</span> <span class="n">relative</span> <span class="n">to</span> <span class="mi">201</span> <span class="n">at</span> <span class="mf">50.000000</span><span class="n">Ma</span>
+  <span class="n">reconstructed</span> <span class="n">seed</span> <span class="n">point</span><span class="p">:</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">26.580350</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">5.008040</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">90.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">31.198775</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">13.837430</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">89.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">30.982356</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">13.166848</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">88.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">30.759877</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">12.500510</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">87.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">30.531408</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">11.838481</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">86.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">30.297018</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">11.180823</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">85.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">30.056777</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">10.527593</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">84.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">29.810756</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">9.878842</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">83.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">29.621610</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">9.269242</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">82.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">29.491452</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">8.696601</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">81.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">29.358411</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">8.125578</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">80.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">29.222508</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">7.556197</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">79.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">29.083766</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">6.988478</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">78.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">28.942205</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">6.422443</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">77.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">28.797848</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">5.858112</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">76.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">28.650717</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">5.295502</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">75.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">28.500836</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">4.734632</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">74.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">28.348227</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">4.175519</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">73.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">28.192913</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">3.618178</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">72.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">28.034918</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">3.062625</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">71.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">27.874264</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">2.508873</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">70.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">27.710976</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">1.956935</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">69.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">27.545078</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">1.406823</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">68.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">27.376593</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.858549</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">67.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">27.293542</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.487339</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">66.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">27.247592</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.191647</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">65.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">27.201374</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">0.103869</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">64.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">27.154887</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">0.399209</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">63.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">27.108135</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">0.694373</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">62.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">27.061118</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">0.989360</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">61.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">27.013838</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">1.284170</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">60.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">26.966296</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">1.578802</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">59.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">26.918493</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">1.873257</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">58.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">26.870432</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">2.167534</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">57.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">26.822113</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">2.461632</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">56.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">26.773537</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">2.755552</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">55.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">26.740310</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">3.124328</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">54.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">26.708646</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">3.501316</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">53.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">26.676816</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">3.878182</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">52.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">26.644823</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">4.254924</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">51.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">26.612667</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">4.631544</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">50.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">26.580350</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">5.008040</span>
+<span class="n">Motion</span> <span class="n">path</span><span class="p">:</span> <span class="mi">701</span> <span class="n">relative</span> <span class="n">to</span> <span class="mi">201</span> <span class="n">at</span> <span class="mf">50.000000</span><span class="n">Ma</span>
+  <span class="n">reconstructed</span> <span class="n">seed</span> <span class="n">point</span><span class="p">:</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">35.733432</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">7.829851</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">90.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">40.633500</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">12.902754</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">89.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">40.408039</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">12.104422</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">88.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">40.175428</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">11.312349</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">87.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">39.935768</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">10.526635</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">86.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">39.689160</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">9.747372</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">85.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">39.435708</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">8.974643</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">84.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">39.175516</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">8.208522</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">83.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">38.974541</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">7.507706</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">82.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">38.835379</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">6.868988</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">81.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">38.693052</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">6.232683</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">80.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">38.547588</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">5.598821</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">79.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">38.399018</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">4.967434</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">78.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">38.247371</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">4.338547</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">77.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">38.092678</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">3.712189</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">76.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">37.934970</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">3.088383</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">75.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">37.774279</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">2.467151</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">74.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">37.610634</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">1.848516</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">73.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">37.444068</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">1.232496</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">72.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">37.274612</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.619110</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">71.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">37.102299</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.008373</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">70.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.927159</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">0.599701</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">69.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.749226</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">1.205097</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">68.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.568530</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">1.807804</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">67.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.480099</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">2.202243</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">66.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.431745</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">2.507959</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">65.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.383124</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">2.813418</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">64.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.334239</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">3.118621</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">63.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.285091</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">3.423567</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">62.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.235682</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">3.728255</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">61.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.186013</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">4.032685</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">60.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.136086</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">4.336857</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">59.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.085903</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">4.640771</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">58.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">36.035465</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">4.944425</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">57.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">35.984774</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">5.247820</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">56.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">35.933832</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">5.550955</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">55.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">35.899285</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">5.924664</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">54.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">35.866424</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">6.306060</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">53.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">35.833407</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">6.687278</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">52.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">35.800235</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">7.068315</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">51.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">35.766909</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">7.449173</span>
+  <span class="n">time</span><span class="p">:</span> <span class="mf">50.000000</span><span class="p">,</span> <span class="n">lat</span><span class="p">:</span> <span class="o">-</span><span class="mf">35.733432</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">7.829851</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The reconstructed seed point is the same position as the last point in a motion path.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Reconstruct motion path features</a><ul>
+<li><a class="reference internal" href="#exported-reconstructed-motion-paths-to-a-file">Exported reconstructed motion paths to a file</a><ul>
+<li><a class="reference internal" href="#sample-code">Sample code</a></li>
+<li><a class="reference internal" href="#details">Details</a></li>
+<li><a class="reference internal" href="#output">Output</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#query-a-reconstructed-motion-path">Query a reconstructed motion path</a><ul>
+<li><a class="reference internal" href="#id2">Sample code</a></li>
+<li><a class="reference internal" href="#id3">Details</a></li>
+<li><a class="reference internal" href="#id4">Output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pygplates_reconstruct_regular_features.html"
+                        title="previous chapter">Reconstruct regular features</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pygplates_reconstruct_flowline_features.html"
+                        title="next chapter">Reconstruct flowline features</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/sample-code/pygplates_reconstruct_motion_path_features.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pygplates_reconstruct_flowline_features.html" title="Reconstruct flowline features"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pygplates_reconstruct_regular_features.html" title="Reconstruct regular features"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_sample_code.html" >Sample code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
+(C) 2004-2020 California Institute of Technology
+(C) 2007-2020 The Geological Survey of Norway
+.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>

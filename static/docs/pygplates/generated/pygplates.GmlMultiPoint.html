@@ -1,0 +1,192 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pygplates.GmlMultiPoint &#8212; pygplates 2.2.0.28 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pygplates.GmlOrientableCurve" href="pygplates.GmlOrientableCurve.html" />
+    <link rel="prev" title="pygplates.GmlLineString" href="pygplates.GmlLineString.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pygplates.GmlOrientableCurve.html" title="pygplates.GmlOrientableCurve"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.GmlLineString.html" title="pygplates.GmlLineString"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" accesskey="U">Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pygplates-gmlmultipoint">
+<h1>pygplates.GmlMultiPoint<a class="headerlink" href="#pygplates-gmlmultipoint" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pygplates.GmlMultiPoint">
+<em class="property">class </em><code class="descclassname">pygplates.</code><code class="descname">GmlMultiPoint</code><a class="headerlink" href="#pygplates.GmlMultiPoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pygplates.PropertyValue.html#pygplates.PropertyValue" title="pygplates.PropertyValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.PropertyValue</span></code></a></p>
+<p>A property value representing a multi-point geometry.</p>
+<dl class="method">
+<dt id="pygplates.GmlMultiPoint.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>multi_point</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GmlMultiPoint.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a property value representing a multi-point geometry.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>multi_point</strong> (<a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a>) – the multi-point geometry</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">multi_point_property</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GmlMultiPoint</span><span class="p">(</span><span class="n">multi_point</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GmlMultiPoint.__init__" title="pygplates.GmlMultiPoint.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(multi_point)</td>
+<td>Create a property value representing a multi-point geometry.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">accept_visitor</span></code>(visitor)</td>
+<td>Accept a property value visitor so that it can visit this property value.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">clone</span></code>()</td>
+<td>Create a duplicate of this property value (derived) instance, including a recursive copy of any nested property values that this instance might contain.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_geometry</span></code>()</td>
+<td>Extracts the <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">geometry</span></code></a> if this property value contains a geometry.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GmlMultiPoint.get_multi_point" title="pygplates.GmlMultiPoint.get_multi_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_multi_point</span></code></a>()</td>
+<td>Returns the multi-point geometry of this property value.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_value</span></code>([time=0])</td>
+<td>Extracts the value, of this possibly time-dependent property value, at the reconstruction <em>time</em>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GmlMultiPoint.set_multi_point" title="pygplates.GmlMultiPoint.set_multi_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_multi_point</span></code></a>(multi_point)</td>
+<td>Sets the multi-point geometry of this property value.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pygplates.GmlMultiPoint.get_multi_point">
+<code class="descname">get_multi_point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GmlMultiPoint.get_multi_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the multi-point geometry of this property value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.GmlMultiPoint.set_multi_point">
+<code class="descname">set_multi_point</code><span class="sig-paren">(</span><em>multi_point</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GmlMultiPoint.set_multi_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the multi-point geometry of this property value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>multi_point</strong> (<a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a>) – the multi-point geometry</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pygplates.GmlLineString.html"
+                        title="previous chapter">pygplates.GmlLineString</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pygplates.GmlOrientableCurve.html"
+                        title="next chapter">pygplates.GmlOrientableCurve</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/generated/pygplates.GmlMultiPoint.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pygplates.GmlOrientableCurve.html" title="pygplates.GmlOrientableCurve"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.GmlLineString.html" title="pygplates.GmlLineString"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" >Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
+(C) 2004-2020 California Institute of Technology
+(C) 2007-2020 The Geological Survey of Norway
+.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>

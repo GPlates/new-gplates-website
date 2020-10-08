@@ -1,0 +1,289 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pygplates.ReconstructionTreeEdge &#8212; pygplates 2.2.0.28 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pygplates.find_crossovers" href="pygplates.find_crossovers.html" />
+    <link rel="prev" title="pygplates.ReconstructionTree" href="pygplates.ReconstructionTree.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pygplates.find_crossovers.html" title="pygplates.find_crossovers"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.ReconstructionTree.html" title="pygplates.ReconstructionTree"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" accesskey="U">Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pygplates-reconstructiontreeedge">
+<h1>pygplates.ReconstructionTreeEdge<a class="headerlink" href="#pygplates-reconstructiontreeedge" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pygplates.ReconstructionTreeEdge">
+<em class="property">class </em><code class="descclassname">pygplates.</code><code class="descname">ReconstructionTreeEdge</code><a class="headerlink" href="#pygplates.ReconstructionTreeEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Boost.Python.instance</span></code></p>
+<p>A reconstruction tree edge represents a moving/fixed plate pair in the graph of the plate-reconstruction hierarchy. See <a class="reference internal" href="../pygplates_foundations.html#pygplates-foundations-plate-reconstruction-hierarchy"><span class="std std-ref">Plate reconstruction hierarchy</span></a>.</p>
+<dl class="method">
+<dt id="pygplates.ReconstructionTreeEdge.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ReconstructionTreeEdge.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raises an exception
+This class cannot be instantiated from Python</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.ReconstructionTreeEdge.__init__" title="pygplates.ReconstructionTreeEdge.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a></td>
+<td>Raises an exception This class cannot be instantiated from Python</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.ReconstructionTreeEdge.get_child_edges" title="pygplates.ReconstructionTreeEdge.get_child_edges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_child_edges</span></code></a>()</td>
+<td>Returns a <em>view</em>, of the child <a class="reference internal" href="#pygplates.ReconstructionTreeEdge" title="pygplates.ReconstructionTreeEdge"><code class="xref py py-class docutils literal notranslate"><span class="pre">edges</span></code></a> of this edge, that supports iteration over the child edges as well as indexing into the child edges.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.ReconstructionTreeEdge.get_equivalent_total_rotation" title="pygplates.ReconstructionTreeEdge.get_equivalent_total_rotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_equivalent_total_rotation</span></code></a>()</td>
+<td>Return <em>equivalent</em> (relative to the anchor plate) finite rotation of the <em>moving</em> plate of this edge.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.ReconstructionTreeEdge.get_fixed_plate_id" title="pygplates.ReconstructionTreeEdge.get_fixed_plate_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_fixed_plate_id</span></code></a>()</td>
+<td>Return the <em>fixed</em> plate id of this edge.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.ReconstructionTreeEdge.get_moving_plate_id" title="pygplates.ReconstructionTreeEdge.get_moving_plate_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_moving_plate_id</span></code></a>()</td>
+<td>Return the <em>moving</em> plate id of this edge.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pygplates.ReconstructionTreeEdge.get_parent_edge" title="pygplates.ReconstructionTreeEdge.get_parent_edge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_parent_edge</span></code></a>()</td>
+<td>Return the parent edge of this edge, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if this edge has no parent.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pygplates.ReconstructionTreeEdge.get_relative_total_rotation" title="pygplates.ReconstructionTreeEdge.get_relative_total_rotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_relative_total_rotation</span></code></a>()</td>
+<td>Return finite rotation of the <em>moving</em> plate of this edge relative to the <em>fixed</em> plated id of this edge.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pygplates.ReconstructionTreeEdge.get_child_edges">
+<code class="descname">get_child_edges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ReconstructionTreeEdge.get_child_edges" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a <em>view</em>, of the child <a class="reference internal" href="#pygplates.ReconstructionTreeEdge" title="pygplates.ReconstructionTreeEdge"><code class="xref py py-class docutils literal notranslate"><span class="pre">edges</span></code></a> of this edge, that supports iteration over the child edges as well as indexing into the child edges.</p>
+<p>A child edge is one step further from the top (or root) of the reconstruction tree (further from the anchor plate). The fixed plate id of each child edge matches the moving plate id of this edge.</p>
+<p>Note that the <em>view</em> object returned by this method is not a <code class="docutils literal notranslate"><span class="pre">list</span></code> or an <em>iterator</em> but, like dictionary views in Python 3, a <code class="docutils literal notranslate"><span class="pre">list</span></code> or <em>iterator</em> can be obtained from the <em>view</em> as in <code class="docutils literal notranslate"><span class="pre">list(edge.get_child_edges())</span></code> or <code class="docutils literal notranslate"><span class="pre">iter(edge.get_child_edges())</span></code>.</p>
+<p>The returned view provides the following operations for accessing the child edges:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="32%" />
+<col width="68%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Operation</th>
+<th class="head">Result</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">len(child_edges)</span></code></td>
+<td>number of child edges</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">e</span> <span class="pre">in</span> <span class="pre">child_edges</span></code></td>
+<td>iterates over the child edges <em>e</em></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">child_edges[i]</span></code></td>
+<td>the child edge at index <em>i</em></td>
+</tr>
+</tbody>
+</table>
+<p>The following example demonstrates top-down (starting at the anchored plate) traversal of the reconstruction tree:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">traverse_sub_tree</span><span class="p">(</span><span class="n">edge</span><span class="p">):</span>
+    <span class="nb">print</span> <span class="s1">&#39;Parent plate: </span><span class="si">%d</span><span class="s1">, child plate:</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">edge</span><span class="o">.</span><span class="n">get_fixed_plate_id</span><span class="p">(),</span> <span class="n">edge</span><span class="o">.</span><span class="n">get_moving_plate_id</span><span class="p">())</span>
+    <span class="c1"># Recurse into the children sub-trees.</span>
+    <span class="k">for</span> <span class="n">child_edge</span> <span class="ow">in</span> <span class="n">edge</span><span class="o">.</span><span class="n">get_child_edges</span><span class="p">():</span>
+        <span class="n">traverse_sub_tree</span><span class="p">(</span><span class="n">child_edge</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">anchor_plate_edge</span> <span class="ow">in</span> <span class="n">reconstruction_tree</span><span class="o">.</span><span class="n">get_anchor_plate_edges</span><span class="p">():</span>
+    <span class="n">traverse_sub_tree</span><span class="p">(</span><span class="n">anchor_plate_edge</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.ReconstructionTreeEdge.get_equivalent_total_rotation">
+<code class="descname">get_equivalent_total_rotation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ReconstructionTreeEdge.get_equivalent_total_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return <em>equivalent</em> (relative to the anchor plate) finite rotation of the <em>moving</em> plate of this edge.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.FiniteRotation.html#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>total</em> in the method name indicates that the rotation is also relative to <em>present day</em>.</p>
+<p>This method returns the <em>precomputed</em> equivalent of the following (see <a class="reference internal" href="pygplates.FiniteRotation.html#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a> for the maths):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_equivalent_total_rotation</span><span class="p">(</span><span class="n">edge</span><span class="p">):</span>
+    <span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FiniteRotation</span><span class="o">.</span><span class="n">create_identity_rotation</span><span class="p">()</span>
+    <span class="k">while</span> <span class="n">edge</span><span class="p">:</span>
+        <span class="n">finite_rotation</span> <span class="o">=</span> <span class="n">edge</span><span class="o">.</span><span class="n">get_relative_total_rotation</span><span class="p">()</span> <span class="o">*</span> <span class="n">finite_rotation</span>
+        <span class="n">edge</span> <span class="o">=</span> <span class="n">edge</span><span class="o">.</span><span class="n">get_parent_edge</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">finite_rotation</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.ReconstructionTreeEdge.get_fixed_plate_id">
+<code class="descname">get_fixed_plate_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ReconstructionTreeEdge.get_fixed_plate_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the <em>fixed</em> plate id of this edge.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.ReconstructionTreeEdge.get_moving_plate_id">
+<code class="descname">get_moving_plate_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ReconstructionTreeEdge.get_moving_plate_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the <em>moving</em> plate id of this edge.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.ReconstructionTreeEdge.get_parent_edge">
+<code class="descname">get_parent_edge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ReconstructionTreeEdge.get_parent_edge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the parent edge of this edge, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if this edge has no parent.</p>
+<p>This method can be used to traverse the plate circuit from an arbitrary plate (moving plate id on an edge) to the anchor plate (terminating at <code class="docutils literal notranslate"><span class="pre">None</span></code>) and visiting moving/fixed relative plate <a class="reference internal" href="pygplates.FiniteRotation.html#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">rotations</span></code></a> along the way.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pygplates.ReconstructionTreeEdge" title="pygplates.ReconstructionTreeEdge"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReconstructionTreeEdge</span></code></a> or None</td>
+</tr>
+</tbody>
+</table>
+<p>The parent edge is one step closer to the top (or root) of the reconstruction tree (closer to the anchor plate). The moving plate id of the parent edge matches the fixed plate id of this edge.</p>
+<p><code class="docutils literal notranslate"><span class="pre">None</span></code> is returned if this edge is already at the top of the reconstruction tree (if its fixed plate id is the anchor plate id).</p>
+<p>The following example demonstrates following the plate circuit path from a plate (moving plate of an edge) to the anchor plate (at the top/root of the reconstruction tree):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="s1">&#39;Plate: </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">edge</span><span class="o">.</span><span class="n">get_moving_plate_id</span><span class="p">()</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">edge</span><span class="o">.</span><span class="n">get_parent_edge</span><span class="p">():</span>
+        <span class="nb">print</span> <span class="s1">&#39;Anchored plate: </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">edge</span><span class="o">.</span><span class="n">get_fixed_plate_id</span><span class="p">()</span>
+        <span class="k">break</span>
+    <span class="n">edge</span> <span class="o">=</span> <span class="n">edge</span><span class="o">.</span><span class="n">get_parent_edge</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygplates.ReconstructionTreeEdge.get_relative_total_rotation">
+<code class="descname">get_relative_total_rotation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ReconstructionTreeEdge.get_relative_total_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return finite rotation of the <em>moving</em> plate of this edge relative to the <em>fixed</em> plated id of this edge.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.FiniteRotation.html#pygplates.FiniteRotation" title="pygplates.FiniteRotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">FiniteRotation</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>total</em> in the method name indicates that the rotation is also relative to <em>present day</em>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pygplates.ReconstructionTree.html"
+                        title="previous chapter">pygplates.ReconstructionTree</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pygplates.find_crossovers.html"
+                        title="next chapter">pygplates.find_crossovers</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/generated/pygplates.ReconstructionTreeEdge.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pygplates.find_crossovers.html" title="pygplates.find_crossovers"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pygplates.ReconstructionTree.html" title="pygplates.ReconstructionTree"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" >Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
+(C) 2004-2020 California Institute of Technology
+(C) 2007-2020 The Geological Survey of Norway
+.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>
