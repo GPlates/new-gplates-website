@@ -67,7 +67,7 @@ const Navbar = class extends React.Component {
                 News
               </Link>
               <Link className="navbar-item" to="/screenshots">
-                Screenshots
+                Gallery
               </Link>
               <Link className="navbar-item" to="/features">
                 Features
@@ -76,9 +76,9 @@ const Navbar = class extends React.Component {
                 Download
               </Link>
               <Link className="navbar-item" to="/docs">
-                Docs
+                Documentation
               </Link>
-              <Link className="navbar-item" to="/publications">
+              {/*<Link className="navbar-item" to="/publications">
                 Publications
               </Link>
               <Link className="navbar-item" to="/gpml">
@@ -89,7 +89,10 @@ const Navbar = class extends React.Component {
               </Link>
               <Link className="navbar-item" to="/contact">
                 Contact
-              </Link>
+              </Link>*/}
+               <Link className="navbar-item" to="/education">
+                Education
+               </Link>
               <a className="navbar-item" href="https://discourse.gplates.org/" target="_blank" rel="noreferrer">
                 Forum
               </a>

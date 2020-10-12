@@ -51,6 +51,10 @@ Read the [Data Manual](http://www.earthbyte.org/Resources/GPlates_tutorials/GPla
 
 There is also a [complete technical reference](https://www.gplates.org/docs/gpgim/index.html) of the GPlates Geological Information Model (GPGIM) for use by advanced users.
 
+### GPML
+---
+Click [here](/gpml) to find out what GPML is.
+
 ### Compiling GPlates
 ---
 
