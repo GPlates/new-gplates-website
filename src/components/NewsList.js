@@ -31,22 +31,29 @@ class NewsList extends React.Component {
                       </Link>
                     </div>
                   ) : null}
-                  <div className="post-meta" style={{width:'100%'}}>
-                    <Link
-                      className="title has-text-primary is-size-5"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <br></br>
-                    <span className="subtitle is-size-5 is-block has-text-weight-bold">
-                      <span> &bull; </span>{post.frontmatter.date}
-                    </span>
-                    <span>
-                      {post.frontmatter.description}
-                    </span>
+                  <div className="post-meta" style={{width:'100%', position:"relative"}}>
+                    <div style={{paddingBottom:"1.5rem"}}>
+                      <Link
+                        className="title has-text-primary is-size-5"
+                        to={post.fields.slug}
+                      >
+                        {post.frontmatter.title}
+                      </Link>
+                    </div>
+                    
+                    <div className="has-text-weight-bold" style={{position:"absolute", bottom:"0"}}><span> &bull; </span>{post.frontmatter.date}</div>
+                    
                   </div>
                 </header>
+                <hr style={{borderColor:"aliceblue", width:"50%", marginLeft:"0"}}></hr>
+                <p>
+                  <span >
+                    {post.frontmatter.description}
+                  </span>
+                  {/*<Link className="button is-success" to={post.fields.slug}>
+                    Keep Reading →
+                      </Link>*/}
+                </p>
               </article>
             </div>
           ))}

@@ -6,6 +6,7 @@ import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import youtube from '../img/social/youtube.svg'
+import auscopeLogo from '../img/AuScope-logo.png'
 
 const Footer = class extends React.Component {
   render() {
@@ -53,36 +54,48 @@ const Footer = class extends React.Component {
                   </ul>
                 </section>
               </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://www.facebook.com/earthbyte">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com/earthbytegroup">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://www.instagram.com/explore/tags/earthbyte/top/">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="youtube" href="https://www.youtube.com/channel/UCa41IQEhmmuXmz9J6iMfsnA">
-                  <img
-                    src={youtube}
-                    alt="Youtube"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
+              <div className="column is-4 ">
+                <div>
+                  <a title="AuScope" href="https://www.auscope.org.au/">
+                    <img
+                      src={auscopeLogo}
+                      alt="AuScope Logo"
+                      style={{ maxWidth:"150px", filter: "invert(20%)", padding:".2rem .5rem .2rem .5rem", borderRadius:"15px", marginBottom: "-20px"}}
+                    />
+                  </a>
+                </div>
+                <div className="social">
+                  <a title="facebook" href="https://www.facebook.com/earthbyte">
+                    <img
+                      src={facebook}
+                      alt="Facebook"
+                      style={{ width: '1em', height: '1em' }}
+                    />
+                  </a>
+                  <a title="twitter" href="https://twitter.com/earthbytegroup">
+                    <img
+                      className="fas fa-lg"
+                      src={twitter}
+                      alt="Twitter"
+                      style={{ width: '1em', height: '1em' }}
+                    />
+                  </a>
+                  <a title="instagram" href="https://www.instagram.com/explore/tags/earthbyte/top/">
+                    <img
+                      src={instagram}
+                      alt="Instagram"
+                      style={{ width: '1em', height: '1em' }}
+                    />
+                  </a>
+                  <a title="youtube" href="https://www.youtube.com/channel/UCa41IQEhmmuXmz9J6iMfsnA">
+                    <img
+                      src={youtube}
+                      alt="Youtube"
+                      style={{ width: '1em', height: '1em' }}
+                    />
+                  </a>
+                </div>
+                
               </div>
             </div>
           </div>
