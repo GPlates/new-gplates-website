@@ -12,17 +12,11 @@ class Screenshots extends React.Component {
 
     return (
       <Layout>
-        <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url(${bgImg})`,
-          }}
-        >
+        
           <h2 className="has-text-weight-bold is-size-1 gp-title">
             Screenshots
           </h2>
-          <div className="tint"></div>
-        </div>
+          
 
         <div className="container">
           <div className="column is-12 is-offset-0">

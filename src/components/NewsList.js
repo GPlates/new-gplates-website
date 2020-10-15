@@ -45,7 +45,7 @@ class NewsList extends React.Component {
                     
                   </div>
                 </header>
-                <hr style={{borderColor:"aliceblue", width:"50%", marginLeft:"0"}}></hr>
+                <hr style={{width:"50%", marginLeft:"0", border:"inset 1px aliceblue"}}></hr>
                 <p>
                   <span >
                     {post.frontmatter.description}

@@ -34,19 +34,6 @@ const SimplePage = ({ data }) => {
 
   return (
     <Layout>
-      <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url(${bgImg})`,
-            marginBottom: '0'
-          }}
-        >
-          <h1 className="has-text-weight-bold is-size-1 gp-title">
-            {post.frontmatter.title}
-          </h1>
-          <div className="tint"></div>
-      </div>
-
       <SimplePageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
