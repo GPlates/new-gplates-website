@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import bgImg from '../img/topo_1200x600.png'
 
 export const SimplePageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content

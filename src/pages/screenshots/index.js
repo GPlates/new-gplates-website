@@ -3,7 +3,6 @@ import Layout from '../../components/Layout'
 import PropTypes from 'prop-types'
 import {Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
-import bgImg from '../../img/topo_1200x600.png'
 
 class Screenshots extends React.Component {
   render() {

@@ -10,14 +10,59 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload, faClipboard, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
 import GPlatesMainScreenshot from '../img/SATL_ExponentialStretching_650x380.png'
-import WhyGPlatesImage from '../img/why-gplates-image.png'
-import gIcon from '../img/icon.svg'
+import HeroImg1 from '../img/hero-img-1.png'
+import HeroImg2 from '../img/hero-img-2.png'
+import HeroImg3 from '../img/hero-img-3.png'
+import HeroImg4 from '../img/hero-img-4.png'
+
 import pygplatesLogo from '../img/pygplates-screenshot.png' 
 import portalScreenshot from '../img/portal-screenshot.png'
 import gwsScreenshot from '../img/gws-screenshot.png'
 
 import auscopeLogo from '../img/Auscope_log_simulation_modelling.png'
 import peoplePhoto from '../img/earthbyte_group_June2016.jpg'
+
+const heroClick_1 = () => {
+  let mainScreenshot = document.getElementById("main-screenshot");
+  mainScreenshot.src = HeroImg1;
+ }
+
+ const heroClick_2 = () => {
+  let mainScreenshot = document.getElementById("main-screenshot");
+  mainScreenshot.src = HeroImg2;
+ }
+
+ const heroClick_3 = () => {
+  let mainScreenshot = document.getElementById("main-screenshot");
+  mainScreenshot.src = HeroImg3;
+ }
+
+ const heroClick_4 = () => {
+  let mainScreenshot = document.getElementById("main-screenshot");
+  mainScreenshot.src = HeroImg4;
+ }
+ 
+ var images = [HeroImg1, HeroImg2, HeroImg3, HeroImg4];
+ var n=0;
+ const timer = () =>{
+  let mainScreenshot = document.getElementById("main-screenshot");
+  if(!mainScreenshot){
+    return;
+  }
+  mainScreenshot.className="hide";
+  
+  setTimeout(()=> {
+      if(n==3){
+        n=0;
+      }else{
+        n+=1;
+      }   
+      mainScreenshot.src=images[n];
+      mainScreenshot.className=""},
+    5000);
+}
+  
+  setInterval(timer, 20000);
 
 export const IndexPageTemplate = ({
   image,
@@ -90,12 +135,37 @@ export const IndexPageTemplate = ({
             >
               {subheading}
             </h3>
-            <img className="gp-middle-icon"
-              src={gIcon}
-              alt="GPlates Icon"
-              style={{ width: '7em', margin: '1em auto' }}
-            />
-            
+            <div style={{paddingTop:"2rem"}}>
+              <img 
+                src={HeroImg1}
+                alt="Hero 1"
+                style={{ width: '5em', margin: '1em 0.2em', cursor:"pointer" }}
+                onClick={heroClick_1}
+                onKeyDown={heroClick_1}
+                
+              />
+              <img 
+                src={HeroImg2}
+                alt="Hero 2"
+                style={{ width: '5em', margin: '1em 0.2em', cursor:"pointer" }}
+                onClick={heroClick_2}
+                onKeyDown={heroClick_2}
+              />
+              <img 
+                src={HeroImg3}
+                alt="Hero 3"
+                style={{ width: '5em', margin: '1em 0.2em', cursor:"pointer"  }}
+                onClick={heroClick_3}
+                onKeyDown={heroClick_3}
+              />
+              <img 
+                src={HeroImg4}
+                alt="Hero 4"
+                style={{ width: '5em', margin: '1em 0.2em', cursor:"pointer"  }}
+                onClick={heroClick_4}
+                onKeyDown={heroClick_4}
+              />
+            </div>
 
             <div style={{marginBottom: '2rem'}}>
               <a href="https://sourceforge.net/projects/gplates/files/gplates/2.2/"
@@ -120,7 +190,8 @@ export const IndexPageTemplate = ({
           <div className="column is-5" style={{  }}>
             <div style={{ maxWidth:'600px',margin:'auto' }}>
               <img
-                  src={WhyGPlatesImage}
+                  id="main-screenshot"
+                  src={HeroImg1}
                   alt=""
                   style={{  }}
               />
@@ -190,7 +261,7 @@ export const IndexPageTemplate = ({
                     
 
                     {reasons.map((reason) => (
-                      <p>
+                      <p key={reason}>
                         <span className="icon" style={{verticalAlign: 'middle', color: 'green'}}> 
                           <FontAwesomeIcon icon={faCheckCircle} className="svg-inline--fa fa-check-circle fa-w-16 fa-7x"/>
                         </span>
