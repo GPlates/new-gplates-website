@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 import LatestNews from '../components/LatestNews'
 import { HTMLContent } from '../components/Content'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload, faClipboard, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { faDownload, faClipboard, faCheckCircle, faNewspaper} from '@fortawesome/free-solid-svg-icons'
 
 import GPlatesMainScreenshot from '../img/SATL_ExponentialStretching_650x380.png'
 import HeroImg1 from '../img/hero-img-1.png'
@@ -307,9 +307,6 @@ export const IndexPageTemplate = ({
         <div className="column is-12 is-offset-0">
           <div className="column is-12">
             <div style={{padding: '0'}}>  
-              <h3 className="has-text-weight-semibold is-size-3" style={{ textAlign: 'center'}}>
-                GPlates Family
-              </h3>
           
               <div className="columns section is-multiline">
 
@@ -432,8 +429,13 @@ export const IndexPageTemplate = ({
           <br></br>
           <LatestNews />
           <div className="column is-12 has-text-centered">
-            <Link className="button is-primary" to="/news">
-              More News
+            <Link
+              to="/news"
+            >
+              <button className="button is-small is-info">
+                <span className="icon"> <FontAwesomeIcon icon={faNewspaper} /></span>
+                <span>More News</span>
+              </button>
             </Link>
           </div>
         </div>

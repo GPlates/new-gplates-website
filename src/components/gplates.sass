@@ -1,5 +1,12 @@
+body.-webkit-scrollbar 
+  width: 0
+  height: 0
+
 body
+  scrollbar-width: none 
   font-family: Open Sans Bold, sans-serif
+  -ms-overflow-style: none  
+  overflow-y: scroll
 
 .gp-title
   text-align: center
@@ -20,3 +27,10 @@ body
 #main-screenshot.hide
   opacity: 0
    
+.gp-link-no-underline
+  text-decoration: none !important
+
+.gp-box
+  box-shadow: 0 0.5em 1em -0.125em rgba(43, 37, 35, 0.6), 0 0px 0 1px rgba(43, 37, 35, 0.02)
+  color: black
+

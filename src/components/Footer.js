@@ -48,9 +48,9 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/auscope">
-                        AuScope
-                      </Link>
+                      <a className="navbar-item" href="https://www.earthbyte.org">
+                        EarthByte Group
+                      </a>
                     </li>
                   </ul>
                 </section>
@@ -91,7 +91,6 @@ const Footer = class extends React.Component {
         </div>
         <div className="container" style={{display:"flex", flexDirection: "column"}}>
           <div style={{margin:"auto"}}>
-            <span>GPlates project is funded by</span>
             <a title="AuScope" href="https://www.auscope.org.au/">
               <img
                 src={auscopeLogo}
@@ -100,7 +99,9 @@ const Footer = class extends React.Component {
               />
             </a>
           </div>
-          <div  style={{margin:"auto"}}>Copyright © 2020 The University of Sydney. All rights reserved.</div>
+          <div  style={{margin:"auto", textAlign: "center", padding: "0.2rem"}}>Copyright © 2020 The University of Sydney. All rights reserved. GPlates project is funded by&nbsp;
+            <a title="AuScope" href="https://www.auscope.org.au/">AuScope</a>.
+          </div>
         </div>
       </footer>
     )
