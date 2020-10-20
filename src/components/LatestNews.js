@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendarDay, faBookReader } from '@fortawesome/free-solid-svg-icons'
+import { faCalendarDay, faBookReader, faNewspaper } from '@fortawesome/free-solid-svg-icons'
 import { HTMLContent } from '../components/Content'
 
 class LatestNews extends React.Component {
@@ -27,7 +27,7 @@ class LatestNews extends React.Component {
           <span className="icon" style={{verticalAlign:"middle"}}> <FontAwesomeIcon icon={faCalendarDay} className="fal" /> </span>
           <span>{posts[0].node.frontmatter.date}</span>
         </div>
-        <HTMLContent content={posts[0].node.html.substring(0,2500)} />
+        <HTMLContent content={posts[0].node.html.substring(0,2500)} className="gp-front-news"/>
         
         {posts[0].node.html.length>2500  && 
         <div style={{textAlign: "center"}}>
@@ -64,23 +64,23 @@ class LatestNews extends React.Component {
                   <div className="post-meta" style={{width:'100%', position:"relative"}}>
                     <div style={{paddingBottom:"1.5rem"}}>
                       <Link
-                        className="title has-text-link is-size-5 gp-link-no-underline"
+                        className="title has-text-link gp-news-title"
                         to={post.fields.slug}
                       >
                         {post.frontmatter.title}
                       </Link>
                     </div>
                     
-                    <div className="has-text-weight-bold" style={{position:"absolute", bottom:"0"}}>
+                    <div className="" style={{position:"absolute", bottom:"0"}}>
                       <span className="icon" style={{verticalAlign:"middle"}}> <FontAwesomeIcon icon={faCalendarDay} className="fal" /> </span>
-                      <span>{post.frontmatter.date}</span>
+                      <span style={{fontSize:"0.7rem",fontWeight:"600"}}>{post.frontmatter.date}</span>
                     </div>
                     
                   </div>
                 </header>
                 <hr style={{width:"100%", margin:".5rem 0", border:"inset 1px aliceblue"}}></hr>
                 <p>
-                  <span >
+                  <span style={{fontSize:"0.9rem"}}>
                     {post.frontmatter.description}
                   </span>
                   {/*<Link className="button is-success" to={post.fields.slug}>
@@ -90,6 +90,16 @@ class LatestNews extends React.Component {
               </article>
             </div>
           ))}
+          <div className="column is-12 has-text-centered" style={{marginTop:"1rem"}}>
+            <Link
+              to="/news"
+            >
+              <button className="button is-small is-info">
+                <span className="icon"> <FontAwesomeIcon icon={faNewspaper} /></span>
+                <span>More News</span>
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     )

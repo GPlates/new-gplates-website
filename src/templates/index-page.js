@@ -52,7 +52,7 @@ const heroClick_1 = () => {
   mainScreenshot.className="hide";
   
   setTimeout(()=> {
-      if(n==3){
+      if(n===3){
         n=0;
       }else{
         n+=1;
@@ -428,16 +428,7 @@ export const IndexPageTemplate = ({
           </h3>
           <br></br>
           <LatestNews />
-          <div className="column is-12 has-text-centered">
-            <Link
-              to="/news"
-            >
-              <button className="button is-small is-info">
-                <span className="icon"> <FontAwesomeIcon icon={faNewspaper} /></span>
-                <span>More News</span>
-              </button>
-            </Link>
-          </div>
+          
         </div>
       </div>
     </div>
