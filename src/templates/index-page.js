@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import {graphql } from 'gatsby'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 import Layout from '../components/Layout'
 import LatestNews from '../components/LatestNews'
 import { HTMLContent } from '../components/Content'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload, faClipboard, faCheckCircle, faNewspaper} from '@fortawesome/free-solid-svg-icons'
+import { faDownload, faClipboard, faCheckCircle} from '@fortawesome/free-solid-svg-icons'
 
 import GPlatesMainScreenshot from '../img/SATL_ExponentialStretching_650x380.png'
 import HeroImg1 from '../img/hero-img-1.png'

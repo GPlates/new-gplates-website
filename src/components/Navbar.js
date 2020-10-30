@@ -96,6 +96,29 @@ const Navbar = class extends React.Component {
               <a className="navbar-item" href="https://discourse.gplates.org/" target="_blank" rel="noreferrer">
                 Forum
               </a>
+              {/*
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  drop
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    AAA!!!!!!!!!!!!!
+                  </a>
+                  <a class="navbar-item">
+                    BBB
+                  </a>
+                  <a class="navbar-item">
+                    CCC
+                  </a>
+                  <hr class="navbar-divider"></hr>
+                  <a class="navbar-item">
+                    DDD
+                  </a>
+                </div>
+              </div>
+              */}
             </div>
             <div className="navbar-end has-text-centered">
               <a
