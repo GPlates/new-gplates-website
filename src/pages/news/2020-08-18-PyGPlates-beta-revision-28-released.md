@@ -5,13 +5,15 @@ date: 2020-08-18T15:04:10.000Z
 featuredpost: true
 featuredimage: ../../img/pygplates_doc_contents.png
 description: >-
-  This is a description. This pyGPlates beta release adds support for Python 3 (in addition to Python 2.7).
+  This pyGPlates beta release adds support for Python 3 (in addition to Python 2.7).
 tags:
   - pyGPlates
   - release
   - python3
 ---
 ![pygplates_doc_contents](../../img/pygplates_doc_contents.png)
+
+This pyGPlates beta release adds support for __Python 3__ (in addition to Python 2.7).
 
 What's new in pyGPlates revision 28:-
 
@@ -27,14 +29,14 @@ What's new in pyGPlates revision 28:-
   * Python 2 and 3 (32-bit and 64-bit), except Focal (Python 3 64-bit only).
 * Create topological features (dynamic lines, polygons and deforming networks):
   * Usually they are built in GPlates, but this can now be done in pyGPlates.
-  * See the sample code.
-* Supports deforming trenches when used with subduction convergence script.
-* Much faster querying of reconstructions.
+  * See the [sample code](/docs/pygplates/sample-code/pygplates_create_topological_features.html).
+* Supports deforming trenches when used with [subduction convergence script](https://github.com/EarthByte/PlateTectonicTools/blob/master/ptt/subduction_convergence.py).
+* Much faster [querying of reconstructions](docs/pygplates/generated/pygplates.RotationModel.html#pygplates.RotationModel.get_rotation).
 * Bug fixes.
 
-Download this release from the Download page.
+Download this release from the [Download](/download) page.
 
-The pyGPlates documentation and tutorials are available on the User Documentation page and includes:
+The pyGPlates documentation and tutorials are available on the [User Documentation](/docs) page and includes:
 
 * an introduction to pyGPlates,
 * an installation guide,
@@ -45,6 +47,6 @@ The pyGPlates documentation and tutorials are available on the User Documentatio
 
 The pyGPlates tutorials are Jupyter Notebooks that analyse and visualise real-world data using pyGPlates. These tutorials complement the sample code in the pyGPlates documentation by providing a more research-oriented focus.
 
-PyGPlates enables access to GPlates functionality via the Python programming language. This may be of particular use to researchers requiring more flexibility than is provided by the GPlates user interface.
+PyGPlates enables access to GPlates functionality via the [Python](https://www.python.org/) programming language. This may be of particular use to researchers requiring more flexibility than is provided by the GPlates user interface.
 
 PyGPlates compiles and runs on Windows 10, macOS 10.13+ and Linux.

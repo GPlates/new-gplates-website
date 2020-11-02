@@ -90,7 +90,7 @@ const Footer = class extends React.Component {
           </div>
         </div>
         <div className="container" style={{display:"flex", flexDirection: "column"}}>
-          <div style={{margin:"auto"}}>
+          {/*<div style={{margin:"auto"}}>
             <a title="AuScope" href="https://www.auscope.org.au/">
               <img
                 src={auscopeLogo}
@@ -98,7 +98,7 @@ const Footer = class extends React.Component {
                 style={{ maxWidth:"120px", filter: "invert(20%)", marginLeft:"5px", marginBottom:"0px", borderRadius:"15px", verticalAlign:"middle"}}
               />
             </a>
-          </div>
+          </div>*/}
           <div  style={{margin:"auto", textAlign: "center", padding: "0.2rem"}}>Copyright © 2020 The University of Sydney. All rights reserved. GPlates project is funded by&nbsp;
             <a title="AuScope" href="https://www.auscope.org.au/">AuScope</a>.
           </div>
