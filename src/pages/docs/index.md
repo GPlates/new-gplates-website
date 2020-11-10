@@ -21,7 +21,7 @@ There are many [Introductory Tutorials](https://sites.google.com/site/gplatestut
 
 A video showcasing some of the most recently added functionality of GPlates can be found on the [Features](https://www.gplates.org/features.html) page.
 
-The live versions of the tutorials are hosted on Google servers. If you are in China or cannot access Google servers, the tutorial PDFs and related files may be downloaded from the archive found [here](https://www.earthbyte.org/webdav/ftp/earthbyte/GPlates/TutorialData_GPlates2.1/).
+The live versions of the tutorials are hosted on Google servers. If you are in China or cannot access Google servers, the tutorial PDFs and related files may be downloaded from the archive found [here](https://www.earthbyte.org/webdav/ftp/earthbyte/GPlates/TutorialData_GPlates2.2.zip).
 
 ### GPlates Python Documentation
 ---

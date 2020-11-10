@@ -6,7 +6,6 @@ import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import youtube from '../img/social/youtube.svg'
-import auscopeLogo from '../img/AuScope-logo.png'
 
 const Footer = class extends React.Component {
   render() {
@@ -35,7 +34,11 @@ const Footer = class extends React.Component {
                          News
                       </Link>
                     </li>
-                    
+                    <li>
+                      <a className="navbar-item" href="https://www.earthbyte.org">
+                        EarthByte Group
+                      </a>
+                    </li>
                   </ul>
                 </section>
               </div>
@@ -47,11 +50,7 @@ const Footer = class extends React.Component {
                         Contact
                       </Link>
                     </li>
-                    <li>
-                      <a className="navbar-item" href="https://www.earthbyte.org">
-                        EarthByte Group
-                      </a>
-                    </li>
+                    
                   </ul>
                 </section>
               </div>

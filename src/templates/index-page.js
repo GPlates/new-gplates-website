@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 import LatestNews from '../components/LatestNews'
 import { HTMLContent } from '../components/Content'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload, faClipboard, faCheckCircle} from '@fortawesome/free-solid-svg-icons'
+import { faDownload, faClipboard, faCheckCircle, faAngleDoubleRight} from '@fortawesome/free-solid-svg-icons'
 
 import GPlatesMainScreenshot from '../img/SATL_ExponentialStretching_650x380.png'
 import HeroImg1 from '../img/hero-img-1.png'
@@ -115,10 +115,8 @@ export const IndexPageTemplate = ({
               }}
             >
 
-              <span style={{fontSize:'150%'}}>
-                <span className="gp-g-letter" style={{color:'blue'}}>G</span>P
-                <span style={{color:'orange'}}>l</span><span style={{color:'red'}}>a</span>t
-                <span style={{color:'yellow'}}>e</span>s
+              <span style={{fontSize:'150%', color:'#fff', textShadow: '2px 2px 4px #000000', fontFamily: 'ui-monospace'}}>
+                GPlates
               </span>
             </h1>
             <h3
@@ -294,6 +292,9 @@ export const IndexPageTemplate = ({
                   <button className="button is-small is-success"><span className="icon"> <FontAwesomeIcon icon={faClipboard} className="fa-spin" /></span>
                   <span>Copy the citation to clipboard</span></button>
                 </CopyToClipboard>
+                <a className="button is-small is-info" style={{marginLeft:'1rem'}} href="/publications" >
+                  <span>More publications</span><span className="icon"> <FontAwesomeIcon icon={faAngleDoubleRight}/></span>
+                </a>
               </div>
             </div>
           </article>

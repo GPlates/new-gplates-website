@@ -3,7 +3,7 @@ templateKey: index-page
 title: GPlates
 image: ../img/topo_1200x600.png
 heading: GPlates
-subheading: GPlates offers a novel combination of interactive plate-tectonic reconstructions, geographic information system (GIS) functionality and raster data visualisation.
+subheading: GPlates is an interactive plate-tectonics visualisation program. GPlates enables interactive visualisation and manipulation of the plate-tectonic reconstructions of geological and paleo-geographic features through geological time.
 mainpitch:
   title: What is GPlates?
   description: >
@@ -16,7 +16,8 @@ reasons:
   - Open source and free
   - Easy to use
   - Fast and reliable
-  - Renowned researchers and scientists
-  - Professional software dev team 
-  - Proudly made in Australia in cooperation with EU and USA
+  - Extensive open-access data and models
+  - wide-ranging interoperability with other software
+  - Used by educators, researchers, and industries
+  - Professional software development team 
 ---
