@@ -1,3 +1,6 @@
+---
+templateKey: 'user-manual'
+---
 This chapter provides an overview of how to manipulate the view of the globe, and any displayed data or features.
 
 Reconstruction View

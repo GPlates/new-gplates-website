@@ -1,3 +1,6 @@
+---
+templateKey: 'user-manual'
+---
 This chapter aims to provide the reader with information and instructions for digitising new features in GPlates.
 
 Digitisation

@@ -1,3 +1,6 @@
+---
+templateKey: 'user-manual'
+---
 Before you load any data into GPlates the globe will appear as a blank sphere; in order to start with GPlates you will need to know how to load, save and unload data.
 
 > **Tip**

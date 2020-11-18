@@ -1,3 +1,6 @@
+---
+templateKey: 'user-manual'
+---
 Introduction
 ============
 

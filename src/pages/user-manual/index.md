@@ -1,3 +1,6 @@
+---
+templateKey: 'user-manual'
+---
 [Chapter 1: Introduction to GPlates](Introduction_Gplates.html)
 
 [Chapter 2: Introducing the Main Window](Introducing_The_Main_Window.html)

@@ -1,3 +1,6 @@
+---
+templateKey: 'user-manual'
+---
 This chapter provides a guide to interacting with the geological features which you are creating or editing in GPlates.
 
 Tools for Interacting with Features

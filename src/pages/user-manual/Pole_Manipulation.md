@@ -1,3 +1,6 @@
+---
+templateKey: 'user-manual'
+---
 This chapter describes how to manipulate the reconstruction pole hierarchy using the Modify Reconstruction Poles tool.
 
 Modify Reconstruction Poles Tool

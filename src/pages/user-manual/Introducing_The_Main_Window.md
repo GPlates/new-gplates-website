@@ -1,3 +1,6 @@
+---
+templateKey: 'user-manual'
+---
 This section describes the **Main Window**, the heart of the GPlates user interface. Below we present annotated screenshots of GPlates, label the key areas of the window, and provide a brief overview of each.
 
 The Main Window

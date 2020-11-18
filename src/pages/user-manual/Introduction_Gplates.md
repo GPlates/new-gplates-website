@@ -1,3 +1,6 @@
+---
+templateKey: 'user-manual'
+---
 The Aim of this Manual
 ======================
 

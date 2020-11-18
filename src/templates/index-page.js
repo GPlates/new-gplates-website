@@ -122,8 +122,8 @@ export const IndexPageTemplate = ({
             <h3
               className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
               style={{
-                //display: 'none',
-                color: '#fff',
+                textAlign: 'left',
+                color: '#eee',
                 padding: '0.25em',
                 maxWidth: '768px',
                 lineHeight: '1.5',
@@ -284,7 +284,8 @@ export const IndexPageTemplate = ({
             <div className="message-body">
               <strong>Citation:</strong><br></br>
               <cite> Müller, R. D., Cannon, J., Qin, X., Watson, R. J., Gurnis, M., Williams, S., et al. 2018. 
-                GPlates: Building a virtual Earth through deep time. Geochemistry, Geophysics, Geosystems, 19. doi:10.1029/2018GC007584.
+                GPlates: Building a virtual Earth through deep time. Geochemistry, Geophysics, Geosystems, 19. doi:10.1029/2018GC007584.  
+                <a href="/publications" style={{marginLeft:'0.5rem', fontSize:'80%', color:'blue'}}>More >></a>
               </cite>
               <br></br><br></br>
               <div style={{textAlign:'center'}}>
@@ -292,9 +293,7 @@ export const IndexPageTemplate = ({
                   <button className="button is-small is-success"><span className="icon"> <FontAwesomeIcon icon={faClipboard} className="fa-spin" /></span>
                   <span>Copy the citation to clipboard</span></button>
                 </CopyToClipboard>
-                <a className="button is-small is-info" style={{marginLeft:'1rem'}} href="/publications" >
-                  <span>More publications</span><span className="icon"> <FontAwesomeIcon icon={faAngleDoubleRight}/></span>
-                </a>
+                
               </div>
             </div>
           </article>
