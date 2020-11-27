@@ -8,25 +8,98 @@ The Main Window
 
 When you start GPlates, the first window you will encounter is the **Main Window**. This contains your view of the globe, and is the starting-point of all tasks within GPlates. It is here that you can control your view of the globe, choose your reconstruction time, load and unload data, and interact with geological features.
 
-![](screenshots/MainWindow-Callouts.png)
+![](./screenshots/MainWindow-Callouts.png)
 
-<table><colgroup><col style="width: 13%" /><col style="width: 28%" /><col style="width: 57%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Item</th><th style="text-align: left;">Name</th><th style="text-align: left;">Description</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;">1</td><td style="text-align: left;">Menu Bar</td><td style="text-align: left;">This region of the Main Window contains the titles of the menus.</td></tr><tr class="even"><td style="text-align: left;">2</td><td style="text-align: left;">Tool Palette</td><td style="text-align: left;">A collection of tools which are used to interact with the globe and geological features via the mouse pointer.</td></tr><tr class="odd"><td style="text-align: left;">3</td><td style="text-align: left;">Time Controls</td><td style="text-align: left;">A collection of user-interface controls for precise control of the reconstruction time.</td></tr><tr class="even"><td style="text-align: left;">4</td><td style="text-align: left;">Animation Controls</td><td style="text-align: left;">A collection of tools to manipulate the animation of reconstructions.</td></tr><tr class="odd"><td style="text-align: left;">5</td><td style="text-align: left;">Zoom Slider</td><td style="text-align: left;">A mouse-controlled slider which controls the zoom level of the Globe View camera.</td></tr><tr class="even"><td style="text-align: left;">6</td><td style="text-align: left;">Task Panel</td><td style="text-align: left;">Task-specific information and controls which correspond to the currently-activated tool.</td></tr><tr class="odd"><td style="text-align: left;">7</td><td style="text-align: left;">View Control</td><td style="text-align: left;">Controls which projection is used to display data and the exact zoom level as a percentage.</td></tr><tr class="even"><td style="text-align: left;">8</td><td style="text-align: left;">Camera Coordinate</td><td style="text-align: left;">An information field which indicates the current globe position of the Globe View camera.</td></tr><tr class="odd"><td style="text-align: left;">9</td><td style="text-align: left;">Mouse Coordinate</td><td style="text-align: left;">An information field which indicates the current globe position of the mouse pointer.</td></tr><tr class="even"><td style="text-align: left;">10</td><td style="text-align: left;">Clicked Geometry Table</td><td style="text-align: left;">Displays a summary of each geometry or feature touched by the last mouse click.</td></tr></tbody></table>
+<table>
+   <colgroup>
+      <col style="width: 13%" />
+      <col style="width: 28%" />
+      <col style="width: 57%" />
+   </colgroup>
+   <thead>
+      <tr class="header">
+         <th style="text-align: left;">Item</th>
+         <th style="text-align: left;">Name</th>
+         <th style="text-align: left;">Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td style="text-align: left;">1</td>
+         <td style="text-align: left;">Menu Bar</td>
+         <td style="text-align: left;">This region of the Main Window contains the titles of the menus.</td>
+      </tr>
+      <tr class="even">
+         <td style="text-align: left;">2</td>
+         <td style="text-align: left;">Tool Palette</td>
+         <td style="text-align: left;">A collection of tools which are used to interact with the globe and geological features via the mouse pointer.</td>
+      </tr>
+      <tr class="odd">
+         <td style="text-align: left;">3</td>
+         <td style="text-align: left;">Time Controls</td>
+         <td style="text-align: left;">A collection of user-interface controls for precise control of the reconstruction time.</td>
+      </tr>
+      <tr class="even">
+         <td style="text-align: left;">4</td>
+         <td style="text-align: left;">Animation Controls</td>
+         <td style="text-align: left;">A collection of tools to manipulate the animation of reconstructions.</td>
+      </tr>
+      <tr class="odd">
+         <td style="text-align: left;">5</td>
+         <td style="text-align: left;">Zoom Slider</td>
+         <td style="text-align: left;">A mouse-controlled slider which controls the zoom level of the Globe View camera.</td>
+      </tr>
+      <tr class="even">
+         <td style="text-align: left;">6</td>
+         <td style="text-align: left;">Task Panel</td>
+         <td style="text-align: left;">Task-specific information and controls which correspond to the currently-activated tool.</td>
+      </tr>
+      <tr class="odd">
+         <td style="text-align: left;">7</td>
+         <td style="text-align: left;">View Control</td>
+         <td style="text-align: left;">Controls which projection is used to display data and the exact zoom level as a percentage.</td>
+      </tr>
+      <tr class="even">
+         <td style="text-align: left;">8</td>
+         <td style="text-align: left;">Camera Coordinate</td>
+         <td style="text-align: left;">An information field which indicates the current globe position of the Globe View camera.</td>
+      </tr>
+      <tr class="odd">
+         <td style="text-align: left;">9</td>
+         <td style="text-align: left;">Mouse Coordinate</td>
+         <td style="text-align: left;">An information field which indicates the current globe position of the mouse pointer.</td>
+      </tr>
+      <tr class="even">
+         <td style="text-align: left;">10</td>
+         <td style="text-align: left;">Clicked Geometry Table</td>
+         <td style="text-align: left;">Displays a summary of each geometry or feature touched by the last mouse click.</td>
+      </tr>
+   </tbody>
+</table>
 
 > **Important**
 >
 > The appearance of the **Main Window** - particularly the layout of the different window components - will change as GPlates continues to evolve.
+<table>
+<tbody><tr>
+<td class="icon" style="width:5rem; display:inline-table;">
+<img src="./images/icons/important.png" alt="Important" style="width:3rem;">
+</td>
+<td class="content">The appearance of the <strong>Main Window</strong> - particularly the layout of the different window components - will change as GPlates continues to evolve.</td>
+</tr></tbody>
+</table>
 
 Reconstruction View
 ===================
 
 The reconstruction view provides the user with a display of their data on the GPlates globe or map reconstructed to a moment in time. Control of the current reconstruction time, is located under the menu bar on the left, (see image below). The time can be controlled by both a text field, forwards and backwards time buttons, and the animation slider. In addition the shortcut `Ctrl+T` to enter a time value in the text field.
 
-![](screenshots/ReconstructionView-DynTopo.png)
+![](./screenshots/ReconstructionView-DynTopo.png)
 
 Camera Control
 --------------
 
-When the ![](icons/globe_rotation_35.png) Drag Globe tool is activated the GPlates globe can be re-oriented freely using the mouse with a simple click and drag motion. If another tool is selected the globe can still be dragged by holding down `Ctrl`.
+When <span style="display:inline-block;width:30px;"><img src='./icons/globe_rotation_35.png' /> </span>Drag Globe tool is activated the GPlates globe can be re-oriented freely using the mouse with a simple click and drag motion. If another tool is selected the globe can still be dragged by holding down `Ctrl`.
 
 If the user wishes to adjust the camera position to a particular latitude and longitude, pressing `Ctrl+Shift+L` will pop up a window allowing manual entry of coordinates.
 

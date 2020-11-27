@@ -1,54 +1,56 @@
 ---
 templateKey: 'user-manual'
 ---
-[Chapter 1: Introduction to GPlates](Introduction_Gplates.html)
+### GPlates User Manual
 
-[Chapter 2: Introducing the Main Window](Introducing_The_Main_Window.html)
+[Chapter 1: Introduction to GPlates](/user-manual/Introduction_Gplates/)
 
-[Chapter 3: Data File Types](DataFileTypes.html)
+[Chapter 2: Introducing the Main Window](/user-manual/Introducing_The_Main_Window/)
 
-[Chapter 4: Loading and Saving](LoadingAndSaving.html)
+[Chapter 3: Data File Types](/user-manual/DataFileTypes/)
 
-[Chapter 5: Projects and Recent Sessions](Projects_and_Recent_Sessions.html)
+[Chapter 4: Loading and Saving](/user-manual/LoadingAndSaving/)
 
-[Chapter 6: Controlling the View](Controlling_View.html)
+[Chapter 5: Projects and Recent Sessions](/user-manual/Projects_and_Recent_Sessions/)
 
-[Chapter 7: Layers](Layers.html)
+[Chapter 6: Controlling the View](/user-manual/Controlling_View/)
 
-[Chapter 8: Reconstructions](Reconstructions.html)
+[Chapter 7: Layers](/user-manual/Layers/)
 
-[Chapter 9: Export](Export.html)
+[Chapter 8: Reconstructions](/user-manual/Reconstructions/)
 
-[Chapter 10: Exporting net lithosphere rotations](NetRotation.html)
+[Chapter 9: Export](/user-manual/Export/)
 
-[Chapter 11: Interacting with Features](Interacting_Features.html)
+[Chapter 10: Exporting net lithosphere rotations](/user-manual/NetRotation/)
 
-[Chapter 12: More on Reconstructions](MoreReconstructions.html)
+[Chapter 11: Interacting with Features](/user-manual/Interacting_Features/)
 
-[Chapter 13: Total Reconstruction Sequences](TotalReconstructionSequences.html)
+[Chapter 12: More on Reconstructions](/user-manual/MoreReconstructions/)
 
-[Chapter 14: Editing Geometries](EditGeometries.html)
+[Chapter 13: Total Reconstruction Sequences](/user-manual/TotalReconstructionSequences/)
 
-[Chapter 15: Creating New Features](Creating_Features.html)
+[Chapter 14: Editing Geometries](/user-manual/EditGeometries/)
 
-[Chapter 16: Flowlines](Flowlines.html)
+[Chapter 15: Creating New Features](/user-manual/Creating_Features/)
 
-[Chapter 17: Motion Paths](MotionPaths.html)
+[Chapter 16: Flowlines](/user-manual/Flowlines/)
 
-[Chapter 18: Small Circles](SmallCircles.html)
+[Chapter 17: Motion Paths](/user-manual/MotionPaths/)
 
-[Chapter 19: Total Reconstruction Pole Manipulation](Pole_Manipulation.html)
+[Chapter 18: Small Circles](/user-manual/SmallCircles/)
 
-[Chapter 20: The Kinematics Tool](KinematicsTool.html)
+[Chapter 19: Total Reconstruction Pole Manipulation](/user-manual/Pole_Manipulation/)
 
-[Chapter 21: The Hellinger Tool](HellingerTool.html)
+[Chapter 20: The Kinematics Tool](/user-manual/KinematicsTool/)
 
-[Chapter 22: Working with Shapefiles](Shapefiles.html)
+[Chapter 21: The Hellinger Tool](/user-manual/HellingerTool/)
 
-[Chapter 23: Topology Tools](TopologyTools.html)
+[Chapter 22: Working with Shapefiles](/user-manual/Shapefiles/)
 
-[Chapter 24: Python](Python.html)
+[Chapter 23: Topology Tools](/user-manual/TopologyTools/)
 
-[Chapter 25: Data Mining](DataMining.html)
+[Chapter 24: Python](/user-manual/Python/)
 
-[Appendix A: Python API Reference](PythonAPIs.html)
+[Chapter 25: Data Mining](/user-manual/DataMining/)
+
+[Appendix A: Python API Reference](/user-manual/PythonAPIs/)

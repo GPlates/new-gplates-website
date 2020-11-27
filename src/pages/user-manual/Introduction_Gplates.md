@@ -15,7 +15,7 @@ GPlates is desktop software for the interactive visualisation of plate-tectonics
 
 GPlates offers a novel combination of interactive **plate-tectonic reconstructions**, geographic information system (GIS) functionality and raster data visualisation. GPlates enables both the visualisation and the manipulation of plate-tectonic reconstructions and associated data through geological time. GPlates runs on **Windows**, **Linux** and **MacOS X**.
 
-![](screenshots/MainWindow-Intro.png)
+![](./screenshots/MainWindow-Intro.png)
 
 What is a Plate-Tectonic Reconstruction?
 ----------------------------------------
@@ -53,4 +53,5 @@ Further Information
 
 For more information about GPlates, contact us: <http://www.gplates.org/contact.html>
 
+TODO:
 ![](images/icons/home.png) ![](images/icons/next.png)

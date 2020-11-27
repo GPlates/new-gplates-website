@@ -38,7 +38,7 @@ features:
       text: >
         Use PyGPlates to access GPlates functionality in your Python scripts.
             
-goals:
+capabilities:
     - to handle and visualise data in a variety of geometries and formats, including raster data
     - to link plate kinematics to geodynamic models
     - to serve as an interactive client in a grid-computing network

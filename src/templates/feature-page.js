@@ -5,15 +5,15 @@ import Layout from '../components/Layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDotCircle, faHandPointRight} from '@fortawesome/free-solid-svg-icons'
 
-export const FeaturePageTemplate = ({ title, intro, image,features, goals }) => {
+export const FeaturePageTemplate = ({ title, intro, image,features, capabilities }) => {
   return (
       <div className="container">
         <div className="column is-10 is-offset-1">
           <h2 className="has-text-weight-bold is-size-4-mobile is-size-3-tablet is-size-2-widescreen">{title}</h2>
           <h3 style={{margin:'1rem 0'}}>{intro}</h3>
-          <p className="has-text-weight-bold">The goals of GPlates are: </p>
+          <p className="has-text-weight-bold">The capabilities of GPlates are: </p>
           
-          {goals.map((goal) => (
+          {capabilities.map((goal) => (
             <p key={goal}>
               <span className="icon" style={{verticalAlign: 'middle', color: 'orange'}}> 
                 <FontAwesomeIcon icon={faDotCircle} className="svg-inline--fa fa-dot-circle "/>
@@ -33,6 +33,7 @@ export const FeaturePageTemplate = ({ title, intro, image,features, goals }) => 
               backgroundPosition: `center bottom`,
               backgroundAttachment: 'fixed',
               backgroundRepeat: 'no-repeat',
+              backgroundColor: 'black',
               textAlign: `center`,
               minHeight: `200px`,
               position: 'relative',
@@ -68,7 +69,7 @@ FeaturePageTemplate.propTypes = {
   intro: PropTypes.string,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   features: PropTypes.array,
-  goals: PropTypes.array,
+  capabilities: PropTypes.array,
 }
 
 const FeaturePage = ({ data }) => {
@@ -81,7 +82,7 @@ const FeaturePage = ({ data }) => {
         intro={frontmatter.intro}
         image={frontmatter.image}
         features={frontmatter.features}
-        goals={frontmatter.goals}
+        capabilities={frontmatter.capabilities}
       />
     </Layout>
   )
@@ -114,7 +115,7 @@ export const featurePageQuery = graphql`
           title
           text
         }
-        goals
+        capabilities
       }
     }
   }
