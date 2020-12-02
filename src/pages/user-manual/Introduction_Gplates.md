@@ -1,6 +1,9 @@
 ---
 templateKey: 'user-manual'
+prev: ''
+next: 'Introducing_The_Main_Window'
 ---
+
 The Aim of this Manual
 ======================
 
@@ -52,6 +55,3 @@ Further Information
 ===================
 
 For more information about GPlates, contact us: <http://www.gplates.org/contact.html>
-
-TODO:
-![](images/icons/home.png) ![](images/icons/next.png)

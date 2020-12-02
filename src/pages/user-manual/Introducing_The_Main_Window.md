@@ -1,6 +1,11 @@
 ---
+
 templateKey: 'user-manual'
+prev: 'Introduction_Gplates'
+next: 'DataFileTypes'
+
 ---
+
 This section describes the **Main Window**, the heart of the GPlates user interface. Below we present annotated screenshots of GPlates, label the key areas of the window, and provide a brief overview of each.
 
 The Main Window
@@ -77,16 +82,15 @@ When you start GPlates, the first window you will encounter is the **Main Window
    </tbody>
 </table>
 
-> **Important**
->
-> The appearance of the **Main Window** - particularly the layout of the different window components - will change as GPlates continues to evolve.
 <table>
-<tbody><tr>
-<td class="icon" style="width:5rem; display:inline-table;">
-<img src="./images/icons/important.png" alt="Important" style="width:3rem;">
-</td>
-<td class="content">The appearance of the <strong>Main Window</strong> - particularly the layout of the different window components - will change as GPlates continues to evolve.</td>
-</tr></tbody>
+   <tbody>
+      <tr>
+         <td class="icon" style="width:5rem; display:inline-table;">
+            <img src="./images/icons/important.png" alt="Important" style="width:3rem;">
+         </td>
+         <td class="content">The appearance of the <strong>Main Window</strong> - particularly the layout of the different window components - will change as GPlates continues to evolve.</td>
+      </tr>
+   </tbody>
 </table>
 
 Reconstruction View
@@ -135,8 +139,268 @@ The **Tool Palette** is used to control your view and interaction with the GPlat
 
 The **Tool Palette** includes camera positioning tools, feature selection tools and drawing tools. A tool is activated by clicking on it; only one tool can be active at any time. The task panel will reflect the current tool that is activated.
 
-<table><colgroup><col style="width: 11%" /><col style="width: 22%" /><col style="width: 11%" /><col style="width: 55%" /></colgroup><tbody><tr class="odd"><td><p>Icon</p></td><td><p>Tool</p></td><td><p>Shortcut</p></td><td><p>Operation</p></td></tr><tr class="even"><td><p><img src="icons/globe_rotation_35.png" alt="icons/globe_rotation_35.png" /></p></td><td><p>Drag Globe</p></td><td><p>D</p></td><td><p>Drag to re-orient the globe. <code>Shift+drag</code> to rotate the globe</p></td></tr><tr class="odd"><td><p><img src="icons/globe_zoom_35.png" alt="icons/globe_zoom_35.png" /></p></td><td><p>Zoom In</p></td><td><p>Z</p></td><td><p>Click to zoom in. <code>Shift+click</code> to zoom out. <code>Ctrl+drag</code> to re-orient the globe</p></td></tr><tr class="even"><td><p><img src="icons/calipers.png" alt="icons/calipers.png" /></p></td><td><p>Measure</p></td><td><p>S</p></td><td><p>Click to measure distance between points, or measure the selected feature’s geometry</p></td></tr><tr class="odd"><td><p><img src="icons/africa_highlight_clicked_35.png" alt="icons/africa_highlight_clicked_35.png" /></p></td><td><p>Choose Feature</p></td><td><p>F</p></td><td><p>Click a geometry to choose a feature. <code>Shift+click</code> to query immediately. Ctrl+drag to re-orient globe</p></td></tr><tr class="even"><td><p><img src="icons/digitise_polyline_35.png" alt="icons/digitise_polyline_35.png" /></p></td><td><p>Digitise Polyline Geometry</p></td><td><p>L</p></td><td><p>Click to draw a new vertex. <code>Ctrl+drag</code> to re-orient the globe</p></td></tr><tr class="odd"><td><p><img src="icons/digitise_multipoint_35.png" alt="icons/digitise_multipoint_35.png" /></p></td><td><p>Digitise Multi-point Geometry</p></td><td><p>M</p></td><td><p>Click to draw a new point. <code>Ctrl+drag</code> to re-orient the globe</p></td></tr><tr class="even"><td><p><img src="icons/digitise_polygon_35.png" alt="icons/digitise_polygon_35.png" /></p></td><td><p>Digitise Polygon Geometry</p></td><td><p>G</p></td><td><p>Click to draw a new vertex. <code>Ctrl+drag</code> to re-orient the globe</p></td></tr><tr class="odd"><td><p><img src="icons/move_vertex_35.png" alt="icons/move_vertex_35.png" /></p></td><td><p>Move Vertex</p></td><td><p>V</p></td><td><p>Drag to move a vertex of the current feature. You can still drag the globe around</p></td></tr><tr class="even"><td><p><img src="icons/insert_vertex_35.png" alt="icons/insert_vertex_35.png" /></p></td><td><p>Insert Vertex</p></td><td><p>I</p></td><td><p>Insert a new vertex into the feature geometry</p></td></tr><tr class="odd"><td><p><img src="icons/delete_vertex_35.png" alt="icons/delete_vertex_35.png" /></p></td><td><p>Delete Vertex</p></td><td><p>X</p></td><td><p>Remove a vertex from a multi-point, polyline or polygon geometry</p></td></tr><tr class="even"><td><p><img src="icons/split_geometry_35.png" alt="icons/split_geometry_35.png" /></p></td><td><p>Split Feature</p></td><td><p>T</p></td><td><p>Click to split the geometry of the selected feature at a point to create two features</p></td></tr><tr class="odd"><td><p><img src="icons/plate_move_pole_35.png" alt="icons/plate_move_pole_35.png" /></p></td><td><p>Move Pole</p></td><td><p>O</p></td><td><p>Change the pole location used by the Modify Reconstruction Pole tool</p></td></tr><tr class="even"><td><p><img src="icons/africa_pole_rotation_35.png" alt="icons/africa_pole_rotation_35.png" /></p></td><td><p>Modify Reconstruction Pole</p></td><td><p>P</p></td><td><p>Drag or <code>Shift+drag</code> the current geometry to modify its reconstruction pole. <code>Ctrl+drag</code> to re-orient the globe by holding down <code>Ctrl</code></p></td></tr><tr class="odd"><td><p><img src="icons/topology_build_line_35.png" alt="icons/topology_build_line_35.png" /></p></td><td><p>Build New Line Topology</p></td><td><p>H</p></td><td><p>Create a new dynamic polyline (for use as a section in a dynamically closing plate polygon) by adding sections of other features that define a line</p></td></tr><tr class="even"><td><p><img src="icons/africa_topology_final_build2.png" alt="icons/africa_topology_final_build2.png" /></p></td><td><p>Build New Boundary Topology</p></td><td><p>B</p></td><td><p>Create a new dynamically closing plate polygon by adding sections of other features (and dynamic polylines) that define a boundary</p></td></tr><tr class="odd"><td><p><img src="icons/africa_topology_final_edit2.png" alt="icons/africa_topology_final_edit2.png" /></p></td><td><p>Edit Topology Sections</p></td><td><p>E</p></td><td><p>Edit the selected topological feature’s sections</p></td></tr><tr class="even"><td><p><img src="icons/small_circle_35.png" alt="icons/small_circle_35.png" /></p></td><td><p>Create Small Circle</p></td><td><p>C</p></td><td><p>Create small circles using mouse to define centre and radii, or enter manually, or generate centre from a stage pole</p></td></tr></tbody></table>
-
+<table>
+   <colgroup>
+      <col style="width: 11%" />
+      <col style="width: 22%" />
+      <col style="width: 11%" />
+      <col style="width: 55%" />
+   </colgroup>
+   <tbody>
+      <tr class="odd">
+         <td>
+            <p>Icon</p>
+         </td>
+         <td>
+            <p>Tool</p>
+         </td>
+         <td>
+            <p>Shortcut</p>
+         </td>
+         <td>
+            <p>Operation</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p><img src="icons/globe_rotation_35.png" alt="icons/globe_rotation_35.png" /></p>
+         </td>
+         <td>
+            <p>Drag Globe</p>
+         </td>
+         <td>
+            <p>D</p>
+         </td>
+         <td>
+            <p>Drag to re-orient the globe. <code>Shift+drag</code> to rotate the globe</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
+            <p><img src="icons/globe_zoom_35.png" alt="icons/globe_zoom_35.png" /></p>
+         </td>
+         <td>
+            <p>Zoom In</p>
+         </td>
+         <td>
+            <p>Z</p>
+         </td>
+         <td>
+            <p>Click to zoom in. <code>Shift+click</code> to zoom out. <code>Ctrl+drag</code> to re-orient the globe</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p><img src="icons/calipers.png" alt="icons/calipers.png" /></p>
+         </td>
+         <td>
+            <p>Measure</p>
+         </td>
+         <td>
+            <p>S</p>
+         </td>
+         <td>
+            <p>Click to measure distance between points, or measure the selected feature’s geometry</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
+            <p><img src="icons/africa_highlight_clicked_35.png" alt="icons/africa_highlight_clicked_35.png" /></p>
+         </td>
+         <td>
+            <p>Choose Feature</p>
+         </td>
+         <td>
+            <p>F</p>
+         </td>
+         <td>
+            <p>Click a geometry to choose a feature. <code>Shift+click</code> to query immediately. Ctrl+drag to re-orient globe</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p><img src="icons/digitise_polyline_35.png" alt="icons/digitise_polyline_35.png" /></p>
+         </td>
+         <td>
+            <p>Digitise Polyline Geometry</p>
+         </td>
+         <td>
+            <p>L</p>
+         </td>
+         <td>
+            <p>Click to draw a new vertex. <code>Ctrl+drag</code> to re-orient the globe</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
+            <p><img src="icons/digitise_multipoint_35.png" alt="icons/digitise_multipoint_35.png" /></p>
+         </td>
+         <td>
+            <p>Digitise Multi-point Geometry</p>
+         </td>
+         <td>
+            <p>M</p>
+         </td>
+         <td>
+            <p>Click to draw a new point. <code>Ctrl+drag</code> to re-orient the globe</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p><img src="icons/digitise_polygon_35.png" alt="icons/digitise_polygon_35.png" /></p>
+         </td>
+         <td>
+            <p>Digitise Polygon Geometry</p>
+         </td>
+         <td>
+            <p>G</p>
+         </td>
+         <td>
+            <p>Click to draw a new vertex. <code>Ctrl+drag</code> to re-orient the globe</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
+            <p><img src="icons/move_vertex_35.png" alt="icons/move_vertex_35.png" /></p>
+         </td>
+         <td>
+            <p>Move Vertex</p>
+         </td>
+         <td>
+            <p>V</p>
+         </td>
+         <td>
+            <p>Drag to move a vertex of the current feature. You can still drag the globe around</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p><img src="icons/insert_vertex_35.png" alt="icons/insert_vertex_35.png" /></p>
+         </td>
+         <td>
+            <p>Insert Vertex</p>
+         </td>
+         <td>
+            <p>I</p>
+         </td>
+         <td>
+            <p>Insert a new vertex into the feature geometry</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
+            <p><img src="icons/delete_vertex_35.png" alt="icons/delete_vertex_35.png" /></p>
+         </td>
+         <td>
+            <p>Delete Vertex</p>
+         </td>
+         <td>
+            <p>X</p>
+         </td>
+         <td>
+            <p>Remove a vertex from a multi-point, polyline or polygon geometry</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p><img src="icons/split_geometry_35.png" alt="icons/split_geometry_35.png" /></p>
+         </td>
+         <td>
+            <p>Split Feature</p>
+         </td>
+         <td>
+            <p>T</p>
+         </td>
+         <td>
+            <p>Click to split the geometry of the selected feature at a point to create two features</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
+            <p><img src="icons/plate_move_pole_35.png" alt="icons/plate_move_pole_35.png" /></p>
+         </td>
+         <td>
+            <p>Move Pole</p>
+         </td>
+         <td>
+            <p>O</p>
+         </td>
+         <td>
+            <p>Change the pole location used by the Modify Reconstruction Pole tool</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p><img src="icons/africa_pole_rotation_35.png" alt="icons/africa_pole_rotation_35.png" /></p>
+         </td>
+         <td>
+            <p>Modify Reconstruction Pole</p>
+         </td>
+         <td>
+            <p>P</p>
+         </td>
+         <td>
+            <p>Drag or <code>Shift+drag</code> the current geometry to modify its reconstruction pole. <code>Ctrl+drag</code> to re-orient the globe by holding down <code>Ctrl</code></p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
+            <p><img src="icons/topology_build_line_35.png" alt="icons/topology_build_line_35.png" /></p>
+         </td>
+         <td>
+            <p>Build New Line Topology</p>
+         </td>
+         <td>
+            <p>H</p>
+         </td>
+         <td>
+            <p>Create a new dynamic polyline (for use as a section in a dynamically closing plate polygon) by adding sections of other features that define a line</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p><img src="icons/africa_topology_final_build2.png" alt="icons/africa_topology_final_build2.png" /></p>
+         </td>
+         <td>
+            <p>Build New Boundary Topology</p>
+         </td>
+         <td>
+            <p>B</p>
+         </td>
+         <td>
+            <p>Create a new dynamically closing plate polygon by adding sections of other features (and dynamic polylines) that define a boundary</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
+            <p><img src="icons/africa_topology_final_edit2.png" alt="icons/africa_topology_final_edit2.png" /></p>
+         </td>
+         <td>
+            <p>Edit Topology Sections</p>
+         </td>
+         <td>
+            <p>E</p>
+         </td>
+         <td>
+            <p>Edit the selected topological feature’s sections</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p><img src="icons/small_circle_35.png" alt="icons/small_circle_35.png" /></p>
+         </td>
+         <td>
+            <p>Create Small Circle</p>
+         </td>
+         <td>
+            <p>C</p>
+         </td>
+         <td>
+            <p>Create small circles using mouse to define centre and radii, or enter manually, or generate centre from a stage pole</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 The tools are arranged into groups (tabs in the **Tool Palette**). For example the **Digitisation** group is used when digitising new geometries and the **Feature Inspection** group is used when querying existing features. Some tools appear in more than one group. For example the **Move Vertex** tool appears in both the **Digitisation** and **Feature Inspection** groups since it is used in the **Digitisation** group to modify newly digitised geometries and it is used in the **Feature Inspection** group to modify geometries of existing features.
 
 ![](screenshots/ToolPaletteDigitisationMoveVertex.png) ![](screenshots/ToolPaletteFeatureInspectionMoveVertex.png)
@@ -353,4 +617,3 @@ Help
 
 -   About
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

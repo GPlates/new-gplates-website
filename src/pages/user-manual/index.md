@@ -1,7 +1,13 @@
 ---
+
 templateKey: 'user-manual'
+prev: ''
+next: ''
 ---
+
 ### GPlates User Manual
+
+****
 
 [Chapter 1: Introduction to GPlates](/user-manual/Introduction_Gplates/)
 
