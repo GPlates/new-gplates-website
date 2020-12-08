@@ -1,5 +1,9 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 21: The Hellinger Tool'
+prev: 'KinematicsTool'
+next: 'Shapefiles'
+
 ---
 Introduction
 ============
@@ -241,4 +245,3 @@ The parameters of the grid search are currently hard-coded in that the search ra
 >
 > The pole calculations are performed using a line-by-line python translation of the original FORTRAN code. The performance of this python code is currently considerably slower than that of the FORTRAN code.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

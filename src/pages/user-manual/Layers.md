@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 7: Layers'
+prev: 'Controlling_View'
+next: 'Reconstructions'
 ---
+
 Introduction
 ============
 
@@ -517,4 +521,3 @@ The `Input channels` section has three types of input:
 >
 > When a *Resolved Topological Closed Plate Boundaries* (or *Resolved Topological Networks*) layer is automatically created (when the appropriate feature collection is loaded) GPlates will search for all *Calculated Velocity Fields* layers and connect their input to the output of the new *Resolved Topological Closed Plate Boundaries* (or *Resolved Topological Networks*) layer.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

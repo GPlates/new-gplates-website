@@ -6,6 +6,7 @@ import Content, { HTMLContent } from '../components/Content'
 import prevIcon from '../img/prev.png'
 import nextIcon from '../img/next.png'
 import homeIcon from '../img/home.png'
+import { noAuto } from '@fortawesome/fontawesome-svg-core'
 
 export const UserManualTemplate = ({ title, content, contentComponent, prev , next}) => {
   const PageContent = contentComponent || Content
@@ -16,8 +17,11 @@ export const UserManualTemplate = ({ title, content, contentComponent, prev , ne
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
+              <h1 className="title is-size-2 has-text-weight-bold is-bold-light" style={{textAlign:'center'}}>
+                {title}
+              </h1>
               <PageContent className="content box" content={content} />
-              <table>
+              <table style={{margin:'auto',}}>
                 <colgroup>
                   <col style={{width:'33%'}} />
                   <col style={{width:'33%'}} />

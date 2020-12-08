@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 22: Working with Shapefiles'
+prev: 'HellingerTool'
+next: 'TopologyTools'
 ---
+
 Introduction
 ============
 
@@ -134,4 +138,3 @@ Shapefiles will often contain extra files providing additional information; proj
 
 The ESRI shapefile specification can be downloaded from <http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf>.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

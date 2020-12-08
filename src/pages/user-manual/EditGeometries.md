@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 14: Editing Geometries'
+prev: 'TotalReconstructionSequences'
+next: 'Creating_Features'
 ---
+
 Geometries in GPlates
 =====================
 
@@ -11,28 +15,28 @@ Point
 
 A point is the most basic form of geometry in GPlates and the basis of all other geometries.
 
-![](Point.svg.png)
+![](./images/Point.svg.png)
 
 Multi-point
 -----------
 
 A collection of points that move as one.
 
-![](MultiPoint.svg.png)
+![](./images/MultiPoint.svg.png)
 
 Polyline
 --------
 
 A series of lines drawn end-to-end, forming an open polygon. It is assumed that the lines are non-intersecting. Sometimes in GPlates the direction of a polyline is important, when determining the properties on either side of the line; for example, one side of a subduction zone represents the subducting slab, while the other represents the overriding plate. The direction of a polyline is determined from the "start" of the polyline (the first point digitised) to the "end" of the polyline.
 
-![](Polyline.svg.png)
+![](./images/Polyline.svg.png)
 
 Polygon
 -------
 
 A series of lines drawn end-to-end, forming a closed shape. It is assumed that the lines are non-intersecting.
 
-![](polygon.svg.png)
+![](./images/polygon.svg.png)
 
 Geometry-Editing Tools
 ======================
@@ -128,4 +132,4 @@ The controls for directly editing the coordinates used by geometry appears as a 
 
 ![](screenshots/FeatureProperties-Edit-4.png)
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)
+

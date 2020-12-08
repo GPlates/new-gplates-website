@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 16: Flowlines'
+prev: 'Creating_Features'
+next: 'MotionPaths'
 ---
+
 Introduction
 ============
 
@@ -64,4 +68,4 @@ When exporting to GMT format, each reconstructed flowline point is output in the
 
 &gt;reconstructionTime 0 &gt;test-flow-points.gpml &gt;Flowline &lt;identity&gt;GPlates-a5e5b41c-089a-4d3f-a877-b5cc0088f43f&lt;/identity&gt; &lt;revision&gt;GPlates-550e75b5-5d27-4146-b83d-93ccfa3be165&lt;/revision&gt; &gt; Left plate: 802 &gt; Right plate: 801 &gt; Times: 0,5,10,15,20,25,30,35,40,45,50 &gt; Seed point: Lat: -50.3407, Lon: 139.229 &gt; Left-plate flowline 139.229000 -50.340700 0.000000 139.197261 -51.887165 5.000000 139.325022 -53.317310 10.000000 139.565701 -54.653181 15.000000 139.856508 -55.970876 20.000000 140.163463 -57.330579 25.000000 140.449153 -58.889273 30.000000 140.746852 -60.278992 35.000000 141.049859 -61.184592 40.000000 141.374462 -61.686198 45.000000 141.655807 -62.007476 50.000000
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)
+

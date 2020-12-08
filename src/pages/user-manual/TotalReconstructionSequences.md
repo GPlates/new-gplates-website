@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 19: Total Reconstruction Pole Manipulation'
+prev: 'SmallCircles'
+next: 'KinematicsTool'
 ---
+
 Introduction
 ============
 
@@ -39,4 +43,3 @@ A new TRS can be created by selecting **New Sequence**. After filling in the fie
 
 ![](screenshots/CreateTRS1.win32.png)
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

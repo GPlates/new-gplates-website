@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 23: Topology Tools'
+prev: 'Shapefiles'
+next: 'Python'
 ---
+
 Introduction
 ============
 
@@ -195,4 +199,4 @@ Firstly select and highlight the topology, as previously described, and then cli
 
 You may also need to extend a line so that a topology closes. This problem often arises when using rotation files that are significantly different, and therefore the new location of a particular plate ID-assigned line may mean that a topology is no longer closed. This method is best restricted to instances where the line only needs to be extended a relatively short distance and in a largely straight line. This is achieved by using the Insert Vertex icon, as previously described. Because the topology already exists as an entry, the new line will be automatically incorporated and the topology should be successfully closed. It is wise to check the polygons through time that utilize this line, to ensure that no other existing polygons have been changed.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)
+

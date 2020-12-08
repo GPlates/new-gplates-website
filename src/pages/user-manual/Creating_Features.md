@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 15: Creating New Features'
+prev: 'EditGeometries'
+next: 'Flowlines'
 ---
+
 This chapter aims to provide the reader with information and instructions for digitising new features in GPlates.
 
 Digitisation
@@ -47,4 +51,3 @@ In the final step of feature creation, the feature is assigned to a feature coll
 
 If the **&lt; New Feature Collection &gt;** option is selected, a new feature collection will be created to hold the new feature. This feature collection will not yet have a name, and is not associated with a file on disk. Like all other feature collections, the new one will be found in the **Manage Feature Collections** dialog.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

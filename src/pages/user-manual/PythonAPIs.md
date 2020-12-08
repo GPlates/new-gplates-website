@@ -1,6 +1,9 @@
 ---
 templateKey: 'user-manual'
+title: 'Appendix A: Python API Reference'
+prev: 'DataMining'
 ---
+
 Global Functions
 ================
 
@@ -191,4 +194,3 @@ PaletteKey(str)
 
 Construct a PaletteKey object from a string.
 
-![](images/icons/prev.png) ![](images/icons/home.png)

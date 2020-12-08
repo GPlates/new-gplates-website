@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 12: More on Reconstructions'
+prev: 'Interacting_Features'
+next: 'TotalReconstructionSequences'
 ---
+
 Theory
 ======
 
@@ -73,4 +77,3 @@ This tab of the Total Reconstruction Poles dialog can be used to trace a series 
 
 ![](screenshots/TotalReconPoles-4.png)
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 17: Motion Paths'
+prev: 'Flowlines'
+next: 'SmallCircles'
 ---
+
 Introduction
 ============
 
@@ -70,4 +74,3 @@ When exporting to GMT format, each reconstructed motion path point is output in 
 
 &gt;anchorPlateId 0 &gt;reconstructionTime 0 &gt; &gt;MotionPath &lt;identity&gt;GPlates-a3c24577-4137-4226-aba4-bde5427cba32&lt;/identity&gt; &lt;revision&gt;GPlates-f11fa5f9-bf1d-4000-b6af-eaa465ceea0d&lt;/revision&gt; &gt; Recostruction plate id: 102 &gt; Relative plate id: 301 &gt; 0,10,20,30,40,50,60,70,80,90,100 &gt; Seed point: Lat: 62.9712, Lon: -40.1395 &gt; Motion path -16.213502 58.361165 100.000000 -16.625527 58.450034 90.000000 -16.934371 58.691767 80.000000 -17.076489 58.742035 70.000000 -17.763448 59.146028 60.000000 -21.656092 60.522007 50.000000 -25.174028 61.902590 40.000000 -28.717604 62.347711 30.000000 -31.941397 62.609357 20.000000 -36.158642 62.825853 10.000000 -40.139488 62.971198 0.000000
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

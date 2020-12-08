@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 4: Loading and Saving'
+prev: 'DataFileTypes'
+next: 'Projects_and_Recent_Sessions'
 ---
+
 Before you load any data into GPlates the globe will appear as a blank sphere; in order to start with GPlates you will need to know how to load, save and unload data.
 
 > **Tip**
@@ -274,4 +278,3 @@ If you close GPlates while there are still unsaved changes, GPlates will ask you
 
 The **Unsaved Changes** dialog may also be triggered when using the **Open Recent Session** functionality. If the files you currently have open have changes made to them, the act of opening a new session will replace them, and GPlates will warn you about this in the same way.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

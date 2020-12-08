@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 9: Export'
+prev: 'Reconstructions'
+next: 'NetRotation'
 ---
+
 Introduction
 ============
 
@@ -97,4 +101,3 @@ The **Filename** field is used as a template value that GPlates will use to name
 
 <table><colgroup><col style="width: 6%" /><col style="width: 93%" /></colgroup><thead><tr class="header"><th>Placeholder</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><p>%n</p></td><td><p>the &quot;number&quot; (index + 1) of the frame — will lie in the inclusive range [1, N], and will be padded to the width of the decimal integer representation of N.</p></td></tr><tr class="even"><td><p>%u</p></td><td><p>the index of the frame — will lie in the inclusive range [0, (N - 1)], and will be padded to the width of the decimal integer representation of (N - 1).</p></td></tr><tr class="odd"><td><p>%f</p></td><td><p>the reconstruction-time instant of the frame, in printf-style %f format.</p></td></tr><tr class="even"><td><p>%d</p></td><td><p>the reconstruction-time instant of the frame, rounded to the closest integer, in printf-style %d format.</p></td></tr><tr class="odd"><td><p>%P</p></td><td><p>placeholder string will get replaced for each type of export.</p></td></tr></tbody></table>
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

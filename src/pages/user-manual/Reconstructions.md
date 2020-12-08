@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 8: Reconstructions'
+prev: 'Layers'
+next: 'Export'
 ---
+
 Introduction
 ============
 
@@ -125,4 +129,3 @@ Additional options to fine-tune the behaviour of the animation are presented her
 
 These controls allow simple playback and seeking within the animation from this dialog. They behave identically to the equivalent controls found in the **Reconstruction View**.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

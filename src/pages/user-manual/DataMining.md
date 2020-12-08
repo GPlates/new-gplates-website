@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 25: Data Mining'
+prev: 'Python'
+next: 'PythonAPIs'
 ---
+
 Introduction
 ============
 
@@ -93,4 +97,3 @@ Return the time setting in GPlates as a tuple.
 
 Given a time, return coregistration data as a table.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 5: Projects and Recent Sessions'
+prev: 'LoadingAndSaving'
+next: 'Controlling_View'
 ---
+
 Sessions
 ========
 
@@ -425,4 +429,4 @@ GPlates 1.5 can open projects and recent sessions saved by GPlates 2.0 (provided
 >
 > This means if you work on a project (or recent session) in GPlates 2.0, then work on it in GPlates 1.5 and then work on it again in GPlates 2.0 then it will not get completely restored the second time it is opened in GPlates 2.0 (like it was the first time). This is because the session information saved by GPlates 1.5 is limited.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)
+

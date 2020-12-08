@@ -1,5 +1,8 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 3: Data File Types'
+prev: 'Introducing_The_Main_Window'
+next: 'LoadingAndSaving'
 ---
 Introduction
 ============
@@ -155,4 +158,3 @@ Note that the filename prefix does not need to be common across all the filename
 
 will produce the same sequence ordered by time.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

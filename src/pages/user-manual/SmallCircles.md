@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 18: Small Circles'
+prev: 'MotionPaths'
+next: 'Pole_Manipulation'
 ---
+
 Introduction
 ============
 
@@ -27,4 +31,3 @@ Creating small cirle features
 
 To create small circle features from the circles previewed on the globe or map, press the **Create feature(s)** button. This will take you through a Create Small Circle wizard, similar to that in the **Creating New Features** chapter.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

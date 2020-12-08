@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 6: Controlling the View'
+prev: 'Projects_and_Recent_Sessions'
+next: 'Layers'
 ---
+
 This chapter provides an overview of how to manipulate the view of the globe, and any displayed data or features.
 
 Reconstruction View
@@ -140,4 +144,3 @@ Once you have done that, a number of different options will be available in the 
 
 For further customisation, you can choose to override these default colouring schemes for individual feature collections. Select the feature collection from the drop-down box, then uncheck **Use Global Colour Scheme**. You can now select a colouring scheme to be used for geometry originating from that feature collection.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

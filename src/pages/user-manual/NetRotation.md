@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 10: Exporting net lithosphere rotations'
+prev: 'Export'
+next: 'Interacting_Features'
 ---
+
 Introduction
 ============
 
@@ -56,4 +60,3 @@ Time (Ma),Lat (°),Lon (°),Angular velocity (°/Ma) 170,-32.6324,82.837,0.14296
 
 Note that GPlates uses dynamic closed polygons from any active layers in its net lithosphere calculations. If several such layers are loaded which have overlapping polygons, the user should ensure that only one such layer is activated.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

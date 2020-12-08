@@ -1,5 +1,9 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 11: Interacting with Features'
+prev: 'NetRotation'
+next: 'MoreReconstructions'
+
 ---
 This chapter provides a guide to interacting with the geological features which you are creating or editing in GPlates.
 
@@ -346,4 +350,3 @@ In total, 12 files will be generated in the specified output directory. The file
 >
 > The %d and %c must appear in the template once and only once.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)

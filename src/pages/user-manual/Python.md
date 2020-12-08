@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 24: Python'
+prev: 'TopologyTools'
+next: 'DataMining'
 ---
+
 Introduction
 ============
 
@@ -104,4 +108,4 @@ Type in the following command in your terminal.
 
     gplates --no-python
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)
+

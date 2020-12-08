@@ -1,6 +1,10 @@
 ---
 templateKey: 'user-manual'
+title: 'Chapter 20: The Kinematics Tool'
+prev: 'Pole_Manipulation'
+next: 'HellingerTool'
 ---
+
 Introduction
 ============
 
@@ -59,4 +63,3 @@ This dialog also allows you to set two velocity warning levels. Velocities excee
 >
 > If you want to store these values so that they are used on start-up of subsequent GPlates sessions, you can do this through the **Preferences** dialog. From the main GPlates window, select **Edit→Preferences** (shortcut **Ctrl+,**) and adjust the values in the **Kinematic Graphs** pane.
 
-![](images/icons/prev.png) ![](images/icons/home.png) ![](images/icons/next.png)
