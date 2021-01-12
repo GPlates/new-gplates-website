@@ -20,17 +20,17 @@ What’s the difference between a layer and a file?
 
 A file contains a collection of features (a *feature collection*).
 
-A *layer* processes one or more inputs into an output. Inputs to a *layer* can include, but are not necessarily restricted to, *feature collections*. For example some types of *layers*, such as the **Reconstructed Geometries** layer, accept both *feature collections* **and** the output of another *layer*.
+A **layer** processes one or more inputs into an output. Inputs to a *layer* can include, but are not necessarily restricted to, *feature collections*. For example some types of *layers*, such as the **Reconstructed Geometries** layer, accept both *feature collections* **and** the output of another *layer*.
 
 In the case of the **Reconstructed Geometries** layer:
 
 -   the *feature collection* input contains (in the feature properties themselves) both the geometries to be reconstructed and the information on how to reconstruct them (such as reconstruction plate ID),
 
--   the *layer* input (in this case the output of a **Reconstruction Tree** layer) contains the rotations needed to perform the reconstruction,
+-   the **layer** input (in this case the output of a **Reconstruction Tree** layer) contains the rotations needed to perform the reconstruction,
 
--   the *layer* itself does the actual reconstruction and generates the reconstructed geometries, and
+-   the **layer** itself does the actual reconstruction and generates the reconstructed geometries, and
 
--   the *layer* output contains the reconstructed features.
+-   the **layer** output contains the reconstructed features.
 
 The reason the rotations come from the output of another *layer* rather than a *feature collection* (containing rotation features) is because a rotation hierarchy needs to be generated from the rotation features themselves and so this process is performed by a different type of layer (the **Reconstruction Tree** layer). See the **More on Reconstructions** chapter for more information about rotation hierarchies.
 
@@ -52,13 +52,20 @@ The collapsed view of each layer in the dialog shows a layer name, type and colo
 Changing layer visibility
 -------------------------
 
-The visibility of each layer can be individually disabled (or enabled) by clicking the ![](icons/inkscape_object_visible_16.png) icon to the left of the layer name.
+The visibility of each layer can be individually disabled (or enabled) by clicking the <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/inkscape_object_visible_16.png" /> </span> icon to the left of the layer name.
 
-> **Note**
->
-> Some types of layers (such as the **Reconstruction Tree** layer) do not have a visibility icon ![](icons/inkscape_object_visible_16.png). This is because those layer types do not output geometries and hence there is nothing to visualise in the globe and map views.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >Some types of layers (such as the **Reconstruction Tree** layer) do not have a visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/inkscape_object_visible_16.png" /> </span>. This is because those layer types do not output geometries and hence there is nothing to visualise in the globe and map views.</td>
+      </tr>
+   </tbody>
+</table>
 
-Each layer contains a small black arrow ![](icons/gnome_stock_data_next_16.png) that can be clicked on to expand the layer and show the input connections and any layer-specific options. Once expanded you can click on the ![](icons/gnome_stock_data_next_down_16.png) symbol to collapse the layer again.
+Each layer contains a small black arrow <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/gnome_stock_data_next_16.png" /> </span> that can be clicked on to expand the layer and show the input connections and any layer-specific options. Once expanded you can click on the <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/gnome_stock_data_next_16.png" /> </span> symbol to collapse the layer again.
 
 ![](screenshots/Layers-AllButOneCollapsed.png)
 
@@ -71,22 +78,36 @@ Input connections can be:
 
 -   added using the "`Add new connection`" option, and
 
--   removed using the ![](icons/gnome_list_remove_22.png) symbol to the right of each existing connection.
+-   removed using the <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/gnome_list_remove_22.png" /> </span> symbol to the right of each existing connection.
 
 Enabling and disabling a layer
 ------------------------------
 
 In the "`Manage layer`" section of each layer you can *Enable* and *Disable* the layer.
 
-> **Note**
->
-> When a layer is disabled it is greyed out in the *Layers* dialog and cannot be changed until it is enabled again.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >When a layer is disabled it is greyed out in the *Layers* dialog and cannot be changed until it is enabled again.</td>
+      </tr>
+   </tbody>
+</table>
 
 The "`Disable layer`" and "`Enable layer`" options determine if a layer does any processing or not. If a layer is disabled then that layer is effectively switched off and nothing is generated or output by that layer. It also means nothing will be drawn in the globe and map views for that layer (regardless of that layer’s visibility). And it means any other layer receiving input from that layer will receive nothing.
 
-> **Note**
->
-> For example, if the visibility of a *Reconstructed Geometries* layer is turned off but the layer is still enabled then feature geometries are still reconstructed internally by GPlates for that layer (they are just not displayed). This is useful if you want the output of a *Reconstructed Geometries* layer to feed into the input of another layer but you don’t want the reconstructed geometries to be visible. Currently there aren’t any good examples of when you might want to do this but there will be in the near future.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >For example, if the visibility of a *Reconstructed Geometries* layer is turned off but the layer is still enabled then feature geometries are still reconstructed internally by GPlates for that layer (they are just not displayed). This is useful if you want the output of a *Reconstructed Geometries* layer to feed into the input of another layer but you don’t want the reconstructed geometries to be visible. Currently there aren’t any good examples of when you might want to do this but there will be in the near future.</td>
+      </tr>
+   </tbody>
+</table>
 
 How do I make one layer draw on top of another?
 -----------------------------------------------
@@ -95,17 +116,31 @@ Layers are drawn onto the globe and map views in the order in which they are dis
 
 To change the visual ordering of a layer simply drag it onto another layer.
 
-> **Note**
->
-> Either the unexpanded part of the layer (the part containing the layer name and type) or the coloured bar on the left (expanded or unexpanded) can be grabbed in this way. You can still grab a layer when it is expanded - you just need to grab in those areas of the layer. Typically the mouse cursor changes to a hand grab icon over areas that allow layer dragging.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >Either the unexpanded part of the layer (the part containing the layer name and type) or the coloured bar on the left (expanded or unexpanded) can be grabbed in this way. You can still grab a layer when it is expanded - you just need to grab in those areas of the layer. Typically the mouse cursor changes to a hand grab icon over areas that allow layer dragging.</td>
+      </tr>
+   </tbody>
+</table>
 
 ![](screenshots/Layers-AllCollapsed.png)
 
-In this example, the raster layers are at the bottom and hence are drawn underneath the other layers. And the user has selected only one raster to be visible (the visibility icon ![](icons/inkscape_object_visible_16.png) is on for only one raster layer).
+In this example, the raster layers are at the bottom and hence are drawn underneath the other layers. And the user has selected only one raster to be visible (the visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/inkscape_object_visible_16.png" /> </span> is on for only one raster layer).
 
-> **Note**
->
-> The layer positions of **Reconstruction Tree** layers are not important since they produce no visible output.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >The layer positions of **Reconstruction Tree** layers are not important since they produce no visible output.</td>
+      </tr>
+   </tbody>
+</table>
 
 Previous versions of GPlates required layers containing vector geometries to be drawn on top of any raster layers otherwise the raster layers would obscure them (especially if they were global rasters). However GPlates now supports adjusting raster transparency (and intensity) individually per raster layer - see **Reconstructed Raster Layer** for more details. The following image shows a raster layer (with opacity set to 0.64) on top of layer containing coastlines - the coastlines are under the raster but are partially visible through it.
 
@@ -129,13 +164,27 @@ Loading these feature collections…
 
 ![](screenshots/Layers-LayerPerFile.png)
 
-> **Note**
->
-> The layer name is obtained from the feature collection filename.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >The layer name is obtained from the feature collection filename.</td>
+      </tr>
+   </tbody>
+</table>
 
-> **Note**
->
-> Unloading ![](icons/eject.png) a feature collection through the *Manage Feature Collections* dialog will also remove the corresponding layer or layers that were automatically created for it.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >Unloading <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/eject.png' /> </span> a feature collection through the <strong>Manage Feature Collections</strong> dialog will also remove the corresponding layer or layers that were automatically created for it.</td>
+      </tr>
+   </tbody>
+</table>
 
 In some situations loading one feature collection can create two layers.
 
@@ -149,9 +198,17 @@ Here **one** feature collection containing both *Topological Closed Plate Polygo
 
 One layer reconstructs the regular features that are referenced by the plate polygons and the other layer does the work of stitching the features together, intersecting them and creating the dynamic polygon boundary.
 
-> **Note**
->
-> Because there are two layers, the dynamic plate polygon boundaries can be made visible while the features used to construct the dynamic boundary can be made invisible.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >Because there are two layers, the dynamic plate polygon boundaries can be made visible while the features used to construct the dynamic boundary can be made invisible.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 Layers created by the user
 --------------------------
@@ -168,13 +225,27 @@ A new layer is then created and inserted at the top of the layer stack.
 
 ![](screenshots/Layers-NewLayer-Velocities.png)
 
-> **Note**
->
-> The layer name will be "`Layer`" suffixed with an integer (for example, "`Layer 21`"). It is not based off a feature collection filename because it is not automatically created when a feature collection is loaded.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >The layer name will be "`Layer`" suffixed with an integer (for example, "`Layer 21`"). It is not based off a feature collection filename because it is not automatically created when a feature collection is loaded.</td>
+      </tr>
+   </tbody>
+</table>
 
-> **Note**
->
-> The new layer’s input channels are all unconnected and you will need to make the connections explicitly in order for the layer to function correctly. It is OK to leave a layer in an unconnected state - it will then simply do nothing.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >The new layer’s input channels are all unconnected and you will need to make the connections explicitly in order for the layer to function correctly. It is OK to leave a layer in an unconnected state - it will then simply do nothing.</td>
+      </tr>
+   </tbody>
+</table>
 
 Types of layers
 ===============
@@ -194,33 +265,55 @@ A *Reconstruction Tree* layer has the following configuration options:
 
 ![](screenshots/Layers-Options-ReconstructionTree.png)
 
-Since this type of layer does not produce visible geometries it does not have the visibility icon ![](icons/inkscape_object_visible_16.png) to enable/disable visibility.
+Since this type of layer does not produce visible geometries it does not have the visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> to enable/disable visibility.
 
-Instead it has the icon ![](icons/gnome_emblem_default_yellow_16.png) to set/indicate the default *Reconstruction Tree* layer - see **Default Reconstruction Tree** below.
+Instead it has the icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/gnome_emblem_default_yellow_16.png' /> </span> to set/indicate the default *Reconstruction Tree* layer - see **Default Reconstruction Tree** below.
 
 The `Input channels` section has one type of input:
 
 -   "*Reconstruction features*" which is a list of input feature collections that contain rotation features.
 
-> **Note**
->
-> More than one feature collection can be connected to the input of a *Reconstruction Tree* layer. For example, one feature collection may represent absolute rotations while another represents relative rotations. When they are both input to the same *Reconstruction Tree* layer they are combined together inside the layer to form a single rotation hierarchy.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >More than one feature collection can be connected to the input of a <strong>Reconstruction Tree</strong> layer. For example, one feature collection may represent absolute rotations while another represents relative rotations. When they are both input to the same <strong>Reconstruction Tree</strong> layer they are combined together inside the layer to form a single rotation hierarchy.</td>
+      </tr>
+   </tbody>
+</table>
 
-> **Note**
->
-> If there are no rotation features in any input feature collections then no rotation hierarchy is generated which means nothing using this *Reconstruction Tree* layer will rotate or reconstruct.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >If there are no rotation features in any input feature collections then no rotation hierarchy is generated which means nothing using this <strong>Reconstruction Tree</strong> layer will rotate or reconstruct.</td>
+      </tr>
+   </tbody>
+</table>
 
-> **Note**
->
-> If an input feature collection contains both **rotation** and **non-rotation** features then the **non-rotation** features are simply ignored (by the *Reconstruction Tree* layer) since they cannot contribute to a rotation hierarchy. The **non-rotation** features will however have resulted in the automatic creation of a *Reconstructed Geometries* layer (along with the automatic creation of this *Reconstruction Tree* layer). So the **non-rotation** features won’t be ignored altogether - they are just ignored by the *Reconstruction Tree* layer. In turn, the *Reconstructed Geometries* layer will ignore the **rotation** features.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >If an input feature collection contains both <strong>rotation</strong> and <strong>non-rotation</strong> features then the <strong>non-rotation</strong> features are simply ignored (by the <strong>Reconstruction Tree</strong> layer) since they cannot contribute to a rotation hierarchy. The <strong>non-rotation</strong> features will however have resulted in the automatic creation of a <strong>Reconstructed Geometries</strong> layer (along with the automatic creation of this <strong>Reconstruction Tree</strong> layer). So the <strong>non-rotation</strong> features won’t be ignored altogether - they are just ignored by the <strong>Reconstruction Tree</strong> layer. In turn, the <strong>Reconstructed Geometries</strong> layer will ignore the <strong>rotation</strong> features.
+      </tr>
+   </tbody>
+</table>
+
 
 `View Total Reconstruction Poles` displays a dialog to view a variety of information about the reconstruction poles and the plate hierarchy for that particular *Reconstruction Tree* layer (at the current reconstruction time). See the **Reconstructions** chapter for more information on that dialog.
 
 ### Default Reconstruction Tree
 
-One fundamental difference between *Reconstruction Tree* layers and other types of layers is you can set a default *Reconstruction Tree* layer. Only one *Reconstruction Tree* layer can be the default and you can tell which one is the default because it will be the only layer with the ![](icons/gnome_emblem_default_yellow_16.png) icon visible next to the layer name.
+One fundamental difference between *Reconstruction Tree* layers and other types of layers is you can set a default *Reconstruction Tree* layer. Only one *Reconstruction Tree* layer can be the default and you can tell which one is the default because it will be the only layer with the <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/gnome_emblem_default_yellow_16.png' /> </span> icon visible next to the layer name.
 
-Selecting another *Reconstruction Tree* layer with no visible ![](icons/gnome_emblem_default_yellow_16.png) icon will make it the new default.
+Selecting another *Reconstruction Tree* layer with no visible <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/gnome_emblem_default_yellow_16.png' /> </span> icon will make it the new default.
 
 ![](screenshots/Layers-DefaultReconstructionTree.png)
 
@@ -230,9 +323,16 @@ When a feature collection (containing rotation features) is loaded, its associat
 
 The default *Reconstruction Tree* layer is only applicable if another layer (such as a *Reconstructed Geometries* layer) requires a *Reconstruction Tree* input **and** has not explicitly connected one to its input.
 
-> **Note**
->
-> If all layers with a *Reconstruction Tree* input have an explicit user connection then the default *Reconstruction Tree* layer effectively does not apply. However as soon as the user disconnects a *Reconstruction Tree* input on any layer, the default *Reconstruction Tree* layer will again apply.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >If all layers with a *Reconstruction Tree* input have an explicit user connection then the default <strong>Reconstruction Tree</strong> layer effectively does not apply. However as soon as the user disconnects a <strong>Reconstruction Tree</strong> input on any layer, the default <strong>Reconstruction Tree</strong> layer will again apply.</td>
+      </tr>
+   </tbody>
+</table>
 
 Reconstructed Geometries Layer
 ------------------------------
@@ -247,7 +347,7 @@ A *Reconstructed Geometries* layer has the following configuration options:
 
 ![](screenshots/Layers-Options-ReconstructedGeometries.png)
 
-The visibility icon ![](icons/inkscape_object_visible_16.png) determines whether the reconstructed geometries are drawn in the globe and map views.
+The visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> determines whether the reconstructed geometries are drawn in the globe and map views.
 
 The `Input channels` section has two types of input:
 
@@ -269,7 +369,7 @@ Note that, in this example, "`Add new connection`" is disabled (and greyed out) 
 
 `Set VGP visibility` displays a dialog to specify how Virtual Geomagnetic Pole (VGP) features are displayed. This option only applies to VGP features - for other feature types these settings are ignored.
 
-`Draw Style Setting` displays a dialog to control the colouring of features - see [Manage Colouring](Controlling_View.html#_manage_colouring)
+`Draw Style Setting` displays a dialog to control the colouring of features 
 
 The `Filled polygons` check box can be selected to colour fill features containing polygon geometries. Currently the colour of each filled polygon will be the same as the polygon outline colour (ie, same colour as unfilled polygons).
 
@@ -290,13 +390,27 @@ This layer can display a single raster feature (containing a single raster image
 
 -   a raster (or time-dependent raster sequence) that is reconstructed using a set of static polygons and an age grid.
 
-> **Note**
->
-> Rasters are displayed at the highest resolution available for the current monitor screen size and amount of view zoom. As you zoom in, higher resolutions versions of the original raster are progressively loaded and displayed until the resolution of the original raster is exceeded.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >Rasters are displayed at the highest resolution available for the current monitor screen size and amount of view zoom. As you zoom in, higher resolutions versions of the original raster are progressively loaded and displayed until the resolution of the original raster is exceeded.</td>
+      </tr>
+   </tbody>
+</table>
 
-> **Note**
->
-> Rasters are displayed both the *Globe* and *Map* views. Previous versions of GPlates only displayed rasters in the *Globe* view.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >Rasters are displayed both the <b>Globe</b> and <b>Map</b> views. Previous versions of GPlates only displayed rasters in the <b>Globe</b> view.</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Reconstructed Raster Options
 
@@ -304,7 +418,7 @@ A *Reconstructed Raster* layer has the following configuration options:
 
 ![](screenshots/Layers-Options-ReconstructedRaster.png)
 
-The visibility icon ![](icons/inkscape_object_visible_16.png) determines whether the raster is drawn in the globe and map views.
+The visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> determines whether the raster is drawn in the globe and map views.
 
 The `Input channels` section has three types of input:
 
@@ -314,9 +428,17 @@ The `Input channels` section has three types of input:
 
 -   "*Age grid raster*" is zero or one *Reconstructed Raster* layer containing an age-grid raster. Each pixel of the age grid raster is a floating-point value representing the age of present-day oceanic crust.
 
-> **Note**
->
-> Previous versions of GPlates required the age grid to be in a special age grid layer type and required a special band name for the age grid raster. GPlates no longer has these requirements - an age grid raster is no longer a special case raster - it is just another raster like any other.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >Previous versions of GPlates required the age grid to be in a special age grid layer type and required a special band name for the age grid raster. GPlates no longer has these requirements - an age grid raster is no longer a special case raster - it is just another raster like any other.
+</td>
+      </tr>
+   </tbody>
+</table>
 
 `Opacity` controls the transparency of the raster allowing layers drawn underneath a raster layer to become visible through the raster to varying degrees.
 
@@ -332,9 +454,16 @@ In the "*Raster options*" section you can configure the colour palette, for a sp
 
 Selecting "*Use Default*" will map floating-point pixel values to a small set of pre-defined arbitrary colours. Pixel values two standard deviations away from the mean pixel value will be continously mapped to the small range of colours (with linear interpolation between the colours).
 
-> **Note**
->
-> There is no colour palette option for an RGBA raster.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >There is no colour palette option for an RGBA raster.</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Configuring a raster that is *not* reconstructed
 
@@ -354,9 +483,16 @@ The reconstruction is peformed using a set of static polygons. Conceptually the 
 
 Only polygons whose valid time range (between age of appearance and disappearance) includes the current reconstruction time will be rendered. This is most noticeable near mid-ocean ridges where long thin polygons adjacent the ridge appear/disappear as you go fowards/backwards in time to simulate accretion or crust material at the mid-ocean ridge. This is also the reason why a reconstructed global raster covers the entire globe at present-day but covers a progressively smaller area of the globe as you reconstruct back in time.
 
-> **Note**
->
-> Currently polygons (and their associated cookie-cut raster pieces) with higher plate IDs are drawn on top of polygons with lower plate IDs. This is because higher plate IDs tend to be further from the anchor plate in the plate circuit - although this is not necessarily the case.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >Currently polygons (and their associated cookie-cut raster pieces) with higher plate IDs are drawn on top of polygons with lower plate IDs. This is because higher plate IDs tend to be further from the anchor plate in the plate circuit - although this is not necessarily the case.</td>
+      </tr>
+   </tbody>
+</table>
 
 This configuration is obtained by connecting the "`Reconstructed polygons`" input channel to a *Reconstructed Geometries* layer containing static polygons.
 
@@ -368,9 +504,16 @@ The resulting reconstructed raster…
 
 …note the thin gap along the mid-ocean ridge between South America and Africa. This is an example of a thin ridge-aligned polygon popping out, as you reconstruct backwards in time, because its time of appearance is after the current reconstruction time (34Ma in the example).
 
-> **Note**
->
-> Currently self-intersecting polygons (even if only negligbly intersecting) are ignored which can result in "holes" in the raster. The static polygons GPML file distributed in the GPlates sample data currently contains no self-intersecting polygons. *In a future release GPlates will be modified to handle self-intersecting polygons*.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >Currently self-intersecting polygons (even if only negligbly intersecting) are ignored which can result in "holes" in the raster. The static polygons GPML file distributed in the GPlates sample data currently contains no self-intersecting polygons. <i>In a future release GPlates will be modified to handle self-intersecting polygons</i>.</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Configuring a raster that is reconstructed using static polygons and present-day age grid
 
@@ -378,17 +521,38 @@ This configuration builds on the previous configuration "*Configuring a raster t
 
 When an age grid is *not* used the static polygons pop in and out as whole polygons when the reconstruction time changes. Thus the subduction and accretion of oceanic crust is simulated using lots of thin polygons with small differences in age. The age grid takes this even further by providing per-pixel (rather than per-polygon) age comparisons to provide a more continuous transition at plate boundaries. Here the age of the pixel is used instead of the age of the polygon.
 
-> **Note**
->
-> Pixel values, in the age grid raster, that are NaN (a special floating-point value representing "Not a number") represent non-oceanic crust. For these pixels the polygon age is used instead of the pixel age. So basically the pixel age is used only where it is valid.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >Pixel values, in the age grid raster, that are NaN (a special floating-point value representing "Not a number") represent non-oceanic crust. For these pixels the polygon age is used instead of the pixel age. So basically the pixel age is used only where it is valid.</td>
+      </tr>
+   </tbody>
+</table>
 
-> **Note**
->
-> The per-pixel age comparison test is currently performed on the graphics card where it is significantly faster. Hence the cost to interactivity, of age grids, is small.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >The per-pixel age comparison test is currently performed on the graphics card where it is significantly faster. Hence the cost to interactivity, of age grids, is small.</td>
+      </tr>
+   </tbody>
+</table>
 
-> **Note**
->
-> Changing the rotation model requires re-generating the age grid - this process is performed outside GPlates.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >Changing the rotation model requires re-generating the age grid - this process is performed outside GPlates.</td>
+      </tr>
+   </tbody>
+</table>
 
 This configuration is obtained by connecting the "`Reconstructed polygons`" input channel to a *Reconstructed Geometries* layer containing static polygons **and** connecting the "`Age grid raster`" input channel to a *Reconstructed Raster* layer containing an age grid.
 
@@ -400,21 +564,50 @@ The resulting reconstructed raster (with the assistance of an age grid)…
 
 …note the absense of the thin gap along the mid-ocean ridge between South America and Africa. This is due to the per-pixel age comparison (as opposed to the per-polygon age comparison).
 
-> **Note**
->
-> There will still be small gaps of varying size if there are differences in the rotation model used to generate the age grid (offline) and the rotation model used to reconstruct the static polygons.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >There will still be small gaps of varying size if there are differences in the rotation model used to generate the age grid (offline) and the rotation model used to reconstruct the static polygons.</td>
+      </tr>
+   </tbody>
+</table>
 
-> **Note**
->
-> With previous versions of GPlates the resolution displayed on screen was the lowest of the source raster and the age grid raster - which meant if you had an age grid that was lower resolution than your source raster then your source raster could never be displayed at its highest resolution (no matter how much you zoomed into the view). This is no longer a restriction and the highest resolution of both source raster and age grid raster is now available.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >With previous versions of GPlates the resolution displayed on screen was the lowest of the source raster and the age grid raster - which meant if you had an age grid that was lower resolution than your source raster then your source raster could never be displayed at its highest resolution (no matter how much you zoomed into the view). This is no longer a restriction and the highest resolution of both source raster and age grid raster is now available.</td>
+      </tr>
+   </tbody>
+</table>
 
-> **Note**
->
-> Even though the "`Age grid raster`" input channel references a *Reconstructed Raster* layer the age grid is only sampled at present day (0Ma).
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >Even though the "age grid raster" input channel references a <b>Reconstructed Raster</b> layer the age grid is only sampled at present day (0Ma).</td>
+      </tr>
+   </tbody>
+</table>
 
-> **Note**
->
-> It is possible to "reconstruct" an age grid raster **and** use it to assist with the reconstruction of another raster at the same time.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >It is possible to "reconstruct" an age grid raster <b>and</b> use it to assist with the reconstruction of another raster at the same time.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 Resolved Topological Closed Plate Boundaries Layer
 --------------------------------------------------
@@ -429,7 +622,7 @@ A *Resolved Topological Closed Plate Boundaries* layer has the following configu
 
 ![](screenshots/Layers-Options-TCPB.png)
 
-The visibility icon ![](icons/inkscape_object_visible_16.png) determines whether the resolved topological closed plate polygons are drawn in the globe and map views.
+The visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> determines whether the resolved topological closed plate polygons are drawn in the globe and map views.
 
 Here is an example of turning off the visibility of the *Reconstructed Geometries* layer so that only the topological polygons are visible.
 
@@ -441,17 +634,31 @@ The `Input channels` section has two types of input:
 
 -   "*Reconstruction tree*" is zero or one *Reconstruction Tree* layer.
 
-`Draw Style Setting` displays a dialog to control the colouring of features - see [Manage Colouring](Controlling_View.html#_manage_colouring)
+`Draw Style Setting` displays a dialog to control the colouring of features.
 
 The `Filled polygons` check box can be selected to colour fill the topological polygon geometries. Currently the colour of each filled polygon will be the same as the polygon outline colour (ie, same colour as unfilled polygons).
 
-> **Note**
->
-> The regular features, that make up the boundaries of each topological plate polygon, are reconstructed in another layer - a *Reconstructed Geometries* layer.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >The regular features, that make up the boundaries of each topological plate polygon, are reconstructed in another layer - a <b>Reconstructed Geometries</b> layer.</td>
+      </tr>
+   </tbody>
+</table>
 
-> **Note**
->
-> The user does not need to make a connection to the *Reconstructed Geometries* layer.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >The user does not need to make a connection to the <b>Reconstructed Geometries</b> layer.</td>
+      </tr>
+   </tbody>
+</table>
 
 Resolved Topological Networks Layer
 -----------------------------------
@@ -491,9 +698,16 @@ The velocity arrows are not drawn at every static point location. Instead they a
 
 ![](screenshots/Layers-VelocityArrows.png)
 
-> **Note**
->
-> You can also explicitly create a new *Calculated Velocity Fields* layer and connect its input channels. This is useful for calculating velocities at the points in a multi-point, polyline or polygon features - for the purpose of velocity calculations each geometry is viewed simply as a collection of points (regardless of whether it’s a polyline or polygon or not).
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >You can also explicitly create a new <b>Calculated Velocity Fields</b> layer and connect its input channels. This is useful for calculating velocities at the points in a multi-point, polyline or polygon features - for the purpose of velocity calculations each geometry is viewed simply as a collection of points (regardless of whether it’s a polyline or polygon or not).</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Calculated Velocity Fields Options
 
@@ -501,7 +715,7 @@ A *Calculated Velocity Fields* layer has the following configuration options:
 
 ![](screenshots/Layers-Options-Velocities.png)
 
-The visibility icon ![](icons/inkscape_object_visible_16.png) of the *Calculated Velocity Fields* layer determines whether the velocity arrows are drawn in the globe and map views. And the visibility icon ![](icons/inkscape_object_visible_16.png) of the *Reconstructed Geometries* layer determines whether the set of static points (at which velocities are calculated) are drawn.
+The visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> of the *Calculated Velocity Fields* layer determines whether the velocity arrows are drawn in the globe and map views. And the visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> of the *Reconstructed Geometries* layer determines whether the set of static points (at which velocities are calculated) are drawn.
 
 ![](screenshots/Layers-VelocityAndReconstructedGeometries.png)
 
@@ -513,11 +727,26 @@ The `Input channels` section has three types of input:
 
 -   "*Reconstructed static/dynamic polygons/networks*\* is one (or more) *layers* of type *Reconstructed Geometries* (containing static polygons), *Resolved Topological Closed Plate Boundaries* (containing dynamic polygons) and/or *Resolved Topological Networks* (containing deforming dynamic polygons) that generates the "surfaces" that the velocities are calculated in.
 
-> **Note**
->
-> When a *Calculated Velocity Fields* layer is automatically created (when the appropriate feature collection is loaded) GPlates will search for all *Resolved Topological Closed Plate Boundaries* and *Resolved Topological Networks* layers and connect their output to the input of the new *Calculated Velocity Fields* layer.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >When a <b>Calculated Velocity Fields</b> layer is automatically created (when the appropriate feature collection is loaded) GPlates will search for all <b>Resolved Topological Closed Plate Boundaries</b> and <b>Resolved Topological Networks</b> layers and connect their output to the input of the new <b>Calculated Velocity Fields</b> layer.</td>
+      </tr>
+   </tbody>
+</table>
 
-> **Note**
->
-> When a *Resolved Topological Closed Plate Boundaries* (or *Resolved Topological Networks*) layer is automatically created (when the appropriate feature collection is loaded) GPlates will search for all *Calculated Velocity Fields* layers and connect their input to the output of the new *Resolved Topological Closed Plate Boundaries* (or *Resolved Topological Networks*) layer.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >When a Resolved Topological Closed Plate Boundaries (or Resolved Topological Networks) layer is automatically created (when the appropriate feature collection is loaded) GPlates will search for all <b>Calculated Velocity Fields</b> layers and connect their input to the output of the new Resolved Topological Closed Plate Boundaries (or Resolved Topological Networks) layer.</td>
+      </tr>
+   </tbody>
+</table>
+
 

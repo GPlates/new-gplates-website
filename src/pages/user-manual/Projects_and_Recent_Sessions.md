@@ -5,14 +5,14 @@ prev: 'LoadingAndSaving'
 next: 'Controlling_View'
 ---
 
-Sessions
+1 Sessions
 ========
 
 A session consists of loaded feature collection files and layers (including individual layer settings).
 
 Unlike previous versions, GPlates 2.0 now saves and restores *all* layer information including layer order, visibility and all settings within each layer (such as colour styles and colour palette filenames).
 
-Projects and Recent Sessions
+2 Projects and Recent Sessions
 ============================
 
 A previous GPlates session can be restored by either opening a *project* or opening a *recent session*.
@@ -21,28 +21,28 @@ A *project* is a session that a user has saved to a project file, whereas a *rec
 
 ![](screenshots/RecentSession-1.png)
 
-Opening and Project
+3 Opening and Project
 ===================
 
 There is more than one way to open a project file.
 
 These include the **File** menu, dragging a project file onto GPlates, double-clicking a project file, and starting up GPlates (with a project file) on the command-line.
 
-File Menu
+3.1 File Menu
 ---------
 
 Select a project file using the **File** menu (**File &gt; Open Project**)…
 
 ![](screenshots/Open-Project.png)
 
-Drag’n'drop
+3.2 Drag’n'drop
 -----------
 
 Select a project file in the file system (Windows Explorer, Mac Finder, etc) and drag it onto an open GPlates main window…
 
 ![](screenshots/Drag-n-drop-project.png)
 
-Double-click (*Mac OS*)
+3.3 Double-click (*macOS*)
 -----------------------
 
 Double-click a project file (in Finder) to open it with GPlates (note that GPlates will start up first if it is not already running).
@@ -55,14 +55,14 @@ Then select the GPlates 2.0 application. Also ensure the *'Always Open With'* ch
 
 ![](screenshots/Choose-Application.png)
 
-Command Line
+3.4 Command Line
 ------------
 
 Start GPlates in a command-line terminal (Windows console, Mac Terminal, etc) and supply the project filename as the *'-p'* option:
 
 ![](screenshots/Command-Line.png)
 
-Opening a recent session
+4 Opening a recent session
 ========================
 
 A list of the most recent sessions is available in the **File** menu (**File &gt; Open Recent Session**).
@@ -93,7 +93,7 @@ The maximum number of stored recent sessions defaults to 8, but this can be chan
 
 In the **Preferences** dialog you can also configure the directories to open feature collection files and project files, and whether to (1) always use the default directory, (2) use the default the first time after start-up and then use the last-used directory, or (3) always use the last-used directory.
 
-Restoring missing files in a session
+5 Restoring missing files in a session
 ====================================
 
 When GPlates restores a session ([opening a project](#open_project) or [opening a recent session](#open_rs)) the data files associated with the session are also restored. The data files are the feature collections (and any colour palette files used in the colouring styles or layer settings).
@@ -124,7 +124,7 @@ Note that our restored project now has an [unsaved change](#unsaved_change) sinc
 
 ![](screenshots/Unsaved-Changes.png)
 
-When is a project open?
+6 When is a project open?
 =======================
 
 When a project is open the GPlates window title includes the name of the project file. This is the easiest way to determine whether a project is currently open or not.
@@ -135,19 +135,19 @@ For example, the following shows the *'DataBundleForNovices.gproj'* project file
 
 More formally, a project is open when:
 
--   A project file has been opened (see [Opening a project](#open_project)), or
+-   A project file has been opened, or
 
--   The current session has been saved to a project file (see [Saving a project](#save_project)).
+-   The current session has been saved to a project file.
 
 A project is not open when:
 
 -   GPlates first starts up (without a project), or
 
--   A *recent session* has been opened (see [Opening a recent session](#open_rs)), or
+-   A *recent session* has been opened, or
 
--   The current session has been cleared (see [Clearing a session](#clear_session)).
+-   The current session has been cleared.
 
-Clearing the current session
+7 Clearing the current session
 ============================
 
 The current session can be cleared using the **File** menu (**File&gt;Clear Session**).
@@ -158,7 +158,7 @@ This unloads all feature collections and clears all layers
 
 Note that if a project is [currently open](#pro_open) then this will also close the project.
 
-Saving a project
+8 Saving a project
 ================
 
 The **File** menu (**File &gt; Save Project** and **File&gt;Save Project As**) can be used to save the current session to a project file.
@@ -175,7 +175,7 @@ Also note that any [unsaved feature collections](#usfc) must first be saved befo
 
 ![](screenshots/Unsaved-Feature-Collections.png)
 
-Automatic saving of sessions
+9 Automatic saving of sessions
 ============================
 
 In contrast to projects (which are manually saved by the user) the current session is automatically saved immediately prior to losing the current session. This happens when:
@@ -192,7 +192,7 @@ However, note that if there are any unsaved *feature collections* then you will 
 
 Saving the current session either replaces an existing session in the list of *recent sessions* (if any have the same feature collections) or inserts a new session (and pops the least recent session off the list). In both cases the current session becomes the most recent session in the list.
 
-Unsaved Changes
+10 Unsaved Changes
 ===============
 
 Unsaved changes are classified into:
@@ -209,7 +209,7 @@ Unsaved changes are classified into:
 
     -   [Missing files restored in session](#rmfs).
 
-Unsaved changes warning
+10.1 Unsaved changes warning
 -----------------------
 
 If the current session has unsaved changes then a warning will pop up if you attempt an action that will lose the current session including:
@@ -230,7 +230,7 @@ You will then have the choice to either:
 
 The following sections cover a project with (i) unsaved *feature collections*, (ii) unsaved *session changes* and (iii) both unsaved *feature collections* and unsaved *session changes*.
 
-Unsaved feature collections
+10.2 Unsaved feature collections
 ---------------------------
 
 To demonstrate unsaved *feature collections* we will start with a newly opened project called *'Test3D'* (containing a 3D scalar field)…
@@ -253,7 +253,7 @@ However, if we want to save our change then we need to choose *'Do not open new 
 
 Once we have saved our modified feature collection we can open a new project (**File &gt; Open Project**) without getting an unsaved changes warning.
 
-Unsaved session changes
+10.3 Unsaved session changes
 -----------------------
 
 To demonstrate unsaved *session changes* we will again start with a newly opened 3D scalar field project…
@@ -272,7 +272,7 @@ If we do not care about saving our isosurface change then we can choose *'Discar
 
 However, if we want to save our change then we need to choose *'Do not open new project'* and then save our current project (**File &gt; Save Project**). Then we can open a new project (**File &gt; Open Project**) without getting an unsaved changes warning.
 
-Unsaved feature collection and session changes
+10.4 Unsaved feature collection and session changes
 ----------------------------------------------
 
 If a currently open project has both unsaved feature collections and unsaved session changes then the unsaved changes warning will indicate this…
@@ -299,14 +299,14 @@ In the following example, cross-sections (for the 3D scalar field) have been dig
 
 ![](screenshots/MFC-save.png)
 
-Project versus recent sessions
+10.5 Project versus recent sessions
 ------------------------------
 
 Changes to *feature collections* are saved to feature collection files (such as .gpml). Whereas *session changes* are automatically saved as recent sessions, and can also be saved to project files (.gproj).
 
 As such you are always warned of unsaved *feature collections* (in case you want to save the feature collection files). However you are only warned of unsaved *session changes* when a [project is currently open](#pro_open) (in case you want to save the project file), otherwise no warning is necessary because unsaved *session changes* are automatically saved as a recent session.
 
-Relocating projects
+11 Relocating projects
 ===================
 
 A project consists of a project file and the data files used in that project (such as feature collection files, and any colour palette files used in the colouring styles or layer settings). When GPlates opens a project file it also opens the associated data files. This is possible because the project file stores the names and locations of the data files.
@@ -323,7 +323,7 @@ There are two ways to relocate a project:
 
     -   Useful when copying a project to *another* computer.
 
-Moving a project within your *local* computer
+11.1 Moving a project within your *local* computer
 ---------------------------------------------
 
 Moving only a project file (but not its associated data files) works well when moving a project within your *local* computer.
@@ -332,7 +332,7 @@ This is because the full (*absolute*) path of each data file is recorded in the 
 
 However if you copied only the project file to *another* computer then the same data files would need to be accessible from both computers. This could work if the data files were on a network share (which was mapped to the same path on both computers). A more reliable option is to copy *both* the project file and its associated data files to the second computer as covered in the next section.
 
-Copying a project to *another* computer
+11.2 Copying a project to *another* computer
 ---------------------------------------
 
 Copying a project file, together with its associated data files, works well when copying a project to *another* computer.
@@ -357,7 +357,7 @@ In this case, the path of each data file relative to the project file must be ma
 
 Note that any colour palette files (*'\*.cpt'*) used by layers in the project should be included when copying the project, otherwise the user on the destination computer will be asked to [locate them](#rmfs).
 
-### Including colour palette files
+### 11.2.1 Including colour palette files
 
 A project can use colour palette files *indirectly* in colour styles and *directly* in some layers (such as Rasters, 3D Scalar Fields, Resolved Topological Networks and Reconstructed Scalar Coverages). Colour palette files used directly in layers need to be included, but only those colour palette files in colour styles that are actually used by layers in the project need to be included (unused styles can be ignored).
 
@@ -371,7 +371,7 @@ When the copied (unzipped) project is opened on the destination computer, a new 
 
 Note that when a project is opened it will only create a new colour style if a matching one does not already exist in the **Draw Style** dialog. Matching colour styles have compatible names (differing only by *'1'*, *'2'*, etc, suffixes) and their configuration parameters match. So in our paleogeography example, colour styles *'PaleoGeography'* and *'PaleoGeography\_1'* are matching if they reference the same colour palette filename (and have the same *'property\_name'* value). So if prior to opening the project, the destination computer already had a colour style *'PaleoGeography'* referencing *'/home/john/paleogeography/colouring/paleogeography.cpt'* (and same *'property\_name'* value) then it would be used (instead of creating a new colour style).
 
-Ambiguous projects
+11.3 Ambiguous projects
 ------------------
 
 An ambiguous project is a relocated project that has some data files in original locations and some in current locations (relative to the relocated project file).
@@ -416,7 +416,7 @@ A more obscure example of an ambiguous project can happen on a Windows computer 
 
 Note that *D:/raster\_data/raster.gpml* is the same in both locations. This is because a relative path cannot be formed between *'C:/original/projects/'* and *'D:/raster\_data/'* due to different drive letters and so GPlates uses the original location as the current location. In this case GPlates will ask us to choose the *original* or *current* location (since *'D:/raster\_data/raster.gpml'* is in both locations).
 
-Compatibility of sessions across GPlates versions
+12 Compatibility of sessions across GPlates versions
 =================================================
 
 GPlates 1.5 (and older versions) save and restore the feature collection filenames, the associated layer types and their layer connections. GPlates 2.0 additionally saves and restores all layer information including layer order, visibility and all layer settings within each layer (including colour styles and colour palette filenames).
@@ -425,8 +425,16 @@ GPlates 2.0 can open projects and recent sessions saved by all prior versions of
 
 GPlates 1.5 can open projects and recent sessions saved by GPlates 2.0 (provided the data files were not moved after the project or recent session was saved). However the information restored is limited to the feature collections, layer types and layer connections (the extra information saved by GPlates 2.0 is ignored).
 
-> **Note**
->
-> This means if you work on a project (or recent session) in GPlates 2.0, then work on it in GPlates 1.5 and then work on it again in GPlates 2.0 then it will not get completely restored the second time it is opened in GPlates 2.0 (like it was the first time). This is because the session information saved by GPlates 1.5 is limited.
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Tip">
+         </td>
+         <td class="content" >This means if you work on a project (or recent session) in GPlates 2.0, then work on it in GPlates 1.5 and then work on it again in GPlates 2.0 then it will not get completely restored the second time it is opened in GPlates 2.0 (like it was the first time). This is because the session information saved by GPlates 1.5 is limited.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 
