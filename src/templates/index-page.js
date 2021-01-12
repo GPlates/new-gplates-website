@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 import LatestNews from '../components/LatestNews'
 import { HTMLContent } from '../components/Content'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload, faClipboard, faCheckCircle, faAngleDoubleRight} from '@fortawesome/free-solid-svg-icons'
+import { faDownload, faClipboard, faCheckCircle} from '@fortawesome/free-solid-svg-icons'
 
 import GPlatesMainScreenshot from '../img/SATL_ExponentialStretching_650x380.png'
 import HeroImg1 from '../img/hero-img-1.png'

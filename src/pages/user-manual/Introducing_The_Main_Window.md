@@ -1,6 +1,7 @@
 ---
 
 templateKey: 'user-manual'
+title: 'Chapter 2: Introducing The Main Window'
 prev: 'Introduction_Gplates'
 next: 'DataFileTypes'
 
@@ -401,6 +402,7 @@ The **Tool Palette** includes camera positioning tools, feature selection tools 
       </tr>
    </tbody>
 </table>
+
 The tools are arranged into groups (tabs in the **Tool Palette**). For example the **Digitisation** group is used when digitising new geometries and the **Feature Inspection** group is used when querying existing features. Some tools appear in more than one group. For example the **Move Vertex** tool appears in both the **Digitisation** and **Feature Inspection** groups since it is used in the **Digitisation** group to modify newly digitised geometries and it is used in the **Feature Inspection** group to modify geometries of existing features.
 
 ![](screenshots/ToolPaletteDigitisationMoveVertex.png) ![](screenshots/ToolPaletteFeatureInspectionMoveVertex.png)
@@ -416,26 +418,34 @@ List of Menu Operations
 
 -   Shortcut keys are listed beside some menu items. On Mac OS, please substitute the `Command` (⌘) key in place of `Ctrl`.
 
-> **Note**
->
-> Clicking on a menu item from the list below will take you to the appropriate chapter for further information
+<table>
+   <tbody>
+      <tr>
+         <td class="icon" style="width:5rem; display:inline-table;">
+            <img src="./images/icons/note.png" alt="Note" style="width:3rem;">
+         </td>
+         <td class="content">Clicking on a menu item from the list below will take you to the appropriate chapter for further information</td>
+      </tr>
+   </tbody>
+</table>
+
 
 File
 ----
 
--   [Open Feature Collection](LoadingAndSaving.html) `[Ctrl+O]`
+-   [Open Feature Collection](/user-manual/LoadingAndSaving) `[Ctrl+O]`
 
--   [Open Recent Session](LoadingAndSaving.html)
+-   [Open Recent Session](/user-manual/LoadingAndSaving)
 
--   [Import Raster](DataFileTypes.html)
+-   [Import Raster](/user-manual/DataFileTypes)
 
--   [Import Time-Dependent Raster](DataFileTypes.html)
+-   [Import Time-Dependent Raster](/user-manual/DataFileTypes)
 
 -   Connect WFS
 
--   [Manage Feature Collections](LoadingAndSaving.html) `[Ctrl+M]`
+-   [Manage Feature Collections](/user-manual/LoadingAndSaving) `[Ctrl+M]`
 
--   [View Read Errors](LoadingAndSaving.html)
+-   [View Read Errors](/user-manual/LoadingAndSaving)
 
 -   Quit `[Ctrl+Q]`
 
@@ -446,13 +456,13 @@ Edit
 
 -   Redo `[Ctrl+Y]`
 
--   [Query Feature](Interacting_Features.html) `[Ctrl+R]`
+-   [Query Feature](/user-manual/Interacting_Features/) `[Ctrl+R]`
 
--   [Edit Feature](Creating_Features.html) `[Ctrl+E]`
+-   [Edit Feature](/user-manual/Creating_Features) `[Ctrl+E]`
 
--   [Copy Geometry to Digitise Tool](Creating_Features.html)
+-   [Copy Geometry to Digitise Tool](/user-manual/Creating_Features)
 
--   [Clone Feature](Creating_Features.html)
+-   [Clone Feature](/user-manual/Creating_Features)
 
 -   Delete Feature `[Delete]`
 
@@ -463,9 +473,9 @@ Edit
 View
 ----
 
--   [Set Projection](Controlling_View.html)
+-   [Set Projection](/user-manual/Controlling_View)
 
--   [Camera Location](Controlling_View.html)
+-   [Camera Location](/user-manual/Controlling_View)
 
     -   Set Location `[Ctrl+Shift+L]`
 
@@ -477,7 +487,7 @@ View
 
     -   Move Right
 
--   [Camera Rotation](Controlling_View.html)
+-   [Camera Rotation](/user-manual/Controlling_View)
 
     -   Rotate Clockwise `[]]`
 
@@ -485,7 +495,7 @@ View
 
     -   Reset Orientation `[^]`
 
--   [Camera Zoom](Controlling_View.html)
+-   [Camera Zoom](/user-manual/Controlling_View)
 
     -   Set Zoom
 
@@ -518,82 +528,82 @@ View
 Features
 --------
 
--   [Manage Colouring](Controlling_View.html)
+-   [Manage Colouring](/user-manual/Controlling_View)
 
--   [View Total Reconstruction Sequences](Reconstructions.html)
+-   [View Total Reconstruction Sequences](/user-manual/Reconstructions)
 
--   [View Shapfile Attributes](DataFileTypes.html)
+-   [View Shapfile Attributes](/user-manual/DataFileTypes)
 
 -   Create VGP
 
--   [Assign Plate IDs](Reconstructions.html)
+-   [Assign Plate IDs](/user-manual/Reconstructions)
 
--   [Generate Mesh Caps](Reconstructions.html)
+-   [Generate Mesh Caps](/user-manual/Reconstructions)
 
 Reconstruction
 --------------
 
--   [Reconstruct to Time](Reconstructions.htm) `[Ctrl+T]`
+-   [Reconstruct to Time](/user-manual/Reconstructions) `[Ctrl+T]`
 
--   [Step Backward One Frame](Reconstructions.html) `[Ctrl+Shift+I]`
+-   [Step Backward One Frame](/user-manual/Reconstructions) `[Ctrl+Shift+I]`
 
--   [Step Forward One Frame](Reconstructions.html) `[Ctrl+I]`
+-   [Step Forward One Frame](/user-manual/Reconstructions) `[Ctrl+I]`
 
--   [Reset Animation](Reconstructions.html)
+-   [Reset Animation](/user-manual/Reconstructions)
 
--   [Play Animation](Reconstructions.html)
+-   [Play Animation](/user-manual/Reconstructions)
 
--   [Configure Animation](Reconstructions.html)
+-   [Configure Animation](/user-manual/Reconstructions)
 
--   [Specify Anchored Plate ID](Reconstructions.html) `[Ctrl+D]`
+-   [Specify Anchored Plate ID](/user-manual/Reconstructions) `[Ctrl+D]`
 
--   [View Total Reconstruction Poles](Reconstructions.html) `[Ctrl+P]`
+-   [View Total Reconstruction Poles](/user-manual/Reconstructions) `[Ctrl+P]`
 
--   [Export](Export.html)
+-   [Export](/user-manual/Export)
 
 Utilities
 ---------
 
 -   Calculate Reconstruction Pole
 
--   [Open Python Console](Python.html) `[F12]`
+-   [Open Python Console](/user-manual/Python) `[F12]`
 
 Tools
 -----
 
 -   Use Small Icons
 
--   [Drag Globe](Controlling_View.html) `[D]`
+-   [Drag Globe](/user-manual/Controlling_View) `[D]`
 
--   [Zoom In](Controlling_View.html) `[Z]`
+-   [Zoom In](/user-manual/Controlling_View) `[Z]`
 
 -   Measure `[S]`
 
--   [Choose Feature](Interacting_Features.html) `[F]`
+-   [Choose Feature](/user-manual/Interacting_Features) `[F]`
 
--   [Digitise New Polyline Geometry](Creating_Features.html) `[L]`
+-   [Digitise New Polyline Geometry](/user-manual/Creating_Features) `[L]`
 
--   [Digitise New Multi-point Geometry](Creating_Features.html) `[M]`
+-   [Digitise New Multi-point Geometry](/user-manual/Creating_Features) `[M]`
 
--   [Digitise New Polygon Geometry](Creating_Features.html) `[G]`
+-   [Digitise New Polygon Geometry](/user-manual/Creating_Features) `[G]`
 
--   [Move Geometry](Interacting_Features.html) `[Y]`
+-   [Move Geometry](/user-manual/Interacting_Features) `[Y]`
 
--   [Move Vertex](Interacting_Features.html) `[V]`
+-   [Move Vertex](/user-manual/Interacting_Features) `[V]`
 
--   [Insert Vertex](Interacting_Features.html) `[I]`
+-   [Insert Vertex](/user-manual/Interacting_Features) `[I]`
 
--   [Delete Vertex](Interacting_Features.html) `[X]`
+-   [Delete Vertex](/user-manual/Interacting_Features) `[X]`
 
--   [Split Feature](Interacting_Features.html) `[T]`
+-   [Split Feature](/user-manual/Interacting_Features) `[T]`
 
--   [Modify Reconstruction Pole](Pole_Manipulation.html) `[P]`
+-   [Modify Reconstruction Pole](/user-manual/Pole_Manipulation) `[P]`
 
--   [Build New Topology](Topology_Tools.html) `[B]`
+-   [Build New Topology](/user-manual/Topology_Tools) `[B]`
 
--   [Edit Topology Sections](Topology_Tools.html) `[E]`
+-   [Edit Topology Sections](/user-manual/Topology_Tools) `[E]`
 
--   [Create Small Circle](SmallCircles.html) `[C]`
+-   [Create Small Circle](/user-manual/SmallCircles) `[C]`
 
 Window
 ------
@@ -602,13 +612,13 @@ Window
 
     Creates a new instance of GPlates. Currently each instance created this way is completely separate with its own main window and dialogs. Any program state such as files loaded prior to selecting **New Window** is not transferred across to the new instance. This feature is useful mainly for Mac OS X where it is not possible to run multiple instances of the same application from the *Finder*.
 
--   [Show Layers](Layers.html) `[Ctrl+L]`
+-   [Show Layers](/user-manual/Layers) `[Ctrl+L]`
 
 -   Log
 
--   [Show Bottom Panel](Controlling_View.html)
+-   [Show Bottom Panel](/user-manual/Controlling_View)
 
--   [Full Screen](Controlling_View.html) `[F11]`
+-   [Full Screen](/user-manual/Controlling_View) `[F11]`
 
 Help
 ----

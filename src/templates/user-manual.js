@@ -6,7 +6,6 @@ import Content, { HTMLContent } from '../components/Content'
 import prevIcon from '../img/prev.png'
 import nextIcon from '../img/next.png'
 import homeIcon from '../img/home.png'
-import { noAuto } from '@fortawesome/fontawesome-svg-core'
 
 export const UserManualTemplate = ({ title, content, contentComponent, prev , next}) => {
   const PageContent = contentComponent || Content
@@ -28,7 +27,7 @@ export const UserManualTemplate = ({ title, content, contentComponent, prev , ne
                   <col style={{width:'33%'}} />  
                 </colgroup>
                 <tbody>
-                  <tr class="odd">
+                  <tr className="odd">
                       <td style={{paddingLeft:'5px'}}>
                         <p>
                           {prev && <a href={"/user-manual/"+prev}><img src={prevIcon} alt="Previous" /></a>}

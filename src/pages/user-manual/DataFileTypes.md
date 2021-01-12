@@ -68,9 +68,17 @@ Next you will be asked to enter the raster band name.
 
 The default choice is *band\_1*. You can also type a new band name that describes the purpose or category of data contained in the raster. This is useful when you need to identify a specific raster band in the *Raster options* of the raster layer (for example to change the raster colour palette). Currently the import process does not support importing of multi-band rasters so there’s only one raster band per raster.
 
-> **Note**
->
-> Previous versions of GPlates treated age-grid rasters (a floating-point raster where each pixel represents the age of the crust covered by the pixel) differently depending on whether you were planning to reconstruct another raster with the assistance of that age grid or whether you simply wanted to visualise the age grid as you would any other raster. This distinction, which required specifying `age` as the band name in the former case, is no longer required since the band name is no longer used to distinguish the two use cases. In other words, an age-grid raster can be visualised, or used to assist reconstruction of another raster, or both without any changes. See the **Layers** chapter for more information on using an age-grid raster for reconstruction.
+<table>
+   <tbody>
+      <tr>
+         <td class="icon" style="width:5rem; display:inline-table;">
+            <img src="./images/icons/note.png" alt="Note" style="width:3rem;">
+         </td>
+         <td class="content">Previous versions of GPlates treated age-grid rasters (a floating-point raster where each pixel represents the age of the crust covered by the pixel) differently depending on whether you were planning to reconstruct another raster with the assistance of that age grid or whether you simply wanted to visualise the age grid as you would any other raster. This distinction, which required specifying <strong>age</strong> as the band name in the former case, is no longer required since the band name is no longer used to distinguish the two use cases. In other words, an age-grid raster can be visualised, or used to assist reconstruction of another raster, or both without any changes. See the <strong>Layers</strong> chapter for more information on using an age-grid raster for reconstruction.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 If the imported raster file contains an embedded spatial reference system with georeferencing then it is imported and hence GPlates will not ask you to specify the raster georeferencing. The georeferencing converts the raster’s pixel coordinates to its spatial reference system coordinates. The spatial reference system typically includes both a geographic coordinate system (datum) and an optional map projection. The following shows an imported raster containing an embedded Lambert Conformal Conic projection:
 
@@ -92,9 +100,16 @@ Next you will asked if you want to save the raster to an existing, or new, featu
 
 ![](screenshots/Open-Raster-FeatureCollection.png)
 
-> **Note**
->
-> Raster images currently do not display while using map projections other than the 3D Globe.
+<table>
+   <tbody>
+      <tr>
+         <td class="icon" style="width:5rem; display:inline-table;">
+            <img src="./images/icons/note.png" alt="Note" style="width:3rem;">
+         </td>
+         <td class="content">Raster images currently do not display while using map projections other than the 3D Globe.</td>
+      </tr>
+   </tbody>
+</table>
 
 Time-Dependent Raster Sets
 ==========================
@@ -123,11 +138,19 @@ A time-dependent raster set is treated the same as a regular raster image by GPl
 
 The same georeferencing and raster band options apply to time-dependent rasters as they do to single rasters.
 
-> **Note**
->
-> A time-dependent raster set can be reconstructed just as a single (non time-dependent) raster can. In this case the raster will be cutout into pieces according to static polygons which move independently across the globe (just like a single raster) but the image itself (that’s projected onto those pieces) will change over time as defined by the time-dependent sequence of images.
+<table>
+   <tbody>
+      <tr>
+         <td class="icon" style="width:5rem; display:inline-table;">
+            <img src="./images/icons/note.png" alt="Note" style="width:3rem;">
+         </td>
+         <td class="content">A time-dependent raster set can be reconstructed just as a single (non time-dependent) raster can. In this case the raster will be cutout into pieces according to static polygons which move independently across the globe (just like a single raster) but the image itself (that’s projected onto those pieces) will change over time as defined by the time-dependent sequence of images.</td>
+      </tr>
+   </tbody>
+</table>
 
-Links to existing time-dependent raster sets may be found on the "Downloads" page of the GPlates website: <http://www.gplates.org/downloads.html>
+
+Links to existing time-dependent raster sets may be found on the "Downloads" page of the GPlates website: <https://www.gplates.org/downloads>
 
 How can I create my own time-dependent raster set?
 --------------------------------------------------
