@@ -7,21 +7,21 @@ next: 'Flowlines'
 
 This chapter aims to provide the reader with information and instructions for digitising new features in GPlates.
 
-Digitisation
+1 Digitisation
 ============
 
 GPlates allows the user to create features on the globe: from aseismic ridges to volcanoes. To create a new feature, a user first "digitises" a new geometry, then specifies the additional properties for that feature. The geometries which GPlates handles are point, polyline (a series of lines drawn end-to-end, forming an open polygon) and polygon. Certain types of features require certain geometries, for example: a volcano uses a point to represent its position; an isochron uses a polyline to represent its center-line; and a basin uses a polygon to represent its outline.
 
-Digitisation Tools
+1.1 Digitisation Tools
 ------------------
 
 GPlates offers three digitisation tools in the **Tool Palette**:
 
-![](icons/digitise_polyline_35.png) Polyline Geometry
+<span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/digitise_polyline_35.png" /> </span> Polyline Geometry
 
-![](icons/digitise_multipoint_35.png) Point Geometries
+<span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/digitise_multipoint_35.png" /> </span> Point Geometries
 
-![](icons/digitise_polygon_35.png) Polygon Geometry
+<span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/digitise_polygon_35.png" /> </span> Polygon Geometry
 
 Each tool can be used to create any of the GPlates GPML features, however it is the user’s responsibility to ensure that the correct geometry is digitised for the intended feature type.
 

@@ -1,8 +1,8 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 19: Total Reconstruction Pole Manipulation'
-prev: 'SmallCircles'
-next: 'KinematicsTool'
+title: 'Chapter 13: Total Reconstruction Sequences'
+prev: 'MoreReconstructions'
+next: 'EditGeometries'
 ---
 
 Introduction
@@ -26,9 +26,16 @@ Editing a Total Reconstruction Sequence
 
 A TRS can be edited by selecting the sequence in the tree and clicking the **Edit Sequence** button. This opens the **Edit Total Reconstruction Sequence** dialog. After editing the TRS, select **Apply**, and the TRS dialog will be updated.
 
-> **Note**
->
-> After editing a TRS, the TRS feature collection will have been updated, but not saved to disk. The updated feature collection can be saved to disk from the **Manage Feature Collections** dialog (Ctrl+M).
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Note">
+         </td>
+         <td class="content" >After editing a TRS, the TRS feature collection will have been updated, but not saved to disk. The updated feature collection can be saved to disk from the <b>Manage Feature Collections</b> dialog (Ctrl+M).</td>
+      </tr>
+   </tbody>
+</table>
 
 ![](screenshots/EditTRS1.win32.png)
 
@@ -37,9 +44,15 @@ Creating a Total Reconstruction Sequence
 
 A new TRS can be created by selecting **New Sequence**. After filling in the fields of the new sequence, including the moving and fixed plates, select **Next** and add the sequence to an existing feature collection, or create a new feature collection.
 
-> **Note**
->
-> After creating a TRS, the TRS feature collection will have been updated, but not saved to disk. The updated feature collection can be saved to disk from the **Manage Feature Collections** dialog (Ctrl+M).
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Note">
+         </td>
+         <td class="content" >After creating a TRS, the TRS feature collection will have been updated, but not saved to disk. The updated feature collection can be saved to disk from the <b>Manage Feature Collections</b> dialog (Ctrl+M).</td>
+      </tr>
+   </tbody>
+</table>
 
 ![](screenshots/CreateTRS1.win32.png)
-

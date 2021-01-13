@@ -58,7 +58,7 @@ The visibility of each layer can be individually disabled (or enabled) by clicki
    <tbody>
       <tr>
          <td class="icon">
-            <img src="./images/icons/note.png" alt="Tip">
+            <img src="./images/icons/note.png" alt="Note">
          </td>
          <td class="content" >Some types of layers (such as the **Reconstruction Tree** layer) do not have a visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/inkscape_object_visible_16.png" /> </span>. This is because those layer types do not output geometries and hence there is nothing to visualise in the globe and map views.</td>
       </tr>
@@ -135,9 +135,9 @@ In this example, the raster layers are at the bottom and hence are drawn underne
    <tbody>
       <tr>
          <td class="icon">
-            <img src="./images/icons/note.png" alt="Tip">
+            <img src="./images/icons/note.png" alt="Note">
          </td>
-         <td class="content" >The layer positions of **Reconstruction Tree** layers are not important since they produce no visible output.</td>
+         <td class="content" >The layer positions of <b>Reconstruction Tree</b> layers are not important since they produce no visible output.</td>
       </tr>
    </tbody>
 </table>

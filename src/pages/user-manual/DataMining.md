@@ -5,15 +5,15 @@ prev: 'Python'
 next: 'PythonAPIs'
 ---
 
-Introduction
+1 Introduction
 ============
 
 The GPlates' co-registration layer allows users to combine two time-dependent datasets based on a set of user-defined associations. Then the generated data from the combined datasets can be used as input of Orange widgets which are created to analyze and visualize data.
 
-Co-registration Layer
+2 Co-registration Layer
 =====================
 
-Open Co-registration Layer
+2.1 Open Co-registration Layer
 --------------------------
 
 In "Layers" widget, click "Add new layer…" button. The "Add New Layer" dialog will pop up. Click the "Layer Type" combobox and select "Co-registration" to add a new co-registration layer.
@@ -22,7 +22,7 @@ In "Layers" widget, click "Add new layer…" button. The "Add New Layer" dialog 
 
 ![](screenshots/AddLayerDlg.png)
 
-Configurate Co-registration Layer
+2.2 Configurate Co-registration Layer
 ---------------------------------
 
 In "Layers" widget, expand co-registraion layer and add appropriate connections.
@@ -33,14 +33,14 @@ Click the "Co-registration Configuration" button to bring up "Co-registration Co
 
 ![](screenshots/CoregCfg.png)
 
-Result Table
+2.3 Result Table
 ------------
 
 Click the "View Result" to bring up the "Result Table" dialog.
 
 ![](screenshots/ResultTable.png)
 
-Orange(biolab) Widgets
+3 Orange(biolab) Widgets
 ======================
 
 -   TimeSeries
@@ -65,14 +65,14 @@ The BirthAttribute widget gets co-registration data at the birth time of each se
 
 ![](screenshots/BirthAttr.png)
 
-Network Interface
+4 Network Interface
 =================
 
 The co-registration layer data can be accessed through a network interface. When GPlates starts up, an internal tcp/ip server is initialized. Users can configurate the server setting in "Preference" dialog.
 
 ![](screenshots/ServerSetting.png)
 
-gplates.py
+4.1 gplates.py
 ----------
 
 The gplates.py module is a wrapper around the network interfaces. Users can retrieve data from GPlates by calling Python methods defined in gplates.py. The class CoregistrationLayer is a delegate of coregistration layer in GPlates.
