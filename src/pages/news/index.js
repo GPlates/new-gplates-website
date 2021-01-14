@@ -9,7 +9,7 @@ export default class BlogIndexPage extends React.Component {
       <Layout>
         
           <h1
-            className="has-text-weight-bold is-size-1 gp-title">
+            className="has-text-weight-bold is-size-2 gp-title">
             News
           </h1>
          

@@ -12,11 +12,9 @@ class Screenshots extends React.Component {
     return (
       <Layout>
         
-          <h2 className="has-text-weight-bold is-size-1 gp-title">
-            Screenshots
-          </h2>
-          
-
+        <h2 className="has-text-weight-bold is-size-2 gp-title">
+          Gallery
+        </h2>
         <div className="container">
           <div className="column is-12 is-offset-0">
             <div className="columns is-multiline">

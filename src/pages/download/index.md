@@ -1,20 +1,55 @@
 ---
 templateKey: 'simple-page'
 path: /download
-title: Download
+title: Download GPlates and Data
 ---
-### Download GPlates
 
+### Download GPlates
 ---
 
 The current stable release of GPlates is [GPlates 2.2](/news/2019-08-30-GPlates-2-2-released/), released in August 2019...
 
-[![download gplates](./img/download-gplates.png)](https://sourceforge.net/projects/gplates/files/gplates/2.2/)
+<div class="download-box">
+    <table>
+    <tbody>
+        <tr>
+            <td class="icon">
+                <a href="http://sourceforge.net/projects/gplates/files/gplates/2.2/">
+                    <img src="./img/GPlates-tango-actions-go-down-48.png" alt="Download GPlates">
+                </a>
+            </td>
+            <td class="content" >
+                <a href="http://sourceforge.net/projects/gplates/files/gplates/2.2/" title="GPlates 2.2 packages on SourceForge">
+                <strong>Download GPlates 2.2</strong>
+                </a>
+                <p>(the latest “stable” release)</p>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div><br>
 
 The current beta release of pyGPlates is [PyGPlates beta revision 28](/news/2020-08-18-PyGPlates-beta-revision-28-released/), released in August 2020...
 
-[![download pygplates](./img/download-pygplates.png)](https://sourceforge.net/projects/gplates/files/pygplates/beta-revision-28/)
-
+<div class="download-box">
+    <table>
+    <tbody>
+        <tr>
+            <td class="icon">
+                <a href="https://sourceforge.net/projects/gplates/files/pygplates/beta-revision-28/">
+                    <img src="./img/GPlates-tango-actions-go-down-48.png" alt="Download pyGPlates">
+                </a>
+            </td>
+            <td class="content" >
+                <a href="https://sourceforge.net/projects/gplates/files/pygplates/beta-revision-28/" title="pyGPlates beta revision 28 packages on SourceForge">
+                <strong>Download pyGPlates beta revision 28</strong>
+                </a>
+                <p>(the latest “beta” release)</p>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div><br>
 
 GPlates runs on __Windows__, __Linux__ and __MacOS X__. We provide ready-to-use binary executables for both Windows and MacOS X, enabling a GPlates user to download, install and use the latest version of GPlates immediately. The binaries also include the GPlates-compatible data described below.
 

@@ -9,7 +9,7 @@ export const FeaturePageTemplate = ({ title, intro, image,features, capabilities
   return (
       <div className="container">
         <div className="column is-10 is-offset-1">
-          <h2 className="has-text-weight-bold is-size-4-mobile is-size-3-tablet is-size-2-widescreen">{title}</h2>
+          <h2 className="has-text-weight-bold is-size-4-mobile is-size-3-tablet is-size-2-widescreen" style={{textAlign:'center'}}>{title}</h2>
           <h3 style={{margin:'1rem 0'}}>{intro}</h3>
           <p className="has-text-weight-bold">The capabilities of GPlates are: </p>
           

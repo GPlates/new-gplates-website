@@ -8,17 +8,16 @@ export const SimplePageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="section">
+          <h2 className="has-text-weight-bold is-size-4-mobile is-size-3-tablet is-size-2-widescreen" style={{textAlign:'center'}}>{title}</h2>
+            <div style={{marginBottom:'15px'}}>
               <PageContent className="content box" content={content} />
             </div>
           </div>
         </div>
       </div>
-    </section>
   )
 }
 
