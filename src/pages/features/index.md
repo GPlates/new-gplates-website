@@ -2,7 +2,7 @@
 templateKey: feature-page
 title: Features of GPlates
 intro: GPlates is a plate-tectonics program. Manipulate reconstructions of geological and paleo-geographic features through geological time. Interactively visualize vector, raster and volume data. PyGPlates is the GPlates Python library. Get fine-grained access to GPlates functionality in your Python scripts.
-image: ../../img/features.png
+image: ../../img/features.jpg
 features:
     - title: Feature Data IO
       text: >
