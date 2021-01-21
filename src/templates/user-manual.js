@@ -30,17 +30,17 @@ export const UserManualTemplate = ({ title, content, contentComponent, prev , ne
                   <tr className="odd">
                       <td style={{paddingLeft:'5px'}}>
                         <p>
-                          {prev && <a href={"/user-manual/"+prev}><img src={prevIcon} alt="Previous" /></a>}
+                          {prev && <a href={"/docs/user-manual/"+prev}><img src={prevIcon} alt="Previous" /></a>}
                         </p>
                       </td>
                       <td style={{paddingLeft:'5px'}}>
                         <p>
-                          {(prev||next) && <a href="/user-manual/"><img src={homeIcon} alt="Home" /></a>}
+                          {(prev||next) && <a href="/docs/user-manual/"><img src={homeIcon} alt="Home" /></a>}
                         </p>
                       </td>
                       <td style={{paddingLeft:'5px'}}>
                         <p>
-                          {next && <a href={"/user-manual/"+next}><img src={nextIcon} alt="Next" /></a>}
+                          {next && <a href={"/docs/user-manual/"+next}><img src={nextIcon} alt="Next" /></a>}
                         </p>
                       </td>                    
                   </tr>

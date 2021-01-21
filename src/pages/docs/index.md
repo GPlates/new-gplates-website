@@ -13,7 +13,7 @@ title: User Docs
             <img src="./img/GPlates-Manual.png" alt="GPlates Manual">
          </td>
          <td class="content" >
-            <p>The official <a href="/user-manual/">GPlates user-manual</a> is written by GPlates users in the <a href="https://www.earthbyte.org/">EarthByte Project</a>, in close collaboration with the GPlates <a href="/contact/">software development team</a>. </p>
+            <p>The official <a href="/docs/user-manual/">GPlates user-manual</a> is written by GPlates users in the <a href="https://www.earthbyte.org/">EarthByte Project</a>, in close collaboration with the GPlates <a href="/contact/">software development team</a>. </p>
             <p>Read the user manual to learn about GPlates' many functions. The manual describes all of the canvas tools, menus, and dialogs that are present in GPlates and how they can be used.</p>
          </td>
       </tr>
