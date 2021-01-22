@@ -30,7 +30,7 @@ class Screenshots extends React.Component {
                       }}
                     /> 
                   </Link>  
-                  <h3 style={{textAlign: 'center'}}>{post.frontmatter.title}</h3>   
+                  <h3 style={{textAlign: 'center', marginTop:'7px'}}>{post.frontmatter.title}</h3>   
                 </div> 
               </div>
             ))}
