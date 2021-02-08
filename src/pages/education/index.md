@@ -1,28 +1,53 @@
 ---
 templateKey: 'simple-page'
 path: /education
-title: Education
+title: Educational Resources
 ---
 
-### Science Teachers’ Workshop
+### Plate tectonics and kinematics in GPlates (High School)
 
-![Science Teachers’ Workshop](./img/STW_Geosciences_GPlates.jpg)
+![STW_Geosciences_GPlates](./img/STW_Geosciences_GPlates.jpg)
 
-The unifying **Theory of Plate Tectonics** explains the evolution of Earth’s surface in episodes of continental breakup, supercontinent amalgamation and renewed continental breakup to open new oceanic basins at the expense of older oceanic gateways. The arrangement of continents is a first-order control on long-term oceanic circulation, and the ability of the hydrosphere to reduce the thermal gradient from the poles to the equator. In this exercise you will use cutting-edge tools to study the breakup of the Pangea supercontinent, and especially focus on the breakup of Australia from Antarctica. 
+This exercise is an introduction of how to load in a **plate reconstruction**, achieve some basic visualisation, and also interrogate the speeds and relative motions between *tectonic plates*.
 
-[Download PDF](/edu_material/STW_Geosciences_GPlates.pdf)
+[Download PDF](https://www.earthbyte.org/webdav/ftp/earthbyte/Teaching/GPlates_Kinematics/GPlates_Kinematics.pdf)
+
+[Download Data Pack](https://www.earthbyte.org/webdav/ftp/earthbyte/Teaching/GPlates_Kinematics/)
 
 ---
 
-### Gondwana reconstruction using GPlates
+### Reconstructions of Gondwana using GPlates (Undergraduate)
 
 ![GEOS1003 GPlatesPrac](./img/GEOS1003-GPlatesPrac_Web.png)
 
-The **Theory of Plate Tectonics** represents the unifying concept in Earth sciences. Modern tools have allowed us to leverage advanced computational methods, **Geographic Information Systems (GIS)**, and decades of data collection to build digital representations of Earth’s tectonic evolution. These “plate tectonic reconstructions” are used in a wide array of disciplines ranging from inputs for climate models (as arrangements of continents and ocean basins affect albedo, ocean currents, etc.), biological evolution (evolving land bridges and seaways responsible for the dispersal of plants and animals), and natural resources (tectonism as the primary mechanism for focusing ore bodies). There is an ongoing effort to unify plate motions on the surface and Earth’s convecting mantle, with an ultimate aim of creating a **“Digital Twin”** of our planet to interrogate and understand planetary processes for basic science and industry.
+This activity applies first principles of **Plate Tectonics** to reconstruct the original arrangement of **Gondwana** in the Pangea supercontinent. It uses continent-ocean boundaries, fossil data, and geophysics to help guide the restoration of Gondwana. 
 
-[Download PDF](/edu_material/GEOS1003-GPlatesPrac_Web.pdf)
+[Download PDF](https://www.earthbyte.org/webdav/ftp/earthbyte/Teaching/GPlates_Gondwana/GPlates_Gondwana.pdf)
 
-[Download Data Pack](/edu_material/GEOS1003_GPlates_Prac_DataPack.zip)
+[Download Data Pack](https://www.earthbyte.org/webdav/ftp/earthbyte/Teaching/GPlates_Gondwana/GPlates_Gondwana_DataPack/)
+
+---
+
+### GPlates Tutorials
+
+![GPlates tutorial](./img/GPlates-Tutorial.png)
+
+	
+There are many [Introductory Tutorials](https://sites.google.com/site/gplatestutorials/) viewable online via Google Docs or downloadable as PDF. Each one describes how to accomplish a specific task in GPlates. Read these for a more in-depth guide that explains how various GPlates functions can be used within the context of an example workflow.
+
+A video showcasing some of the most recently added functionality of GPlates can be found on the [Features page](/features/).
+
+The live versions of the tutorials are hosted on Google servers. If you are in China or cannot access Google servers, the tutorial PDFs and related files may be downloaded from the archive found [here](https://www.earthbyte.org/webdav/ftp/earthbyte/GPlates/TutorialData_GPlates2.2.zip).
+
+---
+
+### GPlates Python Tutorials
+
+![GPlates Manual](./img/GPlates-Manual.png)
+
+There are [PyGPlates tutorials](https://github.com/GPlates/pygplates-tutorials) in the form of Jupyter Notebooks that analyse and visualise real-world data using pyGPlates.
+
+These tutorials complement the sample code in the pyGPlates documentation by providing a more research-oriented focus.
 
 ---
 
