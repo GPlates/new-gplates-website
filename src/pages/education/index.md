@@ -14,7 +14,7 @@ The unifying **Theory of Plate Tectonics** explains the evolution of Earth’s s
 
 ---
 
-### Gondwana reconstruction using GPlates
+### Gondwana Reconstruction Using GPlates
 
 ![GEOS1003 GPlatesPrac](./img/GEOS1003-GPlatesPrac_Web.png)
 
