@@ -115,7 +115,7 @@ export const IndexPageTemplate = ({
               }}
             >
 
-              <span style={{fontSize:'150%', color:'#fff', textShadow: '2px 2px 4px #000000', fontFamily: 'ui-monospace'}}>
+              <span style={{fontSize:'150%', color:'#fff', textShadow: '2px 2px 4px #000000'}}>
                 GPlates
               </span>
             </h1>

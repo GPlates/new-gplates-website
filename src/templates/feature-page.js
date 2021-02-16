@@ -32,6 +32,7 @@ export const FeaturePageTemplate = ({ title, intro, image,features, capabilities
               })`,
               backgroundPosition: `center bottom`,
               backgroundAttachment: 'fixed',
+              backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
               backgroundColor: 'black',
               textAlign: `center`,
@@ -42,8 +43,8 @@ export const FeaturePageTemplate = ({ title, intro, image,features, capabilities
               justifyContent: 'center',
             }}
           >
-            <div style={{fontSize:'250%', color:'white', fontWeight:'bold'}}>
-            Versatile, Reliable &amp; Powerful</div>
+            <div style={{fontSize:'200%', color:'orange', fontWeight:'bold', backgroundColor:'rgba(0,0, 0, 0.4)'}}>
+            Plate Reconstruction &amp; Intraplate Deformation</div>
           </div>
           <br></br>
           <div className="columns is-multiline"> 

@@ -92,7 +92,7 @@ title: User Docs
 
 ### GPML
 ---
-Click [here](/gpml) to find out what GPML is.
+Click [here](/gpml) to find out more about the **GPlates Markup Language**(GPML), the “native” file format of GPlates.
 
 ### Compiling GPlates
 ---
@@ -100,10 +100,5 @@ Click [here](/gpml) to find out what GPML is.
 Instructions on how to compile GPlates from source may be found in the [GPlates source-code releases](https://www.gplates.org/download), in the files:
 
 * DEPS.Linux and BUILD.Linux (on Linux)
-* DEPS.OSX and BUILD.OSX (on MacOS X)
+* DEPS.OSX and BUILD.OSX (on macOS)
 * DEPS.Windows and BUILD.Windows (on Windows)
-
-#Contributed documentation
----
-
-Apple enthusiast and star GPlates user __Christian Heine__ has written a comprehensive guide to [building GPlates from source on MacOS X without package managers](docs/Heine_BuildingGPlatesOnOSX_20090226.pdf) (PDF, 694K). Published on February 26, 2009, this describes the steps to compile GPlates 0.9.4 on MacOS X without using Fink or MacPorts. Thanks Christian!

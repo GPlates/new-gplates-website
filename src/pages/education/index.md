@@ -28,10 +28,19 @@ This activity applies first principles of **Plate Tectonics** to reconstruct the
 
 ---
 
+### AN APPLE PIE FROM SCRATCH, PART V SUPPLEMENT: TECTONICS: USING GPLATES
+
+![GPlates Screenshot](./img/gplates-apple-pie.png)
+
+There is a blog writen by **WORLDBUILDING PASTA**, describing how to use Gplates to turn that concept into a tangible reality. 
+
+[Go To The Blog Page](https://worldbuildingpasta.blogspot.com/2020/06/an-apple-pie-from-scratch-part-v.html)
+
+---
+
 ### GPlates Tutorials
 
 ![GPlates tutorial](./img/GPlates-Tutorial.png)
-
 	
 There are many [Introductory Tutorials](https://sites.google.com/site/gplatestutorials/) viewable online via Google Docs or downloadable as PDF. Each one describes how to accomplish a specific task in GPlates. Read these for a more in-depth guide that explains how various GPlates functions can be used within the context of an example workflow.
 
@@ -48,15 +57,5 @@ The live versions of the tutorials are hosted on Google servers. If you are in C
 There are [PyGPlates tutorials](https://github.com/GPlates/pygplates-tutorials) in the form of Jupyter Notebooks that analyse and visualise real-world data using pyGPlates.
 
 These tutorials complement the sample code in the pyGPlates documentation by providing a more research-oriented focus.
-
----
-
-### AN APPLE PIE FROM SCRATCH, PART V SUPPLEMENT: TECTONICS: USING GPLATES
-
-![GPlates Screenshot](./img/gplates-apple-pie.png)
-
-There is a blog writen by **WORLDBUILDING PASTA**, describing how to use Gplates to turn that concept into a tangible reality. 
-
-[Go To The Blog Page](https://worldbuildingpasta.blogspot.com/2020/06/an-apple-pie-from-scratch-part-v.html)
 
 ---
