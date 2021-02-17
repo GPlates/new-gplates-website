@@ -66,15 +66,17 @@ setInterval(timer, 20000);
 
 var done=false;
 const changeBGColor = () => {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const bgc = urlParams.get('bgc')
-  if(bgc && !done)
-  {
-    var ele = document.getElementsByClassName('tint');
-    if(ele.length>0){
-      ele[0].style.background= bgc;
-      done=true;
+  if (typeof window !== "undefined") {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const bgc = urlParams.get('bgc')
+    if(bgc && !done)
+    {
+      var ele = document.getElementsByClassName('tint');
+      if(ele.length>0){
+        ele[0].style.background= bgc;
+        done=true;
+      }
     }
   }
 }
