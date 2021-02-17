@@ -50,7 +50,7 @@ const heroClick_1 = () => {
     return;
   }
   mainScreenshot.className="hide";
-  
+
   setTimeout(()=> {
       if(n===3){
         n=0;
@@ -62,7 +62,24 @@ const heroClick_1 = () => {
     5000);
 }
   
-  setInterval(timer, 20000);
+setInterval(timer, 20000);
+
+var done=false;
+const changeBGColor = () => {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const bgc = urlParams.get('bgc')
+  if(bgc && !done)
+  {
+    var ele = document.getElementsByClassName('tint');
+    if(ele.length>0){
+      ele[0].style.background= bgc;
+      done=true;
+    }
+  }
+}
+setInterval(changeBGColor, 200);
+
 
 export const IndexPageTemplate = ({
   image,
@@ -93,6 +110,7 @@ export const IndexPageTemplate = ({
       borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '5px solid white'}}>
     </div>
     <div className="tint"></div>
+    
     <div className="container gp-header-info" style={{zIndex:'10'}}>
        <div className="columns section">
           <div className="column is-7"

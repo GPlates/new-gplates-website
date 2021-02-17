@@ -1,7 +1,7 @@
 ---
 templateKey: forbidden-page
 ---
-GPlates is desktop software for the interactive visualisation of __plate-tectonics__.
+GPlates is desktop software for the interactive visualisation of __plate tectonics__.
 
 GPlates offers a novel combination of interactive __plate tectonic reconstructions__, geographic information system (GIS) functionality and __raster data visualisation__. GPlates enables both the visualisation and the manipulation of plate tectonic reconstructions and associated data through geological time. GPlates runs on __Windows__, __Linux__ and __macOS__. GPlates has an online [user manual](/docs).
 
