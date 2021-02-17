@@ -69,12 +69,19 @@ const changeBGColor = () => {
   if (typeof window !== "undefined") {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const bgc = urlParams.get('bgc')
+    const bgc = urlParams.get('bgc');
+    const fc = urlParams.get('fc');
     if(bgc && !done)
     {
       var ele = document.getElementsByClassName('tint');
       if(ele.length>0){
         ele[0].style.background= bgc;
+        done=true;
+      }
+      
+      var ele_fc = document.getElementsByClassName('sub-heading');
+      if(ele_fc.length>0){
+        ele_fc[0].style.color= '#'+fc;
         done=true;
       }
     }
@@ -140,7 +147,7 @@ export const IndexPageTemplate = ({
               </span>
             </h1>
             <h3
-              className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+              className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen sub-heading"
               style={{
                 textAlign: 'left',
                 color: '#eee',
