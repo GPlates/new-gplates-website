@@ -73,7 +73,7 @@ const changeBGColor = () => {
     const fc = urlParams.get('fc');
     if(bgc && !done)
     {
-      var ele = document.getElementsByClassName('tint');
+      var ele = document.getElementsByClassName('tint2');
       if(ele.length>0){
         ele[0].style.background= bgc;
         done=true;
@@ -119,6 +119,7 @@ export const IndexPageTemplate = ({
       borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '5px solid white'}}>
     </div>
     <div className="tint"></div>
+    <div className="tint2"></div>
     
     <div className="container gp-header-info" style={{zIndex:'10'}}>
        <div className="columns section">

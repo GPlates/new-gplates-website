@@ -224,6 +224,16 @@ $menu-label-color: $white-ter
 .column
   padding: 0.5rem
 
+.tint2 
+  z-index: 2
+  height: 100%
+  width: 100%
+  position: absolute
+  top: 0px
+  left: 0px
+  background: rgba(75,147,197, 0.95)
+
+
 .tint 
   z-index: 1
   height: 100%
@@ -232,11 +242,11 @@ $menu-label-color: $white-ter
   top: 0px
   left: 0px
   background: rgba(75,147,197, 0.95)
-  //transition: 1.5s ease
-  //-webkit-transition: 5.5s ease
-  //-ms-transition: 5.5s ease
-  //-webkit-animation: glow linear 20s infinite
-  //animation: glow linear 20s infinite
+  transition: 1.5s ease
+  -webkit-transition: 5.5s ease
+  -ms-transition: 5.5s ease
+  -webkit-animation: glow linear 20s infinite
+  animation: glow linear 20s infinite
   @-webkit-keyframes glow  
     0%
       background: rgba(0, 105, 255, 0.95)
