@@ -143,7 +143,7 @@ export const IndexPageTemplate = ({
               }}
             >
 
-              <span style={{fontSize:'150%', color:'#fff', textShadow: '2px 2px 4px #000000'}}>
+              <span style={{fontSize:'150%', color:'#333'}}>
                 GPlates
               </span>
             </h1>
@@ -151,7 +151,7 @@ export const IndexPageTemplate = ({
               className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen sub-heading"
               style={{
                 textAlign: 'left',
-                color: '#eee',
+                color: '#333',
                 padding: '0.25em',
                 maxWidth: '768px',
                 lineHeight: '1.5',
@@ -196,7 +196,7 @@ export const IndexPageTemplate = ({
             <div style={{marginBottom: '2rem'}}>
               <a href="https://sourceforge.net/projects/gplates/files/gplates/2.2/"
                 style={{
-                    color: '#fff',
+                    color: '#333',
                     textDecoration: 'underline',
                     fontStyle: 'italic',
                     fontSize: 'large'
