@@ -125,3 +125,68 @@ div.download-box table .content
 
 .download-box table
   width: unset !important
+
+.navbar
+  //position: absolute
+  //top: 0
+  //width: 100%
+  background: rgba(240, 248, 250, .85)
+  border-bottom: none
+
+#gplates-icon-div svg
+  display: block
+  margin: auto
+
+#big-g
+  fill: blue
+  transform: translate(-340px, -1890px) scale(19.25)
+  animation: kaboom 5s ease alternate infinite
+  
+  @keyframes kaboom 
+    50% 
+      fill: red
+    100% 
+      fill: yellow
+  @-webkit-keyframes kaboom  
+    50% 
+      fill: red
+    100% 
+      fill: yellow
+
+#hexagon-with-teeth
+  transform-origin: center
+  animation: rotate-teeth 5s ease alternate infinite
+  
+  @keyframes rotate-teeth 
+    0%
+      transform: rotate(0deg) 
+    50% 
+      transform: rotate(90deg) 
+    100% 
+       transform: rotate(180deg)
+  @-webkit-keyframes rotate-teeth  
+    0%
+      transform: rotate(0deg) 
+    50% 
+      transform: rotate(90deg) 
+    100% 
+       transform: rotate(180deg)
+
+#hexagon
+  fill: red
+  animation: hexagon 5s ease alternate infinite
+  
+  @keyframes hexagon 
+    50% 
+      fill: yellow
+    100% 
+      fill: blue
+  @-webkit-keyframes hexagon  
+    50% 
+      fill: yellow
+    100% 
+      fill: blue
+
+#old-g
+  display: none
+  transform: translate(-2710px,-410px) scale(3.5)

@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/GPlates-logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload, faNewspaper, faBook, faImage, faCubes, faGraduationCap, faUsers} from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -35,7 +37,7 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar is-transparent is-fixed-top"
         role="navigation"
         aria-label="main-navigation"
       >
@@ -64,19 +66,34 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="/news">
-                News
+                <span class="icon has-text-extensions" aria-hidden="true">
+                  <FontAwesomeIcon icon={faNewspaper} />
+                </span>
+                <span>News</span>
               </Link>
               <Link className="navbar-item" to="/screenshots">
-                Gallery
+                <span class="icon has-text-extensions" style={{color: 'mediumorchid'}} aria-hidden="true">
+                  <FontAwesomeIcon icon={faImage} />
+                </span>
+                <span>Gallery</span>
               </Link>
               <Link className="navbar-item" to="/features">
-                Features
+                <span class="icon has-text-extensions" style={{color: 'yellowgreen'}} aria-hidden="true">
+                  <FontAwesomeIcon icon={faCubes} />
+                </span>
+                <span>Features</span>
               </Link>
               <Link className="navbar-item" to="/download">
-                Download
+                <span class="icon has-text-extensions" style={{color: 'cornflowerblue'}} aria-hidden="true">
+                  <FontAwesomeIcon icon={faDownload} />
+                </span>
+                <span>Download</span>
               </Link>
               <Link className="navbar-item" to="/docs">
-                Documentation
+                <span class="icon has-text-extensions" aria-hidden="true" style={{color: 'darkolivegreen'}}>
+                  <FontAwesomeIcon icon={faBook} />
+                </span>
+                <span>Documentation</span>
               </Link>
               {/*<Link className="navbar-item" to="/publications">
                 Publications
@@ -91,10 +108,17 @@ const Navbar = class extends React.Component {
                 Contact
               </Link>*/}
                <Link className="navbar-item" to="/education">
-                Education
+               <span class="icon has-text-extensions" aria-hidden="true" style={{color: 'mediumorchid'}}>
+                  <FontAwesomeIcon icon={faGraduationCap} />
+               </span>
+               
+               <span>Education</span>
                </Link>
               <a className="navbar-item" href="https://discourse.gplates.org/" target="_blank" rel="noreferrer">
-                Forum
+                <span class="icon has-text-extensions" aria-hidden="true" style={{color: 'yellowgreen'}}>
+                  <FontAwesomeIcon icon={faUsers} />
+                </span>
+                <span>Forum</span>
               </a>
               {/*
               <div class="navbar-item has-dropdown is-hoverable">

@@ -22,6 +22,8 @@ import gwsScreenshot from '../img/gws-screenshot.png'
 import auscopeLogo from '../img/Auscope_log_simulation_modelling.png'
 import peoplePhoto from '../img/earthbyte_group_June2016.jpg'
 
+import Navbar from '../components/Navbar'
+
 const heroClick_1 = () => {
   let mainScreenshot = document.getElementById("main-screenshot");
   mainScreenshot.src = HeroImg1;
@@ -115,6 +117,7 @@ export const IndexPageTemplate = ({
         position: 'relative'
       }}
     >
+     
     <div className="gp-hidden-ctl" style={{position: 'absolute', top:'0', height:'0', width:'0', zIndex:'100', 
       borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '5px solid white'}}>
     </div>
