@@ -6,6 +6,12 @@
           Contact Michael Chin
           </metadata>
 
+          <g id="hexagon" transform="translate(0.000000,0.000000) scale(1.000000,1.000000)"
+            fill="white" stroke="none">
+            
+            <path d="m 616.05789,320.38773 -148.22281,256.72943 -296.44561,0 L 23.166656,320.38773 171.38947,63.65829 l 296.44561,0 148.22281,256.72944 z"/>
+          </g>
+
           <g id="hexagon-with-teeth" transform="translate(0.000000,0.000000) scale(1.00000,1.000000)"
             fill="#e91e00" stroke="none">
             

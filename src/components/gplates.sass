@@ -139,19 +139,29 @@ div.download-box table .content
 
 #big-g
   fill: blue
-  transform: translate(-340px, -1890px) scale(19.25)
+  transform-origin: center
   animation: kaboom 5s ease alternate infinite
   
   @keyframes kaboom 
+    0%
+      fill: blue
+      transform:  scale(1.0)
     50% 
       fill: red
+      transform: scale(0.4)
     100% 
       fill: yellow
+      transform: scale(1.0)
   @-webkit-keyframes kaboom  
+    0%
+      fill: blue
+      transform:  scale(1.0)
     50% 
       fill: red
+      transform: scale(0.4)
     100% 
       fill: yellow
+      transform: scale(1.0)
 
 #hexagon-with-teeth
   transform-origin: center
@@ -173,20 +183,32 @@ div.download-box table .content
        transform: rotate(180deg)
 
 #hexagon
+  transform-origin: center
   fill: red
   animation: hexagon 5s ease alternate infinite
   
   @keyframes hexagon 
+    0%
+      fill: red
+      transform: rotate(0deg) 
     50% 
       fill: yellow
+      transform: rotate(-180deg) 
     100% 
       fill: blue
+      transform: rotate(-360deg)
   @-webkit-keyframes hexagon  
+    0%
+      fill: red
+      transform: rotate(0deg) 
     50% 
       fill: yellow
+      transform: rotate(-180deg) 
     100% 
       fill: blue
+      transform: rotate(-360deg)
 
 #old-g
   display: none
   transform: translate(-2710px,-410px) scale(3.5)
+
