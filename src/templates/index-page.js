@@ -22,8 +22,6 @@ import gwsScreenshot from '../img/gws-screenshot.png'
 import auscopeLogo from '../img/Auscope_log_simulation_modelling.png'
 import peoplePhoto from '../img/earthbyte_group_June2016.jpg'
 
-import Navbar from '../components/Navbar'
-
 const heroClick_1 = () => {
   let mainScreenshot = document.getElementById("main-screenshot");
   mainScreenshot.src = HeroImg1;

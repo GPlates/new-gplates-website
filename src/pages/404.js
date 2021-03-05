@@ -34,9 +34,9 @@ const NotFoundPage = () => (
         textAlign: 'center'
        }}><a href="/">Go Back To Landing Page</a></div>
 
-      <div id="gplates-icon-div">
+      <div id="gplates-icon-div" className="container">
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-          width="640.000000pt" height="640.000000pt" viewBox="0 0 640.000000 640.000000"
+           viewBox="0 0 640.000000 640.000000"
           preserveAspectRatio="xMidYMid meet">
 
           <metadata>
