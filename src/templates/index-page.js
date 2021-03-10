@@ -263,6 +263,41 @@ export const IndexPageTemplate = ({
     </div>
     {/*end of the first section*/}
 
+    <div style={{textAlign:"center", marginTop:"3rem", marginBottom:"1rem"}}>
+      <span style={{ 
+        background: "#00B0D5",
+        height: "15px", 
+        width: "15px", 
+        display: "inline-block",
+        marginRight: "15px"
+      }}>
+      </span>
+      <span style={{ 
+        background: "#E51875",
+        height: "15px", 
+        width: "15px", 
+        display: "inline-block",
+        marginRight: "15px"
+      }}>
+      </span>
+      <span style={{ 
+        background: "#F8B20E",
+        height: "15px", 
+        width: "15px", 
+        display: "inline-block",
+        marginRight: "15px"
+      }}>
+      </span>
+      <span style={{ 
+        background: "#8E489B",
+        height: "15px", 
+        width: "15px", 
+        display: "inline-block",
+        marginRight: "15px"
+      }}>
+      </span>
+    </div>
+
     {/*start of the second section*/}
     <div className="container-fliud">
       <div className="container">      

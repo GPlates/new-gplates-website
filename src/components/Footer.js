@@ -5,6 +5,7 @@ import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import youtube from '../img/social/youtube.svg'
+import auscopeIcon from '../img/AuScope-Logo-Icon.png'
 
 const Footer = class extends React.Component {
   render() {
@@ -13,7 +14,7 @@ const Footer = class extends React.Component {
         <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter">
             <div style={{ maxWidth: '100vw' }} className="columns">
-              <div className="column is-4">
+              <div className="column is-3">
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
@@ -34,7 +35,8 @@ const Footer = class extends React.Component {
                   </ul>
                 </section>
               </div>
-              <div className="column is-4">
+
+              <div className="column is-3">
                 <section>
                   <ul className="menu-list">
                     <li>
@@ -46,35 +48,35 @@ const Footer = class extends React.Component {
                   </ul>
                 </section>
               </div>
-              <div className="column is-4 social">
+
+              <div className="column is-3">
+                <section style={{paddingTop: '2rem'}}>                 
+                  <a title="AuScope" href="https://www.auscope.org.au/" >
+                    <img
+                      src={auscopeIcon}
+                      alt="AuScope Logo"
+                      style={{ maxWidth:"60px", filter: "invert(20%)", marginLeft:"5px", marginBottom:"0px", borderRadius:"15px", verticalAlign:"middle"}}
+                    />
+                  </a>
+                  <div style={{paddingTop: '.5rem'}}>
+                    <b>Funded by AuScope</b>
+                  </div>
+                </section>
+              </div>
+
+
+              <div className="column is-3 social">
                 <a title="facebook" href="https://www.facebook.com/earthbyte">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
+                  <object type="image/svg+xml" data={facebook}></object>
                 </a>
                 <a title="twitter" href="https://twitter.com/earthbytegroup">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
+                  <object type="image/svg+xml" data={twitter}></object>
                 </a>
                 <a title="instagram" href="https://www.instagram.com/explore/tags/earthbyte/top/">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
+                  <object type="image/svg+xml" data={instagram}></object>
                 </a>
                 <a title="youtube" href="https://www.youtube.com/channel/UCa41IQEhmmuXmz9J6iMfsnA">
-                  <img
-                    src={youtube}
-                    alt="Youtube"
-                    style={{ width: '1em', height: '1em' }}
-                  />
+                  <object type="image/svg+xml" data={youtube}></object>
                 </a>
               </div>
             </div>
@@ -90,8 +92,7 @@ const Footer = class extends React.Component {
               />
             </a>
           </div>*/}
-          <div  style={{margin:"auto", textAlign: "center", padding: "0.2rem"}}>Copyright © 2020 The University of Sydney. All rights reserved. GPlates project is funded by&nbsp;
-            <a title="AuScope" href="https://www.auscope.org.au/">AuScope</a>.
+          <div  style={{margin:"auto", textAlign: "center", padding: "0.2rem", fontSize:"80%"}}><i>Copyright © 2020-2021 The University of Sydney. All rights reserved.</i>
           </div>
         </div>
       </footer>
