@@ -34,7 +34,7 @@ const NotFoundPage = () => (
         textAlign: 'center'
        }}><a href="/">Go Back To Landing Page</a></div>
 
-      <div id="gplates-icon-div" className="container">
+      <div id="gplates-icon-div" className="container" style={{width:"400px"}}>
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
            viewBox="0 0 640.000000 640.000000"
           preserveAspectRatio="xMidYMid meet">
@@ -42,9 +42,20 @@ const NotFoundPage = () => (
           <metadata>
           Contact Michael Chin
           </metadata>
+          
+          <defs xmlns="http://www.w3.org/2000/svg">
+            <filter id="dropshadow" height="130%">
+              <feGaussianBlur in="SourceAlpha" stdDeviation="10"/> 
+              <feOffset dx="15" dy="15" result="offsetblur"/> 
+              <feMerge> 
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/> 
+              </feMerge>
+            </filter>
+          </defs>
 
           <g id="hexagon" transform="translate(0.000000,0.000000) scale(1.000000,1.000000)"
-            fill="white" stroke="none">
+            fill="white" stroke="none" >
             
             <path d="m 616.05789,320.38773 -148.22281,256.72943 -296.44561,0 L 23.166656,320.38773 171.38947,63.65829 l 296.44561,0 148.22281,256.72944 z"/>
           </g>
@@ -56,7 +67,7 @@ const NotFoundPage = () => (
             
           </g>
 
-          <g id="big-g" fill="#e91e63" stroke="none" >
+          <g id="big-g" fill="#e91e63" stroke="none" filter="url(#dropshadow)">
             <path d="M325.3,506c-24.6,0-47.6-4.7-68.9-14.1c-21.3-9.4-39.9-22.5-55.8-39.3c-15.9-17-28.4-36.7-37.4-59.3
                 c-9-22.6-13.5-47.1-13.5-73.5c0-25.2,4.2-49,12.6-71.3c8.4-22.5,20.5-42.2,36.3-59.3c15.8-17.2,34.8-30.7,57.2-40.4
                 c22.3-9.9,47.3-14.8,75-14.8c15.6,0,31.4,1.7,47.2,5.2c15.9,3.5,31.2,8.6,45.9,15.4c14.6,6.7,27.8,14.8,39.6,24.6l-33,54.5

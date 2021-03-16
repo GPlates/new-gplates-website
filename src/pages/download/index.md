@@ -81,7 +81,7 @@ Instructions on how to compile GPlates from source may be found in the GPlates s
 
 GPlates is [free software](https://www.gnu.org/philosophy/free-sw.html) (also known as [open-source](https://opensource.org/docs/definition.php) software), licensed for distribution under the GNU [General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) (GPL) version 2.
 
-### Download GPlates-compatible data
+### Download GPlates-compatible Data
 
 ---
 
@@ -90,6 +90,14 @@ Researchers in the [EarthByte Project](https://www.earthbyte.org/) have made [GP
 A [sample set](http://www.earthbyte.org/gplates-2-2-software-and-data-sets/) of these data-files are also contained within the GPlates installation packages, and will be automatically installed with GPlates. This data has been updated for the GPlates 2.2 release. Thanks to the EarthByte Project for making these data-files available!
 
 Go to [EarthByte website](https://www.earthbyte.org/category/resources/data-models/) for more data and models.
+
+### Download GPlates Logo
+
+---
+
+<img width="200px" src="/gplates_logo/newlogo.svg" alt="GPlates Logo">
+
+You may download GPlates logo in SVG format. Click [here](https://www.earthbyte.org/webdav/ftp/earthbyte/GPlates_logo.zip) to download GPlates logo files.
 
 ### GPlates Download Statistics
 

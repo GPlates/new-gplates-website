@@ -50,7 +50,7 @@ const Footer = class extends React.Component {
               </div>
 
               <div className="column is-3">
-                <section style={{paddingTop: '2rem'}}>                 
+                <section style={{paddingTop: '1.2rem'}}>                 
                   <a title="AuScope" href="https://www.auscope.org.au/" >
                     <img
                       src={auscopeIcon}
