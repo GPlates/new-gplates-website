@@ -48,7 +48,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:description" content="GPlates is a plate tectonics program. Manipulate reconstructions of geological and paleogeographic features through geological time." />
         <meta
           property="og:image"
-          content={`${withPrefix('/')}img/favicon-32x32.png`}
+          content="https://wizardly-shaw-457182.netlify.app/img/favicon-32x32.png"
         />
       </Helmet>
       <Navbar />
