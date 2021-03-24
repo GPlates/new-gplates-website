@@ -51,7 +51,7 @@ const TemplateWrapper = ({ children }) => {
           content="https://wizardly-shaw-457182.netlify.app/img/og-image.png"
         />
 
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@EarthByteGroup" />
         <meta name="twitter:creator" content="@000911" />
         <meta name="twitter:title" content="GPlates" />
