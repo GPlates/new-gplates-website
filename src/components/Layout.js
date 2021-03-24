@@ -50,6 +50,13 @@ const TemplateWrapper = ({ children }) => {
           property="og:image"
           content="https://wizardly-shaw-457182.netlify.app/img/og-image.png"
         />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@EarthByteGroup" />
+        <meta name="twitter:creator" content="@000911" />
+        <meta name="twitter:title" content="GPlates" />
+        <meta name="twitter:description" content="GPlates is a plate tectonics program. Manipulate reconstructions of geological and paleogeographic features through geological time." />
+        <meta name="twitter:image" content="https://wizardly-shaw-457182.netlify.app/img/og-image.png" />
       </Helmet>
       <Navbar />
       <div>{children}</div>
