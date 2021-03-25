@@ -3,14 +3,14 @@ templateKey: 'simple-page'
 path: /docs
 title: User Docs
 ---
-### GPlates User Manual
+### [GPlates User Manual](/docs/user-manual/)
 ---
 
 <table class ="doc-list">
    <tbody>
       <tr>
          <td class="icon">
-            <img src="./img/GPlates-Manual.png" alt="GPlates Manual">
+            <a href="/docs/user-manual/"><img src="./img/GPlates-Manual.png" alt="GPlates Manual"></a>
          </td>
          <td class="content" >
             <p>The official <a href="/docs/user-manual/">GPlates user-manual</a> is written by GPlates users in the <a href="https://www.earthbyte.org/">EarthByte Project</a>, in close collaboration with the GPlates <a href="/contact/">software development team</a>. </p>
@@ -21,14 +21,14 @@ title: User Docs
 </table>
  
 
-### GPlates Tutorials
+### [GPlates Tutorials](https://sites.google.com/site/gplatestutorials/)
 ---
 
 <table class ="doc-list">
    <tbody>
       <tr>
          <td class="icon">
-            <img src="./img/GPlates-Tutorial.png" alt="GPlates Tutorial">
+            <a href="https://sites.google.com/site/gplatestutorials/"><img src="./img/GPlates-Tutorial.png" alt="GPlates Tutorial"></a>
          </td>
          <td class="content" >
             <p>There are many <a href="https://sites.google.com/site/gplatestutorials/">Introductory Tutorials</a> viewable online via Google Docs or downloadable as PDF. Each one describes how to accomplish a specific task in GPlates. Read these for a more in-depth guide that explains how various GPlates functions can be used within the context of an example workflow.</p>
@@ -39,14 +39,14 @@ title: User Docs
    </tbody>
 </table>
 
-### GPlates Python Documentation
+### [GPlates Python Documentation](/docs/pygplates/index.html)
 ---
 
 <table class ="doc-list">
    <tbody>
       <tr>
          <td class="icon">
-            <img src="./img/GPlates-Manual.png" alt="GPlates Python Documentation">
+            <a href="/docs/pygplates/index.html"><img src="./img/GPlates-Manual.png" alt="GPlates Python Documentation"></a>
          </td>
          <td class="content" >
             <p>PyGPlates is a Python library enabling access to GPlates functionality. This may be of particular use to researchers requiring more flexibility than is provided by the GPlates user interface.</p>
@@ -56,14 +56,14 @@ title: User Docs
    </tbody>
 </table>
 
-### GPlates Python Tutorials
+### [GPlates Python Tutorials](https://github.com/GPlates/pygplates-tutorials)
 ---
 
 <table class ="doc-list">
    <tbody>
       <tr>
          <td class="icon">
-            <img src="./img/GPlates-Tutorial.png" alt="GPlates Python Tutorials">
+            <a href="https://github.com/GPlates/pygplates-tutorials"><img src="./img/GPlates-Tutorial.png" alt="GPlates Python Tutorials"></a>
          </td>
          <td class="content" >
             <p>There are <a href="https://github.com/GPlates/pygplates-tutorials">PyGPlates tutorials</a> in the form of Jupyter Notebooks that analyse and visualise real-world data using pyGPlates.</p>
@@ -73,14 +73,16 @@ title: User Docs
    </tbody>
 </table>
 
-### GPlates Data Manual
+### [GPlates Data Manual](http://www.earthbyte.org/Resources/GPlates_tutorials/GPlates_Data_Manual/GPlates_Data_Manual.html)
 ---
 
 <table class ="doc-list">
    <tbody>
       <tr>
          <td class="icon">
-            <img src="./img/GPlates-DataManual.png" alt="GPlates Data Manual">
+            <a href="http://www.earthbyte.org/Resources/GPlates_tutorials/GPlates_Data_Manual/GPlates_Data_Manual.html">
+               <img src="./img/GPlates-DataManual.png" alt="GPlates Data Manual">
+            </a>
          </td>
          <td class="content" >
             <p>Read the <a href="http://www.earthbyte.org/Resources/GPlates_tutorials/GPlates_Data_Manual/GPlates_Data_Manual.html">Data Manual</a> if you wish to understand how the GPlates model works and how GPlates stores data in its native file format (GPML). This manual may be of particular use to people who want to know how to structure their data so that it can be imported into GPlates easily.</p>
