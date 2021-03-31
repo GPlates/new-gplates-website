@@ -48,7 +48,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:description" content="GPlates is a plate tectonics program. Manipulate reconstructions of geological and paleogeographic features through geological time." />
         <meta
           property="og:image"
-          content="https://wizardly-shaw-457182.netlify.app/img/og-image.png"
+          content="https://www.gplates.org/img/og-image.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -56,7 +56,7 @@ const TemplateWrapper = ({ children }) => {
         <meta name="twitter:creator" content="@000911" />
         <meta name="twitter:title" content="GPlates" />
         <meta name="twitter:description" content="GPlates is a plate tectonics program. Manipulate reconstructions of geological and paleogeographic features through geological time." />
-        <meta name="twitter:image" content="https://wizardly-shaw-457182.netlify.app/img/og-image.png" />
+        <meta name="twitter:image" content="https://www.gplates.org/img/og-image.png" />
       </Helmet>
       <Navbar />
       <div>{children}</div>
