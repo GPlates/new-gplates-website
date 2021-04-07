@@ -27,9 +27,9 @@ class LatestNews extends React.Component {
           <span className="icon" style={{verticalAlign:"middle"}}> <FontAwesomeIcon icon={faCalendarDay} className="fal" /> </span>
           <span>{posts[0].node.frontmatter.date}</span>
         </div>
-        <HTMLContent content={posts[0].node.html.substring(0,2500)} className="gp-front-news"/>
+        <HTMLContent content={posts[0].node.html.substring(0,3500)} className="gp-front-news"/>
         
-        {posts[0].node.html.length>2500  && 
+        {posts[0].node.html.length>3500  && 
         <div style={{textAlign: "center"}}>
           <div>...................</div>
           <Link
