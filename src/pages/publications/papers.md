@@ -1,11 +1,11 @@
 ---
 templateKey: 'simple-page'
 path: /publications
-title: Test PAGE Publications
+title: GPlates Publications
 ---
- <a href="#2021" style="margin-left:10px;">2021(63)</a>;  <a href="#2020" style="margin-left:10px;">2020(110)</a>;  <a href="#2019" style="margin-left:10px;">2019(135)</a>;  <a href="#2018" style="margin-left:10px;">2018(127)</a>;  <a href="#2017" style="margin-left:10px;">2017(85)</a>;  <a href="#2016" style="margin-left:10px;">2016(72)</a>;  <a href="#2015" style="margin-left:10px;">2015(71)</a>;  <a href="#2014" style="margin-left:10px;">2014(52)</a>;  <a href="#2013" style="margin-left:10px;">2013(56)</a>;  <a href="#2012" style="margin-left:10px;">2012(54)</a>;  <a href="#2011" style="margin-left:10px;">2011(27)</a>;  <a href="#2010" style="margin-left:10px;">2010(14)</a>;  <a href="#2009" style="margin-left:10px;">2009(8)</a>;  <a href="#2008" style="margin-left:10px;">2008(10)</a>;  <a href="#2007" style="margin-left:10px;">2007(3)</a>;  <a href="#2006" style="margin-left:10px;">2006(1)</a>;  <a href="#2003" style="margin-left:10px;">2003(1)</a>;  <a href="#2002" style="margin-left:10px;">2002(1)</a>;  <a href="#2000" style="margin-left:10px;">2000(1)</a>;  <a href="#1998" style="margin-left:10px;">1998(1)</a>;  <a href="#0" style="margin-left:10px;">Unknown(44)</a>; 
+<span style="display: block;height: 192px; margin-top: -192px; visibility: hidden;" id="top"></span><button style="position:fixed; bottom:10px;right:10px;"><a href="#top">Go back to top</a></button> <a href="#2021" style="margin-left:10px;">2021(<strong><i>63</i></strong>)</a>;  <a href="#2020" style="margin-left:10px;">2020(<strong><i>110</i></strong>)</a>;  <a href="#2019" style="margin-left:10px;">2019(<strong><i>136</i></strong>)</a>;  <a href="#2018" style="margin-left:10px;">2018(<strong><i>127</i></strong>)</a>;  <a href="#2017" style="margin-left:10px;">2017(<strong><i>87</i></strong>)</a>;  <a href="#2016" style="margin-left:10px;">2016(<strong><i>72</i></strong>)</a>;  <a href="#2015" style="margin-left:10px;">2015(<strong><i>71</i></strong>)</a>;  <a href="#2014" style="margin-left:10px;">2014(<strong><i>52</i></strong>)</a>;  <a href="#2013" style="margin-left:10px;">2013(<strong><i>56</i></strong>)</a>;  <a href="#2012" style="margin-left:10px;">2012(<strong><i>57</i></strong>)</a>;  <a href="#2011" style="margin-left:10px;">2011(<strong><i>27</i></strong>)</a>;  <a href="#2010" style="margin-left:10px;">2010(<strong><i>14</i></strong>)</a>;  <a href="#2009" style="margin-left:10px;">2009(<strong><i>8</i></strong>)</a>;  <a href="#2008" style="margin-left:10px;">2008(<strong><i>10</i></strong>)</a>;  <a href="#2007" style="margin-left:10px;">2007(<strong><i>3</i></strong>)</a>;  <a href="#2006" style="margin-left:10px;">2006(<strong><i>1</i></strong>)</a>; 
 
-**Total: 936**
+**Total: 894**
 
 
 
@@ -368,7 +368,7 @@ title: Test PAGE Publications
 <span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2019"></span>
 
 
-<strong id="2019">2019(135)</strong>
+<strong id="2019">2019(136)</strong>
 
 * [A global plate model including lithospheric deformation along major rifts and orogens for the last 240 million years.](http://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=10297006&AN=140481162&h=eam%2Fja9hgUbFoM3iBXCzeGXBOtBUxRnflIkoFkpJlBdCokMp8jHLAbkXmH3q02NNUo%2FpF95q%2B0cc7V%2FHm34oQg%3D%3D&crl=c) D Muller, S Zahirovic, S Williams… - Geophysical …, 2019 - search.ebscohost.com
 
@@ -391,6 +391,8 @@ title: Test PAGE Publications
 * [Animated reconstructions of the Late Cretaceous to Cenozoic northward migration of Australia, and implications for the generation of east Australian mafic …](https://pubs.geoscienceworld.org/gsa/geosphere/article/15/6/2057/574970) I Jones, C Verdel - Geosphere, 2019 - pubs.geoscienceworld.org
 
 * [Assessing the Impact of Outreach Through Software Citation for Community Software in Geodynamics](https://ieeexplore.ieee.org/iel7/5992/5232784/08827910.pdf) LJ Hwang, RA Pauloo, J Carlen - Computing in Science & …, 2019 - ieeexplore.ieee.org
+
+* [Atlantic Rifted Margin Studies from the Edge: Geophysical Research at Memorial University](https://csegrecorder.com/articles/view/atlantic-rifted-margin-studies-from-the-edge-geophysical-research-at-memori) JK Welford, AE Malcolm, CG Farquharson, J Hall - csegrecorder.com
 
 * [Burma Terrane part of the Trans-Tethyan arc during collision with India according to palaeomagnetic data](https://www.nature.com/articles/s41561-019-0443-2) J Westerweel, P Roperch, A Licht, G Dupont-Nivet… - Nature …, 2019 - nature.com
 
@@ -902,7 +904,7 @@ title: Test PAGE Publications
 <span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2017"></span>
 
 
-<strong id="2017">2017(85)</strong>
+<strong id="2017">2017(87)</strong>
 
 * [2. Tectonic Serendipity](https://www.degruyter.com/document/doi/10.4159/9780674978621-005/html) MK Pandit - Life in the Himalaya, 2017 - degruyter.com
 
@@ -911,6 +913,8 @@ title: Test PAGE Publications
 * [A full-plate global reconstruction of the Neoproterozoic](https://www.sciencedirect.com/science/article/pii/S1342937X16305093) AS Merdith, AS Collins, SE Williams, S Pisarevsky… - Gondwana …, 2017 - Elsevier
 
 * [A global review and digital database of large-scale extinct spreading centers](https://pubs.geoscienceworld.org/geosphere/article-lookup/13/3/911) SJ MacLeod, SE Williams, KJ Matthews… - …, 2017 - pubs.geoscienceworld.org
+
+* [A link between deglaciation and rifting of Cimmeria](http://www.mantleplumes.org/DeglaciationLIPs.html) JG Shellnutt, MW Yeh - mantleplumes.org
 
 * [A reconstruction of the Eurekan Orogeny incorporating deformation constraints](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1002/2015TC004094) AM Gion, SE Williams, RD Mueller - Tectonics, 2017 - Wiley Online Library
 
@@ -923,6 +927,8 @@ title: Test PAGE Publications
 * [An analysis of plate motions on Europa associated with the formation of Astypalaea and Libya Lineae](https://www.hou.usra.edu/meetings/lpsc2017/eposter/2576.pdf) RP Perkins, GW Patterson, LM Prockter… - Lunar Planet. Sci. Conf …, 2017 - hou.usra.edu
 
 * [Apparent polar wandering and its implications for past plate motions](https://era.library.ualberta.ca/items/0e542845-7a50-4513-8102-0945222e5047/view/b3b769ea-a140-4142-b978-3ed398a0f94e/Wu_Lei_201701_PhD.pdf) L Wu - 2017 - era.library.ualberta.ca
+
+* [Arc volcanism, carbonate platform evolution and palaeo-atmospheric CO2: Components and interactions in the deep carbon cycle](https://cp.copernicus.org/preprints/cp-2017-112/cp-2017-112.pdf) J Pall, S Zahirovic, S Doss, R Hassan, KJ Matthews… - cp.copernicus.org
 
 * [Balkatach hypothesis: A new model for the evolution of the Pacific, Tethyan, and Paleo-Asian oceanic domains](https://pubs.geoscienceworld.org/gsa/geosphere/article/13/5/1664/354023) AV Zuza, A Yin - Geosphere, 2017 - pubs.geoscienceworld.org
 
@@ -1599,17 +1605,23 @@ title: Test PAGE Publications
 <span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2012"></span>
 
 
-<strong id="2012">2012(54)</strong>
+<strong id="2012">2012(57)</strong>
 
 * [4DPlates: On the fly visualization of multilayer](https://www.simula.no/sites/default/files/publications/Simula.simula.660.pdf) SR Clark, AM Bruaset, MA Smethurst, C Tarrou… - 2012 - simula.no
 
 * [4DPlates: On the fly visualization of multilayer geoscientific datasets in a plate tectonic environment](https://www.sciencedirect.com/science/article/pii/S0098300412001033) SR Clark, J Skogseid, V Stensby, MA Smethurst… - Computers & …, 2012 - Elsevier
 
+* [A Custom Implementation for Visualizing Sub-surface 3D Scalar Fields in GPlates](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.391.3805) T Pfaffelmoser, J Cannon - Citeseer
+
 * [A geodynamic model of plumes from the margins of Large Low Shear Velocity Provinces](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2011GC003808) B Steinberger, TH Torsvik - Geochemistry, Geophysics …, 2012 - Wiley Online Library
 
 * [An Analysis of Wilson Cycle Plate Margins](https://ui.adsabs.harvard.edu/abs/2012AGUFM.T33J..07B/abstract) S Buiter, TH Torsvik - AGU Fall Meeting Abstracts, 2012 - ui.adsabs.harvard.edu
 
+* [An open innovation platform for deep time spatio-temporal knowledge-discovery](https://www.researchgate.net/publication/259577325_An_open_innovation_platform_for_deep_time_spatio-temporal_knowledge-discovery_eResearch_Sydney_2012_Presentation) Dietmar Müller, John Cannon, Thomas C.W. Landgrebe, Xiaodong Qin
+
 * [An open-source software environment for visualizing and refining plate tectonic reconstructions using high-resolution geological and geophysical data sets](https://www.geosociety.org/gsatoday/archive/22/4/pdf/i1052-5173-22-4-4.pdf) SE Williams, RD Muller, TCW Landgrebe, J Whittaker - GSA today, 2012 - geosociety.org
+
+* [Application of open-source software and high-resolution geophysical images to explore the plate tectonic evolution of Australia](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.655.9733&rep=rep1&type=pdf) S Williams, R Musgrave, RD Müller - Citeseer
 
 * [Birth of a Neotethyan intra-oceanic arc](https://ui.adsabs.harvard.edu/abs/2012AGUFM.T43H..01A/abstract) J Aitchison, A Gibbons, R Müller… - AGU Fall Meeting …, 2012 - ui.adsabs.harvard.edu
 
@@ -1864,123 +1876,4 @@ title: Test PAGE Publications
 <strong id="2006">2006(1)</strong>
 
 * [A 4D Framework for Ocean Basin Paleodepths and Eustatic Sea Level Change](https://ui.adsabs.harvard.edu/abs/2006AGUFMIN13C1171M/abstract) R Muller, M Sdrolias, C Gaina - AGU Fall Meeting Abstracts, 2006 - ui.adsabs.harvard.edu
-
-<span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2003"></span>
-
-
-<strong id="2003">2003(1)</strong>
-
-* [GeoFramework: A modeling framework for solid earth geophysics](https://ui.adsabs.harvard.edu/abs/2003AGUFMNG12D..06G/abstract) M Gurnis, M Aivazis, J Tromp, E Tan… - AGU Fall Meeting …, 2003 - ui.adsabs.harvard.edu
-
-<span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2002"></span>
-
-
-<strong id="2002">2002(1)</strong>
-
-* [AUSTRALIA: A LARGE ISLAND SURROUNDED BY A VAST OCEAN TERRITORY](https://www.researchgate.net/profile/Dietmar_Mueller/publication/235997963_Marine_geo-informatics/links/004635157461e7a550000000.pdf) RD Müller - 2002 - researchgate.net
-
-<span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2000"></span>
-
-
-<strong id="2000">2000(1)</strong>
-
-* [Crustal structure of Baffin Bay from constrained 3-D gravity inversion and deformable plate tectonic models](https://www.researchgate.net/profile/Alexander_Peace/publication/325226523_Crustal_structure_of_Baffin_Bay_from_constrained_3-D_gravity_inversion_and_deformable_plate_tectonic_models/links/5afef757aca2720ba09507bc/Crustal-structure-of-Baffin-Bay-from-constrained-3-D-gravity-inversion-and-deformable-plate-tectonic-models.pdf) JK Welford, AL Peace, M Geng… - Geophysical Journal …, 2000 - researchgate.net
-
-<span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="1998"></span>
-
-
-<strong id="1998">1998(1)</strong>
-
-* [[BOOK][B] Field Guide](https://adelaide.figshare.com/articles/IGCP648_Madagascar_Field_Guide_2019/9685490/files/17349902.pdf) T Collins, A Pepoy - 1998 - adelaide.figshare.com
-
-<span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="0"></span>
-**Unknown(44)**
-
-* [A Custom Implementation for Visualizing Sub-surface 3D Scalar Fields in GPlates](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.391.3805) T Pfaffelmoser, J Cannon - Citeseer
-
-* [A link between deglaciation and rifting of Cimmeria](http://www.mantleplumes.org/DeglaciationLIPs.html) JG Shellnutt, MW Yeh - mantleplumes.org
-
-* [An open innovation platform for deep time spatio-temporal knowledge-discovery](https://www.researchgate.net/profile/Dietmar_Mueller/publication/259577325_An_open_innovation_platform_for_deep_time_spatio-temporal_knowledge-discovery_eResearch_Sydney_2012_Presentation/links/00b4952cb29dd52647000000.pdf) RD Müller, J Cannon, TCW Landgrebe… - 6th eResearch Australasia … - researchgate.net
-
-* [Apennines tectonics, sedimentation and magmatism from Permian to Present](https://meetingorganizer.copernicus.org/EGU2020/displays/34708) G Penza - meetingorganizer.copernicus.org
-
-* [Application of open-source software and high-resolution geophysical images to explore the plate tectonic evolution of Australia](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.655.9733&rep=rep1&type=pdf) S Williams, R Musgrave, RD Müller - Citeseer
-
-* [Arc volcanism, carbonate platform evolution and palaeo-atmospheric CO2: Components and interactions in the deep carbon cycle](https://cp.copernicus.org/preprints/cp-2017-112/cp-2017-112.pdf) J Pall, S Zahirovic, S Doss, R Hassan, KJ Matthews… - cp.copernicus.org
-
-* [Archive for the category: Understanding continental processes with low temperature thermochronology](https://www.aesconvention.com.au/category/understanding-continental-processes-with-low-temperature-thermochronology/) R Zhou - aesconvention.com.au
-
-* [Atlantic Rifted Margin Studies from the Edge: Geophysical Research at Memorial University](https://csegrecorder.com/articles/view/atlantic-rifted-margin-studies-from-the-edge-geophysical-research-at-memori) JK Welford, AE Malcolm, CG Farquharson, J Hall - csegrecorder.com
-
-* [Australian Academy of Science Elizabeth and Frederick White Conference Mastering the Data Explosion in the Earth and Environmental Sciences](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.172.8106&rep=rep1&type=pdf) F Boschetti, L Moresi - Citeseer
-
-* [Australian Paleo-stress map project](https://www.earthbyte.org/australian-paleo-stress-map-project/) BG Hub - earthbyte.org
-
-* [Building Global Kinematic Plate Reconstructions Through the Phanerozoic: Testing Alternative Models for the Amalgamation of Pangea](http://www.searchanddiscovery.com/abstracts/html/2015/90216ace/abstracts/2094651.html) KT Maloney, KJ Matthews, RD Müller… - AAPG Annual … - searchanddiscovery.com
-
-* [Building a Hydrocarbon System from the Ground Up](https://www.researchgate.net/profile/Carmen_Fraticelli/publication/303803810_How_to_Build_a_Petroleum_System_from_the_Ground_Up/links/575340c708ae17e65ec6a651/How-to-Build-a-Petroleum-System-from-the-Ground-Up.pdf) CM Fraticelli - researchgate.net
-
-* [Bulletin of the Geological Society of Denmark](https://pdfs.semanticscholar.org/0e0b/ba1f221c29ef679d104db7c55465efc9a1c3.pdf) LM Larsen, LB Clemmensen, O Graversen… - pdfs.semanticscholar.org
-
-* [Cenozoic Evolution of the Sulu Sea Arc‐Basin System: An Overview](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020TC006630) CK Lai, XP Xia, R Hall, S Meffre, B Tsikouras… - Tectonics - Wiley Online Library
-
-* [Cenozoic exhumation history of the northern Richardson Mountains, Canada: Results from (U-Th-Sm)/He analysis](https://geoconvention.com/wp-content/uploads/abstracts/2020/56526-cenozoic-exhumation-history-of-the-northern-richar.pdf) R McKay, E Enkelmann, T Hadlari, W Matthews - geoconvention.com
-
-* [Conjugate Basins, Tectonics and Hydrocarbons (CBTH)–Phase V](http://129.7.231.175/documents/CBTHProposal_2017.pdf) P Mann - 129.7.231.175
-
-* [Conjugate Basins, Tectonics and Hydrocarbons (CBTH)–Phase VI (2020-2023)](http://cbth.uh.edu/documents/CBTH_PhaseVIProposal_2020.pdf) P Mann - cbth.uh.edu
-
-* [Continental Rift Evolution: from inception to break-up](https://meetingorganizer.copernicus.org/EGU2020/posters/34751) A Glerum - meetingorganizer.copernicus.org
-
-* [Cretaceous to present-day tectonic reconstructions of Zealandia](http://www.publish.csiro.au/aj/AJ17117) H Seebeck, D Strogen, P King, A Nicol, B Hines… - The APPEA Journal - CSIRO
-
-* [Deep-Time Landscape Evolution Modelling in the Context of Tectonics, Geodynamics, and Eustasy](http://www.searchanddiscovery.com/abstracts/html/2020/newguinea-90371/abstracts/106.html) C Clinton-Gray, Y Ibrahim, S Zahirovic… - The 1st AAPG/EAGE … - searchanddiscovery.com
-
-* [Evolution of Earth's topography from models of global mantle flow and lithospheric deformation](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.657.1207&rep=rep1&type=pdf) N Flament, M Gurnis, SE Williams, M Seton, R Dietmar - Citeseer
-
-* [From the depths of a drawer to Google Earth: Digital exhibition of Hungarian fossils, decorative stones and minerals](https://www.researchgate.net/profile/Csilla_Galambos/publication/316582386_From_the_depths_of_a_drawer_to_Google_Earth_Digital_exhibition_of_Hungarian_fossils_decorative_stones_and_minerals/links/5904e77fa6fdccd580d15016/From-the-depths-of-a-drawer-to-Google-Earth-Digital-exhibition-of-Hungarian-fossils-decorative-stones-and-minerals.pdf) C Galambos, L Makádi, E Bodor, B Péterdi, Z Lantos… - researchgate.net
-
-* [GPlates and GPML: Open software and standards for linking data to geodynamic models on the APAC grid](http://www.rses.anu.edu.au/cadi/Whiteconference/abstracts/Muller_WhiteConference06.pdf) RD Müller - rses.anu.edu.au
-
-* [Geosciences Column: Perfecting Palaeogeographic Reconstructions](http://geolog.egu.eu/2013/04/26/geosciences-column-perfecting-palaeogeographic-reconstructions/) LR Artal - geolog.egu.eu
-
-* [Intra-ocean Ridge Jumps, Oceanic Plateaus & Upper Mantle Inheritance](http://www.mantleplumes.org/NAWorkshop/FTP/PaperDrafts1/Kusznir_et_al_WilliamSmithMeeting_Oct2017f.pdf) N Kusznir, A Alvey, J Natland, M Cheadle, M Graça - mantleplumes.org
-
-* [Late Cretaceous-Cenozoic basin inversion and palaeostress fields in the North Atlantic-western Alpine-Tethys realm: implications for 2 intraplate tectonics 3](http://www.mantleplumes.org/NAWorkshop/PaperPDFs/ESR_PDFs/Stephenson2020.pdf) C Schiffer, A Peace, SB Nielsen, S Jess - 1920 - mantleplumes.org
-
-* [Late Paleozoic Iberian orocline (s) require 1000 km of missing intra-Pangea shortening.](https://eartharxiv.org/repository/object/1469/download/3269/) D Pastor-Galán, EL Pueyo, M Diederen… - eartharxiv.org
-
-* [Mantle dynamics, structure and evolution: Combining geochemical, mineralogical and seismological constraints with geodynamics](https://meetingorganizer.copernicus.org/EGU2020/displays/34734) C Jain - meetingorganizer.copernicus.org
-
-* [Marine Geo-informatics](http://www.rses.anu.edu.au/cadi/Whiteconference/papers/MullerMarineGeoinformatics.pdf) RD Müller - rses.anu.edu.au
-
-* [PLATE MOTIONS ON EUROPA FROM CASTALIA MACULA TO FALGA REGIO. Geoffrey C. Collins1](https://www.hou.usra.edu/meetings/lpsc2016/pdf/2533.pdf) BB Cutler, JPB Coto, LM Prockter, GW Patterson… - hou.usra.edu
-
-* [PS Collisional Tectonics and its Effects on Hydrocarbon Entrapment and Progression: A Case Study from NW Corner of Indian Plate](http://www.searchanddiscovery.com/documents/2019/30601ahmed/ndx_ahmed.pdf) S Ahmed, UH Awan, RF Shahzan… - AAPG Middle East … - searchanddiscovery.com
-
-* [Phanerozoic paleogeography of Carpathian realm](https://www.researchgate.net/profile/Aleksandra_Gaweda/publication/259493513_Kyanite-quartz_segregations_in_the_metamorphic_complex_of_the_Western_Tatra_Mountains_Central_Western_Carpathians/links/5921a1b9a6fdcc4443f60109/Kyanite-quartz-segregations-in-the-metamorphic-complex-of-the-Western-Tatra-Mountains-Central-Western-Carpathians.pdf#page=44) J Golonka, A Gawęda, A Waśkowska… - … : new ideas in the field of … - researchgate.net
-
-* [Plate Deformation-the Andes](https://www.earthbyte.org/webdav/ftp/earthbyte/GPlates/TutorialData_GPlates2.1/Tutorial_8.2_Plate_Deformation_The_Andes.pdf) S Williams, M Gurnis, T Yang, S Ross - earthbyte.org
-
-* [Ridges and Hotspots around the Mascarene Islands](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.738.7182&rep=rep1&type=pdf) D Bissessur, J Dyment, D Milton, P Bachélery… - Citeseer
-
-* [Setting the Scene for a Paleogene Clastic Basin; Obduction of the Masirah Ophiolite, Oman](http://www.searchanddiscovery.com/abstracts/html/2019/oman-90360/abstracts/2019.ME.SRM.024.html) M Thomas, C Heine - AAPG Middle East Region Geoscience … - searchanddiscovery.com
-
-* [Supplementary Information Horizontal mantle flow controls subduction dynamics](https://iris.uniroma1.it/retrieve/handle/11573/1015925/496318/Ficini_Horizontal%20Supplementary%20Materials_2017.pdf) E Ficini, L Dal Zilio, C Doglioni, TV Gerya - iris.uniroma1.it
-
-* [Supporting Societies](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.656.7645&rep=rep1&type=pdf) M GeoCenter, G Vereinigung eV… - Citeseer
-
-* [TWENTY YEARS OF TECHNOLOGICAL INNOVATION IN AN INTERNATIONAL CAPSTONE FIELD COURSE](https://www.researchgate.net/profile/Declan-De-Paor/amp) C Simpson, D De Paor, S Whitmeyer - Education, 1978 - researchgate.net
-
-* [Tectonic Evolution of Structures in Southern Sindh Monocline, Indus Basin, Pakistan Formed in Multi-Extensional Tectonic Episodes of Indian Plate](https://geoconvention.com/wp-content/uploads/abstracts/2019/GC2019_175_Tectonic-Evolution_of_Structures_Southern_Sindh_Monocline_Indus_Basin_Pakistan.pdf) SH Solangi, S Ahmed, MA Qureshi, M Shahid… - geoconvention.com
-
-* [Tectonic Reconstruction of SE Asia (with the G-Plate Program) Chun Kit LAI1#+, Khin ZAW1, Sebastien MEFFRE1, Andri Slamet SUBANDRIO2, Hai Thanh TRAN3 …](https://www.researchgate.net/profile/Kit_Lai/publication/257990224_Tectonic_Reconstruction_of_SE_Asia_with_the_G-Plate_Program/links/0c9605268f3997f659000000/Tectonic-Reconstruction-of-SE-Asia-with-the-G-Plate-Program.pdf) CK LAI, K ZAW, S MEFFRE, AS SUBANDRIO… - researchgate.net
-
-* [Tectonics and Geodynamics of the New Guinea Region Since the Triassic](https://www.searchanddiscovery.com/documents/2020/30670zahirovic/ndx_zahirovic.pdf) S Zahirovic, D Garrad - The 1st AAPG/EAGE PNG Geosciences … - searchanddiscovery.com
-
-* [The Geodynamic Evolution of the Junction Plate: Linking observations to high-resolution models](http://www.earthbyte.org/Resources/Pdf/Talsma_eresearch_Brisbane_2010.pdf) AS Talsma, HP Bunge, M Seton - earthbyte.org
-
-* [The spectrum of obliquity: A multidisciplinary approach from orthogonal rifts to transform tectonics in continental and oceanic settings](https://meetingorganizer.copernicus.org/EGU2020/posters/34921) O Bolle - meetingorganizer.copernicus.org
-
-* [Tomographic Imaging of Lesser Antilles Slab, Significance for Estimating the Age and Amount of Eastward Motion of the Overriding Caribbean Plate.](http://www.searchanddiscovery.com/abstracts/html/2018/hedberg.90330/abstracts/2018Hedberg.Spain46.html) P Mann, YW Chen, J Wu, J Suppe - … of Middle America–the Gulf of … - searchanddiscovery.com
 
