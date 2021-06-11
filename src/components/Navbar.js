@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/GPlates-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload, faNewspaper, faBook, faImage, faCubes, faGraduationCap, faUsers} from '@fortawesome/free-solid-svg-icons'
+import { faDownload, faNewspaper, faBook, faImage, faCubes, faGraduationCap, faUsers, faScroll} from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -95,9 +95,15 @@ const Navbar = class extends React.Component {
                 </span>
                 <span>Documentation</span>
               </Link>
-              {/*<Link className="navbar-item" to="/publications">
-                Publications
+
+              <Link className="navbar-item" to="/publications">
+                <span class="icon has-text-extensions" aria-hidden="true" style={{color: 'orangered'}}>
+                  <FontAwesomeIcon icon={faScroll} />
+                </span>
+                <span>Publications</span>
               </Link>
+              
+              {/*
               <Link className="navbar-item" to="/gpml">
                 GPML
               </Link>
