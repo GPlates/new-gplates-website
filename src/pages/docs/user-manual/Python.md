@@ -2,13 +2,13 @@
 templateKey: 'user-manual'
 title: 'Chapter 24: Python'
 prev: 'TopologyTools'
-next: 'DataMining'
+next: 'Co_registration'
 ---
 
 Introduction
 ============
 
-Starting from 1.2 release, GPlates has scripting support using **Python** language. The GPlates Python APIs are a set of interfaces through which Python script can interact with GPlates. See **Appendix A** for API reference. Python script can be executed either in the embedded Python Console or as a GPlates Python Plugin.
+Starting from 1.2 release, GPlates has scripting support using **Python** language. The GPlates Python APIs are a set of interfaces through which Python script can interact with GPlates. Python script can be executed either in the embedded Python Console or as a GPlates Python Plugin.
 
 Python Console
 ==============

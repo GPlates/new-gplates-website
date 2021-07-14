@@ -374,6 +374,20 @@ The **Tool Palette** includes camera positioning tools, feature selection tools 
       </tr>
       <tr class="odd">
          <td>
+            <p><img src="icons/topology_build_network.png" alt="icons/topology_build_network.png" /></p>
+         </td>
+         <td>
+            <p>Build New Network Topology</p>
+         </td>
+         <td>
+            <p>N</p>
+         </td>
+         <td>
+            <p>Create a new dynamic deforming network topology from an existing or new polygon</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
             <p><img src="icons/africa_topology_final_edit2.png" alt="icons/africa_topology_final_edit2.png" /></p>
          </td>
          <td>
@@ -386,7 +400,7 @@ The **Tool Palette** includes camera positioning tools, feature selection tools 
             <p>Edit the selected topological feature’s sections</p>
          </td>
       </tr>
-      <tr class="even">
+      <tr class="odd">
          <td>
             <p><img src="icons/small_circle_35.png" alt="icons/small_circle_35.png" /></p>
          </td>
@@ -398,6 +412,34 @@ The **Tool Palette** includes camera positioning tools, feature selection tools 
          </td>
          <td>
             <p>Create small circles using mouse to define centre and radii, or enter manually, or generate centre from a stage pole</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p><img src="icons/africa_highlight_clicked_35.png" alt="icons/africa_highlight_clicked_35.png" /></p>
+         </td>
+         <td>
+            <p>Select Hellinger Geometries</p>
+         </td>
+         <td>
+            <p>Q</p>
+         </td>
+         <td>
+            <p>Select the geometries for the Hellinger. Launches the Hellinger dialog.</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
+            <p><img src="icons/africa_pole_rotation_35.png" alt="icons/africa_pole_rotation_35.png" /></p>
+         </td>
+         <td>
+            <p>Adjust Pole Estimate</p>
+         </td>
+         <td>
+            <p>R</p>
+         </td>
+         <td>
+            <p>Adjust the pole estimate for the hellinger tool by clicking the bottom of the pole symbol and dragging to desired location on the globe.</p>
          </td>
       </tr>
    </tbody>
@@ -433,19 +475,19 @@ List of Menu Operations
 File
 ----
 
--   [Open Feature Collection](/user-manual/LoadingAndSaving) `[Ctrl+O]`
+-   Open Feature Collection `[Ctrl+O]`
 
--   [Open Recent Session](/user-manual/LoadingAndSaving)
+-   Open Recent Session
 
--   [Import Raster](/user-manual/DataFileTypes)
+-   Import Raster
 
--   [Import Time-Dependent Raster](/user-manual/DataFileTypes)
+-   Import Time-Dependent Raster
 
 -   Connect WFS
 
--   [Manage Feature Collections](/user-manual/LoadingAndSaving) `[Ctrl+M]`
+-   Manage Feature Collections `[Ctrl+M]`
 
--   [View Read Errors](/user-manual/LoadingAndSaving)
+-   View Read Errors
 
 -   Quit `[Ctrl+Q]`
 
@@ -456,13 +498,13 @@ Edit
 
 -   Redo `[Ctrl+Y]`
 
--   [Query Feature](/user-manual/Interacting_Features/) `[Ctrl+R]`
+-   Query Feature `[Ctrl+R]`
 
--   [Edit Feature](/user-manual/Creating_Features) `[Ctrl+E]`
+-   Edit Feature `[Ctrl+E]`
 
--   [Copy Geometry to Digitise Tool](/user-manual/Creating_Features)
+-   Copy Geometry to Digitise Tool
 
--   [Clone Feature](/user-manual/Creating_Features)
+-   Clone Feature
 
 -   Delete Feature `[Delete]`
 
@@ -473,9 +515,9 @@ Edit
 View
 ----
 
--   [Set Projection](/user-manual/Controlling_View)
+-   Set Projection
 
--   [Camera Location](/user-manual/Controlling_View)
+-   Camera Location
 
     -   Set Location `[Ctrl+Shift+L]`
 
@@ -487,7 +529,7 @@ View
 
     -   Move Right
 
--   [Camera Rotation](/user-manual/Controlling_View)
+-   Camera Rotation
 
     -   Rotate Clockwise `[]]`
 
@@ -495,7 +537,7 @@ View
 
     -   Reset Orientation `[^]`
 
--   [Camera Zoom](/user-manual/Controlling_View)
+-   Camera Zoom
 
     -   Set Zoom
 
@@ -507,6 +549,8 @@ View
 
 -   Configure Text Overlay
 
+-   Configure Velocity Legend Overlay
+
 -   Configure Graticules
 
 -   Choose Background Colour
@@ -515,95 +559,135 @@ View
 
 -   Geometry Visibility
 
-    -   Show Point Geometries
+    -   Show Static Points
 
-    -   Show Line Geometries
+    -   Show Static Lines
 
-    -   Show Polygon Geometries
+    -   Show Static Polygons
 
-    -   Show Multipoint Geometries
+    -   Show Static Multipoints
 
-    -   Show Arrow Decorations
+    -   Show Topological Sections
+
+    -   Show Topological Lines
+
+    -   Show Topological Polygons
+
+    -   Show Topological Networks
+
+    -   Show Velocity Arrows
+
+    -   Show Rasters
+
+    -   Show 3D Scalar Fields
+
+    -   Show Scalar Coverages
 
 Features
 --------
 
--   [Manage Colouring](/user-manual/Controlling_View)
+-   Manage Colouring
 
--   [View Total Reconstruction Sequences](/user-manual/Reconstructions)
+-   Load Symbol file (.sym)
 
--   [View Shapfile Attributes](/user-manual/DataFileTypes)
+-   Unload Symbol file
+
+-   View Total Reconstruction Sequences
+
+-   View Shapfile Attributes
 
 -   Create VGP
 
--   [Assign Plate IDs](/user-manual/Reconstructions)
+-   Assign Plate IDs
 
--   [Generate Mesh Caps](/user-manual/Reconstructions)
+-   Generate Deforming Mesh Points
+
+-   Generate Velocity Domain Points
+   
+    -   CitcomS
+
+    -   Terra
+
+    -   Latitude Longitude
 
 Reconstruction
 --------------
 
--   [Reconstruct to Time](/user-manual/Reconstructions) `[Ctrl+T]`
+-   Reconstruct to Time `[Ctrl+T]`
 
--   [Step Backward One Frame](/user-manual/Reconstructions) `[Ctrl+Shift+I]`
+-   Step Backward One Frame `[Ctrl+Shift+I]`
 
--   [Step Forward One Frame](/user-manual/Reconstructions) `[Ctrl+I]`
+-   Step Forward One Frame `[Ctrl+I]`
 
--   [Reset Animation](/user-manual/Reconstructions)
+-   Reset Animation
 
--   [Play Animation](/user-manual/Reconstructions)
+-   Play Animation
 
--   [Configure Animation](/user-manual/Reconstructions)
+-   Configure Animation
 
--   [Specify Anchored Plate ID](/user-manual/Reconstructions) `[Ctrl+D]`
+-   Specify Anchored Plate ID `[Ctrl+D]`
 
--   [View Total Reconstruction Poles](/user-manual/Reconstructions) `[Ctrl+P]`
+-   View Total Reconstruction Poles `[Ctrl+P]`
 
--   [Export](/user-manual/Export)
+-   Export
 
 Utilities
 ---------
 
 -   Calculate Reconstruction Pole
 
--   [Open Python Console](/user-manual/Python) `[F12]`
+-   Calculate Finite Rotation
+
+-   Open Kinematics Tool `[Ctrl+Shift+K]`
+
+-   Open Python Console `[F12]`
 
 Tools
 -----
 
 -   Use Small Icons
 
--   [Drag Globe](/user-manual/Controlling_View) `[D]`
+-   Drag Globe `[D]`
 
--   [Zoom In](/user-manual/Controlling_View) `[Z]`
+-   Zoom In `[Z]`
 
 -   Measure `[S]`
 
--   [Choose Feature](/user-manual/Interacting_Features) `[F]`
+-   Choose Feature `[F]`
 
--   [Digitise New Polyline Geometry](/user-manual/Creating_Features) `[L]`
+-   Digitise New Polyline Geometry `[L]`
 
--   [Digitise New Multi-point Geometry](/user-manual/Creating_Features) `[M]`
+-   Digitise New Multi-point Geometry `[M]`
 
--   [Digitise New Polygon Geometry](/user-manual/Creating_Features) `[G]`
+-   Digitise New Polygon Geometry `[G]`
 
--   [Move Geometry](/user-manual/Interacting_Features) `[Y]`
+-   Move Vertex `[V]`
 
--   [Move Vertex](/user-manual/Interacting_Features) `[V]`
+-   Insert Vertex `[I]`
 
--   [Insert Vertex](/user-manual/Interacting_Features) `[I]`
+-   Delete Vertex `[X]`
 
--   [Delete Vertex](/user-manual/Interacting_Features) `[X]`
+-   Split Feature `[T]`
 
--   [Split Feature](/user-manual/Interacting_Features) `[T]`
+-   Modify Reconstruction Pole `[P]`
 
--   [Modify Reconstruction Pole](/user-manual/Pole_Manipulation) `[P]`
+-   Build New Line Topology `[H]`
 
--   [Build New Topology](/user-manual/Topology_Tools) `[B]`
+-   Build New Boundary Topology `[B]`
 
--   [Edit Topology Sections](/user-manual/Topology_Tools) `[E]`
+-   Build New Network Topology `[N]`
 
--   [Create Small Circle](/user-manual/SmallCircles) `[C]`
+-   Edit Topology Sections `[E]`
+
+-   Move Pole `[O]`
+
+-   Modify Reconstruction Pole `[P]`
+
+-   Create Small Circle `[C]`
+
+-   Select Hellinger Geometries `[Q]`
+
+-   Adjust Pole Estimate `[R]`
 
 Window
 ------
@@ -612,13 +696,13 @@ Window
 
     Creates a new instance of GPlates. Currently each instance created this way is completely separate with its own main window and dialogs. Any program state such as files loaded prior to selecting **New Window** is not transferred across to the new instance. This feature is useful mainly for Mac OS X where it is not possible to run multiple instances of the same application from the *Finder*.
 
--   [Show Layers](/user-manual/Layers) `[Ctrl+L]`
+-   Show Layers `[Ctrl+L]`
 
 -   Log
 
--   [Show Bottom Panel](/user-manual/Controlling_View)
+-   Show Bottom Panel
 
--   [Full Screen](/user-manual/Controlling_View) `[F11]`
+-   Full Screen `[F11]`
 
 Help
 ----

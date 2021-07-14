@@ -57,6 +57,8 @@ next: ''
 
 [Chapter 24: Python](/docs/user-manual/Python/)
 
-[Chapter 25: Data Mining](/docs/user-manual/DataMining/)
+[Chapter 25: Spatiotemporal Co-registration](/docs/user-manual/Co_registration/)
 
-[Appendix A: Python API Reference](/docs/user-manual/PythonAPIs/)
+[Chapter 26: Crustal Deformation](/docs/user-manual/CrustalDeformation/)
+
+[Chapter 27: 3D Volume Visualisation](/docs/user-manual/3D_Volume_Visual/)

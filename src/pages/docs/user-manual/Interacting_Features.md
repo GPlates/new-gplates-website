@@ -135,7 +135,7 @@ You can query a feature, by first selecting <span style="display:inline-block; w
          <td class="icon">
             <img src="./images/icons/note.png" alt="Note">
          </td>
-         <td class="content" >The table will list all features that have geometry in proximity to the point that was clicked. This is useful in situations where multiple geometries, from different features, happen to lie on top of each other. In this case the mouse click will populate the <b>Clicked Geometry Table</b> with one entry for each geometry. You can then use to the <b>Clicked Geometry Table</b> to select the desired geometry. As you select each entry in the **Clicked Geometry Table** its geometry (as displayed on the globe) will highlight to show you which geometry you are selecting.</td>
+         <td class="content" >The table will list all features that have geometry in proximity to the point that was clicked. This is useful in situations where multiple geometries, from different features, happen to lie on top of each other. In this case the mouse click will populate the <b>Clicked Geometry Table</b> with one entry for each geometry. You can then use to the <b>Clicked Geometry Table</b> to select the desired geometry. As you select each entry in the <b>Clicked Geometry Table</b> its geometry (as displayed on the globe) will highlight to show you which geometry you are selecting.</td>
       </tr>
    </tbody>
 </table>
@@ -233,7 +233,7 @@ To query the properties of the current feature, either click , ![](query.png), a
 
 ### 2.3.1 Feature Type
 
-This is the type of feature (e.g. fault, mid ocean ridge, subduction zone).
+This is the type of feature (e.g. fault, mid ocean ridge, subduction zone). The user can change the Feature Type by clicking **'Change Type...'**.
 
 ### 2.3.2 Query Properties Tab
 
@@ -354,7 +354,7 @@ You can then create a new feature from within the digitisation tool or, if you a
          <td class="icon">
             <img src="./images/icons/tip.png" alt="Tip">
          </td>
-         <td class="content" >This ability is useful when you want to create a new feature that has the same geometry as another feature but you want the feature *type* to be different or you want a new feature that has different properties (but same geometry).</td>
+         <td class="content" >This ability is useful when you want to create a new feature that has the same geometry as another feature but you want the feature <b>type</b> to be different or you want a new feature that has different properties (but same geometry).</td>
       </tr>
    </tbody>
 </table>
@@ -516,20 +516,37 @@ The features *to be* partitioned have now been modified.
    </tbody>
 </table>
 
-3.1 Generate Mesh Caps
+3.1 Generate Velocity Domain Points
 ------------------
 
-The **Generate Mesh Caps** dialog can be accessed via **Features→Generate Mesh Caps…**.
+The **Generate Velocity Domain Points** dialog can be accessed via **Features→Generate Velocity Domain Points…**.
 
-The mesh caps are used to calculate velocities. The sphere will be covered by 12 diamonds — **Mesh Caps**. Each diamond will be further divided into smaller pieces according to \*Resolution" setting. Eventually, the sphere will be divided into evenly distributed diamonds with equal area.
+The mesh caps are used to calculate velocities. The sphere will be covered by 12 diamonds — **Mesh Caps**. Each diamond will be further divided into smaller pieces according to the "Resolution" setting. Eventually, the sphere will be divided into evenly distributed diamonds with equal area. 
 
-### 3.1.1 Resolution
+<table class ="tip">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/tip.png" alt="Tip">
+         </td>
+         <td class="content" >Once the velocities are created in relation to the static multipoints, they can be turned off to enhance the visual experience, by navigating to <b>View → Geometry Visibility</b> and unchecking <b>Show Static Multipoints</b>.</td>
+      </tr>
+   </tbody>
+</table>
+
+### 3.1.1 CitcomS
+
+A key application of GPlates, beyond its deep-time GIS functionality, is its interperability with a range of numerical geodynamic modelling codes of plate tectonics and mantle convection. The first code to be coupled to GPlates was the spherical version of the California Institute of Technology Convection in the Mantle code, **CitcomS**. The resolved plate topologies are used to calculate plate velocities, which are sampled using the CitcomS diamond-shaped mesh caps and exported as simple text ASCII (DAT, XY, etc.) or GMPL files. The geometry of subduction zones and their polarity through time is also exported through GPlates. In addition to assimilating the subduction zone geometries and plate velocities, the age of the oceanic crust and the tectonothermal age of the continents are used to assimilate the thermal lithosphere from the GPlates reconstructions into CitcomS.
+
+![](screenshots/GenerateVelocityDomainPoints-CitcomS.png)
+
+#### Resolution
 
 Users can specify the resolution of mesh caps. The **nodex** and **nodey** parameters indicate how the 12 original big diamonds can be divided evenly.
 
 For the global mesh, the **nodex** always equals **nodey**. Currently, GPlates can only generate global mesh.
 
-### 3.1.2 Output
+#### Output
 
 You can specify the **file name template**, which will be used to generate output file names. The **Output directory** indicates the directory where the output file will be stored.
 
@@ -546,4 +563,74 @@ In total, 12 files will be generated in the specified output directory. The file
    </tbody>
 </table>
 
+### 3.1.2 Terra
 
+Similarly to CitcomS, the plate velocities can also be sampled from in-built functionality that generates a mesh for the TERRA mantle convection code. 
+
+![](screenshots/GenerateVelocityDomainPoints-Terra.png)
+
+#### Configuration
+
+The following Terra parameters, related to gridding, are:
+
+-   **mt** - Number of grid intervals along icosahedral diamond edge (must be a power-of-two).
+
+-   **nt** - Number of grid intervals along edge of local subdomain (must be a power-of-two).
+
+-   **nd** - Number of diamonds mapped to a local process (this must be either 5 or 10).
+
+The number of processors is determined by the above three parameters according to '(mt/nt) * (mt/nt) * (10/nd)' and hence 'mt' must be greater or equal to 'nt'.
+
+#### Output
+
+Generated GPML files will be saved to the specifed output directory.The filename template enables Terra parameters to be specified in the output filenames using the following template parameters:
+
+-   **%mt** - gets replaced with the Terra 'mt' parameter.
+
+-   **%nt** - gets replaced with the Terra 'nt' parameter.
+
+-   **%nd** - gets replaced with the Terra 'nd' parameter.
+
+-   **%np** - gets replaced with the Terra processor number of the current output file.
+
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Note">
+         </td>
+         <td class="content" >Note that <b>'%np'</b> must appear at least once since it's the only parameter that varies across the output files.</td>
+      </tr>
+   </tbody>
+</table>
+
+An example template filename is *'TerraMesh.%mt.%nt.%nd.%np'*. 
+
+### 3.1.3 Latitude/Longitude
+
+![](screenshots/GenerateVelocityDomainPoints-LatLon.png)
+
+#### Configuration
+
+The latitudinal and longitudinal extents can be used to limit the generated node points to a specific geographic region (the default is global).
+
+The **'Place node points at centre of latitude/longitude cells'** check box determines whether generated nodes (points) are placed at the centres of latitude/longitude cells or at cell corners.
+
+The **'number of latitudinal grid intervals'** parameter specifies the number of intervals in the latitude direction (along meridians). A similar parameter specifies longitudinal intervals. The number of latitudinal grid nodes (points) will be the number of latitudinal grid intervals when the nodes are at the centres of the latitude/longitude cells (and plus one when nodes are at cell corners). The **'number of longitudinal grid grid intervals'** has the same relation to the number of longitudinal grid nodes (points) as the latitude case above, except in the case where the longitude interval is the full 360 degrees in which case the end line of nodes is not generated to avoid duplicating nodes with the start line.
+
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Note">
+         </td>
+         <td class="content" >Note that the density of grid nodes on the globe is much higher near the poles than at the equator due to sampling in latitude/longitude space.</td>
+      </tr>
+   </tbody>
+</table>
+
+#### Output
+
+A single generated GPML file of the specified filename will be saved to the specifed output directory.
+
+You can optionally use the template parameters '%n' and '%m' in the file name and they will be replaced by the 'number of latitudinal grid intervals' and 'number of longitudinal grid intervals' parameters. 

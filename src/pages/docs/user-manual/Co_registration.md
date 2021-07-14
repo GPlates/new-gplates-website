@@ -1,14 +1,14 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 25: Data Mining'
+title: 'Chapter 25: Spatiotemporal Co-registration'
 prev: 'Python'
-next: 'PythonAPIs'
+next: 'CrustalDeformation'
 ---
 
 1 Introduction
 ============
 
-The GPlates' co-registration layer allows users to combine two time-dependent datasets based on a set of user-defined associations. Then the generated data from the combined datasets can be used as input of Orange widgets which are created to analyze and visualize data.
+The GPlates' co-registration layer allows users to combine two time-dependent datasets based on a set of user-defined associations.
 
 2 Co-registration Layer
 =====================
@@ -40,39 +40,14 @@ Click the "View Result" to bring up the "Result Table" dialog.
 
 ![](screenshots/ResultTable.png)
 
-3 Orange(biolab) Widgets
-======================
-
--   TimeSeries
-
-The TimeSeries widget gets raw co-registration data from GPlates. It then filters and integrates the data into a table according to the given time and property configurations.
-
-![](screenshots/TimeSeries.png)
-
--   BirthTime
-
-The BirthTime widget gets the "begin time" of each seed from GPlates.
-
--   AttributeAtTime
-
-The AttributeAtTime widget gets co-registration data at given time.
-
-![](screenshots/AttrAtTime.png)
-
--   BirthAttribute
-
-The BirthAttribute widget gets co-registration data at the birth time of each seed.
-
-![](screenshots/BirthAttr.png)
-
-4 Network Interface
+3 Network Interface
 =================
 
 The co-registration layer data can be accessed through a network interface. When GPlates starts up, an internal tcp/ip server is initialized. Users can configurate the server setting in "Preference" dialog.
 
 ![](screenshots/ServerSetting.png)
 
-4.1 gplates.py
+3.1 gplates.py
 ----------
 
 The gplates.py module is a wrapper around the network interfaces. Users can retrieve data from GPlates by calling Python methods defined in gplates.py. The class CoregistrationLayer is a delegate of coregistration layer in GPlates.

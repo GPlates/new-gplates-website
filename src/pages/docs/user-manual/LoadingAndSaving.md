@@ -83,15 +83,7 @@ There are several ways to load a data file or collection of files into GPlates.
 
 Whenever you close GPlates, it automatically remembers which set of files you were working on last time. You can resume your previous session by using the menu.
 
-1.  Go to the **File Menu** in the menu bar.
-
-2.  Scroll down to the **Open Recent Session** submenu.
-
-3.  Select the menu entry corresponding to the set of files you want GPlates to load.
-
-![](screenshots/Menu-File-OpenRecentSession.png)
-
-An entry for each prior session of GPlates can be identified by the number of files that were loaded, the name of the directory that all the files have in common, and the date they were last in use. Connections between different **Layers** that are loaded will also be saved, however please note that colouring settings and other Layer-specific settings (e.g. VGP Visibility) are not currently remembered and must be restored manually.
+**See Chapter on Projects and Recent Sessions** for more information on this. 
 
 2.4 How do I load a raster image in GPlates?
 ----------------------------------------
