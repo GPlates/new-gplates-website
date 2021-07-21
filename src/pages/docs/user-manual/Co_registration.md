@@ -8,7 +8,7 @@ next: 'CrustalDeformation'
 1 Introduction
 ============
 
-The GPlates' co-registration layer allows users to combine two time-dependent datasets based on a set of user-defined associations.
+The GPlates' co-registration layer allows users to combine two time-dependent datasets based on a set of user-defined associations. To put it simply, co-registration is the collection of data at certain points in a file such as a raster (can be another dataset type), and transporting this data to another file. The points are decided in reference to a base file.
 
 2 Co-registration Layer
 =====================

@@ -33,24 +33,24 @@ Export data or image at a single specific time. To activate the controls for a o
 
 ![](screenshots/Export-SingleSnapshot.png)
 
-2.3 Range
+2.3 Time Range
 -----
 
-When using **Export Time Sequence of Snapshots**, the **Range** group of controls specifies the time range that the **Export** will cover. For convenience, these controls are linked to the **Animation** system, and affect the same time range that you see with the **Time Slider** and **Configure Animation** dialog - this way you can see a preview of what will be exported.
+When using **Export Time Sequence of Snapshots**, the **Time Range** group of controls specifies the time range that the **Export** will cover. For convenience, these controls are linked to the **Animation** system, and affect the same time range that you see with the **Time Slider** and **Configure Animation** dialog - this way you can see a preview of what will be exported.
 
-The **Use Main Window** buttons are a convenient way of quickly entering the time that the main window is currently viewing. The **Reverse the Animation** button can swap the start and end time.
+The **Use Main Window Time** buttons are a convenient way of quickly entering the time that the main window is currently viewing. The **Reverse the Export** button can swap the start and end time for the export.
 
-2.4 Time
+2.4 Time Instant
 ----
 
-The **Time** group is used with **Export Single Snapshot** to specify a time point.
+The **Time Instant** group is used with **Export Single Snapshot** to specify a time point.
 
-2.5 Options
+2.5 Export Data
 -------
 
-The **Option** group specifies the items which users want to export and the directory to store output files.
+The **Export Data** group specifies the items which users want to export and the directory to store output files.
 
-A table shows what files will be created at each time, along with the substitution pattern that will be used to create each unique file name. Users can use **Add…** and \*Remove" buttons to edit the table.
+A table shows what files will be created at each time, along with the substitution pattern that will be used to create each unique file name. Users can use **Add…**, **Remove**, or **Edit** exports in the table.
 
 The **Target directory** specifies which directory all the files will be created in. Users can use the button on the right to select directory.
 
@@ -65,12 +65,17 @@ The **Target directory** specifies which directory all the files will be created
    </tbody>
 </table>
 
-2.6 Export
+2.6 Export Options
 ------
 
-The **Export** group is used to start and stop the export, and provide progress information during the export process. Click **Begin** to commence the export and begin creating files. If you have specified a large range, this may take some time.
+The **Export Options** group is for Exporting Time Sequence of Snapshots, and allows you to check whether you wish for the Export to **finish exactly on end time**, or not.
 
-The **Abort** button is provided in the event that users wishes to terminate the export sequence early. In **Export single Snapshot** mode, users can not abort.
+2.7 Export Progress
+------
+
+The **Export Progress** group is used to start and stop the export, and provide progress information during the export process. Click **Begin Export** to commence the export and begin creating files. If you have specified a large range, this may take some time.
+
+The **Abort Export** button is provided in the event that users wishes to terminate the export sequence early. In **Export single Snapshot** mode, users can not abort.
 
 3 "Add Export" dialog
 ===================
@@ -79,17 +84,22 @@ When choosing the "Add" button to add a new export item to the table, the **Add 
 
 ![](screenshots/Export-AddExport.png)
 
-3.1 Select data to export
+3.1 Choose Data Type to Export
 ---------------------
 
 Users can select an entry in this list, and then the available output format will be listed in **Format** list.
 
-3.2 Format
+3.2 Choose Output File Format
 ------
 
 Select output file format in this list.
 
-3.3 File name template
+3.3 Configure Export Options
+---------------
+
+Indicate the parameters of your export by considering and implementing options. 
+
+3.4 File name template
 ------------------
 
 Specify the file name template which will be used to generate output file names.
@@ -118,7 +128,7 @@ Below is a table of available export items.
             <p>Reconstructed Geometries</p>
          </td>
          <td>
-            <p>GMT, Shapefile</p>
+            <p>GMT, Shapefiles, OGR-GMT, GeoJSON</p>
          </td>
          <td>
             <p>Export the reconstructed geometries in their paleo-coordinates.</p>
@@ -126,13 +136,13 @@ Below is a table of available export items.
       </tr>
       <tr class="even">
          <td>
-            <p>Projected Geometries</p>
+            <p>Projected Geometries (and Rasters)</p>
          </td>
          <td>
             <p>SVG</p>
          </td>
          <td>
-            <p>Export projected geometries data according to the current View settings.</p>
+            <p>Export projected geometries (and projected raster) data according to the current View settings.</p>
          </td>
       </tr>
       <tr class="odd">
@@ -143,7 +153,7 @@ Below is a table of available export items.
             <p>bmp,jpg,jpeg,png,ppm,tiff,xbm,xpm</p>
          </td>
          <td>
-            <p>Export image (screenshit) of current view (globe or map).</p>
+            <p>Export image (screenshot) of current view (globe or map).</p>
          </td>
       </tr>
       <tr class="even">
@@ -154,7 +164,7 @@ Below is a table of available export items.
             <p>bmp,jpg,jpeg,png,tiff,img</p>
          </td>
          <td>
-            <p>Export 8-bit (per channel) RGBA (or RGB) coloured raster data.</p>
+            <p>Export 8-bit (per channel) RGBA (or RGB) coloured raster data. Exports each visible raster layer to a single file (per time step). RGBA (and RGB) raster layers contain colour pixels. Numerical raster layers converted to colour using layer's palette. Geo-referenced region stored in raster formats that support it.</p>
          </td>
       </tr>
       <tr class="odd">
@@ -165,7 +175,29 @@ Below is a table of available export items.
             <p>nc,grd,tif,img</p>
          </td>
          <td>
-            <p>Export 32-bit floating-point numerical (non-coloured) raster data.</p>
+            <p>Export 32-bit floating-point numerical (non-coloured) raster data. Exports each visible (numerical) raster to a single file (per time step). RGBA (and RGB) raster layers are not exported. Numerical raster layers contain floating-point pixels. NaN no-data value stored in pixels not covered by raster data. Geo-referenced region stored in raster</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p>Scalar Coverages</p>
+         </td>
+         <td>
+            <p>GMT,GPML</p>
+         </td>
+         <td>
+            <p>Export reconstructed scalar coverages geometries with per-point scalar values. Exports visible reconstructed scalar coverage layers. Each geometry point exports a position and a scalar value. Scalar values for the currently selected scalar type are exported.</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
+            <p>Deformation</p>
+         </td>
+         <td>
+            <p>GMT, GPML</p>
+         </td>
+         <td>
+            <p>Export Deformation information. Exports visible reconstructed geometry layers connected to topology layers. Each geometry point exports a position, strain and strain rate.</p>
          </td>
       </tr>
       <tr class="even">
@@ -184,43 +216,54 @@ Below is a table of available export items.
             <p>Resolved Topologies</p>
          </td>
          <td>
-            <p>GMT</p>
+            <p>GMT, Shapefiles, OGR-GMT, GeoJSON</p>
          </td>
          <td>
-            <p>Export resolved topologies as static polygons in paleo-coordinates.</p>
+            <p>Export resolved topological lines and polygons (but not networks) for any feature type.</p>
          </td>
       </tr>
       <tr class="even">
          <td>
-            <p>Relative Total Rotation</p>
+            <p>Resolved Topologies (CitcomS specific)</p>
          </td>
          <td>
-            <p>CSV</p>
+            <p>GMT, Shapefiles, OGR-GMT, GeoJSON</p>
          </td>
          <td>
-            <p>Export relative total rotation data.</p>
+            <p>Export resolved topologies for use by CitcomS software. Exports boundaries of resovled topological close plate polygons/networks. Optionally exports the subsegment geometries of polygon/network boundaries.</p>
          </td>
       </tr>
       <tr class="odd">
          <td>
-            <p>Equivalent Total Rotation</p>
+            <p>Relative Total Rotation</p>
          </td>
          <td>
-            <p>CSV</p>
+            <p>CSV (either comma, semicolon, or tab delimited)</p>
          </td>
          <td>
-            <p>Export equivalent total rotation data.</p>
+            <p>Export relative total rotation data (between a moving/fixed plate pair from the export reconstruction time to present day).</p>
          </td>
       </tr>
       <tr class="even">
          <td>
+            <p>Equivalent Total Rotation</p>
+         </td>
+         <td>
+            <p>CSV (either comma, semicolon, or tab delimited)</p>
+         </td>
+         <td>
+            <p>Export equivalent total rotation data (from an exported plate id to the anchor plate, from the export reconstruction time to present day).</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
             <p>Relative Stage Rotation</p>
          </td>
          <td>
-            <p>CSV</p>
+            <p>CSV (either comma, semicolon, or tab delimited)</p>
          </td>
          <td>
-            <p>Export relative stage rotation data.</p>
+            <p>Export relative stage rotation data (between a moving/fixed plate pair, from <i>t+interval</i> Ma to <i>t</i> Ma where <i>t</i> is the export reconstruction time).</p>
          </td>
       </tr>
       <tr class="odd">
@@ -228,10 +271,10 @@ Below is a table of available export items.
             <p>Equivalent Stage Rotation</p>
          </td>
          <td>
-            <p>CSV</p>
+            <p>CSV (either comma, semicolon, or tab delimited)</p>
          </td>
          <td>
-            <p>Export equivalent stage rotation data.</p>
+            <p>Export equivalent stage rotation data (from an exported plate id to the anchor plate, from <i>t+interval</i> Ma to <i>t</i> Ma where <i>t</i> is the export reconstruction time).</p>
          </td>
       </tr>
       <tr class="even">
@@ -239,7 +282,7 @@ Below is a table of available export items.
             <p>Flowlines</p>
          </td>
          <td>
-            <p>GMT, Shapefiles</p>
+            <p>GMT, Shapefiles, OGR-GMT, GeoJSON</p>
          </td>
          <td>
             <p>Export flowlines.</p>
@@ -250,7 +293,7 @@ Below is a table of available export items.
             <p>Motion Paths</p>
          </td>
          <td>
-            <p>GMT, Shapefiles</p>
+            <p>GMT, Shapefiles, OGR-GMT, GeoJSON</p>
          </td>
          <td>
             <p>Export motion tracks.</p>
@@ -258,13 +301,24 @@ Below is a table of available export items.
       </tr>
       <tr class="even">
          <td>
+            <p>Co-registration data</p>
+         </td>
+         <td>
+            <p>CSV (comma delimited)</p>
+         </td>
+         <td>
+            <p>Co-registration data for data-mining.</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
             <p>Net Rotations</p>
          </td>
          <td>
-            <p>CSV</p>
+            <p>CSV (either comma, semicolon,  or tab delimited)</p>
          </td>
          <td>
-            <p>Export net-rotation data based on a set of dynamic polygons</p>
+            <p>Export net-rotation data based on a set of dynamic polygons.</p>
          </td>
       </tr>
    </tbody>
@@ -321,10 +375,34 @@ The **Filename** field is used as a template value that GPlates will use to name
       </tr>
       <tr class="odd">
          <td>
-            <p>%P</p>
+            <p>%A</p>
          </td>
          <td>
-            <p>placeholder string will get replaced for each type of export.</p>
+            <p>anchor plate ID</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p>%R</p>
+         </td>
+         <td>
+            <p> default reconstruction tree layer name.</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
+            <p>%D</p>
+         </td>
+         <td>
+            <p> date format &quot;yyyy-MM-dd&quot;.</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p>%T</p>
+         </td>
+         <td>
+            <p> time format &quot;hh-mm-ss&quot;.</p>
          </td>
       </tr>
    </tbody>

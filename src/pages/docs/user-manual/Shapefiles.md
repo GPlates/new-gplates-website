@@ -100,6 +100,11 @@ This dialog allows the user to select which file attribute fields will be associ
          <td style="text-align: left;">For half-stage reconstructions, the spreading asymmetry</td>
          <td style="text-align: left;">Real</td>
       </tr>
+      <tr class="odd">
+         <td style="text-align: left;">Geometry Import Time</td>
+         <td style="text-align: left;">The time the geometry is imported at</td>
+         <td style="text-align: left;">Integer</td>
+      </tr>
    </tbody>
 </table>
 
@@ -168,6 +173,10 @@ By default GPlates will look for certain file attribute field names, and will in
       <tr class="even">
          <td style="text-align: left;">Spreading Asymmetry</td>
          <td style="text-align: left;">SPREAD_ASY</td>
+      </tr>
+      <tr class="odd">
+         <td style="text-align: left;">Geometry Import Time</td>
+         <td style="text-align: left;">IMPORT_AGE</td>
       </tr>
    </tbody>
 </table>

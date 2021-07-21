@@ -19,7 +19,7 @@ GPlates offers three digitisation tools in the **Tool Palette**:
 
 <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/digitise_polyline_35.png" /> </span> Polyline Geometry
 
-<span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/digitise_multipoint_35.png" /> </span> Point Geometries
+<span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/digitise_multipoint_35.png" /> </span> Multi-point Geometries
 
 <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/digitise_polygon_35.png" /> </span> Polygon Geometry
 
@@ -33,7 +33,7 @@ Once you are satisfied with the new feature location, click **Create Feature** b
 
 ![](screenshots/CreateFeature-1.png)
 
-The next step is to assign a geometry to the feature as well as:
+The next step is to assign a **geometry property** to the feature as well as:
 
 -   Plate ID
 
@@ -45,9 +45,18 @@ The next step is to assign a geometry to the feature as well as:
 
 ![](screenshots/CreateFeature-2.png)
 
-In the final step of feature creation, the feature is assigned to a feature collection. All data files that are currently loaded in GPlates will be listed here, as well as the **&lt; New Feature Collection &gt;** option. Choosing any one of the existing feature collections and clicking **Create** will add the newly digitised feature to that collection and return the user to the GPlates main window.
+Next you can choose to **add properties** to your new feature, or **edit existing properties**.
 
 ![](screenshots/CreateFeature-3.png)
+
+
+To Add available properties, you must select the property from the table (*e.g. gpml:age*), then click the **+ Add** button, where you are directed to the **Add/Edit Property** dialog, in which you can specify the features details.
+
+![](screenshots/CreateFeature-AddEditProperty.png)
+
+In the final step of feature creation, the feature is assigned to a feature collection. All data files that are currently loaded in GPlates will be listed here, as well as the **&lt; New Feature Collection &gt;** option. Choosing any one of the existing feature collections and clicking **Create** will add the newly digitised feature to that collection and return the user to the GPlates main window.
+
+![](screenshots/CreateFeature-4.png)
 
 If the **&lt; New Feature Collection &gt;** option is selected, a new feature collection will be created to hold the new feature. This feature collection will not yet have a name, and is not associated with a file on disk. Like all other feature collections, the new one will be found in the **Manage Feature Collections** dialog.
 

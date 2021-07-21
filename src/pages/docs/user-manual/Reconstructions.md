@@ -240,7 +240,7 @@ When this item is activated, the **Total Reconstruction Poles** dialog will appe
 
 The animation dialog, found in the Reconstruction menu, allows you to automate a reconstruction backwards or forwards through time. The user can set the start and end times by either entering the age or using the current time displayed in the main window. The options, frames per second can be set and there is also the option to loop the animation.
 
-4.1 Animation Dialog
+4.1 Configure Animation
 ----------------
 
 ![](screenshots/ConfigureAnimation.png)

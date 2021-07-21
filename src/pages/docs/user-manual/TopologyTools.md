@@ -46,16 +46,44 @@ Found on the **Tool Palette**, the **Build New Topology** tool and the **Edit To
       </tr>
       <tr class="even">
          <td>
+            <p><img src="icons/africa_topology_final_line_35.png" alt="icons/africa_topology_final_line_35.png" /></p>
+         </td>
+         <td>
+            <p>Build New Line Topology</p>
+         </td>
+         <td>
+            <p>H</p>
+         </td>
+         <td>
+            <p>Create a new dynamic polyline (for use as a section in a dynamically closing plate polygon) by adding sections of other features that define a line</p>
+         </td>
+      </tr>
+      <tr class="odd">
+         <td>
             <p><img src="icons/africa_topology_final_build2.png" alt="icons/africa_topology_final_build2.png" /></p>
          </td>
          <td>
-            <p>Build New Topology</p>
+            <p>Build New Boundary Topology</p>
          </td>
          <td>
             <p>B</p>
          </td>
          <td>
-            <p>Create a new dynamically closing plate polygon by adding sections of other features that define a boundary</p>
+            <p>Create a new dynamically closing plate polygon by adding sections of other features (and dynamic polylines) that define a boundary</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p><img src="icons/africa_topology_final_network.png" alt="icons/africa_topology_final_network.png" /></p>
+         </td>
+         <td>
+            <p>Build New Network Topology</p>
+         </td>
+         <td>
+            <p>N</p>
+         </td>
+         <td>
+            <p>Create a new dynamic deforming network topology from an existing or new polygon</p>
          </td>
       </tr>
       <tr class="odd">
@@ -89,9 +117,9 @@ The Topology Tab shows a summary of the topology under edit.
 
 When building a new topology, the Name, Plate Id, and Valid Time displays will be blank (these values will be set when finalizing the new topology). When editing an existing topology these will display that the various property values of that topology feature.
 
-The **Remove All Sections** button will delete all entries in Topology Sections Table, and effectively *clear* the topology. Use with caution this operation has no undo.
+The **Clear** button will delete all entries in Topology Sections Table, and effectively *clear* the topology. Use with caution this operation has no undo.
 
-The **Apply/Create…** button is used to apply all edits to the current topology (under the Edit Topology Tool), or to finalise the creation process (under the Build New Topology Tool).
+The **Create…** button is used to apply all edits to the current topology (under the Edit Topology Tool), or to finalise the creation process (under the Build New Topology Tool).
 
 2.4 Section Tab
 -----------
@@ -100,7 +128,7 @@ The **Apply/Create…** button is used to apply all edits to the current topolog
 
 The Section Tab shows the basic properties of the focused feature.
 
-The **Add Focused Feature** button will insert the feature into the Topology Sections Table at the current Insertion Point. See below for an explaination of the table and the insertion point.
+The **Add** button will insert the feature into the Topology Sections Table at the current Insertion Point. See below for an explaination of the table and the insertion point.
 
 3 Topology Sections Table
 =======================
@@ -187,7 +215,7 @@ The **Build New Topology** tool is the tool used to create new topology features
 5.1 Activate the Tool
 -----------------
 
-First, click on the **Build New Topology** tool button. You may need to deselect a feature you are currently working on for this tool to become available.
+First, click on a **Build New Topology** tool button, whether it be a line, boundary or network. You may need to deselect a feature you are currently working on for this tool to become available.
 
 Initially the new topology will have an empty list of sections. As you add sections to the topology, the Topology Sections Table will become populated with the features.
 
@@ -202,16 +230,16 @@ Next, select a feature by clicking on it on the Globe.
          <td class="icon">
             <img src="./images/icons/note.png" alt="Note">
          </td>
-         <td class="content" >You do not have to switch to the <b>Choose Feature</b> Tool. The Build Topology Tool is a specialised version of choosing features.</td>
+         <td class="content" >You do not have to switch to the <b>Choose Feature</b> Tool. The Build Topology Tools are a specialised version of choosing features.</td>
       </tr>
    </tbody>
 </table>
 
 If more than one feature is under the click point, you can use the Clicked Table to further refine your selection to the proper feature.
 
-Once you have identified the desired feature, click the **Add Focused Feature** button. The referenced feature is transferred to the Topology Sections Table, where it will be used to construct part of the topology’s boundary.
+Once you have identified the desired feature, click the **Add** button. The referenced feature is transferred to the Topology **Sections** Table, where it will be used to construct part of the topology’s boundary.
 
-Continue creating the intended boundary of the new topology by selecting a feature to focus it, and then clicking Add Focused Feature to insert it into the Topology Section Table.
+Continue creating the intended boundary of the new topology by selecting a feature to focus it, and then clicking Add Focused Feature to insert it into the Topology **Section** Table.
 
 It is recommended to create a new topology by cycling around the boundary systematically (either a clockwise or counter-clockwise) and appending features to the end of the Topology Sections Table.
 
@@ -225,7 +253,7 @@ Adding a feature does not change the insertion point, so be aware if you perform
 5.4 Creating the new feature
 ------------------------
 
-Once you are satisfied with the entries in the Topology Sections Table, and the resultant polygon geometry of the Topology itself, then you may create the new Topology via the **Apply/Create** button on the Topology Tab of the Topology Task Panel. This action will lead you through a series of dialogs to finalise the creation process.
+Once you are satisfied with the entries in the Topology Sections Table, and the resultant polygon geometry of the Topology itself, then you may create the new Topology via the **Create** button on the Topology Tab of the Topology Task Panel. This action will lead you through a series of dialogs to finalise the creation process.
 
 In the first step you will choose the Feature Type of the new Topology. Currently GPlates supports only one type of topology: **TopologicalClosedPlateBoundary**.
 
@@ -260,7 +288,7 @@ Notice that the topology will be drawn with the highlighting described above. Th
 
 From this point on the same basic editing steps described above, such as inserting or deleting a line, may be used to change the Topology Sections Table (the boundary list).
 
-Once you are satisfied with the changes, click on the **Apply/Create** button and the Topology’s boundary list will be changed to the current contents of the Topology Section Table.
+Once you are satisfied with the changes, click on the **Create** button and the Topology’s boundary list will be changed to the current contents of the Topology Section Table.
 
 More advanced editing may be required with **time-dependent** topologies. Due to the semi-automated nature of closing topologies a likely source of any problems that may arise is the constituting lines; namely the length and/or time of appearance and order of inclusion in the topology. If not closed properly the polygon will fail and exhibit anomalous vertices and skewed lines.
 

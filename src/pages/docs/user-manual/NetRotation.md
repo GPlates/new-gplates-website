@@ -42,6 +42,10 @@ Net rotations are calculated and exported as part of the Export tools found unde
 
         -   choose the desired output file format, velocity time step, and other settings as required.
 
+        -   "Configure Export Options"
+
+        -   "Specify Output Filenames"
+
         -   press "OK"
 
     -   press "Begin Export".

@@ -334,6 +334,17 @@ The default *Reconstruction Tree* layer is only applicable if another layer (suc
    </tbody>
 </table>
 
+Reconstructed Scalar Coverages Layer
+------------------------------------
+
+![](screenshots/ReconstructedScalarCoverages.png)
+
+There is one type of input for this `Inputs` section:
+
+-   '*Reconstructed coverage domains*' is where you can connect a *reconstructed geometries* layer.
+
+*See the chapter on **Crustal Deformation** for more information into the *Scalar Coverage Options*.
+
 Reconstructed Geometries Layer
 ------------------------------
 
@@ -378,6 +389,19 @@ The `Filled polygons` check box can be selected to colour fill features containi
 The following image shows filled polygons for the static polygons in the GPlates sample data.
 
 ![](screenshots/Layers-ReconstructedGeometries-FilledPolygons.png)
+
+Co-registration Layer
+---------------------
+
+![](screenshots/Layers-Options-Co-reg.png)
+
+There are two input options for the `Inputs` section of this layer:
+
+-   '*Reconstructed seed geometries*' where you can upload any *Reconstructed Geometries* layer.
+
+-   '*Reconstructed target geometries/rasters*' is where you can upload any *Reconstructed Geometries* or *Reconstructed Raster* layer.
+
+*For more on this layer, see the Chapter on **Spatiotemporal Co-registration**.*
 
 Reconstructed Raster Layer
 --------------------------
@@ -609,18 +633,18 @@ The resulting reconstructed raster (with the assistance of an age grid)…
 </table>
 
 
-Resolved Topological Closed Plate Boundaries Layer
+Resolved Topological Geometries Layer
 --------------------------------------------------
 
 This layer generates dynamic plate polygons by closing the plate boundary at each reconstruction time. The plate boundary consists of a sequence of regular features whose geometry is reconstructed and then stitched together to form a closed polygon region for each plate polygon feature. See the **Topology Tools** chapter for more information of topological features.
 
 ![](screenshots/Layers-TCCB-View.png)
 
-### Resolved Topological Closed Plate Boundaries Options
+### Resolved Topological Geometries Options
 
-A *Resolved Topological Closed Plate Boundaries* layer has the following configuration options:
+A *Resolved Topological Geometries* layer has the following configuration options:
 
-![](screenshots/Layers-Options-TCPB.png)
+![](screenshots/Layers-Options-RTG.png)
 
 The visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> determines whether the resolved topological closed plate polygons are drawn in the globe and map views.
 
@@ -628,15 +652,17 @@ Here is an example of turning off the visibility of the *Reconstructed Geometrie
 
 ![](screenshots/Layers-TCCB-Visibility.png)
 
-The `Input channels` section has two types of input:
+The `Input channels` section has three types of input:
 
--   "*Topological closed plate boundary features*" is one (or more) *feature collections* containing topological closed plate polygon features. These are features topologically reference regular features and form a continuously closing dynamic plate polygon from them through geological time.
+-   "*Topological geometry features*" is one (or more) *feature collections* containing topological closed plate polygon features. These are features topologically reference regular features and form a continuously closing dynamic plate polygon from them through geological time.
 
 -   "*Reconstruction tree*" is zero or one *Reconstruction Tree* layer.
 
-`Draw Style Setting` displays a dialog to control the colouring of features.
+-   "*Topological sections*" is any *Resolved Topological Geometries* or *Reconstructed Geometries* layer. 
 
-The `Filled polygons` check box can be selected to colour fill the topological polygon geometries. Currently the colour of each filled polygon will be the same as the polygon outline colour (ie, same colour as unfilled polygons).
+`Set Draw Style` displays a dialog to control the colouring of features.
+
+The `Filled polygons` check box can be selected to colour fill the topological polygon geometries. Currently the colour of each filled polygon will be the same as the polygon outline colour (ie, same colour as unfilled polygons). The `Fill opacity` and `Fill intensity` can also be altered. By making the polygons semi-transparent in this section it can assist the perception of other geometries. 
 
 <table class ="note">
    <tbody>
@@ -663,7 +689,7 @@ The `Filled polygons` check box can be selected to colour fill the topological p
 Resolved Topological Networks Layer
 -----------------------------------
 
-This layer generates dynamic plate polygons in a manner similar to a *Resolved Topological Closed Plate Boundaries* layer with the addition of deforming the plate region. See the **Topology Tools** chapter for more information of topological features.
+This layer generates dynamic plate polygons in a manner similar to a *Resolved Topological Geometries* layer with the addition of deforming the plate region. See the **Topology Tools** chapter for more information of topological features.
 
 ![](screenshots/Layers-TN-View.png)
 
@@ -748,5 +774,22 @@ The `Input channels` section has three types of input:
       </tr>
    </tbody>
 </table>
+
+3D Scalar Field Layer
+---------------------
+
+![](screenshots/Layers-Options-3DSF-Inputs.png)
+
+The `input` section has three types of input:
+
+-   '*Scalar field feature*' is the .gmpl scalar field file.
+
+-   '*Cross sections*' is where either a *Reconstructed Geometry*, *Resolved Topological Geometry*, or *Resolved Topological Network* is used as a blueprint for the cross section.
+
+-   '*Surface polygons mask*' can be connected to any *Reconstructed Geometry*, *Resolved Topological Geometry*, or *Resolved Topological Network* to create a mask over the scalar field.
+
+#### - Scalar field options
+
+*For a detailed explanation of the scalar field options, see the Chapter on **3D Volume Visualisation**.*
 
 

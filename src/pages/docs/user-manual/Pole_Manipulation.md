@@ -69,10 +69,6 @@ After the feature plate has been selected with the **Choose Feature** tool <span
 
 ![](screenshots/TaskPanel-PoleManipulation.png)
 
-**Constrain Latitude.**
-
-Ticking this option will ensure that any interactive dragging keeps the latitude unchanged.
-
 **Highlight Children.**
 
 Ticking this option will also highlight any plates that would be affected as a result of moving the selected plate due to the current rotation model.
@@ -86,4 +82,48 @@ Ticking this option will also highlight any plates that would be affected as a r
 
 ![](screenshots/ApplyReconstructionPole.png)
 
+2   Move Pole
+=============
 
+<table>
+   <colgroup>
+      <col style="width: 11%" />
+      <col style="width: 22%" />
+      <col style="width: 11%" />
+      <col style="width: 55%" />
+   </colgroup>
+   <tbody>
+      <tr class="odd">
+         <td>
+            <p>Icon</p>
+         </td>
+         <td>
+            <p>Tool</p>
+         </td>
+         <td>
+            <p>Shortcut</p>
+         </td>
+         <td>
+            <p>Operation</p>
+         </td>
+      </tr>
+      <tr class="even">
+         <td>
+            <p><img src="icons/plate_move_pole_35.png" alt="icons/plate_move_pole_35.png" /></p>
+         </td>
+         <td>
+            <p>Move Pole</p>
+         </td>
+         <td>
+            <p>O</p>
+         </td>
+         <td>
+            <p>Click on the pole marker and drag it to the desired location, or specify its location in the <b>Move Pole</b> Task Panel.</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+The **Move Pole** task panel allows users to manipulate the poles location by latitude and longitude. The panel also includes VGP and Stage Pole constraints.
+
+![](screenshots/TaskPanel-MovePole.png)

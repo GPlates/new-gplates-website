@@ -56,3 +56,12 @@ A new TRS can be created by selecting **New Sequence**. After filling in the fie
 </table>
 
 ![](screenshots/CreateTRS1.win32.png)
+
+Disabling or Enabling a Total Reconstruction Sequence
+==================================================
+
+A Total Reconstruction sequence can be disabled at any time by pressing the **Disable sequence** button, which can than be enabled by pressing the **Enable sequence** button at any point thereafter. 
+
+Sequences can also be deleted by clicking the **Delete Sequence** button. 
+
+

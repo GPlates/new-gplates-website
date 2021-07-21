@@ -13,11 +13,11 @@ Motion Paths illustrate the movement of plates over time, either with respect to
 2 Creating Motion Paths
 =====================
 
-To use motion paths in GPlates, you need to create or load a motion path feature. Motion path features can be created, like other features, with the digitisation tool. See **Creating New Features** for more information on using the digitisation tool. To create a motion path, begin by selecting the **Point Geometries** icon from the **Tool Palette**:
+To use motion paths in GPlates, you need to create or load a motion path feature. Motion path features can be created, like other features, with the digitisation tool. See **Creating New Features** for more information on using the digitisation tool. To create a motion path, begin by selecting the **Multi-point Geometries** icon from the **Tool Palette**:
 
-<span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/digitise_multipoint_35.png" /> </span> Point Geometries
+<span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/digitise_multipoint_35.png" /> </span> Multi-point Geometries
 
-After choosing the Point Geometries tool, select points on the globe which you wish to track. Once you are satisfied with the locations, click the **Create Feature** button and select **gpml:MotionPath** as the desired feature type.
+After choosing the Multi-point Geometries tool, select points on the globe which you wish to track. Once you are satisfied with the locations, click the **Create Feature** button and select **MotionPath** as the desired feature type.
 
 <table class ="note">
    <tbody>
@@ -32,7 +32,7 @@ After choosing the Point Geometries tool, select points on the globe which you w
 
 ![](screenshots/CreateFeatureMotionPath1.win32.png)
 
-Next allocate a plate id and the times of appearance and disappearance.
+Next allocate a plate id, relative plate id, the times of appearance and disappearance, as well as a Name if you desire.
 
 <table class ="note">
    <tbody>
@@ -47,7 +47,7 @@ Next allocate a plate id and the times of appearance and disappearance.
 
 ![](screenshots/CreateFeatureMotionPath2.win32.png)
 
-Next select the reference plate id. The motion path is calculated with respect to this reference plate id.
+Next, you can adjust the existing properties, including the relative plate in which the motion in calculated in reference to, or you can add new properties such as quality, name, reconstruction method etc.
 
 <table class ="note">
    <tbody>
@@ -55,12 +55,10 @@ Next select the reference plate id. The motion path is calculated with respect t
          <td class="icon">
             <img src="./images/icons/note.png" alt="Note">
          </td>
-         <td class="content" >To display the absolute motion (with respect to the mantle), set the reference plate id to zero.</td>
+         <td class="content" >To display the absolute motion (with respect to the mantle), set the relative plate id to zero.</td>
       </tr>
    </tbody>
 </table>
-
-Then specify the times between which the path segments are calculated.
 
 ![](screenshots/CreateFeatureMotionPath3.win32.png)
 
@@ -85,7 +83,7 @@ Motion path features can be edited like other features by selecting **Choose Fea
 5 Exporting motion paths
 ======================
 
-Reconstructed motion path geometries can be exported to GMT and ESRI Shapefile format. To export motion paths, select **Export…** from the **Reconstruction** menu. After selecting **Add**, you can select Motion Paths as the export data type.
+Reconstructed motion path geometries can be exported to GMT, Shapefiles, OGR-GMT, and GeoJSON formats. To export motion paths, select **Export…** from the **Reconstruction** menu. After selecting **Add Export...**, you can select Motion Paths as the export data type.
 
 ![](screenshots/MotionPathExport.win32.png)
 

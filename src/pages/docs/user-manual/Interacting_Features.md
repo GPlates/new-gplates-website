@@ -410,7 +410,10 @@ Deletes the currently chosen feature and removes it from the feature collection 
 
 The **Features Menu** contains a number of tools that are used to interact with features less directly. It has the following structure
 
-=== Assign Plate IDs Assigns reconstruction plate IDs (and optionally time of appearance/disappearance) to a set of features. This is typically done to features that do not yet have plate IDs (or valid time ranges) but it can also override an existing plate ID, of a feature, with a new plate ID. To start the process, use the **Assign Plate IDs** item on the **Features** menu.
+3.0 Assign Plate IDs
+=======
+
+This feature assigns reconstruction plate IDs (and optionally time of appearance/disappearance) to a set of features. This is typically done to features that do not yet have plate IDs (or valid time ranges) but it can also override an existing plate ID, of a feature, with a new plate ID. To start the process, use the **Assign Plate IDs** item on the **Features** menu.
 
 Two sets of features are required for this process:
 
@@ -439,11 +442,11 @@ Here the user can specify some options.
 
 Select the reconstruction time representing the geometry in the feature collections. The three options for reconstruction time are:
 
--   Present day: the reconstruction time is 0Ma.
+-   **Present day**: the reconstruction time is 0Ma.
 
--   Current reconstruction time: the reconstruction time in the main window.
+-   **Current reconstruction time**: the reconstruction time in the main window.
 
--   Specify reconstruction time: choose an arbitrary reconstruction time.
+-   **Specify reconstruction time**: choose an arbitrary reconstruction time.
 
 Note: Present day should be selected when assigning plate ids to VirtualGeomagneticPole features.
 
@@ -458,7 +461,18 @@ Note: Present day should be selected when assigning plate ids to VirtualGeomagne
    </tbody>
 </table>
 
-3.0.2 Specifying how to partition features
+3.0.2 Reconstruction Options
+-------------------------
+
+Here you specify whether to only partition features that exist at the reconstruction time. 
+
+If this option is checked then a feature is partitioned **only** is the specified reconstruction time falls between the feature's time of appearance and time of disappearance.
+
+For example, you may want to leave this **unchecked** if you are partitioning at present day and the feature's time period does not include present day.
+
+Note: *This option is ignored for VirtualGeomagneticPole features*.
+
+3.0.3 Specifying how to partition features
 ------------------------------------
 
 These three options determine how features are partitioned:
@@ -467,22 +481,20 @@ These three options determine how features are partitioned:
 
     Assign, to each feature *to be* partitioned, the plate ID of the *partitioning* polygon feature that its geometry(s) overlaps the most.
 
--   **Copy feature properties from the polygon that most overlaps each geometry in a feature**:
-
-    Assign, to each geometry of a feature *to be* partitioned, the plate ID of the *partitioning* polygon feature that its geometry overlaps the most. Note that a plate ID cannot be assigned to a *geometry* of a feature so instead extra features are created as necessary. For example if a feature *to be* partitioned has *two* geometries where one geometry overlaps plate A and the other geometry overlaps plate B then the feature *to be* partitioned will get split into two features - one feature containing the first geometry (and plate ID A) and the other containing the second geometry (and plate ID B). Note that although the feature is split into *two* features the geometries are not partitioned (cookie cut) and hence the geometry data remains unmodified.
-
 -   **Partition (cookie cut) feature geometry into polygons and copy feature properties**:
 
     Partition all geometries of a feature *to be* partitioned into the *partitioning* polygons intersecting them. This can create extra features, for example if a feature *to be* partitioned has only one geometry but it overlaps both plate A and plate B then it is partitioned into one or more geometries fully contained by plate A (and likewise for plate B). These partitioned geometries will now be contained by *two* features since they have different plate IDs. If the polygons do not cover the entire surface of the globe then it is possible for some features *to be* partitioned (or partitioned geometries) to fall outside all *partitioning* polygons. In this situation the feature *to be* partitioned is not modified and will retain its original feature properties (such as reconstruction plate ID). *VirtualGeomagneticPole* features are treated differently - these features are assigned to the polygon whose boundary contains the *VirtualGeomagneticPole*'s sample site point location. For these features the above options are ignored.
 
-3.0.3 Specifying which feature properties to copy
+3.0.4 Specifying which feature properties to copy from a polygon
 -------------------------------------------
 
 This options allows the user to specify which feature properties are copied *from* the *partitioning* polygon feature *to* the feature *to be* partitioned.
 
 Currently two feature property options are supported (in the future this will be extended to support any feature property):
 
--   Reconstruction plate ID: the reconstruction plate ID property,
+-   Reconstruction plate ID: the reconstruction plate ID property, at 0Ma reconstruction time.
+
+-   Conjugate plate ID: the conjugate plate ID property, at 0Ma reconstruction time.
 
 -   Time of appearance and disappearance: the time interval over which a feature exists.
 
@@ -493,6 +505,17 @@ Currently two feature property options are supported (in the future this will be
             <img src="./images/icons/note.png" alt="Note">
          </td>
          <td class="content" >These options are not mutually exclusive. Both can be selected.</td>
+      </tr>
+   </tbody>
+</table>
+
+<table class ="note">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <img src="./images/icons/note.png" alt="Note">
+         </td>
+         <td class="content" >If <b>Only copy properties suitable for partitioned feature types</b> is checked then only those feature properties that are allowed, by the GPlates Geological Information Model (GPGIM), for the partitioned feature type are copied. <i>For example</i>, <b>Conjugate plate ID</b> is only applicable for some feature types such as Isochrons. If unchecked then all requested feature properties are copied across - however some properties, such as conjugate plate IDs, might not get loaded when the feature collection is saved to file and reloaded if the feature's type does not support, for example, conjugate plate IDs. </td>
       </tr>
    </tbody>
 </table>
