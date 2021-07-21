@@ -260,34 +260,35 @@ To change the default colouring method for all feature collections, select **(Al
 
 1.  **Colour by plate ID.**
 
-   -   Currently with two options, being default or by region.
+Currently with two options, being default or by region.
 
 2.  **Colouring all features with a single user-specified colour.**
-   -   Currently with single colours of white, blue, black, silver, gold, pink, green, and orange. Any other colour can be created by selecting **Add** and then **Choose**.
+
+Currently with single colours of white, blue, black, silver, gold, pink, green, and orange. Any other colour can be created by selecting **Add** and then **Choose**.
 
 3.  **Colour by feature age.**
 
-   -   This colour is specified by the time of the feature's creation relative to the current view time. It currently has two options of Default or Monochrome. You can create your own option coloured by a CPT file by clicking **Add**, then **Open**.
+This colour is specified by the time of the feature's creation relative to the current view time. It currently has two options of Default or Monochrome. You can create your own option coloured by a CPT file by clicking **Add**, then **Open**.
 
 4.  **Colour by feature type.**
 
-   -   Currently this only has one default option, however you can create your own option and colour using an uploaded CPT by clicking **Add** and **Open**.
+Currently this only has one default option, however you can create your own option and colour using an uploaded CPT by clicking **Add** and **Open**.
 
 5.  **Coloring by an arbitrary colour.**
 
-   -   There is currently a variety of Hues, Saturations and Values to choose from. You can create your own colouring option by clicking **Add** and specifying the Hue, Saturation, Value, Variance Minimum and Maximum.
+There is currently a variety of Hues, Saturations and Values to choose from. You can create your own colouring option by clicking **Add** and specifying the Hue, Saturation, Value, Variance Minimum and Maximum.
 
 6.  **Colouring by the Geometries property.**
 
-   -   You can select to colour the feature collection by gml:name, gpml:subcategory, gpml:polarityChronId, or better yet, create your own colour by clicking **Add**, the specifying the Hue, Property Name, Saturation, Value, Variance Minimum and Maximum.
+You can select to colour the feature collection by gml:name, gpml:subcategory, gpml:polarityChronId, or better yet, create your own colour by clicking **Add**, the specifying the Hue, Property Name, Saturation, Value, Variance Minimum and Maximum.
 
 7.  **Colour by arbitrary chrons.** 
 
-   -   You can colour based on a polarity chron Id using the default, or you can create your own colouring by specifying the Normal and Reverse Hue once you **Add** a new option, in addition to specifying its fallback and identity property names.
+You can colour based on a polarity chron Id using the default, or you can create your own colouring by specifying the Normal and Reverse Hue once you **Add** a new option, in addition to specifying its fallback and identity property names.
 
 8.  **Colour by property.**
 
-   -   By choosing this option, you can choose to load in your own CPT file, specifying the `property_name` in which you wish to colour by.
+By choosing this option, you can choose to load in your own CPT file, specifying the `property_name` in which you wish to colour by.
 
 Instead of selecting **(All)**, you can also select individual layers to colour, by choosing from the **Select Layer** drop down menu.
 
