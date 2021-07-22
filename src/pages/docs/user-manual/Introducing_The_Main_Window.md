@@ -97,7 +97,7 @@ When you start GPlates, the first window you will encounter is the **Main Window
 Reconstruction View
 ===================
 
-The reconstruction view provides the user with a display of their data on the GPlates globe or map reconstructed to a moment in time. Control of the current reconstruction time, is located under the menu bar on the left, (see image below). The time can be controlled by both a text field, forwards and backwards time buttons, and the animation slider. In addition the shortcut `Ctrl+T` to enter a time value in the text field.
+The reconstruction view provides the user with a display of their data on the GPlates globe or map reconstructed to a moment in time. Control of the current reconstruction time is located under the menu bar on the left (see image below). The time can be controlled by both a text field, forwards and backwards time buttons, and the animation slider. In addition the shortcut `Ctrl+T` to enter a time value in the text field.
 
 ![](./screenshots/ReconstructionView-DynTopo.png)
 
@@ -120,7 +120,7 @@ The amount of camera zoom can be controlled by the following:
 
 -   Zoom Slider, which works on a power scale.
 
--   Keyboard shortcuts: use the *+* and *-* keys to zoom in and out, and the *1* key to reset the zoom level to 1:1 (100%) scale.
+-   Keyboard shortcuts: use the *+* and *-* keys to zoom in and out, and the *0* key to reset the zoom level to 1:1 (100%) scale.
 
 The position of the camera and mouse pointer are provided along the bottom of the reconstruction view.
 
@@ -458,7 +458,7 @@ List of Menu Operations
 
 -   A description of the operations within each menu will be explained in further detail in their respective chapters.
 
--   Shortcut keys are listed beside some menu items. On Mac OS, please substitute the `Command` (⌘) key in place of `Ctrl`.
+-   Shortcut keys are listed beside some menu items. On macOS, please substitute the `Command` (⌘) key in place of `Ctrl`.
 
 <table>
    <tbody>
@@ -475,19 +475,29 @@ List of Menu Operations
 File
 ----
 
--   Open Feature Collection `[Ctrl+O]`
+-   [Open Feature Collection](LoadingAndSaving/) `[Ctrl+O]`
 
--   Open Recent Session
+-   [Open Project](/docs/user-manual/Projects_and_Recent_Sessions/)
 
--   Import Raster
+-   [Save Project](/docs/user-manual/Projects_and_Recent_Sessions/)
 
--   Import Time-Dependent Raster
+-   [Save Project As](/docs/user-manual/Projects_and_Recent_Sessions/)
+
+-   [Open Recent Session](/docs/user-manual/Projects_and_Recent_Sessions/)
+
+-   [Clear Session](/docs/user-manual/Projects_and_Recent_Sessions/)
+
+-   Import
+
+    -   [Import Raster](/docs/user-manual/DataFileTypes/)
+
+    -   [Import Time-Dependent Raster](/docs/user-manual/DataFileTypes/)
 
 -   Connect WFS
 
--   Manage Feature Collections `[Ctrl+M]`
+-   [Manage Feature Collections](docs//user-manual/LoadingAndSaving/) `[Ctrl+M]`
 
--   View Read Errors
+-   [View Read Errors](/docs/user-manual/LoadingAndSaving/)
 
 -   Quit `[Ctrl+Q]`
 
@@ -496,28 +506,48 @@ Edit
 
 -   Undo `[Ctrl+Z]`
 
+    Undo the last geometry edit performed by a Digitisation tool (eg, undo adding a point).
+
 -   Redo `[Ctrl+Y]`
 
--   Query Feature `[Ctrl+R]`
+    Redo the last undo of a geometry edit performed by a Digitisation tool (eg, redo adding a point).
 
--   Edit Feature `[Ctrl+E]`
+-   [Query Feature](/docs/user-manual/Interacting_Features/) `[Ctrl+R]`
 
--   Copy Geometry to Digitise Tool
+-   [Edit Feature](/docs/user-manual/Interacting_Features/) `[Ctrl+E]`
 
--   Clone Feature
+-   [Copy Geometry to Digitise Tool](/docs/user-manual/Interacting_Features/)
 
--   Delete Feature `[Delete]`
+-   [Clone Feature](/docs/user-manual/Interacting_Features/)
 
-    Deletes the currently chosen feature and removes it from the feature collection that contained it. Note that the feature collection is marked as modified but is not automatically saved to file (see the **Loading And Saving** chapter).
+-   [Delete Feature](/docs/user-manual/Interacting_Features/) `[Delete]`
+
+-   Clear Selection | Clear Geometry | Clear Quick Measure | Clear | Reset Rotation `[Ctrl+K]`
+
+    This menu item differs depending on which tool in the **Tool Palette** is currently selected, and
+    is only present for the following tools:
+
+    - *Choose Feature* - **Clear Selection** is displayed and it will unselect any currently selected feature.
+
+    - *Digitise New (Polygon | Polyline | Multi-point) Geometry* - **Clear Geometry** is displayed and
+      it will clear the geometry currently being digitised.
+
+    - *Build New (Line | Boundary | Network) Topology* - **Clear** is displayed and it will clear any
+       topology currently being built.
+
+    - *Edit Topology Sections* - **Clear** is displayed and it will clear any topology currently being edited.
+
+    - *Modify Reconstruction Pole* - **Reset Rotation** is displayed and it will reset (to zero) the current
+      rotation being manipulated.
 
 -   Preferences `[Ctrl+Comma]`
 
 View
 ----
 
--   Set Projection
+-   [Set Projection](/docs/user-manual/Controlling_View/)
 
--   Camera Location
+-   [Camera Location](/docs/user-manual/Controlling_View/)
 
     -   Set Location `[Ctrl+Shift+L]`
 
@@ -529,35 +559,37 @@ View
 
     -   Move Right
 
--   Camera Rotation
+-   [Camera Rotation](/docs/user-manual/Controlling_View/)
 
-    -   Rotate Clockwise `[]]`
+    -   Rotate Clockwise `]`
 
-    -   Rotate Anti-clockwise `[[]`
+    -   Rotate Anti-clockwise `[`
 
-    -   Reset Orientation `[^]`
+    -   Reset Orientation `^`
 
--   Camera Zoom
+-   [Camera Zoom](/docs/user-manual/Controlling_View/)
 
     -   Set Zoom
 
-    -   Zoom In
+    -   Zoom In `+`
 
-    -   Zoom Out
+    -   Zoom Out `-`
 
-    -   Reset Zoom
+    -   Reset Zoom `0`
 
--   Configure Text Overlay
+-   [Configure Text Overlay](/docs/user-manual/Controlling_View/)
 
--   Configure Velocity Legend Overlay
+-   [Configure Velocity Legend Overlay](/docs/user-manual/Controlling_View/)
 
--   Configure Graticules
+-   [Configure Graticules](/docs/user-manual/Controlling_View/)
 
--   Choose Background Colour
+-   [Choose Background Colour](/docs/user-manual/Controlling_View/)
 
 -   Show Stars
 
--   Geometry Visibility
+    Select this to show stars in the background of the 3D globe (stars are not visible in the 2D map views).
+
+-   [Geometry Visibility](/docs/user-manual/Controlling_View/)
 
     -   Show Static Points
 
@@ -694,7 +726,7 @@ Window
 
 -   Open New Window `[Ctrl+N]`
 
-    Creates a new instance of GPlates. Currently each instance created this way is completely separate with its own main window and dialogs. Any program state such as files loaded prior to selecting **New Window** is not transferred across to the new instance. This feature is useful mainly for Mac OS X where it is not possible to run multiple instances of the same application from the *Finder*.
+    Creates a new instance of GPlates. Currently each instance created this way is completely separate with its own main window and dialogs. Any program state such as files loaded prior to selecting **New Window** is not transferred across to the new instance. This feature is useful mainly for macOS where it is not possible to run multiple instances of the same application from the *Finder*.
 
 -   Show Layers `[Ctrl+L]`
 

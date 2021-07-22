@@ -52,7 +52,7 @@ The **Reconstruction View** is the region of the GPlates interface which deals w
 2 Tool Palette
 ============
 
-The first two tools in the **Tool Palette** control your view of the GPlates globe or map. The **Tool Palette** includes camera positioning tools, feature selection tools and drawing tools. A tool is activated by clicking on it; only one tool can be active at any time. The **Current Feature Panel** will change to reflect the current tool that is activated.
+The first two tools in the **Tool Palette** control your view of the GPlates globe or map. The **Tool Palette** includes camera positioning tools, feature selection tools and drawing tools. A tool is activated by clicking on it; only one tool can be active at any time. The **Task Panel** on the right will change to reflect the current tool that is activated.
 
 <table>
    <colgroup>
@@ -116,11 +116,11 @@ The **View Menu** enables the user to manipulate the globe, and includes the fol
 
 **Set Projection.**
 
-Clicking this menu item will open a dialog allowing you to select what projection GPlates should use to display data. A shortcut for this functionality can be found on the bottom of the **Reconstruction View**.
+Clicking this menu item will open a dialog allowing you to select what projection GPlates should use to display data (and for 2D map views, also what central meridian to use). Alternatively, a list box of projections to set can be found on the bottom of the **Reconstruction View**.
 
 **Camera Location / Rotation / Zoom.**
 
-These menu items permit control of the camera position in order to view the globe.
+These menu items permit control of the camera in order to view the globe.
 
 3.1 Configure Text Overlay
 ----------------------
@@ -138,7 +138,7 @@ Once you have created a Velocity Layer, you can configure a **Velocity Legend Ov
 
    -   **Maximum arrow length**: should you choose this option, the arrow length on the screen (in pixels) will not exceed the value provided by you. The scale used (cm/yr) will be the largest multiple of 1,2,5,10 etc which satisfies the user-provided maximum arrow length.
 
-      -   The scale will change as appropriate in response to changes in zoom, or changes in the Arrow Scale in the Layers dialog.
+       -   The scale will change as appropriate in response to changes in zoom, or changes in the Arrow Scale in the Layers dialog.
 
    -   **Fixed Scale**: should you choose this option, the scale (cm/yr) of the arrow is fixed, but the legend's arrow length will change as appropriate in response to changes in zoom, or changes in the Arrow Scale in the Layers dialog.
 
@@ -166,7 +166,7 @@ This option can be used to select the background colour of the globe (or map in 
          <td class="icon">
             <img src="./images/icons/note.png" alt="Tip">
          </td>
-         <td class="content" >If the value entered in the `Alpha channel` option is less than 255 then the globe will be semi-transparent and you will be able to see the rear of the globe (and geometries/rasters on the rear) through the front of the globe.</td>
+         <td class="content" >If the value entered in the `Alpha channel` option is less than 255 then the globe will be semi-transparent and you will be able to see the rear of the globe (and geometries/rasters on the rear) through the front of the globe. This has no effect in the 2D map views.</td>
       </tr>
    </tbody>
 </table>
@@ -179,9 +179,11 @@ Use this panel to control which types of geometry are visible on the globe. By c
 
 Selecting "**Show Static Points/Lines/Polygons/Multipoints**" will prevent feature geometries of those types from being drawn on the globe. When creating Velocity Domain Points, the points themselves can impede on the visual asthetics of the globe, and can therefore be hidden by unselecting **Show Static Multipoints**.
 
-By selecting or unselecting the "**Show Topological Sections/Lines/Polygons/Networks**", you can display or hide geometries such as active margins, deforming mesh's and networks, basins, or subduction zones.
+By selecting or unselecting the "**Show Topological Sections/Lines/Polygons/Networks**", you can display or hide geometries such as active margins, deforming meshes and networks, basins, or subduction zones.
 
-Selecting "**Show Velocity Arrows**", when a Velocity layer is active, can be used to control the display of the velocity arrows.
+In particular, unselecting "**Show Topological Sections**" will hide all geometries that were used to build any topologies. For example, if a topological polygon is made up of four intersecting lines, then those four lines will be hidden. Note that those lines could be a mixture of static lines and topological lines and they would all be hidden (regardless of the settings of **Show Static Lines** and **Show Topological Lines**).
+
+Selecting "**Show Velocity Arrows**" can be used to control the display of the velocity arrows (in Velocity layers).
 
 Selecting "**Show Rasters**" gives you the ability to display or hide any rasters loaded on the globe.
 
@@ -196,7 +198,7 @@ The **Window Menu** enables the user to control the windows GPlates opens to dis
 
 **Open New Window.** `[Ctrl + N]`
 
-Creates a new instance of GPlates. Currently each instance created this way is completely separate with its own main window and dialogs. Any program state such as files loaded prior to selecting **New Window** is not transferred across to the new instance. This feature is useful mainly for Mac OS X where it is not possible to run multiple instances of the same application from the *Finder*.
+Creates a new instance of GPlates. Currently each instance created this way is completely separate with its own main window and dialogs. Any program state such as files loaded prior to selecting **New Window** is not transferred across to the new instance. This feature is useful mainly for macOS where it is not possible to run multiple instances of the same application from the *Finder*.
 
 **Show Layers.** `[Ctrl + L]`
 
@@ -237,63 +239,67 @@ To leave **Full Screen** mode, you can:
 5 Manage Colouring
 ================
 
-Currently, by default the geometry colouring is controlled by Python plugin. Go to **Chapter 19: Python** and read paragraph **3.1. Draw Style plugins** for details.
+Colouring is managed using the **Draw Style Dialog**. It allows the user to customise how feature geometries are coloured. 
 
-<table class ="warning">
+![](screenshots/ManageColouring-FeatureAge.png)
+
+There are three ways to open the **Draw Style Dialog**:
+
+-   Select the **Manage Colouring** menu item in the **Features** menu:
+
+![](screenshots/OpenDrawStyleDlg.png)
+
+-   Click the Draw Style Icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/Draw_Style_Icon.png" /> </span> in the top right of the layers dialog:
+
+![](screenshots/OpenDrawStyleDlgFromLayer.png)
+
+-   Click the **Set Draw style** link in options of a `Reconstructed Geometries` layer, `Resolved Topological Geometries` layer or `Resolved Topological Network` layer.
+
+![](screenshots/OpenDrawStyleDlgFromLayerOpt.png)
+
+To change the default colouring scheme for all feature collections, select **(All)** from the drop-down box at the top. Alternatively, to change the colouring scheme for only a single layer, select the desired layer from the drop-down box. In either case you can then choose a colouring scheme from one of the following categories:
+
+1.  **Colour by plate ID.**
+
+    Currently with two options, being default or by region.
+
+2.  **Colouring all features with a single user-specified colour.**
+
+    Currently with single colours of white, blue, black, silver, gold, pink, green, and orange. Any other colour can be created by selecting **Add** and then **Choose**.
+
+3.  **Colour by feature age.**
+
+    This colour is specified by the time of the feature's creation relative to the current view time. It currently has two options of Default or Monochrome. You can create your own option coloured by a CPT file by clicking **Add**, then **Open**.
+
+4.  **Colour by feature type.**
+
+    Currently this only has one default option, however you can create your own option and colour using an uploaded CPT by clicking **Add** and **Open**.
+
+5.  **Arbitrary colours.**
+
+    There is currently a variety of Hues, Saturations and Values to choose from. You can create your own colouring option by clicking **Add** and specifying the Hue, Saturation, Value, Variance Minimum and Maximum.
+
+6.  **Arbitrary colouring by feature property.**
+
+    You can select to colour the feature collection by gml:name, gpml:subcategory, gpml:polarityChronId, or better yet, create your own colour by clicking **Add**, the specifying the Hue, Property Name, Saturation, Value, Variance Minimum and Maximum.
+
+7.  **Arbitrary colouring by chrons.** 
+
+    You can colour based on a polarity chron Id using the default, or you can create your own colouring by specifying the Normal and Reverse Hue once you **Add** a new option, in addition to specifying its fallback and identity property names.
+
+8.  **Colour by feature property.**
+
+    By choosing this option, you can choose to load in your own CPT file, specifying the `property_name` in which you wish to colour by. GPlates then colours each feature by querying the value of its feature property (using the specified property name) and using that value to lookup the `CPT` palette (mapping values to colours).
+
+<table>
    <tbody>
       <tr>
-         <td class="icon">
-            <img src="./images/icons/warning.png" alt="Warning">
+         <td class="icon" style="width:5rem; display:inline-table;">
+            <img src="./images/icons/note.png" alt="Note" style="width:3rem;">
          </td>
-         <td class="content" >The following content of this paragraph is deprecated. It is only valid when you start GPlates with "--no-python" command line option. If you have no idea about the "--no-python" option, it is very likely that you should skip this paragraph and go to Chapter 19.</td>
+         <td class="content">The <b>Python</b> chapter covers how to create your own colouring scheme by registering your own <b>Draw Style</b> plugin.</td>
       </tr>
    </tbody>
 </table>
 
-The **Manage Colouring** operation, found on the new **Features** menu, opens the **Manage Colouring** dialog. It allows the user to customise how feature geometries are coloured. 
-
-![](screenshots/ManageColouring-FeatureAge.png)
-
-You can also navigate to the **Draw Style** colour managing dialog by clicking the Draw Style Icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/Draw_Style_Icon.png" /> </span> in the top right of the layers dialog. 
-
-To change the default colouring method for all feature collections, select **(All)** from the drop-down box at the top, then choose from one of the four major categories:
-
-1.  **Colour by plate ID.**
-
-Currently with two options, being default or by region.
-
-2.  **Colouring all features with a single user-specified colour.**
-
-Currently with single colours of white, blue, black, silver, gold, pink, green, and orange. Any other colour can be created by selecting **Add** and then **Choose**.
-
-3.  **Colour by feature age.**
-
-This colour is specified by the time of the feature's creation relative to the current view time. It currently has two options of Default or Monochrome. You can create your own option coloured by a CPT file by clicking **Add**, then **Open**.
-
-4.  **Colour by feature type.**
-
-Currently this only has one default option, however you can create your own option and colour using an uploaded CPT by clicking **Add** and **Open**.
-
-5.  **Coloring by an arbitrary colour.**
-
-There is currently a variety of Hues, Saturations and Values to choose from. You can create your own colouring option by clicking **Add** and specifying the Hue, Saturation, Value, Variance Minimum and Maximum.
-
-6.  **Colouring by the Geometries property.**
-
-You can select to colour the feature collection by gml:name, gpml:subcategory, gpml:polarityChronId, or better yet, create your own colour by clicking **Add**, the specifying the Hue, Property Name, Saturation, Value, Variance Minimum and Maximum.
-
-7.  **Colour by arbitrary chrons.** 
-
-You can colour based on a polarity chron Id using the default, or you can create your own colouring by specifying the Normal and Reverse Hue once you **Add** a new option, in addition to specifying its fallback and identity property names.
-
-8.  **Colour by property.**
-
-By choosing this option, you can choose to load in your own CPT file, specifying the `property_name` in which you wish to colour by.
-
-Instead of selecting **(All)**, you can also select individual layers to colour, by choosing from the **Select Layer** drop down menu.
-
 For the options that support the inclusion of user-specified **Colour Palette Files** (`.CPT`), a few sample `CPT` files are included with the sample data to choose from, given you do not wish to create your own.
-
-
-
-

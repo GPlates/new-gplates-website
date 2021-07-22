@@ -22,67 +22,59 @@ To open embedded Python Console, select the **Open Python Console** menu item in
 Python plugins
 ==============
 
-So far GPlates only allows users to provide **Draw Style** plugins, which can be used to control the apparence of geometries in globe or map view, for example colouring. More types of plugins will be supported in the future.
+So far GPlates only allows users to provide **Draw Style** plugins, which can be used to control the appearance of geometries in globe or map view, for example colouring. More types of plugins will be supported in the future.
 
 Draw Style plugins
 ------------------
 
-The following python code defines a draw style plugin class called PlateId. It assigns colour to geometries contained in the given feature based on its **plate id**. The register() function at the bottom creates and registers an instance of **PlateId** plugin with GPlates by calling GPlates Python API **register\_draw\_style()** and passing through the plugin object instance as function parameter. The registered Draw Styles will be listed in "Draw Style Dialog".
+The registered Draw Styles will be listed in the **Draw Style Dialog**.
 
 ![](screenshots/DrawStyleDlg.png)
 
-There are three ways to open "Draw Style Dialog". \* Select **Manage Colouring** item from **Feature** menu.
+The following paragraphs cover how to create a **Draw Style** plugin and register it with GPlates.
 
-![](screenshots/OpenDrawStyleDlg.png)
+The following python code defines a **Draw style** plugin class called `PlateId`. It assigns a colour to the geometries contained in the given feature based on its **plate id**. The `register()` function at the bottom creates and registers an instance of the `PlateId` plugin with GPlates by calling the GPlates Python API function `register_draw_style()` and passing the `PlateId` instance as the function argument.
 
--   Click button in **Layer** dialog.
-
-![](screenshots/OpenDrawStyleDlgFromLayer.png)
-
--   Click **Draw Style Setting** link in "Layer Options".
-
-![](screenshots/OpenDrawStyleDlgFromLayerOpt.png)
-
-    class PlateId:                                  #the definition of "Draw Style" plugin.
-            def __init__(self):                     #standard Python constructor function.
+    class PlateId:                                  # the definition of "Draw Style" plugin.
+            def __init__(self):                     # standard Python constructor function.
                     pass
 
-            #The get_style() function is called by GPlates when rendering a feature.
-            #A feature reference is passed in as function parameter.
-            #The style data can be sent back by the "style" object reference.
+            # The get_style() function is called by GPlates when rendering a feature.
+            # A feature reference is passed in as function parameter.
+            # The style data can be sent back by the "style" object reference.
 
             def get_style(self, feature, style):
-                    id = feature.plate_id()                 #get "plate id" from the feature
-                    id = int(id)                            #convert the id to integer
-                    palette = self.cfg['my_palette']        #get user defined palette by name from configuration dictionary.
-                    p_id = pygplates.PaletteKey(id)         #create a palette key from plate id
-                    style.colour = palette.get_color(p_id)  #get colour from palette and put it into style object
+                    id = feature.plate_id()                 # get "plate id" from the feature
+                    id = int(id)                            # convert the id to integer
+                    palette = self.cfg['my_palette']        # get user-defined palette by name from configuration dict
+                    p_id = pygplates.PaletteKey(id)         # create a palette key from plate id
+                    style.colour = palette.get_color(p_id)  # get colour from palette and put it into style object
 
-            def get_config(self):                           #GPlates calls this function to get configuration information.
+            def get_config(self):                           # GPlates calls this function to get configuration info
                     self.cfg_dict = {}
                     self.cfg_dict['my_palette/type'] = 'Palette'
                     return self.cfg_dict
 
-            def set_config(self, config):                   #GPlates calls this function to set configuration information.
+            def set_config(self, config):                   # GPlates calls this function to set configuration info
                     self.cfg = config
 
 
     def register():
             pygplates.Application().register_draw_style(PlateId())
 
--   The "register()" function in Python script files residing in **GPlates Python Script Directory** will be called by GPlates automaticly during GPlates starts up.
+The `register()` function in Python script files residing in the **GPlates Python Script Directory** will be called by GPlates automatically when GPlates starts up.
 
--   The "get\_config()" function is called by GPlates to generate **Draw Style** configuration GUI panel.
+The `get_config()` function is called by GPlates to generate a **Draw Style** configuration GUI panel.
 
 ![](screenshots/DrawStyleConfig.png)
 
-The following python code defines a **Palette** item called "my\_palette".
+The following python code defines a **Palette** item called `my_palette`.
 
-    self.cfg_dict['my_palette/type'] = 'Palette'    #defines a Palette item called my_palette.
+    self.cfg_dict['my_palette/type'] = 'Palette'    # defines a Palette item called my_palette.
 
 So far three types of configuration item are supported, namely **Palette**, **Color** and **String**.
 
--   The "set\_config()" is called by GPlates to set configuration dictionary into the current Python object instance, so that it can be retrieved later.
+-   The `set_config()` is called by GPlates to set the configuration dictionary into the current Python object instance, so that it can be retrieved later.
 
 GPlates Python Script Directory
 -------------------------------
@@ -91,21 +83,10 @@ Currently, GPlates looks into two directories for Python script files.
 
 -   ./scripts
 
--   $system\_app\_data\_dir/script
+-   $system_app_data_dir/script
 
-The **GPlates Python Script Directory** setting can be changed in **Preference Dialog**. To open the **Preference Dialog**, select the **Reference** menu in the **Edit** menu or press **Ctrl+,**.
+The **Python Script Directory** setting can be changed in the **Preferences Dialog**. To open the **Preferences Dialog**, select the **Preferences** menu in the **Edit** menu, or press `Ctrl+,`.
 
 ![](screenshots/OpenPrefPythonDir.png)
 
 ![](screenshots/PrefPythonDir.png)
-
-Disable Python
-==============
-
-In case the embedded Python interpreter caused unexpected problems, users can disable GPlates' Python functionality by starting GPlates with "no-python" command line option.
-
-Type in the following command in your terminal.
-
-    gplates --no-python
-
-

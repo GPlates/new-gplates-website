@@ -31,7 +31,7 @@ What's new in pyGPlates revision 28:-
   * Usually they are built in GPlates, but this can now be done in pyGPlates.
   * See the [sample code](/docs/pygplates/sample-code/pygplates_create_topological_features.html).
 * Supports deforming trenches when used with [subduction convergence script](https://github.com/EarthByte/PlateTectonicTools/blob/master/ptt/subduction_convergence.py).
-* Much faster [querying of reconstructions](docs/pygplates/generated/pygplates.RotationModel.html#pygplates.RotationModel.get_rotation).
+* Much faster [querying of reconstructions](/docs/pygplates/generated/pygplates.RotationModel.html#pygplates.RotationModel.get_rotation).
 * Bug fixes.
 
 Download this release from the [Download](/download) page.
