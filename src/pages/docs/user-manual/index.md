@@ -27,8 +27,6 @@ next: ''
 
 [Chapter 9: Export](/docs/user-manual/Export/)
 
-[Chapter 10: Exporting net lithosphere rotations](/docs/user-manual/NetRotation/)
-
 [Chapter 11: Interacting with Features](/docs/user-manual/Interacting_Features/)
 
 [Chapter 12: More on Reconstructions](/docs/user-manual/MoreReconstructions/)
