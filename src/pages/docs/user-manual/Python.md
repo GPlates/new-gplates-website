@@ -74,7 +74,7 @@ The following python code defines a **Palette** item called `my_palette`.
 
 So far three types of configuration item are supported, namely **Palette**, **Color** and **String**.
 
--   The `set_config()` is called by GPlates to set the configuration dictionary into the current Python object instance, so that it can be retrieved later.
+The `set_config()` is called by GPlates to set the configuration dictionary into the current Python object instance, so that it can be retrieved later.
 
 GPlates Python Script Directory
 -------------------------------

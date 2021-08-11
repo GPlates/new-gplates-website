@@ -13,7 +13,7 @@ Before you load any data into GPlates the globe will appear as a blank sphere; i
          <td class="icon">
             <img src="./images/icons/tip.png" alt="Tip">
          </td>
-         <td class="content">You can still manipulate the view of the globe even though it’s blank. See Chapter 5, Controlling the View for more details.</td>
+         <td class="content">You can still manipulate the view of the globe even though it’s blank. See the chapter <b>Controlling the View</b> for more details.</td>
       </tr>
    </tbody>
 </table>
@@ -51,7 +51,7 @@ There are several ways to load a data file or collection of files into GPlates.
          <td class="icon">
             <img src="./images/icons/tip.png" alt="Tip">
          </td>
-         <td class="content">You can open multiple files at once via this dialog. Hold down `Ctrl` to select additional files, then click <strong>Open</strong>.</td>
+         <td class="content">You can open multiple files at once via this dialog. Hold down <b>Ctrl</b> to select additional files, then click <strong>Open</strong>.</td>
       </tr>
    </tbody>
 </table>
@@ -78,24 +78,33 @@ There are several ways to load a data file or collection of files into GPlates.
 </table>
 
 
-2.3 The Open Recent Session menu
+2.3 The Open Recent Session and Open Project menu items
 ----------------------------
 
 Whenever you close GPlates, it automatically remembers which set of files you were working on last time. You can resume your previous session by using the menu.
 
-**See Chapter on Projects and Recent Sessions** for more information on this. 
+You can also open a project file containing a previous session that you explicitly saved to a project file.
+
+See the [Projects and Recent Sessions](/docs/user-manual/Projects_and_Recent_Sessions/) chapter for more information.
 
 2.4 How do I load a raster image in GPlates?
 ----------------------------------------
 
 To load a raster image into GPlates it must first have a GPML file associated with it. This is done by *importing* the raster into GPlates. This only needs to be done once for each raster. After that you can simply load the GPML file (created during the import process) into GPlates like you would a regular feature collection.
 
-For information on how to *import* a raster please see the **Data File Types** chapter.
+For information on how to *import* a raster please see the [Rasters](/docs/user-manual/Rasters/) chapter.
+
+2.5 How do I load a 3D scalar field in GPlates?
+----------------------------------------
+
+Like a raster, to load a a 3D scalar field into GPlates it must first have a GPML file associated with it. This is done by *importing* the scalar field data into GPlates. This only needs to be done once for each scalar field. After that you can simply load the GPML file (created during the import process) into GPlates like you would a regular feature collection.
+
+For information on how to *import* a 3D scalar field please see the [3D Volume Visualisation](/docs/user-manual/3D_Volume_Visual/) chapter.
 
 3 The Manage Feature Collections Dialog
 =====================================
 
-This dialog window enables you to load new files, and save, reconfigure and unload currently-loaded files. This is where you will find any file-specific operations. To control how GPlates uses the data from those files, please see the **Layers** chapter and related functionality.
+This dialog window enables you to load new files, and save, reconfigure and unload currently-loaded files. This is where you will find any file-specific operations. To control how GPlates uses the data from those files, please see the [Layers](/docs/user-manual/Layers/) chapter and related functionality.
 
 1.  Go to the **File Menu** in the menu bar.
 
@@ -137,7 +146,7 @@ This dialog window enables you to load new files, and save, reconfigure and unlo
       </tr>
       <tr class="odd">
          <td style="text-align: left;">Actions</td>
-         <td style="text-align: left;">A collection of operations relevant to this file</td>
+         <td style="text-align: left;">A collection of operations relevant to this file (see below)</td>
       </tr>
    </tbody>
 </table>
@@ -158,7 +167,7 @@ This dialog window enables you to load new files, and save, reconfigure and unlo
 
 There are three different ways to save a file in GPlates.
 
-The **Manage Feature Collections** dialog contains a table of controls and status information about the feature collections that are loaded in GPlates; each row corresponds to a single feature collection, and lists file name, format and available actions.
+The **Manage Feature Collections** dialog contains a table of controls and status information about the feature collections that are loaded in GPlates; each row corresponds to a single feature collection, and lists the filename, format and available actions.
 
 ![](screenshots/ManageFeatureCollections-Row.png)
 
@@ -329,7 +338,7 @@ The **Manage Feature Collections** dialog contains a table of controls and statu
 3.2 Saving all modified files
 -------------------------
 
-If a file has been modified in GPlates, it will appear with a red background colour to highlight it. As a convenient shortcut for saving all your changes in one go, the **Manage Feature Collections** dialog has a **Save All** button.
+If a file has been modified in GPlates, it will appear with a red background colour to highlight it. As a convenient shortcut for saving all your changes in one go, the **Manage Feature Collections** dialog has a **Save All** button. This saves all files that:
 
 1.  Have been modified in GPlates since they were last loaded/saved.
 
@@ -430,12 +439,12 @@ When you load a file which causes warnings, GPlates will display a warning icon 
 5.1 Introduction
 ------------
 
-GPlates keeps track of any changes you make to files while they are loaded. To remind you that some feature collections have unsaved changes, GPlates will display the <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='icons/unsaved_changes_red_disk_bang_22.png' /> </span> icon in the status area. Hover over the icon to see a list of modified files, or click it to open the **Manage Feature Collections** dialog.
+GPlates keeps track of any changes you make to files while they are loaded. To remind you that some feature collections have unsaved changes, GPlates will display the <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='icons/unsaved_changes_red_disk_bang_22.png' /> </span> icon in the status area (bottom of GPlates). Hover over the icon to see a list of modified files, or click it to open the **Manage Feature Collections** dialog.
 
 5.2 Closing GPlates with unsaved changes
 ------------------------------------
 
-If you close GPlates while there are still unsaved changes, GPlates will ask you to confirm this action, indicating which files have been modified and allowing you to select one of three actions to resolve the situation.
+If you close GPlates while there are still unsaved changes, GPlates will ask you to confirm this action, indicating which files have been modified and allowing you to select one of two actions to resolve the situation.
 
 ![](screenshots/UnsavedChangesWarning.png)
 
@@ -453,15 +462,5 @@ If you close GPlates while there are still unsaved changes, GPlates will ask you
 
 2.  This gives you an opportunity to go back and manually save the files you wish to keep, and discard the rest.
 
-<!-- -->
-
-#### Save all modified feature collections
-
-1.  GPlates will save every file that has been modified but not yet saved.
-
-2.  In the event of a new feature collection which has not yet been given a file name, you will be prompted to give each one a name using the standard save dialog. However, this may lead to ambiguity about which feature collection is being saved, and it is advised to use the "Don’t Close" option to carefully examine the situation.
-
-3.  If all files were saved successfully, GPlates will close.
-
-The **Unsaved Changes** dialog may also be triggered when using the **Open Recent Session** functionality. If the files you currently have open have changes made to them, the act of opening a new session will replace them, and GPlates will warn you about this in the same way.
+The topic of unsaved changes is covered in more detail in [Projects and Recent Sessions](/docs/user-manual/Projects_and_Recent_Sessions/) where opening a new project, loading a recent session and clearing a session also interact with unsaved changes and trigger similar **Unsaved Changes** dialogs.
 

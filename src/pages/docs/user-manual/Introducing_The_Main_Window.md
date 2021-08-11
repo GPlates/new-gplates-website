@@ -475,7 +475,7 @@ List of Menu Operations
 File
 ----
 
--   [Open Feature Collection](LoadingAndSaving/) `[Ctrl+O]`
+-   [Open Feature Collection](/docs/user-manual/LoadingAndSaving/) `[Ctrl+O]`
 
 -   [Open Project](/docs/user-manual/Projects_and_Recent_Sessions/)
 
