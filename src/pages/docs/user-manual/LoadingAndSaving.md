@@ -1,8 +1,8 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 4: Loading and Saving'
-prev: 'DataFileTypes'
-next: 'Projects_and_Recent_Sessions'
+title: 'Chapter 3: Loading and Saving'
+prev: 'Introducing_The_Main_Window'
+next: 'Import'
 ---
 
 Before you load any data into GPlates the globe will appear as a blank sphere; in order to start with GPlates you will need to know how to load, save and unload data.
@@ -21,7 +21,7 @@ Before you load any data into GPlates the globe will appear as a blank sphere; i
 1 Introducing Feature Collections
 ===============================
 
-When a data file is loaded in GPlates, it is loaded in the **Feature Collection**. All data in GPlates are represented as features (e.g. MOR, volcano, etc) — whether geological data or reconstruction data. Regardless of the file format, all features will be contained internally as GPlates features. However GPlates *will* remember the name and format of the file for saving.
+When a data file is loaded in GPlates, it is loaded in a **Feature Collection**. All data in GPlates are represented as features (e.g. MOR, volcano, etc) — whether geological data or reconstruction data. Regardless of the file format, all features will be contained internally as GPlates features. However GPlates *will* remember the name and format of the file for saving.
 
 All data loaded in GPlates are represented as **features**; all data-manipulation functions are operations upon features. GPlates offers a rich variety of feature types, enabling GPlates to handle geographic, paleo-geographic, geological and tectonic data. Basin, Coastline, Craton, Fault, Hotspot, Isochron, Mid-Ocean Ridge, Seamount, Subduction Zone, Suture and Volcano are just some of the many feature types handled by GPlates. The meta-data attributes of data are contained within named **properties** of the features.
 
@@ -92,14 +92,14 @@ See the [Projects and Recent Sessions](/docs/user-manual/Projects_and_Recent_Ses
 
 To load a raster image into GPlates it must first have a GPML file associated with it. This is done by *importing* the raster into GPlates. This only needs to be done once for each raster. After that you can simply load the GPML file (created during the import process) into GPlates like you would a regular feature collection.
 
-For information on how to *import* a raster please see the [Rasters](/docs/user-manual/Rasters/) chapter.
+For information on how to *import* a raster please see the [Importing Rasters and 3D Scalar Fields](/docs/user-manual/Import) chapter.
 
 2.5 How do I load a 3D scalar field in GPlates?
 ----------------------------------------
 
-Like a raster, to load a a 3D scalar field into GPlates it must first have a GPML file associated with it. This is done by *importing* the scalar field data into GPlates. This only needs to be done once for each scalar field. After that you can simply load the GPML file (created during the import process) into GPlates like you would a regular feature collection.
+Like a raster, to load 3D scalar field data into GPlates the data must first be imported and have a GPML file associated with it. This only needs to be done once for each scalar field. After that you can simply load the GPML file (created during the import process) into GPlates like you would a regular feature collection.
 
-For information on how to *import* a 3D scalar field please see the [3D Volume Visualisation](/docs/user-manual/3D_Volume_Visual/) chapter.
+For information on how to *import* a 3D scalar field please see the [Importing Rasters and 3D Scalar Fields](/docs/user-manual/Import) chapter.
 
 3 The Manage Feature Collections Dialog
 =====================================

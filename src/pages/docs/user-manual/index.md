@@ -13,9 +13,9 @@ next: ''
 
 [Chapter 2: Introducing the Main Window](/docs/user-manual/Introducing_The_Main_Window/)
 
-[Chapter 3: Data File Types](/docs/user-manual/DataFileTypes/)
+[Chapter 3: Loading and Saving](/docs/user-manual/LoadingAndSaving/)
 
-[Chapter 4: Loading and Saving](/docs/user-manual/LoadingAndSaving/)
+[Chapter 4: Importing Rasters and 3D Scalar Fields](/docs/user-manual/Import/)
 
 [Chapter 5: Projects and Recent Sessions](/docs/user-manual/Projects_and_Recent_Sessions/)
 
