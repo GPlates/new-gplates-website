@@ -7,6 +7,10 @@ next: ''
 
 ### GPlates User Manual
 
+<div style="max-width: 700px;">
+  <div class="gcse-search"></div>
+</div>
+
 ****
 
 [Chapter 1: Introduction to GPlates](/docs/user-manual/Introduction_Gplates/)
