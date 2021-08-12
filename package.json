@@ -1,7 +1,7 @@
 {
   "name": "gplates-website",
   "description": "The website for GPlates project",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": "GPlates developers",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
