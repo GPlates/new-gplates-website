@@ -1,20 +1,22 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 3: Data File Types'
-prev: 'Introducing_The_Main_Window'
-next: 'LoadingAndSaving'
+title: 'Chapter 4: Importing Rasters and 3D Scalar Fields'
+prev: 'LoadingAndSaving'
+next: 'Projects_and_Recent_Sessions'
 ---
 Introduction
 ============
 
-This chapter covers the visualisation techniques within GPlates: which image formats are able to be loaded into GPlates and how to go about doing this.
+Before a raster image or 3D scalar field data can be loaded into GPlates it must first be imported. This pre-processes the data into a form that is efficient for GPlates to load. It also associates the raster or scalar field with a GPML file. The import only needs to be done once for each raster or scalar field. After that you can simply load the GPML file (created during the import process) into GPlates like you would a regular feature collection (as covered in the [Loading and Saving](/docs/user-manual/LoadingAndSaving/) chapter).
 
-Rasters in GPlates
-==================
+Note that features containing vector geometries (points, polylines and polygons) do not require an import process. For example you can load a Shapefile directly into GPlates without first having to import it into GPML format.
 
-GPlates has the facility to display raster images on the globe.
+Rasters
+=======
 
-GPlates can also reconstruct rasters back in geological time with the assistance of a set of static polygons (static meaning the shape of the polygons do not change in contrast to topological plate polygons which have dynamic shapes - see the **Topology Tools** chapter). For more information on reconstructing rasters please see the **More on Reconstructions** chapter.
+GPlates has the facility to display raster images on the 3D globe (and the 2D map views).
+
+GPlates can also reconstruct rasters back in geological time with the assistance of a set of static polygons (static meaning the shape of the polygons do not change in contrast to topological plate polygons which have dynamic shapes - see the **Topology Tools** chapter). For more information on reconstructing rasters please see the [Layers](/docs/user-manual/Layers/) chapter.
 
 What are raster images?
 -----------------------
@@ -23,7 +25,7 @@ A *raster image* is one formed by a 2-dimensional rectangular grid coloured by p
 
 The ability to display raster images on the globe enables the user to superimpose any kind of imagery or gridded data (such as satellite imagery, topography, bathymetry etc) on the surface of the globe, to be viewed at the same time as reconstructible features.
 
-The ability to *reconstruct* raster images on the globe enables the user to visualise the movement of raster data as if it were "cutout" and "attached" to a set of polygons with the movement of the respective cutout raster pieces dictated by the movement of the individual polygons. For more information on reconstructing rasters please see the **More on Reconstructions** chapter.
+The ability to *reconstruct* raster images on the globe enables the user to visualise the movement of raster data as if it were "cutout" and "attached" to a set of polygons with the movement of the respective cutout raster pieces dictated by the movement of the individual polygons. For more information on reconstructing rasters please see the [Layers](/docs/user-manual/Layers/) chapter.
 
 Which image formats does GPlates understand?
 --------------------------------------------
@@ -32,23 +34,18 @@ GPlates reads images in a variety of formats which can be roughly categorised in
 
 ### RGBA images
 
-These type of images have a Red, Green, Blue and optional Alpha value (usually 8-bits each) for each *pixel* in the image. Some of the supported file formats include JPEG (as known as JPG), PNG, TIFF, GIF. Formats like JPEG do not have transparency (the Alpha value) whereas other formats such as PNG support transparency. When raster images, containing transparent regions, are drawn on top of other rasters or vector geometries, the underlying rasters/geometries will be visible through the transparent regions. See the **Layers** chapter for more information on the visual ordering of rasters (or, more generally, layers). Some of these formats have inbuilt compression (such as JPEG) which result in smaller file sizes but can introduce compression artifacts depending on the compression quality. Other formats such as BMP do not have compression and can be quite large. Regardless of the file size the amount of memory used internally inside GPlates is the same for same-sized images.
+These type of images have a Red, Green, Blue and optional Alpha value (usually 8-bits each) for each *pixel* in the image. Some of the supported file formats include JPEG (as known as JPG), PNG, TIFF, GIF. Formats like JPEG do not have transparency (the Alpha value) whereas other formats such as PNG support transparency. When raster images, containing transparent regions, are drawn on top of other rasters or vector geometries, the underlying rasters/geometries will be visible through the transparent regions. See the [Layers](/docs/user-manual/Layers/) chapter for more information on the visual ordering of rasters (or, more generally, layers). Some of these formats have inbuilt compression (such as JPEG) which result in smaller file sizes but can introduce compression artifacts depending on the compression quality. Other formats such as BMP do not have compression and can be quite large. Regardless of the file size the amount of memory used internally inside GPlates is the same for same-sized images.
 
 ### Floating-point images
 
-There also exist integer formats but the floating-point formats are much more common and useful in general. These images have one (or more) raster *bands* where each *band* has a single *channel* (a single float-point value per pixel in the image). Most images have a single raster band. Supported file formats include NetCDF/GMT, GeoTIFF, ERMapper and Erdas Imagine. NetCDF files typically have the filename extension ".nc" or ".grd". These formats are not compressed and, since they are usually used in high-resolution scenarios, they can be quite large.
+There also exist integer formats but the floating-point formats are much more common and useful in general. These images have one (or more) raster *bands* where each *band* has a single *channel* (a single float-point value per pixel in the image). Most images have a single raster band. Supported file formats include NetCDF/GMT, GeoTIFF, ERMapper and Erdas Imagine. NetCDF files typically have the filename extension ".nc" or ".grd".
 
-RGB and RGBA images can be visualised directly since they already contain colour values (Red, Green and Blue) per pixel. Floating-point images require a mapping from a float-point value to a colour value (RGB). This is done in the *Raster options* part of the raster layer. A new layer becomes visible in the *Layers* dialog for each raster loaded, or imported, into GPlates. For information on the *Raster options* please see the **Layers** chapter.
-
-How do I load a raster image in GPlates?
-----------------------------------------
-
-To load a raster image into GPlates it must first have a GPML file associated with it. This is done by *importing* the raster into GPlates. This only needs to be done once for each raster. After that you can simply load the GPML file (created during the import process) into GPlates like you would a regular feature collection (see the **Loading And Saving** chapter).
+While RGB and RGBA images can be visualised directly since they already contain colour values (Red, Green and Blue), floating-point images require a mapping from a floating-point value to a colour value (RGB). This is done in the *Raster options* part of the raster layer. A new layer becomes visible in the *Layers* dialog for each raster loaded, or imported, into GPlates. For information on the *Raster options* please see the [Layers](/docs/user-manual/Layers/) chapter.
 
 How do I import a raster image into GPlates?
 --------------------------------------------
 
-A global raster image is *imported* using the operation **Import Raster** in the GPlates **File Menu**. This will show a dialog requesting the user to choose the raster image file to be loaded.
+A global raster image is *imported* using the operation **Import Raster** in the sub-menu **Import** of the GPlates **File** menu. This will show a dialog requesting the user to choose the raster image file to be loaded.
 
 ![](screenshots/Open-Raster-Single.png)
 
@@ -80,7 +77,7 @@ The default choice is *band\_1*. You can also type a new band name that describe
 </table>
 
 
-If the imported raster file contains an embedded spatial reference system with georeferencing then it is imported and hence GPlates will not ask you to specify the raster georeferencing. The georeferencing converts the raster’s pixel coordinates to its spatial reference system coordinates. The spatial reference system typically includes both a geographic coordinate system (datum) and an optional map projection. The following shows an imported raster containing an embedded Lambert Conformal Conic projection:
+If the imported raster file contains an embedded spatial reference system with georeferencing then it is imported, and hence GPlates will not ask you to specify the raster georeferencing. The georeferencing converts the raster’s pixel coordinates to its spatial reference system coordinates. The spatial reference system typically includes both a geographic coordinate system (datum) and an optional map projection. The following shows an imported raster containing an embedded Lambert Conformal Conic projection:
 
 ![](screenshots/RasterImport-MercatorImportLambertConformalConic.png) ![](screenshots/RasterImport-OrthographicImportLambertConformalConic.png)
 
@@ -100,17 +97,6 @@ Next you will asked if you want to save the raster to an existing, or new, featu
 
 ![](screenshots/Open-Raster-FeatureCollection.png)
 
-<table>
-   <tbody>
-      <tr>
-         <td class="icon" style="width:5rem; display:inline-table;">
-            <img src="./images/icons/note.png" alt="Note" style="width:3rem;">
-         </td>
-         <td class="content">Raster images currently do not display while using map projections other than the 3D Globe.</td>
-      </tr>
-   </tbody>
-</table>
-
 Time-Dependent Raster Sets
 ==========================
 
@@ -121,10 +107,10 @@ GPlates has the facility to display time-dependent raster images (that is, raste
 
 In reality, what GPlates is displaying is a time-sequence of raster images — each image in the sequence corresponding to a particular instant in geological time. The user can instruct GPlates to load a sequence of raster image files contained within a single folder, and GPlates will display the appropriate image for the reconstruction time. As the user changes the reconstruction time, the raster image displayed on the globe will update accordingly.
 
-How do I load an existing time-dependent raster set?
-----------------------------------------------------
+How do I import a time-dependent raster set into GPlates?
+---------------------------------------------------------
 
-A time-dependent raster set is loaded using the operation **Import Time-dependent Raster** in the GPlates **File Menu**. This will show a dialog where the exact sequence of files can be assembled.
+A time-dependent raster set is imported using the operation **Import Time-dependent Raster** in the sub-menu **Import** of the GPlates **File** menu. This will show a dialog where the exact sequence of files can be assembled.
 
 Click the **Add Directory** button to choose a folder containing time-dependent rasters.
 
@@ -133,6 +119,8 @@ Click the **Add Directory** button to choose a folder containing time-dependent 
 This will fill the Import Raster file sequence dialog with those file names.
 
 ![](screenshots/Open-Raster-TimeDep-RasterFileSequence.png)
+
+Alternatively you can click the **Add files** button to select each file in the raster set.
 
 A time-dependent raster set is treated the same as a regular raster image by GPlates, in the sense that when a new raster image or time-dependent raster set is loaded, it will create a single layer.
 
@@ -150,34 +138,45 @@ The same georeferencing and raster band options apply to time-dependent rasters 
 </table>
 
 
-Links to existing time-dependent raster sets may be found on the "Downloads" page of the GPlates website: <https://www.gplates.org/downloads>
+Links to existing time-dependent raster sets may be found on the "Downloads" page of the GPlates website: <https://www.gplates.org/download>
 
 How can I create my own time-dependent raster set?
 --------------------------------------------------
 
-As already described, a time-dependent raster set is actually a sequence of raster image files contained within a single folder. The name of the folder is unimportant, but the raster image files must adhere to three rules:
+As already described, a time-dependent raster set is actually a sequence of raster image files contained within a single folder. The name of the folder is unimportant, but the raster image files must adhere to two rules:
 
 1.  Each raster image file must be in a raster image format which GPlates is able to handle. Any format available to a single imported raster is also available to a time-dependent raster sequence.
 
-2.  Each raster image file must have a file-name of the form “\*-*time*.jpg” or “\**\_time*.jpg”, where *time* is an integer value representing a number of millions of years before the present day — this is the instant of geological time to which that raster image corresponds. Note that “.jpg” is just an example - it could be any valid file format extension.
+1.  Either of the following two rules must apply:
+    1.  Each raster image file has a file-name of the form `*-time.jpg` or `*_time.jpg`, where `time` is an integer (or floating-point) value representing a number of millions of years before the present day — this is the instant of geological time to which that raster image corresponds. You can also optionally have `Ma` after `time`. Note that `.jpg` is just an example - it could be any valid file format extension.
 
-For example, the files:
+        For example, the files:
+        
+        -   topography-0.jpg
+        
+        -   topography-1.jpg
+        
+        -   topography-2.jpg
 
--   topography-0.jpg
+        ...together form a time-dependent raster set. In the above example the image lasts from 0-2Ma and has "time steps" of 1Ma.
+    
+        Note that since each `time` is at the end of the filename (and preceeded by `-` or `_`) the filename prefix does not need to be common across all the filenames. For example:
+        
+        -   b-topography-0.jpg
+        
+        -   a-topography-1.jpg
+        
+        -   c-topography-2.jpg
+        
+        will produce the same sequence ordered by time.
 
--   topography-1.jpg
+    1.  Alternatively each raster image can have a file-name of the form `<common_prefix>time<common_suffix>.jpg` where `<common_prefix>` and `<common_suffix>` represent the parts of each filename before and after the `time` that are common across all files, with the only varying part of the filename being `time`. Note that `.jpg` is just an example - it could be any valid file format extension.
 
--   topography-2.jpg
-
-together form a time-dependent raster set. In the above example the image lasts from 0-2Ma and has "time steps" of 1Ma.
-
-Note that the filename prefix does not need to be common across all the filenames. For example:
-
--   b-topography-0.jpg
-
--   a-topography-1.jpg
-
--   c-topography-2.jpg
-
-will produce the same sequence ordered by time.
+        For example:
+        
+        -   topography0image.jpg
+        
+        -   topography1image.jpg
+        
+        -   topography2image.jpg
 
