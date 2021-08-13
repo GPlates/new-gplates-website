@@ -21,7 +21,7 @@ title: User Docs
 </table>
  
 
-### [GPlates Tutorials](https://sites.google.com/site/gplatestutorials/)
+### [GPlates Tutorials](https://tutorials.gplates.org)
 ---
 
 <table class ="doc-list">
