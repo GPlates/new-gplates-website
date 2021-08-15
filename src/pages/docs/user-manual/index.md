@@ -5,7 +5,7 @@ prev: ''
 next: ''
 ---
 
-### GPlates User Manual
+<div style="font-size:1.5em"> <strong>GPlates User Manual</strong> </div>
 
 <div style="max-width: 700px;">
   <div class="gcse-search"></div>

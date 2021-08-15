@@ -7,7 +7,7 @@ import prevIcon from '../img/prev.png'
 import nextIcon from '../img/next.png'
 import homeIcon from '../img/home.png'
 
-export const UserManualTemplate = ({ title, content, contentComponent, prev , next}) => {
+export const UserManualTemplate = ({ title, toc,  content, contentComponent, prev , next}) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -19,6 +19,7 @@ export const UserManualTemplate = ({ title, content, contentComponent, prev , ne
               <h1 className="title is-size-2 has-text-weight-bold is-bold-light" style={{textAlign:'center'}}>
                 {title}
               </h1>
+              <PageContent className="toc" content={toc} />
               <PageContent className="content box" content={content} />
               <table style={{margin:'auto',}}>
                 <colgroup>
@@ -56,6 +57,7 @@ export const UserManualTemplate = ({ title, content, contentComponent, prev , ne
 
 UserManualTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  toc: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   prev: PropTypes.string,
@@ -70,6 +72,7 @@ const UserManual = ({ data }) => {
       <UserManualTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        toc={post.tableOfContents} 
         content={post.html}
         prev={post.frontmatter.prev}
         next={post.frontmatter.next}
@@ -88,6 +91,7 @@ export const userManualQuery = graphql`
   query UserManual($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
+      tableOfContents
       frontmatter {
         title
         prev
