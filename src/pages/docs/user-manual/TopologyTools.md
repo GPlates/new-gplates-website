@@ -46,7 +46,7 @@ Found on the **Tool Palette**, the **Build New Topology** tool and the **Edit To
       </tr>
       <tr class="even">
          <td>
-            <p><img src="icons/africa_topology_final_line_35.png" alt="icons/africa_topology_final_line_35.png" /></p>
+            <p><img src="icons/topology_build_line_35.png" alt="icons/africa_topology_final_line_35.png" /></p>
          </td>
          <td>
             <p>Build New Line Topology</p>
@@ -74,7 +74,7 @@ Found on the **Tool Palette**, the **Build New Topology** tool and the **Edit To
       </tr>
       <tr class="even">
          <td>
-            <p><img src="icons/africa_topology_final_network.png" alt="icons/africa_topology_final_network.png" /></p>
+            <p><img src="icons/topology_build_network.png" alt="icons/africa_topology_final_network.png" /></p>
          </td>
          <td>
             <p>Build New Network Topology</p>
