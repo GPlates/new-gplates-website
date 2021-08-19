@@ -2,7 +2,6 @@
 templateKey: 'user-manual'
 title: 'Chapter 26: Crustal Deformation'
 prev: 'Co_registration'
-next: '3D_Volume_Visual'
 ---
 
 1 Introduction

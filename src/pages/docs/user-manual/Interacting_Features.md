@@ -2,7 +2,7 @@
 templateKey: 'user-manual'
 title: 'Chapter 11: Interacting with Features'
 prev: 'Export'
-next: 'MoreReconstructions'
+next: 'TotalReconstructionSequences'
 
 ---
 This chapter provides a guide to interacting with the geological features which you are creating or editing in GPlates.
@@ -559,7 +559,7 @@ The mesh caps are used to calculate velocities. The sphere will be covered by 12
 
 ### 3.1.1 CitcomS
 
-A key application of GPlates, beyond its deep-time GIS functionality, is its interperability with a range of numerical geodynamic modelling codes of plate tectonics and mantle convection. The first code to be coupled to GPlates was the spherical version of the California Institute of Technology Convection in the Mantle code, **CitcomS**. The resolved plate topologies are used to calculate plate velocities, which are sampled using the CitcomS diamond-shaped mesh caps and exported as simple text ASCII (DAT, XY, etc.) or GMPL files. The geometry of subduction zones and their polarity through time is also exported through GPlates. In addition to assimilating the subduction zone geometries and plate velocities, the age of the oceanic crust and the tectonothermal age of the continents are used to assimilate the thermal lithosphere from the GPlates reconstructions into CitcomS.
+A key application of GPlates, beyond its deep-time GIS functionality, is its interperability with a range of numerical geodynamic modelling codes of plate tectonics and mantle convection. The first code to be coupled to GPlates was the spherical version of the California Institute of Technology Convection in the Mantle code, **CitcomS**. The resolved plate topologies are used to calculate plate velocities, which are sampled using the CitcomS diamond-shaped mesh caps and exported as simple text ASCII (DAT, XY, etc.) or GPML files. The geometry of subduction zones and their polarity through time is also exported through GPlates. In addition to assimilating the subduction zone geometries and plate velocities, the age of the oceanic crust and the tectonothermal age of the continents are used to assimilate the thermal lithosphere from the GPlates reconstructions into CitcomS.
 
 ![](screenshots/GenerateVelocityDomainPoints-CitcomS.png)
 
