@@ -16,7 +16,7 @@ Rasters
 
 GPlates has the facility to display raster images on the 3D globe (and the 2D map views).
 
-GPlates can also reconstruct rasters back in geological time with the assistance of a set of static polygons (static meaning the shape of the polygons do not change in contrast to topological plate polygons which have dynamic shapes - see the **Topology Tools** chapter). For more information on reconstructing rasters please see the [Layers](/docs/user-manual/Layers/) chapter.
+GPlates can also reconstruct rasters back in geological time with the assistance of a set of static polygons (static meaning the shape of the polygons do not change in contrast to topological plate polygons which have dynamic shapes - see the [Topology Tools](/docs/user-manual/TopologyTools/) chapter). For more information on reconstructing rasters please see the [Layers](/docs/user-manual/Layers/) chapter.
 
 What are raster images?
 -----------------------
@@ -180,3 +180,51 @@ As already described, a time-dependent raster set is actually a sequence of rast
         
         -   topography2image.jpg
 
+3D Scalar Fields
+================
+
+What is a 3D scalar field?
+--------------------------
+
+A 3D scalar field is formed by a sequence of 2D rasters, each assigned to a certain depth. Each raster can also represent a specific depth and time, making it a time-sequence of 3D scalar fields in this case. GPlates has the ability to render a scalar field as **Isosurfaces** (surfaces of constant scalar value), or **Cross sections** (2D vertical slices).
+
+Once a Scalar Field has been imported, via a *.gpml* file, a 3D Scalar Field layer is constructed. In this layer, various parameters can be set to determine the properties of the projected volume. 
+
+Please see the section [3D Scalar Field Layer](/docs/user-manual/Layers/##3d-scalar-field-layer) for more information on this layer type.
+
+How do i import a 3D scalar field into GPlates?
+-----------------------------------------------
+
+You can load a pre-made 3D scalar field by navigating to **Manage Feature Collections**, and opening either the GPROJ or GPML file (GPROJ is recommended for novice users). Alternatively, you can drag and drop the GPROJ or GPML file onto the globe.
+
+![](screenshots/ManageFeatureCollections_3DSF.png)
+
+How do i create my own 3D scalar field and import it into GPlates?
+------------------------------------------------------------------
+
+To create a 3D scalar field, you first must create a series of 2D rasters and assign them each to a depth (km), ensuring the file names include the depth (format explored later in this section). To then import these rasters as a 3D scalar field into GPlates, you must navigate to **File** > **Import** > **Import 3D Scalar Field**.
+
+Then you can either choose to create a directory to the folder containing the 2D rasters for your 3D scalar field, by clicking *Add directory*, or you can add the files individually by choosing *Add File*.
+
+![](screenshots/Import_3DScalarField.png)
+
+The 2D raster files you select will make up the depth layers of the 3D scalar field, so must have the same size. You can manually enter the layer depths, or similarly to time-dependent rasters, the file names can be named in a way that enters it for you. For exmaple, the file names in the above screenshot are formatted like so:
+
+-   MITP08-regional-2553.grd
+
+-   MITP08-regional-2733.grd
+
+These files are organised in the format of -depth.grd that allows GPlates to recognise the **integer** and associate it as a depth in km's. It then organises the files numerically based on this integer to create the 3D scalar field. The <preffix> does not have to be uniform across the files when the depth is preceeded by either `-` or `_`.
+
+<table>
+   <tbody>
+      <tr>
+         <td class="icon" style="width:5rem; display:inline-table;">
+            <img src="./images/icons/note.png" alt="Note" style="width:3rem;">
+         </td>
+         <td class="content">The rasters themselves can be any of the raster file types that GPlates accepts, such as .grd, .img, .ers, .nc, .tiff, or .tif.</td>
+      </tr>
+   </tbody>
+</table>
+
+Once you have loaded all the required 2D raster files to make up the depth layers of a 3D scalar field, select **Next**, and assign the scalar field to a new feature collection by selecting **< Create a new feature collection >**. Your raster files will now create a 3D Scalar Field layer and be projected onto the globe. To learn how to edit the layer, visit the [3D Scalar Field Layer](/docs/user-manual/Layers/##3d-scalar-field-layer) section in the **Layers** chapter. 
