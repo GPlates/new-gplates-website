@@ -221,13 +221,13 @@ Below is a table of available export data types.
       </tr>
       <tr class="even">
          <td>
-            <p>Projected Geometries (and Rasters)</p>
+            <p>Projected Geometries (and Rasters, 3D Scalar Fields)</p>
          </td>
          <td>
             <p>SVG</p>
          </td>
          <td>
-            <p>Export projected geometries (and projected raster) data according to the current View settings.</p>
+            <p>Export projected geometries (and projected raster, 3D scalar field) data according to the current View settings.</p>
          </td>
       </tr>
       <tr class="odd">
@@ -408,6 +408,11 @@ Below is a table of available export data types.
       </tr>
    </tbody>
 </table>
+
+Projected Geometries (and Rasters, 3D Scalar Fields)
+----------------------------------------------------
+
+This is similar to the **Image (screenshot)** export, in the sense that both capture the (projected) viewport as it appears in GPlates, except to Scalable Vector Graphics (SVG) format instead of an image. Reconstructed geometries are represented as SVG vector geometries (points/polylines/polygons). Whereas both rasters and 3D scalar fields are represented as SVG images. For example, a 3D scalar field is rendered as a flat 2D image (as it appears in the viewport).
 
 Net Rotations
 -------------
