@@ -5,7 +5,7 @@ prev: 'Layers'
 next: 'Export'
 ---
 
-1 Introduction
+Introduction
 ============
 
 The motions of tectonic plates through geological time may be described and simulated using plate-tectonic reconstructions. Plate-tectonic reconstructions are the calculations of the probable positions, orientations and motions of tectonic plates through time, based upon the relative (plate-to-plate) positions of plates at various times in the past which may be inferred from other data. Geological, geophysical and paleo-geographic data may be attached to the simulated plates, enabling a researcher to trace the motions and interactions of these data through time.
@@ -23,8 +23,34 @@ Geological time instants in GPlates are measured in units of Mega-annum (Ma), in
    </tbody>
 </table>
 
+Reconstruction Theory
+====================
 
-2 Main Window Interface Components
+### Plate IDs
+
+As discussed earlier in this documentation, GPlates uses the concept of a **Plate ID** to ascribe tectonic motion to a feature. All features using the same plate ID move in unison when reconstructed back through time. A plate ID is a non-negative whole number. Assigning specific meanings to specific plate IDs, such as making plate ID 714 correspond to northwest Africa, is up to the creator of the rotation file.
+
+Plate IDs do not correspond to a physical tectonic plate, although they may represent the motion of features which are on that physical plate. Plate IDs can also be assigned to represent the motion of things on the same physical plate relative to one another - for example, the motion of an island arc caused by back-arc spreading. A subduction zone can be assigned one plate ID, and its associated island arc can be assigned another plate ID. The motion of both of these plate IDs can be anchored to a third plate ID, representing the global motion of the physical plate underneath the subduction zone and island arc.
+
+### Finite Rotations
+
+Euler’s Displacement Theorem tells us that any displacement on the surface of the globe can be modelled as a rotation about some axis. This combination of axis and angle is called a **finite rotation**. Finite rotations are used by GPlates as the elementary building blocks of plate motion.
+
+### Total Reconstruction Poles
+
+Total Reconstruction Poles tie finite rotations to plate motion. A total reconstruction pole is a finite rotation which "reconstructs" a plate from its present day position to its position at some point in time in the past. It is expressed as the combination of a "fixed" plate id, a "moving" plate id, a point in time and a finite rotation.
+
+Reconstructions are defined in a relative fashion; A single total reconstruction pole defines the motion of one plate id (the "moving" plate id) relative to another (the "fixed" plate id) at a specific moment in geological time. A sequence of total reconstruction poles is needed in order to fully model the motion of one particular plate across the surface of the globe throughout time.
+
+### Anchored Plate ID
+
+A sequence of total reconstruction poles is used to model the motion of a single plate across the surface of the globe. The total reconstruction poles describe the relative motion between each plate, but ultimately this motion has to be traced back to a single plate ID which is considered "anchored". GPlates calls this the **Anchored Plate ID**. Generally, this plate ID corresponds to an absolute reference frame, such as a hotspot, paleomagnetic, or mantle reference frame. The convention is to assign the anchored plate ID to 000, but GPlates allows any plate ID to be used as the anchored plate ID.
+
+### The Rotation Hierarchy
+
+To create the model of global plate rotations that is used in GPlates, total reconstruction poles are arranged to form a hierarchy, or tree-like structure. At the top of the hierarchy is the anchored plate ID. Successive plate IDs are further down the chain, linked by total reconstruction poles. To calculate the absolute rotation of a plate ID of a plate with a given plate ID. (relative to the fixed reference defined by the anchored plate ID, at a given time), GPlates starts at that point in the hierarchy and works its way up to the top - to the root of the tree.
+
+Main Window Interface Components
 ================================
 
 ![](screenshots/MainWindow-Rectangular.png)
@@ -36,27 +62,27 @@ Slider
 
 Interface to interact with reconstruction animations in GPlates, discussed in further detail below.
 
-### 2.1 <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/play.png" /> </span> Play
+### <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/play.png" /> </span> Play
 
 Starts animation, when pressed it changes to the pause button
 
-### 2.2 <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/pause.png" /> </span> Pause
+### <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/pause.png" /> </span> Pause
 
 Halts animation, when pressed it changes to play button
 
-### 2.3 <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/seek_beginning_22.png" /> </span> Reset
+### <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/seek_beginning_22.png" /> </span> Reset
 
 Returns animation to the start time
 
-### 2.4 <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/fast_forward.png" /> </span> Fast Forward
+### <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/fast_forward.png" /> </span> Fast Forward
 
 Step forwards one frame in the animation
 
-### 2.5 <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/rewind.png" /> </span> Rewind
+### <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/rewind.png" /> </span> Rewind
 
 Step backwards one frame in the animation
 
-2.2 Step Forwards One Frame / Step Backwards One Frame (Fast Forward and Rewind):
+Step Forwards One Frame / Step Backwards One Frame (Fast Forward and Rewind):
 -----------------------------------------------------------------------------
 
 These buttons are used to change the current reconstruction time that you are viewing in small steps. Pressing the buttons once, or using their shortcut keys (`Ctrl+I` for forwards; `Ctrl+Shift+I` for backwards) will adjust the reconstruction time by one frame. The time interval between frames can be adjusted via the **Configure Animation Dialog**, accessed via the **Reconstruction menu**.
@@ -87,7 +113,7 @@ GPlates makes it possible for you to set a reverse animation, where the start ti
    </tbody>
 </table>
 
-3 Reconstruction Menu
+Reconstruction Menu
 ===================
 
 ![](screenshots/Menu-Reconstruction.png)
@@ -206,50 +232,74 @@ The **Reconstruction Menu** provides access to the following tools:
    </tbody>
 </table>
 
-3.1 Reconstruct to Time
+Reconstruct to Time
 -------------------
 
 When this menu item is invoked, it will activate the Time field in the Main Window, which is used to specify the current reconstruction time. The user can type a new reconstruction time, or increase or decrease the value using the Up and Down arrow keys or the mouse scroll-wheel, before pressing the Enter key to execute the reconstruction.
 
 The current frame of the animation always corresponds to the reconstruction time. Changing the reconstruction time will simultaneously change the current frame of the animation. If the specified time is outside the current range of the animation, the range will be extended.
 
-3.2 Step Forward One Frame
+Step Forward One Frame
 ----------------------
 
 This button is used to change the current reconstruction time forward that you are viewing in small steps.
 
-3.3 Step Backward One Frame
+Step Backward One Frame
 -----------------------
 
 This button is used to change the current reconstruction time backward that you are viewing in small steps.
 
-3.4 Specify Anchored Plate ID
+Specify Anchored Plate ID
 -------------------------
 
-This item is used to choose the anchored plate ID of the plate hierarchy. It will be described in the chapter, **More On Reconstructions**.
+The **Specify Anchored Plate ID** command on the Reconstruction menu can be used to change which plate ID GPlates considers to be the globally fixed reference when performing reconstructions. Enter a new plate ID to be the anchor in the dialog that pops up, and GPlates will automatically rearrange the rotation hierarchy so that the specified plate ID is at the top.
 
-3.5 View Total Reconstruction Poles
+![](screenshots/SpecifyAnchoredPlateId.png)
+
+View Total Reconstruction Poles
 -------------------------------
 
-When this item is activated, the **Total Reconstruction Poles** dialog will appear, enabling the user to view a variety of information about the reconstruction poles and the plate hierarchy at the current reconstruction time. This dialog will be described in the chapter, **More On Reconstructions**.
+The Total Reconstruction Pole Dialog is accessed from the Reconstruction menu. It contains four tables of information, relevant to the current reconstruction time and the current anchored plate ID.
 
-![](screenshots/TotalReconPoles-1.png) ![](screenshots/TotalReconPoles-2.png) ![](screenshots/TotalReconPoles-3.png) ![](screenshots/TotalReconPoles-4.png)
+### Relative Rotations
 
-4 Animations
+This table lists all the total reconstruction poles in terms of the relative motions between plates, for the current reconstruction time.
+
+![](screenshots/TotalReconPoles-1.png)
+
+### Equivalent Rotations Relative To Anchored Plate
+
+Similar to the **Relative Rotations** table, this lists rotations for each plate. However, the data presented here has been converted from individual relative rotations into the equivalent absolute rotation, relative to the anchored plate ID. Again, these apply to the current reconstruction time.
+
+![](screenshots/TotalReconPoles-2.png)
+
+### Reconstruction Tree
+
+Here the reconstruction hierarchy is presented in a more natural, tree-like form. Relative rotations are listed, but individual nodes of the tree (plate IDs) can be expanded or collapsed, to explore the branches of the plate rotation model.
+
+![](screenshots/TotalReconPoles-3.png)
+
+### Plate Circuits To Stationary Plate
+
+This tab of the Total Reconstruction Poles dialog can be used to trace a series of total reconstruction poles from any given plate ID back to the top of the hierarchy, the anchored plate ID. It is useful to quickly identify the other plate IDs that a chosen plate ID depends on.
+
+![](screenshots/TotalReconPoles-4.png)
+
+Animations
 ==========
 
 The animation dialog, found in the Reconstruction menu, allows you to automate a reconstruction backwards or forwards through time. The user can set the start and end times by either entering the age or using the current time displayed in the main window. The options, frames per second can be set and there is also the option to loop the animation.
 
-4.1 Configure Animation
+Configure Animation
 ----------------
 
 ![](screenshots/ConfigureAnimation.png)
 
-### 4.1.1 Range
+### Range
 
 This group of controls specifies the time range that the animation should cover. The **Use Main Window** buttons are a convenient way of quickly entering the time that the main window is currently viewing.
 
-### 4.1.2 Options
+### Options
 
 Additional options to fine-tune the behaviour of the animation are presented here. The **Frames per second** number controls the rate at which GPlates will limit the display of animation frames when presenting an animation interactively. Larger numbers produce a slower animation.
 
@@ -264,7 +314,8 @@ Additional options to fine-tune the behaviour of the animation are presented her
    </tbody>
 </table>
 
-### 4.1.3 Playback
+### Playback
 
 These controls allow simple playback and seeking within the animation from this dialog. They behave identically to the equivalent controls found in the **Reconstruction View**.
+
 

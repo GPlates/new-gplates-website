@@ -33,8 +33,6 @@ next: ''
 
 [Chapter 11: Interacting with Features](/docs/user-manual/Interacting_Features/)
 
-[Chapter 12: More on Reconstructions](/docs/user-manual/MoreReconstructions/)
-
 [Chapter 13: Total Reconstruction Sequences](/docs/user-manual/TotalReconstructionSequences/)
 
 [Chapter 14: Editing Geometries](/docs/user-manual/EditGeometries/)

@@ -32,7 +32,7 @@ In the case of the **Reconstructed Geometries** layer:
 
 -   the **layer** output contains the reconstructed features.
 
-The reason the rotations come from the output of another *layer* rather than a *feature collection* (containing rotation features) is because a rotation hierarchy needs to be generated from the rotation features themselves and so this process is performed by a different type of layer (the **Reconstruction Tree** layer). See the **More on Reconstructions** chapter for more information about rotation hierarchies.
+The reason the rotations come from the output of another *layer* rather than a *feature collection* (containing rotation features) is because a rotation hierarchy needs to be generated from the rotation features themselves and so this process is performed by a different type of layer (the **Reconstruction Tree** layer). See the [Reconstructions](/docs/user-manual/Reconstructions/) chapter for more information about rotation hierarchies.
 
 The output of most types of layers (exceptions include **Reconstruction Tree** layers) contain geometries and hence can be visualised in the globe and map views.
 
