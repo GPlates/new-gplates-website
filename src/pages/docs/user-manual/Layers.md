@@ -142,7 +142,7 @@ In this example, the raster layers are at the bottom and hence are drawn underne
    </tbody>
 </table>
 
-Previous versions of GPlates required layers containing vector geometries to be drawn on top of any raster layers otherwise the raster layers would obscure them (especially if they were global rasters). However GPlates now supports adjusting raster transparency (and intensity) individually per raster layer - see [Reconstructed Raster Layer](##reconstructed-raster-layer) for more details. The following image shows a raster layer (with opacity set to 0.64) on top of layer containing coastlines - the coastlines are under the raster but are partially visible through it.
+Previous versions of GPlates required layers containing vector geometries to be drawn on top of any raster layers otherwise the raster layers would obscure them (especially if they were global rasters). However GPlates now supports adjusting raster transparency (and intensity) individually per raster layer - see [Reconstructed Raster Layer](#reconstructed-raster-layer) for more details. The following image shows a raster layer (with opacity set to 0.64) on top of layer containing coastlines - the coastlines are under the raster but are partially visible through it.
 
 ![](screenshots/Layers-Raster-Opacity.png)
 
@@ -780,31 +780,33 @@ The `Input channels` section has three types of input:
 
 3D Volume Visualisation in GPlates involves the rendering of **sub-surface 3D scalar fields**, containing any scalar quantity, such as *mantle temperature* or *seismic tomography wave speed*, to name a few. GPlates has the ability to render a scalar field as **Isosurfaces** (surfaces of constant scalar value), or **Cross sections** (2D vertical slices).
 
-The 3D volumes are represented as a sequence of 2D depth layers when imported. The scalar fields can be imported as a sequence of 2D rasters combined to form a single 3D scalar field. They can also be imported as a time-sequence of 3D scalar fields, where you import a sequence of 2D rasters, where each raster represents a specific depth and time. 
+The 3D volumes are represented as a sequence of 2D depth layers when imported. The scalar fields can be imported as a sequence of 2D rasters combined to form a single 3D scalar field. 
 
-Once a Scalar Field has been imported, via a *.gpml* file, a 3D Scalar Field layer is constructed. In this layer, various parameters can be set to determine the properties of the projected volume. 
+A Scalar Field should first be imported (see [Importing 3D Scalar Fields](/docs/user-manual/Import/#3d-scalar-field)) into a *.gpml* file. That only needs to be done once. From then on you can just load that *.gpml* file and a 3D Scalar Field layer will appear. In this layer, various parameters can be set to determine the visual appearance of the 3D scalar field. 
 
-## Inputs
+### Inputs
 
 ![](screenshots/Layers-Options-3DSF-Inputs.png)
 
 The `input` section has three types of input:
 
--   '*Scalar field feature*' is the .gpml scalar field file.
+-   '*Scalar field feature*' (this is automatically filled when the *.gpml* scalar field file is loaded).
 
 -   '*Cross sections*' is where either a *Reconstructed Geometry*, *Resolved Topological Geometry*, or *Resolved Topological Network* is used as a blueprint for the cross section.
 
 -   '*Surface polygons mask*' can be connected to any *Reconstructed Geometry*, *Resolved Topological Geometry*, or *Resolved Topological Network* to create a mask over the scalar field.
 
-## 3D scalar field options
+### 3D scalar field options
 
-### Isosurfaces
+The user can choose to visualise scalar fields as either **Isosurfaces** or **Cross sections**.
 
-The user can choose to visualise scalar fields as either **Isosurfaces** or **Cross sections**. When they select Isosurfaces they are presented with the options seen in the image below.
+### Isosurface options
+
+When they select Isosurfaces they are presented with the options seen in the image below.
 
 ![](screenshots/3DScalarField-Isosurface.png)
 
-The isosurface uses a specific **scalar value** (*isovalue*) to represent a surface through the scalar field. It is rendered via a ray-tracing process through the scalar field at each screen pixel location, recognising when an isosurface is found. Each pixel excecutes an independent shader program on the graphics hardware. The scalar field gradient is used in the *Lambert diffuse reflectence lighting model*. A *white sphere* is rendered at the lowest depth of the imported scalar field. 
+The isosurface uses a specific **scalar value** (*isovalue*) to represent a surface through the scalar field. It is rendered via a ray-tracing process through the scalar field at each screen pixel location, recognising when an isosurface is found. Each pixel executes an independent shader program on the graphics hardware. The scalar field gradient is used in the *Lambert diffuse reflectence lighting model*. A *white sphere* is rendered at the lowest depth of the imported scalar field. 
 
 #### Isosurface Colour Mode
 
@@ -906,7 +908,3 @@ Colour mapping for cross sections is identical to isosurfaces. *See above for fu
 #### Surface Polygons Mask and Depth Restriction (Radius)
 
 Again, the user can create a surface polygon mask for their cross-sections and restrict it via a depth (radius). *See above for further insight into these options.*
-
-## Exporting 3D scalar fields
-
-SVG export includes 3D scalar fields (and rasters).
