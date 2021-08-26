@@ -1,6 +1,7 @@
 ---
 templateKey: 'user-manual'
 title: 'Chapter 5: Projects and Recent Sessions'
+chapterNo: 5
 prev: 'Import'
 next: 'Controlling_View'
 ---

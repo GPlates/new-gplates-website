@@ -1,6 +1,7 @@
 ---
 templateKey: 'user-manual'
 title: 'Chapter 3: Loading and Saving'
+chapterNo: 3
 prev: 'Introducing_The_Main_Window'
 next: 'Import'
 ---

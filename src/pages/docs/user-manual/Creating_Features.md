@@ -1,6 +1,7 @@
 ---
 templateKey: 'user-manual'
 title: 'Chapter 15: Creating New Features'
+chapterNo: 15
 prev: 'EditGeometries'
 next: 'Flowlines'
 ---

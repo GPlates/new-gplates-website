@@ -1,6 +1,7 @@
 ---
 templateKey: 'user-manual'
 title: 'Chapter 20: The Kinematics Tool'
+chapterNo: 20
 prev: 'Pole_Manipulation'
 next: 'HellingerTool'
 ---

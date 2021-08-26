@@ -1,6 +1,7 @@
 ---
 templateKey: 'user-manual'
 title: 'Chapter 8: Reconstructions'
+chapterNo: 8
 prev: 'Layers'
 next: 'Export'
 ---

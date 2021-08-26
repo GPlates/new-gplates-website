@@ -1,6 +1,7 @@
 ---
 templateKey: 'user-manual'
 title: 'Chapter 7: Layers'
+chapterNo: 7
 prev: 'Controlling_View'
 next: 'Reconstructions'
 ---

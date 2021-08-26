@@ -1,6 +1,7 @@
 ---
 templateKey: 'user-manual'
 title: 'Chapter 25: Spatiotemporal Co-registration'
+chapterNo: 25
 prev: 'Python'
 next: 'CrustalDeformation'
 ---

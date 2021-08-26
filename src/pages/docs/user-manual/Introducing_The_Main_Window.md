@@ -2,6 +2,7 @@
 
 templateKey: 'user-manual'
 title: 'Chapter 2: Introducing The Main Window'
+chapterNo: 2
 prev: 'Introduction_Gplates'
 next: 'LoadingAndSaving'
 

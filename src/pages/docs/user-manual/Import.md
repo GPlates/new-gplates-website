@@ -1,6 +1,7 @@
 ---
 templateKey: 'user-manual'
 title: 'Chapter 4: Importing Rasters and 3D Scalar Fields'
+chapterNo: 4
 prev: 'LoadingAndSaving'
 next: 'Projects_and_Recent_Sessions'
 ---

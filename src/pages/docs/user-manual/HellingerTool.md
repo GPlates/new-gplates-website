@@ -1,6 +1,7 @@
 ---
 templateKey: 'user-manual'
 title: 'Chapter 21: The Hellinger Tool'
+chapterNo: 21
 prev: 'KinematicsTool'
 next: 'Shapefiles'
 

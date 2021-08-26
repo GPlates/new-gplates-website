@@ -1,6 +1,7 @@
 ---
 templateKey: 'user-manual'
 title: 'Chapter 24: Python'
+chapterNo: 24
 prev: 'TopologyTools'
 next: 'Co_registration'
 ---
