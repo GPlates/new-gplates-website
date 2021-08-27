@@ -631,11 +631,11 @@ Features
 
 -   Create VGP
 
--   [Assign Plate IDs](/docs/user-manual/Interacting_Features/#3.0-assign-plate-ids)
+-   [Assign Plate IDs](/docs/user-manual/Interacting_Features/#30-assign-plate-ids)
 
 -   [Generate Deforming Mesh Points](/docs/user-manual/CrustalDeformation/#3-generate-deforming-mesh-points)
 
--   [Generate Velocity Domain Points](/docs/user-manual/Interacting_Features/#3.1-generate-velocity-domain-points)
+-   [Generate Velocity Domain Points](/docs/user-manual/Interacting_Features/#31-generate-velocity-domain-points)
    
     -   CitcomS
 
@@ -646,99 +646,110 @@ Features
 Reconstruction
 --------------
 
--   Reconstruct to Time `[Ctrl+T]`
+-   [Reconstruct to Time](/docs/user-manual/Reconstructions/#reconstruction-menu) `[Ctrl+T]`
 
--   Step Backward One Frame `[Ctrl+Shift+I]`
+-   [Step Backward One Frame](/docs/user-manual/Reconstructions/#reconstruction-menu) `[Ctrl+Shift+I]`
 
--   Step Forward One Frame `[Ctrl+I]`
+-   [Step Forward One Frame](/docs/user-manual/Reconstructions/#reconstruction-menu) `[Ctrl+I]`
 
--   Reset Animation
+-   [Reset Animation](/docs/user-manual/Reconstructions/#reconstruction-menu)
 
--   Play Animation
+-   [Play Animation](/docs/user-manual/Reconstructions/#reconstruction-menu)
 
--   Configure Animation
+-   [Configure Animation](/docs/user-manual/Reconstructions/#reconstruction-menu)
 
--   Specify Anchored Plate ID `[Ctrl+D]`
+-   [Specify Anchored Plate ID](/docs/user-manual/Reconstructions/#reconstruction-menu) `[Ctrl+D]`
 
--   View Total Reconstruction Poles `[Ctrl+P]`
+-   [View Total Reconstruction Poles](/docs/user-manual/Reconstructions/#reconstruction-menu) `[Ctrl+P]`
 
--   Export
+-   [Export](/docs/user-manual/Export/)
 
 Utilities
 ---------
 
 -   Calculate Reconstruction Pole
 
+    Calculate a reconstruction pole from a virtual geomagnetic pole.
+
 -   Calculate Finite Rotation
 
--   Open Kinematics Tool `[Ctrl+Shift+K]`
+    Opens a dialog to calculate the addition or difference of two finite rotations, or to calculate
+    a finite rotation between two points, or to rotate a point using a finite rotation.
 
--   Open Python Console `[F12]`
+-   [Open Kinematics Tool](/docs/user-manual/KinematicsTool/) `[Ctrl+Shift+K]`
+
+-   [Open Python Console](/docs/user-manual/Python/#python-console) `[F12]`
 
 Tools
 -----
 
--   Use Small Icons
+-   [Use Small Icons](#tool-palette)
 
--   Drag Globe `[D]`
+-   [Drag Globe](#tool-palette) `[D]`
 
--   Zoom In `[Z]`
+-   [Zoom In](#tool-palette) `[Z]`
 
--   Measure `[S]`
+-   [Measure](#tool-palette) `[S]`
 
--   Choose Feature `[F]`
+-   [Choose Feature](#tool-palette) `[F]`
 
--   Digitise New Polyline Geometry `[L]`
+-   [Digitise New Polyline Geometry](#tool-palette) `[L]`
 
--   Digitise New Multi-point Geometry `[M]`
+-   [Digitise New Multi-point Geometry](#tool-palette) `[M]`
 
--   Digitise New Polygon Geometry `[G]`
+-   [Digitise New Polygon Geometry](#tool-palette) `[G]`
 
--   Move Vertex `[V]`
+-   [Move Vertex](#tool-palette) `[V]`
 
--   Insert Vertex `[I]`
+-   [Insert Vertex](#tool-palette) `[I]`
 
--   Delete Vertex `[X]`
+-   [Delete Vertex](#tool-palette) `[X]`
 
--   Split Feature `[T]`
+-   [Split Feature](#tool-palette) `[T]`
 
--   Build New Line Topology `[H]`
+-   [Build New Line Topology](#tool-palette) `[H]`
 
--   Build New Boundary Topology `[B]`
+-   [Build New Boundary Topology](#tool-palette) `[B]`
 
--   Build New Network Topology `[N]`
+-   [Build New Network Topology](#tool-palette) `[N]`
 
--   Edit Topology Sections `[E]`
+-   [Edit Topology Sections](#tool-palette) `[E]`
 
--   Move Pole `[O]`
+-   [Move Pole](#tool-palette) `[O]`
 
--   Modify Reconstruction Pole `[P]`
+-   [Modify Reconstruction Pole](#tool-palette) `[P]`
 
--   Create Small Circle `[C]`
+-   [Create Small Circle](#tool-palette) `[C]`
 
--   Select Hellinger Geometries `[Q]`
+-   [Select Hellinger Geometries](#tool-palette) `[Q]`
 
--   Adjust Pole Estimate `[R]`
+-   [Adjust Pole Estimate](#tool-palette) `[R]`
 
 Window
 ------
 
--   Open New Window `[Ctrl+N]`
+-   [Open New Window](/docs/user-manual/Controlling_View/#4-window-menu) `[Ctrl+N]`
 
-    Creates a new instance of GPlates. Currently each instance created this way is completely separate with its own main window and dialogs. Any program state such as files loaded prior to selecting **New Window** is not transferred across to the new instance. This feature is useful mainly for macOS where it is not possible to run multiple instances of the same application from the *Finder*.
+-   [Show Layers](/docs/user-manual/Controlling_View/#4-window-menu) `[Ctrl+L]`
 
--   Show Layers `[Ctrl+L]`
+-   [Log](/docs/user-manual/Controlling_View/#4-window-menu)
 
--   Log
+-   [Show Bottom Panel](/docs/user-manual/Controlling_View/#4-window-menu)
 
--   Show Bottom Panel
-
--   Full Screen `[F11]`
+-   [Full Screen](/docs/user-manual/Controlling_View/#4-window-menu) `[F11]`
 
 Help
 ----
 
 -   View Online Documentation
 
+    View the [main documentation](/docs/) web page.
+
 -   About
+
+    View information about GPlates such as version and license.
+
+-   About Data Sources
+
+    View a web page describing the GPlates data sets.
 
