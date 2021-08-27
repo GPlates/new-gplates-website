@@ -410,12 +410,695 @@ Below is a table of available export data types.
    </tbody>
 </table>
 
-Projected Geometries (and Rasters, 3D Scalar Fields)
+
+Exporting Reconstructed Geometries
+------------------------
+
+This option allows the user to export reconstructed geometries. 
+
+To export a reconstructed geometry, you have the following output file format options:
+
+-   GMT (`*.xy`)
+
+-   Shapefiles (`*.shp`)
+
+    -   Dateline wrapping option *automatically* ticked
+
+-   OGR-GMT (`*.gmt`)
+
+    -   Dateline wrapping option
+
+-   GeoJSON (`*.geojson`)
+
+    -   Dateline wrapping option
+
+#### Dateline wrapping option
+
+If you choose to enable/disable dateline wrapping, then polyline and polgon geometries will be clipped ot the dateline (if they intersect it) and wrapped to the other side as needed. Note that this can break a polyline into multiple polylines or a polygon into multiple polygons - and once saved this process is irreversible - in other words reloading the saved file will not undo the wrapping. *This option is provided to support ArcGIS users* - it prevents horizontal lines across the display when viewing geometries.
+
+
+Exporting Projected Geometries (and Rasters, 3D Scalar Fields)
 ----------------------------------------------------
+
+This export option allows the user to export projected geometries (and projected raster) data.
+
+To export Projected Geometries, the user is given the following output file option:
+
+-   Scalable Vector Graphic (`*.svg`)
 
 This is similar to the **Image (screenshot)** export, in the sense that both capture the (projected) viewport as it appears in GPlates, except to Scalable Vector Graphics (SVG) format instead of an image. Reconstructed geometries are represented as SVG vector geometries (points/polylines/polygons). Whereas both rasters and 3D scalar fields are represented as SVG images. For example, a 3D scalar field is rendered as a flat 2D image (as it appears in the viewport).
 
-Net Rotations
+The user can configure the image resolution of the projected geometries they wish to export, by adjusting the width and height of the export. They can also select to constrain the aspect ratio, which locks the height, and ensures the correct ratio is applied when the width is changed manually. At any time they can revert to the window dimensions.
+
+
+Exporting an Image (screenshot)
+----------------
+
+This export option allows users to export an image (screenshot) of the current view (globe or map).
+
+To export an Image (screenshot), the user is given the following output file formats to choose from:
+
+-   Window's Bitmap (`*.bmp`)
+
+-   Joint Photographic Experts Group (`*.jpg`)
+
+-   Joint Photographic Experts Group (`*.jpeg`)
+
+-   Portable Network Graphics (`*.png`)
+
+-   Portable PIxmap (`*.ppm`)
+
+-   Tagged Image File Format (`*.tiff`)
+
+-   X11 Bitmap (`*.xbm`)
+
+-   X11 Pixmap (`*.xpm`)
+
+The user can configure the image resolution of the Image (screenshot) they wish to export, for any of the file output options, by adjusting the width and height of the export. They can also select to constrain the aspect ratio, which locks the height, and ensures the correct ratio is applied when the width is changed manually. At any time they can revert to the window dimensions.
+
+
+Exporting a Colour Raster
+-------------
+
+This export option allows the user to export 8-bit (per channel) RGBA (or RGB) coloured raster data:
+
+-   Exports each visible raster layer to a single file (per time step).
+
+-   RGBA (and RGB) raster layers contain colour pixels.
+
+-   Numerical raster layers converted to colour using layer's palette.
+
+-   Geo-referenced region stored in raster formats that support it.
+
+To export a Colour Raster, the user is given the following output file formats to choose from:
+
+-   Windows Bitmap (`*.bmp`)
+
+-   Joint Photgraphic Experts Group (`*.jpg`)
+
+-   Joint Photographic Experts Group (`*.jpeg`)
+
+-   Portable Network Graphics (`*.png`)
+
+-   GeoTIFF (`*.tif`)
+
+-   Erdas Imagine (`*.img`)
+
+#### Colour Raster Configure Export Options
+
+Each of these file output formats give the following options to configure the export:
+
+-   Resolution
+
+    -   Adjust pixel spacing. *Automatically* set at 0.100000 degrees.
+
+-   Exported Regions
+
+    -   The option to choose **Grid line registration**
+ 
+        -   Grid line registration involves placing the pixel **centres** of border pixels on the boundary  of  the exported region. The default is pixel registration which places the pixel **area** boxes of   border pixels within the boundary, and hence the centres of border pixels are inside the exported   region by half a pixel.
+        
+        -   The top latitude and left longitude refer to the top-left pixel *centre* for *grid line*   registration and top-left corner of top-left pixel for *pixel* registration. Additionally the  bottom  latitude and right longitude refer to the bottom-right pixel centre for *grid line*  registration and  bottom-right corner of bottom-right pixel for *pixel* registration.
+        
+        -   Also note that the top latitude can be less than the bottom latitude (raster is flipped   vertically), and the right longitude can be less than the left longitude (raster is flipped   horizontally).
+  
+        -   You can revert to use Global Extents at any point in time.
+        
+        -   This lat-lon georeferencing information is also saved to those formats supporting it. Note that   some software reports the lat-lon extents of the exported raster in *pixel* registration (such as   GDAL) while other software reports it in *grid line* registration (such as GMT). For example, a   1-degree global raster exported by GPlates with grid line registration is reported by GDAL as  having  pixel-registered lat-lon extents [-90.5, 90.5] and [-180.5, 180.5], and reported by GMT as  having  grid-line-registered lat-lon extents [-90, 90] and [-180, 180]. Both are correct since both  place  border pixel *centres* along the lat-lon extents [-90, 90] and [-180, 180]. 
+
+-   Exported Pixel Dimensions
+
+    -   These dimensions can be changed when the **Pixel spacing** is edited (in resolution section).
+
+**GeoTIFF and Erdas Imagine Output File Formats also have the following option in addition to all above options for colour rasters**:
+
+-   Compression
+
+    -   Choose to 'Enable compression' or not.
+
+When these rasters are exported, their layer name will replace '%P' in the file name. 
+
+
+Exporting a Numerical Raster
+----------------
+
+This export options allows users to export 32-bit floating-point numerical (non-coloured) raster data:
+
+-   Exports each visible (numerical) raster layer to a single file (per time step).
+
+-   RGBA (and RGB) raster layers are not exported.
+
+-   Numerical raster layers contain floating-point pixels.
+
+-   NaN no-data value stored in pixels not covered by raster data.
+
+-   Geo-referenced region stored in raster.
+
+To export a Numerical Raster, the user is given the following output file formats to choose from:
+
+-   NetCDF/GMT (`*.nc`)
+
+-   NetCDF/GMT (`*.grd`)
+
+-   GeoTiff (`*.tif`)
+
+-   Erdas Imagine (`*.img`)
+
+For **all** of these file output options, the user is then given the following options to cofigure the export:
+
+-   Resolution
+
+    -   Adjust pixel spacing. *Automatically* set at 0.100000 degrees.
+
+-   Compression
+
+    -   Choose to 'Enable compression' or not.
+
+-   Exported Region
+
+    -   The option to choose grid line registration. See [Colour Raster](#colour-raster-configure-export-options) for more information on grid line registration. 
+
+-   Exported Pixel Dimensions
+
+    -   These dimensions can be changed when the **Pixel spacing** is edited (in resolution section).
+
+
+Exporting Scalar Coverages
+----------------
+
+This export option allows you to export reconstructed scalar coverages (geometries with per-point scalar values):
+
+-   Exports visible reconstructed scalar coverage layers.
+
+-   Each geometry point exports a position and a scalar value.
+
+-   Scalar values for the currently selected scalar type are exported.
+
+-   Per-point deformation strain and strain rate can also be exported.
+
+#### Scalar Coverages Output file format options
+
+To export Scalar Coverages, the user is given the following output file formats to choose from:
+
+-   GMT (`*.xy`)
+
+-   GMPL (`*.gmpl`)
+
+The output file formats both have the following options to configure the export:
+
+-   Export to a single file
+
+-   Export to multiple files (one per input file/layer). *Automatically* ticked.
+
+    -   Separate output directory per input file/layer
+
+-   Include Strain Options
+
+    -   The option to include dilatation strain.
+
+-   Include Strain Rate Options
+
+    -   The option to include dilatation strain rate (1/sec)
+
+    -   The option to include total strain rate (1/sec)
+
+
+
+Scalar values in the **GMT (`*.xy`) export** will be exported as:
+   
+   -   longitude     latitude     scalar
+
+Scalar values in the **GMPL (`*.gmpl`) export** will be exported as:
+
+   -   Scalar coverages containing visible scalar values.
+
+
+
+A **GMT (`*.xy`) export** also has the export configure option of:
+
+-   Domain Point Format Options
+
+    -   Longitude / Latitude (GMT default)
+
+    -   Latitude / Longitude
+
+
+Exporting Deformation
+-----------
+
+This export options allows user to export Deformation information:
+
+-   Exports visible reconstructed geometry layers connected to topology layers.
+
+-   Each geometry point exports a positon, strain and strain rate.
+
+This export option has the same Output File Format Options as the [Scalar Coverages](#scalar-coverages-output-file-format-options) export option. It also has the same export configure options. 
+
+The Deformation information will be exported as scalar coverages containing:
+
+-   `DilatationStrainRate`
+
+
+Exporting Velocities
+----------
+
+This export option allows users to export velocity data. 
+
+To export Velocities, the user is given the following output file formats to choose from:
+
+-   GMT (`*.xy`)
+
+-   GPML (`*.gpml`)
+
+-   CitcomS global (*)
+
+-   Terra text format (*)
+
+The export output file formats for this export type all have different export configure options.
+
+#### GMT export options
+
+-   Velocity Calculation Options (Note: This overrides options in all velocity layers)
+
+    -   Velocity time step(dt)
+ 
+        -   *Automatically* set to 1.00 My
+  
+        -   Given the option of:
+  
+            -   (T+dt,T)
+   
+            -   (T, T-dt)
+   
+            -   (T+dt/2, T-dt/2)
+ 
+    -   Smooth boundary velocities option:
+ 
+       -   Change degrees. *Automatically set at 1.00 degrees*.
+ 
+       -   Option to Exclude deforming regions
+ 
+    -   File Options:
+ 
+       -   Export to a single file
+ 
+       -   Export to multiple files (one per input file/layer). *Automatically* ticked.
+ 
+           -   Separate output directory per input file/layer.
+ 
+    -   Velocity Vector Format Options:
+ 
+        -   Cartesian 3D vector (vel_x / vel_y / vel_z)
+  
+        -   Colatitude / Longitude (South/East local tangent plane)
+  
+        -   Angle (-180 to +180 degrees anti-clockwise from West; 0 is East) / Magnitude
+  
+        -   Azimuth (0 to 360 degrees clockwise from North; 0 is North) / Magnitude
+ 
+    -   Velocity Scale and Stride
+ 
+        -   Scale (velocity magnitude multiplier). *Automatically* set at 1.0000
+  
+        -   Stride (output every 'n'th velocity). *Automatically* set at 1.
+ 
+    -   Domain Point Format Options
+ 
+        -   Longitude / Latitude (GMT default)
+  
+        -   Latitude / Longitude
+ 
+    -   Include Options
+ 
+        -   Include Plate ID
+  
+        -   Include domain point
+  
+        -   Include domain metadata
+
+The velocity data will export as:
+
+-   `domain_point_lon    domain_point_lat   velocity_x   velocity_y   velocity_z   plate_id`
+
+-   **Velocities are given in cm/year**.
+
+#### GPML export options
+
+This export option is [identical to GMT](#gmt-export-options), however **does not include** the configure options of:
+
+-   Velocity Vector format options
+
+-   Velocity Scale and Stride
+
+-   Domain Point Format Options
+
+-   Include Options
+
+The velocities in this file format will be exported in (`Colatitude, Longitude`) format. 
+
+#### CitcomS global export options
+
+This export option has the [Velocity Time Step (dt)](#gmt-export-options) in addition to the [Smooth boundary velocities option](#gmt-export-options) like that of the GMT export option. In addition, it also has the following export configure options:
+
+-   CitcomS Grid Files
+
+    -   CitcomS grid file names: `%D.mesh.%C`
+ 
+        -   This identifies input CitcomS grid parameters required for each exported velocity file.
+  
+        -   Use '%C' to locate the diamond cap number in the CitcomS grid file name.
+  
+        -   Use '%D' to locate the diamond density/resolution.
+  
+        -   Velocities are only exported if matching CitcomS grid files are already loaded. 
+
+-   GMT Export Options
+
+    -   Choose to include an additional export to GMT format (".xy")
+ 
+        -   GMT velocity scale (velocity magnitude mulitplier). *Automatically* set to 1.0000. Can be adjusted.
+  
+        -   GMT velocity stride (output every 'n'th velocity). *Automatically* set to 1. Can be adjusted. 
+
+##### CitcomS Export Description
+
+The CitcomS file export option replaces '%P' with the diamond cap number in each exported file name. 
+
+Each velocity line in a CitcomS file contains:
+
+-    velocity_colat   velocity_lon
+
+Each velocity line in a GMT ('.xy') file contains:
+
+-   `domain_point_lat   domain_point_lon   velocity_azimuth   velocity_magnitude`
+
+#### Terra text format export options
+
+This export option has the [Velocity Time Step (dt)](#gmt-export-options) in addition to the [Smooth boundary velocities option](#gmt-export-options) like that of the GMT export option. In addition, it also has the following export configure options:
+
+-   Terra Grid Files
+
+    -   Terra grid file names: TerraMesh.%MT.%NT.%ND.%NP
+
+        -   This identifies input Terra grid parameters required for each exported velocity file.
+
+        -   Use '%NP' to locate the local processor number in the Terra grid file name.
+
+        -   Use '%MT', '%NT', and '%ND' to locate the Terra parameters 'mt', 'nt' and 'nd'.
+
+        -   Velocities are only exported is matching Terra grid files are already loaded.
+
+##### Terra text format export description
+
+The Terra text format export option will replace '%P' with the local processor number in each exported velocity file name. The header lines, beginning with '>' contain Terra grid parameters and age. Then each velocity line contains:
+
+-   `velocity_x   velocity_y   velocity_z`
+
+Exporting Resolved Topologies(General)
+----------------------------
+
+This export option allows users to export resolved topologies:
+
+-   Exports resolved topological lines and polygons (but not networks) for any feature type.
+
+To export Resolved Topologies, the user is given the following output file formats to choose from:
+
+-   GMT (`*.xy`)
+
+-   Shapefiles (`*.shp`)
+
+-   OGR-GMT (`*.gmt`)
+
+-   GeoJSON (`*.geojson`)
+
+The following options are given when exporting the resolved topologiee:
+
+-   Dateline Wrapping (`*.shp`, `*.gmt`, `*.geojson` files only)
+
+    -   Wrap polyline and polygon geometries to the dateline. - See the description of [Dateline Wrapping](#dateline-wrapping-option) for further information into this option.
+
+    -   *Automatically* ticked for `*.shp` file format.
+
+-   File Options
+
+    -   Export to a single file. *Automatically ticked for all*
+
+    -   Export to multiple files (one per input file/layer)
+
+-   Resolved Geometry Options
+
+    -   Export resolved topological lines
+
+    -   Export resolved topological polygons
+
+    -   Export resolved topological networks (boundary polygons)
+
+    -   Export boundary segments (of polygons/networks):
+
+        -   Note: duplicaiton removed (each segment shared by its two adjacent areas)
+   
+        -   (%P=`'boundaries'`,`'_ridge_transform_boundaries'`,`'_subduction_boundaries'`,`'_subduction_boundaries_sL'`,`'_subduction_boundaries_sR'`)
+
+-   Polygon Options
+
+    -   For `*.xy`, `*.gmt`, and `*.geojson` files:
+
+        -   The option to force polygon orientation Clockwise or Counter-clockwise
+
+    -   For `*.shp` files:
+
+        -   Polygon orientation is Clockwise.
+
+Exporting Resolved Topologies(CitcomS specific)
+------------------------------------
+
+This export options allows users to export resolved topologies for use by CitcomS software:
+
+-   Exports boundaries of resolved topological closed plate polygons/networks.
+
+-   Optionally exports the subsegment geometries of polygon/network boundaries
+
+To export resolved topologies for use by CitcomS software, the following output file formats are available:
+
+-   GMT (`*.gmt`)
+
+-   Shapefiles (`*.shp`)
+
+-   OGR-GMT (`*.gmt`)
+
+-   GeoJSON(`*.geojson`)
+
+The following options are available to configure the export:
+
+-   Dateline Wrapping (option for `*.shp` files only)
+
+    -   Wrap polyline and polygon geometries to the dateline. - See [Dateline Wrapping option](#dateline-wrapping-option) for more information into this option.
+
+-   Plates
+
+    -   Export each plate polygon to a separate file (%P='plate_'+rotation id)
+
+    -   Export all plate boundaries to a single file (%P='platepolygons')
+
+    -   Export plate boundary segments to files based on feature type:
+
+        -   (%P=`'plate_boundaries','plate_ridge_transform_boundaries','plate_subduction_boundaries',plate'_subduction_boundaries_sL', 'plate_subduction_boundaries_sR'`)
+
+-   Networks
+
+    -   Export each Network polygon to a separate file (%P='network_'+rotation id)
+
+    -   Export all Network polygons to a single file (%P='network_polygons')
+
+    -   Export Network boundary segments to files based on feature type:
+
+        -   (%P=`'network_boundaries','network_ridge_transform_boundaries','network_subduction_boundaries','network_subduction_boundaries_sL','network_subduction_boundaries_sR'`)
+
+-   Slabs
+
+    -   Export each Slab polygon to a separate file (%P='slab_'+rotation id)
+
+    -   Export all Slab polygons to a single file (%P='slab_polygons')
+
+    -   Export Slab boundary segments to files based on feature type:
+
+        -   (%P=`'slab_edges','slab_edges_leading','slab_edges_leading_sL','slab_edges_leading_sR','slab_edges_trench','slab_edges_side'`)
+
+-   All Polygons
+
+    -   Plate/network/slab polygons combined into a single file (%P='polgons')
+
+        -   Include all Plate polygons
+
+        -   Include all Network polygons
+
+        -   Include all Slab polygons
+
+-   All Boundary segments
+
+    -   Plate/network/slab boundary segments combined into files based on feature type: (%P=`'boundaries','ridge_transform_boundaries','subduction_boundaries','subduction_boundaries_sL','subduction_boundaries_sR'`)
+
+        -   Include all Plate boundary segments
+
+        -   Include all Network boundary segments
+
+        -   Inlcude all Slab boundary segments
+
+Exporting Relative Total Rotation
+-----------------------
+
+This export option allows user to export relative total rotation data:
+
+-   *relative* is between a moving/fixed plate pair.
+
+-   *total* is from the export reconstruction time
+
+-   Each line in latitude/longitude format will contain:
+
+    -   `moving_plate_id   euler_pole_lat   euler_pole_lon   euler_pole_angle`
+
+-   Each line in 3D cartesian format will contain:
+
+    -   `moving_plate id   euler_pole_x   euler_pole_y   euler_pole_z   euler_pole_angle   fixed_plate_id`
+
+To export Equivalent Total Rotation's the user must choose from the following output file formats:
+
+-   CSV file (comma delimited) (`*.csv`)
+
+-   CSV file (semicolon delimited) (`*.csv`)
+
+-   CSV file (tab delimited) (`*.csv`)
+
+The following options are available to configure the export:
+
+-   Rotation options
+
+    -   Write indeterminate rotations as:
+
+        -   "Indeterminate"
+
+        -   North Pole Euler Pole
+
+    -   Euler pole format:
+
+        -   Latitude/longitude
+
+        -   3D Cartesion (x,y,z)
+
+Exporting Equivalent Total Rotation
+--------------------------
+
+This export option allows the user to export equivalent total rotation data:
+
+-   *equivalent* is from an exported plate id to the anchor plate.
+
+-   *total* is from the export reconstruction time to present day.
+
+-   Each line in latitude/longitude format will contain:
+
+    -   `plate_id   euler_pole_lat   euler_pole_lon   euler_pole_angle`
+
+-   Each line in 3D cartesian format will contain:
+
+    -   `plate id   euler_pole_x   euler_pole_y   euler_pole_z   euler_pole_angle`
+
+The output file format options and the configure export options are **indentical** to that of [Relative Total Rotation's](#exporting-relative-total-rotation).
+
+Exporting Relative Stage Rotation
+-----------------------
+
+This export option allows the user to export relatie stage rotation data:
+
+-   *relative* is between a moving/fixed plate pair.
+
+-   *stage* is from `t+interval` Ma to `t` Ma, where `t` is the export reconstruction time.
+
+-   Each line in latitude/longitude format will contain:
+
+    -   `moving_plate_id   stage_pole_lat   stage_pole_lon   stage_pole_angle   fixed_plate_id`
+
+-   Each line in 3D cartesian format will contain:
+
+    -   `moving_plate_id   stage_pole_x   stage_pole_y   stage_pole_z   stage_pole_fixed   fixed_plate_id`
+
+The output file format options and the configure export options are almost **indentical** to that of [Relative Total Rotation's](#exporting-relative-total-rotation). However there is one extra eport configure option *for all file formats*:
+
+-   Stage rotation options
+
+    -   Stage rotation time interval (My)
+
+Exporting Equivalent Stage Rotation
+-------------------------
+
+This export option allows the user to export stage rotation data:
+
+-   *equivalent* is from an exported plate ID to the anchor plate.
+
+-   *stage* is from `t+interval` to Ma to `t` Ma, where `t` is the export reconstruction time.
+
+-   Each line in latitude/longitude format will contain:
+
+    -   `plate_id   stage_pole_lat   stage_pole_lon   stage_pole_angle`
+
+-   Each line in 3D cartesian format will contain:
+
+    -   `plate_id   stage_pole_x   stage_pole_y   stage_pole_z   stage_pole_angle`
+
+The output file format options and the configure export options are almost **indentical** to that of [Relative Total Rotation's](#exporting-relative-total-rotation). However there is one extra eport configure option *for all file formats*:
+
+-   Stage rotation options
+
+    -   Stage rotation time interval (My)
+
+Exporting Flowlines
+--------------------
+
+This export option allows the user to export flowlines.
+
+To export flowlines, the following output file format options are available:
+
+-   GMT (`*.xy)`
+
+-   Shapefiles (`*.shp`)
+
+-   OGR-GMT (`*.gmt`)
+
+-   GeoJSON (`*.geojson`)
+
+Exporting motion paths have the following export options:
+
+-   File Options (*for all file format options*):
+
+    -   Export to a single file
+
+    -   Export to multiple files (one per input file/layer)
+
+        -   Separate output directory per input file/layer
+
+-   Dateline Wrapping (*for all file format options **except** GMT*)
+
+    -   Wrap polyline and polygon geometries to the dateline. - See [Dateline Wrapping](#dateline-wrapping-option) for more information into this option.
+
+Exporting Motion Paths
+------------
+
+This export option allows the user to export motion tracks.
+
+The file format options and options to configure the export are identical to that for the [Flowlines](#exporting-flowlines) export options.
+
+Exporting Co-registration data
+--------------------
+
+This export option allows the user to export Co-registration data for data-mining.
+
+To export Co-registration data, the following output file format option is available:
+
+-   CSV file (comma delimited) (`*.csv`)
+
+There are no options to configure this export. 
+
+
+Exporting Net Rotations
 -------------
 
 Net lithosphere rotations can be exported over time. The net lithosophere rotation is a useful concept in geodynamics and can be used to check global rotation models. Models where plate motions are driven by mantle convection should have zero net lithosphere rotation.
