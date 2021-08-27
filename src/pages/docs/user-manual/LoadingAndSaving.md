@@ -370,13 +370,13 @@ File read errors may occur when attempting to load data from file (or some other
 
 It is anticipated that file input errors may fall into four categories:
 
-1.  [Warning](#4.2.1-warning)
+1.  [Warning](#421-warning)
 
-2.  [Recoverable error](#4.2.2-recoverable-error)
+2.  [Recoverable error](#422-recoverable-error)
 
-3.  [Terminating error](#4.2.3-terminating-error)
+3.  [Terminating error](#423-terminating-error)
 
-4.  [Failure to begin](#4.2.4-failure-to-begin)
+4.  [Failure to begin](#424-failure-to-begin)
 
 When you load a file which causes warnings, GPlates will display a warning icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='icons/gnome_dialog_warning_22.png' /> </span> in the status bar. You can click it to open the File Errors dialog for more information, or click the **View Read Errors** entry on the **File** menu. For more serious errors, GPlates will open the dialog immediately on loading.
 

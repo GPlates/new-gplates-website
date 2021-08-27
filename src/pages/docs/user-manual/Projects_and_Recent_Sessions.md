@@ -172,7 +172,7 @@ In contrast, **File &gt; Save Project As** will always ask you to select a proje
 
 Note that **File &gt; Save Project** and **File &gt; Save Project As** behave the same if a project is *not* currently open (both will ask you to select a project file).
 
-Also note that any [unsaved feature collections](#10.2-unsaved-feature-collections) must first be saved before you can save a project otherwise you will get the following message…
+Also note that any [unsaved feature collections](#102-unsaved-feature-collections) must first be saved before you can save a project otherwise you will get the following message…
 
 ![](screenshots/Unsaved-Feature-Collections.png)
 
@@ -189,7 +189,7 @@ In contrast to projects (which are manually saved by the user) the current sessi
 
 -   Closing GPlates.
 
-However, note that if there are any unsaved *feature collections* then you will have the choice to discard those unsaved changes (and the current session will not be saved) or to remain in the current session. Please see [unsaved changes warning](#10.1-unsaved-changes-warning) for more details.
+However, note that if there are any unsaved *feature collections* then you will have the choice to discard those unsaved changes (and the current session will not be saved) or to remain in the current session. Please see [unsaved changes warning](#101-unsaved-changes-warning) for more details.
 
 Saving the current session either replaces an existing session in the list of *recent sessions* (if any have the same feature collections) or inserts a new session (and pops the least recent session off the list). In both cases the current session becomes the most recent session in the list.
 
