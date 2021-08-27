@@ -264,11 +264,11 @@ The parameters of the grid search are currently hard-coded in that the search ra
 
 **&lt;produce graphics output&gt;** (y or n) - whether or not to produce output files. This parameter is ignored by GPlates, which always generates output files.
 
-**&lt;confidence region file&gt;** (string) - name of output file which will contain the coordinates of a confidence region ellipse. This parameter is ignored by GPlates, which instead uses filenames derived from the last-loaded pick file. (See **Selecting output filenames and locations** above).
+**&lt;confidence region file&gt;** (string) - name of output file which will contain the coordinates of a confidence region ellipse. This parameter is ignored by GPlates, which instead uses filenames derived from the last-loaded pick file. (See [Selecting output filenames and locations](#9.1-selecting-output-filenames-and-locations) above). 
 
-**&lt;upper bounds file&gt;** (string) - name of output file which will contain the maximun value of rotation angle on each point of a lat-lon grid around the best fit pole. This parameter is ignored by GPlates, which instead uses filenames derived from the last-loaded pick file. (See **Selecting output filenames and locations** above).
+**&lt;upper bounds file&gt;** (string) - name of output file which will contain the maximun value of rotation angle on each point of a lat-lon grid around the best fit pole. This parameter is ignored by GPlates, which instead uses filenames derived from the last-loaded pick file. (See [Selecting output filenames and locations](#9.1-selecting-output-filenames-and-locations) above).
 
-**&lt;lower bounds file&gt;** (string) - name of output file which will contain the minimum value of rotation angle on each point of a lat-lon grid around the best fit pole. This parameter is ignored by GPlates, which instead uses filenames derived from the last-loaded pick file. (See **Selecting output filenames and locations** above).
+**&lt;lower bounds file&gt;** (string) - name of output file which will contain the minimum value of rotation angle on each point of a lat-lon grid around the best fit pole. This parameter is ignored by GPlates, which instead uses filenames derived from the last-loaded pick file. (See [Selecting output filenames and locations](#9.1-selecting-output-filenames-and-locations) above).
 
 <table class ="note">
    <tbody>

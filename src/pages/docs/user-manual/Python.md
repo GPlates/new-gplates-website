@@ -9,7 +9,7 @@ next: 'Co_registration'
 Introduction
 ============
 
-Starting from 1.2 release, GPlates has scripting support using **Python** language. The GPlates Python APIs are a set of interfaces through which Python script can interact with GPlates. Python script can be executed either in the embedded Python Console or as a GPlates Python Plugin.
+Starting from 1.2 release, GPlates has scripting support using **Python** language. The GPlates Python APIs are a set of interfaces through which Python script can interact with GPlates. Python script can be executed either in the embedded [Python Console](#python-console) or as a GPlates [Python Plugin](#python-plugins).
 
 Python Console
 ==============
@@ -63,7 +63,7 @@ The following python code defines a **Draw style** plugin class called `PlateId`
     def register():
             pygplates.Application().register_draw_style(PlateId())
 
-The `register()` function in Python script files residing in the **GPlates Python Script Directory** will be called by GPlates automatically when GPlates starts up.
+The `register()` function in Python script files residing in the [GPlates Python Script Directory](#gplates-python-script-directory) will be called by GPlates automatically when GPlates starts up.
 
 The `get_config()` function is called by GPlates to generate a **Draw Style** configuration GUI panel.
 

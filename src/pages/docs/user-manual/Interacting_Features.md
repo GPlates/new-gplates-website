@@ -414,7 +414,7 @@ The **Features Menu** contains a number of tools that are used to interact with 
 3.0 Assign Plate IDs
 =======
 
-This feature assigns reconstruction plate IDs (and optionally time of appearance/disappearance) to a set of features. This is typically done to features that do not yet have plate IDs (or valid time ranges) but it can also override an existing plate ID, of a feature, with a new plate ID. To start the process, use the **Assign Plate IDs** item on the **Features** menu.
+This feature assigns reconstruction plate IDs (and optionally time of appearance/disappearance) to a set of features. This is typically done to features that do not yet have plate IDs (or valid time ranges) but it can also override an existing plate ID, of a feature, with a new plate ID. To start the process, use the **Assign Plate IDs** item on the **Features** menu. - See the description of [Plate IDs](/docs/user-manual/Reconstructions/#plate-ids) in the Reconstructions chapter for more information as to what they are.
 
 Two sets of features are required for this process:
 

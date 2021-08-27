@@ -14,7 +14,7 @@ Flowlines represent the movement of material away from a spreading centre, and a
 2 Creating flowlines
 ==================
 
-To use flowlines in GPlates, you need to create or load a flowline feature. Flowline features can be created, like other features, with the digitisation tool. See **Creating New Features** for more information on using the digitisation tool. To create a flowline, begin by selecting the **Point Geometries** icon from the **Tool Palette**:
+To use flowlines in GPlates, you need to create or load a flowline feature. Flowline features can be created, like other features, with the digitisation tool. See [Creating New Features](/docs/user-manual/Creating_Features/) for more information on using the digitisation tool. To create a flowline, begin by selecting the **Point Geometries** icon from the **Tool Palette**:
 
 <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/digitise_multipoint_35.png" /> </span> Point Geometries
 
@@ -33,7 +33,7 @@ After choosing the Point Geometries tool, select points on the globe which repre
 
 ![](screenshots/CreateFeatureFlowline1.win32.png)
 
-Next, select how GPlates should interpret your chosen point geometries - as spreading centres, as Left-plate end-point(s), or as Right-plate end-point(s) of flowlines. Then you must allocate left and right plate ids - representing the plates on either side of the flowline - and times of appearance and disappearance. You finish with naming the new flowline feature. 
+Next, select how GPlates should interpret your chosen point geometries - as spreading centres, as Left-plate end-point(s), or as Right-plate end-point(s) of flowlines. Then you must allocate left and right plate ids - representing the plates on either side of the flowline - and times of appearance and disappearance. You finish with naming the new flowline feature. - See the description of [Plate IDs](/docs/user-manual/Reconstructions/#plate-ids) in the Reconstructions chapter for more information as to what they are.
 
 <table class ="note">
    <tbody>

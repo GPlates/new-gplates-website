@@ -14,7 +14,7 @@ Motion Paths illustrate the movement of plates over time, either with respect to
 2 Creating Motion Paths
 =====================
 
-To use motion paths in GPlates, you need to create or load a motion path feature. Motion path features can be created, like other features, with the digitisation tool. See **Creating New Features** for more information on using the digitisation tool. To create a motion path, begin by selecting the **Multi-point Geometries** icon from the **Tool Palette**:
+To use motion paths in GPlates, you need to create or load a motion path feature. Motion path features can be created, like other features, with the digitisation tool. See the chapter on [Creating New Features](/docs/user-manual/Creating_Features/) for more information on using the digitisation tool. To create a motion path, begin by selecting the **Multi-point Geometries** icon from the **Tool Palette**:
 
 <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/digitise_multipoint_35.png" /> </span> Multi-point Geometries
 

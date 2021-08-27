@@ -450,7 +450,7 @@ The tools are arranged into groups (tabs in the **Tool Palette**). For example t
 
 ![](screenshots/ToolPaletteDigitisationMoveVertex.png) ![](screenshots/ToolPaletteFeatureInspectionMoveVertex.png)
 
-The availability of certain tools within a group can change depending on what you currently have selected. For instance, the **Modify Reconstruction Pole** tool can only be used once a feature to be modified has been selected with the **Choose Feature** tool.
+The availability of certain tools within a group can change depending on what you currently have selected. For instance, the **Modify Reconstruction Pole** tool can only be used once a feature to be modified has been selected with the **Choose Feature** tool. - See the [Pole Manipulation chapter](/docs/user-manual/Pole_Manipulation/) for more information on how to modify reconstruction poles.
 
 The tools are also accessible via the **Tools** menu which also shows the shortcut key for each tool. The **Tools** menu also contains a check box **Use Small Icons** that reduces the size of the tool icons in the **Tool Palette**. This is useful if your screen resolution is low enough to force the bottom tools off the screen - this can happen if you are using a low-resolution screen projector.
 
@@ -490,9 +490,9 @@ File
 
 -   Import
 
-    -   [Import Raster](/docs/user-manual/DataFileTypes/)
+    -   [Import Raster](/docs/user-manual/Import/)
 
-    -   [Import Time-Dependent Raster](/docs/user-manual/DataFileTypes/)
+    -   [Import Time-Dependent Raster](/docs/user-manual/Import/)
 
 -   Connect WFS
 
@@ -539,7 +539,7 @@ Edit
     - *Edit Topology Sections* - **Clear** is displayed and it will clear any topology currently being edited.
 
     - *Modify Reconstruction Pole* - **Reset Rotation** is displayed and it will reset (to zero) the current
-      rotation being manipulated.
+      rotation being manipulated. - See [Pole Manipulation](/docs/user-manual/Pole_Manipulation/) for more.
 
 -   Preferences `[Ctrl+Comma]`
 
@@ -619,23 +619,23 @@ View
 Features
 --------
 
--   Manage Colouring
+-   [Manage Colouring](/docs/user-manual/Controlling_View/#5-manage-colouring)
 
--   Load Symbol file (.sym)
+-   [Load Symbol file (.sym)](/docs/user-manual/Symbols/#using-a-symbol-file)
 
--   Unload Symbol file
+-   [Unload Symbol file](/docs/user-manual/Symbols/#using-a-symbol-file)
 
--   View Total Reconstruction Sequences
+-   [View Total Reconstruction Sequences](/docs/user-manual/TotalReconstructionSequences/)
 
--   View Shapfile Attributes
+-   [View Shapfile Attributes](/docs/user-manual/Shapefiles/)
 
 -   Create VGP
 
--   Assign Plate IDs
+-   [Assign Plate IDs](/docs/user-manual/Interacting_Features/#3.0-assign-plate-ids)
 
--   Generate Deforming Mesh Points
+-   [Generate Deforming Mesh Points](/docs/user-manual/CrustalDeformation/#3-generate-deforming-mesh-points)
 
--   Generate Velocity Domain Points
+-   [Generate Velocity Domain Points](/docs/user-manual/Interacting_Features/#3.1-generate-velocity-domain-points)
    
     -   CitcomS
 
@@ -701,8 +701,6 @@ Tools
 -   Delete Vertex `[X]`
 
 -   Split Feature `[T]`
-
--   Modify Reconstruction Pole `[P]`
 
 -   Build New Line Topology `[H]`
 

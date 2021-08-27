@@ -9,7 +9,7 @@ next: 'TopologyTools'
 1 Introduction
 ============
 
-ESRI Shapefiles are one of the recognised Feature Collection file formats in GPlates. Loading a feature collection from a Shapefile follows the same procedure as any other feature data file - see the **Loading and Saving** chapter.
+ESRI Shapefiles are one of the recognised Feature Collection file formats in GPlates. Loading a feature collection from a Shapefile follows the same procedure as any other feature data file - see the [Loading and Saving](/docs/user-manual/LoadingAndSaving/) chapter.
 
 Much of this chapter also applies to OGR-GMT and GeoJSON file formats. These formats, along with shapefiles, are all handled by the OGR third-party library.
 
@@ -259,12 +259,12 @@ The file attribute field names are displayed at the top of each column. Each row
 
 **To view file attributes for a single feature.**
 
-File attributes for a single feature can be viewed through the **Query Feature Properties** dialog - see the **Interacting with Features** chapter.
+File attributes for a single feature can be viewed through the **Query Feature Properties** dialog - see the [Interacting with Features](/docs/user-manual/Interacting_Features/) chapter.
 
 2.6 Editing Shapefile attributes
 ----------------------------
 
-Shapefile attributes can be edited through the **Edit Feature Properties** dialog - see the **Interacting with Features** chapter.
+Shapefile attributes can be edited through the **Edit Feature Properties** dialog - see the [Interacting with Features](/docs/user-manual/Interacting_Features/) chapter.
 
 <table class ="note">
    <tbody>
@@ -291,7 +291,7 @@ Shapefile attributes can be edited through the **Edit Feature Properties** dialo
 3 Spatial Reference Systems
 =========================
 
-Some shapefiles, and other OGR-supported files, provide a spatial reference system (SRS) along with geometrical and attribute data (see **More about the Shapefile format** below). Such an SRS can provide information such as scales, projections, and datums, and determines how the geometries are interpreted and displayed on the GPlates canvas. If a shapefile provides an SRS, it will be detected automatically by GPlates. GPlates will internally convert any non-WGS84 SRS into WGS84. If no SRS is provided, GPlates will interpret the data as having a WGS84 SRS.
+Some shapefiles, and other OGR-supported files, provide a spatial reference system (SRS) along with geometrical and attribute data (see [More about the Shapefile format](#4-more-about-the-shapefile-format) below). Such an SRS can provide information such as scales, projections, and datums, and determines how the geometries are interpreted and displayed on the GPlates canvas. If a shapefile provides an SRS, it will be detected automatically by GPlates. GPlates will internally convert any non-WGS84 SRS into WGS84. If no SRS is provided, GPlates will interpret the data as having a WGS84 SRS.
 
 On saving a shapefile which had a non-WGS84 SRS, GPlates will prompt the user to select either saving in the original SRS, or saving in WGS84.
 
@@ -308,7 +308,7 @@ The ESRI Shapefile format is a file format allowing storage of geospatial vector
 
 The geospatial data are stored in the ".shp" and ".shx" files; the meta-data (attributes) are stored in the ".dbf" file. When loading a shapefile feature collection, you only need to select the ".shp" file; the ".shx" and ".dbf" files are loaded automatically. The file filter used in the **Open Feature Collection** dialog will show only the ".shp" form of shapefiles.
 
-Shapefiles will often contain extra files providing additional information; projection and SRS information for example can be provided in ".prj" files. If a shapefile provides SRS data, GPlates will read this information and internally convert the data to the WGS84 SRS (see **Spatial Reference Systems** above).
+Shapefiles will often contain extra files providing additional information; projection and SRS information for example can be provided in ".prj" files. If a shapefile provides SRS data, GPlates will read this information and internally convert the data to the WGS84 SRS (see [Spatial Reference Systems](#3-spatial-reference-systems) above).
 
 <table class ="note">
    <tbody>

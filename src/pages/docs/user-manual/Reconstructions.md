@@ -253,14 +253,14 @@ This button is used to change the current reconstruction time backward that you 
 Specify Anchored Plate ID
 -------------------------
 
-The **Specify Anchored Plate ID** command on the Reconstruction menu can be used to change which plate ID GPlates considers to be the globally fixed reference when performing reconstructions. Enter a new plate ID to be the anchor in the dialog that pops up, and GPlates will automatically rearrange the rotation hierarchy so that the specified plate ID is at the top.
+The **Specify Anchored Plate ID** command on the Reconstruction menu can be used to change which plate ID GPlates considers to be the globally fixed reference when performing reconstructions. Enter a new plate ID to be the anchor in the dialog that pops up, and GPlates will automatically rearrange the [rotation hierarchy](#the-rotation-hierarchy) so that the specified plate ID is at the top.
 
 ![](screenshots/SpecifyAnchoredPlateId.png)
 
 View Total Reconstruction Poles
 -------------------------------
 
-The Total Reconstruction Pole Dialog is accessed from the Reconstruction menu. It contains four tables of information, relevant to the current reconstruction time and the current anchored plate ID.
+The [Total Reconstruction Pole](#total-reconstruction-poles) Dialog is accessed from the Reconstruction menu. It contains four tables of information, relevant to the current reconstruction time and the current [anchored plate ID](#anchored-plate-id).
 
 ### Relative Rotations
 
@@ -270,7 +270,7 @@ This table lists all the total reconstruction poles in terms of the relative mot
 
 ### Equivalent Rotations Relative To Anchored Plate
 
-Similar to the **Relative Rotations** table, this lists rotations for each plate. However, the data presented here has been converted from individual relative rotations into the equivalent absolute rotation, relative to the anchored plate ID. Again, these apply to the current reconstruction time.
+Similar to the **Relative Rotations** table, this lists rotations for each plate. However, the data presented here has been converted from individual relative rotations into the equivalent absolute rotation, relative to the [anchored plate ID](#anchored-plate-id). Again, these apply to the current reconstruction time.
 
 ![](screenshots/TotalReconPoles-2.png)
 
@@ -282,7 +282,7 @@ Here the reconstruction hierarchy is presented in a more natural, tree-like form
 
 ### Plate Circuits To Stationary Plate
 
-This tab of the Total Reconstruction Poles dialog can be used to trace a series of total reconstruction poles from any given plate ID back to the top of the hierarchy, the anchored plate ID. It is useful to quickly identify the other plate IDs that a chosen plate ID depends on.
+This tab of the [Total Reconstruction Poles](#total-reconstruction-poles) dialog can be used to trace a series of total reconstruction poles from any given plate ID back to the top of the hierarchy, the [anchored plate ID](#anchored-plate-id). It is useful to quickly identify the other plate IDs that a chosen plate ID depends on.
 
 ![](screenshots/TotalReconPoles-4.png)
 

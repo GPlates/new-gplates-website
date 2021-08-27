@@ -22,7 +22,7 @@ A *project* is a session that a user has saved to a project file, whereas a *rec
 
 ![](screenshots/RecentSession-1.png)
 
-3 Opening and Project
+3 Opening a new project
 ===================
 
 There is more than one way to open a project file.
@@ -70,7 +70,7 @@ A list of the most recent sessions is available in the **File** menu (**File &gt
 
 ![](screenshots/RecentSession-2.png)
 
-These are sessions that have been [automatically saved](#automatic_save) and stored internally by GPlates.
+These are sessions that have been [automatically saved](#9-automatic-saving-of-sessions) and stored internally by GPlates.
 
 Each recent session in the list has a description containing:
 
@@ -97,7 +97,7 @@ In the **Preferences** dialog you can also configure the directories to open fea
 5 Restoring missing files in a session
 ====================================
 
-When GPlates restores a session ([opening a project](#open_project) or [opening a recent session](#open_rs)) the data files associated with the session are also restored. The data files are the feature collections (and any colour palette files used in the colouring styles or layer settings).
+When GPlates restores a session ([opening a project](#3-opening-a-new-project) or [opening a recent session](#4-opening-a-recent-session)) the data files associated with the session are also restored. The data files are the feature collections (and any colour palette files used in the colouring styles or layer settings).
 
 If any data files associated with a restored session are missing then a dialog lists the missing files and gives you the opportunity to individually locate each file before loading the session, or abort loading the session altogether. This is useful if data files were moved after the session (project file or recent session) was saved.
 
@@ -121,7 +121,7 @@ However if we instead locate all three missing files then all is restored includ
 
 ![](screenshots/Missing-Files-1.png)
 
-Note that our restored project now has an [unsaved change](#unsaved_change) since the names of the located files are different to what was stored in the project file. So we will want to save our restored project, otherwise if we try to open a different project then we will get the following unsaved changes warning…
+Note that our restored project now has an [unsaved change](#10-unsaved-changes) since the names of the located files are different to what was stored in the project file. So we will want to save our restored project, otherwise if we try to open a different project then we will get the following unsaved changes warning…
 
 ![](screenshots/Unsaved-Changes.png)
 
@@ -157,7 +157,7 @@ The current session can be cleared using the **File** menu (**File&gt;Clear Sess
 
 This unloads all feature collections and clears all layers
 
-Note that if a project is [currently open](#pro_open) then this will also close the project.
+Note that if a project is [currently open](#6-when-is-a-project-open) then this will also close the project.
 
 8 Saving a project
 ================
@@ -166,13 +166,13 @@ The **File** menu (**File &gt; Save Project** and **File&gt;Save Project As**) c
 
 ![](screenshots/Project-Save.png)
 
-**File &gt; Save Project** will save the currently open project file ([if a project is open](#pro_open)). However if a project is not currently open then you will be asked to select a project file, which will then become the currently open project.
+**File &gt; Save Project** will save the currently open project file ([if a project is open](#6-when-is-a-project-open)). However if a project is not currently open then you will be asked to select a project file, which will then become the currently open project.
 
 In contrast, **File &gt; Save Project As** will always ask you to select a project file (even if a project is already open). This can be used to save the currently open project to a different project file.
 
 Note that **File &gt; Save Project** and **File &gt; Save Project As** behave the same if a project is *not* currently open (both will ask you to select a project file).
 
-Also note that any [unsaved feature collections](#usfc) must first be saved before you can save a project otherwise you will get the following message…
+Also note that any [unsaved feature collections](#10.2-unsaved-feature-collections) must first be saved before you can save a project otherwise you will get the following message…
 
 ![](screenshots/Unsaved-Feature-Collections.png)
 
@@ -181,15 +181,15 @@ Also note that any [unsaved feature collections](#usfc) must first be saved befo
 
 In contrast to projects (which are manually saved by the user) the current session is automatically saved immediately prior to losing the current session. This happens when:
 
--   [Opening a new project](#open_project), or
+-   [Opening a new project](#3-opening-a-new-project), or
 
--   [Opening a recent session](#open_rs), or
+-   [Opening a recent session](#4-opening-a-recent-session), or
 
--   [Clearing the current session](#clear_session), or
+-   [Clearing the current session](#7-clearing-the-current-session), or
 
 -   Closing GPlates.
 
-However, note that if there are any unsaved *feature collections* then you will have the choice to discard those unsaved changes (and the current session will not be saved) or to remain in the current session. Please see [unsaved changes warning](#uscw) for more details.
+However, note that if there are any unsaved *feature collections* then you will have the choice to discard those unsaved changes (and the current session will not be saved) or to remain in the current session. Please see [unsaved changes warning](#10.1-unsaved-changes-warning) for more details.
 
 Saving the current session either replaces an existing session in the list of *recent sessions* (if any have the same feature collections) or inserts a new session (and pops the least recent session off the list). In both cases the current session becomes the most recent session in the list.
 
@@ -208,18 +208,18 @@ Unsaved changes are classified into:
 
     -   Modified layer settings not yet saved.
 
-    -   [Missing files restored in session](#rmfs).
+    -   [Missing files restored in session](#5-restoring-missing-files-in-a-session).
 
 10.1 Unsaved changes warning
 -----------------------
 
 If the current session has unsaved changes then a warning will pop up if you attempt an action that will lose the current session including:
 
--   [Opening a new project](#open_project), or
+-   [Opening a new project](#3-opening-a-new-project), or
 
--   [Opening a recent session](#open_rs), or
+-   [Opening a recent session](#4-opening-a-recent-session), or
 
--   [Clearing the current session](#clear_session), or
+-   [Clearing the current session](#7-clearing-the-current-session), or
 
 -   Closing GPlates.
 
@@ -305,7 +305,7 @@ In the following example, cross-sections (for the 3D scalar field) have been dig
 
 Changes to *feature collections* are saved to feature collection files (such as .gpml). Whereas *session changes* are automatically saved as recent sessions, and can also be saved to project files (.gproj).
 
-As such you are always warned of unsaved *feature collections* (in case you want to save the feature collection files). However you are only warned of unsaved *session changes* when a [project is currently open](#pro_open) (in case you want to save the project file), otherwise no warning is necessary because unsaved *session changes* are automatically saved as a recent session.
+As such you are always warned of unsaved *feature collections* (in case you want to save the feature collection files). However you are only warned of unsaved *session changes* when a [project is currently open](#6-when-is-a-project-open) (in case you want to save the project file), otherwise no warning is necessary because unsaved *session changes* are [automatically saved](#9-automatic-saving-of-sessions) as a recent session.
 
 11 Relocating projects
 ===================
@@ -356,7 +356,7 @@ In this case, the path of each data file relative to the project file must be ma
 
     -   Data file 2: *'/home/john/paleogeography/colouring/paleogeography.cpt'*
 
-Note that any colour palette files (*'\*.cpt'*) used by layers in the project should be included when copying the project, otherwise the user on the destination computer will be asked to [locate them](#rmfs).
+Note that any colour palette files (*'\*.cpt'*) used by layers in the project should be included when copying the project, otherwise the user on the destination computer will be asked to [locate them](#5-restoring-missing-files-in-a-session).
 
 ### 11.2.1 Including colour palette files
 
@@ -368,9 +368,9 @@ If a colour palette file is not in the directory you are copying (zipping up) to
 
 Now our *'paleogeography'* layer is using the colour palette file that we will be copying (zipping up). So we can save the project file (as *'C:/paleogeography/paleogeography.gproj'*) and then copy (zip up) the *'C:/paleogeography/'* directory tree and send it to another computer.
 
-When the copied (unzipped) project is opened on the destination computer, a new *'PaleoGeography'* colour style will appear in the **Draw Style** dialog (referencing the destination colour palette file *'/home/john/paleogeography/colouring/paleogeography.cpt'*) and it will be used to colour the *'paleogeography'* layer.
+When the copied (unzipped) project is opened on the destination computer, a new *'PaleoGeography'* colour style will appear in the [Draw Style](/docs/user-manual/Controlling_View/#5-manage-colouring) dialog (referencing the destination colour palette file *'/home/john/paleogeography/colouring/paleogeography.cpt'*) and it will be used to colour the *'paleogeography'* layer.
 
-Note that when a project is opened it will only create a new colour style if a matching one does not already exist in the **Draw Style** dialog. Matching colour styles have compatible names (differing only by *'1'*, *'2'*, etc, suffixes) and their configuration parameters match. So in our paleogeography example, colour styles *'PaleoGeography'* and *'PaleoGeography\_1'* are matching if they reference the same colour palette filename (and have the same *'property\_name'* value). So if prior to opening the project, the destination computer already had a colour style *'PaleoGeography'* referencing *'/home/john/paleogeography/colouring/paleogeography.cpt'* (and same *'property\_name'* value) then it would be used (instead of creating a new colour style).
+Note that when a project is opened it will only create a new colour style if a matching one does not already exist in the [Draw Style](/docs/user-manual/Controlling_View/#5-manage-colouring) dialog. Matching colour styles have compatible names (differing only by *'1'*, *'2'*, etc, suffixes) and their configuration parameters match. So in our paleogeography example, colour styles *'PaleoGeography'* and *'PaleoGeography\_1'* are matching if they reference the same colour palette filename (and have the same *'property\_name'* value). So if prior to opening the project, the destination computer already had a colour style *'PaleoGeography'* referencing *'/home/john/paleogeography/colouring/paleogeography.cpt'* (and same *'property\_name'* value) then it would be used (instead of creating a new colour style).
 
 11.3 Ambiguous projects
 ------------------

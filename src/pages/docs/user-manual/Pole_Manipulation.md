@@ -6,7 +6,7 @@ prev: 'SmallCircles'
 next: 'KinematicsTool'
 ---
 
-This chapter describes how to manipulate the reconstruction pole hierarchy using the Modify Reconstruction Poles tool.
+This chapter describes how to manipulate the reconstruction pole hierarchy using the Modify Reconstruction Poles tool. For a description into Total Reconstruction Poles, see [here](/docs/user-manual/Reconstructions/#total-reconstruction-poles) in the Reconstructions chapter. 
 
 1 Modify Reconstruction Poles Tool
 ================================

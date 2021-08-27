@@ -303,4 +303,6 @@ To change the default colouring scheme for all feature collections, select **(Al
    </tbody>
 </table>
 
+* Visit the Python Chapter [here](/docs/user-manual/Python/).
+
 For the options that support the inclusion of user-specified **Colour Palette Files** (`.CPT`), a few sample `CPT` files are included with the sample data to choose from, given you do not wish to create your own.

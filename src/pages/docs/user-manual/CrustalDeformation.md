@@ -211,7 +211,7 @@ To avoid the problem of *constant* stretching across a rifting profile, the user
 
 This feature works reasonably well for regular rifts (like AFR-SAM). However, for oblique rifts (like AUS-ANT), more work needs to be completed.
 
-To achieve this all you need to do is load in a deforming model and add a 'rift' left and right plate ID to any deforming network (e.g. in the South Atlantic). It doesn't matter which plate is left and which is right (ie, you can swap them). The presence of these two plate IDs is what triggers the rift stretching algorithm in GPlates (on a per-network basis).
+To achieve this all you need to do is load in a deforming model and add a 'rift' left and right plate ID to any deforming network (e.g. in the South Atlantic). It doesn't matter which plate is left and which is right (ie, you can swap them). The presence of these two plate IDs is what triggers the rift stretching algorithm in GPlates (on a per-network basis). - See the description of [Plate IDs](/docs/user-manual/Reconstructions/#plate-ids) in the Reconstructions chapter for more information as to what they are.
 
 There are also three other parameters (noted below), in addition to the two plate IDs mentioned above, that can either be set on a deforming network feature or just set in the layer. If they are set in both places, then the feature properties override the layer parameters. These parameters can be directly modified to see what effect they have on crustal thicknesses. 
 
