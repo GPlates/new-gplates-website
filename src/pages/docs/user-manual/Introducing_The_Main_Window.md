@@ -621,9 +621,9 @@ Features
 
 -   [Manage Colouring](/docs/user-manual/Controlling_View/#5-manage-colouring)
 
--   [Load Symbol file (.sym)](/docs/user-manual/Symbols/#using-a-symbol-file)
+-   [Load Symbol file (.sym)](/docs/user-manual/Controlling_View/#symbol-file)
 
--   [Unload Symbol file](/docs/user-manual/Symbols/#using-a-symbol-file)
+-   [Unload Symbol file](/docs/user-manual/Controlling_View/#symbol-file)
 
 -   [View Total Reconstruction Sequences](/docs/user-manual/TotalReconstructionSequences/)
 
