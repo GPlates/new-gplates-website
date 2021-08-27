@@ -33,9 +33,9 @@ In the case of the **Reconstructed Geometries** layer:
 
 -   the **layer** output contains the reconstructed features.
 
-The reason the rotations come from the output of another *layer* rather than a *feature collection* (containing rotation features) is because a rotation hierarchy needs to be generated from the rotation features themselves and so this process is performed by a different type of layer (the **Reconstruction Tree** layer). See the [Reconstructions](/docs/user-manual/Reconstructions/) chapter for more information about rotation hierarchies.
+The reason the rotations come from the output of another *layer* rather than a *feature collection* (containing rotation features) is because a [rotation hierarchy](/docs/user-manual/Reconstructions/#the-rotation-hierarchy) needs to be generated from the rotation features themselves and so this process is performed by a different type of layer (the **Reconstruction Tree** layer). See the [Reconstructions](/docs/user-manual/Reconstructions/) chapter for more information about rotation hierarchies.
 
-The output of most types of layers (exceptions include **Reconstruction Tree** layers) contain geometries and hence can be visualised in the globe and map views.
+The output of most types of layers (exceptions include [Reconstruction Tree](#reconstruction-tree-layer) layers) contain geometries and hence can be visualised in the globe and map views.
 
 The Layers dialog
 =================
@@ -44,11 +44,11 @@ The **Layers** dialog is usually displayed automatically when you first load a f
 
 ![](screenshots/Layers-Menu.png)
 
-The **Layers** dialog contains all layers and is the central place to configure layer visibility, draw order, input connections and layer-specific options.
+The **Layers** dialog contains all layers and is the central place to [configure layer visibility](#changing-layer-visibility), draw order, [input connections](#changing-layer-input-connections) and layer-specific options.
 
 ![](screenshots/Layers-AllCollapsed.png)
 
-The collapsed view of each layer in the dialog shows a layer name, type and colour. The type and colour are associated (for example, a *green* layer is always of type **Reconstructed Geometries**). The layer name depends on how the layer was created (see the [Creating layers](#creating-layers) section for more details).
+The collapsed view of each layer in the dialog shows a layer name, type and colour. The type and colour are associated (for example, a *green* layer is always of type [Reconstructed Geometries](#reconstructed-geometries-layer)). The layer name depends on how the layer was created (see the [Creating layers](#creating-layers) section for more details).
 
 Changing layer visibility
 -------------------------
@@ -66,7 +66,7 @@ The visibility of each layer can be individually disabled (or enabled) by clicki
    </tbody>
 </table>
 
-Each layer contains a small black arrow <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/gnome_stock_data_next_16.png" /> </span> that can be clicked on to expand the layer and show the input connections and any layer-specific options. Once expanded you can click on the <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/gnome_stock_data_next_16.png" /> </span> symbol to collapse the layer again.
+Each layer contains a small black arrow <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/gnome_stock_data_next_16.png" /> </span> that can be clicked on to expand the layer and show the [input connections](#chaning-layer-input-connections) and any layer-specific options. Once expanded you can click on the <span style="display:inline-block; width:30px; vertical-align:middle;"><img src="icons/gnome_stock_data_next_16.png" /> </span> symbol to collapse the layer again.
 
 ![](screenshots/Layers-AllButOneCollapsed.png)
 
@@ -97,7 +97,7 @@ In the "`Manage layer`" section of each layer you can *Enable* and *Disable* the
    </tbody>
 </table>
 
-The "`Disable layer`" and "`Enable layer`" options determine if a layer does any processing or not. If a layer is disabled then that layer is effectively switched off and nothing is generated or output by that layer. It also means nothing will be drawn in the globe and map views for that layer (regardless of that layer’s visibility). And it means any other layer receiving input from that layer will receive nothing.
+The "`Disable layer`" and "`Enable layer`" options determine if a layer does any processing or not. If a layer is disabled then that layer is effectively switched off and nothing is generated or output by that layer. It also means nothing will be drawn in the globe and map views for that layer (regardless of that layer’s [visibility](#changing-layer-visibility)). And it means any other layer receiving input from that layer will receive nothing.
 
 <table class ="note">
    <tbody>
@@ -253,12 +253,12 @@ Types of layers
 
 There are various types of layers each represented by a different colour in the *Layers* dialog.
 
-Each layer provides a different type of functionality, has different types of inputs and generates different outputs.
+Each layer provides a different type of functionality, has different types of [inputs](#changing-layer-input-connections) and generates different outputs.
 
 Reconstruction Tree Layer
 -------------------------
 
-This layer combines rotation features from one or more feature collections to form a reconstruction tree or rotation hierarchy (see the [Reconstructions](/docs/user-manual/Reconstructions/) chapter for more information about rotation hierarchies). This rotation hierarchy can then determine the equivalent absolute rotation of a plate relative to the top of the hierarchy (the anchored plate).
+This layer combines rotation features from one or more feature collections to form a reconstruction tree or rotation hierarchy (see the [Reconstructions](/docs/user-manual/Reconstructions/#the-rotation-hierarchy) chapter for more information about rotation hierarchies). This rotation hierarchy can then determine the equivalent absolute rotation of a plate relative to the top of the hierarchy (the anchored plate).
 
 ### Reconstruction Tree Options
 
@@ -268,9 +268,9 @@ A *Reconstruction Tree* layer has the following configuration options:
 
 Since this type of layer does not produce visible geometries it does not have the visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> to enable/disable visibility.
 
-Instead it has the icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/gnome_emblem_default_yellow_16.png' /> </span> to set/indicate the default *Reconstruction Tree* layer - see **Default Reconstruction Tree** below.
+Instead it has the icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/gnome_emblem_default_yellow_16.png' /> </span> to set/indicate the default *Reconstruction Tree* layer - see [Default Reconstruction Tree](#default-reconstruction-tree) below.
 
-The `Input channels` section has one type of input:
+The `Input channels` section has one type of [input](#changing-layer-input-connections):
 
 -   "*Reconstruction features*" which is a list of input feature collections that contain rotation features.
 
@@ -302,10 +302,12 @@ The `Input channels` section has one type of input:
          <td class="icon">
             <img src="./images/icons/note.png" alt="Tip">
          </td>
-         <td class="content" >If an input feature collection contains both <strong>rotation</strong> and <strong>non-rotation</strong> features then the <strong>non-rotation</strong> features are simply ignored (by the <strong>Reconstruction Tree</strong> layer) since they cannot contribute to a rotation hierarchy. The <strong>non-rotation</strong> features will however have resulted in the automatic creation of a <strong>Reconstructed Geometries</strong> layer (along with the automatic creation of this <strong>Reconstruction Tree</strong> layer). So the <strong>non-rotation</strong> features won’t be ignored altogether - they are just ignored by the <strong>Reconstruction Tree</strong> layer. In turn, the <strong>Reconstructed Geometries</strong> layer will ignore the <strong>rotation</strong> features.
+         <td class="content" >If an input feature collection contains both <strong>rotation</strong> and <strong>non-rotation</strong> features then the <strong>non-rotation</strong> features are simply ignored (by the <strong>Reconstruction Tree</strong> layer) since they cannot contribute to a rotation hierarchy. The <strong>non-rotation</strong> features will however have resulted in the automatic creation* of a <strong>Reconstructed Geometries</strong> layer (along with the automatic creation* of this <strong>Reconstruction Tree</strong> layer). So the <strong>non-rotation</strong> features won’t be ignored altogether - they are just ignored by the <strong>Reconstruction Tree</strong> layer. In turn, the <strong>Reconstructed Geometries</strong> layer will ignore the <strong>rotation</strong> features.
       </tr>
    </tbody>
 </table>
+
+* *See [Automatically created layers](#automatically-created-layers) for more information on how these layers come to be.*
 
 
 `View Total Reconstruction Poles` displays a dialog to view a variety of information about the reconstruction poles and the plate hierarchy for that particular *Reconstruction Tree* layer (at the current reconstruction time). See the [Reconstructions](/docs/user-manual/Reconstructions/) chapter for more information on that dialog.
@@ -344,14 +346,14 @@ There is one type of input for this `Inputs` section:
 
 -   '*Reconstructed coverage domains*' is where you can connect a *reconstructed geometries* layer.
 
-*See the chapter on **Crustal Deformation** for more information into the *Scalar Coverage Options*.
+*See the chapter on [Crustal Deformation](/docs/user-manual/CrustalDeformation/#4-reconstructed-scalar-coverages-layer) for more information into the *Scalar Coverage Options*.
 
 Reconstructed Geometries Layer
 ------------------------------
 
 This layer reconstructs features from one or more feature collections using the current reconstruction time. Typically for each input feature geometry there is a corresponding reconstructed geometry (a rotated version of the present-day geometry). This layer is designed to handle different reconstruction methods in the one layer type. Examples of reconstruction methods include rigid plate rotation and half-stage rotation (such as at a Mid-Ocean Ridge).
 
-In order to rotate the present-day geometries of features, a rotation hierarchy is required and this is obtained by connecting a **Reconstruction Tree** layer.
+In order to rotate the present-day geometries of features, a [rotation hierarchy](/docs/user-manual/Reconstructions/#the-rotation-hierarchy) is required and this is obtained by connecting a [Reconstruction Tree](#reconstruction-tree-layer) layer.
 
 ### Reconstructed Geometries Options
 
@@ -359,13 +361,13 @@ A *Reconstructed Geometries* layer has the following configuration options:
 
 ![](screenshots/Layers-Options-ReconstructedGeometries.png)
 
-The visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> determines whether the reconstructed geometries are drawn in the globe and map views.
+The [visibility](#changing-layer-visibility) icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> determines whether the reconstructed geometries are drawn in the globe and map views.
 
-The `Input channels` section has two types of input:
+The `Input channels` section has two types of [input](#changing-layer-input-connections):
 
--   "*Reconstructable features*" is one or more feature collections containing reconstructable features. These are features that have geometry and have properties that provide enough information, aside from a rotation hierarchy, for GPlates to be able to reconstruct their geometry (such as a reconstruction plate ID).
+-   "*Reconstructable features*" is one or more feature collections containing reconstructable features. These are features that have geometry and have properties that provide enough information, aside from a [rotation hierarchy](/docs/user-manual/Reconstructions/#the-rotation-hierarchy), for GPlates to be able to reconstruct their geometry (such as a reconstruction plate ID).
 
--   "*Reconstruction tree*" is zero or one *Reconstruction Tree* layer. This input layer provides the rotation hierarchy that enables GPlates to reconstruct the features in the *Reconstructable features* input channel. If there is no *Reconstruction Tree* layer connected then the default *Reconstruction Tree* layer is used (see the section on **Reconstruction Tree Layer** for more details on the default *Reconstruction Tree*).
+-   "*Reconstruction tree*" is zero or one *Reconstruction Tree* layer. This input layer provides the rotation hierarchy that enables GPlates to reconstruct the features in the *Reconstructable features* input channel. If there is no *Reconstruction Tree* layer connected then the default *Reconstruction Tree* layer is used (see the section on [Reconstruction Tree Layer](#reconstruction-tree-layer) for more details on the default *Reconstruction Tree*).
 
 The following is an example of an *implicit* connection to the **default** *Reconstruction Tree* layer (because there is no *explicit* connection)…
 
@@ -373,15 +375,15 @@ The following is an example of an *implicit* connection to the **default** *Reco
 
 …if you then changed which layer was the default *Reconstruction Tree* layer then the new default would be implicitly connected. This is useful if you have a lot of *Reconstructed Geometries* layers open and you want to change the *Reconstruction Tree* layer that they all use without having to reconnect each layer individually. In this case you would just need to change the default *Reconstruction Tree* layer.
 
-On the other hand if you explicitly connect a *Reconstruction Tree* layer then the default is ignored (until you explicitly disconnect it).
+On the other hand if you explicitly connect a [Reconstruction Tree](#reconstruction-tree-layer) layer then the default is ignored (until you explicitly disconnect it).
 
 ![](screenshots/Layers-ReconstructedGeometries-ConnectedTree.png)
 
-Note that, in this example, "`Add new connection`" is disabled (and greyed out) since only one *Reconstruction Tree* input connection is allowed. You can still have multiple rotation feature collections as input to a *Reconstruction Tree* layer though.
+Note that, in this example, "`Add new connection`" is disabled (and greyed out) since only one *Reconstruction Tree* input connection is allowed. You can still have multiple rotation feature collections as input to a [Reconstruction Tree](#reconstruction-tree-layer) layer though.
 
 `Set VGP visibility` displays a dialog to specify how Virtual Geomagnetic Pole (VGP) features are displayed. This option only applies to VGP features - for other feature types these settings are ignored.
 
-`Draw Style Setting` displays a dialog to control the colouring of features 
+`Draw Style Setting` displays a dialog to control the colouring of features. See [Manage Colouring](/docs/user-manual/Controlling_View/#5-manage-colouring) for more information.
 
 The `Filled polygons` check box can be selected to colour fill features containing polygon geometries. Currently the colour of each filled polygon will be the same as the polygon outline colour (ie, same colour as unfilled polygons).
 
@@ -396,13 +398,13 @@ Co-registration Layer
 
 ![](screenshots/Layers-Options-Co-reg.png)
 
-There are two input options for the `Inputs` section of this layer:
+There are two [input](#changing-layer-input-connections) options for the `Inputs` section of this layer:
 
--   '*Reconstructed seed geometries*' where you can upload any *Reconstructed Geometries* layer.
+-   '*Reconstructed seed geometries*' where you can upload any [Reconstructed Geometries](#reconstructed-geometries-layer) layer.
 
 -   '*Reconstructed target geometries/rasters*' is where you can upload any *Reconstructed Geometries* or *Reconstructed Raster* layer.
 
-*For more on this layer, see the Chapter on **Spatiotemporal Co-registration**.*
+*For more on this layer, see the Chapter on [Spatiotemporal Co-registration](/docs/user-manual/Co_registration/).*
 
 Reconstructed Raster Layer
 --------------------------
@@ -443,15 +445,17 @@ A *Reconstructed Raster* layer has the following configuration options:
 
 ![](screenshots/Layers-Options-ReconstructedRaster.png)
 
-The visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> determines whether the raster is drawn in the globe and map views.
+The [visibility](#changing-layer-visibility) icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> determines whether the raster is drawn in the globe and map views.
 
-The `Input channels` section has three types of input:
+The `Input channels` section has three types of [input](#changing-layer-input-connections):
 
--   "*Reconstruction tree*" is zero or one *Reconstruction Tree* layer. This input layer provides the rotation hierarchy that enables GPlates to reconstruct the static polygon features in the *Polygon features* input channel. If there is no *Reconstruction Tree* layer connected then the default *Reconstruction Tree* layer is used (see the section on **Reconstruction Tree Layer** for more details on the default *Reconstruction Tree*).
+-   "*Raster Feature*" is zero or one *Reconstruction Tree* layer. This input layer provides the [rotation hierarchy](/docs/user-manual/Reconstructions/#the-rotation-hierarchy) that enables GPlates to reconstruct the static polygon features in the *Polygon features* input channel. If there is no *Reconstruction Tree* layer connected then the default *Reconstruction Tree* layer is used (see the section on [Reconstruction Tree Layer](#reconstruction-tree-layer) for more details on the default *Reconstruction Tree*).
 
--   "*Reconstructed polygons*" is zero, one (or more) *Reconstructed Geometries* layers. The features in the *Reconstructed Geometries* layers should contain static polygon features (the *static* meaning the polygon shapes don’t change) and should contain a reconstruction plate ID property on each polygon feature. If there are no polygon features then the raster is not reconstructed.
+-   "*Reconstructed polygons*" is zero, one (or more) *Reconstructed Geometries* layers. The features in the [Reconstructed Geometries](#reconstructed-geometries-layer) layers should contain static polygon features (the *static* meaning the polygon shapes don’t change) and should contain a reconstruction plate ID property on each polygon feature. If there are no polygon features then the raster is not reconstructed.
 
 -   "*Age grid raster*" is zero or one *Reconstructed Raster* layer containing an age-grid raster. Each pixel of the age grid raster is a floating-point value representing the age of present-day oceanic crust.
+
+-   "*Surface Relief Raster*" is zero or one *Reconstructed Raster* layer. The connected raster is treated as a height-field in which a surface relief shading is generated, while the first reconstructed raster (the layer) contributes the colour.
 
 <table class ="note">
    <tbody>
@@ -471,9 +475,21 @@ The `Input channels` section has three types of input:
 
 ![](screenshots/Layers-Options-ReconstructedRaster-Opacity.png)
 
-If the raster is non-RGBA (such as a floating-point NetCDF raster) then there are extra options in the *Raster options* section related to colour palettes.
+#### Numerical Rasters
 
-![](screenshots/Layers-Options-ReconstructedRaster-WithColourPalette.png)
+If the raster is non-RGBA (such as a floating-point NetCDF raster) then there are extra options in the *Raster options* section related to colour palettes, explored below.
+
+##### Built-in Colour Palette Options
+
+For numerical rasters, you can select a **Built-in Palette** by clicking the link in the **Colour Mapping** layer option.
+
+![](screenshots/Built-in-Palette.png)
+
+This dialog demonstrates the broad range of **Built-in Palette** options, from *Sequential* (multi-hue and single hue) to *Diverging*, to *Age* based palettes. All colour palettes under **ColorBrewer** have the ability to become discrete or inverted and have the number of classes defined. 
+
+#### Colour Rasters
+
+![](screenshots/Layers-Options-Raster-ColourMapping.png)
 
 In the "*Raster options*" section you can configure the colour palette, for a specific raster band, used to convert each floating-point pixel value to an RGB(A) colour value by selecting a CPT file. Note that this only applies to rasters that are not already in RGB(A) format - see the [Importing Rasters and 3D Scalar Fields](/docs/user-manual/Import/) chapter for more information on raster formats. CPT files come in two forms - categorical and regular. Categorical is typically used for non-numerical data (where interpolation of values is undefined). Regular is for numerical, continuously-varying data and is more applicable for rasters. The regular CPT file allows the user to map floating-point pixel values to colours with linear interpolation inbetween.
 
@@ -633,11 +649,21 @@ The resulting reconstructed raster (with the assistance of an age grid)…
    </tbody>
 </table>
 
+### Configuring a raster using a surface relief raster
+
+To use a raster as surface relief for another raster, you must [connect it](#changing-layer-input-connections) under the Input option *Surface relief raster*. 
+
+![](screenshots/Layers-Options-SurfaceReliefRaster.png)
+
+Attaching a surface relief raster allows an image to be projected that is a combination of the first raster's colour and the second raster's surface lighting. The connected/second raster acts as a height-field where surface relief shading is created. The colour of the first raster is modulated with the surface lighting (intensity) of the second raster to get the final output colour. Below is an visualisation of the above Input options, demonstrating what an Age Grid looks like using the same Age Grid as its surface relief, with a surface relief scale of 7.00. The Rasters are coloured with the **Traditional** Colour Palette to represent the hotter, younger rock rising at the MOR in red, and the cooler, older rock in blue. - See [Built-in Colour Palette Options](#built-in-colour-palette-options) to learn how to choose the *Traditional* colour palette, among many other options. 
+
+![](screenshots/Layers-Options-SurfaceReliefRaster-Globes.png)
+
 
 Resolved Topological Geometries Layer
 --------------------------------------------------
 
-This layer generates dynamic plate polygons by closing the plate boundary at each reconstruction time. The plate boundary consists of a sequence of regular features whose geometry is reconstructed and then stitched together to form a closed polygon region for each plate polygon feature. See the **Topology Tools** chapter for more information of topological features.
+This layer generates dynamic plate polygons by closing the plate boundary at each reconstruction time. The plate boundary consists of a sequence of regular features whose geometry is reconstructed and then stitched together to form a closed polygon region for each plate polygon feature. See the [Topology Tools](/docs/user-manual/TopologyTools/) chapter for more information of topological features.
 
 ![](screenshots/Layers-TCCB-View.png)
 
@@ -649,15 +675,15 @@ A *Resolved Topological Geometries* layer has the following configuration option
 
 The visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> determines whether the resolved topological closed plate polygons are drawn in the globe and map views.
 
-Here is an example of turning off the visibility of the *Reconstructed Geometries* layer so that only the topological polygons are visible.
+Here is an example of [turning off the visibility](#changing-layer-visibility) of the [Reconstructed Geometries](#reconstructed-geometries-layer) layer so that only the topological polygons are visible.
 
 ![](screenshots/Layers-TCCB-Visibility.png)
 
-The `Input channels` section has three types of input:
+The `Input channels` section has three types of [input](#changing-layer-input-connections):
 
 -   "*Topological geometry features*" is one (or more) *feature collections* containing topological closed plate polygon features. These are features topologically reference regular features and form a continuously closing dynamic plate polygon from them through geological time.
 
--   "*Reconstruction tree*" is zero or one *Reconstruction Tree* layer.
+-   "*Reconstruction tree*" is zero or one [Reconstruction Tree](#reconstruction-tree-layer) layer.
 
 -   "*Topological sections*" is any *Resolved Topological Geometries* or *Reconstructed Geometries* layer. 
 
@@ -690,7 +716,7 @@ The `Filled polygons` check box can be selected to colour fill the topological p
 Resolved Topological Networks Layer
 -----------------------------------
 
-This layer generates dynamic plate polygons in a manner similar to a *Resolved Topological Geometries* layer with the addition of deforming the plate region. See the **Topology Tools** chapter for more information of topological features.
+This layer generates dynamic plate polygons in a manner similar to a *Resolved Topological Geometries* layer with the addition of deforming the plate region. See the [Topology Tools](/docs/user-manual/TopologyTools/) chapter for more information of topological features.
 
 ![](screenshots/Layers-TN-View.png)
 
@@ -700,26 +726,26 @@ A *Resolved Topological Networks* layer has the following configuration options:
 
 ![](screenshots/Layers-Options-TN.png)
 
-The `Input channels` section has two types of input:
+The `Input channels` section has two types of [input](#changing-layer-input-connections):
 
 -   "*Topological network features*" is one (or more) *feature collections* containing topological network features.
 
--   "*Reconstruction tree*" is zero or one *Reconstruction Tree* layer.
+-   "*Reconstruction tree*" is zero or one [Reconstruction Tree](#reconstruction-tree-layer) layer.
 
 The various `Show…` options under `Network & Triangulation options` are used to display different aspects of the triangulation generated in the deforming region. These are mostly debugging and visualisation aids.
 
-`Draw Style Setting` displays a dialog to control the colouring of features - see [Manage Colouring](/docs/user-manual/Controlling_View/#5-manage-colouring)
+`Draw Style Setting` displays a dialog to control the colouring of features - See [Manage Colouring](/docs/user-manual/Controlling_View/#5-manage-colouring) for more information. 
 
 Calculated Velocity Fields Layer
 --------------------------------
 
 This layer calculates plate velocities at a set of static locations. Here *static* means non-rotating (the points do *not* move across the globe as the reconstruction time changes).
 
-The velocities are calculated by determining which topological closed plate polygon contains each static point location. Then the finite rotation corresponding to that plate polygon’s reconstruction plate ID is used to calculate the velocity at the static point location.
+The velocities are calculated by determining which topological closed plate polygon contains each static point location. Then the finite rotation corresponding to that plate polygon’s reconstruction plate ID is used to calculate the velocity at the static point location. - See the description of [finite rotations](/docs/user-manual/Reconstructions/#finite-rotations) in the Reconstructions chapter for further explanation as to what they are. 
 
-This type of layer is automatically created when a *feature collection* containing features of type *gpml:MeshNode* is loaded. These features contain multi-point geometry that defines the set of static locations at which to calculate velocity.
+This type of layer is [automatically created](#automatically-created-layers) when a *feature collection* containing features of type *gpml:MeshNode* is loaded. These features contain multi-point geometry that defines the set of static locations at which to calculate velocity.
 
-An associated *Reconstructed Geometries* layer is also created to visualise the point locations. The *Calculated Velocity Fields* layer visualises the velocities as arrows (longer arrows represent larger velocities).
+An associated [Reconstructed Geometries](#reconstructed-geometries-layer) layer is also created to visualise the point locations. The *Calculated Velocity Fields* layer visualises the velocities as arrows (longer arrows represent larger velocities).
 
 The velocity arrows are not drawn at every static point location. Instead they are spaced apart so that they are minimum distance from each other on the "screen" (on the computer monitor). This so they can be distinguished visually even for very dense meshes.
 
@@ -736,21 +762,23 @@ The velocity arrows are not drawn at every static point location. Instead they a
    </tbody>
 </table>
 
+*See [Creating Layers](#layers-created-by-the-user) for more information on how to do this.*
+
 ### Calculated Velocity Fields Options
 
 A *Calculated Velocity Fields* layer has the following configuration options:
 
 ![](screenshots/Layers-Options-Velocities.png)
 
-The visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> of the *Calculated Velocity Fields* layer determines whether the velocity arrows are drawn in the globe and map views. And the visibility icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> of the *Reconstructed Geometries* layer determines whether the set of static points (at which velocities are calculated) are drawn.
+The [visibility](#changing-layer-visibility) icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> of the *Calculated Velocity Fields* layer determines whether the velocity arrows are drawn in the globe and map views. And the [visibility](#changing-layer-visibility) icon <span style="display:inline-block; width:30px; vertical-align:middle;"><img src='./icons/inkscape_object_visible_16.png' /> </span> of the *Reconstructed Geometries* layer determines whether the set of static points (at which velocities are calculated) are drawn.
 
 ![](screenshots/Layers-VelocityAndReconstructedGeometries.png)
 
-The `Input channels` section has three types of input:
+The `Input channels` section has three types of [input](#changing-layer-input-connections):
 
--   "*Mesh-point Features*" is one (or more) *feature collections* containing features of type *gpml:MeshNode* (or other feature types if you explicitly created your own velocity layer) representing the set of static point locations at which to calculate velocity.
+-   "*Mesh-point Features*" is one (or more) *feature collections* containing features of type *gpml:MeshNode* (or other feature types if you explicitly [created your own](#creating-layers) velocity layer) representing the set of static point locations at which to calculate velocity.
 
--   "*Reconstruction tree*" is zero or one *Reconstruction Tree*. The *Reconstruction Tree* layer is used to calculate velocities. Note that this *should* actually be the rotation tree used by the *Resolved Topological Closed Plate Boundaries* layer (the one connected on the "*Source Features*" input channel). *This will be fixed in a future release*.
+-   "*Reconstruction tree*" is zero or one *Reconstruction Tree*. The [Reconstruction Tree](#reconstruction-tree-layer) layer is used to calculate velocities. Note that this *should* actually be the rotation tree used by the *Resolved Topological Closed Plate Boundaries* layer (the one connected on the "*Source Features*" input channel). *This will be fixed in a future release*.
 
 -   "*Reconstructed static/dynamic polygons/networks*\* is one (or more) *layers* of type *Reconstructed Geometries* (containing static polygons), *Resolved Topological Closed Plate Boundaries* (containing dynamic polygons) and/or *Resolved Topological Networks* (containing deforming dynamic polygons) that generates the "surfaces" that the velocities are calculated in.
 
@@ -776,6 +804,8 @@ The `Input channels` section has three types of input:
    </tbody>
 </table>
 
+*See [Automatically created layers](#automatically-created-layers) for more information about how/why these layers are formed.*
+
 3D Scalar Field Layer
 ---------------------
 
@@ -783,13 +813,13 @@ The `Input channels` section has three types of input:
 
 The 3D volumes are represented as a sequence of 2D depth layers when imported. The scalar fields can be imported as a sequence of 2D rasters combined to form a single 3D scalar field. 
 
-A Scalar Field should first be imported (see [Importing 3D Scalar Fields](/docs/user-manual/Import/#3d-scalar-field)) into a *.gpml* file. That only needs to be done once. From then on you can just load that *.gpml* file and a 3D Scalar Field layer will appear. In this layer, various parameters can be set to determine the visual appearance of the 3D scalar field. 
+A Scalar Field should first be imported (see [Importing Rasters and 3D Scalar Fields](/docs/user-manual/Import/#3d-scalar-field)) into a *.gpml* file. That only needs to be done once. From then on you can just load that *.gpml* file and a 3D Scalar Field layer will appear. In this layer, various parameters can be set to determine the visual appearance of the 3D scalar field. 
 
 ### Inputs
 
 ![](screenshots/Layers-Options-3DSF-Inputs.png)
 
-The `input` section has three types of input:
+The `input` section has three types of [input](#changing-layer-input-connections):
 
 -   '*Scalar field feature*' (this is automatically filled when the *.gpml* scalar field file is loaded).
 
@@ -819,7 +849,7 @@ Colour varies with depth in this mode, using hard-coded colouring. The colours r
 
 ##### Scalar
 
-The **scalar colour mode** uses isosurface scalar value to look up the colour palette that is either chosen from the Built-in Palette selection below, or a colour palette loaded from a *GMT* regular *CPT* file. For an isosurface, the scalar colour mode covers the entire surface in the same colour, as it represents a single isovalue. To change the colour, you **must** modify the isovalue. 
+The **scalar colour mode** uses isosurface scalar value to look up the colour palette that is either chosen from the Built-in Palette's (see [Built-in Colour Palette Options](#built-in-colour-palette-options)), or a colour palette loaded from a *GMT* regular *CPT* file. For an isosurface, the scalar colour mode covers the entire surface in the same colour, as it represents a single isovalue. To change the colour, you **must** modify the isovalue. 
 
 ##### Gradient
 
@@ -836,11 +866,9 @@ The **gradient colour mode** uses isosurface gradient magnitude to look up the c
    </tbody>
 </table>
 
-#### Scalar Colour Mapping
+#### Isosurface Scalar Colour Mapping
 
-![](screenshots/Built-in-Palette.png)
-
-This dialog demonstrates the broad range of **Built-in Palette** options, from *Sequential* (multi-hue and single hue) to *Diverging*, to *Age* based palettes. All colour palettes under **ColorBrewer** have the ability to become discrete or inverted and have the number of classes defined. The Built-in colour palettes are accessible via the Gradient or Scalar colour modes. 
+The Built-in colour palettes are accessible via the Gradient or Scalar colour modes. - See [Built-in Palette Options](#built-in-colour-palette-options) for more information.
 
 #### Isosurface Deviation Window Mode
 
@@ -870,7 +898,7 @@ The option to choose **No Deviation Window** is also there if the user wishes no
 
 This is where the user can adjust the *isovalue* to investigate different isosurfaces.
 
-#### Surface Polygons Mask and Depth Restriction (Radius)
+#### Isosurface Surface Polygons Mask and Depth Restriction (Radius)
 
 A **surface polygon mask** is an optional constraint for the visualisation of isosurfaces and cross-sections, in addition to a restricted depth range. A surface mask is the concave interior of one or more surface polygon geometries, and the **depth range** is defined by a minimum and maximum radius. Only isosurface regions directly beneath the surface mask and within the depth range are rendered. The user can define these parameters in the 3D Scalar Field layer, and choose to **restore actual depth range** at any time. 
 
@@ -900,12 +928,12 @@ When the user selects Cross sections as their **Render mode** in their 3D Scalar
 
 #### Cross Sections Colour Mode
 
-Similar to isosurfaces, cross-sections can be coloured through either the **Scalar** or **Gradient** colour modes. Unlike isosurfaces however, when mapping a cross section with the gradient colour mode, only the *positive range of values to colours* are mapped, due to the fact that a magnitude is positive by deifinition. *See above for further insight into these options*.
+Similar to isosurfaces, cross-sections can be coloured through either the **Scalar** or **Gradient** colour modes. Unlike isosurfaces however, when mapping a cross section with the gradient colour mode, only the *positive range of values to colours* are mapped, due to the fact that a magnitude is positive by deifinition. - See the section above on [Built-in Colour Palette Options](#built-in-colour-palette-options) for further insight into these options.
 
-#### Scalar Colour Mapping
+#### Cross Section Scalar Colour Mapping
 
-Colour mapping for cross sections is identical to isosurfaces. *See above for further insight into these options*. 
+Colour mapping for cross sections is identical to isosurfaces. - See section above on [Isosurface Scalar Colour Mapping](#isosurface-scalar-colour-mapping) for further insight into these options. 
 
-#### Surface Polygons Mask and Depth Restriction (Radius)
+#### Cross section Surface Polygons Mask and Depth Restriction (Radius)
 
-Again, the user can create a surface polygon mask for their cross-sections and restrict it via a depth (radius). *See above for further insight into these options.*
+Again, the user can create a surface polygon mask for their cross-sections and restrict it via a depth (radius). - See [Isosurface surface polygons mask and depth restriction (radius)](#isosurface-surface-polygons-mask-and-depth-restriction-(radius)) for further insight into these options.
