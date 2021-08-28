@@ -1,7 +1,6 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 22: Working with Shapefiles'
-chapterNo: 22
+title: 'Working with Shapefiles'
 prev: 'HellingerTool'
 next: 'TopologyTools'
 ---

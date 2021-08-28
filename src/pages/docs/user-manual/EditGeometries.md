@@ -1,7 +1,6 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 14: Editing Geometries'
-chapterNo: 14
+title: 'Editing Geometries'
 prev: 'TotalReconstructionSequences'
 next: 'Creating_Features'
 ---

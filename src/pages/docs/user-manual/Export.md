@@ -1,7 +1,6 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 9: Export'
-chapterNo: 9
+title: 'Export'
 prev: 'Reconstructions'
 next: 'Interacting_Features'
 ---

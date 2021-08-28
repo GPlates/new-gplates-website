@@ -1,7 +1,6 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 17: Motion Paths'
-chapterNo: 17
+title: 'Motion Paths'
 prev: 'Flowlines'
 next: 'SmallCircles'
 ---

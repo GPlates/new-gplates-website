@@ -1,7 +1,6 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 1: Introduction to GPlates'
-chapterNo: 1
+title: 'Introduction to GPlates'
 prev: ''
 next: 'Introducing_The_Main_Window'
 ---

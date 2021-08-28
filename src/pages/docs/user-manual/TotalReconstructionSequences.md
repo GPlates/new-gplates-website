@@ -1,7 +1,6 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 13: Total Reconstruction Sequences'
-chapterNo: 13
+title: 'Total Reconstruction Sequences'
 prev: 'Interacting_Features'
 next: 'EditGeometries'
 ---

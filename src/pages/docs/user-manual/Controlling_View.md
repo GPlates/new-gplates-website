@@ -1,7 +1,6 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 6: Controlling the View'
-chapterNo: 6
+title: 'Controlling the View'
 prev: 'Projects_and_Recent_Sessions'
 next: 'Layers'
 ---

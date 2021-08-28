@@ -1,7 +1,6 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 18: Small Circles'
-chapterNo: 18
+title: 'Small Circles'
 prev: 'MotionPaths'
 next: 'Pole_Manipulation'
 ---

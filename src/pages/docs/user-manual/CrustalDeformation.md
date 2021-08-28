@@ -1,7 +1,6 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 26: Crustal Deformation'
-chapterNo: 26
+title: 'Crustal Deformation'
 prev: 'Co_registration'
 ---
 

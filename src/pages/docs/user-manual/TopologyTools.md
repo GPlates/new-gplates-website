@@ -1,7 +1,6 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 23: Topology Tools'
-chapterNo: 23
+title: 'Topology Tools'
 prev: 'Shapefiles'
 next: 'Python'
 ---

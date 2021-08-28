@@ -1,7 +1,6 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 19: Total Reconstruction Pole Manipulation'
-chapterNo: 19
+title: 'Total Reconstruction Pole Manipulation'
 prev: 'SmallCircles'
 next: 'KinematicsTool'
 ---

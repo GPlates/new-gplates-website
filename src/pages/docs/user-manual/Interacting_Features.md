@@ -1,7 +1,6 @@
 ---
 templateKey: 'user-manual'
-title: 'Chapter 11: Interacting with Features'
-chapterNo: 11
+title: 'Interacting with Features'
 prev: 'Export'
 next: 'TotalReconstructionSequences'
 
