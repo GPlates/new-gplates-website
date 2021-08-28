@@ -66,38 +66,38 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="/news">
-                <span class="icon has-text-extensions" aria-hidden="true">
+                <span className="icon has-text-extensions" aria-hidden="true">
                   <FontAwesomeIcon icon={faNewspaper} />
                 </span>
                 <span>News</span>
               </Link>
               <Link className="navbar-item" to="/screenshots">
-                <span class="icon has-text-extensions" style={{color: 'mediumorchid'}} aria-hidden="true">
+                <span className="icon has-text-extensions" style={{color: 'mediumorchid'}} aria-hidden="true">
                   <FontAwesomeIcon icon={faImage} />
                 </span>
                 <span>Gallery</span>
               </Link>
               <Link className="navbar-item" to="/features">
-                <span class="icon has-text-extensions" style={{color: 'yellowgreen'}} aria-hidden="true">
+                <span className="icon has-text-extensions" style={{color: 'yellowgreen'}} aria-hidden="true">
                   <FontAwesomeIcon icon={faCubes} />
                 </span>
                 <span>Features</span>
               </Link>
               <Link className="navbar-item" to="/download">
-                <span class="icon has-text-extensions" style={{color: 'cornflowerblue'}} aria-hidden="true">
+                <span className="icon has-text-extensions" style={{color: 'cornflowerblue'}} aria-hidden="true">
                   <FontAwesomeIcon icon={faDownload} />
                 </span>
                 <span>Download</span>
               </Link>
               <Link className="navbar-item" to="/docs">
-                <span class="icon has-text-extensions" aria-hidden="true" style={{color: 'darkolivegreen'}}>
+                <span className="icon has-text-extensions" aria-hidden="true" style={{color: 'darkolivegreen'}}>
                   <FontAwesomeIcon icon={faBook} />
                 </span>
                 <span>Documentation</span>
               </Link>
 
               <Link className="navbar-item" to="/publications">
-                <span class="icon has-text-extensions" aria-hidden="true" style={{color: 'orangered'}}>
+                <span className="icon has-text-extensions" aria-hidden="true" style={{color: 'orangered'}}>
                   <FontAwesomeIcon icon={faScroll} />
                 </span>
                 <span>Publications</span>
@@ -114,14 +114,14 @@ const Navbar = class extends React.Component {
                 Contact
               </Link>*/}
                <Link className="navbar-item" to="/education">
-               <span class="icon has-text-extensions" aria-hidden="true" style={{color: 'mediumorchid'}}>
+               <span className="icon has-text-extensions" aria-hidden="true" style={{color: 'mediumorchid'}}>
                   <FontAwesomeIcon icon={faGraduationCap} />
                </span>
                
                <span>Education</span>
                </Link>
               <a className="navbar-item" href="https://discourse.gplates.org/" target="_blank" rel="noreferrer">
-                <span class="icon has-text-extensions" aria-hidden="true" style={{color: 'yellowgreen'}}>
+                <span className="icon has-text-extensions" aria-hidden="true" style={{color: 'yellowgreen'}}>
                   <FontAwesomeIcon icon={faUsers} />
                 </span>
                 <span>Forum</span>
