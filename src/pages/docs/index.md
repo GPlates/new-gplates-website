@@ -86,7 +86,7 @@ title: User Docs
          </td>
          <td class="content" >
             <p>Read the <a href="http://www.earthbyte.org/Resources/GPlates_tutorials/GPlates_Data_Manual/GPlates_Data_Manual.html">Data Manual</a> if you wish to understand how the GPlates model works and how GPlates stores data in its native file format (GPML). This manual may be of particular use to people who want to know how to structure their data so that it can be imported into GPlates easily.</p>
-            </p>There is also a <a href="/gpgim/">complete technical reference</a> of the GPlates Geological Information Model (GPGIM) for use by advanced users.</p>
+            </p>There is also a <a href="/docs/gpgim/">complete technical reference</a> of the GPlates Geological Information Model (GPGIM) for use by advanced users.</p>
          </td>
       </tr>
    </tbody>
