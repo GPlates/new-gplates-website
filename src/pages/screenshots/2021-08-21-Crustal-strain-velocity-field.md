@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/CrustalStrain_velocity.png)
+![Crustal strain and velocity fields](../../img/CrustalStrain_velocity.png)
 
 Australia’s present-day northerly migration indicated by velocity arrows. High crustal strain in the PNG and Indonesian islands. 

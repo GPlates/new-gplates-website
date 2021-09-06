@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/PlateReconstruction_55Ma.png)
+![Plate Reconstruction](../../img/PlateReconstruction_55Ma.png)
 
 The plates are coloured based on their region, with overlying coastal outlines in black. The plates were reconstructed to 55Ma using the reconstruction tool bar and projected with a Mollweide view.

@@ -10,7 +10,7 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/Paleogeo_300Ma.png)
+![Global Paleogeography](../../img/Paleogeo_300Ma.png)
 
 A Global Paleogeography model from Cao et al. (2017), containing four shapefiles:
 -	i: ice sheet (white)

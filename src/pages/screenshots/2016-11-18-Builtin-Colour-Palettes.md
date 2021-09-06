@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/BuiltinColourPalettes.png)
+![Builtin Colour Palettes](../../img/BuiltinColourPalettes.png)
 
 A variety of built-in colour palettes based on ColorBrewer sequential and diverging colour scales. Also the colour palette range can be remapped to a reasonable range of crustal thinning factors.

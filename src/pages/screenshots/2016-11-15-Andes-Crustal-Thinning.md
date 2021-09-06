@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![AndesCrustalThinning](../../img/AndesCrustalThinning.png)
+![Andes Crustal Thinning](../../img/AndesCrustalThinning.png)
 
 Present day crustal thickness of a distribution of points in the Andes deforming network. The blue area highlights compression from 40Ma to 0Ma.

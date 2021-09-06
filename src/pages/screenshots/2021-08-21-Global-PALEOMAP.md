@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/Paleomap_84Ma.png)
+![Global PALEOMAP](../../img/Paleomap_84Ma.png)
 
 The PALEOMAP global paleogeography time-dependent raster for the phanerozoic produced by Scotese (2016). Focused on Africa, reconstructed to 84Ma, there is shallow marine regions in the North-West of the continent, with also significant water coverage in South America.

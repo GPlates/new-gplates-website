@@ -11,7 +11,7 @@ tags:
   - release
   - python3
 ---
-![SATL_ExponentialStretching](../../img/SATL_ExponentialStretching_650x380.png)
+![GPlates 2.2 released](../../img/SATL_ExponentialStretching_650x380.png)
 
 #### A few points to note regarding this release:-
 

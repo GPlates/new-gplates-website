@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/IsoGravAnom_Hotspots_VPs.png)
+![Isostatic gravity anomalies](../../img/IsoGravAnom_Hotspots_VPs.png)
 
 Isostatic gravity anomalies of the East Coast of Australia corresponding to Volcanic Provinces highlighted in green, with hotspots at the bottom of the two red anomaly chains. 

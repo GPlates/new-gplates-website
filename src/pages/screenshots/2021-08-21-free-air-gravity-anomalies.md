@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/FreeAirGravityAnomalies.png)
+![Free Air Gravity Anomalies](../../img/FreeAirGravityAnomalies.png)
 
 Present-day free air gravity anomalies ‘cookie-cut’ to the global continental polygons, projected with a Robinson view. Central view projection on Plate 801 (Australia).

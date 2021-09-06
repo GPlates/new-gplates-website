@@ -1,6 +1,6 @@
 ---
 templateKey: 'screenshots'
-title: 'HellingerPicksTab'
+title: 'Hellinger Picks Tab'
 date: 2016-11-18T15:04:10.000Z
 image: ../../img/HellingerPicksTab.png
 description: >-
@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![HellingerPicksTab](../../img/HellingerPicksTab.png)
+![Hellinger Picks Tab](../../img/HellingerPicksTab.png)
 
 The Picks tab from the Hellinger tool, showing a list of segmented magnetic picks imported from file.

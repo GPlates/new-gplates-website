@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/Seychelles_hotspot_LIPs.png)
+![Hotspots and Large Igneous Provinces](../../img/Seychelles_hotspot_LIPs.png)
 
 Off the coast of Madagascar there is a clear chain of LIPs produced by the movement of the plate over the hotspot in question, Seychelles. As you reconstruct back through time this relationship is affirmed. 

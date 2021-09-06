@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/AtlanticFlowlines_40Ma.png)
+![Atlantic Flowlines](../../img/AtlanticFlowlines_40Ma.png)
 
 Atlantic Flowlines between Africa, South America and North America 40Ma. The coastline polylines are filled and slightly transparent, while the globe background is set at a medium grey. Stars are set in the background, with a text overlay displaying the reconstruction time.

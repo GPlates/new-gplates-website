@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![HellingerSelectSegment](../../img/HellingerSelectSegment.png)
+![Hellinger Select Segment](../../img/HellingerSelectSegment.png)
 
 Segmented magnetic picks displayed on the globe canvas. One of the segments has been selected and is highlighted in white. The best fit pole estimate is indicated by the arrow symbol in the upper right corner of the window.

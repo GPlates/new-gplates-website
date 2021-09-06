@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/VGG_SeafloorFabric.png)
+![Vertical Gravity Gradient and Seafloor Fabric](../../img/VGG_SeafloorFabric.png)
 
 A Mercator projection of a Global Vertical Gravity Gradient raster, with Seafloor fabric overlain. The continental regions are also depicted in different colours as an overlay.

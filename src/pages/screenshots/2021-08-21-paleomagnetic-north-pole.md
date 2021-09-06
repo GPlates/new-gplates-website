@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/Gondwana_N_Pole.png)
+![Gondwana Paleomagnetic North Pole](../../img/Gondwana_N_Pole.png)
 
 The Gondwana North Pole 95Ma in a 3D orthographic projection. As seen in the name, this pole existed in this location from 80-100Ma.

@@ -10,7 +10,7 @@ tags:
   - pyGPlates
   - release
 ---
-![pygplates_doc_contents](../../img/pygplates_doc_contents.png)
+![PyGPlates beta revision 12 released](../../img/pygplates_doc_contents.png)
 
 Welcome to the first __beta__ release of the GPlates Python library known as pyGPlates.
 

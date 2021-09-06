@@ -11,7 +11,7 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/pygplates_doc_contents.png)
+![PyGPlates beta revision 28 released](../../img/pygplates_doc_contents.png)
 
 This pyGPlates beta release adds support for __Python 3__ (in addition to Python 2.7).
 

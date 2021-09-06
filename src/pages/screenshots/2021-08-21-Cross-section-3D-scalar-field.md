@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/CrossSection_3DScalarField.png)
+![Cross Section of 3D Scalar Field](../../img/CrossSection_3DScalarField.png)
 
 A polyline geometry following the Indonesian islands projecting a 2D cross section of the 3D scalar field under SE Asia.

@@ -10,7 +10,7 @@ tags:
   - release
   - python3
 ---
-![HellingerAdjustCanvas](../../img/HellingerAdjustCanvas.png)
+![Hellinger Adjust Canvas](../../img/HellingerAdjustCanvas.png)
 
 Adjusting the best-fit pole estimate on the canvas.
 

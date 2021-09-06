@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/TectonicSubsidence.png)
+![Tectonic Subsidence](../../img/TectonicSubsidence.png)
 
 Reconstructed to ~83Ma, tectonic subsidence is portrayed in the deforming network selected. 

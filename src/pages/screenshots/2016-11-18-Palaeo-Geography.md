@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![PalaeoGeography](../../img/PalaeoGeography.png)
+![Palaeo Geography](../../img/PalaeoGeography.png)
 
 Palaeo geography polygons now display correctly (without overlapping each other) due to support for donut polygons (polygons with interior holes).

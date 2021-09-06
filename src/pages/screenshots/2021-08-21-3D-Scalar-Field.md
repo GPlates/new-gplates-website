@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/3DScalarField.png)
+![3D Scalar Field](../../img/3DScalarField.png)
 
 3D Scalar field under SE Asia, coloured to represent the temperatures of the material below the Earth's surface. Hot rising slabs are depicted in red, with the cooler down going slabs in blue. Coastlines to visualise the location globally. 

@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/SeafloorFabric_AgeGrid.png)
+![Age grid and seafloor fabric](../../img/SeafloorFabric_AgeGrid.png)
 
 Seafloor fabric overlying a Traditionally coloured Age Grid to represent the hotter MOR in red, and the cooler, older oceanic crust in blue. The spreading path between Africa and South America is reflected in the seafloor fabric. 

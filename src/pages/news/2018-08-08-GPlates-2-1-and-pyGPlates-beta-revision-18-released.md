@@ -11,7 +11,7 @@ tags:
   - release
   - python3
 ---
-![SATL_CrustalStretching](../../img/SATL_CrustalStretching_650x380.png)
+![GPlates 2.1 and pyGPlates beta revision 18 released](../../img/SATL_CrustalStretching_650x380.png)
 
 #### Please use this pyGPlates release when working with any data saved by GPlates 2.0 or GPlates 2.1 (especially topologies).
 * This will avoid incorrect reconstruction of half-stage rotation features (such as mid-ocean ridges) created by GPlates 2.0 (or above).

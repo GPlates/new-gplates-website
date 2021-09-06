@@ -10,6 +10,6 @@ tags:
   - release
   - python3
 ---
-![pygplates_doc_contents](../../img/BouguerAnom_VolcanicProvs.png)
+![Bouguer Anomalies and Volcanic Provinces](../../img/BouguerAnom_VolcanicProvs.png)
 
 Continental Bouguer anomalies with overlain black transparent volcanic provinces. They often overlap in areas of strongly positive or negative (dark red or blue) anomalies such as the Icelandic or South American east coast regions.
