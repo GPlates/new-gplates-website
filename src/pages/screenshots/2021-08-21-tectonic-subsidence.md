@@ -12,4 +12,4 @@ tags:
 ---
 ![Tectonic Subsidence](../../img/TectonicSubsidence.png)
 
-Reconstructed to ~83Ma, tectonic subsidence is portrayed in the deforming network selected. 
+Tectonic subsidence at 115Ma due primarily to crustal stretching, with further subsidence at 55Ma due to cooling of the lithosphere.
