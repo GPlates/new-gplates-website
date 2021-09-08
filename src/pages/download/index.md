@@ -7,7 +7,7 @@ title: Download GPlates and Data
 ### Download GPlates
 ---
 
-The current stable release of GPlates is [GPlates 2.3](/news/2021-09-01-GPlates-2-3-released/), released in September 2021...
+The current stable release of GPlates is [GPlates 2.3](/news/2021-09-08-GPlates-2-3-released/), released in September 2021...
 
 <div class="download-box">
     <table>
@@ -72,16 +72,15 @@ We provide source-code packages for Windows (in a zip-file) and Linux and macOS 
 * [__GLEW__](http://glew.sourceforge.net/)
 * OpenGL
 * [__PROJ__](https://proj.org/) 4.6 or above (preferably 6 or above)
-* [__PROJ__](https://proj.org/) 4.6 or above (preferably 6 or above)
 * [__Python__](http://python.org/) 3.5 or above (or 2.7)
 * [__Qt__](https://www.qt.io/) 5.6 or above
 * [__Qwt__](https://qwt.sourceforge.io/) 6.0.1 or above (preferably 6.1 or above)
 
 Instructions on how to compile GPlates from source may be found in the GPlates source-code releases, in the files:
 
-* __DEPS.Linux__ and __BUILD.Linux__ (on Linux)
-* __DEPS.OSX__ and __BUILD.OSX__ (on macOS)
-* __DEPS.Windows__ and __BUILD.Windows__ (on Windows)
+* `DEPS.Linux` and `BUILD.Linux` (on Linux)
+* `DEPS.OSX` and `BUILD.OSX` (on macOS)
+* `DEPS.Windows` and `BUILD.Windows` (on Windows)
 
 GPlates is [free software](https://www.gnu.org/philosophy/free-sw.html) (also known as [open-source](https://opensource.org/docs/definition.php) software), licensed for distribution under the GNU [General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) (GPL) version 2.
 
