@@ -195,7 +195,7 @@ export const IndexPageTemplate = ({
             </div>
 
             <div style={{marginBottom: '2rem'}}>
-              <a href="https://sourceforge.net/projects/gplates/files/gplates/2.2/"
+              <a href="https://www.earthbyte.org/download-gplates-2-3/"
                 style={{
                     color: '#333',
                     textDecoration: 'underline',
@@ -203,13 +203,13 @@ export const IndexPageTemplate = ({
                     fontSize: 'large'
                 }}
               >
-                Latest release v2.2
+                Latest release v2.3
               </a>
               
             </div>
           
             <div>
-              <a className="button is-success is-rounded gp-download-btn" href="https://sourceforge.net/projects/gplates/files/gplates/2.2/">
+              <a className="button is-success is-rounded gp-download-btn" href="https://www.earthbyte.org/download-gplates-2-3/">
               <span className="icon"> <FontAwesomeIcon icon={faDownload} /></span> <span>Download Now</span>
               </a>
             </div>
