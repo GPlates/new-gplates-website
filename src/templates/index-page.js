@@ -167,6 +167,7 @@ export const IndexPageTemplate = ({
                 src={HeroImg1}
                 alt="Hero 1"
                 style={{ width: '5em', margin: '1em 0.2em', cursor:"pointer" }}
+                role="presentation" 
                 onClick={heroClick_1}
                 onKeyDown={heroClick_1}
                 
@@ -175,6 +176,7 @@ export const IndexPageTemplate = ({
                 src={HeroImg2}
                 alt="Hero 2"
                 style={{ width: '5em', margin: '1em 0.2em', cursor:"pointer" }}
+                role="presentation" 
                 onClick={heroClick_2}
                 onKeyDown={heroClick_2}
               />
@@ -182,6 +184,7 @@ export const IndexPageTemplate = ({
                 src={HeroImg3}
                 alt="Hero 3"
                 style={{ width: '5em', margin: '1em 0.2em', cursor:"pointer"  }}
+                role="presentation" 
                 onClick={heroClick_3}
                 onKeyDown={heroClick_3}
               />
@@ -189,6 +192,7 @@ export const IndexPageTemplate = ({
                 src={HeroImg4}
                 alt="Hero 4"
                 style={{ width: '5em', margin: '1em 0.2em', cursor:"pointer"  }}
+                role="presentation" 
                 onClick={heroClick_4}
                 onKeyDown={heroClick_4}
               />

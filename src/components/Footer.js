@@ -67,16 +67,16 @@ const Footer = class extends React.Component {
 
               <div className="column is-3 social">
                 <a title="facebook" href="https://www.facebook.com/earthbyte">
-                  <object type="image/svg+xml" data={facebook}></object>
+                  <object type="image/svg+xml" data={facebook} aria-labelledby="facebook"></object>
                 </a>
                 <a title="twitter" href="https://twitter.com/earthbytegroup">
-                  <object type="image/svg+xml" data={twitter}></object>
+                  <object type="image/svg+xml" data={twitter} aria-labelledby="twitter"></object>
                 </a>
                 <a title="instagram" href="https://www.instagram.com/explore/tags/earthbyte/top/">
-                  <object type="image/svg+xml" data={instagram}></object>
+                  <object type="image/svg+xml" data={instagram} aria-labelledby="instagram"></object>
                 </a>
                 <a title="youtube" href="https://www.youtube.com/channel/UCa41IQEhmmuXmz9J6iMfsnA">
-                  <object type="image/svg+xml" data={youtube}></object>
+                  <object type="image/svg+xml" data={youtube} aria-labelledby="youtube"></object>
                 </a>
               </div>
             </div>

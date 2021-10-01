@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../../components/Layout'
 import PropTypes from 'prop-types'
 import {Link, graphql, StaticQuery } from 'gatsby'
-import Content, { HTMLContent } from '../../../components/Content'
+import { HTMLContent } from '../../../components/Content'
 
 class ManualIndex extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class ManualIndex extends React.Component {
     if(posts.length>0){
       //find the first chapter
       for (let i = 0; i < posts.length; i++) {
-        if(posts[i].node.frontmatter.prev==""){
+        if(posts[i].node.frontmatter.prev===""){
           console.log(posts[i]);
           sorted_posts.push(posts[i]); 
           next=posts[i].node.frontmatter.next
@@ -23,7 +23,7 @@ class ManualIndex extends React.Component {
       }
       //sort the rest chapters
       let count=0
-      while(next!=""){
+      while(next!==""){
         if(count>1000){ // safe guard, should not happen, break the infinite loop, if the manual has more than 1000 chapters, this is a problem. 
           break;
         }
@@ -36,7 +36,7 @@ class ManualIndex extends React.Component {
             break; 
           }
         }
-        if(i==posts.length){ //cannot find next chapter, break the loop
+        if(i===posts.length){ //cannot find next chapter, break the loop
           next="";
         }
       }
