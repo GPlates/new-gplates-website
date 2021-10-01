@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const NewsTemplate = ({
+const NewsTemplate = ({
   content,
   contentComponent,
   description,

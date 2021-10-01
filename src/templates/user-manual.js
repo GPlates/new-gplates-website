@@ -7,7 +7,7 @@ import prevIcon from '../img/prev.png'
 import nextIcon from '../img/next.png'
 import homeIcon from '../img/home.png'
 
-export const UserManualTemplate = ({ title, toc,  content, contentComponent, prev , next}) => {
+const UserManualTemplate = ({ title, toc,  content, contentComponent, prev , next}) => {
   const PageContent = contentComponent || Content
 
   return (

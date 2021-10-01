@@ -51,7 +51,7 @@ Screenshots.propTypes = {
   }),
 }
 
-export default () => (
+const fn = () => (
   <StaticQuery
     query={graphql`
       query screenshotsQuery {
@@ -86,3 +86,5 @@ export default () => (
     render={(data, count) => <Screenshots data={data} count={count} />}
   />
 )
+
+export default fn;

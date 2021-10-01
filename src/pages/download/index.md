@@ -98,7 +98,7 @@ Go to [EarthByte website](https://www.earthbyte.org/category/resources/data-mode
 
 ---
 
-<img width="200px" src="/gplates_logo/newlogo.svg" alt="GPlates Logo">
+<img width="200px" src="/img/newlogo.svg" alt="GPlates Logo">
 
 You may download GPlates logo in SVG format. Click [here](https://www.earthbyte.org/webdav/ftp/earthbyte/GPlates_logo.zip) to download GPlates logo files.
 

@@ -90,7 +90,7 @@ const changeBGColor = () => {
 setInterval(changeBGColor, 200);
 
 
-export const IndexPageTemplate = ({
+const IndexPageTemplate = ({
   image,
   title,
   heading,

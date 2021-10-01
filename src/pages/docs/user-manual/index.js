@@ -85,7 +85,7 @@ ManualIndex.propTypes = {
   }),
 }
 
-export default () => (
+const fn = () => (
   <StaticQuery
     query={graphql`
       query manualIndexQuery {
@@ -113,3 +113,5 @@ export default () => (
     render={(data) => <ManualIndex data={data} />}
   />
 )
+
+export default fn;

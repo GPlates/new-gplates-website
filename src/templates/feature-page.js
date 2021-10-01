@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDotCircle, faHandPointRight} from '@fortawesome/free-solid-svg-icons'
 
-export const FeaturePageTemplate = ({ title, intro, image,features, capabilities }) => {
+const FeaturePageTemplate = ({ title, intro, image,features, capabilities }) => {
   return (
       <div className="container">
         <div className="column is-10 is-offset-1">
@@ -49,7 +49,7 @@ export const FeaturePageTemplate = ({ title, intro, image,features, capabilities
           <br></br>
           <div className="columns is-multiline"> 
             {features.map((feature) => (
-              <div className="column is-4">
+              <div className="column is-4" key={feature.title}>
                 <p className="has-text-weight-bold" style={{margin:'0.5rem'}}>
                   <span className="icon" style={{verticalAlign: 'middle', color: 'blue'}}> 
                     < FontAwesomeIcon icon={faHandPointRight} className="svg-inline--fa fa-hand-point-right"/>

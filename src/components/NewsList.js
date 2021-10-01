@@ -91,7 +91,7 @@ NewsList.propTypes = {
   }),
 }
 
-export default () => (
+const fn = () => (
   <StaticQuery
     query={graphql`
       query NewsListQuery {
@@ -129,3 +129,5 @@ export default () => (
     render={(data, count) => <NewsList data={data} count={count} />}
   />
 )
+
+export default fn;

@@ -114,7 +114,7 @@ LatestNews.propTypes = {
   }),
 }
 
-export default () => (
+const fn = () => (
   <StaticQuery
     query={graphql`
       query LatestNewsQuery {
@@ -152,3 +152,5 @@ export default () => (
     render={(data, count) => <LatestNews data={data} count={count} />}
   />
 )
+
+export default fn;
