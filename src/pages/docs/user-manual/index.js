@@ -85,6 +85,7 @@ ManualIndex.propTypes = {
   }),
 }
 
+//https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/#getting-table-of-contents
 const fn = () => (
   <StaticQuery
     query={graphql`
@@ -99,7 +100,10 @@ const fn = () => (
               fields {
                 slug
               }
-              tableOfContents
+              tableOfContents(
+                absolute: true
+                pathToSlugField: "fields.slug"
+              )
               frontmatter {
                 title
                 prev

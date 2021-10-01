@@ -8,6 +8,7 @@ import LatestNews from '../components/LatestNews'
 import { HTMLContent } from '../components/Content'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload, faClipboard, faCheckCircle} from '@fortawesome/free-solid-svg-icons'
+import { getSrc } from "gatsby-plugin-image"
 
 import GPlatesMainScreenshot from '../img/SATL_ExponentialStretching_650x380.png'
 import HeroImg1 from '../img/hero-img-1.png'
@@ -106,7 +107,7 @@ const IndexPageTemplate = ({
       className="full-width-image margin-top-0 gp-header"
       style={{
         backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          !!image.childImageSharp ? getSrc(image.childImageSharp.gatsbyImageData) : image
         })`,
         backgroundPosition: `left top`,
         backgroundAttachment: 'fixed',
@@ -544,31 +545,28 @@ IndexPage.propTypes = {
 
 export default IndexPage
 
-export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+export const pageQuery = graphql`query IndexPageTemplate {
+  markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
+    frontmatter {
+      title
+      image {
+        childImageSharp {
+          gatsbyImageData(quality: 100, layout: FULL_WIDTH)
         }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
-        descMarkdown {
-          childMarkdownRemark {
-            html
-          }
-        }
-        reasons 
       }
+      heading
+      subheading
+      mainpitch {
+        title
+        description
+      }
+      descMarkdown {
+        childMarkdownRemark {
+          html
+        }
+      }
+      reasons
     }
   }
+}
 `

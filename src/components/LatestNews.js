@@ -116,39 +116,36 @@ LatestNews.propTypes = {
 
 const fn = () => (
   <StaticQuery
-    query={graphql`
-      query LatestNewsQuery {
-        allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "news" } } }
-        ) {
-          edges {
-            node {
-              excerpt(pruneLength: 400)
-              id
-              html
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                templateKey
-                date(formatString: "MMMM DD, YYYY")
-                featuredpost
-                description
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 120, maxHeight:60, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-              }
+    query={graphql`query LatestNewsQuery {
+  allMarkdownRemark(
+    sort: {order: DESC, fields: [frontmatter___date]}
+    filter: {frontmatter: {templateKey: {eq: "news"}}}
+  ) {
+    edges {
+      node {
+        excerpt(pruneLength: 400)
+        id
+        html
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          templateKey
+          date(formatString: "MMMM DD, YYYY")
+          featuredpost
+          description
+          featuredimage {
+            childImageSharp {
+              gatsbyImageData(width: 120, height: 60, quality: 100, layout: CONSTRAINED)
             }
           }
         }
       }
-    `}
+    }
+  }
+}
+`}
     render={(data, count) => <LatestNews data={data} count={count} />}
   />
 )
