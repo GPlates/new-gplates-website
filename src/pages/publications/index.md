@@ -3,24 +3,78 @@ templateKey: 'simple-page'
 path: /publications
 title: GPlates Publications
 ---
-<span style="display: block;height: 192px; margin-top: -192px; visibility: hidden;" id="top"></span><button style="position:fixed; bottom:10px;right:10px;"><a href="#top">Go back to top</a></button> <a href="#2021" style="margin-left:10px;">2021(<strong><i>63</i></strong>)</a>;  <a href="#2020" style="margin-left:10px;">2020(<strong><i>110</i></strong>)</a>;  <a href="#2019" style="margin-left:10px;">2019(<strong><i>136</i></strong>)</a>;  <a href="#2018" style="margin-left:10px;">2018(<strong><i>127</i></strong>)</a>;  <a href="#2017" style="margin-left:10px;">2017(<strong><i>87</i></strong>)</a>;  <a href="#2016" style="margin-left:10px;">2016(<strong><i>72</i></strong>)</a>;  <a href="#2015" style="margin-left:10px;">2015(<strong><i>71</i></strong>)</a>;  <a href="#2014" style="margin-left:10px;">2014(<strong><i>52</i></strong>)</a>;  <a href="#2013" style="margin-left:10px;">2013(<strong><i>56</i></strong>)</a>;  <a href="#2012" style="margin-left:10px;">2012(<strong><i>57</i></strong>)</a>;  <a href="#2011" style="margin-left:10px;">2011(<strong><i>27</i></strong>)</a>;  <a href="#2010" style="margin-left:10px;">2010(<strong><i>14</i></strong>)</a>;  <a href="#2009" style="margin-left:10px;">2009(<strong><i>8</i></strong>)</a>;  <a href="#2008" style="margin-left:10px;">2008(<strong><i>10</i></strong>)</a>;  <a href="#2007" style="margin-left:10px;">2007(<strong><i>3</i></strong>)</a>;  <a href="#2006" style="margin-left:10px;">2006(<strong><i>1</i></strong>)</a>; 
+<span style="display: block;height: 192px; margin-top: -192px; visibility: hidden;" id="top"></span><button style="position:fixed; bottom:10px;right:10px;"><a href="#top">Go back to top</a></button> <a href="#2021" style="margin-left:10px;">2021(<strong><i>221</i></strong>)</a>;  <a href="#2020" style="margin-left:10px;">2020(<strong><i>110</i></strong>)</a>;  <a href="#2019" style="margin-left:10px;">2019(<strong><i>136</i></strong>)</a>;  <a href="#2018" style="margin-left:10px;">2018(<strong><i>127</i></strong>)</a>;  <a href="#2017" style="margin-left:10px;">2017(<strong><i>87</i></strong>)</a>;  <a href="#2016" style="margin-left:10px;">2016(<strong><i>72</i></strong>)</a>;  <a href="#2015" style="margin-left:10px;">2015(<strong><i>71</i></strong>)</a>;  <a href="#2014" style="margin-left:10px;">2014(<strong><i>52</i></strong>)</a>;  <a href="#2013" style="margin-left:10px;">2013(<strong><i>56</i></strong>)</a>;  <a href="#2012" style="margin-left:10px;">2012(<strong><i>57</i></strong>)</a>;  <a href="#2011" style="margin-left:10px;">2011(<strong><i>27</i></strong>)</a>;  <a href="#2010" style="margin-left:10px;">2010(<strong><i>14</i></strong>)</a>;  <a href="#2009" style="margin-left:10px;">2009(<strong><i>8</i></strong>)</a>;  <a href="#2008" style="margin-left:10px;">2008(<strong><i>10</i></strong>)</a>;  <a href="#2007" style="margin-left:10px;">2007(<strong><i>3</i></strong>)</a>;  <a href="#2006" style="margin-left:10px;">2006(<strong><i>1</i></strong>)</a>; 
 
-**Total: 894** (*as of 2021-06-11*)
+**Total: 1052** (*as of 2021-10-08*)
 
 
 
 <span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2021"></span>
 
 
-<strong id="2021">2021(63)</strong>
+<strong id="2021">2021(221)</strong>
 
-* [A record of plume-induced plate rotation triggering seafloor spreading and subduction initiation](https://eartharxiv.org/repository/object/2095/download/4351/) DJJ van Hinsbergen, B Steinberger, C Guilmette… - 2021 - eartharxiv.org
+* [2021 Michigan Geophysical Union Annual Symposium Program Booklet](https://deepblue.lib.umich.edu/bitstream/handle/2027.42/167204/MGU%20Booklet%201.5%20Final%20w%20DOI.pdf?sequence=1) MG Union - 2021 - deepblue.lib.umich.edu
+
+* [3-D thermal regime and dehydration processes around the regions of slow earthquakes along the Ryukyu Trench](https://www.nature.com/articles/s41598-021-90199-2) N Suenaga, S Yoshioka, Y Ji - Scientific reports, 2021 - nature.com
+
+* [3D printing the world: developing geophysical teaching materials and outreach packages](https://www.frontiersin.org/articles/10.3389/feart.2021.669095/pdf) P Koelemeijer, J Winterbourne - Frontiers in Earth Science, 2021 - frontiersin.org
+
+* [888–444 Ma global plate tectonic reconstruction with emphasis on the formation of Gondwana](https://www.frontiersin.org/articles/10.3389/feart.2021.666153/full) C Vérard - Frontiers in Earth Science, 2021 - frontiersin.org
+
+* [A Late Cretaceous true polar wander oscillation](https://www.nature.com/articles/s41467-021-23803-8) RN Mitchell, CJ Thissen, DAD Evans… - Nature …, 2021 - nature.com
+
+* [A crucial geologic test of Late Jurassic exotic collision versus endemic re-accretion in the Klamath Mountains Province, western United States, with implications for the …](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/doi/10.1130/B35981.1/5357952/b35981.pdf) TA LaMaskin, JA Rivas, DL Barbeau… - GSA …, 2021 - pubs.geoscienceworld.org
+
+* [A forearc stratigraphic response to Cretaceous plateau collision and slab detachment, South Island, New Zealand](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021TC006806) NP Gardiner, MWD Hall, PA Cawood - Tectonics, 2021 - Wiley Online Library
+
+* [A kinematic reconstruction of Iberia using intracontinental strike‐slip corridors](https://onlinelibrary.wiley.com/doi/pdf/10.1111/ter.12549) G Frasca, G Manatschal, P Cadenas, J Miró… - Terra …, 2021 - Wiley Online Library
+
+* [A multifaceted study of the offshore Titihaoa-1 drillhole and a Neogene accretionary slope basin, Hikurangi subduction margin](https://www.tandfonline.com/doi/pdf/10.1080/00288306.2021.1932527) AG Griffin, KJ Bland, HEG Morgans… - New Zealand Journal of …, 2021 - Taylor & Francis
+
+* [A multiscale view of the Phanerozoic fossil record reveals the three major biotic transitions](https://www.nature.com/articles/s42003-021-01805-y) A Rojas, J Calatayud, M Kowalewski… - Communications …, 2021 - nature.com
+
+* [A new passalid fossil (Insecta: Coleoptera) from the Santana Formation (Crato member, Lower Cretaceous), Araripe Basin, NE Brazil: Paleoecological and …](https://www.sciencedirect.com/science/article/pii/S0195667120303517) MFA dos Santos, I Mattos, JRM Mermudes… - Cretaceous …, 2021 - Elsevier
+
+* [A newly discovered Late‐Cretaceous East Asian flat slab explains its unique lithospheric structure and tectonics](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021JB022103) D Peng, L Liu, Y Wang - Journal of Geophysical Research …, 2021 - Wiley Online Library
+
+* [A positive relationship between functional redundancy and temperature in Cenozoic marine ecosystems](https://www.science.org/doi/full/10.1126/science.abf8732) TM Womack, JS Crampton, MJ Hannah, KS Collins - Science, 2021 - science.org
+
+* [A record of plume-induced plate rotation triggering subduction initiation](https://www.nature.com/articles/s41561-021-00780-7) DJJ van Hinsbergen, B Steinberger, C Guilmette… - Nature …, 2021 - nature.com
+
+* [A revised synthesis of the rift and drift history of the Gulf of Mexico and surrounding regions in the light of improved age dating of the Middle Jurassic salt](https://sp.lyellcollection.org/content/specpubgsl/504/1/29.full.pdf) J Pindell, D Villagómez, R Molina-Garza… - Geological Society …, 2021 - sp.lyellcollection.org
+
+* [Age and geochemistry of the Boucaut Volcanics in the Neoproterozoic Adelaide Rift Complex, South Australia](https://www.tandfonline.com/doi/pdf/10.1080/08120099.2021.1840435) SE Armistead, AS Collins, S Buckman… - Australian Journal of …, 2021 - Taylor & Francis
+
+* [Amazonia as the Origin and Diversification Area of Didelphidae (Mammalia: Metatheria), and a Review of the Fossil Record of the Clade](https://link.springer.com/article/10.1007/s10914-021-09548-7) MC Castro, MJ Dahur, GS Ferreira - Journal of Mammalian Evolution, 2021 - Springer
 
 * [An Atlas of Phanerozoic Paleogeographic Maps: The Seas Come In and the Seas Go Out](https://www.annualreviews.org/doi/full/10.1146/annurev-earth-081320-064052) CR Scotese - Annual Review of Earth and Planetary Sciences, 2021 - annualreviews.org
+
+* [An extreme climate gradient-induced ecological regionalization in the Upper Cretaceous Western Interior Basin of North America](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/doi/10.1130/B35904.1/5226175/b35904.pdf) L Burgener, E Hyland, E Griffith, H Mitášová… - GSA …, 2021 - pubs.geoscienceworld.org
 
 * [Ancestral transoceanic colonization and recent population reduction in a non‐annual killifish from the Seychelles archipelago](https://onlinelibrary.wiley.com/doi/pdf/10.1111/mec.15982) R Cui, AM Tyers, ZJ Malubhoy, S Wisotsky… - Molecular …, 2021 - Wiley Online Library
 
 * [Andean mountain building since the Late Cretaceous: A paleoelevation reconstruction](https://www.sciencedirect.com/science/article/pii/S0012825221001409) LM Boschman - Earth-Science Reviews, 2021 - Elsevier
+
+* [Análise estratigráfica da Formação El Molino (Maastrichtiano-Daniano), Grupo Puca, na Sinclinal Tototoro, Potosí, Bolívia](https://www.lume.ufrgs.br/bitstream/handle/10183/224452/001129071.pdf?sequence=1) SFL Dias - 2021 - lume.ufrgs.br
+
+* [Aptian–Albian clumped isotopes from northwest China: cool temperatures, variable atmospheric pCO2 and regional shifts in the hydrologic cycle](https://cp.copernicus.org/articles/17/1607/2021/cp-17-1607-2021.html) DT Harper, MB Suarez, J Uglesich, H You, D Li… - Climate of the …, 2021 - cp.copernicus.org
+
+* [Arctic rift system driven by a giant stagnant slab](https://www.researchgate.net/profile/Genti-Toyokuni-2/publication/352907599_Arctic_rift_system_driven_by_a_giant_stagnant_slab/links/60df4414a6fdccb745ffc156/Arctic-rift-system-driven-by-a-giant-stagnant-slab.pdf) G Toyokuni, D Zhao - Earth and Space Science Open Archive …, 2021 - researchgate.net
+
+* [Assessing the contribution of the La Luna Sea to the global sink of organic carbon during the Cenomanian-Turonian Oceanic Anoxic Event 2 (OAE2)](https://www.sciencedirect.com/science/article/pii/S0921818121000096) M Paez-Reyes, H Carvajal-Ortiz, SK Sahoo… - Global and Planetary …, 2021 - Elsevier
+
+* [Baddeleyite PbPb geochronology and paleomagnetic poles for~ 1.89–1.86 Ga mafic intrusions from the Dharwar craton, India, and their paleogeographic …](https://www.sciencedirect.com/science/article/pii/S0040195121000731) V Parashuramulu, R Shankar, DS Sarma, E Nagaraju… - Tectonophysics, 2021 - Elsevier
+
+* [Bending curvatures of subducting plates: old versus young slabs](https://academic.oup.com/gji/article/225/3/1963/6144597) R Dasgupta, J Sen, N Mandal - Geophysical Journal …, 2021 - academic.oup.com
+
+* [Beyond 'crumple zones': recent advances, applications and future directions in deformable plate tectonic modelling](https://pubs.geoscienceworld.org/geolmag/article-pdf/158/9/1704/5393593/s0016756821000534a.pdf) AL Peace - Geological Magazine, 2021 - cambridge.org
+
+* [Biotic Response to Early Eocene Warming Events: Integrated Record From Offshore Zealandia, North Tasman Sea](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020PA004179) L Alegret, DT Harper, C Agnini… - Paleoceanography …, 2021 - Wiley Online Library
+
+* [Carbon and nitrogen cycle dynamic in continental late-Carboniferous to early Permian basins of eastern Pangea (northeastern Massif Central, France)](https://www.frontiersin.org/articles/10.3389/feart.2021.705351/pdf) M Mercuzot, C Thomazo, J Schnyder… - Frontiers in Earth …, 2021 - frontiersin.org
+
+* [Cenozoic Evolution of the Sulu Sea Arc‐Basin System: An Overview](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020TC006630) CK Lai, XP Xia, R Hall, S Meffre, B Tsikouras… - …, 2021 - Wiley Online Library
 
 * [Cenozoic exhumation history of the eastern margin of the northern Canadian Cordillera](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020TC006582) R McKay, E Enkelmann, T Hadlari, W Matthews… - …, 2021 - Wiley Online Library
 
@@ -28,27 +82,63 @@ title: GPlates Publications
 
 * [Changes in fluvial architecture induced by discharge variability, Jaicós Formation (Silurian-Devonian), Parnaíba Basin, Brazil](https://www.sciencedirect.com/science/article/pii/S0037073821000762) MO Manna, CM dos Santos Scherer, MB Bállico… - Sedimentary …, 2021 - Elsevier
 
+* [Climate and biotic evolution during the Permian-Triassic transition in the temperate Northern Hemisphere, Kuznetsk Basin, Siberia, Russia](https://www.sciencedirect.com/science/article/pii/S0031018221002170) VI Davydov, EV Karasev, NG Nurgalieva… - Palaeogeography …, 2021 - Elsevier
+
+* [Climate and geological change as drivers of Mauritiinae palm biogeography](https://onlinelibrary.wiley.com/doi/pdf/10.1111/jbi.14098) G Bogotá‐Ángel, H Huang, PE Jardine… - Journal of …, 2021 - Wiley Online Library
+
+* [Climate forcing of terrestrial carbon sink during the Middle Jurassic greenhouse climate: Chronostratigraphic analysis of the Yan'an Formation, Ordos Basin, North …](https://pubs.geoscienceworld.org/gsa/gsabulletin/article/133/7-8/1723/593339) Z Zhang, T Wang, J Ramezani, D Lv, C Wang - Bulletin, 2021 - pubs.geoscienceworld.org
+
+* [Climatic drivers of latitudinal variation in Late Triassic tetrapod diversity](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/pala.12514) EM Dunne, A Farnsworth, SE Greene, DJ Lunt… - …, 2021 - Wiley Online Library
+
 * [Closure of the Proterozoic Mozambique Ocean was instigated by a late Tonian plate reorganization event](https://www.nature.com/articles/s43247-021-00149-z) AS Collins, ML Blades, AS Merdith… - Communications Earth & …, 2021 - nature.com
 
 * [Comment to “Neoproterozoic magmatic arc systems of the central Ribeira belt, SE-Brazil, in the context of the West-Gondwana pre-collisional history: A review”](https://bora.uib.no/bora-xmlui/bitstream/handle/11250/2756369/article73163.pdf?sequence=2) H Fossen, VT Meira, C Cavalcante, J Konopásek… - 2021 - bora.uib.no
+
+* [Constraints from exhumed rocks on the seismic signature of the deep subduction interface](https://www.researchgate.net/profile/Whitney-Behr/publication/354326157_Constraints_From_Exhumed_Rocks_on_the_Seismic_Signature_of_the_Deep_Subduction_Interface/links/613150ce2b40ec7d8bdf8097/Constraints-From-Exhumed-Rocks-on-the-Seismic-Signature-of-the-Deep-Subduction-Interface.pdf) CM Tewksbury-Christle, WM Behr - Geophysical Research …, 2021 - researchgate.net
 
 * [Contrasting styles of magmatism and rifting in the High Arctic LIP, Sverdrup Basin, Canadian Arctic](https://meetingorganizer.copernicus.org/EGU21/EGU21-12230.html) MC Williamson, GE Shephard, DA Kellett - 2021 - meetingorganizer.copernicus.org
 
 * [Controls of subducting slab dip and age on the extensional versus compressional deformation in the overriding plate](https://www.sciencedirect.com/science/article/pii/S0040195120303991) R Dasgupta, N Mandal, C Lee - Tectonophysics, 2021 - Elsevier
 
+* [Controls on the present-day dynamic topography predicted from mantle flow models since 410 Ma](https://academic.oup.com/gji/article/225/3/1637/6132270) A Yang, T Yang - Geophysical Journal International, 2021 - academic.oup.com
+
 * [Coupled evolution of plate tectonics and basal mantle structure](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020GC009244) X Cao, N Flament, RD Müller - Geochemistry, Geophysics …, 2021 - Wiley Online Library
+
+* [Cretaceous (Albian-Turonian) calcareous nannofossil biostratigraphy of the onshore Cauvery Basin, southeastern India](https://www.sciencedirect.com/science/article/pii/S019566712030330X) S Kanungo, P Bown, A Gale - Cretaceous Research, 2021 - Elsevier
 
 * [Cretaceous to Recent net continental uplift from paleobiological data: Insights into sub-plate support](https://pubs.geoscienceworld.org/gsa/gsabulletin/article/133/5-6/1217/592266) VM Fernandes, GG Roberts - Bulletin, 2021 - pubs.geoscienceworld.org
 
 * [Crustal variability along the rifted/sheared East African margin: a review](https://link.springer.com/article/10.1007/s00367-021-00690-y) M Vormann, W Jokat - Geo-Marine Letters, 2021 - Springer
 
+* [Deciphering paleogeography from orogenic architecture: constructing orogens in a future supercontinent as thought experiment](https://eartharxiv.org/repository/object/2005/download/4179/) DJJ van Hinsbergen, TLA Schouten - 2021 - eartharxiv.org
+
+* [Deep ocean temperatures through time](https://cp.copernicus.org/articles/17/1483/2021/cp-17-1483-2021.pdf) PJ Valdes, CR Scotese, DJ Lunt - Climate of the Past, 2021 - cp.copernicus.org
+
+* [Determinants of zoogeographical boundaries differ between vertebrate groups](https://onlinelibrary.wiley.com/doi/pdf/10.1111/geb.13345) GF Ficetola, F Mazel, M Falaschi… - Global Ecology and …, 2021 - Wiley Online Library
+
 * [Detrital zircon provenance record of the Zagros mountain building from the Neotethys obduction to the Arabia-Eurasia collision, NW Zagros fold-thrust belt, Kurdistan …](https://se.copernicus.org/preprints/se-2021-68/se-2021-68.pdf) RI Koshnaw, F Schlunegger, DF Stockli - Solid Earth Discussions, 2021 - se.copernicus.org
 
+* [Dinosaur-related Database Development and Examples of Data-driven Discovery](https://geology.nju.edu.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=10145) L Qingqing, X Lida - Geological Journal of China Universities, 2021 - geology.nju.edu.cn
+
 * [Do the 85° E Ridge and Conrad Rise form a hotspot track crossing the Indian Ocean?](https://www.sciencedirect.com/science/article/pii/S002449372100270X) S Homrighausen, K Hoernle, JA Wartho, F Hauff… - Lithos, 2021 - Elsevier
+
+* [Does evolutionary relatedness predict ecological similarity?](https://pubs.geoscienceworld.org/paleobiol/article/47/2/284/597761) JA Sclafani, CR Congreve, ME Patzkowsky - Paleobiology, 2021 - cambridge.org
+
+* [Dynamic Constraints on Slab Stagnation in the Mantle Transition Zone and Mantle Viscosity from Modeling Mantle Convection](https://search.proquest.com/openview/7605ed5f8eac542b0e5c1644a8ac48ea/1?pq-origsite=gscholar&cbl=18750&diss=y) W Mao - 2021 - search.proquest.com
+
+* [Dynamic palaeogeographic reconstruction utilizing GPlates in deep time: A case study of the Wuchiapingian Stage of the South China Block](https://cpfd.cnki.com.cn/Article/CPFDTOTAL-ZGKW202108001007.htm) 侯章帅 - 第十六届全国古地理学及沉积学学术会议论文摘要集, 2021 - cpfd.cnki.com.cn
+
+* [Early Miocene carbonate ramp development in a warm ocean, North West Shelf, Australia](https://onlinelibrary.wiley.com/doi/pdf/10.1111/sed.12917) R Riera, J Bourget, T Allan, E Håkansson… - …, 2021 - Wiley Online Library
+
+* [Early Paleozoic accretionary orogens along the Western Gondwana margin](https://www.sciencedirect.com/science/article/pii/S1674987120301493) S Oriolo, B Schulz, S Geuna, PD González… - Geoscience …, 2021 - Elsevier
 
 * [East Antarctica magnetically linked to its ancient neighbours in Gondwana](https://www.nature.com/articles/s41598-021-84834-1) J Ebbing, Y Dilixiati, P Haas, F Ferraccioli… - Scientific reports, 2021 - nature.com
 
 * [East Asian lithospheric evolution dictated by multistage Mesozoic flat-slab subduction](https://www.sciencedirect.com/science/article/pii/S0012825221001215) L Liu, D Peng, L Liu, L Chen, S Li, Y Wang, Z Cao… - Earth-Science …, 2021 - Elsevier
+
+* [Effects of basal drag on subduction dynamics from 2D numerical models](https://se.copernicus.org/articles/12/79/2021/) L Suchoy, S Goes, B Maunder, F Garel, R Davies - Solid Earth, 2021 - se.copernicus.org
+
+* [Eocene-Oligocene paleoenvironmental changes in the South Orkney Microcontinent (Antarctica) linked to the opening of Powell Basin](https://www.sciencedirect.com/science/article/pii/S0921818121001661) A López-Quirós, C Escutia, J Etourneau… - Global and Planetary …, 2021 - Elsevier
 
 * [Evidence of the latest Paleoproterozoic (~ 1615 Ma) mafic magmatism the southern Siberia: Extensional environments in Nuna supercontinent](https://www.sciencedirect.com/science/article/pii/S0301926820306380) DP Gladkochub, TV Donskaya, SA Pisarevsky… - Precambrian …, 2021 - Elsevier
 
@@ -56,21 +146,99 @@ title: GPlates Publications
 
 * [Evolutionary geological models of the central-western peri-Mediterranean chains: a review](https://www.tandfonline.com/doi/pdf/10.1080/00206814.2019.1706056) F Guerrera, M Martín-Martín… - International Geology …, 2021 - Taylor & Francis
 
+* [Evolutionary trends of body size and hypsodonty in notoungulates and their probable drivers](https://www.sciencedirect.com/science/article/pii/S0031018221000912) A Solórzano, M Núñez-Flores - Palaeogeography, Palaeoclimatology …, 2021 - Elsevier
+
+* [Exploring the impact of Cenomanian paleogeography and marine gateways on oceanic oxygen](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020PA004202) M Laugié, Y Donnadieu, JB Ladant… - Paleoceanography …, 2021 - Wiley Online Library
+
+* [Facultative monogamy in an early Eocene brooding oyster and its evolutionary implications](https://polish.polar.pan.pl/archive/published/app66/app008632020.pdf) K Halder, A Mitra - Acta Palaeontologica Polonica, 2021 - polish.polar.pan.pl
+
+* [Foraminiferal stratigraphy and palaeoenvironment of a storm-influenced marine shelf: upper Aptian–lower Albian, Svalbard, Arctic Norway](https://www.sciencedirect.com/science/article/pii/S0195667121002810) HR Hjálmarsdóttir, Ø Hammer, J Nagy… - Cretaceous Research, 2021 - Elsevier
+
+* [Formation of East Asian stagnant slabs due to a pressure‐driven Cenozoic mantle wind following Mesozoic subduction](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021GL094638) D Peng, L Liu, J Hu, S Li, Y Liu - Geophysical Research Letters, 2021 - Wiley Online Library
+
+* [GEODYNAMIC SETTING AND MINERALIZATION IN THE WESTERN NEO-TETHYS](https://harvest.usask.ca/bitstream/handle/10388/13438/ALLAHYARI-THESIS-2021.pdf?sequence=1&isAllowed=y) K Allahyari - 2021 - harvest.usask.ca
+
+* [Geoconservation and Geotourism on Fossil Forest of the Aragoncillo Range, Molina-Alto Tajo UNESCO Global Geopark (central Spain)](http://gcr.khuisf.ac.ir/article_683398.html) Y Sanchez Moya, C Álvarez-Vázquez… - Geoconservation …, 2021 - gcr.khuisf.ac.ir
+
+* [Geodynamic Insights on Critical Climate Events in Earth History](https://search.proquest.com/openview/b7ee36cd2e2f54a441d8f1f2490e83dd/1?pq-origsite=gscholar&cbl=18750&diss=y) S Coulson - 2021 - search.proquest.com
+
+* [Geographic variation of leaf form among indigenous woody angiosperms in New Zealand](https://www.tandfonline.com/doi/pdf/10.1080/0028825X.2021.1960384) T Reichgelt, WG Lee - New Zealand Journal of Botany, 2021 - Taylor & Francis
+
+* [Geological features and resource potential of deep-sea mud highly enriched in rare-earth elements in the Central Pacific Basin and the Penrhyn Basin](https://www.sciencedirect.com/science/article/pii/S0169136821004662) J Ohta, K Yasukawa, K Nakamura, K Fujinaga… - Ore Geology …, 2021 - Elsevier
+
 * [Glimpses into Earth's history using a revised global sedimentary basin map](https://www.sciencedirect.com/science/article/pii/S0012825221000635) JC Evenick - Earth-Science Reviews, 2021 - Elsevier
 
-* [Kinematics and extent of the Piemont–Liguria Basin–implications for subduction processes in the Alps](https://se.copernicus.org/articles/12/885/2021/se-12-885-2021.html) E Le Breton, S Brune, K Ustaszewski, S Zahirovic… - Solid Earth, 2021 - se.copernicus.org
+* [Global chemical weathering dominated by continental arcs since the mid-Palaeozoic](https://www.nature.com/articles/s41561-021-00806-0) TM Gernon, TK Hincks, AS Merdith, EJ Rohling… - Nature …, 2021 - nature.com
+
+* [Global mantle flow retrodictions for the early Cenozoic using an adjoint method: evolving dynamic topographies, deep mantle structures, flow trajectories and …](https://academic.oup.com/gji/article/226/2/1432/6177682) S Ghelichkhan, HP Bunge… - Geophysical Journal …, 2021 - academic.oup.com
+
+* [H2S origin, generation, and distribution in the Etame Marin Permit, offshore Gabon: A 3-D migration modeling prediction using field data](/scholar?output=instlink&q=info:s2GWsi2UtQkJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2021&scillfp=11676078709092126870&oi=lle) M Loegering, P Kaminski, I Hutchinson… - AAPG …, 2021 - archives.datapages.com
+
+* [Imaging paleoslabs and inferring the Clapeyron slope in D ″beneath the northern Pacific based on high-resolution inversion of seismic waveforms for 3-D …](https://www.sciencedirect.com/science/article/pii/S0031920121001096) Y Suzuki, K Kawai, RJ Geller - Physics of the Earth and Planetary Interiors, 2021 - Elsevier
+
+* [Impacts of the Middle Miocene Climatic Transition on deep-water carbonate preservation and oxygenation in the equatorial Indian Ocean](https://www.sciencedirect.com/science/article/pii/S0031018221002960) KGD Kochhann, W Kuhnt, AE Holbourn, Y Usui… - Palaeogeography …, 2021 - Elsevier
+
+* [Integrated analysis of magnetic, gravity and multichannel seismic reflection data along a transect southeast of Sri Lanka, Bay of Bengal: New constraints](/scholar?output=instlink&q=info:YxQrV2KyM84J:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2021&scillfp=1805719244833851550&oi=lle) MA Desa, MV Ramana - Marine Geology, 2021 - Elsevier
+
+* [Integrated multi-proxy source-to-sink analysis of the Lower Cretaceous of the Essaouira-Agadir Basin.](https://eartharxiv.org/repository/object/2276/download/4685/) E Roquette, JL Kennedy, LM Pichel, S Schröder… - 2021 - eartharxiv.org
+
+* [Intrusivos Cretácico Superior en la Cordillera de la Costa del área de Valdivia: magmatismo de antearco relacionado al paso de un punto triple?](https://scielo.conicyt.cl/scielo.php?pid=S0718-71062021000100024&script=sci_arttext&tlng=en) Ó Figueroa, D Demaiffe, M Mella, P Duhart… - Andean …, 2021 - scielo.conicyt.cl
+
+* [Investigating the Porcupine Atlantic margin, offshore Ireland, through integration of new seismic reflection and gravity data](https://www.sciencedirect.com/science/article/pii/S0040195121000937) P Yang, JK Welford - Tectonophysics, 2021 - Elsevier
+
+* [Investigating the plate kinematics of the Bay of Biscay using deformable plate tectonic models](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020TC006467) MT King, JK Welford, P Cadenas, J Tugend - Tectonics, 2021 - Wiley Online Library
+
+* [Jurassic fast polar shift rejected by a new high-quality paleomagnetic pole from southwest Greenland](https://www.sciencedirect.com/science/article/pii/S1342937X21001672) EV Kulakov, TH Torsvik, PV Doubrovine, T Slagstad… - Gondwana …, 2021 - Elsevier
+
+* [Kinematic and geodynamic evolution of the Isthmus of Panama region: Implications for Central American Seaway closure](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/133/3-4/867/5236203/867.pdf) R McGirr, M Seton, S Williams - Bulletin, 2021 - pubs.geoscienceworld.org
+
+* [Kinematic models for the northern Appalachians and Caledonides.](/scholar?output=instlink&q=info:3qXqeCrDi_cJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2021&scillfp=17132955119101657693&oi=lle) JWF Waldron, SM Barr, PJA Mccausland… - Atlantic Geology, 2021 - go.gale.com
+
+* [Kinematics and extent of the Piemont–Liguria Basin–implications for subduction processes in the Alps](https://se.copernicus.org/articles/12/885/2021/) E Le Breton, S Brune, K Ustaszewski, S Zahirovic… - Solid Earth, 2021 - se.copernicus.org
 
 * [Kinematics of Deformable Blocks: Application to the Opening of the Tyrrhenian Basin and the Formation of the Apennine Chain](https://www.mdpi.com/2076-3263/11/4/177/htm) E Turco, C Macchiavelli, G Penza, A Schettino… - Geosciences, 2021 - mdpi.com
 
+* [Large-Magnitude Extension in the Death Valley Region, Sw Usa: Thermo-Kinematic Modeling, Whole-Lithosphere Shear, and Disruption of Drainage …](https://search.proquest.com/openview/8e951848fd641aa8a2c314bbc5fa5abc/1?pq-origsite=gscholar&cbl=18750&diss=y) BM Lutz - 2021 - search.proquest.com
+
+* [Late Cretaceous Ridge Reorganization, Microplate Formation, and the Evolution of the Rio Grande Rise-Walvis Ridge Hot Spot Twins, South Atlantic Ocean](https://www.researchgate.net/profile/William-Sager/publication/349032088_Late_Cretaceous_Ridge_Reorganization_Microplate_Formation_and_the_Evolution_of_the_Rio_Grande_Rise_-_Walvis_Ridge_Hot_Spot_Twins_South_Atlantic_Ocean/links/60d728a7a6fdccb745e4c24a/Late-Cretaceous-Ridge-Reorganization-Microplate-Formation-and-the-Evolution-of-the-Rio-Grande-Rise-Walvis-Ridge-Hot-Spot-Twins-South-Atlantic-Ocean.pdf) WW Sager, S Thoram, DW Engfer… - Geochemistry …, 2021 - researchgate.net
+
+* [Late Jurassic Changmar complex from the Shyok ophiolite, NW Himalaya: a prelude to the Ladakh Arc](https://pubs.geoscienceworld.org/geolmag/article/158/2/239/594389) WM Saktura, S Buckman, AP Nutman… - Geological …, 2021 - cambridge.org
+
 * [Late Permian tectono-sedimentary setting and basin evolution in the Upper Yangtze region, South China: Implications for the formation mechanism of intra …](https://www.sciencedirect.com/science/article/pii/S1367912020303928) H Huang, D He, Y Li, D Li, Y Zhang, J Chen - Journal of Asian Earth …, 2021 - Elsevier
 
+* [Lithosphere structure and seismic anisotropy offshore eastern North America: Implications for continental breakup and ultra-slow spreading dynamics](https://search.proquest.com/openview/ed2eb82362b0ba3f921e1757761e0de8/1?pq-origsite=gscholar&cbl=4882998) JB Russell, JB Gaherty - Earth and Space Science Open …, 2021 - search.proquest.com
+
 * [Locating the Indo-Antarctica suture–Correlating the Rengali, Rauer and Ruker terranes in Gondwana](https://www.sciencedirect.com/science/article/pii/S1873965221000669) S Gupta, S Chatterjee, D Arora, S Bose - Polar Science, 2021 - Elsevier
+
+* [Lost islands in the northern Lesser Antilles: possible milestones in the Cenozoic dispersal of terrestrial organisms between South-America and the Greater …](https://www.sciencedirect.com/science/article/pii/S0012825221001173) JJ Cornee, P Münch, M Philippon… - Earth-Science …, 2021 - Elsevier
+
+* [Low paleolatitude of the Carajás Basin at∼ 2.75 Ga: Paleomagnetic evidence from basaltic flows in Amazonia](https://www.sciencedirect.com/science/article/pii/S0301926821003399) PLG Martins, CLB Toledo, AM Silva, PYJ Antonio… - Precambrian …, 2021 - Elsevier
+
+* [Low-latitude? upper Barremian–lower Aptian palynoflora and paleovegetation of the Biyadh Formation (Arabian Plate, eastern margin of northern Gondwana) …](https://www.sciencedirect.com/science/article/pii/S0195667121002433) H Boukhamsin, D Peyrot, S Lang, M Vecoli - Cretaceous Research, 2021 - Elsevier
+
+* [Luminescence signals of quartz and feldspar as new methods for stratigraphic discrimination and provenance analysis of siliciclastic successions: The case of the …](https://onlinelibrary.wiley.com/doi/pdf/10.1111/bre.12590) I del Río, AO Sawakuchi, AM Góes… - Basin …, 2021 - Wiley Online Library
+
+* [Maastrichtian-Rupelian paleoclimates in the southwest Pacific–a critical evaluation of biomarker paleothermometry and dinoflagellate cyst paleoecology at Ocean …](https://cp.copernicus.org/preprints/cp-2021-18/cp-2021-18.pdf) PK Bijl, J Frieling, MJ Cramwinckel… - Climate of the Past …, 2021 - cp.copernicus.org
 
 * [Magma-assisted fragmentation of Pangea: Continental breakup initiation and propagation](https://www.sciencedirect.com/science/article/pii/S1342937X21001246) H Guan, L Geoffroy, M Xu - Gondwana Research, 2021 - Elsevier
 
 * [Magnetostratigraphic evidence for post-depositional distortion of osmium isotopic records in pelagic clay and its implications for mineral flux estimates](https://earth-planets-space.springeropen.com/articles/10.1186/s40623-020-01338-4) Y Usui, T Yamazaki - Earth, Planets and Space, 2021 - earth-planets-space.springeropen …
 
+* [Magnetostratigraphy and magnetic properties of the Jurassic to Lower Cretaceous Girón Group (northern Andes, Colombia)](https://pubs.geoscienceworld.org/gsa/geosphere/article-pdf/doi/10.1130/GES02186.1/5421550/ges02186.pdf) G Jiménez, H García-Delgado… - …, 2021 - pubs.geoscienceworld.org
+
 * [Map-view restorations of the South Island, New Zealand: a reappraisal of the last 10 Myr of evolution of the Alpine and Wairau faults](https://www.tandfonline.com/doi/pdf/10.1080/00288306.2021.1878243) FC Ghisetti - New Zealand Journal of Geology and Geophysics, 2021 - Taylor & Francis
+
+* [Mesozoic intracontinental deformation of the Alxa Block in the middle part of Central Asian Orogenic Belt: A review](/scholar?output=instlink&q=info:fZU8AozYE7UJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2021&scillfp=11492101359998643967&oi=lle) J Zhang, Y Wang, J Qu, B Zhang, H Zhao… - International Geology …, 2021 - Taylor & Francis
+
+* [Metabolic tradeoffs control biodiversity gradients through geological time](https://www.sciencedirect.com/science/article/pii/S0960982221005340) TH Boag, W Gearty, RG Stockey - Current Biology, 2021 - Elsevier
+
+* [Microfossil and geochemical records reveal high-productivity paleoenvironments in the Cretaceous Western Interior Seaway during Oceanic Anoxic Event 2](https://www.sciencedirect.com/science/article/pii/S0031018221004648) R Bryant, RM Leckie, TJ Bralower, MM Jones… - Palaeogeography …, 2021 - Elsevier
+
+* [Middle Miocene tropical oligotrophic lagoon deposit sheds light on the origin of the Western Australian coral reef province](https://www.sciencedirect.com/science/article/pii/S0031018221002868) R Riera, J Bourget, E Håkansson, V Paumard… - Palaeogeography …, 2021 - Elsevier
+
+* [Mobilization of lithospheric mantle carbon during the Palaeocene-Eocene thermal maximum](https://www.researchsquare.com/article/rs-333061/latest.pdf) T Gernon, R Barr, J Fitton, T Hincks, J Longman… - 2021 - researchsquare.com
+
+* [Multiple melt source origin of the Line Islands (Pacific Ocean)](https://pubs.geoscienceworld.org/gsa/geology/article-pdf/doi/10.1130/G49306.1/5366071/g49306.pdf) R Pockalny, G Barth, B Eakins, KA Kelley… - …, 2021 - pubs.geoscienceworld.org
 
 * [NW Pacific-Panthalassa intra-oceanic subduction during Mesozoic times from mantle convection and geoid models](https://search.proquest.com/openview/9204b3bffe31124475b03c4cda163a6f/1?pq-origsite=gscholar&cbl=4882998) L Yi-An, L Colli, J Wu - Earth and Space Science Open Archive …, 2021 - search.proquest.com
 
@@ -80,19 +248,83 @@ title: GPlates Publications
 
 * [New interpretation of the spreading evolution of the Knipovich Ridge derived from aeromagnetic data](https://academic.oup.com/gji/article/224/2/1422/5956491) MA Dumais, L Gernigon, O Olesen… - Geophysical Journal …, 2021 - academic.oup.com
 
+* [New paleogeographic and degassing parameters for long-term carbon cycle models](https://www.sciencedirect.com/science/article/pii/S1342937X21001568) CM Marcilly, TH Torsvik, M Domeier, DL Royer - Gondwana Research, 2021 - Elsevier
+
+* [Noise in the Cretaceous Quiet Zone uncovers plate tectonic chain reaction](https://eartharxiv.org/repository/object/2530/download/5162/) D Gürer, R Granot, DJJ van Hinsbergen - 2021 - eartharxiv.org
+
 * [North China block underwent simultaneous true polar wander and tectonic convergence in late Jurassic: New paleomagnetic constraints](https://www.sciencedirect.com/science/article/pii/S0012821X21002715) Y Gao, S Zhang, H Zhao, Q Ren, T Yang, H Wu… - Earth and Planetary …, 2021 - Elsevier
+
+* [Numerical modeling of continental collision and intraplate deformation. Application to the Cenozoic geodynamic evolution of North Iberia](http://diposit.ub.edu/dspace/bitstream/2445/180299/1/AVP_PhD_THESIS.pdf) Á Valverde Pérez - 2021 - diposit.ub.edu
+
+* [Oceanic and super-deep continental diamonds share a transition zone origin and mantle plume transportation](https://www.nature.com/articles/s41598-021-96286-8) LS Doucet, ZX Li, H Gamal El Dien - Scientific reports, 2021 - nature.com
+
+* [Oligocene vegetation of Europe and western Asia—Diversity change and continental patterns reflected by plant functional types](https://onlinelibrary.wiley.com/doi/pdf/10.1002/gj.3830) T Utescher, B Erdei, L François, AJ Henrot… - Geological …, 2021 - Wiley Online Library
+
+* [Opposite symmetry in the lithospheric structure of the Alboran and Algerian basins and their margins (Western Mediterranean): Geodynamic implications](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020JB021388) A Kumar, M Fernàndez, J Vergés… - Journal of …, 2021 - Wiley Online Library
+
+* [Orographic evolution of northern Tibet shaped vegetation and plant diversity in eastern Asia](https://www.science.org/doi/full/10.1126/sciadv.abc7741) SF Li, PJ Valdes, A Farnsworth, T Davies-Barnard… - Science …, 2021 - science.org
+
+* [PALEOSTRIPv1. 0–a user-friendly 3D backtracking software to reconstruct paleo-bathymetries](https://gmd.copernicus.org/preprints/gmd-2021-78/gmd-2021-78.pdf) F Colleoni, L De Santis, E Pochini… - Geoscientific Model …, 2021 - gmd.copernicus.org
+
+* [Palaeobiogeography of the North Pacific toothed mysticetes (Cetacea, Aetiocetidae): a key to Oligocene cetacean distributional patterns](https://onlinelibrary.wiley.com/doi/pdf/10.1111/pala.12507) AE Hernandez Cisneros, J Velez‐Juarbe - Palaeontology, 2021 - Wiley Online Library
+
+* [Palaeolatitudinal distribution of the Ediacaran macrobiota](https://jgs.lyellcollection.org/content/jgs/early/2021/07/27/jgs2021-030.full.pdf) CE Boddy, EG Mitchell, A Merdith… - Journal of the …, 2021 - jgs.lyellcollection.org
 
 * [Paleocene to Miocene migmatization and kinematics of the deformation at the northern boundary of the Xolapa Complex: implications for the Chortís Block-southern …](https://www.tandfonline.com/doi/pdf/10.1080/00206814.2020.1870248) A Sarmiento-Villagrana, R Vega-Granillo… - International Geology …, 2021 - Taylor & Francis
 
+* [Paleoclimate and paleoenvironment reconstruction of paleosols spanning the Lower to Upper Cretaceous from the Rukwa Rift Basin, Tanzania](https://www.sciencedirect.com/science/article/pii/S0031018221003242) TJ Orr, EM Roberts, CM Wurster, C Mtelela… - Palaeogeography …, 2021 - Elsevier
+
+* [Paleoenvironmental contexts of South American cretaceous sauropod tracks](https://www.sciencedirect.com/science/article/pii/S0895981121002406) MB Tomaselli, LDO David, BJG Riga - Journal of South American Earth …, 2021 - Elsevier
+
+* [Paleogeography of Late Jurassic large-igneous-province activity in the Paleo-Pacific Ocean: Constraints from the Mikabu greenstones and Chichibu …](https://www.sciencedirect.com/science/article/pii/S1342937X20302641) K Tominaga, H Hara - Gondwana Research, 2021 - Elsevier
+
 * [Paleomagnetic insights into the Cambrian biogeographic conundrum: Did the North China craton link Laurentia and East Gondwana?](https://pubs.geoscienceworld.org/gsa/geology/article/49/4/372/592908) H Zhao, S Zhang, M Zhu, J Ding, H Li, T Yang… - …, 2021 - pubs.geoscienceworld.org
+
+* [Paleomagnetic studies of rapakivi complexes in the Fennoscandian shield–Implications to the origin of Proterozoic massif-type anorthosite magmatism](https://www.sciencedirect.com/science/article/pii/S030192682100334X) J Salminen, SÅ Elming, S Mertanen, C Wang… - Precambrian …, 2021 - Elsevier
 
 * [Paleozoic plate kinematics during the Pannotia–Pangaea supercontinent cycle](https://sp.lyellcollection.org/content/specpubgsl/503/1/83.full.pdf) U Kroner, T Stephan, RL Romer… - Geological Society …, 2021 - sp.lyellcollection.org
 
-* [Plate tectonics and Earth System Science](https://meetingorganizer.copernicus.org/EGU21/EGU21-9351.html) D Müller - 2021 - meetingorganizer.copernicus.org
+* [Palynology and organic geochemistry of an Early to Middle Devonian succession from TCB X-1001–Tacobo borehole, sub-Andean basin, southern Bolivia](https://www.sciencedirect.com/science/article/pii/S0895981120304557) VJ García-Muro, CV Rubinstein, SC Camina… - Journal of South …, 2021 - Elsevier
+
+* [Pannotia's mantle signature: the quest for supercontinent identification](https://sp.lyellcollection.org/content/specpubgsl/503/1/41.full.pdf) PJ Heron, JB Murphy, RD Nance… - Geological Society …, 2021 - sp.lyellcollection.org
+
+* [Papanin Ridge and Ojin Rise Seamounts (Northwest Pacific): Dual Hotspot Tracks formed by the Shatsky Plume](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021GC009847) A Dürkefälden, J Geldmacher… - Geochemistry …, 2021 - Wiley Online Library
+
+* [Pelagic clays as archives of marine iron isotope chemistry](https://www.sciencedirect.com/science/article/pii/S0009254121001455) AG Dunlea, LA Tegler, B Peucker-Ehrenbrink… - Chemical …, 2021 - Elsevier
+
+* [Petrography, geochemistry and origin of South Atlantic evaporites: The Brazilian side](https://www.sciencedirect.com/science/article/pii/S0264817220305882) P Szatmari, CM de Lima, G Fontaneta… - Marine and Petroleum …, 2021 - Elsevier
+
+* [Phylogenomics of monitor lizards and the role of competition in dictating body size disparity](https://academic.oup.com/sysbio/article/70/1/120/5855686) IG Brennan, AR Lemmon, EM Lemmon… - Systematic …, 2021 - academic.oup.com
+
+* [Plant turnover in response to climate change in the Cenozoic: Palynological insights from Myanmar, Southeast Asia and beyond](https://www.researchgate.net/profile/Huasheng-Huang/publication/352131062_Plant_turnover_in_response_to_climate_change_in_the_Cenozoic_Palynological_insights_from_Myanmar_Southeast_Asia_and_beyond/links/60bbb2a492851cb13d7eb6e0/Plant-turnover-in-response-to-climate-change-in-the-Cenozoic-Palynological-insights-from-Myanmar-Southeast-Asia-and-beyond.pdf) H Huang - 2021 - researchgate.net
+
+* [Plate tectonics and Earth System Science](https://ui.adsabs.harvard.edu/abs/2021EGUGA..23.9351M/abstract) D Müller - EGU General Assembly Conference Abstracts, 2021 - ui.adsabs.harvard.edu
+
+* [Plume-ridge interaction induced migration of the Hawaiian-Emperor seamounts](https://www.researchgate.net/profile/Lipeng-Zhang-10/publication/351867446_Plume-ridge_interaction_induced_migration_of_the_Hawaiian-Emperor_seamounts/links/60b1e80c299bf1f6d5805280/Plume-ridge-interaction-induced-migration-of-the-Hawaiian-Emperor-seamounts.pdf) W Sun, CH Langmuir, NM Ribe, L Zhang, S Sun… - Science …, 2021 - researchgate.net
+
+* [Predicting Geothermal Heat Flow in Antarctica with a Machine Learning Approach](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020JB021499) M Lösing, J Ebbing - Journal of Geophysical Research: Solid …, 2021 - Wiley Online Library
+
+* [Predicting the emplacement of Cordilleran porphyry copper systems using a spatio-temporal machine learning model](https://ses.library.usyd.edu.au/bitstream/handle/2123/25379/Diaz-Rodriguez_JM_thesis.pdf?sequence=2) JM Diaz Rodriguez - 2021 - ses.library.usyd.edu.au
+
+* [Programación didáctica de Biología y Geología de 4º ESO y desarrollo de una unidad didáctica.](https://riull.ull.es/xmlui/bitstream/handle/915/22965/Programacion%20Didactica%20de%20Biologia%20y%20Geologia%20de%204%C2%BA%20ESO%20y%20desarrollo%20de%20una%20Unidad%20Didactica..pdf?sequence=1) LA Mcknight Morales - 2021 - riull.ull.es
 
 * [Proterozoic basin evolution and tectonic geography of Madagascar: implications for an East Africa connection during the Paleoproterozoic](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020TC006498) SE Armistead, AS Collins, RS Schmitt, RL Costa… - …, 2021 - Wiley Online Library
 
+* [Provenance and tectonic setting of late Paleozoic sedimentary rocks from the Alxa Tectonic Belt (NW China): Implications for accretionary tectonics of the southern …](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/133/1-2/253/5202677/253.pdf) D Song, W Xiao, BF Windley, C Han - Bulletin, 2021 - pubs.geoscienceworld.org
+
+* [Provenance of Upper Jurassic–Lower Cretaceous strata in the Mentelle Basin, southwestern Australia, reveals a trans-Gondwanan fluvial pathway](https://www.sciencedirect.com/science/article/pii/S1342937X21000629) A Maritati, JA Halpin, JM Whittaker, NR Daczko… - Gondwana …, 2021 - Elsevier
+
+* [Providing Model Results to Diverse User Communities](https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119163091.ch17) P Wycisk, L Schimpf - Applied Multidimensional Geological …, 2021 - Wiley Online Library
+
+* [Quantifying the Extent of the Paleo‐Asian Ocean During the Late Carboniferous to Early Permian](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2021GL094498) D Zhang, B Huang, G Zhao, JG Meert… - Geophysical …, 2021 - Wiley Online Library
+
+* [Quantifying the middle–late Cambrian trilobite diversity pattern in South China](https://www.sciencedirect.com/science/article/pii/S0031018221001462) S Zhang, J Fan, CA Morgan, CM Henderson… - Palaeogeography …, 2021 - Elsevier
+
+* [Quantitative comparison of geological data and model simulations constrains early Cambrian geography and climate](https://www.nature.com/articles/s41467-021-24141-5) TWW Hearing, A Pohl, M Williams, Y Donnadieu… - Nature …, 2021 - nature.com
+
 * [Raising the Resurrection plate from an unfolded-slab plate tectonic reconstruction of northwestern North America since early Cenozoic time](https://pubs.geoscienceworld.org/gsa/gsabulletin/article/133/5-6/1128/592051) S Fuston, J Wu - Bulletin, 2021 - pubs.geoscienceworld.org
+
+* [Reassessing the structure and tectonics between the Flemish Cap and the Irish Atlantic margins during oblique rifting.](/scholar?output=instlink&q=info:mOlXqhtYHYgJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2021&scillfp=6555431998093833398&oi=lle) P Yang, JK Welford - Atlantic Geology, 2021 - go.gale.com
 
 * [Reclus, a new Database for Investigating the Tectonics of the Earth: an Example from the East African Margin and Hinterland](https://search.proquest.com/openview/25061c6777cb7aad86b169dfab91096d/1?pq-origsite=gscholar&cbl=4882998) P Markwick, D Paton, E Mortimer - Earth and Space Science …, 2021 - search.proquest.com
 
@@ -102,43 +334,127 @@ title: GPlates Publications
 
 * [Reconstruction of the cenozoic deformation of the Bohai Bay Basin, north China](https://onlinelibrary.wiley.com/doi/pdf/10.1111/bre.12470) Y Zhu, S Liu, B Zhang, M Gurnis, P Ma - Basin Research, 2021 - earthdoc.org
 
+* [Red Sea tectonics unveil the largest known terrestrial ice stream: New constraints on Late Ordovician ice sheet dynamics](https://www.researchsquare.com/article/rs-639303/latest.pdf) M Elhebiry, M Sultan, A Abotalib, A Kehew, P Voice… - 2021 - researchsquare.com
+
+* [Regional Scale Tectonic Features at Argadnel Regio and Agenor Linea, Europa: Evidence in Support of a Plate Tectonic Paradigm](https://search.proquest.com/openview/97ad1838f51db02498a7129bca626dce/1?pq-origsite=gscholar&cbl=18750&diss=y) CE Detelich - 2021 - search.proquest.com
+
+* [Remnants of early Earth differentiation in the deepest mantle-derived lavas](https://www.pnas.org/content/pnas/118/1/e2015211118.full.pdf) A Giuliani, MG Jackson… - Proceedings of the …, 2021 - National Acad Sciences
+
+* [Revisiting Hotspots and Continental Breakup–Updating the Classical Three-arm Model](https://sites.northwestern.edu/sethstein/files/2021/04/Rrevisit.2.pdf) C Stein, S Stein, M Gallahue… - EGU General Assembly …, 2021 - sites.northwestern.edu
+
 * [Simulation of oxygen isotopes and circulation in a late Carboniferous epicontinental sea with implications for proxy records](https://www.sciencedirect.com/science/article/pii/S0012821X21000297) SI Macarewich, CJ Poulsen, IP Montañez - Earth and Planetary Science …, 2021 - Elsevier
+
+* [Spatial scaling of beta diversity in the shallow-marine fossil record](https://pubs.geoscienceworld.org/paleobiol/article/47/1/39/595264) TM Womack, JS Crampton, MJ Hannah - Paleobiology, 2021 - cambridge.org
+
+* [Speeding up Python-based Lagrangian Fluid-Flow Particle Simulations via Dynamic Collection Data Structures](https://arxiv.org/pdf/2105.00057) C Kehl, E van Sebille, A Gibson - arXiv preprint arXiv:2105.00057, 2021 - arxiv.org
+
+* [Stratigraphic Lexicon: The Onshore Cenozoic Sedimentary Formations of The Republic of Panama](https://www.researchgate.net/profile/Jacques-Leblanc/publication/349777810_Stratigraphic_Lexicon_The_Onshore_Cenozoic_Sedimentary_Formations_of_The_Republic_of_Panama/links/604183d54585154e8c77ec7c/Stratigraphic-Lexicon-The-Onshore-Cenozoic-Sedimentary-Formations-of-The-Republic-of-Panama.pdf) J LeBlanca - Biosis: Biological Systems, 2021 - researchgate.net
+
+* [Structure and evolution of the Atlantic passive margins: a review of existing rifting models from wide-angle seismic data and kinematic reconstruction](https://www.sciencedirect.com/science/article/pii/S0264817221000027) Y Biari, F Klingelhoefer, D Franke, T Funck… - Marine and Petroleum …, 2021 - Elsevier
+
+* [Subduction history of the Caribbean from upper-mantle seismic imaging and plate reconstruction](https://www.nature.com/articles/s41467-021-24413-0) B Braszus, S Goes, R Allen, A Rietbrock… - Nature …, 2021 - nature.com
 
 * [Subduction initiation in the Scotia Sea region and opening of the Drake Passage: When and why?](https://www.sciencedirect.com/science/article/pii/S0012825221000507) SHA van de Lagemaat, MLA Swart, B Vaes… - Earth-Science …, 2021 - Elsevier
 
 * [Subduction of the Izanagi-Pacific Ridge–transform intersection at the northeastern end of the Eurasian plate](https://pubs.geoscienceworld.org/gsa/geology/article-pdf/doi/10.1130/G48611.1/5291002/g48611.pdf) T Yamasaki, G Shimoda, K Tani, J Maeda… - …, 2021 - pubs.geoscienceworld.org
 
+* [Supercontinent Pangeon Obscura: Contrasting Secular Geophysics with Theological Ratiocinations](https://www.scigod.com/index.php/sgj/article/viewFile/771/810) RL Amoroso - Scientific GOD Journal, 2021 - scigod.com
+
 * [Tectonic Evolution and Key Geological Issues of the Proto‐South China Sea](https://onlinelibrary.wiley.com/doi/pdf/10.1111/1755-6724.14644) Z TIAN, W TANG, P WANG, Z ZHAO… - Acta Geologica …, 2021 - Wiley Online Library
 
-* [Tectonic escape of Sicily Microplate in the context of Africa-Europe collision](https://meetingorganizer.copernicus.org/EGU21/EGU21-14921.html) G Penza, PP Pierantoni, C Macchiavelli, E Turco - 2021 - meetingorganizer.copernicus.org
+* [Tectonic escape of Sicily Microplate in the context of Africa-Europe collision](https://ui.adsabs.harvard.edu/abs/2021EGUGA..2314921P/abstract) G Penza, PP Pierantoni… - EGU General …, 2021 - ui.adsabs.harvard.edu
 
-* [The Deep-time Digital Earth program: data-driven discovery in geosciences](https://academic.oup.com/nsr/advance-article/doi/10.1093/nsr/nwab027/6133474?login=true&utm_source=TrendMD&utm_medium=cpc&utm_campaign=National_Science_Review_TrendMD_1) C Wang, RM Hazen, Q Cheng… - National Science …, 2021 - academic.oup.com
+* [Tectonics as Recorded by Thermochronometry, Deformed Datums, and Submarine Landscapes in Western North America](https://search.proquest.com/openview/aacafdeefc5fd0ac75080c7454c6b0e4/1?pq-origsite=gscholar&cbl=18750&diss=y) P Schoettle-Greene - 2021 - search.proquest.com
 
-* [The EarthLife Consortium API: an extensible, open-source service for accessing fossil data and taxonomies from multiple community paleodata resources](https://escholarship.org/content/qt7gs0h1w1/qt7gs0h1w1.pdf) MD Uhen, PI Buckland, SJ Goring… - Frontiers of …, 2021 - escholarship.org
+* [Temperate Oligocene surface ocean conditions offshore of Cape Adare, Ross Sea, Antarctica](https://cp.copernicus.org/articles/17/1423/2021/) FS Hoem, L Valero, D Evangelinos, C Escutia… - Climate of the …, 2021 - cp.copernicus.org
+
+* [Temporal and spatial evolution of orogens: a guide for geological mapping](https://www.researchgate.net/profile/Camille-Francois-2/publication/354778733_Temporal_and_spatial_evolution_of_orogens_a_guide_for_geological_mapping/links/614c3ad63c6cb310698793ac/Temporal-and-spatial-evolution-of-orogens-a-guide-for-geological-mapping.pdf) C François, M Pubellier, C Robert… - Episodes Journal of …, 2021 - researchgate.net
+
+* [The Coast Range Ophiolite (Western USA) as part of a coherent, Jurassic upper plate](https://dspace.library.uu.nl/handle/1874/402750) C Arkula - 2021 - dspace.library.uu.nl
+
+* [The Deep-Time Digital Earth program: data-driven discovery in geosciences](https://academic.oup.com/nsr/article/8/9/nwab027/6133474) C Wang, RM Hazen, Q Cheng… - National Science …, 2021 - academic.oup.com
+
+* [The EarthLife Consortium API: an extensible, open-source service foraccessing fossil data and taxonomies from multiple communitypaleodata resources](https://www.diva-portal.org/smash/get/diva2:1529904/FULLTEXT01.pdf) MD Uhen, PI Buckland, SJ Goring… - Frontiers of …, 2021 - diva-portal.org
+
+* [The Eocene–Oligocene transition: a review of marine and terrestrial proxy data, models and model–data comparisons](https://cp.copernicus.org/articles/17/269/2021/) DK Hutchinson, HK Coxall, DJ Lunt… - Climate of the …, 2021 - cp.copernicus.org
 
 * [The Horizontal Slab Beneath East Asia and Its Subdued Surface Dynamic Response](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020JB021156) S Liu, P Ma, B Zhang, M Gurnis - Journal of Geophysical …, 2021 - Wiley Online Library
 
+* [The Late Jurassic–Palaeogene Carbonate Platforms in the Outer Western Carpathian Tethys—A Regional Overview](https://www.mdpi.com/2075-163X/11/7/747/pdf) J Kowal-Kasprzyk, A Waśkowska, J Golonka… - Minerals, 2021 - mdpi.com
+
+* [The Middle-Late Cretaceous Zagros ophiolites, Iran: Linking of a 3000 km swath of subduction initiation fore-arc lithosphere from Troodos, Cyprus to Oman](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/doi/10.1130/B36041.1/5412667/b36041.pdf) HS Moghadam, QL Li, WL Griffin… - GSA …, 2021 - pubs.geoscienceworld.org
+
 * [The PLATES 2020 Atlas of Plate Reconstructions (500 Ma to Present Day), PLATES Progress Report No. 396-1220](https://repositories.lib.utexas.edu/handle/2152/84643) LA Lawver, IO Norton, IWD Dalziel, MB Davis - 2021 - repositories.lib.utexas.edu
+
+* [The Role of the Seismically Slow Central‐East Atlantic Anomaly in the Genesis of the Canary and Madeira Volcanic Provinces](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021GL092874) C Civiero, S Custódio, M Neres… - Geophysical …, 2021 - Wiley Online Library
+
+* [The South American and Antarctic Peninsula fossil record of Salviniales (water ferns): Its implication for understanding their evolution and past distribution](https://www.sciencedirect.com/science/article/pii/S0034666721001457) F De Benedetti, MC Zamaloa, MA Gandolfo… - Review of Palaeobotany …, 2021 - Elsevier
+
+* [The West Burma Terrane, a review of recent paleo-latitude data, its geological implications and constraints](https://www.sciencedirect.com/science/article/pii/S0012825221002233) CK Morley, S Chantraprasert, J Kongchum… - Earth-Science …, 2021 - Elsevier
+
+* [The amalgamation of Pangea: Paleomagnetic and geological observations revisited](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/133/3-4/625/5236058/625.pdf) L Wu, JB Murphy, C Quesada, ZX Li… - …, 2021 - pubs.geoscienceworld.org
 
 * [The birth and demise of the vast epicontinental Permian Irati-Whitehill sea: Evidence from organic geochemistry, geochronology, and paleogeography](https://www.sciencedirect.com/science/article/pii/S0031018220305514) LPH Bastos, R Rodrigues, E Pereira… - Palaeogeography …, 2021 - Elsevier
 
+* [The birth of the Alps: Ediacaran to Paleozoic accretionary processes and crustal growth along the northern Gondwana margin](https://link.springer.com/article/10.1007/s00531-021-02019-7) S Siegesmund, S Oriolo, B Schulz, T Heinrichs… - International Journal of …, 2021 - Springer
+
+* [The challenge in restoring magma-rich rifted margins: The example of the Mozambique-Antarctica conjugate margins](https://www.sciencedirect.com/science/article/pii/S1342937X21001027) S Tomasi, N Kusznir, G Manatschal, F Despinois - Gondwana Research, 2021 - Elsevier
+
+* [The effects of geographic range size and abundance on extinction during a time of “sluggish”'evolution](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/189C7DDF166D6D75ACFFC5B4690C4331/S0094837320000524a.pdf/effects_of_geographic_range_size_and_abundance_on_extinction_during_a_time_of_sluggish_evolution.pdf) MM Casey, EE Saupe, BS Lieberman - Paleobiology, 2021 - cambridge.org
+
+* [The evolution of triple junctions: from failure to success](https://eartharxiv.org/repository/object/2703/download/5512/) HM Khalil, F Capitanio, AR Cruden - 2021 - eartharxiv.org
+
+* [The geodynamic evolution of the Famatinian orogen from the paleomagnetic record of El Hongo trondhjemite (Early Paleozoic, Sierras Pampeanas de …](https://www.sciencedirect.com/science/article/pii/S0895981120306027) SE Geuna, LD Escosteguy, BD Appella, L Pinotti… - Journal of South …, 2021 - Elsevier
+
 * [The influence of mantle flow on intracontinental basins: Three examples from Australia](https://onlinelibrary.wiley.com/doi/pdf/10.1111/bre.12520) A Young, N Flament, L Hall, A Merdith - Basin Research, 2021 - earthdoc.org
 
-* [The preserved plume of the Caribbean Large Igneous Plateau revealed by 3D data-integrative models](https://refubium.fu-berlin.de/bitstream/handle/fub188/30364/se-12-275-2021.pdf?sequence=1&isAllowed=y) ÁM Gómez-García, E Le Breton… - Solid …, 2021 - refubium.fu-berlin.de
+* [The palaeogeographical impact on the biodiversity of marine faunas during the Ordovician radiations](https://www.sciencedirect.com/science/article/pii/S0921818121002502) DAT Harper, B Cascales-Miñana, DM Kroeck… - Global and Planetary …, 2021 - Elsevier
 
-* [The preserved plume of the Caribbean large igneous plateau revealed by 3D data-integrative models](https://se.copernicus.org/articles/12/275/2021/) ÁM Gómez-García, E Le Breton… - Solid Earth, 2021 - se.copernicus.org
+* [The preserved plume of the Caribbean Large Igneous Plateau revealed by 3D data-integrative models](https://se.copernicus.org/articles/12/275/2021/) ÁM Gómez-García, E Le Breton… - Solid Earth, 2021 - se.copernicus.org
 
 * [The role of megacontinents in the supercontinent cycle](https://pubs.geoscienceworld.org/gsa/geology/article/49/4/402/592913) C Wang, RN Mitchell, JB Murphy, P Peng… - …, 2021 - pubs.geoscienceworld.org
 
+* [Thin-section detrital zircon geochronology mitigates bias in provenance investigations](https://jgs.lyellcollection.org/content/jgs/early/2021/09/21/jgs2021-070.full.pdf) IC Zutterkirch, CL Kirkland, M Barham… - Journal of the …, 2021 - jgs.lyellcollection.org
+
+* [Timing of seafloor spreading cessation at the Macquarie Ridge Complex (SW Pacific) and implications for upper mantle heterogeneity](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020GC009485) Q Jiang, RE Merle, F Jourdan… - Geochemistry …, 2021 - Wiley Online Library
+
 * [Towards interactive global paleogeographic maps, new reconstructions at 60, 40 and 20 Ma](https://www.sciencedirect.com/science/article/pii/S0012825221000076) F Poblete, G Dupont-Nivet, A Licht… - Earth-Science …, 2021 - Elsevier
+
+* [Tracking Proterozoic–Triassic sediment routing to western Laurentia via bivariate non-negative matrix factorization of detrital provenance data](https://jgs.lyellcollection.org/content/jgs/178/3/jgs2020-215.full.pdf) JE Saylor, KE Sundell - Journal of the Geological Society, 2021 - jgs.lyellcollection.org
+
+* [Triton, a new species-level database of Cenozoic planktonic foraminiferal occurrences](https://www.nature.com/articles/s41597-021-00942-7) IS Fenton, A Woodhouse, T Aze, D Lazarus… - Scientific Data, 2021 - nature.com
+
+* [Truncated bimodal latitudinal diversity gradient in early Paleozoic phytoplankton](https://advances.sciencemag.org/content/advances/7/15/eabd6709.full.pdf) A Zacaï, C Monnet, A Pohl, G Beaugrand… - Science …, 2021 - advances.sciencemag.org
+
+* [U-Pb detrital zircon ages of Cambrian–Ordovician sandstones from the Taebaeksan Basin, Korea: Provenance variability in platform shelf sequences and …](https://pubs.geoscienceworld.org/gsa/gsabulletin/article/133/3-4/488/587773) M Cho, W Cheong, WG Ernst, Y Kim, K Yi - Bulletin, 2021 - pubs.geoscienceworld.org
+
+* [Upper Cretaceous intrusives in the Coastal Cordillera near Valdivia: forearc magmatism related to the passage of a triple junction?](http://www.andeangeology.cl/index.php/revista1/article/download/3062/pdf) D de la Fuente, Ó Figueroa, D Demaiffe… - Andean …, 2021 - andeangeology.cl
+
+* [Upper Jurassic to Lower Cretaceous source rocks in the Norwegian Barents Sea, part II: Insights from open-and closed-system pyrolysis experiments](https://www.sciencedirect.com/science/article/pii/S0264817221004463) A Cedeño, S Ohm, A Escalona, D Marín… - Marine and Petroleum …, 2021 - Elsevier
+
+* [Upper Jurassic to lower Cretaceous source rocks in the Norwegian Barents Sea, part I: Organic geochemical, petrographic, and paleogeographic …](https://www.sciencedirect.com/science/article/pii/S0264817221004451) A Cedeño, S Ohm, A Escalona, D Marín… - Marine and Petroleum …, 2021 - Elsevier
 
 * [We have always been geohackers](https://www.degruyter.com/document/doi/10.14361/9783839457658-019/pdf) H Pritchard, J Rocha, F Snelting - How to Relate, 2021 - degruyter.com
 
+* [West Africa in Rodinia: High quality paleomagnetic pole from the~ 860 Ma Manso dyke swarm (Ghana)](https://www.sciencedirect.com/science/article/pii/S1342937X2100071X) PYJ Antonio, L Baratoux, RIF Trindade, S Rousse… - Gondwana …, 2021 - Elsevier
+
 * [Worldbuilding from tectonic first principles: Integrating and challenging undergraduate knowledge through a course project](https://www.tandfonline.com/doi/pdf/10.1080/10899995.2021.1908810) LM Schoenbohm, M McMillan - Journal of Geoscience Education, 2021 - Taylor & Francis
 
-* [… and tectonic setting of late Paleozoic sedimentary rocks from the Alxa Tectonic Belt (NW China): Implications for accretionary tectonics of the southern Central …](https://pubs.geoscienceworld.org/gsa/gsabulletin/article/133/1-2/253/587263) D Song, W Xiao, BF Windley, C Han - Bulletin, 2021 - pubs.geoscienceworld.org
+* [Zircon U‐Pb geochronology constrains continental expression of Great Meteor Hotspot magmatism](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020GL091390) ST Kinney, SA MacLennan, CB Keller… - Geophysical …, 2021 - Wiley Online Library
 
-* [… the plate kinematics of continental blocks and their role on the deformation experienced along the Iberia-Eurasia plate boundary using deformable plate tectonic …](https://meetingorganizer.copernicus.org/EGU21/EGU21-1402.html) M King, K Welford, P Cadenas, J Tugend - 2021 - meetingorganizer.copernicus.org
+* [[BOOK][B] Structure and Evolution of the Oceanic Lithosphere-Asthenosphere System from High-Resolution Surface-Wave Imaging](https://search.proquest.com/openview/164fa3a3f761f659241a984dcb3f4380/1?pq-origsite=gscholar&cbl=18750&diss=y) JB Russell - 2021 - search.proquest.com
+
+* [Интернет-портал «История земли: геологический ракурс». Высокотехнологичная популяризация научных геологических знаний](https://elbib.ru/article/download/698/780) АС Еременко, ВВ Наумова, АА Загумённов… - Электронные …, 2021 - elbib.ru
+
+* [… and provenance of high-grade paragneisses from the Mérida Andes, Venezuela: Implications for the Ediacaran–Cambrian tectonic setting of northwestern …](https://www.sciencedirect.com/science/article/pii/S0024493721004722) MD Tazzo-Rangel, B Weber, D Frei… - Lithos, 2021 - Elsevier
+
+* [… the plate kinematics of continental blocks and their role on the deformation experienced along the Iberia-Eurasia plate boundary using deformable plate tectonic …](https://ui.adsabs.harvard.edu/abs/2021EGUGA..23.1402K/abstract) M King, K Welford, P Cadenas… - EGU General Assembly …, 2021 - ui.adsabs.harvard.edu
+
+* [南大西洋中段共轭盐盆盐构造变形期次对比及意义](http://www.earth-science.net/article/doi/10.3799/dqkx.2020.033) 章雨， 李江海， 程鹏 - 地球科学, 2021 - earth-science.net
+
+* [多金属结壳 Os 同位素组成区域性和阶段性偏高异常](http://www.earth-science.net/cn/article/doi/10.3799/dqkx.2020.051) 王洋， 方念乔， 刘景昱 - 地球科学, 2021 - earth-science.net
+
+* [恐龙相关数据库的发展现状与数据驱动下的研究实例剖析](https://geology.nju.edu.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=10145) 梁晴晴， 邢立达 - 高校地质学报, 2021 - geology.nju.edu.cn
 
 <span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2020"></span>
 
