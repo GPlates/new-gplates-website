@@ -3,7 +3,7 @@ templateKey: 'simple-page'
 path: /publications
 title: GPlates Publications
 ---
-<span style="display: block;height: 192px; margin-top: -192px; visibility: hidden;" id="top"></span><button style="position:fixed; bottom:10px;right:10px;"><a href="#top">Go back to top</a></button> <a href="#2021" style="margin-left:10px;">2021(<strong><i>221</i></strong>)</a>;  <a href="#2020" style="margin-left:10px;">2020(<strong><i>110</i></strong>)</a>;  <a href="#2019" style="margin-left:10px;">2019(<strong><i>136</i></strong>)</a>;  <a href="#2018" style="margin-left:10px;">2018(<strong><i>127</i></strong>)</a>;  <a href="#2017" style="margin-left:10px;">2017(<strong><i>87</i></strong>)</a>;  <a href="#2016" style="margin-left:10px;">2016(<strong><i>72</i></strong>)</a>;  <a href="#2015" style="margin-left:10px;">2015(<strong><i>71</i></strong>)</a>;  <a href="#2014" style="margin-left:10px;">2014(<strong><i>52</i></strong>)</a>;  <a href="#2013" style="margin-left:10px;">2013(<strong><i>56</i></strong>)</a>;  <a href="#2012" style="margin-left:10px;">2012(<strong><i>57</i></strong>)</a>;  <a href="#2011" style="margin-left:10px;">2011(<strong><i>27</i></strong>)</a>;  <a href="#2010" style="margin-left:10px;">2010(<strong><i>14</i></strong>)</a>;  <a href="#2009" style="margin-left:10px;">2009(<strong><i>8</i></strong>)</a>;  <a href="#2008" style="margin-left:10px;">2008(<strong><i>10</i></strong>)</a>;  <a href="#2007" style="margin-left:10px;">2007(<strong><i>3</i></strong>)</a>;  <a href="#2006" style="margin-left:10px;">2006(<strong><i>1</i></strong>)</a>; 
+<span style="display: block;height: 192px; margin-top: -192px; visibility: hidden;" id="top"></span><button style="position:fixed; bottom:10px;right:10px;"><a href="#top">Go back to top</a></button> <a href="#2021" style="margin-left:10px;">2021(<strong><i>220</i></strong>)</a>;  <a href="#2020" style="margin-left:10px;">2020(<strong><i>110</i></strong>)</a>;  <a href="#2019" style="margin-left:10px;">2019(<strong><i>136</i></strong>)</a>;  <a href="#2018" style="margin-left:10px;">2018(<strong><i>127</i></strong>)</a>;  <a href="#2017" style="margin-left:10px;">2017(<strong><i>87</i></strong>)</a>;  <a href="#2016" style="margin-left:10px;">2016(<strong><i>72</i></strong>)</a>;  <a href="#2015" style="margin-left:10px;">2015(<strong><i>71</i></strong>)</a>;  <a href="#2014" style="margin-left:10px;">2014(<strong><i>52</i></strong>)</a>;  <a href="#2013" style="margin-left:10px;">2013(<strong><i>56</i></strong>)</a>;  <a href="#2012" style="margin-left:10px;">2012(<strong><i>57</i></strong>)</a>;  <a href="#2011" style="margin-left:10px;">2011(<strong><i>27</i></strong>)</a>;  <a href="#2010" style="margin-left:10px;">2010(<strong><i>14</i></strong>)</a>;  <a href="#2009" style="margin-left:10px;">2009(<strong><i>8</i></strong>)</a>;  <a href="#2008" style="margin-left:10px;">2008(<strong><i>10</i></strong>)</a>;  <a href="#2007" style="margin-left:10px;">2007(<strong><i>3</i></strong>)</a>;  <a href="#2006" style="margin-left:10px;">2006(<strong><i>1</i></strong>)</a>; 
 
 **Total: 1052** (*as of 2021-10-08*)
 
@@ -12,7 +12,7 @@ title: GPlates Publications
 <span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2021"></span>
 
 
-<strong id="2021">2021(221)</strong>
+<strong id="2021">2021(220)</strong>
 
 * [2021 Michigan Geophysical Union Annual Symposium Program Booklet](https://deepblue.lib.umich.edu/bitstream/handle/2027.42/167204/MGU%20Booklet%201.5%20Final%20w%20DOI.pdf?sequence=1) MG Union - 2021 - deepblue.lib.umich.edu
 
