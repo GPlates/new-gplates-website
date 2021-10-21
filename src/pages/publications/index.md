@@ -20,8 +20,6 @@ title: GPlates Publications
 
 * [3D printing the world: developing geophysical teaching materials and outreach packages](https://www.frontiersin.org/articles/10.3389/feart.2021.669095/pdf) P Koelemeijer, J Winterbourne - Frontiers in Earth Science, 2021 - frontiersin.org
 
-* [888–444 Ma global plate tectonic reconstruction with emphasis on the formation of Gondwana](https://www.frontiersin.org/articles/10.3389/feart.2021.666153/full) C Vérard - Frontiers in Earth Science, 2021 - frontiersin.org
-
 * [A Late Cretaceous true polar wander oscillation](https://www.nature.com/articles/s41467-021-23803-8) RN Mitchell, CJ Thissen, DAD Evans… - Nature …, 2021 - nature.com
 
 * [A crucial geologic test of Late Jurassic exotic collision versus endemic re-accretion in the Klamath Mountains Province, western United States, with implications for the …](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/doi/10.1130/B35981.1/5357952/b35981.pdf) TA LaMaskin, JA Rivas, DL Barbeau… - GSA …, 2021 - pubs.geoscienceworld.org
