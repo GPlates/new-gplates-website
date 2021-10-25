@@ -7,7 +7,7 @@ title: GPlates Publications
 
 **Total: 1052** (*as of 2021-10-08*)
 
-
+*This web page was created by a Python script automatically using the data retrieved from Google Scholar. If you believe that any of the papers has been listed here mistakenly, you may [contact us](https://www.earthbyte.org/contact-us-3/).*
 
 <span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2021"></span>
 
