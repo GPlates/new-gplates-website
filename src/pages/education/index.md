@@ -12,7 +12,7 @@ This exercise is an introduction of how to load in a **plate reconstruction**, a
 
 [Download PDF](https://www.earthbyte.org/webdav/ftp/earthbyte/Teaching/GPlates_Kinematics/GPlates_Kinematics.pdf)
 
-[Download Data Pack](https://www.earthbyte.org/webdav/ftp/earthbyte/Teaching/GPlates_Kinematics/)
+[Download Data Pack](https://www.earthbyte.org/webdav/ftp/earthbyte/Teaching/GPlates_Kinematics/GPlates_Kinematics.zip)
 
 ---
 
@@ -24,7 +24,7 @@ This activity applies first principles of **Plate Tectonics** to reconstruct the
 
 [Download PDF](https://www.earthbyte.org/webdav/ftp/earthbyte/Teaching/GPlates_Gondwana/GPlates_Gondwana.pdf)
 
-[Download Data Pack](https://www.earthbyte.org/webdav/ftp/earthbyte/Teaching/GPlates_Gondwana/GPlates_Gondwana_DataPack/)
+[Download Data Pack](https://www.earthbyte.org/webdav/ftp/earthbyte/Teaching/GPlates_Gondwana/GPlates_Gondwana_DataPack.zip)
 
 ---
 
