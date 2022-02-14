@@ -37,6 +37,19 @@ There is a blog writen by **WORLDBUILDING PASTA**, describing how to use Gplates
 [Go To The Blog Page](https://worldbuildingpasta.blogspot.com/2020/06/an-apple-pie-from-scratch-part-v.html)
 
 ---
+### Worldbuilding from tectonic first principles: Integrating and challenging undergraduate knowledge through a course project
+
+Lindsay M. Schoenbohm & Mitchell McMillan
+
+![Team 2 planet](./img/team-2-planet.jpeg)
+
+**Abstract**:
+
+In this integrative, team-based capstone project, students in an upper year Tectonics course built a planet of their own design from the basic concepts of plate tectonics. They created a tectonic map complete with plate boundaries, continental-ocean boundaries, motion vectors, and hot spot traces. In subsequent weeks, students produced a geologic map illustrating features that were a consequence of decisions made in creating their tectonic map. Students designed their own legend and determined the specificity or generality in which they conveyed geologic features at the scale of their map. Students also created a physiographic map reflective of the geology of their planet. Evaluation of student artifacts indicates the project was successful in meeting learning outcomes that challenged students to think in three-dimensions and over geologic timescales, and to develop problem-solving skills; a learning outcome of integrating knowledge from other courses was also met, but to a lesser degree and with more variability among teams. With minor adjustments, this project could be implemented in any tectonics course, or in other subjects including oceanography, atmospheric science, or paleontology.
+
+Read the full article at https://www.tandfonline.com/doi/full/10.1080/10899995.2021.1908810 .
+
+---
 
 ### GPlates Tutorials
 
