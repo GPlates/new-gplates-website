@@ -6,6 +6,14 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import Layout from '../components/Layout'
 import LatestNews from '../components/LatestNews'
 import { HTMLContent } from '../components/Content'
+
+// The following import prevents a Font Awesome icon server-side rendering bug,
+// where the icons flash from a very large icon down to a properly sized one:
+import '@fortawesome/fontawesome-svg-core/styles.css';
+// Prevent fontawesome from adding its CSS since we did it manually above:
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false; /* eslint-disable import/first */
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload, faClipboard, faCheckCircle} from '@fortawesome/free-solid-svg-icons'
 import { getSrc } from "gatsby-plugin-image"
