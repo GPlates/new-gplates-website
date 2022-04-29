@@ -58,7 +58,7 @@ const TemplateWrapper = ({ children }) => {
         <meta name="twitter:description" content="GPlates is a plate tectonics program. Manipulate reconstructions of geological and paleogeographic features through geological time." />
         <meta name="twitter:image" content="https://www.gplates.org/img/og-image.png" />
 
-        <script async src="https://cse.google.com/cse.js?cx=4ca79a384a9562b33"></script>
+        <script defer src="https://cse.google.com/cse.js?cx=4ca79a384a9562b33"></script>
       </Helmet>
       <Navbar />
       <div>{children}</div>
