@@ -3,6 +3,8 @@ import Layout from '../../../components/Layout'
 import PropTypes from 'prop-types'
 import {Link, graphql, StaticQuery } from 'gatsby'
 import { HTMLContent } from '../../../components/Content'
+import Search from '../../../components/Search'
+import ClientOnly from '../../../components/ClientOnly'
 
 class ManualIndex extends React.Component {
   render() {
@@ -56,7 +58,9 @@ class ManualIndex extends React.Component {
           <div className="column is-8 is-offset-2">
           
           <div style={{maxWidth: '700px'}}>
-            <div className="gcse-search"></div>
+            <ClientOnly>
+              <Search />
+            </ClientOnly>
           </div>
 
             {sorted_posts &&
