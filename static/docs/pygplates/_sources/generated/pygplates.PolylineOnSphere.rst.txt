@@ -1,4 +1,4 @@
-pygplates.PolylineOnSphere
+﻿pygplates.PolylineOnSphere
 ==========================
 
 .. currentmodule:: pygplates

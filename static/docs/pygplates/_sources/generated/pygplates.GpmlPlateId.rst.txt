@@ -1,4 +1,4 @@
-pygplates.GpmlPlateId
+﻿pygplates.GpmlPlateId
 =====================
 
 .. currentmodule:: pygplates

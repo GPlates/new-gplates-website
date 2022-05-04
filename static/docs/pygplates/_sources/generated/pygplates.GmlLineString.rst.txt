@@ -1,4 +1,4 @@
-pygplates.GmlLineString
+﻿pygplates.GmlLineString
 =======================
 
 .. currentmodule:: pygplates

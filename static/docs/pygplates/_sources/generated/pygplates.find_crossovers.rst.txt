@@ -1,4 +1,4 @@
-pygplates.find\_crossovers
+﻿pygplates.find\_crossovers
 ==========================
 
 .. currentmodule:: pygplates

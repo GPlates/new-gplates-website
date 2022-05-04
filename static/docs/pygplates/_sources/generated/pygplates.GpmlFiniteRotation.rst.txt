@@ -1,4 +1,4 @@
-pygplates.GpmlFiniteRotation
+﻿pygplates.GpmlFiniteRotation
 ============================
 
 .. currentmodule:: pygplates

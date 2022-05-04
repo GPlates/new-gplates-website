@@ -1,56 +1,106 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Import geometries and assign plate IDs &#8212; pygplates 2.2.0.28 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Import geometries and assign plate IDs &mdash; pygplates 0.36.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Load and save feature collections" href="pygplates_load_and_save_feature_collections.html" />
     <link rel="prev" title="Sample code" href="../pygplates_sample_code.html" /> 
-  </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="pygplates_load_and_save_feature_collections.html" title="Load and save feature collections"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="../pygplates_sample_code.html" title="Sample code"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../pygplates_sample_code.html" accesskey="U">Sample code</a> &#187;</li> 
-      </ul>
-    </div>  
+</head>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
-            
-  <div class="section" id="import-geometries-and-assign-plate-ids">
-<span id="pygplates-import-geometries-and-assign-plate-ids"></span><h1>Import geometries and assign plate IDs<a class="headerlink" href="#import-geometries-and-assign-plate-ids" title="Permalink to this headline">¶</a></h1>
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pygplates
+          </a>
+              <div class="version">
+                0.36
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../pygplates_sample_code.html#import">Import</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Import geometries and assign plate IDs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#import-points-from-a-text-file-and-assign-plate-ids">Import <em>points</em> from a text file and assign plate IDs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#load-points-from-a-gmt-file-and-assign-plate-ids">Load <em>points</em> from a GMT file and assign plate IDs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-polylines-from-a-text-file-and-assign-plate-ids">Import <em>polylines</em> from a text file and assign plate IDs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#load-polylines-from-a-gmt-file-and-assign-plate-ids">Load <em>polylines</em> from a GMT file and assign plate IDs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#load-save">Load/Save</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#create-query-features">Create/query features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#reconstruct-features">Reconstruct features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#rotations">Rotations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#topologies">Topologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#velocities">Velocities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#spatial-proximity">Spatial proximity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#isochrons">Isochrons</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pygplates</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../pygplates_sample_code.html">Sample code</a> &raquo;</li>
+      <li>Import geometries and assign plate IDs</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/sample-code/pygplates_import_geometries_and_assign_plate_ids.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="import-geometries-and-assign-plate-ids">
+<span id="pygplates-import-geometries-and-assign-plate-ids"></span><h1>Import geometries and assign plate IDs<a class="headerlink" href="#import-geometries-and-assign-plate-ids" title="Permalink to this headline"></a></h1>
 <p>This example shows how to import points or polylines from a text file and assign plate IDs to them.
 The resulting feature data is then saved to a file format that pyGPlates can load directly.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Importing features is different than <a class="reference internal" href="pygplates_load_and_save_feature_collections.html#pygplates-load-and-save-feature-collections"><span class="std std-ref">loading</span></a> features.
+<p class="admonition-title">Note</p>
+<p>Importing features is different than <a class="reference internal" href="pygplates_load_and_save_feature_collections.html#pygplates-load-and-save-feature-collections"><span class="std std-ref">loading</span></a> features.
 When feature data is not in a file format that pyGPlates can load then it needs to be imported into a
 GPlates-compatible file format. This usually involves more than just importing the geometry data.
 For example, plate IDs need to be assigned so that pyGPlates can reconstruct the feature data
@@ -58,8 +108,8 @@ to geological times. And other feature metadata such as <a class="reference inte
 <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.set_description" title="pygplates.Feature.set_description"><code class="xref py py-meth docutils literal notranslate"><span class="pre">description</span></code></a> should also be assigned.</p>
 </div>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="pygplates_load_and_save_feature_collections.html#pygplates-load-and-save-feature-collections"><span class="std std-ref">Load and save feature collections</span></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="pygplates_load_and_save_feature_collections.html#pygplates-load-and-save-feature-collections"><span class="std std-ref">Load and save feature collections</span></a></p>
 </div>
 <div class="line-block">
 <div class="line">The first two examples import <em>points</em>.</div>
@@ -67,42 +117,46 @@ to geological times. And other feature metadata such as <a class="reference inte
 </div>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#import-points-from-a-text-file-and-assign-plate-ids" id="id12">Import <em>points</em> from a text file and assign plate IDs</a><ul>
-<li><a class="reference internal" href="#sample-code" id="id13">Sample code</a></li>
-<li><a class="reference internal" href="#input" id="id14">Input</a></li>
-<li><a class="reference internal" href="#details" id="id15">Details</a></li>
+<li><p><a class="reference internal" href="#import-points-from-a-text-file-and-assign-plate-ids" id="id12">Import <em>points</em> from a text file and assign plate IDs</a></p>
+<ul>
+<li><p><a class="reference internal" href="#sample-code" id="id13">Sample code</a></p></li>
+<li><p><a class="reference internal" href="#input" id="id14">Input</a></p></li>
+<li><p><a class="reference internal" href="#details" id="id15">Details</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#load-points-from-a-gmt-file-and-assign-plate-ids" id="id16">Load <em>points</em> from a GMT file and assign plate IDs</a><ul>
-<li><a class="reference internal" href="#id1" id="id17">Sample code</a></li>
-<li><a class="reference internal" href="#id2" id="id18">Input</a></li>
-<li><a class="reference internal" href="#id3" id="id19">Details</a></li>
+<li><p><a class="reference internal" href="#load-points-from-a-gmt-file-and-assign-plate-ids" id="id16">Load <em>points</em> from a GMT file and assign plate IDs</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id1" id="id17">Sample code</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id18">Input</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id19">Details</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#import-polylines-from-a-text-file-and-assign-plate-ids" id="id20">Import <em>polylines</em> from a text file and assign plate IDs</a><ul>
-<li><a class="reference internal" href="#id5" id="id21">Sample code</a></li>
-<li><a class="reference internal" href="#id6" id="id22">Input</a></li>
-<li><a class="reference internal" href="#id7" id="id23">Details</a></li>
+<li><p><a class="reference internal" href="#import-polylines-from-a-text-file-and-assign-plate-ids" id="id20">Import <em>polylines</em> from a text file and assign plate IDs</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id5" id="id21">Sample code</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id22">Input</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id23">Details</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#load-polylines-from-a-gmt-file-and-assign-plate-ids" id="id24">Load <em>polylines</em> from a GMT file and assign plate IDs</a><ul>
-<li><a class="reference internal" href="#id8" id="id25">Sample code</a></li>
-<li><a class="reference internal" href="#id9" id="id26">Input</a></li>
-<li><a class="reference internal" href="#id10" id="id27">Details</a></li>
+<li><p><a class="reference internal" href="#load-polylines-from-a-gmt-file-and-assign-plate-ids" id="id24">Load <em>polylines</em> from a GMT file and assign plate IDs</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id8" id="id25">Sample code</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id26">Input</a></p></li>
+<li><p><a class="reference internal" href="#id10" id="id27">Details</a></p></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="section" id="import-points-from-a-text-file-and-assign-plate-ids">
-<span id="pygplates-import-points-from-a-text-file-and-assign-plate-ids"></span><h2><a class="toc-backref" href="#id12">Import <em>points</em> from a text file and assign plate IDs</a><a class="headerlink" href="#import-points-from-a-text-file-and-assign-plate-ids" title="Permalink to this headline">¶</a></h2>
+<section id="import-points-from-a-text-file-and-assign-plate-ids">
+<span id="pygplates-import-points-from-a-text-file-and-assign-plate-ids"></span><h2><a class="toc-backref" href="#id12">Import <em>points</em> from a text file and assign plate IDs</a><a class="headerlink" href="#import-points-from-a-text-file-and-assign-plate-ids" title="Permalink to this headline"></a></h2>
 <p>This example:</p>
 <ul class="simple">
-<li>reads some point locations from a text file,</li>
-<li>assigns a plate ID and valid time period to each point, and</li>
-<li>writes the assigned points to a GPML file ready for use in <a class="reference external" href="http://www.gplates.org">GPlates</a>.</li>
+<li><p>reads some point locations from a text file,</p></li>
+<li><p>assigns a plate ID and valid time period to each point, and</p></li>
+<li><p>writes the assigned points to a GPML file ready for use in <a class="reference external" href="http://www.gplates.org">GPlates</a>.</p></li>
 </ul>
-<div class="section" id="sample-code">
-<h3><a class="toc-backref" href="#id13">Sample code</a><a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h3>
+<section id="sample-code">
+<h3><a class="toc-backref" href="#id13">Sample code</a><a class="headerlink" href="#sample-code" title="Permalink to this headline"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -179,9 +233,9 @@ to geological times. And other feature metadata such as <a class="reference inte
 <span class="n">assigned_point_feature_collection</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">output_points_filename</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="input">
-<h3><a class="toc-backref" href="#id14">Input</a><a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="input">
+<h3><a class="toc-backref" href="#id14">Input</a><a class="headerlink" href="#input" title="Permalink to this headline"></a></h3>
 <p>An example input text file (in longitude/latitude order) looks like:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="mf">79.747867</span>      <span class="o">-</span><span class="mf">1.444159</span>
 <span class="o">-</span><span class="mf">79.786712</span>      <span class="o">-</span><span class="mf">1.654002</span>
@@ -204,9 +258,9 @@ to geological times. And other feature metadata such as <a class="reference inte
 <span class="o">-</span><span class="mf">70.059697</span>      <span class="o">-</span><span class="mf">22.248895</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="details">
-<h3><a class="toc-backref" href="#id15">Details</a><a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="details">
+<h3><a class="toc-backref" href="#id15">Details</a><a class="headerlink" href="#details" title="Permalink to this headline"></a></h3>
 <p>The rotations are loaded from a rotation file into a <a class="reference internal" href="../generated/pygplates.RotationModel.html#pygplates.RotationModel" title="pygplates.RotationModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.RotationModel</span></code></a>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
 </pre></div>
@@ -278,14 +332,14 @@ we can write them out to a file using <a class="reference internal" href="../gen
 <span class="n">assigned_point_feature_collection</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">output_points_filename</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="load-points-from-a-gmt-file-and-assign-plate-ids">
-<span id="pygplates-import-points-from-a-gmt-file-and-assign-plate-ids"></span><h2><a class="toc-backref" href="#id16">Load <em>points</em> from a GMT file and assign plate IDs</a><a class="headerlink" href="#load-points-from-a-gmt-file-and-assign-plate-ids" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="load-points-from-a-gmt-file-and-assign-plate-ids">
+<span id="pygplates-import-points-from-a-gmt-file-and-assign-plate-ids"></span><h2><a class="toc-backref" href="#id16">Load <em>points</em> from a GMT file and assign plate IDs</a><a class="headerlink" href="#load-points-from-a-gmt-file-and-assign-plate-ids" title="Permalink to this headline"></a></h2>
 <p>This example is similiar to <a class="reference internal" href="#pygplates-import-points-from-a-text-file-and-assign-plate-ids"><span class="std std-ref">Import points from a text file and assign plate IDs</span></a> except it
 takes advantage of the ability of pyGPlates to load a GMT file to avoid having to manually parse a text file line-by-line.</p>
-<div class="section" id="id1">
-<h3><a class="toc-backref" href="#id17">Sample code</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<section id="id1">
+<h3><a class="toc-backref" href="#id17">Sample code</a><a class="headerlink" href="#id1" title="Permalink to this headline"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load a GMT file (instead of manually reading a &#39;.txt&#39; file line-by-line).</span>
 <span class="n">point_features</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="s1">&#39;input_points.gmt&#39;</span><span class="p">)</span>
 
@@ -305,9 +359,9 @@ takes advantage of the ability of pyGPlates to load a GMT file to avoid having t
 <span class="n">assigned_point_feature_collection</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">output_points_filename</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id2">
-<h3><a class="toc-backref" href="#id18">Input</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id2">
+<h3><a class="toc-backref" href="#id18">Input</a><a class="headerlink" href="#id2" title="Permalink to this headline"></a></h3>
 <p>An example input text file (in longitude/latitude order) looks like:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="mf">79.747867</span>      <span class="o">-</span><span class="mf">1.444159</span>
 <span class="o">-</span><span class="mf">79.786712</span>      <span class="o">-</span><span class="mf">1.654002</span>
@@ -330,9 +384,9 @@ takes advantage of the ability of pyGPlates to load a GMT file to avoid having t
 <span class="o">-</span><span class="mf">70.059697</span>      <span class="o">-</span><span class="mf">22.248895</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id3">
-<h3><a class="toc-backref" href="#id19">Details</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id3">
+<h3><a class="toc-backref" href="#id19">Details</a><a class="headerlink" href="#id3" title="Permalink to this headline"></a></h3>
 <div class="line-block">
 <div class="line">Since <a class="reference external" href="http://www.gplates.org">GPlates</a> can directly load GMT <code class="docutils literal notranslate"><span class="pre">'.gmt'</span></code> files, an alternative is to
 change the filename extension, of your text file, to <code class="docutils literal notranslate"><span class="pre">'.gmt'</span></code>. The feature metadata will be missing
@@ -348,17 +402,17 @@ the extra data would cause it to give a warning about flattening 2.5D to 2D.</di
 </div>
 <p>The rest of the sample code is similar to <a class="reference internal" href="#pygplates-import-points-from-a-text-file-and-assign-plate-ids"><span class="std std-ref">Import points from a text file and assign plate IDs</span></a>.</p>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="#pygplates-import-points-from-a-text-file-and-assign-plate-ids"><span class="std std-ref">Import points from a text file and assign plate IDs</span></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates-import-points-from-a-text-file-and-assign-plate-ids"><span class="std std-ref">Import points from a text file and assign plate IDs</span></a></p>
 </div>
-</div>
-</div>
-<div class="section" id="import-polylines-from-a-text-file-and-assign-plate-ids">
-<span id="pygplates-import-polylines-from-a-text-file-and-assign-plate-ids"></span><h2><a class="toc-backref" href="#id20">Import <em>polylines</em> from a text file and assign plate IDs</a><a class="headerlink" href="#import-polylines-from-a-text-file-and-assign-plate-ids" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="import-polylines-from-a-text-file-and-assign-plate-ids">
+<span id="pygplates-import-polylines-from-a-text-file-and-assign-plate-ids"></span><h2><a class="toc-backref" href="#id20">Import <em>polylines</em> from a text file and assign plate IDs</a><a class="headerlink" href="#import-polylines-from-a-text-file-and-assign-plate-ids" title="Permalink to this headline"></a></h2>
 <p>This example is similiar to <a class="reference internal" href="#pygplates-import-points-from-a-text-file-and-assign-plate-ids"><span class="std std-ref">Import points from a text file and assign plate IDs</span></a> except
 it imports <em>polylines</em> instead of <em>points</em>.</p>
-<div class="section" id="id5">
-<h3><a class="toc-backref" href="#id21">Sample code</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<section id="id5">
+<h3><a class="toc-backref" href="#id21">Sample code</a><a class="headerlink" href="#id5" title="Permalink to this headline"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -463,9 +517,9 @@ it imports <em>polylines</em> instead of <em>points</em>.</p>
 <span class="n">assigned_polyline_feature_collection</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">output_polylines_filename</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id6">
-<h3><a class="toc-backref" href="#id22">Input</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id6">
+<h3><a class="toc-backref" href="#id22">Input</a><a class="headerlink" href="#id6" title="Permalink to this headline"></a></h3>
 <p>An example input text file (in longitude/latitude order) containing three polylines looks like:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span>
   <span class="o">-</span><span class="mf">79.747867</span>      <span class="o">-</span><span class="mf">1.444159</span>
@@ -492,12 +546,12 @@ it imports <em>polylines</em> instead of <em>points</em>.</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> symbol is used to group points into polylines.</p>
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> symbol is used to group points into polylines.</p>
 </div>
-</div>
-<div class="section" id="id7">
-<h3><a class="toc-backref" href="#id23">Details</a><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id7">
+<h3><a class="toc-backref" href="#id23">Details</a><a class="headerlink" href="#id7" title="Permalink to this headline"></a></h3>
 <p>The rotations are loaded from a rotation file into a <a class="reference internal" href="../generated/pygplates.RotationModel.html#pygplates.RotationModel" title="pygplates.RotationModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.RotationModel</span></code></a>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
 </pre></div>
@@ -597,14 +651,14 @@ we can write them out to a file using <a class="reference internal" href="../gen
 <span class="n">assigned_polyline_feature_collection</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">output_polylines_filename</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="load-polylines-from-a-gmt-file-and-assign-plate-ids">
-<span id="pygplates-import-polylines-from-a-gmt-file-and-assign-plate-ids"></span><h2><a class="toc-backref" href="#id24">Load <em>polylines</em> from a GMT file and assign plate IDs</a><a class="headerlink" href="#load-polylines-from-a-gmt-file-and-assign-plate-ids" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="load-polylines-from-a-gmt-file-and-assign-plate-ids">
+<span id="pygplates-import-polylines-from-a-gmt-file-and-assign-plate-ids"></span><h2><a class="toc-backref" href="#id24">Load <em>polylines</em> from a GMT file and assign plate IDs</a><a class="headerlink" href="#load-polylines-from-a-gmt-file-and-assign-plate-ids" title="Permalink to this headline"></a></h2>
 <p>This example is similiar to <a class="reference internal" href="#pygplates-import-polylines-from-a-text-file-and-assign-plate-ids"><span class="std std-ref">Import polylines from a text file and assign plate IDs</span></a> except it
 takes advantage of the ability of pyGPlates to load a GMT file to avoid having to manually parse a text file line-by-line.</p>
-<div class="section" id="id8">
-<h3><a class="toc-backref" href="#id25">Sample code</a><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<section id="id8">
+<h3><a class="toc-backref" href="#id25">Sample code</a><a class="headerlink" href="#id8" title="Permalink to this headline"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load a GMT file (instead of manually reading a &#39;.txt&#39; file line-by-line).</span>
 <span class="n">polyline_features</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="s1">&#39;input_polylines.gmt&#39;</span><span class="p">)</span>
 
@@ -624,9 +678,9 @@ takes advantage of the ability of pyGPlates to load a GMT file to avoid having t
 <span class="n">assigned_polyline_feature_collection</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">output_polylines_filename</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id9">
-<h3><a class="toc-backref" href="#id26">Input</a><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id9">
+<h3><a class="toc-backref" href="#id26">Input</a><a class="headerlink" href="#id9" title="Permalink to this headline"></a></h3>
 <p>An example input text file (in longitude/latitude order) containing three polylines looks like:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span>
   <span class="o">-</span><span class="mf">79.747867</span>      <span class="o">-</span><span class="mf">1.444159</span>
@@ -653,12 +707,12 @@ takes advantage of the ability of pyGPlates to load a GMT file to avoid having t
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> symbol is used by GMT to group points into polylines.</p>
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> symbol is used by GMT to group points into polylines.</p>
 </div>
-</div>
-<div class="section" id="id10">
-<h3><a class="toc-backref" href="#id27">Details</a><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id10">
+<h3><a class="toc-backref" href="#id27">Details</a><a class="headerlink" href="#id10" title="Permalink to this headline"></a></h3>
 <div class="line-block">
 <div class="line">Since <a class="reference external" href="http://www.gplates.org">GPlates</a> can directly load GMT <code class="docutils literal notranslate"><span class="pre">'.gmt'</span></code> files, an alternative is to
 change the filename extension, of your text file, to <code class="docutils literal notranslate"><span class="pre">'.gmt'</span></code>. The feature metadata will be missing
@@ -674,101 +728,45 @@ the extra data would cause it to give a warning about flattening 2.5D to 2D.</di
 </div>
 <p>The rest of the sample code is similar to <a class="reference internal" href="#pygplates-import-polylines-from-a-text-file-and-assign-plate-ids"><span class="std std-ref">Import polylines from a text file and assign plate IDs</span></a>.</p>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="#pygplates-import-polylines-from-a-text-file-and-assign-plate-ids"><span class="std std-ref">Import polylines from a text file and assign plate IDs</span></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates-import-polylines-from-a-text-file-and-assign-plate-ids"><span class="std std-ref">Import polylines from a text file and assign plate IDs</span></a></p>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
+           </div>
           </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Import geometries and assign plate IDs</a><ul>
-<li><a class="reference internal" href="#import-points-from-a-text-file-and-assign-plate-ids">Import <em>points</em> from a text file and assign plate IDs</a><ul>
-<li><a class="reference internal" href="#sample-code">Sample code</a></li>
-<li><a class="reference internal" href="#input">Input</a></li>
-<li><a class="reference internal" href="#details">Details</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#load-points-from-a-gmt-file-and-assign-plate-ids">Load <em>points</em> from a GMT file and assign plate IDs</a><ul>
-<li><a class="reference internal" href="#id1">Sample code</a></li>
-<li><a class="reference internal" href="#id2">Input</a></li>
-<li><a class="reference internal" href="#id3">Details</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#import-polylines-from-a-text-file-and-assign-plate-ids">Import <em>polylines</em> from a text file and assign plate IDs</a><ul>
-<li><a class="reference internal" href="#id5">Sample code</a></li>
-<li><a class="reference internal" href="#id6">Input</a></li>
-<li><a class="reference internal" href="#id7">Details</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#load-polylines-from-a-gmt-file-and-assign-plate-ids">Load <em>polylines</em> from a GMT file and assign plate IDs</a><ul>
-<li><a class="reference internal" href="#id8">Sample code</a></li>
-<li><a class="reference internal" href="#id9">Input</a></li>
-<li><a class="reference internal" href="#id10">Details</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../pygplates_sample_code.html" class="btn btn-neutral float-left" title="Sample code" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pygplates_load_and_save_feature_collections.html" class="btn btn-neutral float-right" title="Load and save feature collections" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="../pygplates_sample_code.html"
-                        title="previous chapter">Sample code</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="pygplates_load_and_save_feature_collections.html"
-                        title="next chapter">Load and save feature collections</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/sample-code/pygplates_import_geometries_and_assign_plate_ids.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
+(C) 2004-2022 California Institute of Technology
+(C) 2007-2022 The Geological Survey of Norway
+.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="pygplates_load_and_save_feature_collections.html" title="Load and save feature collections"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="../pygplates_sample_code.html" title="Sample code"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../pygplates_sample_code.html" >Sample code</a> &#187;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
-(C) 2004-2020 California Institute of Technology
-(C) 2007-2020 The Geological Survey of Norway
-.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
-    </div>
-  </body>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
 </html>

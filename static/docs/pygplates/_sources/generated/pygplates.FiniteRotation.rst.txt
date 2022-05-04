@@ -1,4 +1,4 @@
-pygplates.FiniteRotation
+﻿pygplates.FiniteRotation
 ========================
 
 .. currentmodule:: pygplates
@@ -17,7 +17,10 @@ pygplates.FiniteRotation
       ~FiniteRotation.are_equal
       ~FiniteRotation.are_equivalent
       ~FiniteRotation.compose
+      ~FiniteRotation.create_great_circle_point_rotation
       ~FiniteRotation.create_identity_rotation
+      ~FiniteRotation.create_segment_rotation
+      ~FiniteRotation.create_small_circle_point_rotation
       ~FiniteRotation.get_euler_pole_and_angle
       ~FiniteRotation.get_inverse
       ~FiniteRotation.get_lat_lon_euler_pole_and_angle_degrees

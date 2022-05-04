@@ -1,0 +1,28 @@
+﻿pygplates.TopologicalSnapshot
+=============================
+
+.. currentmodule:: pygplates
+
+.. autoclass:: TopologicalSnapshot
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~TopologicalSnapshot.__init__
+      ~TopologicalSnapshot.export_resolved_topological_sections
+      ~TopologicalSnapshot.export_resolved_topologies
+      ~TopologicalSnapshot.get_anchor_plate_id
+      ~TopologicalSnapshot.get_resolved_topological_sections
+      ~TopologicalSnapshot.get_resolved_topologies
+      ~TopologicalSnapshot.get_rotation_model
+   
+   
+
+   
+   
+   

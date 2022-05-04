@@ -1,4 +1,4 @@
-pygplates.FeatureId
+﻿pygplates.FeatureId
 ===================
 
 .. currentmodule:: pygplates

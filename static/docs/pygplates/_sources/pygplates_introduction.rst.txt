@@ -123,15 +123,7 @@ the ``my_python_script.py`` script.
 
   import pygplates
   
-  print 'Imported pyGPlates version: %s' % pygplates.Version.get_imported_version()
-
-...which would print out...
-::
-
-  Imported pyGPlates version: 28 (GPlates )
-
-...where ``28`` is the pyGPlates revision and ``GPlates `` (in parentheses) indicates that
-revision ``28`` is associated with GPlates .
+  print('Imported pyGPlates version: {}'.format(pygplates.Version.get_imported_version()))
 
 .. note:: You will need to :ref:`install <pygplates_getting_started_installation_external>` pyGPlates so that the
    Python interpreter can find it when you execute ``python my_python_script.py``.

@@ -1,4 +1,4 @@
-pygplates.ResolvedTopologicalLine
+﻿pygplates.ResolvedTopologicalLine
 =================================
 
 .. currentmodule:: pygplates

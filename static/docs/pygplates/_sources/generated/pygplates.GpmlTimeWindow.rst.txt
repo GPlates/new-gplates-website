@@ -1,4 +1,4 @@
-pygplates.GpmlTimeWindow
+﻿pygplates.GpmlTimeWindow
 ========================
 
 .. currentmodule:: pygplates

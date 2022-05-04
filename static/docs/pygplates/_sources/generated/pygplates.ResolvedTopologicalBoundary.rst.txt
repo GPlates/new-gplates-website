@@ -1,4 +1,4 @@
-pygplates.ResolvedTopologicalBoundary
+﻿pygplates.ResolvedTopologicalBoundary
 =====================================
 
 .. currentmodule:: pygplates

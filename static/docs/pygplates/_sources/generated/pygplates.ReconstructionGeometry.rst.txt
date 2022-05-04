@@ -1,4 +1,4 @@
-pygplates.ReconstructionGeometry
+﻿pygplates.ReconstructionGeometry
 ================================
 
 .. currentmodule:: pygplates

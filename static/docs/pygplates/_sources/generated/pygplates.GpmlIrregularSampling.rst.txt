@@ -1,4 +1,4 @@
-pygplates.GpmlIrregularSampling
+﻿pygplates.GpmlIrregularSampling
 ===============================
 
 .. currentmodule:: pygplates

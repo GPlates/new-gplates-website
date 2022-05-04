@@ -1,4 +1,4 @@
-pygplates.ResolvedTopologicalSection
+﻿pygplates.ResolvedTopologicalSection
 ====================================
 
 .. currentmodule:: pygplates

@@ -1,4 +1,4 @@
-pygplates.DateLineWrapper
+﻿pygplates.DateLineWrapper
 =========================
 
 .. currentmodule:: pygplates

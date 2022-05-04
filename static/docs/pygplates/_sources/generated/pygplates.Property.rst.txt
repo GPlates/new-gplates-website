@@ -1,4 +1,4 @@
-pygplates.Property
+﻿pygplates.Property
 ==================
 
 .. currentmodule:: pygplates

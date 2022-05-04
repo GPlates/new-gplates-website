@@ -1,4 +1,4 @@
-pygplates.GpmlPolarityChronId
+﻿pygplates.GpmlPolarityChronId
 =============================
 
 .. currentmodule:: pygplates

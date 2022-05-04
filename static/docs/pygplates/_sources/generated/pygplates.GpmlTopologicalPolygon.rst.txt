@@ -1,4 +1,4 @@
-pygplates.GpmlTopologicalPolygon
+﻿pygplates.GpmlTopologicalPolygon
 ================================
 
 .. currentmodule:: pygplates

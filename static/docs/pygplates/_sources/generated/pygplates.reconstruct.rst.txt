@@ -1,4 +1,4 @@
-pygplates.reconstruct
+﻿pygplates.reconstruct
 =====================
 
 .. currentmodule:: pygplates

@@ -1,4 +1,4 @@
-pygplates.GpmlTimeSample
+﻿pygplates.GpmlTimeSample
 ========================
 
 .. currentmodule:: pygplates

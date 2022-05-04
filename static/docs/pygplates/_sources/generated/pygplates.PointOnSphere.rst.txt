@@ -1,4 +1,4 @@
-pygplates.PointOnSphere
+﻿pygplates.PointOnSphere
 =======================
 
 .. currentmodule:: pygplates
@@ -16,6 +16,7 @@ pygplates.PointOnSphere
       ~PointOnSphere.__init__
       ~PointOnSphere.clone
       ~PointOnSphere.distance
+      ~PointOnSphere.get_centroid
       ~PointOnSphere.get_points
       ~PointOnSphere.get_x
       ~PointOnSphere.get_y

@@ -1,4 +1,4 @@
-pygplates.ReconstructionTree
+﻿pygplates.ReconstructionTree
 ============================
 
 .. currentmodule:: pygplates

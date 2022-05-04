@@ -1,81 +1,135 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Create topological features &#8212; pygplates 2.2.0.28 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create topological features &mdash; pygplates 0.36.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Calculate velocities by plate ID" href="pygplates_calculate_velocities_by_plate_id.html" />
     <link rel="prev" title="Find gaps and overlaps in global topological boundaries" href="pygplates_detect_topology_gaps_and_overlaps.html" /> 
-  </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="pygplates_calculate_velocities_by_plate_id.html" title="Calculate velocities by plate ID"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="pygplates_detect_topology_gaps_and_overlaps.html" title="Find gaps and overlaps in global topological boundaries"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../pygplates_sample_code.html" accesskey="U">Sample code</a> &#187;</li> 
-      </ul>
-    </div>  
+</head>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
-            
-  <div class="section" id="create-topological-features">
-<span id="pygplates-create-topological-features"></span><h1>Create topological features<a class="headerlink" href="#create-topological-features" title="Permalink to this headline">¶</a></h1>
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pygplates
+          </a>
+              <div class="version">
+                0.36
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#import">Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#load-save">Load/Save</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#create-query-features">Create/query features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#reconstruct-features">Reconstruct features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#rotations">Rotations</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../pygplates_sample_code.html#topologies">Topologies</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pygplates_find_average_area_and_subducting_boundary_proportion_of_topologies.html">Find average area and subducting boundary proportion of topologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates_find_total_ridge_and_subduction_zone_lengths.html">Find the total length of ridges and subduction zones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates_detect_topology_gaps_and_overlaps.html">Find gaps and overlaps in global topological boundaries</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Create topological features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sample-code">Sample code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#details">Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#input">Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#output">Output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#velocities">Velocities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#spatial-proximity">Spatial proximity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#isochrons">Isochrons</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pygplates</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../pygplates_sample_code.html">Sample code</a> &raquo;</li>
+      <li>Create topological features</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/sample-code/pygplates_create_topological_features.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="create-topological-features">
+<span id="pygplates-create-topological-features"></span><h1>Create topological features<a class="headerlink" href="#create-topological-features" title="Permalink to this headline"></a></h1>
 <p>This example uses existing regular features to create the following new topological features:</p>
 <ul class="simple">
-<li>topological line feature</li>
-<li>topological polygon feature (which also uses the topological line feature)</li>
-<li>topological network feature (which also uses the topological line feature)</li>
+<li><p>topological line feature</p></li>
+<li><p>topological polygon feature (which also uses the topological line feature)</p></li>
+<li><p>topological network feature (which also uses the topological line feature)</p></li>
 </ul>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Creating topological features is different than <a class="reference internal" href="../generated/pygplates.resolve_topologies.html#pygplates.resolve_topologies" title="pygplates.resolve_topologies"><code class="xref py py-func docutils literal notranslate"><span class="pre">resolving/reconstructing</span></code></a>
+<p class="admonition-title">Note</p>
+<p>Creating topological features is different than <a class="reference internal" href="../generated/pygplates.resolve_topologies.html#pygplates.resolve_topologies" title="pygplates.resolve_topologies"><code class="xref py py-func docutils literal notranslate"><span class="pre">resolving/reconstructing</span></code></a>
 them to a specific reconstruction time. Typically topological features are created/built using GPlates,
 but they can also be created using pyGPlates and this section shows how to do that.</p>
 </div>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#sample-code" id="id1">Sample code</a></li>
-<li><a class="reference internal" href="#details" id="id2">Details</a><ul>
-<li><a class="reference internal" href="#create-a-topological-line-feature" id="id3">Create a topological line feature</a></li>
-<li><a class="reference internal" href="#create-a-topological-polygon-feature" id="id4">Create a topological polygon feature</a></li>
-<li><a class="reference internal" href="#create-a-topological-network-feature" id="id5">Create a topological network feature</a></li>
-<li><a class="reference internal" href="#find-features-referenced-by-a-topology" id="id6">Find features referenced by a topology</a></li>
-<li><a class="reference internal" href="#create-a-topological-section-for-each-referenced-feature" id="id7">Create a topological section for each referenced feature</a></li>
-<li><a class="reference internal" href="#create-a-topological-network-interior-for-each-referenced-feature" id="id8">Create a topological network interior for each referenced feature</a></li>
+<li><p><a class="reference internal" href="#sample-code" id="id1">Sample code</a></p></li>
+<li><p><a class="reference internal" href="#details" id="id2">Details</a></p>
+<ul>
+<li><p><a class="reference internal" href="#create-a-topological-line-feature" id="id3">Create a topological line feature</a></p></li>
+<li><p><a class="reference internal" href="#create-a-topological-polygon-feature" id="id4">Create a topological polygon feature</a></p></li>
+<li><p><a class="reference internal" href="#create-a-topological-network-feature" id="id5">Create a topological network feature</a></p></li>
+<li><p><a class="reference internal" href="#find-features-referenced-by-a-topology" id="id6">Find features referenced by a topology</a></p></li>
+<li><p><a class="reference internal" href="#create-a-topological-section-for-each-referenced-feature" id="id7">Create a topological section for each referenced feature</a></p></li>
+<li><p><a class="reference internal" href="#create-a-topological-network-interior-for-each-referenced-feature" id="id8">Create a topological network interior for each referenced feature</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#input" id="id9">Input</a></li>
-<li><a class="reference internal" href="#output" id="id10">Output</a></li>
+<li><p><a class="reference internal" href="#input" id="id9">Input</a></p></li>
+<li><p><a class="reference internal" href="#output" id="id10">Output</a></p></li>
 </ul>
 </div>
-<div class="section" id="sample-code">
-<h2><a class="toc-backref" href="#id1">Sample code</a><a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h2>
+<section id="sample-code">
+<h2><a class="toc-backref" href="#id1">Sample code</a><a class="headerlink" href="#sample-code" title="Permalink to this headline"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -250,9 +304,9 @@ but they can also be created using pyGPlates and this section shows how to do th
 <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="n">topological_features</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;topologies.gpml&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="details">
-<h2><a class="toc-backref" href="#id2">Details</a><a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="details">
+<h2><a class="toc-backref" href="#id2">Details</a><a class="headerlink" href="#details" title="Permalink to this headline"></a></h2>
 <p>First we load the GPML file <cite>features.gpml</cite> containing the regular features (see <a class="reference internal" href="#pygplates-create-topological-features-input"><span class="std std-ref">Input</span></a>):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="s1">&#39;features.gpml&#39;</span><span class="p">)</span>
 </pre></div>
@@ -289,8 +343,8 @@ passing the regular features, the list of features referenced by the topological
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The topological <em>polygon</em> feature references the topological <em>line</em> feature that we just created (in addition to regular features) since
+<p class="admonition-title">Note</p>
+<p>The topological <em>polygon</em> feature references the topological <em>line</em> feature that we just created (in addition to regular features) since
 it forms part of the boundary of the <em>polygon</em>.</p>
 </div>
 <p>Then we create the topological <em>polygon</em> feature by calling our own function <a class="reference internal" href="#pygplates-create-topological-polygon-feature"><span class="std std-ref">create_topological_polygon_feature</span></a>,
@@ -319,8 +373,8 @@ So we have two lists of feature ID strings:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The <em>boundary</em> of the topological network feature references the topological <em>line</em> feature that we created previously (in addition to regular features).</p>
+<p class="admonition-title">Note</p>
+<p>The <em>boundary</em> of the topological network feature references the topological <em>line</em> feature that we created previously (in addition to regular features).</p>
 </div>
 <p>Then we create the topological <em>network</em> feature by calling our own function <a class="reference internal" href="#pygplates-create-topological-network-feature"><span class="std std-ref">create_topological_network_feature</span></a>,
 passing the regular features (and topological <em>line</em>), the list of features referenced by the topological network <em>boundary</em>, the list of features referenced
@@ -332,8 +386,8 @@ by the topological network <em>interior</em> and the feature type of the topolog
     <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureType</span><span class="o">.</span><span class="n">gpml_topological_network</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="section" id="create-a-topological-line-feature">
-<span id="pygplates-create-topological-line-feature"></span><h3><a class="toc-backref" href="#id3">Create a topological line feature</a><a class="headerlink" href="#create-a-topological-line-feature" title="Permalink to this headline">¶</a></h3>
+<section id="create-a-topological-line-feature">
+<span id="pygplates-create-topological-line-feature"></span><h3><a class="toc-backref" href="#id3">Create a topological line feature</a><a class="headerlink" href="#create-a-topological-line-feature" title="Permalink to this headline"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_topological_line_feature</span><span class="p">(</span>
         <span class="n">features</span><span class="p">,</span>
         <span class="n">topological_line_referenced_feature_id_strings</span><span class="p">,</span>
@@ -373,9 +427,9 @@ We then pass that, along with the feature type, into <a class="reference interna
     <span class="n">pygplates</span><span class="o">.</span><span class="n">GpmlTopologicalLine</span><span class="p">(</span><span class="n">topological_line_sections</span><span class="p">))</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="create-a-topological-polygon-feature">
-<span id="pygplates-create-topological-polygon-feature"></span><h3><a class="toc-backref" href="#id4">Create a topological polygon feature</a><a class="headerlink" href="#create-a-topological-polygon-feature" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="create-a-topological-polygon-feature">
+<span id="pygplates-create-topological-polygon-feature"></span><h3><a class="toc-backref" href="#id4">Create a topological polygon feature</a><a class="headerlink" href="#create-a-topological-polygon-feature" title="Permalink to this headline"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_topological_polygon_feature</span><span class="p">(</span>
         <span class="n">features</span><span class="p">,</span>
         <span class="n">topological_polygon_referenced_feature_id_strings</span><span class="p">,</span>
@@ -415,9 +469,9 @@ We then pass that, along with the feature type, into <a class="reference interna
     <span class="n">pygplates</span><span class="o">.</span><span class="n">GpmlTopologicalPolygon</span><span class="p">(</span><span class="n">topological_polygon_sections</span><span class="p">))</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="create-a-topological-network-feature">
-<span id="pygplates-create-topological-network-feature"></span><h3><a class="toc-backref" href="#id5">Create a topological network feature</a><a class="headerlink" href="#create-a-topological-network-feature" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="create-a-topological-network-feature">
+<span id="pygplates-create-topological-network-feature"></span><h3><a class="toc-backref" href="#id5">Create a topological network feature</a><a class="headerlink" href="#create-a-topological-network-feature" title="Permalink to this headline"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_topological_network_feature</span><span class="p">(</span>
         <span class="n">features</span><span class="p">,</span>
         <span class="n">topological_network_boundary_referenced_feature_id_strings</span><span class="p">,</span>
@@ -480,9 +534,9 @@ We then pass that, along with the feature type, into <a class="reference interna
         <span class="n">topological_network_interiors</span><span class="p">))</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="find-features-referenced-by-a-topology">
-<span id="pygplates-find-referenced-features"></span><h3><a class="toc-backref" href="#id6">Find features referenced by a topology</a><a class="headerlink" href="#find-features-referenced-by-a-topology" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="find-features-referenced-by-a-topology">
+<span id="pygplates-find-referenced-features"></span><h3><a class="toc-backref" href="#id6">Find features referenced by a topology</a><a class="headerlink" href="#find-features-referenced-by-a-topology" title="Permalink to this headline"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">find_referenced_features</span><span class="p">(</span>
         <span class="n">features</span><span class="p">,</span>
         <span class="n">referenced_feature_id_strings</span><span class="p">):</span>
@@ -500,9 +554,9 @@ We then pass that, along with the feature type, into <a class="reference interna
 </div>
 <p>This function simply iterates through the <cite>features</cite> and searches each feature’s <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.get_feature_id" title="pygplates.Feature.get_feature_id"><code class="xref py py-meth docutils literal notranslate"><span class="pre">feature</span> <span class="pre">ID</span></code></a>
 in the list of feature IDs referenced by the topological geometry. Any features that match are returned.</p>
-</div>
-<div class="section" id="create-a-topological-section-for-each-referenced-feature">
-<span id="pygplates-create-topological-sections"></span><h3><a class="toc-backref" href="#id7">Create a topological section for each referenced feature</a><a class="headerlink" href="#create-a-topological-section-for-each-referenced-feature" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="create-a-topological-section-for-each-referenced-feature">
+<span id="pygplates-create-topological-sections"></span><h3><a class="toc-backref" href="#id7">Create a topological section for each referenced feature</a><a class="headerlink" href="#create-a-topological-section-for-each-referenced-feature" title="Permalink to this headline"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_topological_sections</span><span class="p">(</span>
         <span class="n">referenced_features</span><span class="p">,</span>
         <span class="n">topological_geometry_type</span><span class="p">):</span>
@@ -523,20 +577,20 @@ in the list of feature IDs referenced by the topological geometry. Any features 
 A topological section will be a <a class="reference internal" href="../generated/pygplates.GpmlTopologicalPoint.html#pygplates.GpmlTopologicalPoint" title="pygplates.GpmlTopologicalPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.GpmlTopologicalPoint</span></code></a> if the referenced geometry is a point or a <a class="reference internal" href="../generated/pygplates.GpmlTopologicalLineSection.html#pygplates.GpmlTopologicalLineSection" title="pygplates.GpmlTopologicalLineSection"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.GpmlTopologicalLineSection</span></code></a>
 if the referenced geometry is a polyline (or a topological line, provided it’s being added to a topological polygon or network as determined by <cite>topological_geometry_type</cite>).</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">We are not specifying a geometry property name when calling <a class="reference internal" href="../generated/pygplates.GpmlTopologicalSection.html#pygplates.GpmlTopologicalSection.create" title="pygplates.GpmlTopologicalSection.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.GpmlTopologicalSection.create()</span></code></a>. This means the <em>default</em> geometry property name
+<p class="admonition-title">Note</p>
+<p>We are not specifying a geometry property name when calling <a class="reference internal" href="../generated/pygplates.GpmlTopologicalSection.html#pygplates.GpmlTopologicalSection.create" title="pygplates.GpmlTopologicalSection.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.GpmlTopologicalSection.create()</span></code></a>. This means the <em>default</em> geometry property name
 (for the referenced feature <em>type</em>) is used. However it is sometimes possible for geometry to be placed in two different properties (with different property names).
 If the geometry happened to be in a non-default geometry property then we would need to explicitly specify that property name.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The <cite>reverse_order</cite> flag in <a class="reference internal" href="../generated/pygplates.GpmlTopologicalSection.html#pygplates.GpmlTopologicalSection.create" title="pygplates.GpmlTopologicalSection.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.GpmlTopologicalSection.create()</span></code></a> is not needed (can be left as default, as we have done here)
+<p class="admonition-title">Note</p>
+<p>The <cite>reverse_order</cite> flag in <a class="reference internal" href="../generated/pygplates.GpmlTopologicalSection.html#pygplates.GpmlTopologicalSection.create" title="pygplates.GpmlTopologicalSection.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.GpmlTopologicalSection.create()</span></code></a> is not needed (can be left as default, as we have done here)
 if the topological sections always intersect each other (or if they’re points, and hence have no orientation). This flag is only used when a line section stops
 intersecting both its neighbouring line sections (known as <em>rubber banding</em>).</p>
 </div>
-</div>
-<div class="section" id="create-a-topological-network-interior-for-each-referenced-feature">
-<span id="pygplates-create-topological-network-interiors"></span><h3><a class="toc-backref" href="#id8">Create a topological network interior for each referenced feature</a><a class="headerlink" href="#create-a-topological-network-interior-for-each-referenced-feature" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="create-a-topological-network-interior-for-each-referenced-feature">
+<span id="pygplates-create-topological-network-interiors"></span><h3><a class="toc-backref" href="#id8">Create a topological network interior for each referenced feature</a><a class="headerlink" href="#create-a-topological-network-interior-for-each-referenced-feature" title="Permalink to this headline"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_topological_network_interiors</span><span class="p">(</span>
         <span class="n">referenced_features</span><span class="p">):</span>
 
@@ -555,21 +609,21 @@ intersecting both its neighbouring line sections (known as <em>rubber banding</e
 A topological network interior is actually a <a class="reference internal" href="../generated/pygplates.GpmlPropertyDelegate.html#pygplates.GpmlPropertyDelegate" title="pygplates.GpmlPropertyDelegate"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.GpmlPropertyDelegate</span></code></a> (which is what is stored inside a <a class="reference internal" href="../generated/pygplates.GpmlTopologicalSection.html#pygplates.GpmlTopologicalSection" title="pygplates.GpmlTopologicalSection"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.GpmlTopologicalSection</span></code></a>)
 and is what references a specific geometry property within a feature (since a <a class="reference internal" href="../generated/pygplates.GpmlPropertyDelegate.html#pygplates.GpmlPropertyDelegate" title="pygplates.GpmlPropertyDelegate"><code class="xref py py-class docutils literal notranslate"><span class="pre">property</span> <span class="pre">delegate</span></code></a> contains a property name and feature ID).</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Any regular geometry (point, multipoint, polyline, polygon) or topological line can be referenced by a topological network interior.
+<p class="admonition-title">Note</p>
+<p>Any regular geometry (point, multipoint, polyline, polygon) or topological line can be referenced by a topological network interior.
 If a regular polygon geometry is referenced then it will be treated as a rigid interior block in the topological network and will not be part of the deforming region.
 This means anything inside this interior polygon geometry will move rigidly using the plate ID of the referenced polygon feature.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">We are not specifying a geometry property name when calling <a class="reference internal" href="../generated/pygplates.GpmlTopologicalSection.html#pygplates.GpmlTopologicalSection.create_network_interior" title="pygplates.GpmlTopologicalSection.create_network_interior"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.GpmlTopologicalSection.create_network_interior()</span></code></a>. This means the <em>default</em> geometry property name
+<p class="admonition-title">Note</p>
+<p>We are not specifying a geometry property name when calling <a class="reference internal" href="../generated/pygplates.GpmlTopologicalSection.html#pygplates.GpmlTopologicalSection.create_network_interior" title="pygplates.GpmlTopologicalSection.create_network_interior"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.GpmlTopologicalSection.create_network_interior()</span></code></a>. This means the <em>default</em> geometry property name
 (for the referenced feature <em>type</em>) is used. However it is sometimes possible for geometry to be placed in two different properties (with different property names).
 If the geometry happened to be in a non-default geometry property then we would need to explicitly specify that property name.</p>
 </div>
-</div>
-</div>
-<div class="section" id="input">
-<span id="pygplates-create-topological-features-input"></span><h2><a class="toc-backref" href="#id9">Input</a><a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="input">
+<span id="pygplates-create-topological-features-input"></span><h2><a class="toc-backref" href="#id9">Input</a><a class="headerlink" href="#input" title="Permalink to this headline"></a></h2>
 <p>The contents of the input file <cite>features.gpml</cite>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;gpml:FeatureCollection xmlns:gpml=&quot;http://www.gplates.org/gplates&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot; xmlns:xsi=&quot;http://www.w3.org/XMLSchema-instance&quot; gpml:version=&quot;1.6.0339&quot; xsi:schemaLocation=&quot;http://www.gplates.org/gplates ../xsd/gpml.xsd http://www.opengis.net/gml ../../../gml/current/base&quot;&gt;
@@ -1240,9 +1294,9 @@ If the geometry happened to be in a non-default geometry property then we would 
 &lt;/gpml:FeatureCollection&gt;
 </pre></div>
 </div>
-</div>
-<div class="section" id="output">
-<h2><a class="toc-backref" href="#id10">Output</a><a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="output">
+<h2><a class="toc-backref" href="#id10">Output</a><a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
 <p>The contents of the output file <cite>topologies.gpml</cite>. Note that the feature IDs of the topological features will differ for each run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;gpml:FeatureCollection xmlns:gpml=&quot;http://www.gplates.org/gplates&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot; xmlns:xsi=&quot;http://www.w3.org/XMLSchema-instance&quot; gpml:version=&quot;1.6.0339&quot; xsi:schemaLocation=&quot;http://www.gplates.org/gplates ../xsd/gpml.xsd http://www.opengis.net/gml ../../../gml/current/base&quot;&gt;
@@ -1499,85 +1553,41 @@ If the geometry happened to be in a non-default geometry property then we would 
 &lt;/gpml:FeatureCollection&gt;
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
+           </div>
           </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Create topological features</a><ul>
-<li><a class="reference internal" href="#sample-code">Sample code</a></li>
-<li><a class="reference internal" href="#details">Details</a><ul>
-<li><a class="reference internal" href="#create-a-topological-line-feature">Create a topological line feature</a></li>
-<li><a class="reference internal" href="#create-a-topological-polygon-feature">Create a topological polygon feature</a></li>
-<li><a class="reference internal" href="#create-a-topological-network-feature">Create a topological network feature</a></li>
-<li><a class="reference internal" href="#find-features-referenced-by-a-topology">Find features referenced by a topology</a></li>
-<li><a class="reference internal" href="#create-a-topological-section-for-each-referenced-feature">Create a topological section for each referenced feature</a></li>
-<li><a class="reference internal" href="#create-a-topological-network-interior-for-each-referenced-feature">Create a topological network interior for each referenced feature</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#input">Input</a></li>
-<li><a class="reference internal" href="#output">Output</a></li>
-</ul>
-</li>
-</ul>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pygplates_detect_topology_gaps_and_overlaps.html" class="btn btn-neutral float-left" title="Find gaps and overlaps in global topological boundaries" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pygplates_calculate_velocities_by_plate_id.html" class="btn btn-neutral float-right" title="Calculate velocities by plate ID" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="pygplates_detect_topology_gaps_and_overlaps.html"
-                        title="previous chapter">Find gaps and overlaps in global topological boundaries</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="pygplates_calculate_velocities_by_plate_id.html"
-                        title="next chapter">Calculate velocities by plate ID</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/sample-code/pygplates_create_topological_features.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
+(C) 2004-2022 California Institute of Technology
+(C) 2007-2022 The Geological Survey of Norway
+.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="pygplates_calculate_velocities_by_plate_id.html" title="Calculate velocities by plate ID"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="pygplates_detect_topology_gaps_and_overlaps.html" title="Find gaps and overlaps in global topological boundaries"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../pygplates_sample_code.html" >Sample code</a> &#187;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
-(C) 2004-2020 California Institute of Technology
-(C) 2007-2020 The Geological Survey of Norway
-.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
-    </div>
-  </body>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
 </html>

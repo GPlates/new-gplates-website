@@ -1,4 +1,4 @@
-pygplates.ReconstructionTreeEdge
+﻿pygplates.ReconstructionTreeEdge
 ================================
 
 .. currentmodule:: pygplates

@@ -1,4 +1,4 @@
-pygplates.GmlTimePeriod
+﻿pygplates.GmlTimePeriod
 =======================
 
 .. currentmodule:: pygplates

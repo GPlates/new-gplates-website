@@ -1,4 +1,4 @@
-pygplates.PropertyValue
+﻿pygplates.PropertyValue
 =======================
 
 .. currentmodule:: pygplates

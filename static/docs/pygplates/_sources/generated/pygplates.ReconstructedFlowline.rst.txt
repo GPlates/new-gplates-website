@@ -1,4 +1,4 @@
-pygplates.ReconstructedFlowline
+﻿pygplates.ReconstructedFlowline
 ===============================
 
 .. currentmodule:: pygplates

@@ -1,4 +1,4 @@
-pygplates.GmlTimeInstant
+﻿pygplates.GmlTimeInstant
 ========================
 
 .. currentmodule:: pygplates

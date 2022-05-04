@@ -1,4 +1,4 @@
-pygplates.GpmlPropertyDelegateList
+﻿pygplates.GpmlPropertyDelegateList
 ==================================
 
 .. currentmodule:: pygplates

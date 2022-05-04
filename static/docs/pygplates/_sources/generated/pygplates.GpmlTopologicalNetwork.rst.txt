@@ -1,4 +1,4 @@
-pygplates.GpmlTopologicalNetwork
+﻿pygplates.GpmlTopologicalNetwork
 ================================
 
 .. currentmodule:: pygplates

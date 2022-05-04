@@ -1,4 +1,4 @@
-pygplates.ResolvedTopologicalNetwork
+﻿pygplates.ResolvedTopologicalNetwork
 ====================================
 
 .. currentmodule:: pygplates

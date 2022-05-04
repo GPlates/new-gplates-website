@@ -1,4 +1,4 @@
-pygplates.GpmlPropertyDelegate
+﻿pygplates.GpmlPropertyDelegate
 ==============================
 
 .. currentmodule:: pygplates

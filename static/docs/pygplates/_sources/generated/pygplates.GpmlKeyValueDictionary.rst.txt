@@ -1,4 +1,4 @@
-pygplates.GpmlKeyValueDictionary
+﻿pygplates.GpmlKeyValueDictionary
 ================================
 
 .. currentmodule:: pygplates

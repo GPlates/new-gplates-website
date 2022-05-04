@@ -1,4 +1,4 @@
-pygplates.ReconstructedMotionPath
+﻿pygplates.ReconstructedMotionPath
 =================================
 
 .. currentmodule:: pygplates

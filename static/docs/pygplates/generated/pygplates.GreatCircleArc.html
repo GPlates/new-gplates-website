@@ -1,79 +1,129 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>pygplates.GreatCircleArc &#8212; pygplates 2.2.0.28 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pygplates.GreatCircleArc &mdash; pygplates 0.36.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="pygplates.LatLonPoint" href="pygplates.LatLonPoint.html" />
     <link rel="prev" title="pygplates.GeometryOnSphere" href="pygplates.GeometryOnSphere.html" /> 
-  </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="pygplates.LatLonPoint.html" title="pygplates.LatLonPoint"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="pygplates.GeometryOnSphere.html" title="pygplates.GeometryOnSphere"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" accesskey="U">Reference</a> &#187;</li> 
-      </ul>
-    </div>  
+</head>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
-            
-  <div class="section" id="pygplates-greatcirclearc">
-<h1>pygplates.GreatCircleArc<a class="headerlink" href="#pygplates-greatcirclearc" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
-<dt id="pygplates.GreatCircleArc">
-<em class="property">class </em><code class="descclassname">pygplates.</code><code class="descname">GreatCircleArc</code><a class="headerlink" href="#pygplates.GreatCircleArc" title="Permalink to this definition">¶</a></dt>
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pygplates
+          </a>
+              <div class="version">
+                0.36
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../pygplates_reference.html">Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#reconstruction">Reconstruction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#topology">Topology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#velocity">Velocity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#rotation">Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#plate-partitioning">Plate Partitioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#file-i-o">File I/O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#feature">Feature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#feature-property">Feature property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#feature-property-value">Feature property value</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../pygplates_reference.html#geometry">Geometry</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pygplates.PointOnSphere.html">pygplates.PointOnSphere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.MultiPointOnSphere.html">pygplates.MultiPointOnSphere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.PolylineOnSphere.html">pygplates.PolylineOnSphere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.PolygonOnSphere.html">pygplates.PolygonOnSphere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.GeometryOnSphere.html">pygplates.GeometryOnSphere</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">pygplates.GreatCircleArc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.LatLonPoint.html">pygplates.LatLonPoint</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#vector">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#string">String</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#utility">Utility</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pygplates</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../pygplates_reference.html">Reference</a> &raquo;</li>
+      <li>pygplates.GreatCircleArc</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/pygplates.GreatCircleArc.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pygplates-greatcirclearc">
+<h1>pygplates.GreatCircleArc<a class="headerlink" href="#pygplates-greatcirclearc" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pygplates.GreatCircleArc">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pygplates.</span></span><span class="sig-name descname"><span class="pre">GreatCircleArc</span></span><a class="headerlink" href="#pygplates.GreatCircleArc" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Boost.Python.instance</span></code></p>
 <p>A great-circle arc on the surface of the unit globe.</p>
 <p>Great circle arcs are equality (<code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">!=</span></code>) comparable (but not hashable - cannot be used as a key in a <code class="docutils literal notranslate"><span class="pre">dict</span></code>).</p>
-<dl class="method">
-<dt id="pygplates.GreatCircleArc.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>start_point</em>, <em>end_point</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.__init__" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.GreatCircleArc.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_point</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.__init__" title="Permalink to this definition"></a></dt>
 <dd><p>Create a great circle arc from two points.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>start_point</strong> (<a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (latitude,longitude), in degrees, or tuple (x,y,z)) – the start point of the arc.</li>
-<li><strong>end_point</strong> (<a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (latitude,longitude), in degrees, or tuple (x,y,z)) – the end point of the arc.</li>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start_point</strong> (<a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (latitude,longitude), in degrees, or tuple (x,y,z)) – the start point of the arc.</p></li>
+<li><p><strong>end_point</strong> (<a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (latitude,longitude), in degrees, or tuple (x,y,z)) – the end point of the arc.</p></li>
 </ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last">IndeterminateResultError if points are antipodal (opposite each other)</p>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p>IndeterminateResultError if points are antipodal (opposite each other)</p>
+</dd>
+</dl>
 <div class="line-block">
 <div class="line">An arc is specified by a start-point and an end-point:</div>
-<div class="line">If these two points are not antipodal, a unique great-circle arc (with angle-span less than PI radians) will be determined between them. If they are antipodal then <em>IndeterminateResultException</em> will be raised. Note that an error is <em>not</em> raised if the two points are coincident.</div>
+<div class="line">If these two points are not antipodal, a unique great-circle arc (with angle-span less than PI radians) will be determined between them. If they are antipodal then <em>IndeterminateResultError</em> will be raised. Note that an error is <em>not</em> raised if the two points are coincident.</div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">great_circle_arc</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">GreatCircleArc</span><span class="p">(</span><span class="n">start_point</span><span class="p">,</span> <span class="n">end_point</span><span class="p">)</span>
 </pre></div>
@@ -81,65 +131,65 @@
 </dd></dl>
 
 <p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
+<table class="autosummary longtable docutils align-default">
 <colgroup>
-<col width="10%" />
-<col width="90%" />
+<col style="width: 10%" />
+<col style="width: 90%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GreatCircleArc.__init__" title="pygplates.GreatCircleArc.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(start_point,&nbsp;end_point)</td>
-<td>Create a great circle arc from two points.</td>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.GreatCircleArc.__init__" title="pygplates.GreatCircleArc.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(start_point, end_point)</p></td>
+<td><p>Create a great circle arc from two points.</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pygplates.GreatCircleArc.get_arc_direction" title="pygplates.GreatCircleArc.get_arc_direction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_arc_direction</span></code></a>(…)</td>
-<td>Return the direction along the arc at a point on the arc.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.GreatCircleArc.get_arc_direction" title="pygplates.GreatCircleArc.get_arc_direction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_arc_direction</span></code></a>(...)</p></td>
+<td><p>Return the direction along the arc at a point on the arc.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GreatCircleArc.get_arc_length" title="pygplates.GreatCircleArc.get_arc_length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_arc_length</span></code></a>()</td>
-<td>Returns the arc length of this great circle arc (in radians).</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.GreatCircleArc.get_arc_length" title="pygplates.GreatCircleArc.get_arc_length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_arc_length</span></code></a>()</p></td>
+<td><p>Returns the arc length of this great circle arc (in radians).</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pygplates.GreatCircleArc.get_arc_point" title="pygplates.GreatCircleArc.get_arc_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_arc_point</span></code></a>(…)</td>
-<td>Return a point on this arc.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.GreatCircleArc.get_arc_point" title="pygplates.GreatCircleArc.get_arc_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_arc_point</span></code></a>(...)</p></td>
+<td><p>Return a point on this arc.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GreatCircleArc.get_end_point" title="pygplates.GreatCircleArc.get_end_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_end_point</span></code></a>()</td>
-<td>Return the arc’s end point geometry.</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.GreatCircleArc.get_end_point" title="pygplates.GreatCircleArc.get_end_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_end_point</span></code></a>()</p></td>
+<td><p>Return the arc's end point geometry.</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pygplates.GreatCircleArc.get_great_circle_normal" title="pygplates.GreatCircleArc.get_great_circle_normal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_great_circle_normal</span></code></a>()</td>
-<td>Return the unit vector normal direction of the great circle this arc lies on.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.GreatCircleArc.get_great_circle_normal" title="pygplates.GreatCircleArc.get_great_circle_normal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_great_circle_normal</span></code></a>()</p></td>
+<td><p>Return the unit vector normal direction of the great circle this arc lies on.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GreatCircleArc.get_rotation_axis" title="pygplates.GreatCircleArc.get_rotation_axis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_rotation_axis</span></code></a>()</td>
-<td>Return the rotation axis of the arc as a 3D vector.</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.GreatCircleArc.get_rotation_axis" title="pygplates.GreatCircleArc.get_rotation_axis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_rotation_axis</span></code></a>()</p></td>
+<td><p>Return the rotation axis of the arc as a 3D vector.</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pygplates.GreatCircleArc.get_rotation_axis_lat_lon" title="pygplates.GreatCircleArc.get_rotation_axis_lat_lon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_rotation_axis_lat_lon</span></code></a>()</td>
-<td>Return the (latitude, longitude) equivalent of <a class="reference internal" href="#pygplates.GreatCircleArc.get_rotation_axis" title="pygplates.GreatCircleArc.get_rotation_axis"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_rotation_axis()</span></code></a>.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.GreatCircleArc.get_rotation_axis_lat_lon" title="pygplates.GreatCircleArc.get_rotation_axis_lat_lon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_rotation_axis_lat_lon</span></code></a>()</p></td>
+<td><p>Return the (latitude, longitude) equivalent of <a class="reference internal" href="#pygplates.GreatCircleArc.get_rotation_axis" title="pygplates.GreatCircleArc.get_rotation_axis"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_rotation_axis()</span></code></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GreatCircleArc.get_start_point" title="pygplates.GreatCircleArc.get_start_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_start_point</span></code></a>()</td>
-<td>Return the arc’s start point geometry.</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.GreatCircleArc.get_start_point" title="pygplates.GreatCircleArc.get_start_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_start_point</span></code></a>()</p></td>
+<td><p>Return the arc's start point geometry.</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pygplates.GreatCircleArc.is_zero_length" title="pygplates.GreatCircleArc.is_zero_length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_zero_length</span></code></a>()</td>
-<td>Return whether this great circle arc is of zero length.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.GreatCircleArc.is_zero_length" title="pygplates.GreatCircleArc.is_zero_length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_zero_length</span></code></a>()</p></td>
+<td><p>Return whether this great circle arc is of zero length.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pygplates.GreatCircleArc.to_tessellated" title="pygplates.GreatCircleArc.to_tessellated"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_tessellated</span></code></a>(tessellate_radians)</td>
-<td>Returns a list of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a> new polyline that is tessellated version of this polyline.</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.GreatCircleArc.to_tessellated" title="pygplates.GreatCircleArc.to_tessellated"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_tessellated</span></code></a>(tessellate_radians)</p></td>
+<td><p>Returns a list of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a> new polyline that is tessellated version of this polyline.</p></td>
 </tr>
 </tbody>
 </table>
-<dl class="method">
-<dt id="pygplates.GreatCircleArc.get_arc_direction">
-<code class="descname">get_arc_direction</code><span class="sig-paren">(</span><em>normalised_distance_from_start_point</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_arc_direction" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.GreatCircleArc.get_arc_direction">
+<span class="sig-name descname"><span class="pre">get_arc_direction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">normalised_distance_from_start_point</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_arc_direction" title="Permalink to this definition"></a></dt>
 <dd><p>Return the direction along the arc at a point on the arc.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>normalised_distance_from_start_point</strong> (<em>float</em>) – distance from start point where zero is the start point, one is the end point and between zero and one are points along the arc</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.Vector3D.html#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a></td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">ValueError if arc <em>normalised_distance_from_start_point</em> is not in the range [0,1]</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body">IndeterminateGreatCircleArcDirectionError if arc is zero length</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>normalised_distance_from_start_point</strong> (<em>float</em>) – distance from start point where zero is the start point, one is the end point and between zero and one are points along the arc</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="pygplates.Vector3D.html#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a></p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p>ValueError if arc <em>normalised_distance_from_start_point</em> is not in the range [0,1]</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p>IndeterminateGreatCircleArcDirectionError if arc is zero length</p>
+</dd>
+</dl>
 <p>The returned direction is tangential to the Earth’s surface and is aligned with the direction of the great circle arc (in the direction going from the start point towards the end point). This direction is perpendicular to the great circle normal direction (see <a class="reference internal" href="#pygplates.GreatCircleArc.get_great_circle_normal" title="pygplates.GreatCircleArc.get_great_circle_normal"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_great_circle_normal()</span></code></a>).</p>
 <p>The direction at the midpoint of an arc:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">arc</span><span class="o">.</span><span class="n">is_zero_length</span><span class="p">():</span>
@@ -149,37 +199,33 @@
 <p>If <em>normalised_distance_from_start_point</em> is zero then the direction at start point is returned. If <em>normalised_distance_from_start_point</em> is one then the direction at end point is returned. Values of <em>normalised_distance_from_start_point</em> between zero and one return directions at points on the arc. If <em>normalised_distance_from_start_point</em> is outside the range from zero to one then then <em>ValueError</em> is raised.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.GreatCircleArc.get_arc_length">
-<code class="descname">get_arc_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_arc_length" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.GreatCircleArc.get_arc_length">
+<span class="sig-name descname"><span class="pre">get_arc_length</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_arc_length" title="Permalink to this definition"></a></dt>
 <dd><p>Returns the arc length of this great circle arc (in radians).</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
 <p>To convert to distance, multiply the result by the Earth radius (see <a class="reference internal" href="pygplates.Earth.html#pygplates.Earth" title="pygplates.Earth"><code class="xref py py-class docutils literal notranslate"><span class="pre">Earth</span></code></a>).</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.GreatCircleArc.get_arc_point">
-<code class="descname">get_arc_point</code><span class="sig-paren">(</span><em>normalised_distance_from_start_point</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_arc_point" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.GreatCircleArc.get_arc_point">
+<span class="sig-name descname"><span class="pre">get_arc_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">normalised_distance_from_start_point</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_arc_point" title="Permalink to this definition"></a></dt>
 <dd><p>Return a point on this arc.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>normalised_distance_from_start_point</strong> (<em>float</em>) – distance from start point where zero is the start point, one is the end point and between zero and one are points along the arc</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a></td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">ValueError if arc <em>normalised_distance_from_start_point</em> is not in the range [0,1]</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>normalised_distance_from_start_point</strong> (<em>float</em>) – distance from start point where zero is the start point, one is the end point and between zero and one are points along the arc</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a></p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p>ValueError if arc <em>normalised_distance_from_start_point</em> is not in the range [0,1]</p>
+</dd>
+</dl>
 <p>The midpoint of an arc:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">arc_midpoint</span> <span class="o">=</span> <span class="n">arc</span><span class="o">.</span><span class="n">get_arc_point</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
@@ -187,105 +233,99 @@
 <p>If <em>normalised_distance_from_start_point</em> is zero then the start point is returned. If <em>normalised_distance_from_start_point</em> is one then the end point is returned. Values of <em>normalised_distance_from_start_point</em> between zero and one return points on the arc. If <em>normalised_distance_from_start_point</em> is outside the range from zero to one then then <em>ValueError</em> is raised.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.GreatCircleArc.get_end_point">
-<code class="descname">get_end_point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_end_point" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.GreatCircleArc.get_end_point">
+<span class="sig-name descname"><span class="pre">get_end_point</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_end_point" title="Permalink to this definition"></a></dt>
 <dd><p>Return the arc’s end point geometry.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a></td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a></p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.GreatCircleArc.get_great_circle_normal">
-<code class="descname">get_great_circle_normal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_great_circle_normal" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.GreatCircleArc.get_great_circle_normal">
+<span class="sig-name descname"><span class="pre">get_great_circle_normal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_great_circle_normal" title="Permalink to this definition"></a></dt>
 <dd><p>Return the unit vector normal direction of the great circle this arc lies on.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the unit-length 3D vector</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.Vector3D.html#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a></td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">IndeterminateGreatCircleArcNormalError if arc is zero length</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the unit-length 3D vector</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="pygplates.Vector3D.html#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a></p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p>IndeterminateGreatCircleArcNormalError if arc is zero length</p>
+</dd>
+</dl>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">arc</span><span class="o">.</span><span class="n">is_zero_length</span><span class="p">():</span>
     <span class="n">normal</span> <span class="o">=</span> <span class="n">arc</span><span class="o">.</span><span class="n">get_great_circle_normal</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This returns the same (x, y, z) result as <a class="reference internal" href="#pygplates.GreatCircleArc.get_rotation_axis" title="pygplates.GreatCircleArc.get_rotation_axis"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_rotation_axis()</span></code></a>, but in the form of a <a class="reference internal" href="pygplates.Vector3D.html#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a> instead of an (x, y, z) tuple.</p>
+<p class="admonition-title">Note</p>
+<p>This returns the same (x, y, z) result as <a class="reference internal" href="#pygplates.GreatCircleArc.get_rotation_axis" title="pygplates.GreatCircleArc.get_rotation_axis"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_rotation_axis()</span></code></a>, but in the form of a <a class="reference internal" href="pygplates.Vector3D.html#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a> instead of an (x, y, z) tuple.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The normal to the great circle can be considered to be the tangential direction (to the Earth’s surface) at any point along the great circle arc that is most pointing away from (perpendicular to) the direction of the arc (from start point to end point - see <a class="reference internal" href="#pygplates.GreatCircleArc.get_arc_direction" title="pygplates.GreatCircleArc.get_arc_direction"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_arc_direction()</span></code></a>).</p>
+<p class="admonition-title">Note</p>
+<p>The normal to the great circle can be considered to be the tangential direction (to the Earth’s surface) at any point along the great circle arc that is most pointing away from (perpendicular to) the direction of the arc (from start point to end point - see <a class="reference internal" href="#pygplates.GreatCircleArc.get_arc_direction" title="pygplates.GreatCircleArc.get_arc_direction"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_arc_direction()</span></code></a>).</p>
 </div>
 <p>The normal vector is the same direction as the <a class="reference internal" href="pygplates.Vector3D.html#pygplates.Vector3D.cross" title="pygplates.Vector3D.cross"><code class="xref py py-meth docutils literal notranslate"><span class="pre">cross</span> <span class="pre">product</span></code></a> of the start point and the end point. In fact it is equivalent to <code class="docutils literal notranslate"><span class="pre">pygplates.Vector3D.cross(arc.start_point().to_xyz(),</span> <span class="pre">arc.end_point().to_xyz()).to_normalised()</span></code>.</p>
 <p>If the arc start and end points are the same (if <a class="reference internal" href="#pygplates.GreatCircleArc.is_zero_length" title="pygplates.GreatCircleArc.is_zero_length"><code class="xref py py-meth docutils literal notranslate"><span class="pre">is_zero_length()</span></code></a> is <code class="docutils literal notranslate"><span class="pre">True</span></code>) then <em>IndeterminateGreatCircleArcNormalError</em> is raised.</p>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="#pygplates.GreatCircleArc.get_rotation_axis" title="pygplates.GreatCircleArc.get_rotation_axis"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_rotation_axis()</span></code></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates.GreatCircleArc.get_rotation_axis" title="pygplates.GreatCircleArc.get_rotation_axis"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_rotation_axis()</span></code></a></p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.GreatCircleArc.get_rotation_axis">
-<code class="descname">get_rotation_axis</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_rotation_axis" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.GreatCircleArc.get_rotation_axis">
+<span class="sig-name descname"><span class="pre">get_rotation_axis</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_rotation_axis" title="Permalink to this definition"></a></dt>
 <dd><p>Return the rotation axis of the arc as a 3D vector.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the unit-length 3D vector (x,y,z)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">the tuple (float, float, float)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">IndeterminateArcRotationAxisError if arc is zero length</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the unit-length 3D vector (x,y,z)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>the tuple (float, float, float)</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p>IndeterminateArcRotationAxisError if arc is zero length</p>
+</dd>
+</dl>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">arc</span><span class="o">.</span><span class="n">is_zero_length</span><span class="p">():</span>
     <span class="n">axis_x</span><span class="p">,</span> <span class="n">axis_y</span><span class="p">,</span> <span class="n">axis_z</span> <span class="o">=</span> <span class="n">arc</span><span class="o">.</span><span class="n">get_rotation_axis</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This returns the same (x, y, z) result as <a class="reference internal" href="#pygplates.GreatCircleArc.get_great_circle_normal" title="pygplates.GreatCircleArc.get_great_circle_normal"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_great_circle_normal()</span></code></a>, but in the form of an (x, y, z) tuple instead of a <a class="reference internal" href="pygplates.Vector3D.html#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a>.</p>
+<p class="admonition-title">Note</p>
+<p>This returns the same (x, y, z) result as <a class="reference internal" href="#pygplates.GreatCircleArc.get_great_circle_normal" title="pygplates.GreatCircleArc.get_great_circle_normal"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_great_circle_normal()</span></code></a>, but in the form of an (x, y, z) tuple instead of a <a class="reference internal" href="pygplates.Vector3D.html#pygplates.Vector3D" title="pygplates.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a>.</p>
 </div>
 <p>The rotation axis is the unit-length 3D vector (x,y,z) returned in the tuple.</p>
 <p>The rotation axis direction is such that it rotates the start point towards the end point along the arc (assuming a right-handed coordinate system).</p>
 <p>If the arc start and end points are the same (if <a class="reference internal" href="#pygplates.GreatCircleArc.is_zero_length" title="pygplates.GreatCircleArc.is_zero_length"><code class="xref py py-meth docutils literal notranslate"><span class="pre">is_zero_length()</span></code></a> is <code class="docutils literal notranslate"><span class="pre">True</span></code>) then <em>IndeterminateArcRotationAxisError</em> is raised.</p>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="#pygplates.GreatCircleArc.get_great_circle_normal" title="pygplates.GreatCircleArc.get_great_circle_normal"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_great_circle_normal()</span></code></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates.GreatCircleArc.get_great_circle_normal" title="pygplates.GreatCircleArc.get_great_circle_normal"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_great_circle_normal()</span></code></a></p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.GreatCircleArc.get_rotation_axis_lat_lon">
-<code class="descname">get_rotation_axis_lat_lon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_rotation_axis_lat_lon" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.GreatCircleArc.get_rotation_axis_lat_lon">
+<span class="sig-name descname"><span class="pre">get_rotation_axis_lat_lon</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_rotation_axis_lat_lon" title="Permalink to this definition"></a></dt>
 <dd><p>Return the (latitude, longitude) equivalent of <a class="reference internal" href="#pygplates.GreatCircleArc.get_rotation_axis" title="pygplates.GreatCircleArc.get_rotation_axis"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_rotation_axis()</span></code></a>.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the axis as (latitude, longitude)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">the tuple (float, float)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">IndeterminateArcRotationAxisError if arc is zero length</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the axis as (latitude, longitude)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>the tuple (float, float)</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p>IndeterminateArcRotationAxisError if arc is zero length</p>
+</dd>
+</dl>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">arc</span><span class="o">.</span><span class="n">is_zero_length</span><span class="p">():</span>
     <span class="n">axis_lat</span><span class="p">,</span> <span class="n">axis_lon</span> <span class="o">=</span> <span class="n">arc</span><span class="o">.</span><span class="n">get_rotation_axis_lat_lon</span><span class="p">()</span>
 </pre></div>
@@ -295,125 +335,92 @@
 <p>If the arc start and end points are the same (if <a class="reference internal" href="#pygplates.GreatCircleArc.is_zero_length" title="pygplates.GreatCircleArc.is_zero_length"><code class="xref py py-meth docutils literal notranslate"><span class="pre">is_zero_length()</span></code></a> is <code class="docutils literal notranslate"><span class="pre">True</span></code>) then <em>IndeterminateArcRotationAxisError</em> is raised.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.GreatCircleArc.get_start_point">
-<code class="descname">get_start_point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_start_point" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.GreatCircleArc.get_start_point">
+<span class="sig-name descname"><span class="pre">get_start_point</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.get_start_point" title="Permalink to this definition"></a></dt>
 <dd><p>Return the arc’s start point geometry.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a></td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a></p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.GreatCircleArc.is_zero_length">
-<code class="descname">is_zero_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.is_zero_length" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.GreatCircleArc.is_zero_length">
+<span class="sig-name descname"><span class="pre">is_zero_length</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.is_zero_length" title="Permalink to this definition"></a></dt>
 <dd><p>Return whether this great circle arc is of zero length.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
 <p>If this arc is of zero length, it will not have a determinate rotation axis and a call to <a class="reference internal" href="#pygplates.GreatCircleArc.get_rotation_axis" title="pygplates.GreatCircleArc.get_rotation_axis"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_rotation_axis()</span></code></a> will raise an error.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.GreatCircleArc.to_tessellated">
-<code class="descname">to_tessellated</code><span class="sig-paren">(</span><em>tessellate_radians</em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.to_tessellated" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.GreatCircleArc.to_tessellated">
+<span class="sig-name descname"><span class="pre">to_tessellated</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tessellate_radians</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.GreatCircleArc.to_tessellated" title="Permalink to this definition"></a></dt>
 <dd><p>Returns a list of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a> new polyline that is tessellated version of this polyline.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>tessellate_radians</strong> (<em>float</em>) – maximum tessellation angle (in radians)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a></td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tessellate_radians</strong> (<em>float</em>) – maximum tessellation angle (in radians)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">points</span></code></a></p>
+</dd>
+</dl>
 <p>Adjacent points (in the returned list of points) are separated by no more than <em>tessellate_radians</em> on the globe.</p>
 <p>Tessellate a great circle arc to 2 degrees:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tessellation_points</span> <span class="o">=</span> <span class="n">great_circle_arc</span><span class="o">.</span><span class="n">to_tessellated</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Since a <em>GreatCircleArc</em> is immutable it cannot be modified. Which is why a tessellated list of <em>PointOnSphere</em> is returned.</p>
+<p class="admonition-title">Note</p>
+<p>Since a <em>GreatCircleArc</em> is immutable it cannot be modified. Which is why a tessellated list of <em>PointOnSphere</em> is returned.</p>
 </div>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere.to_tessellated" title="pygplates.PolylineOnSphere.to_tessellated"><code class="xref py py-meth docutils literal notranslate"><span class="pre">PolylineOnSphere.to_tessellated()</span></code></a> and <a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere.to_tessellated" title="pygplates.PolygonOnSphere.to_tessellated"><code class="xref py py-meth docutils literal notranslate"><span class="pre">PolygonOnSphere.to_tessellated()</span></code></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere.to_tessellated" title="pygplates.PolylineOnSphere.to_tessellated"><code class="xref py py-meth docutils literal notranslate"><span class="pre">PolylineOnSphere.to_tessellated()</span></code></a> and <a class="reference internal" href="pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere.to_tessellated" title="pygplates.PolygonOnSphere.to_tessellated"><code class="xref py py-meth docutils literal notranslate"><span class="pre">PolygonOnSphere.to_tessellated()</span></code></a></p>
 </div>
 </dd></dl>
 
 </dd></dl>
 
-</div>
+</section>
 
 
+           </div>
           </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pygplates.GeometryOnSphere.html" class="btn btn-neutral float-left" title="pygplates.GeometryOnSphere" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pygplates.LatLonPoint.html" class="btn btn-neutral float-right" title="pygplates.LatLonPoint" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
+(C) 2004-2022 California Institute of Technology
+(C) 2007-2022 The Geological Survey of Norway
+.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="pygplates.GeometryOnSphere.html"
-                        title="previous chapter">pygplates.GeometryOnSphere</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="pygplates.LatLonPoint.html"
-                        title="next chapter">pygplates.LatLonPoint</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/generated/pygplates.GreatCircleArc.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="pygplates.LatLonPoint.html" title="pygplates.LatLonPoint"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="pygplates.GeometryOnSphere.html" title="pygplates.GeometryOnSphere"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" >Reference</a> &#187;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
-(C) 2004-2020 California Institute of Technology
-(C) 2007-2020 The Geological Survey of Norway
-.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
-    </div>
-  </body>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
 </html>

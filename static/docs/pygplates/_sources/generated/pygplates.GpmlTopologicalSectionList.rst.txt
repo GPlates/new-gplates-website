@@ -1,4 +1,4 @@
-pygplates.GpmlTopologicalSectionList
+﻿pygplates.GpmlTopologicalSectionList
 ====================================
 
 .. currentmodule:: pygplates

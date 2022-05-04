@@ -1,4 +1,4 @@
-pygplates.ReconstructedFeatureGeometry
+﻿pygplates.ReconstructedFeatureGeometry
 ======================================
 
 .. currentmodule:: pygplates

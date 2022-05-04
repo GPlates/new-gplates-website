@@ -1,4 +1,4 @@
-pygplates.GpmlArray
+﻿pygplates.GpmlArray
 ===================
 
 .. currentmodule:: pygplates

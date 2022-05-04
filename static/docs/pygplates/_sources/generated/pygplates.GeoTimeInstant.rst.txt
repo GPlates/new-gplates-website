@@ -1,4 +1,4 @@
-pygplates.GeoTimeInstant
+﻿pygplates.GeoTimeInstant
 ========================
 
 .. currentmodule:: pygplates

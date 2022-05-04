@@ -1,77 +1,129 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Modify a reconstruction pole &#8212; pygplates 2.2.0.28 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modify a reconstruction pole &mdash; pygplates 0.36.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Find average area and subducting boundary proportion of topologies" href="pygplates_find_average_area_and_subducting_boundary_proportion_of_topologies.html" />
     <link rel="prev" title="Plate circuits to anchored plate" href="pygplates_plate_circuits_to_anchored_plate.html" /> 
-  </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="pygplates_find_average_area_and_subducting_boundary_proportion_of_topologies.html" title="Find average area and subducting boundary proportion of topologies"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="pygplates_plate_circuits_to_anchored_plate.html" title="Plate circuits to anchored plate"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../pygplates_sample_code.html" accesskey="U">Sample code</a> &#187;</li> 
-      </ul>
-    </div>  
+</head>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
-            
-  <div class="section" id="modify-a-reconstruction-pole">
-<span id="pygplates-modify-reconstruction-pole"></span><h1>Modify a reconstruction pole<a class="headerlink" href="#modify-a-reconstruction-pole" title="Permalink to this headline">¶</a></h1>
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pygplates
+          </a>
+              <div class="version">
+                0.36
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#import">Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#load-save">Load/Save</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#create-query-features">Create/query features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#reconstruct-features">Reconstruct features</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../pygplates_sample_code.html#rotations">Rotations</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pygplates_plate_rotation_hierarchy.html">Hierarchy of plate rotations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates_plate_circuits_to_anchored_plate.html">Plate circuits to anchored plate</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Modify a reconstruction pole</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sample-code">Sample code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#details">Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#output">Output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#topologies">Topologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#velocities">Velocities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#spatial-proximity">Spatial proximity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#isochrons">Isochrons</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pygplates</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../pygplates_sample_code.html">Sample code</a> &raquo;</li>
+      <li>Modify a reconstruction pole</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/sample-code/pygplates_modify_reconstruction_pole.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="modify-a-reconstruction-pole">
+<span id="pygplates-modify-reconstruction-pole"></span><h1>Modify a reconstruction pole<a class="headerlink" href="#modify-a-reconstruction-pole" title="Permalink to this headline"></a></h1>
 <p>This example:</p>
 <ul class="simple">
-<li>reads a rotation file,</li>
-<li>modifies a total reconstruction pole such that a reconstructed point coincides with its desired location
-at a particular reconstruction time, and</li>
-<li>writes the modifications back to the same rotation file.</li>
+<li><p>reads a rotation file,</p></li>
+<li><p>modifies a total reconstruction pole such that a reconstructed point coincides with its desired location
+at a particular reconstruction time, and</p></li>
+<li><p>writes the modifications back to the same rotation file.</p></li>
 </ul>
 <p>The functionality in this example is similar to the <code class="docutils literal notranslate"><span class="pre">Modify</span> <span class="pre">Reconstruction</span> <span class="pre">Pole</span></code> tool
 in <a class="reference external" href="http://www.gplates.org">GPlates</a>.</p>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="pygplates_create_common_feature_types.html#pygplates-create-total-reconstruction-sequence-feature"><span class="std std-ref">Create a total reconstruction sequence (rotation) feature</span></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="pygplates_create_common_feature_types.html#pygplates-create-total-reconstruction-sequence-feature"><span class="std std-ref">Create a total reconstruction sequence (rotation) feature</span></a></p>
 </div>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="pygplates_query_common_feature_types.html#pygplates-query-total-reconstruction-sequence-feature"><span class="std std-ref">Query a total reconstruction sequence (rotation) feature</span></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="pygplates_query_common_feature_types.html#pygplates-query-total-reconstruction-sequence-feature"><span class="std std-ref">Query a total reconstruction sequence (rotation) feature</span></a></p>
 </div>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#sample-code" id="id1">Sample code</a></li>
-<li><a class="reference internal" href="#details" id="id2">Details</a></li>
-<li><a class="reference internal" href="#output" id="id3">Output</a></li>
+<li><p><a class="reference internal" href="#sample-code" id="id1">Sample code</a></p></li>
+<li><p><a class="reference internal" href="#details" id="id2">Details</a></p></li>
+<li><p><a class="reference internal" href="#output" id="id3">Output</a></p></li>
 </ul>
 </div>
-<div class="section" id="sample-code">
-<h2><a class="toc-backref" href="#id1">Sample code</a><a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h2>
+<section id="sample-code">
+<h2><a class="toc-backref" href="#id1">Sample code</a><a class="headerlink" href="#sample-code" title="Permalink to this headline"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 
@@ -202,9 +254,9 @@ in <a class="reference external" href="http://www.gplates.org">GPlates</a>.</p>
             <span class="n">feature_collection</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="details">
-<h2><a class="toc-backref" href="#id2">Details</a><a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="details">
+<h2><a class="toc-backref" href="#id2">Details</a><a class="headerlink" href="#details" title="Permalink to this headline"></a></h2>
 <p>The filenames of one or more rotation files. We’ll be writing modifications back out to these files.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotation_filenames</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">]</span>
 </pre></div>
@@ -437,84 +489,49 @@ to list those feature collections that came from files as well as their associat
         <span class="n">feature_collection</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="output">
-<h2><a class="toc-backref" href="#id3">Output</a><a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="output">
+<h2><a class="toc-backref" href="#id3">Output</a><a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Reconstructed</span> <span class="n">lat</span><span class="o">/</span><span class="n">lon</span> <span class="n">position</span> <span class="n">before</span> <span class="n">adjustment</span> <span class="p">(</span><span class="o">-</span><span class="mf">45.962028</span><span class="p">,</span> <span class="mf">131.398490</span><span class="p">)</span>
 <span class="n">Desired</span> <span class="n">reconstructed</span> <span class="n">lat</span><span class="o">/</span><span class="n">lon</span> <span class="n">position</span> <span class="p">(</span><span class="o">-</span><span class="mf">45.000000</span><span class="p">,</span> <span class="mf">130.000000</span><span class="p">)</span>
 <span class="n">Reconstructed</span> <span class="n">lat</span><span class="o">/</span><span class="n">lon</span> <span class="n">position</span> <span class="n">after</span> <span class="n">adjustment</span> <span class="p">(</span><span class="o">-</span><span class="mf">45.000000</span><span class="p">,</span> <span class="mf">130.000000</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
+           </div>
           </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Modify a reconstruction pole</a><ul>
-<li><a class="reference internal" href="#sample-code">Sample code</a></li>
-<li><a class="reference internal" href="#details">Details</a></li>
-<li><a class="reference internal" href="#output">Output</a></li>
-</ul>
-</li>
-</ul>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pygplates_plate_circuits_to_anchored_plate.html" class="btn btn-neutral float-left" title="Plate circuits to anchored plate" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pygplates_find_average_area_and_subducting_boundary_proportion_of_topologies.html" class="btn btn-neutral float-right" title="Find average area and subducting boundary proportion of topologies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="pygplates_plate_circuits_to_anchored_plate.html"
-                        title="previous chapter">Plate circuits to anchored plate</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="pygplates_find_average_area_and_subducting_boundary_proportion_of_topologies.html"
-                        title="next chapter">Find average area and subducting boundary proportion of topologies</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/sample-code/pygplates_modify_reconstruction_pole.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
+(C) 2004-2022 California Institute of Technology
+(C) 2007-2022 The Geological Survey of Norway
+.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="pygplates_find_average_area_and_subducting_boundary_proportion_of_topologies.html" title="Find average area and subducting boundary proportion of topologies"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="pygplates_plate_circuits_to_anchored_plate.html" title="Plate circuits to anchored plate"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../pygplates_sample_code.html" >Sample code</a> &#187;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
-(C) 2004-2020 California Institute of Technology
-(C) 2007-2020 The Geological Survey of Norway
-.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
-    </div>
-  </body>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
 </html>

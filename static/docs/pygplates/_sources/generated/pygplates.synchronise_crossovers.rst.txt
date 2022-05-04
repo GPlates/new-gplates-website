@@ -1,4 +1,4 @@
-pygplates.synchronise\_crossovers
+﻿pygplates.synchronise\_crossovers
 =================================
 
 .. currentmodule:: pygplates

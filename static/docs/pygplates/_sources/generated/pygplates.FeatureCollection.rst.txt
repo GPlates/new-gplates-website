@@ -1,4 +1,4 @@
-pygplates.FeatureCollection
+﻿pygplates.FeatureCollection
 ===========================
 
 .. currentmodule:: pygplates

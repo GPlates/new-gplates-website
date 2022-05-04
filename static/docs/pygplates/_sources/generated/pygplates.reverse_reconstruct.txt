@@ -1,6 +1,0 @@
-pygplates.reverse_reconstruct
-=============================
-
-.. currentmodule:: pygplates
-
-.. autofunction:: reverse_reconstruct

@@ -1,4 +1,4 @@
-pygplates.resolve\_topologies
+﻿pygplates.resolve\_topologies
 =============================
 
 .. currentmodule:: pygplates

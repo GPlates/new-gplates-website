@@ -1,4 +1,4 @@
-pygplates.Earth
+﻿pygplates.Earth
 ===============
 
 .. currentmodule:: pygplates

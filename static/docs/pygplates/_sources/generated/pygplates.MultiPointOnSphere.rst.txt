@@ -1,4 +1,4 @@
-pygplates.MultiPointOnSphere
+﻿pygplates.MultiPointOnSphere
 ============================
 
 .. currentmodule:: pygplates

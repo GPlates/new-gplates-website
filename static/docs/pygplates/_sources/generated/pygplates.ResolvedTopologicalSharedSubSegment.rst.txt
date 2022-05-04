@@ -1,4 +1,4 @@
-pygplates.ResolvedTopologicalSharedSubSegment
+﻿pygplates.ResolvedTopologicalSharedSubSegment
 =============================================
 
 .. currentmodule:: pygplates
@@ -22,6 +22,7 @@ pygplates.ResolvedTopologicalSharedSubSegment
       ~ResolvedTopologicalSharedSubSegment.get_sharing_resolved_topologies
       ~ResolvedTopologicalSharedSubSegment.get_sharing_resolved_topology_geometry_reversal_flags
       ~ResolvedTopologicalSharedSubSegment.get_sub_segments
+      ~ResolvedTopologicalSharedSubSegment.get_subducting_plate
       ~ResolvedTopologicalSharedSubSegment.get_topological_section
       ~ResolvedTopologicalSharedSubSegment.get_topological_section_feature
       ~ResolvedTopologicalSharedSubSegment.get_topological_section_geometry

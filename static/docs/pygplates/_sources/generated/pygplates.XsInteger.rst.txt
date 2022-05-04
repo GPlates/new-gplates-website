@@ -1,4 +1,4 @@
-pygplates.XsInteger
+﻿pygplates.XsInteger
 ===================
 
 .. currentmodule:: pygplates

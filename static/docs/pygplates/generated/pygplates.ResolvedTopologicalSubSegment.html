@@ -1,186 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>pygplates.ResolvedTopologicalSubSegment &#8212; pygplates 2.2.0.28 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pygplates.ResolvedTopologicalSubSegment &mdash; pygplates 0.36.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="pygplates.ResolvedTopologicalSection" href="pygplates.ResolvedTopologicalSection.html" />
     <link rel="prev" title="pygplates.ResolvedTopologicalNetwork" href="pygplates.ResolvedTopologicalNetwork.html" /> 
-  </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="pygplates.ResolvedTopologicalSection.html" title="pygplates.ResolvedTopologicalSection"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="pygplates.ResolvedTopologicalNetwork.html" title="pygplates.ResolvedTopologicalNetwork"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" accesskey="U">Reference</a> &#187;</li> 
-      </ul>
-    </div>  
+</head>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
-            
-  <div class="section" id="pygplates-resolvedtopologicalsubsegment">
-<h1>pygplates.ResolvedTopologicalSubSegment<a class="headerlink" href="#pygplates-resolvedtopologicalsubsegment" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
-<dt id="pygplates.ResolvedTopologicalSubSegment">
-<em class="property">class </em><code class="descclassname">pygplates.</code><code class="descname">ResolvedTopologicalSubSegment</code><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment" title="Permalink to this definition">¶</a></dt>
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pygplates
+          </a>
+              <div class="version">
+                0.36
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../pygplates_reference.html">Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#reconstruction">Reconstruction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../pygplates_reference.html#topology">Topology</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pygplates.TopologicalModel.html">pygplates.TopologicalModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.TopologicalSnapshot.html">pygplates.TopologicalSnapshot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ReconstructedGeometryTimeSpan.html">pygplates.ReconstructedGeometryTimeSpan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.TopologyPointLocation.html">pygplates.TopologyPointLocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolveTopologyParameters.html">pygplates.ResolveTopologyParameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.resolve_topologies.html">pygplates.resolve_topologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolvedTopologicalLine.html">pygplates.ResolvedTopologicalLine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolvedTopologicalBoundary.html">pygplates.ResolvedTopologicalBoundary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolvedTopologicalNetwork.html">pygplates.ResolvedTopologicalNetwork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ReconstructionGeometry.html">pygplates.ReconstructionGeometry</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">pygplates.ResolvedTopologicalSubSegment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolvedTopologicalSection.html">pygplates.ResolvedTopologicalSection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolvedTopologicalSharedSubSegment.html">pygplates.ResolvedTopologicalSharedSubSegment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#velocity">Velocity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#rotation">Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#plate-partitioning">Plate Partitioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#file-i-o">File I/O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#feature">Feature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#feature-property">Feature property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#feature-property-value">Feature property value</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#geometry">Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#vector">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#string">String</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#utility">Utility</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pygplates</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../pygplates_reference.html">Reference</a> &raquo;</li>
+      <li>pygplates.ResolvedTopologicalSubSegment</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/pygplates.ResolvedTopologicalSubSegment.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pygplates-resolvedtopologicalsubsegment">
+<h1>pygplates.ResolvedTopologicalSubSegment<a class="headerlink" href="#pygplates-resolvedtopologicalsubsegment" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pygplates.ResolvedTopologicalSubSegment">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pygplates.</span></span><span class="sig-name descname"><span class="pre">ResolvedTopologicalSubSegment</span></span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Boost.Python.instance</span></code></p>
 <p>The subset of vertices of a reconstructed topological section that contribute to the geometry of a resolved topology.</p>
 <p>The <a class="reference internal" href="pygplates.resolve_topologies.html#pygplates.resolve_topologies" title="pygplates.resolve_topologies"><code class="xref py py-func docutils literal notranslate"><span class="pre">resolve_topologies()</span></code></a> function can be used to generate resolved topologies (such as <a class="reference internal" href="pygplates.ResolvedTopologicalLine.html#pygplates.ResolvedTopologicalLine" title="pygplates.ResolvedTopologicalLine"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalLine</span></code></a>, <a class="reference internal" href="pygplates.ResolvedTopologicalBoundary.html#pygplates.ResolvedTopologicalBoundary" title="pygplates.ResolvedTopologicalBoundary"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalBoundary</span></code></a> and <a class="reference internal" href="pygplates.ResolvedTopologicalNetwork.html#pygplates.ResolvedTopologicalNetwork" title="pygplates.ResolvedTopologicalNetwork"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalNetwork</span></code></a>) which, in turn, reference these <em>ResolvedTopologicalSubSegment</em> instances.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<div class="last line-block">
+<p class="admonition-title">Note</p>
+<div class="line-block">
 <div class="line">Each <em>ResolvedTopologicalSubSegment</em> instance belongs to a <em>single</em> resolved topology.</div>
 <div class="line">In contrast, a <a class="reference internal" href="pygplates.ResolvedTopologicalSharedSubSegment.html#pygplates.ResolvedTopologicalSharedSubSegment" title="pygplates.ResolvedTopologicalSharedSubSegment"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalSharedSubSegment</span></code></a> instance can be shared by one or more resolved topologies.</div>
 </div>
 </div>
-<dl class="method">
-<dt id="pygplates.ResolvedTopologicalSubSegment.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.__init__" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ResolvedTopologicalSubSegment.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.__init__" title="Permalink to this definition"></a></dt>
 <dd><p>Raises an exception
 This class cannot be instantiated from Python</p>
 </dd></dl>
 
 <p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
+<table class="autosummary longtable docutils align-default">
 <colgroup>
-<col width="10%" />
-<col width="90%" />
+<col style="width: 10%" />
+<col style="width: 90%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.__init__" title="pygplates.ResolvedTopologicalSubSegment.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a></td>
-<td>Raises an exception This class cannot be instantiated from Python</td>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.__init__" title="pygplates.ResolvedTopologicalSubSegment.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a></p></td>
+<td><p>Raises an exception This class cannot be instantiated from Python</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_feature" title="pygplates.ResolvedTopologicalSubSegment.get_feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_feature</span></code></a>()</td>
-<td>Same as <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_topological_section_feature()</span></code></a>.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_feature" title="pygplates.ResolvedTopologicalSubSegment.get_feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_feature</span></code></a>()</p></td>
+<td><p>Same as <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_topological_section_feature()</span></code></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_geometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_geometry</span></code></a>()</td>
-<td>Same as <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_resolved_geometry()</span></code></a>.</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_geometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_geometry</span></code></a>()</p></td>
+<td><p>Same as <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_resolved_geometry()</span></code></a>.</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_feature" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_resolved_feature</span></code></a>()</td>
-<td>Returns a feature containing the resolved sub-segment geometry.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_feature" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_resolved_feature</span></code></a>()</p></td>
+<td><p>Returns a feature containing the resolved sub-segment geometry.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_resolved_geometry</span></code></a>()</td>
-<td>Returns the geometry containing the sub-segment vertices.</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_resolved_geometry</span></code></a>()</p></td>
+<td><p>Returns the geometry containing the sub-segment vertices.</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_sub_segments" title="pygplates.ResolvedTopologicalSubSegment.get_sub_segments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_sub_segments</span></code></a>()</td>
-<td>If this sub-segment is from a topological line <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section"><code class="xref py py-meth docutils literal notranslate"><span class="pre">section</span></code></a> then return the child <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment" title="pygplates.ResolvedTopologicalSubSegment"><code class="xref py py-class docutils literal notranslate"><span class="pre">sub-segments</span></code></a> of the topological line contributing to this sub-segment, otherwise return <code class="docutils literal notranslate"><span class="pre">None</span></code>.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_sub_segments" title="pygplates.ResolvedTopologicalSubSegment.get_sub_segments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_sub_segments</span></code></a>()</p></td>
+<td><p>If this sub-segment is from a topological line <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section"><code class="xref py py-meth docutils literal notranslate"><span class="pre">section</span></code></a> then return the child <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment" title="pygplates.ResolvedTopologicalSubSegment"><code class="xref py py-class docutils literal notranslate"><span class="pre">sub-segments</span></code></a> of the topological line contributing to this sub-segment, otherwise return <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_topological_section</span></code></a>()</td>
-<td>Returns the topological section that the sub-segment was obtained from.</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_topological_section</span></code></a>()</p></td>
+<td><p>Returns the topological section that the sub-segment was obtained from.</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_topological_section_feature</span></code></a>()</td>
-<td>Returns the feature referenced by the topological section.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_topological_section_feature</span></code></a>()</p></td>
+<td><p>Returns the feature referenced by the topological section.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_geometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_topological_section_geometry</span></code></a>()</td>
-<td>Returns the topological section <em>geometry</em> that the sub-segment was obtained from.</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_geometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_topological_section_geometry</span></code></a>()</p></td>
+<td><p>Returns the topological section <em>geometry</em> that the sub-segment was obtained from.</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology" title="pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology"><code class="xref py py-obj docutils literal notranslate"><span class="pre">was_geometry_reversed_in_topology</span></code></a>()</td>
-<td>Whether a copy of the points in <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_resolved_geometry()</span></code></a> were reversed in order to contribute to the resolved topology that this sub-segment is a part of.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology" title="pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology"><code class="xref py py-obj docutils literal notranslate"><span class="pre">was_geometry_reversed_in_topology</span></code></a>()</p></td>
+<td><p>Whether a copy of the points in <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_resolved_geometry()</span></code></a> were reversed in order to contribute to the resolved topology that this sub-segment is a part of.</p></td>
 </tr>
 </tbody>
 </table>
-<dl class="method">
-<dt id="pygplates.ResolvedTopologicalSubSegment.get_feature">
-<code class="descname">get_feature</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_feature" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ResolvedTopologicalSubSegment.get_feature">
+<span class="sig-name descname"><span class="pre">get_feature</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_feature" title="Permalink to this definition"></a></dt>
 <dd><p>Same as <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_topological_section_feature()</span></code></a>.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.ResolvedTopologicalSubSegment.get_geometry">
-<code class="descname">get_geometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_geometry" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ResolvedTopologicalSubSegment.get_geometry">
+<span class="sig-name descname"><span class="pre">get_geometry</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_geometry" title="Permalink to this definition"></a></dt>
 <dd><p>Same as <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_resolved_geometry()</span></code></a>.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.ResolvedTopologicalSubSegment.get_resolved_feature">
-<code class="descname">get_resolved_feature</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_feature" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ResolvedTopologicalSubSegment.get_resolved_feature">
+<span class="sig-name descname"><span class="pre">get_resolved_feature</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_feature" title="Permalink to this definition"></a></dt>
 <dd><p>Returns a feature containing the resolved sub-segment geometry.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a></td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a></p>
+</dd>
+</dl>
 <p>The returned feature contains the <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">resolved</span> <span class="pre">geometry</span></code></a>.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<div class="last line-block">
+<p class="admonition-title">Note</p>
+<div class="line-block">
 <div class="line">The returned feature does <strong>not</strong> contain present-day geometry as is typical of most GPlates features.</div>
 <div class="line">In this way the returned feature is similar to a GPlates reconstruction export.</div>
 </div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The returned feature should not be <a class="reference internal" href="pygplates.reverse_reconstruct.html#pygplates.reverse_reconstruct" title="pygplates.reverse_reconstruct"><code class="xref py py-func docutils literal notranslate"><span class="pre">reverse</span> <span class="pre">reconstructed</span></code></a> to present day because the topological section might be a <a class="reference internal" href="pygplates.ResolvedTopologicalLine.html#pygplates.ResolvedTopologicalLine" title="pygplates.ResolvedTopologicalLine"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalLine</span></code></a> which is a topology and topologies are resolved (not reconstructed).</p>
+<p class="admonition-title">Note</p>
+<p>The returned feature should not be <a class="reference internal" href="pygplates.reverse_reconstruct.html#pygplates.reverse_reconstruct" title="pygplates.reverse_reconstruct"><code class="xref py py-func docutils literal notranslate"><span class="pre">reverse</span> <span class="pre">reconstructed</span></code></a> to present day because the topological section might be a <a class="reference internal" href="pygplates.ResolvedTopologicalLine.html#pygplates.ResolvedTopologicalLine" title="pygplates.ResolvedTopologicalLine"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalLine</span></code></a> which is a topology and topologies are resolved (not reconstructed).</p>
 </div>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_topological_section_feature()</span></code></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_topological_section_feature()</span></code></a></p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry">
-<code class="descname">get_resolved_geometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry">
+<span class="sig-name descname"><span class="pre">get_resolved_geometry</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="Permalink to this definition"></a></dt>
 <dd><p>Returns the geometry containing the sub-segment vertices.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a></td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a></p>
+</dd>
+</dl>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">These are the <em>unreversed</em> vertices. They are in the same order as the geometry of <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_topological_section_geometry()</span></code></a>. If you need a reversed version of this resolved geometry (eg, due to <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology" title="pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology"><code class="xref py py-meth docutils literal notranslate"><span class="pre">was_geometry_reversed_in_topology()</span></code></a> returning <code class="docutils literal notranslate"><span class="pre">True</span></code>) then you can use <code class="docutils literal notranslate"><span class="pre">pygplates.PolylineOnSphere(sub_segment.get_resolved_geometry()[::-1])</span></code>.</p>
+<p class="admonition-title">Note</p>
+<p>These are the <em>unreversed</em> vertices. They are in the same order as the geometry of <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_topological_section_geometry()</span></code></a>. If you need a reversed version of this resolved geometry (eg, due to <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology" title="pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology"><code class="xref py py-meth docutils literal notranslate"><span class="pre">was_geometry_reversed_in_topology()</span></code></a> returning <code class="docutils literal notranslate"><span class="pre">True</span></code>) then you can use <code class="docutils literal notranslate"><span class="pre">pygplates.PolylineOnSphere(sub_segment.get_resolved_geometry()[::-1])</span></code>.</p>
 </div>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology" title="pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology"><code class="xref py py-meth docutils literal notranslate"><span class="pre">was_geometry_reversed_in_topology()</span></code></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology" title="pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology"><code class="xref py py-meth docutils literal notranslate"><span class="pre">was_geometry_reversed_in_topology()</span></code></a></p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.ResolvedTopologicalSubSegment.get_sub_segments">
-<code class="descname">get_sub_segments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_sub_segments" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ResolvedTopologicalSubSegment.get_sub_segments">
+<span class="sig-name descname"><span class="pre">get_sub_segments</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_sub_segments" title="Permalink to this definition"></a></dt>
 <dd><p>If this sub-segment is from a topological line <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section"><code class="xref py py-meth docutils literal notranslate"><span class="pre">section</span></code></a> then return the child <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment" title="pygplates.ResolvedTopologicalSubSegment"><code class="xref py py-class docutils literal notranslate"><span class="pre">sub-segments</span></code></a> of the topological line contributing to this sub-segment, otherwise return <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list of <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment" title="pygplates.ResolvedTopologicalSubSegment"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalSubSegment</span></code></a>, or <code class="docutils literal notranslate"><span class="pre">None</span></code></td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment" title="pygplates.ResolvedTopologicalSubSegment"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalSubSegment</span></code></a>, or <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
 <p>To see if a sub-segment is from a topological line and then iterate over its child sub-segments:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">child_sub_segments_of_topological_line_sub_segment</span> <span class="o">=</span> <span class="n">sub_segment</span><span class="o">.</span><span class="n">get_sub_segments</span><span class="p">()</span>
 <span class="k">if</span> <span class="n">child_sub_segments_of_topological_line_sub_segment</span><span class="p">:</span>
@@ -193,170 +244,133 @@ This class cannot be instantiated from Python</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Each child sub-segment has its own <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology" title="pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reverse</span> <span class="pre">flag</span></code></a> indicating whether it was reversed when contributing to this sub-segment. And this sub-segment also has a <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology" title="pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reverse</span> <span class="pre">flag</span></code></a> which determines whether it was reversed when contributing to the final boundary topology. So whether a child sub-segment was effectively reversed when contributing to the final boundary topology depends on both reverse flags (of the child sub-segment and this sub-segment). For example, if the child sub-segment was reversed in this sub-segment, and this sub-segment was reversed in the final boundary, then the child sub-segment was not reversed in the final boundary.</p>
+<p class="admonition-title">Note</p>
+<p>Each child sub-segment has its own <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology" title="pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reverse</span> <span class="pre">flag</span></code></a> indicating whether it was reversed when contributing to this sub-segment. And this sub-segment also has a <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology" title="pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reverse</span> <span class="pre">flag</span></code></a> which determines whether it was reversed when contributing to the final boundary topology. So whether a child sub-segment was effectively reversed when contributing to the final boundary topology depends on both reverse flags (of the child sub-segment and this sub-segment). For example, if the child sub-segment was reversed in this sub-segment, and this sub-segment was reversed in the final boundary, then the child sub-segment was not reversed in the final boundary.</p>
 </div>
 <div class="versionadded">
-<p><span class="versionmodified">New in version 22.</span></p>
+<p><span class="versionmodified added">New in version 0.22.</span></p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.ResolvedTopologicalSubSegment.get_topological_section">
-<code class="descname">get_topological_section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ResolvedTopologicalSubSegment.get_topological_section">
+<span class="sig-name descname"><span class="pre">get_topological_section</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section" title="Permalink to this definition"></a></dt>
 <dd><p>Returns the topological section that the sub-segment was obtained from.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.ReconstructionGeometry.html#pygplates.ReconstructionGeometry" title="pygplates.ReconstructionGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReconstructionGeometry</span></code></a></td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pygplates.ReconstructionGeometry.html#pygplates.ReconstructionGeometry" title="pygplates.ReconstructionGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReconstructionGeometry</span></code></a></p>
+</dd>
+</dl>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This represents the <strong>entire</strong> geometry of the topological section, not just the part that contributes to the sub-segment.</p>
+<p class="admonition-title">Note</p>
+<p>This represents the <strong>entire</strong> geometry of the topological section, not just the part that contributes to the sub-segment.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<div class="last line-block">
+<p class="admonition-title">Note</p>
+<div class="line-block">
 <div class="line">If the resolved topology (that this sub-segment is a part of) is a <a class="reference internal" href="pygplates.ResolvedTopologicalLine.html#pygplates.ResolvedTopologicalLine" title="pygplates.ResolvedTopologicalLine"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalLine</span></code></a> then the topological section will be a <a class="reference internal" href="pygplates.ReconstructedFeatureGeometry.html#pygplates.ReconstructedFeatureGeometry" title="pygplates.ReconstructedFeatureGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReconstructedFeatureGeometry</span></code></a>.</div>
 <div class="line">If the resolved topology (that this sub-segment is a part of) is a <a class="reference internal" href="pygplates.ResolvedTopologicalBoundary.html#pygplates.ResolvedTopologicalBoundary" title="pygplates.ResolvedTopologicalBoundary"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalBoundary</span></code></a> or a <a class="reference internal" href="pygplates.ResolvedTopologicalNetwork.html#pygplates.ResolvedTopologicalNetwork" title="pygplates.ResolvedTopologicalNetwork"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalNetwork</span></code></a> then the topological section can be either a <a class="reference internal" href="pygplates.ReconstructedFeatureGeometry.html#pygplates.ReconstructedFeatureGeometry" title="pygplates.ReconstructedFeatureGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReconstructedFeatureGeometry</span></code></a> or a <a class="reference internal" href="pygplates.ResolvedTopologicalLine.html#pygplates.ResolvedTopologicalLine" title="pygplates.ResolvedTopologicalLine"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalLine</span></code></a>.</div>
 </div>
 </div>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_topological_section_feature()</span></code></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_topological_section_feature()</span></code></a></p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature">
-<code class="descname">get_topological_section_feature</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature">
+<span class="sig-name descname"><span class="pre">get_topological_section_feature</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_feature" title="Permalink to this definition"></a></dt>
 <dd><p>Returns the feature referenced by the topological section.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a></td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a></p>
+</dd>
+</dl>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The geometry in the returned feature represents the <strong>entire</strong> geometry of the topological section, not just the part that contributes to the sub-segment.</p>
+<p class="admonition-title">Note</p>
+<p>The geometry in the returned feature represents the <strong>entire</strong> geometry of the topological section, not just the part that contributes to the sub-segment.</p>
 </div>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_feature" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_resolved_feature()</span></code></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_feature" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_resolved_feature()</span></code></a></p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.ResolvedTopologicalSubSegment.get_topological_section_geometry">
-<code class="descname">get_topological_section_geometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_geometry" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ResolvedTopologicalSubSegment.get_topological_section_geometry">
+<span class="sig-name descname"><span class="pre">get_topological_section_geometry</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section_geometry" title="Permalink to this definition"></a></dt>
 <dd><p>Returns the topological section <em>geometry</em> that the sub-segment was obtained from.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a></td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a></p>
+</dd>
+</dl>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This is the <strong>entire</strong> geometry of the topological section, not just the part that contributes to the sub-segment.</p>
+<p class="admonition-title">Note</p>
+<p>This is the <strong>entire</strong> geometry of the topological section, not just the part that contributes to the sub-segment.</p>
 </div>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_topological_section()</span></code></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_topological_section" title="pygplates.ResolvedTopologicalSubSegment.get_topological_section"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_topological_section()</span></code></a></p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology">
-<code class="descname">was_geometry_reversed_in_topology</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology">
+<span class="sig-name descname"><span class="pre">was_geometry_reversed_in_topology</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ResolvedTopologicalSubSegment.was_geometry_reversed_in_topology" title="Permalink to this definition"></a></dt>
 <dd><p>Whether a copy of the points in <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_resolved_geometry()</span></code></a> were reversed in order to contribute to the resolved topology that this sub-segment is a part of.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">A reversed version of the points of <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_resolved_geometry()</span></code></a> is equivalent <code class="docutils literal notranslate"><span class="pre">sub_segment.get_resolved_geometry().get_points()[::-1]</span></code>.</p>
+<p class="admonition-title">Note</p>
+<p>A reversed version of the points of <a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_resolved_geometry()</span></code></a> is equivalent <code class="docutils literal notranslate"><span class="pre">sub_segment.get_resolved_geometry().get_points()[::-1]</span></code>.</p>
 </div>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_resolved_geometry()</span></code></a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry" title="pygplates.ResolvedTopologicalSubSegment.get_resolved_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_resolved_geometry()</span></code></a></p>
 </div>
 </dd></dl>
 
 </dd></dl>
 
-</div>
+</section>
 
 
+           </div>
           </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pygplates.ResolvedTopologicalNetwork.html" class="btn btn-neutral float-left" title="pygplates.ResolvedTopologicalNetwork" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pygplates.ResolvedTopologicalSection.html" class="btn btn-neutral float-right" title="pygplates.ResolvedTopologicalSection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
+(C) 2004-2022 California Institute of Technology
+(C) 2007-2022 The Geological Survey of Norway
+.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="pygplates.ResolvedTopologicalNetwork.html"
-                        title="previous chapter">pygplates.ResolvedTopologicalNetwork</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="pygplates.ResolvedTopologicalSection.html"
-                        title="next chapter">pygplates.ResolvedTopologicalSection</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/generated/pygplates.ResolvedTopologicalSubSegment.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="pygplates.ResolvedTopologicalSection.html" title="pygplates.ResolvedTopologicalSection"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="pygplates.ResolvedTopologicalNetwork.html" title="pygplates.ResolvedTopologicalNetwork"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pygplates 2.2.0.28 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../pygplates_reference.html" >Reference</a> &#187;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
-(C) 2004-2020 California Institute of Technology
-(C) 2007-2020 The Geological Survey of Norway
-.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
-    </div>
-  </body>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
 </html>

@@ -1,4 +1,4 @@
-pygplates.Vector3D
+﻿pygplates.Vector3D
 ==================
 
 .. currentmodule:: pygplates

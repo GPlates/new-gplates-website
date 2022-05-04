@@ -1,4 +1,4 @@
-pygplates.PlatePartitioner
+﻿pygplates.PlatePartitioner
 ==========================
 
 .. currentmodule:: pygplates

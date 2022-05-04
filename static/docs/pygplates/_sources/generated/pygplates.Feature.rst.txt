@@ -1,4 +1,4 @@
-pygplates.Feature
+﻿pygplates.Feature
 =================
 
 .. currentmodule:: pygplates

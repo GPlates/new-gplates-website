@@ -1,4 +1,4 @@
-pygplates.LatLonPoint
+﻿pygplates.LatLonPoint
 =====================
 
 .. currentmodule:: pygplates

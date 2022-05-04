@@ -1,307 +1,386 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Getting started &#8212; pygplates 2.2.0.28 documentation</title>
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script async="async" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting started &mdash; pygplates 0.36.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Sample code" href="pygplates_sample_code.html" />
     <link rel="prev" title="Introduction" href="pygplates_introduction.html" /> 
-  </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="pygplates_sample_code.html" title="Sample code"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="pygplates_introduction.html" title="Introduction"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">pygplates 2.2.0.28 documentation</a> &#187;</li> 
-      </ul>
-    </div>  
+</head>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
-            
-  <div class="section" id="getting-started">
-<span id="pygplates-getting-started"></span><h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> pygplates
+          </a>
+              <div class="version">
+                0.36
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="pygplates_introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installing-pygplates">Installing pyGPlates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compiling-from-source-code">Compiling from source code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pre-compiled-for-windows">Pre-compiled for Windows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pre-compiled-for-macos">Pre-compiled for macOS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pre-compiled-for-ubuntu">Pre-compiled for Ubuntu</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#installing-python">Installing Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-correct-python-version">Using the correct Python version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#miscellaneous-issues">Miscellaneous issues</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#windows-runtime-library-error">Windows runtime library error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tutorial">Tutorial</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-are-functions-and-classes">What are functions and classes ?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#introductory-pygplates-script">Introductory pyGPlates script</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#source-code">Source code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setting-up-the-script">Setting up the script</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#running-the-script">Running the script</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#output-of-the-script">Output of the script</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pygplates_sample_code.html">Sample code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pygplates_foundations.html">Foundations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pygplates_reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pygplates</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Getting started</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/pygplates_getting_started.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="getting-started">
+<span id="pygplates-getting-started"></span><h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline"></a></h1>
 <p>This document covers installation of pyGPlates and a tutorial to get you started using pyGPlates.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#installation" id="id3">Installation</a><ul>
-<li><a class="reference internal" href="#when-to-install-pygplates" id="id4">When to install pyGPlates</a></li>
-<li><a class="reference internal" href="#installing-pygplates" id="id5">Installing pyGPlates</a></li>
-<li><a class="reference internal" href="#telling-python-how-to-find-pygplates" id="id6">Telling Python how to find pyGPlates</a></li>
-<li><a class="reference internal" href="#installing-python" id="id7">Installing Python</a></li>
-<li><a class="reference internal" href="#using-the-correct-python-version" id="id8">Using the correct Python version</a></li>
-<li><a class="reference internal" href="#miscellaneous-issues" id="id9">Miscellaneous issues</a><ul>
-<li><a class="reference internal" href="#windows-runtime-library-error" id="id10">Windows runtime library error</a></li>
+<li><p><a class="reference internal" href="#installation" id="id1">Installation</a></p>
+<ul>
+<li><p><a class="reference internal" href="#installing-pygplates" id="id2">Installing pyGPlates</a></p>
+<ul>
+<li><p><a class="reference internal" href="#documentation" id="id3">Documentation</a></p></li>
+<li><p><a class="reference internal" href="#compiling-from-source-code" id="id4">Compiling from source code</a></p></li>
+<li><p><a class="reference internal" href="#pre-compiled-for-windows" id="id5">Pre-compiled for Windows</a></p></li>
+<li><p><a class="reference internal" href="#pre-compiled-for-macos" id="id6">Pre-compiled for macOS</a></p></li>
+<li><p><a class="reference internal" href="#pre-compiled-for-ubuntu" id="id7">Pre-compiled for Ubuntu</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#installing-python" id="id8">Installing Python</a></p></li>
+<li><p><a class="reference internal" href="#using-the-correct-python-version" id="id9">Using the correct Python version</a></p></li>
+<li><p><a class="reference internal" href="#miscellaneous-issues" id="id10">Miscellaneous issues</a></p>
+<ul>
+<li><p><a class="reference internal" href="#windows-runtime-library-error" id="id11">Windows runtime library error</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tutorial" id="id11">Tutorial</a><ul>
-<li><a class="reference internal" href="#what-are-functions-and-classes" id="id12">What are functions and classes ?</a><ul>
-<li><a class="reference internal" href="#functions" id="id13">Functions</a></li>
-<li><a class="reference internal" href="#classes" id="id14">Classes</a></li>
+<li><p><a class="reference internal" href="#tutorial" id="id12">Tutorial</a></p>
+<ul>
+<li><p><a class="reference internal" href="#what-are-functions-and-classes" id="id13">What are functions and classes ?</a></p>
+<ul>
+<li><p><a class="reference internal" href="#functions" id="id14">Functions</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id15">Classes</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#introductory-pygplates-script" id="id15">Introductory pyGPlates script</a><ul>
-<li><a class="reference internal" href="#source-code" id="id16">Source code</a></li>
-<li><a class="reference internal" href="#setting-up-the-script" id="id17">Setting up the script</a></li>
-<li><a class="reference internal" href="#running-the-script" id="id18">Running the script</a></li>
-<li><a class="reference internal" href="#output-of-the-script" id="id19">Output of the script</a></li>
+<li><p><a class="reference internal" href="#introductory-pygplates-script" id="id16">Introductory pyGPlates script</a></p>
+<ul>
+<li><p><a class="reference internal" href="#source-code" id="id17">Source code</a></p></li>
+<li><p><a class="reference internal" href="#setting-up-the-script" id="id18">Setting up the script</a></p></li>
+<li><p><a class="reference internal" href="#running-the-script" id="id19">Running the script</a></p></li>
+<li><p><a class="reference internal" href="#output-of-the-script" id="id20">Output of the script</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="section" id="installation">
-<span id="pygplates-getting-started-installation"></span><h2><a class="toc-backref" href="#id3">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>This section covers how and when to install pyGPlates.
-It also covers installing Python and telling Python how to find pyGPlates.</p>
-<div class="contents local topic" id="id1">
-<ul class="simple">
-<li><a class="reference internal" href="#when-to-install-pygplates" id="id20">When to install pyGPlates</a></li>
-<li><a class="reference internal" href="#installing-pygplates" id="id21">Installing pyGPlates</a></li>
-<li><a class="reference internal" href="#telling-python-how-to-find-pygplates" id="id22">Telling Python how to find pyGPlates</a></li>
-<li><a class="reference internal" href="#installing-python" id="id23">Installing Python</a></li>
-<li><a class="reference internal" href="#using-the-correct-python-version" id="id24">Using the correct Python version</a></li>
-<li><a class="reference internal" href="#miscellaneous-issues" id="id25">Miscellaneous issues</a><ul>
-<li><a class="reference internal" href="#windows-runtime-library-error" id="id26">Windows runtime library error</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="when-to-install-pygplates">
-<h3><a class="toc-backref" href="#id20">When to install pyGPlates</a><a class="headerlink" href="#when-to-install-pygplates" title="Permalink to this headline">¶</a></h3>
-<p>As covered in the <a class="reference internal" href="pygplates_introduction.html#pygplates-introduction"><span class="std std-ref">introduction</span></a> there are two ways to use pyGPlates:</p>
-<ul class="simple">
-<li>with an <a class="reference internal" href="pygplates_introduction.html#pygplates-introduction-using-pygplates-external"><span class="std std-ref">external</span></a> Python interpreter, and</li>
-<li>with the GPlates <a class="reference internal" href="pygplates_introduction.html#pygplates-introduction-using-pygplates-embedded"><span class="std std-ref">embedded</span></a> Python interpreter.</li>
-</ul>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The <em>embedded</em> option is <strong>not</strong> yet available.</p>
-</div>
-<p>No installation is required for the <em>embedded</em> case since both pyGPlates and a Python interpreter are
-already embedded inside the GPlates desktop application. All that is required is the
-<a class="reference external" href="http://www.gplates.org">installation of GPlates</a>.</p>
-<p>However installation of pyGPlates is required for the <em>external</em> case since, in this situation,
-pyGPlates is provided as a separate Python library/module (that is not part of the
-GPlates desktop application).</p>
-<p>The following sections cover the installation of pyGPlates in the <em>external</em> case.</p>
-</div>
-<div class="section" id="installing-pygplates">
-<span id="pygplates-getting-started-installation-external"></span><h3><a class="toc-backref" href="#id21">Installing pyGPlates</a><a class="headerlink" href="#installing-pygplates" title="Permalink to this headline">¶</a></h3>
-<p>Each release includes files similar to:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pygplates_rev28_docs</span><span class="o">.</span><span class="n">zip</span>
-<span class="n">pygplates_rev28_python38_MacOS64</span><span class="o">.</span><span class="n">zip</span>
-<span class="n">pygplates_rev28_python38_win64</span><span class="o">.</span><span class="n">zip</span>
-<span class="n">pygplates_rev28_src</span><span class="o">.</span><span class="n">zip</span>
+<section id="installation">
+<span id="pygplates-getting-started-installation"></span><h2><a class="toc-backref" href="#id1">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline"></a></h2>
+<p>This section covers the installation of pyGPlates.</p>
+<section id="installing-pygplates">
+<span id="pygplates-getting-started-installation-external"></span><h3><a class="toc-backref" href="#id2">Installing pyGPlates</a><a class="headerlink" href="#installing-pygplates" title="Permalink to this headline"></a></h3>
+<p>This release includes the following download files:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Documentation:</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_docs</span><span class="o">.</span><span class="n">zip</span>
+
+<span class="c1"># Source code:</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_src</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_src</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">bz2</span>
+
+<span class="c1"># Pre-compiled for Windows:</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py37_win64</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py38_win64</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py39_win64</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py310_win64</span><span class="o">.</span><span class="n">zip</span>
+
+<span class="c1"># Pre-compiled for macOS on Intel (x86_64):</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py37_Darwin</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py38_Darwin</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py39_Darwin</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py310_Darwin</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">zip</span>
+
+<span class="c1"># Pre-compiled for macOS on M1 (arm64):</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py37_Darwin</span><span class="o">-</span><span class="n">arm64</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py38_Darwin</span><span class="o">-</span><span class="n">arm64</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py39_Darwin</span><span class="o">-</span><span class="n">arm64</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py310_Darwin</span><span class="o">-</span><span class="n">arm64</span><span class="o">.</span><span class="n">zip</span>
+
+<span class="c1"># Pre-compiled for Ubuntu:</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py36_ubuntu</span><span class="o">-</span><span class="mf">18.04</span><span class="o">-</span><span class="n">amd64</span><span class="o">.</span><span class="n">deb</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py38_ubuntu</span><span class="o">-</span><span class="mf">20.04</span><span class="o">-</span><span class="n">amd64</span><span class="o">.</span><span class="n">deb</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py39_ubuntu</span><span class="o">-</span><span class="mf">21.10</span><span class="o">-</span><span class="n">amd64</span><span class="o">.</span><span class="n">deb</span>
+<span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py310_ubuntu</span><span class="o">-</span><span class="mf">22.04</span><span class="o">-</span><span class="n">amd64</span><span class="o">.</span><span class="n">deb</span>
 </pre></div>
 </div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If this is an internal (non-public) release then the above files come in a single zip file
-(<code class="docutils literal notranslate"><span class="pre">pygplates_rev28.zip</span></code>).</p>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">For public releases there are also Ubuntu packages (<code class="docutils literal notranslate"><span class="pre">.deb</span></code> files).</p>
-</div>
-<div class="line-block">
-<div class="line">The pyGPlates documentation is in <code class="docutils literal notranslate"><span class="pre">pygplates_rev28_docs.zip</span></code>.</div>
-<div class="line">If you extract this zip file to your hard drive and then open <code class="docutils literal notranslate"><span class="pre">pygplates_rev28_docs/index.html</span></code>
-in a web browser you will see the <a class="reference internal" href="index.html#pygplates-index"><span class="std std-ref">front page</span></a> of this documentation.</div>
-</div>
-<p>The remaining zip files contain a pre-built pyGPlates library for macOS and Windows, and source
-code for Linux (and Ubuntu packages for public pyGPlates releases):</p>
-<ul>
-<li><p class="first"><code class="docutils literal notranslate"><span class="pre">pygplates_rev28_python38_MacOS64.zip</span></code> - pyGPlates for macOS (compiled for 64-bit Python 3.8).</p>
-<p>Extracting this zip file creates a directory <code class="docutils literal notranslate"><span class="pre">pygplates_rev28_python38_MacOS64</span></code> containing the
-<code class="docutils literal notranslate"><span class="pre">pygplates.so</span></code> pyGPlates library and its dependency libraries.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This pre-built pyGPlates library will only work with a Python interpreter that is
-version 3.8.x and is 64-bit. The operating system can be Mavericks (10.9) or above.</p>
-</div>
-</li>
-<li><p class="first"><code class="docutils literal notranslate"><span class="pre">pygplates_rev28_python38_win64.zip</span></code> - pyGPlates for Windows (compiled for 64-bit Python 3.8).</p>
-<p>Extracting this zip file creates a directory <code class="docutils literal notranslate"><span class="pre">pygplates_rev28_python38_win64</span></code> containing the
-<code class="docutils literal notranslate"><span class="pre">pygplates.pyd</span></code> pyGPlates library and its dependency libraries.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This pre-built pyGPlates library will only work with a Python interpreter that is
-version 3.8.x and is 64-bit. So it will only work if you are using a 64-bit operating system (Windows 7 or above)
-<strong>and</strong> the installed Python is <strong>64-bit</strong> (a 32-bit Python installation will not work).</p>
-</div>
-</li>
-<li><p class="first"><code class="docutils literal notranslate"><span class="pre">pygplates_rev28_src.zip</span></code> - pyGPlates source code (typically used to compile pyGPlates on Linux).</p>
-<p>Extracting this zip file creates a directory <code class="docutils literal notranslate"><span class="pre">pygplates_rev28_src</span></code>
+<p>The following sections cover these files and their installation.</p>
+<section id="documentation">
+<h4><a class="toc-backref" href="#id3">Documentation</a><a class="headerlink" href="#documentation" title="Permalink to this headline"></a></h4>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_docs.zip</span></code></p></li>
+</ul>
+<p>If you extract this zip file to your hard drive and then open <code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_docs/index.html</span></code>
+in a web browser you will see the <a class="reference internal" href="index.html#pygplates-index"><span class="std std-ref">front page</span></a> of this documentation.</p>
+</section>
+<section id="compiling-from-source-code">
+<h4><a class="toc-backref" href="#id4">Compiling from source code</a><a class="headerlink" href="#compiling-from-source-code" title="Permalink to this headline"></a></h4>
+<p>PyGPlates source code:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_src.zip</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_src.tar.bz2</span></code></p></li>
+</ul>
+<p>The source code is typically used to compile pyGPlates on a Linux system (other than Ubuntu) where a
+pre-compiled version of pyGPlates is not available.</p>
+<p>Extracting either of these archive files creates a directory <code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_src</span></code>
 containing the pyGPlates source code.</p>
-<p>Unlike the pre-built pyGPlates libraries for macOS and Windows, here we have source code that
-needs to be compiled into a pyGPlates library. This is typically used to compile pyGPlates on
-Linux systems because they have binary package managers that make installing dependency
-libraries (of pyGPlates and GPlates) a lot easier than with macOS and Windows.</p>
-<p>To compile pyGPlates follow the instructions for building GPlates in the files <code class="docutils literal notranslate"><span class="pre">BUILD.Linux</span></code> and
-<code class="docutils literal notranslate"><span class="pre">DEPS.Linux</span></code> in the root directory <code class="docutils literal notranslate"><span class="pre">pygplates_rev28_src</span></code> of the source code.
-Once the dependency libraries have been installed this process essentially boils down to executing
+<p>To compile pyGPlates follow the instructions in the files <code class="docutils literal notranslate"><span class="pre">BUILD.Linux</span></code> and <code class="docutils literal notranslate"><span class="pre">DEPS.Linux</span></code> in the root directory
+<code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_src</span></code> of the source code.
+Once the dependency libraries have been installed then this process essentially boils down to executing
 the following commands in a <em>Terminal</em> in the root source code directory:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">.</span>
-<span class="n">make</span> <span class="n">pygplates</span>
+<span class="n">make</span>
 </pre></div>
 </div>
-<p>…which, on successful completion, should result in a <code class="docutils literal notranslate"><span class="pre">pygplates.so</span></code> library in the <code class="docutils literal notranslate"><span class="pre">bin</span></code>
-sub-directory of the root source code directory <code class="docutils literal notranslate"><span class="pre">pygplates_rev28_src</span></code>.</p>
-<p>Also if you have a dual-core or quad-core system then you can speed up compilation
-using <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">-j</span> <span class="pre">2</span> <span class="pre">pygplates</span></code> or <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">-j</span> <span class="pre">4</span> <span class="pre">pygplates</span></code>.</p>
+<p>…which, on successful completion, should result in a <code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_src/bin/pygplates.so</span></code> library.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The pyGPlates source code is actually the same as the GPlates source code except we build
-pyGPlates with <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">pygplates</span></code> (whereas GPlates is built with just <code class="docutils literal notranslate"><span class="pre">make</span></code>). However the
-pyGPlates source code is currently a separate development branch (of the GPlates source code repository)
-that has not yet made its way into the development mainline (hence you won’t find it in regular
-GPlates source code releases yet).</p>
+<p class="admonition-title">Note</p>
+<p>On a quad-core system you can speed up compilation using <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">-j</span> <span class="pre">4</span></code>.</p>
 </div>
-</li>
-<li><p class="first"><code class="docutils literal notranslate"><span class="pre">ubuntu/pygplates-...</span></code> - pyGPlates Ubuntu <code class="docutils literal notranslate"><span class="pre">.deb</span></code> packages.</p>
+<p>Next you can tell Python where to find pyGPlates using the <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> environment variable.
+For example, if you extracted and compiled the source code in your home directory you could type the following in a <em>Terminal</em> window
+(or you can add it to your shell startup file):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>export PYTHONPATH=$PYTHONPATH:~/pygplates_0.36.0_src/bin
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">pygplates.so</span></code> is in the local <code class="docutils literal notranslate"><span class="pre">bin</span></code> directory after compilation.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">BUILD.Linux</span></code> also covers <em>installing</em> <code class="docutils literal notranslate"><span class="pre">pygplates.so</span></code> to a location of your choice (or the default location <code class="docutils literal notranslate"><span class="pre">/usr/local/lib</span></code>).</p>
+</div>
+</section>
+<section id="pre-compiled-for-windows">
+<h4><a class="toc-backref" href="#id5">Pre-compiled for Windows</a><a class="headerlink" href="#pre-compiled-for-windows" title="Permalink to this headline"></a></h4>
+<p>PyGPlates pre-compiled for Windows 64-bit:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py37_win64.zip</span></code> - Python 3.7</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py38_win64.zip</span></code> - Python 3.8</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py39_win64.zip</span></code> - Python 3.9</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py310_win64.zip</span></code> - Python 3.10</p></li>
+</ul>
+<p>Extracting one of these zip files creates a directory of the same name
+(eg, <code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py310_win64</span></code> for Python 3.10) containing the
+pyGPlates library and its dependency libraries.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These pre-compiled pyGPlates libraries will only work with their respective Python versions.
+And they will only work with 64-bit Python on a 64-bit Windows operating system.</p>
+</div>
+<p>Next you can tell Python where to find pyGPlates using the <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> environment variable.
+For example, if you extracted <code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py310_win64.zip</span></code> into the root of your <code class="docutils literal notranslate"><span class="pre">C:</span></code> drive
+you could type the following in a <em>command</em> window (click the <em>Start</em> icon in lower-left corner of screen and type <code class="docutils literal notranslate"><span class="pre">cmd</span></code>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">pythonpath</span><span class="o">=%</span><span class="n">pythonpath</span><span class="o">%</span><span class="p">;</span><span class="s2">&quot;C:\pygplates_0.36.0_py310_win64&quot;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are <strong>not</strong> pointing to <code class="docutils literal notranslate"><span class="pre">C:\pygplates_0.36.0_py310_win64\pygplates\</span></code>
+(ie, the <code class="docutils literal notranslate"><span class="pre">pygplates\</span></code> sub-directory within <code class="docutils literal notranslate"><span class="pre">C:\pygplates_0.36.0_py310_win64\</span></code>)
+even though that’s where <code class="docutils literal notranslate"><span class="pre">pygplates.pyd</span></code> lives. This is because pyGPlates on Windows (and macOS) is now a Python <em>package</em>
+(due to the presence of a <code class="docutils literal notranslate"><span class="pre">pygplates\__init__.py</span></code> file).</p>
+</div>
+<p>Or you can change <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> in the system environment variables:</p>
+<ol class="arabic simple">
+<li><p>Click on the Start button.</p></li>
+<li><p>Start typing “Edit the system environment variables”.
+As you are typing you should see that entry appear (with sub-heading ‘Control panel’).
+Click on that entry.</p></li>
+<li><p>Click “Environment variables…” at the bottom of the dialog that pops up.</p></li>
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> in the ‘User variables for …’ or ‘System variables’ section.
+If it does not exist, click the New button to add it.</p></li>
+<li><p>Add the extracted pyGPlates folder path to <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code>.
+For example <code class="docutils literal notranslate"><span class="pre">C:\pygplates_0.36.0_py310_win64</span></code>.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> might already refer to a previous pyGPlates installation. In this case you will first need
+to remove the previous path (otherwise Python will preferentially load pyGPlates from the previous path).</p>
+</div>
+</section>
+<section id="pre-compiled-for-macos">
+<h4><a class="toc-backref" href="#id6">Pre-compiled for macOS</a><a class="headerlink" href="#pre-compiled-for-macos" title="Permalink to this headline"></a></h4>
+<p>PyGPlates pre-compiled for macOS Catalina (10.15) or above, on <strong>Intel</strong> (x86_64 architecture):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py37_Darwin-x86_64.zip</span></code> - Python 3.7</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py38_Darwin-x86_64.zip</span></code> - Python 3.8</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py39_Darwin-x86_64.zip</span></code> - Python 3.9</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py310_Darwin-x86_64.zip</span></code> - Python 3.10</p></li>
+</ul>
+<p>PyGPlates pre-compiled for macOS Big Sur (11) or above, on <strong>M1</strong> (arm64 architecture):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py37_Darwin-arm64.zip</span></code> - Python 3.7</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py38_Darwin-arm64.zip</span></code> - Python 3.8</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py39_Darwin-arm64.zip</span></code> - Python 3.9</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py310_Darwin-arm64.zip</span></code> - Python 3.10</p></li>
+</ul>
+<p>Extracting one of these zip files creates a directory of the same name
+(eg, <code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py310_Darwin-arm64</span></code> for Python 3.10 on M1/arm64) containing the
+pyGPlates library and its dependency libraries.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These pre-compiled pyGPlates libraries will only work with their respective Python versions.</p>
+</div>
+<p>Next you can tell Python where to find pyGPlates using the <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> environment variable.
+For example, if you extracted <code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py310_Darwin-arm64.zip</span></code> into your home directory
+you could type the following in a <em>Terminal</em> window (or you can add it to your shell startup file):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>export PYTHONPATH=$PYTHONPATH:~/pygplates_0.36.0_py310_Darwin-arm64
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are <strong>not</strong> pointing to <code class="docutils literal notranslate"><span class="pre">~/pygplates_0.36.0_py310_Darwin-arm64/pygplates/</span></code>
+(ie, the <code class="docutils literal notranslate"><span class="pre">pygplates/</span></code> sub-directory within <code class="docutils literal notranslate"><span class="pre">~/pygplates_0.36.0_py310_Darwin-arm64/</span></code>)
+even though that’s where <code class="docutils literal notranslate"><span class="pre">pygplates.so</span></code> lives. This is because pyGPlates on macOS (and Windows) is now a Python <em>package</em>
+(due to the presence of a <code class="docutils literal notranslate"><span class="pre">pygplates/__init__.py</span></code> file).</p>
+</div>
+</section>
+<section id="pre-compiled-for-ubuntu">
+<h4><a class="toc-backref" href="#id7">Pre-compiled for Ubuntu</a><a class="headerlink" href="#pre-compiled-for-ubuntu" title="Permalink to this headline"></a></h4>
+<p>PyGPlates pre-compiled Debian packages for Ubuntu:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py36_ubuntu-18.04-amd64.deb</span></code> - Bionic (18.04 LTS) using default Python 3.6</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py38_ubuntu-20.04-amd64.deb</span></code> - Focal (20.04 LTS) using default Python 3.8</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py39_ubuntu-21.10-amd64.deb</span></code> - Impish (21.10) using default Python 3.9</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygplates_0.36.0_py310_ubuntu-22.04-amd64.deb</span></code> - Jammy (22.04) using default Python 3.10</p></li>
+</ul>
 <p>To install pyGPlates on Ubuntu, double-click on the <code class="docutils literal notranslate"><span class="pre">.deb</span></code> file appropriate for your system.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>If you do not know which version of Ubuntu is installed, open a terminal and enter the following:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">lsb</span><span class="o">-</span><span class="n">release</span>
 </pre></div>
 </div>
 <p>…and note the codename displayed.</p>
-<p>PyGPlates will then be installed to <code class="docutils literal notranslate"><span class="pre">/usr/lib/pygplates/revision28/</span></code>.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Ubuntu <code class="docutils literal notranslate"><span class="pre">.deb</span></code> packages are not available for internal (non-public) releases.</p>
 </div>
-</li>
-</ul>
-<p>In the next section we will tell Python how to find our pre-built (or compiled) pyGPlates installation.</p>
-</div>
-<div class="section" id="telling-python-how-to-find-pygplates">
-<span id="pygplates-getting-started-installation-telling-python-how-to-find-pygplates"></span><h3><a class="toc-backref" href="#id22">Telling Python how to find pyGPlates</a><a class="headerlink" href="#telling-python-how-to-find-pygplates" title="Permalink to this headline">¶</a></h3>
-<p>The easiest, but least flexible, way to tell Python how to find pyGPlates is to directly modify
-your python scripts before they <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pygplates</span></code>. The following example demonstrates this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;/path/to/pygplates&#39;</span><span class="p">)</span>
-<span class="kn">import</span> <span class="nn">pygplates</span>
-</pre></div>
-</div>
-<p>However a better solution is to set the <em>PYTHONPATH</em> environment variable so that you don’t have
-to modify all your Python scripts.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If pyGPlates is found in the same directory as the python script you are running, it will
-be imported and any pyGPlates in <em>PYTHONPATH</em> will be ignored. This is because <code class="docutils literal notranslate"><span class="pre">sys.path</span></code> is
-initialised with the directory containing the python script and then <em>PYTHONPATH</em>.</p>
-</div>
-<p>Setting the <em>PYTHONPATH</em> environment variable:</p>
-<ul>
-<li><p class="first"><em>macOS</em>:</p>
-<p>Type the following in a <em>Terminal</em> window (or you can add it to your shell startup file):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>export PYTHONPATH=$PYTHONPATH:/path/to/pygplates
-</pre></div>
-</div>
-<p>…replacing <code class="docutils literal notranslate"><span class="pre">/path/to/pygplates</span></code> with the actual path to your extracted
-<code class="docutils literal notranslate"><span class="pre">pygplates_rev28_python38_MacOS64</span></code> directory, for example.</p>
-</li>
-<li><p class="first"><em>Linux</em>:</p>
-<p>Type the following in a <em>Terminal</em> window (or you can add it to your shell startup file):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>export PYTHONPATH=$PYTHONPATH:/path/to/pygplates/bin
-</pre></div>
-</div>
-<p>…replacing <code class="docutils literal notranslate"><span class="pre">/path/to/pygplates</span></code> with the actual path to your extracted
-<code class="docutils literal notranslate"><span class="pre">pygplates_rev28_src</span></code> source code directory, for example.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The extra <code class="docutils literal notranslate"><span class="pre">/bin</span></code> suffix is because <code class="docutils literal notranslate"><span class="pre">pygplates.so</span></code> is in the local <code class="docutils literal notranslate"><span class="pre">bin</span></code> directory
-(once it has been compiled from source code).</p>
-</div>
-</li>
-<li><p class="first"><em>Ubuntu</em> <code class="docutils literal notranslate"><span class="pre">.deb</span></code> package:</p>
-<p>Type the following in a <em>Terminal</em> window (or you can add it to your shell startup file):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>export PYTHONPATH=$PYTHONPATH:/usr/lib/pygplates/revision28
+<p>Alternatively you can install pyGPlates by running <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span></code> in a terminal window.
+For example, on Ubuntu Jammy (22.04) you can type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="o">./</span><span class="n">pygplates_0</span><span class="mf">.36.0</span><span class="n">_py310_ubuntu</span><span class="o">-</span><span class="mf">22.04</span><span class="o">-</span><span class="n">amd64</span><span class="o">.</span><span class="n">deb</span>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Ubuntu <code class="docutils literal notranslate"><span class="pre">.deb</span></code> packages are not available for internal (non-public) releases.</p>
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">The following installation warning can be ignored:</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">N:</span> <span class="pre">Download</span> <span class="pre">is</span> <span class="pre">performed</span> <span class="pre">unsandboxed</span> <span class="pre">as</span> <span class="pre">root</span> <span class="pre">as</span> <span class="pre">file</span> <span class="pre">...</span> <span class="pre">pkgAcquire::Run</span> <span class="pre">(13:</span> <span class="pre">Permission</span> <span class="pre">denied)</span></code></div>
 </div>
-</li>
-<li><p class="first"><em>Windows</em>:</p>
-<p>Type the following in a <em>command</em> window (click the <em>Start</em> icon in lower-left corner of screen
-and type <code class="docutils literal notranslate"><span class="pre">cmd</span></code>):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">pythonpath</span><span class="o">=%</span><span class="n">pythonpath</span><span class="o">%</span><span class="p">;</span><span class="s2">&quot;c:\path</span><span class="se">\t</span><span class="s2">o\pygplates&quot;</span>
-<span class="nb">set</span> <span class="n">path</span><span class="o">=%</span><span class="n">path</span><span class="o">%</span><span class="p">;</span><span class="s2">&quot;c:\path</span><span class="se">\t</span><span class="s2">o\pygplates&quot;</span>
+</div>
+<p>In either case pyGPlates will be installed to <code class="docutils literal notranslate"><span class="pre">/usr/lib/</span></code>.</p>
+<p>Next you can tell Python where to find pyGPlates using the <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> environment variable.
+To do this type the following in a <em>Terminal</em> window (or you can add it to your shell startup file):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>export PYTHONPATH=$PYTHONPATH:/usr/lib
 </pre></div>
 </div>
-<p>…replacing <code class="docutils literal notranslate"><span class="pre">c:\path\to\pygplates</span></code> with the actual path to your extracted
-<code class="docutils literal notranslate"><span class="pre">pygplates_rev28_python38_win64</span></code> directory, for example.</p>
-<p>Or you can change <em>PYTHONPATH</em> and <em>PATH</em> in the system environment variables:</p>
-<ol class="arabic simple">
-<li>Open the <em>Control Panel</em> (eg, click the <em>Start</em> icon in lower-left corner of the screen and
-select <em>Control Panel</em>),</li>
-<li>Select <em>System and Security</em> and then <em>System</em>,</li>
-<li>Select <em>Advanced System Settings</em> and <em>Environment Variables</em>,</li>
-<li>Create a new <em>PYTHONPATH</em> variable (if not already present):<ul>
-<li>can be a user or system variable,</li>
-</ul>
-</li>
-<li>Add the extracted pyGPlates folder path both to <em>PYTHONPATH</em> and <em>PATH</em>
-(they both contain a <code class="docutils literal notranslate"><span class="pre">;</span></code> separated list of paths).</li>
-</ol>
-</li>
-</ul>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last"><em>PYTHONPATH</em> might already refer to a previous pyGPlates installation. In this case
-you will first need to remove the path to the previous pyGPlates installation (from <em>PYTHONPATH</em>)
-before adding the path to the newly installed/extracted pyGPlates (otherwise Python will load the
-previous pyGPlates).</p>
+<p class="admonition-title">Note</p>
+<p>PyGPlates is installed to <code class="docutils literal notranslate"><span class="pre">/usr/lib/</span></code> (not <code class="docutils literal notranslate"><span class="pre">/usr/lib/pygplates/0.36.0/</span></code> like previous versions).</p>
 </div>
-</div>
-<div class="section" id="installing-python">
-<h3><a class="toc-backref" href="#id23">Installing Python</a><a class="headerlink" href="#installing-python" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="installing-python">
+<h3><a class="toc-backref" href="#id8">Installing Python</a><a class="headerlink" href="#installing-python" title="Permalink to this headline"></a></h3>
 <p>In order to execute Python source code in an <a class="reference internal" href="pygplates_introduction.html#pygplates-introduction-using-pygplates-external"><span class="std std-ref">external</span></a> Python
 interpreter you will need a Python installation. macOS typically comes with a Python installation.
 However for Windows you will need to install Python.</p>
 <p>Python is available as a standalone package by following the download link at <a class="reference external" href="http://www.python.org">http://www.python.org</a>.</p>
-<p>Alternatively it is available in Python distributions such as <a class="reference external" href="http://continuum.io/downloads">Anaconda</a>
-that also include common Python packages.</p>
 <p>And as noted in <a class="reference internal" href="#pygplates-using-the-correct-python-version"><span class="std std-ref">Using the correct Python version</span></a> you will need to install the
-correct version of Python if you are using pre-built versions of pyGPlates.</p>
-</div>
-<div class="section" id="using-the-correct-python-version">
-<span id="pygplates-using-the-correct-python-version"></span><h3><a class="toc-backref" href="#id24">Using the correct Python version</a><a class="headerlink" href="#using-the-correct-python-version" title="Permalink to this headline">¶</a></h3>
-<p>As noted in <a class="reference internal" href="#pygplates-getting-started-installation-external"><span class="std std-ref">Installing pyGPlates</span></a> the pre-built macOS and Windows pyGPlates
+correct version of Python if you are using a pre-compiled version of pyGPlates.</p>
+</section>
+<section id="using-the-correct-python-version">
+<span id="pygplates-using-the-correct-python-version"></span><h3><a class="toc-backref" href="#id9">Using the correct Python version</a><a class="headerlink" href="#using-the-correct-python-version" title="Permalink to this headline"></a></h3>
+<p>As noted in <a class="reference internal" href="#pygplates-getting-started-installation-external"><span class="std std-ref">Installing pyGPlates</span></a> the pre-compiled macOS and Windows pyGPlates
 libraries have been compiled for a specific version of Python (such as 64-bit Python 3.8.x on macOS).
 So if you attempt to import pyGPlates into a Python interpreter with a different version then you
 will get an error.</p>
-<p>For example, on Windows if you attempt to import a pre-built pyGPlates library compiled for
+<p>For example, on Windows if you attempt to import a pre-compiled pyGPlates library compiled for
 64-bit Python <strong>3.7.x</strong> into a 64-bit Python <strong>3.8.x</strong> interpreter then you will get an error similar to:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ne">ImportError</span><span class="p">:</span> <span class="n">Module</span> <span class="n">use</span> <span class="n">of</span> <span class="n">python37</span><span class="o">.</span><span class="n">dll</span> <span class="n">conflicts</span> <span class="k">with</span> <span class="n">this</span> <span class="n">version</span> <span class="n">of</span> <span class="n">Python</span><span class="o">.</span>
 </pre></div>
@@ -312,7 +391,7 @@ will get an error.</p>
 </div>
 <p>…but means the same thing (a Python version mismatch between pyGPlates and the Python interpreter).</p>
 <p>It is also important to use matching architectures (32-bit versus 64-bit).</p>
-<p>For example, on Windows if you attempt to import a pre-built pyGPlates library (compiled for
+<p>For example, on Windows if you attempt to import a pre-compiled pyGPlates library (compiled for
 <strong>32-bit</strong> Python 2.7.x) into a <strong>64-bit</strong> Python 2.7.x interpreter then you will get the following
 error:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ne">ImportError</span><span class="p">:</span> <span class="n">DLL</span> <span class="n">load</span> <span class="n">failed</span><span class="p">:</span> <span class="o">%</span><span class="mi">1</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">a</span> <span class="n">valid</span> <span class="n">Win32</span> <span class="n">application</span><span class="o">.</span>
@@ -369,62 +448,46 @@ installation. If this happens then you might get an error message similar to the
 presumably via the Windows registry) but it loaded the Python <strong>2.7.6</strong> standard libraries
 (the <code class="docutils literal notranslate"><span class="pre">PYTHONHOME</span></code> environment variable was set to “C:\SDK\python\Python-2.7.6”).</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The above error had nothing to do with pyGPlates (it could happen with any python script
+<p class="admonition-title">Note</p>
+<p>The above error had nothing to do with pyGPlates (it could happen with any python script
 regardless of whether it imported pyGPlates or not).</p>
 </div>
 <p>So, on Windows, it is usually best to run your python script as:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">my_script</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="miscellaneous-issues">
-<span id="pygplates-miscellaneous-issues"></span><h3><a class="toc-backref" href="#id25">Miscellaneous issues</a><a class="headerlink" href="#miscellaneous-issues" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="windows-runtime-library-error">
-<h4><a class="toc-backref" href="#id26">Windows runtime library error</a><a class="headerlink" href="#windows-runtime-library-error" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="miscellaneous-issues">
+<span id="pygplates-miscellaneous-issues"></span><h3><a class="toc-backref" href="#id10">Miscellaneous issues</a><a class="headerlink" href="#miscellaneous-issues" title="Permalink to this headline"></a></h3>
+<section id="windows-runtime-library-error">
+<h4><a class="toc-backref" href="#id11">Windows runtime library error</a><a class="headerlink" href="#windows-runtime-library-error" title="Permalink to this headline"></a></h4>
 <p>On Windows operating systems it is possible to get the following error when importing pyGPlates or
 other Python C extension modules (that use native libraries):</p>
-<div class="figure">
+<figure class="align-default">
 <img alt="_images/MSVC_runtime_error.png" src="_images/MSVC_runtime_error.png" />
-</div>
+</figure>
 <p>This can happen because a regular Python 2.7 installation contains these files in the main directory (the directory
 where the Python interpreter executable <code class="docutils literal notranslate"><span class="pre">python.exe</span></code> is located):</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">msvcr90.dll</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">Microsoft.VC90.CRT.manifest</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">msvcr90.dll</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Microsoft.VC90.CRT.manifest</span></code></p></li>
 </ul>
 <p>If this is the case then a potential solution is to:</p>
 <ol class="arabic simple">
-<li>Create a sub-directory called <code class="docutils literal notranslate"><span class="pre">Microsoft.VC90.CRT</span></code>, and</li>
-<li>Move the above files into that sub-directory.</li>
+<li><p>Create a sub-directory called <code class="docutils literal notranslate"><span class="pre">Microsoft.VC90.CRT</span></code>, and</p></li>
+<li><p>Move the above files into that sub-directory.</p></li>
 </ol>
-</div>
-</div>
-</div>
-<div class="section" id="tutorial">
-<span id="pygplates-getting-started-tutorial"></span><h2><a class="toc-backref" href="#id11">Tutorial</a><a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="tutorial">
+<span id="pygplates-getting-started-tutorial"></span><h2><a class="toc-backref" href="#id12">Tutorial</a><a class="headerlink" href="#tutorial" title="Permalink to this headline"></a></h2>
 <p>This tutorial first provides a fundamental overview of functions and classes.
 And then covers the steps to set up and run a simple pyGPlates script.</p>
-<div class="contents local topic" id="id2">
-<ul class="simple">
-<li><a class="reference internal" href="#what-are-functions-and-classes" id="id27">What are functions and classes ?</a><ul>
-<li><a class="reference internal" href="#functions" id="id28">Functions</a></li>
-<li><a class="reference internal" href="#classes" id="id29">Classes</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#introductory-pygplates-script" id="id30">Introductory pyGPlates script</a><ul>
-<li><a class="reference internal" href="#source-code" id="id31">Source code</a></li>
-<li><a class="reference internal" href="#setting-up-the-script" id="id32">Setting up the script</a></li>
-<li><a class="reference internal" href="#running-the-script" id="id33">Running the script</a></li>
-<li><a class="reference internal" href="#output-of-the-script" id="id34">Output of the script</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="what-are-functions-and-classes">
-<h3><a class="toc-backref" href="#id27">What are functions and classes ?</a><a class="headerlink" href="#what-are-functions-and-classes" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="functions">
-<h4><a class="toc-backref" href="#id28">Functions</a><a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h4>
+<section id="what-are-functions-and-classes">
+<h3><a class="toc-backref" href="#id13">What are functions and classes ?</a><a class="headerlink" href="#what-are-functions-and-classes" title="Permalink to this headline"></a></h3>
+<section id="functions">
+<h4><a class="toc-backref" href="#id14">Functions</a><a class="headerlink" href="#functions" title="Permalink to this headline"></a></h4>
 <p>Essentially a function accepts arguments, does some work and then optionally returns a value.
 The function arguments allow data to be passed to and from the function. Input arguments pass data
 to the function and output arguments pass data from the function back to the caller. The function
@@ -435,8 +498,8 @@ input and output if the function first reads from it (input) and then writes to 
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The <code class="docutils literal notranslate"><span class="pre">pygplates.</span></code> in front of <code class="docutils literal notranslate"><span class="pre">reconstruct()</span></code> means the <code class="docutils literal notranslate"><span class="pre">reconstruct()</span></code> function belongs to the <code class="docutils literal notranslate"><span class="pre">pygplates</span></code> module.
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">pygplates.</span></code> in front of <code class="docutils literal notranslate"><span class="pre">reconstruct()</span></code> means the <code class="docutils literal notranslate"><span class="pre">reconstruct()</span></code> function belongs to the <code class="docutils literal notranslate"><span class="pre">pygplates</span></code> module.
 Also this particular function doesn’t need to a return value.</p>
 </div>
 <p>All four parameters are input parameters since they only pass data <em>to</em> the function
@@ -453,9 +516,9 @@ Python list (instead of writing to a file):</p>
 </div>
 <p>The parameter <code class="docutils literal notranslate"><span class="pre">reconstructed_feature_geometries</span></code> is now an <em>output</em> parameter because it is used
 to pass data from the function back to the caller so that the caller can do something with it.</p>
-</div>
-<div class="section" id="classes">
-<h4><a class="toc-backref" href="#id29">Classes</a><a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="classes">
+<h4><a class="toc-backref" href="#id15">Classes</a><a class="headerlink" href="#classes" title="Permalink to this headline"></a></h4>
 <p>Primarily a class is a way to group some data together as a single entity.</p>
 <p>An object can be created (instantiated) from a class by providing a specific initial state.
 For example, a point object can be created (instantiated) from the <a class="reference internal" href="generated/pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.PointOnSphere</span></code></a> class
@@ -464,8 +527,8 @@ by giving it a specific latitude and longitude:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This looks like a regular <code class="docutils literal notranslate"><span class="pre">pygplates</span></code> function call (such as <code class="docutils literal notranslate"><span class="pre">pygplates.reconstruct()</span></code>)
+<p class="admonition-title">Note</p>
+<p>This looks like a regular <code class="docutils literal notranslate"><span class="pre">pygplates</span></code> function call (such as <code class="docutils literal notranslate"><span class="pre">pygplates.reconstruct()</span></code>)
 but this is just how you create (instantiate) an object from a class with a specific initial state.
 Python uses the special method name <code class="docutils literal notranslate"><span class="pre">__init__()</span></code> for this and you will see these special methods
 documented in the classes listed in the <a class="reference internal" href="pygplates_reference.html#pygplates-reference"><span class="std std-ref">reference section</span></a>.</p>
@@ -482,19 +545,19 @@ documented in the <a class="reference internal" href="generated/pygplates.PointO
 they operate on an instance of class. Hence a class <em>method</em> has an implicit first function
 argument that is the object itself (for example, <code class="docutils literal notranslate"><span class="pre">point</span></code> is the implicit argument in <code class="docutils literal notranslate"><span class="pre">point.to_lat_lon()</span></code>).</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">A complete list of pyGPlates functions and classes can be found in the <a class="reference internal" href="pygplates_reference.html#pygplates-reference"><span class="std std-ref">reference section</span></a>.</p>
+<p class="admonition-title">Note</p>
+<p>A complete list of pyGPlates functions and classes can be found in the <a class="reference internal" href="pygplates_reference.html#pygplates-reference"><span class="std std-ref">reference section</span></a>.</p>
 </div>
-</div>
-</div>
-<div class="section" id="introductory-pygplates-script">
-<span id="pygplates-getting-started-tutorial-first-script"></span><h3><a class="toc-backref" href="#id30">Introductory pyGPlates script</a><a class="headerlink" href="#introductory-pygplates-script" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="introductory-pygplates-script">
+<span id="pygplates-getting-started-tutorial-first-script"></span><h3><a class="toc-backref" href="#id16">Introductory pyGPlates script</a><a class="headerlink" href="#introductory-pygplates-script" title="Permalink to this headline"></a></h3>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Before starting this section please make sure you have <a class="reference internal" href="#pygplates-getting-started-installation"><span class="std std-ref">installed</span></a> pyGPlates.</p>
+<p class="admonition-title">Note</p>
+<p>Before starting this section please make sure you have <a class="reference internal" href="#pygplates-getting-started-installation"><span class="std std-ref">installed</span></a> pyGPlates.</p>
 </div>
-<div class="section" id="source-code">
-<h4><a class="toc-backref" href="#id31">Source code</a><a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h4>
+<section id="source-code">
+<h4><a class="toc-backref" href="#id17">Source code</a><a class="headerlink" href="#source-code" title="Permalink to this headline"></a></h4>
 <p>Our introductory pyGPlates Python script will contain the following lines of source code:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
@@ -510,8 +573,8 @@ argument that is the object itself (for example, <code class="docutils literal n
 <div class="line">This needs to be done before pyGPlates can be used in subsequent statements.</div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">There are other ways to import pyGPlates but this is the simplest and most common way.</p>
+<p class="admonition-title">Note</p>
+<p>There are other ways to import pyGPlates but this is the simplest and most common way.</p>
 </div>
 <p>The second statement…</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pygplates</span><span class="o">.</span><span class="n">reconstruct</span><span class="p">(</span><span class="s1">&#39;coastlines.gpmlz&#39;</span><span class="p">,</span> <span class="s1">&#39;rotations.rot&#39;</span><span class="p">,</span> <span class="s1">&#39;reconstructed_coastlines_10Ma.shp&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
@@ -520,30 +583,30 @@ argument that is the object itself (for example, <code class="docutils literal n
 <p>…will reconstruct coastlines (loaded from the <code class="docutils literal notranslate"><span class="pre">coastlines.gpmlz</span></code> file) to their location
 10 million years ago (Ma) using the plate rotations in the <code class="docutils literal notranslate"><span class="pre">rotations.rot</span></code> file, and then save those
 reconstructed locations to the Shapefile <code class="docutils literal notranslate"><span class="pre">reconstructed_coastlines_10Ma.shp</span></code>.</p>
-</div>
-<div class="section" id="setting-up-the-script">
-<h4><a class="toc-backref" href="#id32">Setting up the script</a><a class="headerlink" href="#setting-up-the-script" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="setting-up-the-script">
+<h4><a class="toc-backref" href="#id18">Setting up the script</a><a class="headerlink" href="#setting-up-the-script" title="Permalink to this headline"></a></h4>
 <div class="line-block">
 <div class="line">First of all we need to create the Python script. This is essentially just a text file with the <code class="docutils literal notranslate"><span class="pre">.py</span></code> filename extension.</div>
 <div class="line">To do this copy the above lines of source code into a new file called <code class="docutils literal notranslate"><span class="pre">tutorial.py</span></code> (eg, using a text editor).</div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">You may want to create a sub-directory in your home directory (such as <code class="docutils literal notranslate"><span class="pre">pygplates_tutorial</span></code>) to place
+<p class="admonition-title">Note</p>
+<p>You may want to create a sub-directory in your home directory (such as <code class="docutils literal notranslate"><span class="pre">pygplates_tutorial</span></code>) to place
 the Python script and data files in.</p>
 </div>
 <div class="line-block">
 <div class="line">Next we need the data files containing the coastlines and rotations.</div>
-<div class="line">This data is available in the <a class="reference external" href="http://www.gplates.org/download.html#download_data">GPlates sample data</a>.</div>
-<div class="line">For example, in the GPlates 1.5 sample data, the coastlines file is called <code class="docutils literal notranslate"><span class="pre">Seton_etal_ESR2012_Coastlines_2012.1_Polygon.gpmlz</span></code>
-and the rotations file is called <code class="docutils literal notranslate"><span class="pre">Seton_etal_ESR2012_2012.1.rot</span></code>.</div>
+<div class="line">This data is available in the <a class="reference external" href="http://www.gplates.org/download.html#download-gplates-compatible-data">GPlates geodata</a>.</div>
+<div class="line">For example, in the GPlates 2.3 geodata, the coastlines file is called <code class="docutils literal notranslate"><span class="pre">Global_EarthByte_GPlates_PresentDay_Coastlines.gpmlz</span></code>
+and the rotations file is called <code class="docutils literal notranslate"><span class="pre">Muller2019-Young2019-Cao2020_CombinedRotations.rot</span></code>.</div>
 <div class="line">Copy those files to the <code class="docutils literal notranslate"><span class="pre">pygplates_tutorial</span></code> directory and rename them as <code class="docutils literal notranslate"><span class="pre">coastlines.gpmlz</span></code> and <code class="docutils literal notranslate"><span class="pre">rotations.rot</span></code>.
-Alternatively the filenames (and paths) could be changed in the <code class="docutils literal notranslate"><span class="pre">tutorials.py</span></code> script to match the sample data.</div>
+Alternatively the filenames (and paths) could be changed in the <code class="docutils literal notranslate"><span class="pre">tutorials.py</span></code> script to match the geodata.</div>
 </div>
 <p>Next open up a terminal or command window (on macOS and Ubuntu this is a <em>Terminal</em> window, and on Windows this is a <em>Command</em> window).</p>
 <div class="line-block">
-<div class="line">We may need to let Python know where to find pyGPlates by setting an environment variable
-as covered in <a class="reference internal" href="#pygplates-getting-started-installation-telling-python-how-to-find-pygplates"><span class="std std-ref">Telling Python how to find pyGPlates</span></a>.</div>
+<div class="line">We may need to let Python know where to find pyGPlates by setting the <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> environment variable
+as covered in <a class="reference internal" href="#pygplates-getting-started-installation-external"><span class="std std-ref">Installing pyGPlates</span></a>.</div>
 <div class="line">For example on macOS this can be done by typing:</div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>export PYTHONPATH=$PYTHONPATH:/path/to/pygplates
@@ -557,9 +620,9 @@ as covered in <a class="reference internal" href="#pygplates-getting-started-ins
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">pygplates_tutorial</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="running-the-script">
-<h4><a class="toc-backref" href="#id33">Running the script</a><a class="headerlink" href="#running-the-script" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="running-the-script">
+<h4><a class="toc-backref" href="#id19">Running the script</a><a class="headerlink" href="#running-the-script" title="Permalink to this headline"></a></h4>
 <p>Next run the Python script by typing:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">tutorial</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
@@ -567,114 +630,56 @@ as covered in <a class="reference internal" href="#pygplates-getting-started-ins
 <p>If any errors were generated they might be due to a version incompatibility between the Python you are using and the
 pyGPlates you have installed - please see <a class="reference internal" href="#pygplates-using-the-correct-python-version"><span class="std std-ref">Using the correct Python version</span></a> for more details.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">We are running our Python script through an <em>external</em> Python interpreter - see
+<p class="admonition-title">Note</p>
+<p>We are running our Python script through an <em>external</em> Python interpreter - see
 <a class="reference internal" href="pygplates_introduction.html#pygplates-introduction-external-vs-embedded"><span class="std std-ref">External versus embedded pyGPlates</span></a>.</p>
 </div>
-</div>
-<div class="section" id="output-of-the-script">
-<h4><a class="toc-backref" href="#id34">Output of the script</a><a class="headerlink" href="#output-of-the-script" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="output-of-the-script">
+<h4><a class="toc-backref" href="#id20">Output of the script</a><a class="headerlink" href="#output-of-the-script" title="Permalink to this headline"></a></h4>
 <div class="line-block">
 <div class="line">There should now be a <code class="docutils literal notranslate"><span class="pre">reconstructed_coastlines_10Ma.shp</span></code> file containing the reconstructed coastline
 locations at ten million years ago (10Ma).</div>
 <div class="line">This Shapefile can be loaded into the <a class="reference external" href="http://www.gplates.org">GPlates desktop application</a>
 to see these locations on the globe.</div>
 </div>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
+           </div>
           </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Getting started</a><ul>
-<li><a class="reference internal" href="#installation">Installation</a><ul>
-<li><a class="reference internal" href="#when-to-install-pygplates">When to install pyGPlates</a></li>
-<li><a class="reference internal" href="#installing-pygplates">Installing pyGPlates</a></li>
-<li><a class="reference internal" href="#telling-python-how-to-find-pygplates">Telling Python how to find pyGPlates</a></li>
-<li><a class="reference internal" href="#installing-python">Installing Python</a></li>
-<li><a class="reference internal" href="#using-the-correct-python-version">Using the correct Python version</a></li>
-<li><a class="reference internal" href="#miscellaneous-issues">Miscellaneous issues</a><ul>
-<li><a class="reference internal" href="#windows-runtime-library-error">Windows runtime library error</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#tutorial">Tutorial</a><ul>
-<li><a class="reference internal" href="#what-are-functions-and-classes">What are functions and classes ?</a><ul>
-<li><a class="reference internal" href="#functions">Functions</a></li>
-<li><a class="reference internal" href="#classes">Classes</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#introductory-pygplates-script">Introductory pyGPlates script</a><ul>
-<li><a class="reference internal" href="#source-code">Source code</a></li>
-<li><a class="reference internal" href="#setting-up-the-script">Setting up the script</a></li>
-<li><a class="reference internal" href="#running-the-script">Running the script</a></li>
-<li><a class="reference internal" href="#output-of-the-script">Output of the script</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pygplates_introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pygplates_sample_code.html" class="btn btn-neutral float-right" title="Sample code" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="pygplates_introduction.html"
-                        title="previous chapter">Introduction</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="pygplates_sample_code.html"
-                        title="next chapter">Sample code</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/pygplates_getting_started.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
+(C) 2004-2022 California Institute of Technology
+(C) 2007-2022 The Geological Survey of Norway
+.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="pygplates_sample_code.html" title="Sample code"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="pygplates_introduction.html" title="Introduction"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">pygplates 2.2.0.28 documentation</a> &#187;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright (C) 2003-2020 The University of Sydney, Australia
-(C) 2004-2020 California Institute of Technology
-(C) 2007-2020 The Geological Survey of Norway
-.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
-    </div>
-  </body>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
 </html>

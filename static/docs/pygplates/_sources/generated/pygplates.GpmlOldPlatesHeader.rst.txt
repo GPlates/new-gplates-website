@@ -1,4 +1,4 @@
-pygplates.GpmlOldPlatesHeader
+﻿pygplates.GpmlOldPlatesHeader
 =============================
 
 .. currentmodule:: pygplates

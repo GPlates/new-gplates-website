@@ -1,4 +1,4 @@
-pygplates.PolygonOnSphere
+﻿pygplates.PolygonOnSphere
 =========================
 
 .. currentmodule:: pygplates
@@ -19,7 +19,13 @@ pygplates.PolygonOnSphere
       ~PolygonOnSphere.get_arc_length
       ~PolygonOnSphere.get_area
       ~PolygonOnSphere.get_boundary_centroid
+      ~PolygonOnSphere.get_centroid
+      ~PolygonOnSphere.get_exterior_ring_points
+      ~PolygonOnSphere.get_exterior_ring_segments
       ~PolygonOnSphere.get_interior_centroid
+      ~PolygonOnSphere.get_interior_ring_points
+      ~PolygonOnSphere.get_interior_ring_segments
+      ~PolygonOnSphere.get_number_of_interior_rings
       ~PolygonOnSphere.get_orientation
       ~PolygonOnSphere.get_points
       ~PolygonOnSphere.get_segments

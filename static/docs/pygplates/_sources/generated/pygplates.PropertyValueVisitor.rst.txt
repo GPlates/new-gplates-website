@@ -1,4 +1,4 @@
-pygplates.PropertyValueVisitor
+﻿pygplates.PropertyValueVisitor
 ==============================
 
 .. currentmodule:: pygplates

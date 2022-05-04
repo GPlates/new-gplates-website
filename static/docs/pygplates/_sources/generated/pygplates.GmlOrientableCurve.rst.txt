@@ -1,4 +1,4 @@
-pygplates.GmlOrientableCurve
+﻿pygplates.GmlOrientableCurve
 ============================
 
 .. currentmodule:: pygplates

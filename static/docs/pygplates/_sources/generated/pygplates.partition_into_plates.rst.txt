@@ -1,4 +1,4 @@
-pygplates.partition\_into\_plates
+﻿pygplates.partition\_into\_plates
 =================================
 
 .. currentmodule:: pygplates

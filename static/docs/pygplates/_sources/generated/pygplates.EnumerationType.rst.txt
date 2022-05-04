@@ -1,4 +1,4 @@
-pygplates.EnumerationType
+﻿pygplates.EnumerationType
 =========================
 
 .. currentmodule:: pygplates

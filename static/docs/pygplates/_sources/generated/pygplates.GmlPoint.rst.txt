@@ -1,4 +1,4 @@
-pygplates.GmlPoint
+﻿pygplates.GmlPoint
 ==================
 
 .. currentmodule:: pygplates

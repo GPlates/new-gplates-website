@@ -1,4 +1,4 @@
-pygplates.ScalarType
+﻿pygplates.ScalarType
 ====================
 
 .. currentmodule:: pygplates
@@ -26,5 +26,14 @@ pygplates.ScalarType
    
 
    
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ScalarType.gpml_crustal_stretching_factor
+      ~ScalarType.gpml_crustal_thickness
+      ~ScalarType.gpml_crustal_thinning_factor
+      ~ScalarType.gpml_tectonic_subsidence
    
    

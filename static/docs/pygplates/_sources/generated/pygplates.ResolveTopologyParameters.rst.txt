@@ -1,0 +1,22 @@
+﻿pygplates.ResolveTopologyParameters
+===================================
+
+.. currentmodule:: pygplates
+
+.. autoclass:: ResolveTopologyParameters
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ResolveTopologyParameters.__init__
+   
+   
+
+   
+   
+   

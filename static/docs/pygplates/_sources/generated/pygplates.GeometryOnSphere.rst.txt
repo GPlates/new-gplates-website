@@ -1,4 +1,4 @@
-pygplates.GeometryOnSphere
+﻿pygplates.GeometryOnSphere
 ==========================
 
 .. currentmodule:: pygplates

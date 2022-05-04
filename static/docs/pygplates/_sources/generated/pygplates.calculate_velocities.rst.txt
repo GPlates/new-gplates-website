@@ -1,4 +1,4 @@
-pygplates.calculate\_velocities
+﻿pygplates.calculate\_velocities
 ===============================
 
 .. currentmodule:: pygplates

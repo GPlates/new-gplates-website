@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pygplates.ReconstructedGeometryTimeSpan &mdash; pygplates 0.36.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pygplates.TopologyPointLocation" href="pygplates.TopologyPointLocation.html" />
+    <link rel="prev" title="pygplates.TopologicalSnapshot" href="pygplates.TopologicalSnapshot.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pygplates
+          </a>
+              <div class="version">
+                0.36
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../pygplates_reference.html">Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#reconstruction">Reconstruction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../pygplates_reference.html#topology">Topology</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pygplates.TopologicalModel.html">pygplates.TopologicalModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.TopologicalSnapshot.html">pygplates.TopologicalSnapshot</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">pygplates.ReconstructedGeometryTimeSpan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.TopologyPointLocation.html">pygplates.TopologyPointLocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolveTopologyParameters.html">pygplates.ResolveTopologyParameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.resolve_topologies.html">pygplates.resolve_topologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolvedTopologicalLine.html">pygplates.ResolvedTopologicalLine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolvedTopologicalBoundary.html">pygplates.ResolvedTopologicalBoundary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolvedTopologicalNetwork.html">pygplates.ResolvedTopologicalNetwork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ReconstructionGeometry.html">pygplates.ReconstructionGeometry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolvedTopologicalSubSegment.html">pygplates.ResolvedTopologicalSubSegment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolvedTopologicalSection.html">pygplates.ResolvedTopologicalSection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates.ResolvedTopologicalSharedSubSegment.html">pygplates.ResolvedTopologicalSharedSubSegment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#velocity">Velocity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#rotation">Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#plate-partitioning">Plate Partitioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#file-i-o">File I/O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#feature">Feature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#feature-property">Feature property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#feature-property-value">Feature property value</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#geometry">Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#vector">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#string">String</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#utility">Utility</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pygplates</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../pygplates_reference.html">Reference</a> &raquo;</li>
+      <li>pygplates.ReconstructedGeometryTimeSpan</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/pygplates.ReconstructedGeometryTimeSpan.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pygplates-reconstructedgeometrytimespan">
+<h1>pygplates.ReconstructedGeometryTimeSpan<a class="headerlink" href="#pygplates-reconstructedgeometrytimespan" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pygplates.ReconstructedGeometryTimeSpan">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pygplates.</span></span><span class="sig-name descname"><span class="pre">ReconstructedGeometryTimeSpan</span></span><a class="headerlink" href="#pygplates.ReconstructedGeometryTimeSpan" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Boost.Python.instance</span></code></p>
+<p>A history of geometries reconstructed using topologies over geological time.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.29.</span></p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ReconstructedGeometryTimeSpan.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ReconstructedGeometryTimeSpan.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Raises an exception
+This class cannot be instantiated from Python</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.ReconstructedGeometryTimeSpan.__init__" title="pygplates.ReconstructedGeometryTimeSpan.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a></p></td>
+<td><p>Raises an exception This class cannot be instantiated from Python</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.ReconstructedGeometryTimeSpan.get_geometry_points" title="pygplates.ReconstructedGeometryTimeSpan.get_geometry_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_geometry_points</span></code></a>(reconstruction_time, ...)</p></td>
+<td><p>Returns geometry points at a specific reconstruction time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.ReconstructedGeometryTimeSpan.get_scalar_values" title="pygplates.ReconstructedGeometryTimeSpan.get_scalar_values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_scalar_values</span></code></a>(reconstruction_time, ...)</p></td>
+<td><p>Returns scalar values at a specific reconstruction time either for a single scalar type (as a <code class="docutils literal notranslate"><span class="pre">list</span></code>) or for all scalar types (as a <code class="docutils literal notranslate"><span class="pre">dict</span></code>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.ReconstructedGeometryTimeSpan.get_topology_point_locations" title="pygplates.ReconstructedGeometryTimeSpan.get_topology_point_locations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_topology_point_locations</span></code></a>(...)</p></td>
+<td><p>Returns the locations of geometry points in resolved topologies at a specific reconstruction time.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt class="sig sig-object py" id="pygplates.ReconstructedGeometryTimeSpan.DeactivatePoints">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DeactivatePoints</span></span><a class="headerlink" href="#pygplates.ReconstructedGeometryTimeSpan.DeactivatePoints" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Boost.Python.instance</span></code></p>
+<p>The base class interface for deactivating geometry points as they are reconstructed forward and/or backward in time.</p>
+<p>To create your own class that inherits this base class and overrides its <a class="reference internal" href="#pygplates.ReconstructedGeometryTimeSpan.DeactivatePoints.deactivate" title="pygplates.ReconstructedGeometryTimeSpan.DeactivatePoints.deactivate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">deactivate</span> <span class="pre">method</span></code></a> and then use that when <a class="reference internal" href="pygplates.TopologicalModel.html#pygplates.TopologicalModel.reconstruct_geometry" title="pygplates.TopologicalModel.reconstruct_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reconstructing</span> <span class="pre">a</span> <span class="pre">geometry</span> <span class="pre">using</span> <span class="pre">topologies</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyDeactivatePoints</span><span class="p">(</span><span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructedGeometryTimeSpan</span><span class="o">.</span><span class="n">DeactivatePoints</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">MyDeactivatePoints</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="c1"># Other initialisation you may want...</span>
+        <span class="o">...</span>
+    <span class="k">def</span> <span class="nf">deactivate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prev_point</span><span class="p">,</span> <span class="n">prev_location</span><span class="p">,</span> <span class="n">prev_time</span><span class="p">,</span> <span class="n">current_point</span><span class="p">,</span> <span class="n">current_location</span><span class="p">,</span> <span class="n">current_time</span><span class="p">):</span>
+        <span class="c1"># Implement your deactivation algorithm here...</span>
+        <span class="o">...</span>
+        <span class="k">return</span> <span class="o">...</span>
+
+<span class="c1"># Reconstruct points in &#39;geometry&#39; from 100Ma to present day using class MyDeactivatePoints to deactivate them (in this case subduct).</span>
+<span class="n">topological_model</span><span class="o">.</span><span class="n">reconstruct_geometry</span><span class="p">(</span><span class="n">geometry</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">deactivate_points</span><span class="o">=</span><span class="n">MyDeactivatePoints</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you create your own Python class that inherits this base class then you must call the base class <em>__init__</em> method otherwise you will get a <em>Boost.Python.ArgumentError</em> exception. Note that if you do not define an <em>__init__</em> method in your derived class then Python will call the base class <em>__init__</em> (so you don’t have to do anything). However if you do define <em>__init__</em> in your derived class then it must explicitly call the base class <em>__init__</em>.</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.31.</span></p>
+</div>
+<dl class="simple">
+<dt>__init__()</dt><dd><p>Default constructor - must be explicitly called by derived class.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ReconstructedGeometryTimeSpan.DeactivatePoints.deactivate">
+<span class="sig-name descname"><span class="pre">deactivate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prev_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prev_location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse_reconstruct</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ReconstructedGeometryTimeSpan.DeactivatePoints.deactivate" title="Permalink to this definition"></a></dt>
+<dd><p>Return true if the point should be deactivated.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>prev_point</strong> (<a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>): the previous position of the point</p></li>
+<li><p><strong>prev_location</strong> (<a class="reference internal" href="pygplates.TopologyPointLocation.html#pygplates.TopologyPointLocation" title="pygplates.TopologyPointLocation"><code class="xref py py-class docutils literal notranslate"><span class="pre">TopologyPointLocation</span></code></a>): the previous location of the point in the topologies</p></li>
+<li><p><strong>prev_time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>): the time associated with the previous position of the point</p></li>
+<li><p><strong>current_point</strong> (<a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>): the current position of the point</p></li>
+<li><p><strong>current_location</strong> (<a class="reference internal" href="pygplates.TopologyPointLocation.html#pygplates.TopologyPointLocation" title="pygplates.TopologyPointLocation"><code class="xref py py-class docutils literal notranslate"><span class="pre">TopologyPointLocation</span></code></a>): the current location of the point in the topologies</p></li>
+<li><p><strong>current_time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>): the time associated with the current position of the point</p></li>
+<li><p><strong>Return type</strong>: bool</p></li>
+</ul>
+<p>The above parameters represent the previous and current position/location-in-topologies/time of a single point in the <a class="reference internal" href="pygplates.TopologicalModel.html#pygplates.TopologicalModel.reconstruct_geometry" title="pygplates.TopologicalModel.reconstruct_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">geometry</span> <span class="pre">being</span> <span class="pre">reconstructed</span></code></a>. If you return <code class="docutils literal notranslate"><span class="pre">True</span></code> then the point will be deactivated and will not have a position at the <em>next</em> time (where <code class="docutils literal notranslate"><span class="pre">next_time</span> <span class="pre">=</span> <span class="pre">current_time</span> <span class="pre">+</span> <span class="pre">(current_time</span> <span class="pre">-</span> <span class="pre">prev_time)</span></code>).</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the current time is <em>younger</em> than the previous time (<code class="docutils literal notranslate"><span class="pre">current_time</span> <span class="pre">&lt;</span> <span class="pre">prev_time</span></code>) then we are reconstructing <em>forward</em> in time and the next time will be <em>younger</em> than the current time (<code class="docutils literal notranslate"><span class="pre">next_time</span> <span class="pre">&lt;</span> <span class="pre">current_time</span></code>). Conversely, if the current time is <em>older</em> than the previous time (<code class="docutils literal notranslate"><span class="pre">current_time</span> <span class="pre">&gt;</span> <span class="pre">prev_time</span></code>) then we are reconstructing <em>backward</em> in time and the next time will be <em>older</em> than the current time (<code class="docutils literal notranslate"><span class="pre">next_time</span> <span class="pre">&gt;</span> <span class="pre">current_time</span></code>).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function is called for each point that is reconstructed using <a class="reference internal" href="pygplates.TopologicalModel.html#pygplates.TopologicalModel.reconstruct_geometry" title="pygplates.TopologicalModel.reconstruct_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TopologicalModel.reconstruct_geometry()</span></code></a> at each time step.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function might be inadvertently documented twice.</p>
+</div>
+<dl>
+<dt>deactivate(prev_point, prev_location, current_point, current_location, current_time, reverse_reconstruct)</dt><dd><p>Return true if the point should be deactivated.</p>
+<ul class="simple">
+<li><p><strong>prev_point</strong> (<a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>): the previous position of the point</p></li>
+<li><p><strong>prev_location</strong> (<a class="reference internal" href="pygplates.TopologyPointLocation.html#pygplates.TopologyPointLocation" title="pygplates.TopologyPointLocation"><code class="xref py py-class docutils literal notranslate"><span class="pre">TopologyPointLocation</span></code></a>): the previous location of the point in the topologies</p></li>
+<li><p><strong>prev_time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>): the time associated with the previous position of the point</p></li>
+<li><p><strong>current_point</strong> (<a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>): the current position of the point</p></li>
+<li><p><strong>current_location</strong> (<a class="reference internal" href="pygplates.TopologyPointLocation.html#pygplates.TopologyPointLocation" title="pygplates.TopologyPointLocation"><code class="xref py py-class docutils literal notranslate"><span class="pre">TopologyPointLocation</span></code></a>): the current location of the point in the topologies</p></li>
+<li><p><strong>current_time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>): the time associated with the current position of the point</p></li>
+<li><p><strong>Return type</strong>: bool</p></li>
+</ul>
+<p>The above parameters represent the previous and current position/location-in-topologies/time of a single point in the <a class="reference internal" href="pygplates.TopologicalModel.html#pygplates.TopologicalModel.reconstruct_geometry" title="pygplates.TopologicalModel.reconstruct_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">geometry</span> <span class="pre">being</span> <span class="pre">reconstructed</span></code></a>. If you return <code class="docutils literal notranslate"><span class="pre">True</span></code> then the point will be deactivated and will not have a position at the <em>next</em> time (where <code class="docutils literal notranslate"><span class="pre">next_time</span> <span class="pre">=</span> <span class="pre">current_time</span> <span class="pre">+</span> <span class="pre">(current_time</span> <span class="pre">-</span> <span class="pre">prev_time)</span></code>).</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the current time is <em>younger</em> than the previous time (<code class="docutils literal notranslate"><span class="pre">current_time</span> <span class="pre">&lt;</span> <span class="pre">prev_time</span></code>) then we are reconstructing <em>forward</em> in time and the next time will be <em>younger</em> than the current time (<code class="docutils literal notranslate"><span class="pre">next_time</span> <span class="pre">&lt;</span> <span class="pre">current_time</span></code>). Conversely, if the current time is <em>older</em> than the previous time (<code class="docutils literal notranslate"><span class="pre">current_time</span> <span class="pre">&gt;</span> <span class="pre">prev_time</span></code>) then we are reconstructing <em>backward</em> in time and the next time will be <em>older</em> than the current time (<code class="docutils literal notranslate"><span class="pre">next_time</span> <span class="pre">&gt;</span> <span class="pre">current_time</span></code>).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function is called for each point that is reconstructed using <a class="reference internal" href="pygplates.TopologicalModel.html#pygplates.TopologicalModel.reconstruct_geometry" title="pygplates.TopologicalModel.reconstruct_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TopologicalModel.reconstruct_geometry()</span></code></a> at each time step.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function might be inadvertently documented twice.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pygplates.ReconstructedGeometryTimeSpan.DefaultDeactivatePoints">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DefaultDeactivatePoints</span></span><a class="headerlink" href="#pygplates.ReconstructedGeometryTimeSpan.DefaultDeactivatePoints" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pygplates.ReconstructedGeometryTimeSpan.DeactivatePoints" title="pygplates.DeactivatePoints"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.DeactivatePoints</span></code></a></p>
+<p>The default algorithm for deactivating geometry points as they are reconstructed forward and/or backward in time.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.31.</span></p>
+</div>
+<dl class="simple">
+<dt>__init__([threshold_velocity_delta=0.7], [threshold_distance_to_boundary=10], [deactivate_points_that_fall_outside_a_network=False])</dt><dd><p>Create default algorithm for deactivating points using the specified parameters.</p>
+<ul class="simple">
+<li><p><strong>threshold_velocity_delta</strong> (float): A point that transitions from one plate/network to another can disappear if the change in velocity exceeds this threshold (in units of cms/yr). Defaults to <code class="docutils literal notranslate"><span class="pre">0.7</span></code> cms/yr.</p></li>
+<li><p><strong>threshold_distance_to_boundary</strong> (float): Only those transitioning points exceeding the <em>threshold velocity delta</em> <strong>and</strong> that are close enough to a plate/network boundary can disappear. The distance is proportional to the relative velocity (change in velocity), plus a constant offset based on the <em>threshold distance to boundary</em> (in units of kms/myr) to account for plate boundaries that change shape significantly from one time step to the next (note that some boundaries are meant to do this and others are a result of digitisation). The actual distance threshold used is <code class="docutils literal notranslate"><span class="pre">(threshold_distance_to_boundary</span> <span class="pre">+</span> <span class="pre">relative_velocity)</span> <span class="pre">*</span> <span class="pre">time_increment</span></code>. Defaults to <code class="docutils literal notranslate"><span class="pre">10</span></code> kms/myr.</p></li>
+<li><p><strong>deactivate_points_that_fall_outside_a_network</strong> (bool): Whether to have points inside a deforming network disappear as soon as they fall outside all deforming networks. This is useful for initial crustal thickness points that have been generated inside a deforming network and where subsequently deformed points should be limited to the deformed network regions. In this case sudden large changes to the deforming network boundary can progressively exclude points over time. However in the case where the topologies (deforming networks and rigid plates) have global coverage this option should generally be left disabled so that points falling outside deforming networks can then be reconstructed using rigid plates. And these rigidly reconstructed points may even re-enter a subsequent deforming network. Defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is the default algorithm used internally.</p>
+</div>
+<p>To use the default deactivation algorithm (this class) but with some non-default parameters, and then use that when <a class="reference internal" href="pygplates.TopologicalModel.html#pygplates.TopologicalModel.reconstruct_geometry" title="pygplates.TopologicalModel.reconstruct_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reconstructing</span> <span class="pre">a</span> <span class="pre">geometry</span> <span class="pre">using</span> <span class="pre">topologies</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Reconstruct points in &#39;geometry&#39; from 100Ma to present day using this class to deactivate them (in this case subduct).</span>
+<span class="n">topological_model</span><span class="o">.</span><span class="n">reconstruct_geometry</span><span class="p">(</span>
+    <span class="n">geometry</span><span class="p">,</span>
+    <span class="mi">100</span><span class="p">,</span>
+    <span class="n">deactivate_points</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructedGeometryTimeSpan</span><span class="o">.</span><span class="n">DefaultDeactivatePoints</span><span class="p">(</span>
+        <span class="c1"># Choose our own parameters that are different than the defaults.</span>
+        <span class="n">threshold_velocity_delta</span> <span class="o">=</span> <span class="mf">0.9</span><span class="p">,</span> <span class="c1"># cms/yr</span>
+        <span class="n">threshold_distance_to_boundary</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="c1"># kms/myr</span>
+        <span class="n">deactivate_points_that_fall_outside_a_network</span> <span class="o">=</span> <span class="kc">True</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ReconstructedGeometryTimeSpan.get_geometry_points">
+<span class="sig-name descname"><span class="pre">get_geometry_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reconstruction_time</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">return_inactive_points=False</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ReconstructedGeometryTimeSpan.get_geometry_points" title="Permalink to this definition"></a></dt>
+<dd><p>Returns geometry points at a specific reconstruction time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reconstruction_time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>) – Time to extract reconstructed geometry points. Can be any non-negative time (doesn’t have to be an integer and can be outside the time span specified in <a class="reference internal" href="pygplates.TopologicalModel.html#pygplates.TopologicalModel.reconstruct_geometry" title="pygplates.TopologicalModel.reconstruct_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TopologicalModel.reconstruct_geometry()</span></code></a>.</p></li>
+<li><p><strong>return_inactive_points</strong> – Whether to return inactive geometry points. If <code class="docutils literal notranslate"><span class="pre">True</span></code> then each inactive point stores <code class="docutils literal notranslate"><span class="pre">None</span></code> instead of a point and hence the size of each <code class="docutils literal notranslate"><span class="pre">list</span></code> of points is equal to the number of points in the initial geometry (which are all initially active). By default only active points are returned.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no points are active at <em>reconstruction_time</em></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p>ValueError if <em>reconstruction_time</em> is <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant.is_distant_past" title="pygplates.GeoTimeInstant.is_distant_past"><code class="xref py py-meth docutils literal notranslate"><span class="pre">distant</span> <span class="pre">past</span></code></a> or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant.is_distant_future" title="pygplates.GeoTimeInstant.is_distant_future"><code class="xref py py-meth docutils literal notranslate"><span class="pre">distant</span> <span class="pre">future</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ReconstructedGeometryTimeSpan.get_scalar_values">
+<span class="sig-name descname"><span class="pre">get_scalar_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reconstruction_time</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">scalar_type</span></span></em><span class="optional">]</span><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">return_inactive_points=False</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ReconstructedGeometryTimeSpan.get_scalar_values" title="Permalink to this definition"></a></dt>
+<dd><p>Returns scalar values at a specific reconstruction time either for a single scalar type (as a <code class="docutils literal notranslate"><span class="pre">list</span></code>) or for all scalar types (as a <code class="docutils literal notranslate"><span class="pre">dict</span></code>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reconstruction_time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>) – Time to extract reconstructed scalar values. Can be any non-negative time (doesn’t have to be an integer and can be outside the time span specified in <a class="reference internal" href="pygplates.TopologicalModel.html#pygplates.TopologicalModel.reconstruct_geometry" title="pygplates.TopologicalModel.reconstruct_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TopologicalModel.reconstruct_geometry()</span></code></a>.</p></li>
+<li><p><strong>scalar_type</strong> (<a class="reference internal" href="pygplates.ScalarType.html#pygplates.ScalarType" title="pygplates.ScalarType"><code class="xref py py-class docutils literal notranslate"><span class="pre">ScalarType</span></code></a>) – Optional scalar type to retrieve scalar values for (returned as a <code class="docutils literal notranslate"><span class="pre">list</span></code>). If not specified then all scalar values for all scalar types are returned (returned as a <code class="docutils literal notranslate"><span class="pre">dict</span></code>).</p></li>
+<li><p><strong>return_inactive_points</strong> – Whether to return scalars associated with inactive points. If <code class="docutils literal notranslate"><span class="pre">True</span></code> then each scalar corresponding to an inactive point stores <code class="docutils literal notranslate"><span class="pre">None</span></code> instead of a scalar and hence the size of each <code class="docutils literal notranslate"><span class="pre">list</span></code> of scalars is equal to the number of points (and scalars) in the initial geometry (which are all initially active). By default only scalars for active points are returned.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>If <em>scalar_type</em> is specified then a <code class="docutils literal notranslate"><span class="pre">list</span></code> of scalar values associated with <em>scalar_type</em> at <em>reconstruction_time</em> (or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no matching scalar type), otherwise a <code class="docutils literal notranslate"><span class="pre">dict</span></code> mapping available scalar types with their associated scalar values <code class="docutils literal notranslate"><span class="pre">list</span></code> at <em>reconstruction_time</em> (or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no scalar types are available). Returns <code class="docutils literal notranslate"><span class="pre">None</span></code> if no points are active at <em>reconstruction_time</em>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">dict</span></code> or <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p>ValueError if <em>reconstruction_time</em> is <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant.is_distant_past" title="pygplates.GeoTimeInstant.is_distant_past"><code class="xref py py-meth docutils literal notranslate"><span class="pre">distant</span> <span class="pre">past</span></code></a> or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant.is_distant_future" title="pygplates.GeoTimeInstant.is_distant_future"><code class="xref py py-meth docutils literal notranslate"><span class="pre">distant</span> <span class="pre">future</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.ReconstructedGeometryTimeSpan.get_topology_point_locations">
+<span class="sig-name descname"><span class="pre">get_topology_point_locations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reconstruction_time</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">return_inactive_points=False</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.ReconstructedGeometryTimeSpan.get_topology_point_locations" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the locations of geometry points in resolved topologies at a specific reconstruction time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reconstruction_time</strong> (float or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant" title="pygplates.GeoTimeInstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoTimeInstant</span></code></a>) – Time to extract topology point locations. Can be any non-negative time (doesn’t have to be an integer and can be outside the time span specified in <a class="reference internal" href="pygplates.TopologicalModel.html#pygplates.TopologicalModel.reconstruct_geometry" title="pygplates.TopologicalModel.reconstruct_geometry"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TopologicalModel.reconstruct_geometry()</span></code></a>.</p></li>
+<li><p><strong>return_inactive_points</strong> – Whether to return topology locations associated with inactive points. If <code class="docutils literal notranslate"><span class="pre">True</span></code> then each topology location corresponding to an inactive point stores <code class="docutils literal notranslate"><span class="pre">None</span></code> instead of a topology location and hence the size of each <code class="docutils literal notranslate"><span class="pre">list</span></code> of topology locations is equal to the number of points in the initial geometry (which are all initially active). By default only topology locations for active points are returned.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of <a class="reference internal" href="pygplates.TopologyPointLocation.html#pygplates.TopologyPointLocation" title="pygplates.TopologyPointLocation"><code class="xref py py-class docutils literal notranslate"><span class="pre">TopologyPointLocation</span></code></a>, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no points are active at <em>reconstruction_time</em></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p>ValueError if <em>reconstruction_time</em> is <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant.is_distant_past" title="pygplates.GeoTimeInstant.is_distant_past"><code class="xref py py-meth docutils literal notranslate"><span class="pre">distant</span> <span class="pre">past</span></code></a> or <a class="reference internal" href="pygplates.GeoTimeInstant.html#pygplates.GeoTimeInstant.is_distant_future" title="pygplates.GeoTimeInstant.is_distant_future"><code class="xref py py-meth docutils literal notranslate"><span class="pre">distant</span> <span class="pre">future</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pygplates.TopologicalSnapshot.html" class="btn btn-neutral float-left" title="pygplates.TopologicalSnapshot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pygplates.TopologyPointLocation.html" class="btn btn-neutral float-right" title="pygplates.TopologyPointLocation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
+(C) 2004-2022 California Institute of Technology
+(C) 2007-2022 The Geological Survey of Norway
+.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

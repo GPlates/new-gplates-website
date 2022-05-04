@@ -1,4 +1,4 @@
-pygplates.GpmlPiecewiseAggregation
+﻿pygplates.GpmlPiecewiseAggregation
 ==================================
 
 .. currentmodule:: pygplates

@@ -1,4 +1,4 @@
-pygplates.GpmlConstantValue
+﻿pygplates.GpmlConstantValue
 ===========================
 
 .. currentmodule:: pygplates
