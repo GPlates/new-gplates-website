@@ -38,6 +38,9 @@ Download PyGPlates 0.36 from the [Download](/download) page.
             * Or override with [your own algorithm](/docs/pygplates/generated/pygplates.reconstructedgeometrytimespan#pygplates.ReconstructedGeometryTimeSpan.DeactivatePoints).
         * Control [strain rate clamping](/docs/pygplates/generated/pygplates.resolvetopologyparameters) to avoid excessive crustal stretching.
             * Similar to clamping in brown "`Resolved Topological Networks`" layers in GPlates.
+* File I/O:
+    * GeoJSON and GeoPackage supported when reading/writing [feature collections](/docs/pygplates/generated/pygplates.featurecollection).
+    * GeoJSON supported when exporting [reconstructed](/docs/pygplates/generated/pygplates.reconstruct.html) and [resolved](/docs/pygplates/generated/pygplates.topologicalsnapshot#pygplates.TopologicalSnapshot.export_resolved_topologies) geometries.
 * New ways to create a rotation between two points, or between two lines:
     * Search for "`New in version 0.29`" in [FiniteRotation](/docs/pygplates/generated/pygplates.finiterotation).
 * Interior holes supported in [polygons](/docs/pygplates/generated/pygplates.polygononsphere) (including [dateline-wrapped polygons](/docs/pygplates/generated/pygplates.datelinewrapper#pygplates.DateLineWrapper.wrap)).
@@ -45,6 +48,7 @@ Download PyGPlates 0.36 from the [Download](/download) page.
     * Avoids having to first test if geometry is a point, multi-point, polyline or polygon.
 * Support all NumPy integer and float scalar types as arguments in pyGPlates:
     * For example, a pyGPlates function accepting a `float` will also accept a `numpy.float64`.
+* Bug fixes.
 
 #### Coming soon:-
 
