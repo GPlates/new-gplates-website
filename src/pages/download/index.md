@@ -29,20 +29,20 @@ The current stable release of GPlates is [GPlates 2.3](/news/2021-09-08-GPlates-
     </table>
 </div><br>
 
-The current beta release of pyGPlates is [PyGPlates beta revision 28](/news/2020-08-18-PyGPlates-beta-revision-28-released/), released in August 2020...
+The current beta release of pyGPlates is [pyGPlates 0.36](/news/2022-05-06-PyGPlates-0-36-released/), released in May 2022...
 
 <div class="download-box">
     <table>
     <tbody>
         <tr>
             <td class="icon">
-                <a href="https://sourceforge.net/projects/gplates/files/pygplates/beta-revision-28/">
+                <a href="https://www.earthbyte.org/download-pygplates-0-36/">
                     <img src="./img/GPlates-tango-actions-go-down-48.png" alt="Download pyGPlates">
                 </a>
             </td>
             <td class="content" >
-                <a href="https://sourceforge.net/projects/gplates/files/pygplates/beta-revision-28/" title="pyGPlates beta revision 28 packages on SourceForge">
-                <strong>Download pyGPlates beta revision 28</strong>
+                <a href="https://www.earthbyte.org/download-pygplates-0-36/" title="PyGPlates 0.36 packages">
+                <strong>Download pyGPlates 0.36</strong>
                 </a>
                 <p>(the latest “beta” release)</p>
             </td>
@@ -51,38 +51,62 @@ The current beta release of pyGPlates is [PyGPlates beta revision 28](/news/2020
     </table>
 </div><br>
 
-GPlates runs on __Windows__, __macOS__ and __Linux__.
+GPlates and pyGPlates run on __Windows__, __macOS__ and __Linux__.
 
-#### GPlates binary installers
+#### GPlates binary packages
 
-We provide ready-to-use binary installers for Windows, macOS and Ubuntu, enabling a GPlates user to download, install and use the latest version of GPlates immediately. The installers also include the GPlates-compatible geodata described below.
+Ready-to-use binary packages are available to install GPlates on Windows, macOS and Ubuntu. These also include the GPlates-compatible geodata described below.
 
-* For __Windows__, we provide an `.exe` __installer__ for a 64-bit version of GPlates on a 64-bit version of Windows 7/8/8.1/10. We also provide a `.zip` file for users who wish to use GPlates without installing it.
+* For __Windows__, we provide an `.exe` __installer__ for a 64-bit version of GPlates on a 64-bit version of Windows. We also provide a `.zip` file for users who wish to use GPlates without installing it.
 * For __macOS__, we provide a `.dmg` __disk image__ containing a 64-bit version of GPlates for __High Sierra__ (10.13) or above.
-* For __Ubuntu__, we provide `.deb` __packages__ for 64-bit architectures. If you are using a different Linux distribution please use the source code package instead.
+    * Note that this works on both __Intel__ (x86_64) and __M1__ (arm64).
+* For __Ubuntu__, we provide `.deb` __packages__ for 64-bit Ubuntu versions (that are currently under support).
+    * If you are using a different Linux distribution please use the source code package instead.
 
-#### GPlates source code
+Installation instructions for GPlates can be found on the [download page](https://www.earthbyte.org/download-gplates-2-3/).
 
-We provide source-code packages for Windows (in a zip-file) and Linux and macOS (in a tarball). The source-code packages do not contain geodata (described below) which will need to be downloaded separately. To compile GPlates from source, you will require:
+#### PyGPlates binary packages
+
+Ready-to-use binary packages are available to install pyGPlates on Windows, macOS and Ubuntu. These do __not__ include the GPlates-compatible geodata.
+
+* For __Windows__, we provide a `.zip` file for each Python version (3.7, 3.8, 3.9 and 3.10).
+    * Containing 64-bit pyGPlates for use on a 64-bit version of Windows.
+* For __macOS__ on __Intel__ (x86_64), we provide a `.zip` file for each Python version (3.7, 3.8, 3.9 and 3.10).
+    * Containing 64-bit pyGPlates for use on an __Intel__ mac running macOS __Catalina__ (10.15) or above.
+* For __macOS__ on __M1__ (arm64), we provide a `.zip` file for each Python version (3.7, 3.8, 3.9 and 3.10).
+    * Containing 64-bit pyGPlates for use on an __M1__ mac running macOS __Big Sur__ (11) or above.
+* For __Ubuntu__, we provide a `.deb` __package__ for each 64-bit Ubuntu version (that is currently under support).
+    * The Ubuntu version determines the Python version (eg, Ubuntu Jammy 22.04 uses Python 3.10).
+    * If you are using a different Linux distribution please use the source code package instead.
+
+Installation instructions for pyGPlates can be found in the [pyGPlates documentation](https://www.gplates.org/docs/pygplates/pygplates_getting_started.html).
+
+#### GPlates and pyGPlates source code
+
+We provide source-code packages for Windows (in a zip-file), and Linux and macOS (in a tarball).
+The source-code packages do not contain geodata (described below) which will need to be downloaded separately.
+
+To compile GPlates (or pyGPlates) from source, you will require:
 
 * [__Boost__](https://www.boost.org/) 1.35 or above
 * [__CGAL__](https://www.cgal.org/) 4.7 or above (preferably 4.12 or above)
-* [__CMake__](https://cmake.org/) 3.5 or above
+* [__CMake__](https://cmake.org/) 3.10 or above
 * [__GDAL__](https://gdal.org/) 1.3.2 or above (preferably 2 or above)
 * [__GLEW__](http://glew.sourceforge.net/)
-* OpenGL
 * [__PROJ__](https://proj.org/) 4.6 or above (preferably 6 or above)
-* [__Python__](http://python.org/) 3.5 or above (or 2.7)
+* [__Python__](http://python.org/) 3.7 or above (or 2.7)
 * [__Qt__](https://www.qt.io/) 5.6 or above
 * [__Qwt__](https://qwt.sourceforge.io/) 6.0.1 or above (preferably 6.1 or above)
 
-Instructions on how to compile GPlates from source may be found in the GPlates source-code releases, in the files:
+Instructions on how to compile GPlates (or pyGPlates) from source may be found in the source-code releases, in the files:
 
 * `DEPS.Linux` and `BUILD.Linux` (on Linux)
 * `DEPS.OSX` and `BUILD.OSX` (on macOS)
 * `DEPS.Windows` and `BUILD.Windows` (on Windows)
 
-GPlates is [free software](https://www.gnu.org/philosophy/free-sw.html) (also known as [open-source](https://opensource.org/docs/definition.php) software), licensed for distribution under the GNU [General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) (GPL) version 2.
+Please note that you should not attempt to compile GPlates from the pyGPlates source code. Or attempt to compile pyGPlates from the GPlates source code.
+
+GPlates (and pyGPlates) is [free software](https://www.gnu.org/philosophy/free-sw.html) (also known as [open-source](https://opensource.org/docs/definition.php) software), licensed for distribution under the GNU [General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) (GPL) version 2.
 
 ### Download GPlates-compatible Data
 
