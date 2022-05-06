@@ -207,7 +207,7 @@ const IndexPageTemplate = ({
               />
             </div>
 
-            <div style={{marginBottom: '2rem'}}>
+            <div style={{marginBottom: '1rem', marginTop: '1rem',}}>
               <a href="https://www.earthbyte.org/download-gplates-2-3/"
                 style={{
                     color: '#333',
@@ -216,16 +216,33 @@ const IndexPageTemplate = ({
                     fontSize: 'large'
                 }}
               >
-                Latest release v2.3
+                <span className="icon" style={{verticalAlign: 'bottom', color: 'green'}}> 
+                <FontAwesomeIcon icon={faDownload} />
+              </span>
+                Latest GPlates release v2.3
+              </a>
+              
+            </div>
+
+            <div style={{marginBottom: '1rem'}}>
+            
+              <a href="https://www.earthbyte.org/download-pygplates-0-36/"
+                style={{
+                    color: '#333',
+                    textDecoration: 'underline',
+                    fontStyle: 'italic',
+                    fontSize: 'large'
+                }}
+              >
+              <span className="icon" style={{verticalAlign: 'bottom', color: 'green'}}> 
+                <FontAwesomeIcon icon={faDownload} />
+              </span>
+               Latest pyGPlates release v0.36
               </a>
               
             </div>
           
-            <div>
-              <a className="button is-success is-rounded gp-download-btn" href="https://www.earthbyte.org/download-gplates-2-3/">
-              <span className="icon"> <FontAwesomeIcon icon={faDownload} /></span> <span>Download Now</span>
-              </a>
-            </div>
+            
           </div>
           <div className="column is-5" style={{  }}>
             <div style={{ maxWidth:'600px',margin:'auto' }}>
