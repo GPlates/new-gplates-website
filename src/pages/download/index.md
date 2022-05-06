@@ -79,7 +79,7 @@ Ready-to-use binary packages are available to install pyGPlates on Windows, macO
     * The Ubuntu version determines the Python version (eg, Ubuntu Jammy 22.04 uses Python 3.10).
     * If you are using a different Linux distribution please use the source code package instead.
 
-Installation instructions for pyGPlates can be found in the [pyGPlates documentation](https://www.gplates.org/docs/pygplates/pygplates_getting_started.html).
+Installation instructions for pyGPlates can be found in the [pyGPlates documentation](/docs/pygplates/pygplates_getting_started.html).
 
 #### GPlates and pyGPlates source code
 

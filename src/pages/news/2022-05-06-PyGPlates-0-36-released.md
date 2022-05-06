@@ -1,7 +1,7 @@
 ---
 templateKey: 'news'
 title: 'PyGPlates 0.36 released'
-date: 2022-05-05T15:04:10.000Z
+date: 2022-05-06T15:04:10.000Z
 featuredpost: false
 featuredimage: ../../img/pygplates_0-36_doc_contents.png
 description: >-
