@@ -130,4 +130,4 @@ You may download GPlates logo in SVG format. Click [here](https://www.earthbyte.
 
 ---
 
-Click [here](https://sourceforge.net/projects/gplates/files/gplates/stats/map?dates=2003-02-20+to+2118-05-24) to see the detailed GPlates download statistics on sourceforge.net.
+Click [here](https://earthbyte.org/gplates-download-stats/index.php) to see the GPlates download statistics.
