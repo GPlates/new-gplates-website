@@ -59,7 +59,7 @@ Ready-to-use binary packages are available to install GPlates on Windows, macOS 
 
 * For __Windows__, we provide an `.exe` __installer__ for a 64-bit version of GPlates on a 64-bit version of Windows. We also provide a `.zip` file for users who wish to use GPlates without installing it.
 * For __macOS__, we provide a `.dmg` __disk image__ containing a 64-bit version of GPlates for __High Sierra__ (10.13) or above.
-    * Note that this works on both __Intel__ (x86_64) and __M1__ (arm64).
+    * Note that this works on both __Intel__ (x86_64) and __Apple Silicon__ (arm64).
 * For __Ubuntu__, we provide `.deb` __packages__ for 64-bit Ubuntu versions (that are currently under support).
     * If you are using a different Linux distribution please use the source code package instead.
 
@@ -72,10 +72,11 @@ Ready-to-use binary packages are available to install pyGPlates on Windows, macO
 * For __Windows__, we provide a `.zip` file for each Python version (3.7, 3.8, 3.9 and 3.10).
     * Containing 64-bit pyGPlates for use on a 64-bit version of Windows.
 * For __macOS__ on __Intel__ (x86_64), we provide a `.zip` file for each Python version (3.7, 3.8, 3.9 and 3.10).
-    * Containing 64-bit pyGPlates for use on an __Intel__ mac running macOS __Catalina__ (10.15) or above.
-* For __macOS__ on __M1__ (arm64), we provide a `.zip` file for each Python version (3.7, 3.8, 3.9 and 3.10).
-    * Containing 64-bit pyGPlates for use on an __M1__ mac running macOS __Big Sur__ (11) or above.
-* For __Ubuntu__, we provide a `.deb` __package__ for each 64-bit Ubuntu version (that is currently under support).
+    * Containing 64-bit pyGPlates for use on an __Intel__ Mac running macOS __Catalina__ (10.15) or above.
+* For __macOS__ on __Apple Silicon__ (arm64), we provide a `.zip` file for each Python version (3.7, 3.8, 3.9 and 3.10).
+    * Containing 64-bit pyGPlates for use on an __Apple Silicon__ Mac running macOS __Big Sur__ (11) or above.
+* For __Ubuntu__ on __Intel__ (amd64) and __ARM__ (arm64), we provide a `.deb` __package__ for each 64-bit Ubuntu version.
+    * Packages are provided for Ubuntu versions under [standard](https://en.wikipedia.org/wiki/Ubuntu_version_history#Table_of_versions) support.
     * The Ubuntu version determines the Python version (eg, Ubuntu Jammy 22.04 uses Python 3.10).
     * If you are using a different Linux distribution please use the source code package instead.
 
