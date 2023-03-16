@@ -10,6 +10,8 @@ title: GPlates Publications
 
 _This web page was created by a Python script automatically using the data retrieved from [Google Scholar](https://scholar.google.com.au/). Your publications are listed here because we believe you have used GPlates/pyGPlates in your publications directly or indirectly(such as GPlates being used in your references). If you believe that any of the papers has been listed here mistakenly, you may [contact us](https://www.earthbyte.org/contact-us-3/)._
 
+![](images/gplates-word-cloud.png)
+
 <span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2023"></span>
 
 <strong id="2023">2023(74)</strong>
