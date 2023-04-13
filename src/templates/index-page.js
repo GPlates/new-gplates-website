@@ -255,6 +255,25 @@ const IndexPageTemplate = ({
                 Latest pyGPlates release v0.36
               </a>
             </div>
+            <div style={{ marginBottom: "1rem" }}>
+              <a
+                href="https://github.com/GPlates/gplately"
+                style={{
+                  color: "#333",
+                  textDecoration: "underline",
+                  fontStyle: "italic",
+                  fontSize: "large",
+                }}
+              >
+                <span
+                  className="icon"
+                  style={{ verticalAlign: "bottom", color: "green" }}
+                >
+                  <FontAwesomeIcon icon={faDownload} />
+                </span>
+                Latest GPlately release v0.4
+              </a>
+            </div>
           </div>
           <div className="column is-5" style={{}}>
             <div style={{ maxWidth: "600px", margin: "auto" }}>

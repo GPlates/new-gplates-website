@@ -53,6 +53,26 @@ The current beta release of pyGPlates is [pyGPlates 0.36](/news/2022-05-06-PyGPl
 
 GPlates and pyGPlates run on __Windows__, __macOS__ and __Linux__.
 
+<div class="download-box">
+    <table>
+    <tbody>
+        <tr>
+            <td class="icon">
+                <a href="https://github.com/GPlates/gplately">
+                    <img src="./img/GPlates-tango-actions-go-down-48.png" alt="Download GPlately">
+                </a>
+            </td>
+            <td class="content" >
+                <a href="https://github.com/GPlates/gplately" title="PyGPlates 0.36 packages">
+                <strong>Download GPlately 0.4</strong>
+                </a>
+                <p>(the latest “beta” release)</p>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div><br>
+
 #### GPlates binary packages
 
 Ready-to-use binary packages are available to install GPlates on Windows, macOS and Ubuntu. These also include the GPlates-compatible geodata described below.
@@ -108,6 +128,64 @@ Instructions on how to compile GPlates (or pyGPlates) from source may be found i
 Please note that you should not attempt to compile GPlates from the pyGPlates source code. Or attempt to compile pyGPlates from the GPlates source code.
 
 GPlates (and pyGPlates) is [free software](https://www.gnu.org/philosophy/free-sw.html) (also known as [open-source](https://opensource.org/docs/definition.php) software), licensed for distribution under the GNU [General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) (GPL) version 2.
+
+#### GPlately installation
+
+**1. Using conda (recommended)**
+
+You can install the latest stable public release of `GPlately` and all of its dependencies using conda.
+This is the preferred method to install `GPlately` which downloads binaries from the conda-forge channel.
+
+```sh
+conda install -c conda-forge gplately
+```
+
+**Creating a new conda environment**
+
+We recommend creating a new conda environment inside which to install `GPlately`. This avoids any potential conflicts in your base Python environment. In the example below we create a new environment called "`my-env`":
+
+```sh
+conda create -n my-env
+conda activate my-env
+conda install -c conda-forge gplately
+```
+
+`my-env` needs to be activated whenever you use `GPlately`: i.e. `conda activate my-env`.
+
+**2. Using pip**
+
+Alternatively, you can install the latest stable public release of `GPlately` using the pip package manager.
+
+```sh
+pip install gplately
+```
+or from this GitHub repository:
+
+```sh
+pip install git+https://github.com/GPlates/gplately.git 
+```
+
+**Pull from repository**
+
+**First-time installation:** To install the latest version of GPlately from a specific repository branch (e.g. `master`), copy the following commands into your terminal:
+
+```sh
+cd /path/to/desired/directory #Change your command directory to where you'd like to clone GPlately
+git clone https://github.com/GPlates/gplately.git
+cd gplately # navigate within the gplately folder
+git checkout master # or the name of whichever branch you need
+git pull # fetch all recent changes from this branch
+pip install .
+```
+
+**Update installation from cloned repo:** To update your installation of GPlately by fetching the latest pushes from a specific repository branch (e.g. `master`), copy the following commands into your terminal:
+
+```sh
+cd /path/to/gplately/directory #Should be where gplately is cloned - must end in /.../gplately
+git checkout master # or the name of whichever branch you need
+git pull # fetch all recent changes from this branch
+pip install .
+```
 
 ### Download GPlates-compatible Data
 

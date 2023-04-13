@@ -10,7 +10,7 @@ mainpitch:
     GPlates offers a novel combination of interactive plate tectonic reconstructions, 
     geographic information system (GIS) functionality and raster data visualisation. 
     GPlates enables both the visualisation and the manipulation of plate tectonic 
-    reconstructions and associated data through geological time.  
+    reconstructions and associated data through geological time.
 descMarkdown: "./desc.md"
 reasons:
   - Open source and free
@@ -19,5 +19,5 @@ reasons:
   - Extensive open-access data and models
   - Wide-ranging interoperability with other software
   - Used by educators, researchers, and industries
-  - Professional software development team 
+  - Professional software development team
 ---
