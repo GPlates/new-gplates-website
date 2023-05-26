@@ -148,6 +148,19 @@ For example, the following creates and activates a Python 3.10 environment named
 <span class="n">conda</span> <span class="n">activate</span> <span class="n">pygplates_py310</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">Be sure remove any prior versions of pyGPlates from the <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> environment variable.</div>
+<div class="line">Otherwise you will likely get an <code class="docutils literal notranslate"><span class="pre">ImportError</span></code> when <code class="docutils literal notranslate"><span class="pre">pygplates</span></code> gets imported.</div>
+<div class="line">For example, pyGPlates versions 0.36 and older do not support <code class="docutils literal notranslate"><span class="pre">conda</span></code> and instead required
+<a class="reference internal" href="#pygplates-getting-started-install-from-precompiled"><span class="std std-ref">installing a pre-compiled binary</span></a>
+(or <a class="reference internal" href="#pygplates-getting-started-install-from-source-code"><span class="std std-ref">installing from source code</span></a>),
+which included adding that installed location to the <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> environment variable.</div>
+<div class="line">So, if you have installed previous versions in this way then you’ll need to remove all those
+installed locations from the <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> environment variable (when using <code class="docutils literal notranslate"><span class="pre">conda</span></code>).</div>
+</div>
+</div>
 <p>You can then use pyGPlates. For example, to see the pyGPlates version:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;import pygplates; print(pygplates.__version__)&quot;</span>
 </pre></div>
