@@ -14,281 +14,279 @@ _This web page was created by a Python script automatically using the data retri
 
 <span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2023"></span>
 
-
 <strong id="2023">2023(136)</strong>
 
-* [3D geometric modelling of the Northwest Pacific slabs: A review and new high-precision model](https://www.sciencedirect.com/science/article/pii/S0012825223000405) J Wang, H Xing, Z Jin, Y Tan, S Pang, J Liu - Earth-Science Reviews, 2023 - Elsevier
+- [3D geometric modelling of the Northwest Pacific slabs: A review and new high-precision model](https://www.sciencedirect.com/science/article/pii/S0012825223000405) J Wang, H Xing, Z Jin, Y Tan, S Pang, J Liu - Earth-Science Reviews, 2023 - Elsevier
 
-* [A Great late Ediacaran ice age](https://academic.oup.com/nsr/advance-article-pdf/doi/10.1093/nsr/nwad117/50455717/nwad117.pdf) R Wang, B Shen, X Lang, B Wen… - National Science …, 2023 - academic.oup.com
+- [A Great late Ediacaran ice age](https://academic.oup.com/nsr/advance-article-pdf/doi/10.1093/nsr/nwad117/50455717/nwad117.pdf) R Wang, B Shen, X Lang, B Wen… - National Science …, 2023 - academic.oup.com
 
-* [A Laurentian affinity for the Embu Terrane, Ribeira Belt (SE Brazil), revealed by zircon provenance statistical analysis](https://www.sciencedirect.com/science/article/pii/S167498712200130X) BV Ribeiro, FM Faleiros, GAC Campanha… - Geoscience …, 2023 - Elsevier
+- [A Laurentian affinity for the Embu Terrane, Ribeira Belt (SE Brazil), revealed by zircon provenance statistical analysis](https://www.sciencedirect.com/science/article/pii/S167498712200130X) BV Ribeiro, FM Faleiros, GAC Campanha… - Geoscience …, 2023 - Elsevier
 
-* [A Multi-proxy Provenance Study of Late Carboniferous to Middle Jurassic Sandstones in the Eastern Sverdrup Basin and Its Bearing on Arctic Palaeogeographic …](http://www.tara.tcd.ie/bitstream/handle/2262/101938/geosciences-13-00010-v2.pdf?sequence=1) Q Crowley - 2023 - tara.tcd.ie
+- [A Multi-proxy Provenance Study of Late Carboniferous to Middle Jurassic Sandstones in the Eastern Sverdrup Basin and Its Bearing on Arctic Palaeogeographic …](http://www.tara.tcd.ie/bitstream/handle/2262/101938/geosciences-13-00010-v2.pdf?sequence=1) Q Crowley - 2023 - tara.tcd.ie
 
-* [A Multi-proxy Provenance Study of Late Carboniferous to Middle Jurassic Sandstones in the Eastern Sverdrup Basin and Its Bearing on Arctic …](https://www.mdpi.com/article/10.3390/geosciences13010010) MA Pointon, H Smyth, JE Omma, AC Morton… - Geosciences, 2023 - mdpi.com
+- [A Multi-proxy Provenance Study of Late Carboniferous to Middle Jurassic Sandstones in the Eastern Sverdrup Basin and Its Bearing on Arctic …](https://www.mdpi.com/article/10.3390/geosciences13010010) MA Pointon, H Smyth, JE Omma, AC Morton… - Geosciences, 2023 - mdpi.com
 
-* [A complete genus-level phylogeny reveals the Cretaceous biogeographic diversification of the poppy family](https://www.sciencedirect.com/science/article/pii/S105579032300012X) HW Peng, KL Xiang, AS Erst, L Lian, RDC Ortiz… - Molecular Phylogenetics …, 2023 - Elsevier
+- [A complete genus-level phylogeny reveals the Cretaceous biogeographic diversification of the poppy family](https://www.sciencedirect.com/science/article/pii/S105579032300012X) HW Peng, KL Xiang, AS Erst, L Lian, RDC Ortiz… - Molecular Phylogenetics …, 2023 - Elsevier
 
-* [A dynamic 2000–540 Ma Earth history: From cratonic amalgamation to the age of supercontinent cycle](https://www.sciencedirect.com/science/article/pii/S0012825223000259) ZX Li, Y Liu, R Ernst - Earth-Science Reviews, 2023 - Elsevier
+- [A dynamic 2000–540 Ma Earth history: From cratonic amalgamation to the age of supercontinent cycle](https://www.sciencedirect.com/science/article/pii/S0012825223000259) ZX Li, Y Liu, R Ernst - Earth-Science Reviews, 2023 - Elsevier
 
-* [A geospatial platform for the tectonic interpretation of low-temperature thermochronology Big Data](https://www.nature.com/articles/s41598-023-35776-3) SC Boone, F Kohlmann, W Noble, M Theile… - Scientific Reports, 2023 - nature.com
+- [A geospatial platform for the tectonic interpretation of low-temperature thermochronology Big Data](https://www.nature.com/articles/s41598-023-35776-3) SC Boone, F Kohlmann, W Noble, M Theile… - Scientific Reports, 2023 - nature.com
 
-* [A global reassessment of the spatial and temporal expression of the Late Miocene Biogenic Bloom](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022PA004564) Q Pillot, B Suchéras‐Marx, AC Sarr… - Paleoceanography …, 2023 - Wiley Online Library
+- [A global reassessment of the spatial and temporal expression of the Late Miocene Biogenic Bloom](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022PA004564) Q Pillot, B Suchéras‐Marx, AC Sarr… - Paleoceanography …, 2023 - Wiley Online Library
 
-* [A new view of the Pangea supercontinent with an emphasis on the East Asian blocks](https://www.sciencedirect.com/science/article/pii/S0012821X23001565) Z Yi, Y Liu, JG Meert, T Wang, B Huang - Earth and Planetary Science …, 2023 - Elsevier
+- [A new view of the Pangea supercontinent with an emphasis on the East Asian blocks](https://www.sciencedirect.com/science/article/pii/S0012821X23001565) Z Yi, Y Liu, JG Meert, T Wang, B Huang - Earth and Planetary Science …, 2023 - Elsevier
 
-* [A review of the Gippsland Basin history based on comparison of 3D structural, stratigraphic and forward sedimentation models: recognition of source, reservoir, traps …](https://www.tandfonline.com/doi/full/10.1080/08120099.2023.2136241) X Yang, GC Smith - Australian Journal of Earth Sciences, 2023 - Taylor & Francis
+- [A review of the Gippsland Basin history based on comparison of 3D structural, stratigraphic and forward sedimentation models: recognition of source, reservoir, traps …](https://www.tandfonline.com/doi/full/10.1080/08120099.2023.2136241) X Yang, GC Smith - Australian Journal of Earth Sciences, 2023 - Taylor & Francis
 
-* [Along-strike island-arc crustal growth rate estimation: case study of the Izu–Bonin–Mariana subduction system](https://academic.oup.com/gji/article/232/3/1886/6779681) Y Bai, X Mu, W Zhang, S Li, D Zhang… - Geophysical Journal …, 2023 - academic.oup.com
+- [Along-strike island-arc crustal growth rate estimation: case study of the Izu–Bonin–Mariana subduction system](https://academic.oup.com/gji/article/232/3/1886/6779681) Y Bai, X Mu, W Zhang, S Li, D Zhang… - Geophysical Journal …, 2023 - academic.oup.com
 
-* [An early Miocene (~ 20 Ma) paleogeographic reconstruction for paleoclimate modelling](https://www.sciencedirect.com/science/article/pii/S0031018222005533) Z He, Z Zhang, Z Guo, CR Scotese, C Deng - Palaeogeography …, 2023 - Elsevier
+- [An early Miocene (~ 20 Ma) paleogeographic reconstruction for paleoclimate modelling](https://www.sciencedirect.com/science/article/pii/S0031018222005533) Z He, Z Zhang, Z Guo, CR Scotese, C Deng - Palaeogeography …, 2023 - Elsevier
 
-* [Astrochronology and carbon-isotope stratigraphy of the Fengcheng Formation, Junggar Basin: terrestrial evidence for the Carboniferous-Permian Boundary](https://www.sciencedirect.com/science/article/pii/S1342937X23000114) R Huang, F Jiang, D Chen, R Qiu, T Hu, L Fang… - Gondwana …, 2023 - Elsevier
+- [Astrochronology and carbon-isotope stratigraphy of the Fengcheng Formation, Junggar Basin: terrestrial evidence for the Carboniferous-Permian Boundary](https://www.sciencedirect.com/science/article/pii/S1342937X23000114) R Huang, F Jiang, D Chen, R Qiu, T Hu, L Fang… - Gondwana …, 2023 - Elsevier
 
-* [Backtracking potential mantle sources of North American kimberlites through kinematic models to constrain their origin](https://krex.k-state.edu/dspace/bitstream/handle/2097/42890/EstherLee2023.pdf?sequence=1) E Lee - 2023 - krex.k-state.edu
+- [Backtracking potential mantle sources of North American kimberlites through kinematic models to constrain their origin](https://krex.k-state.edu/dspace/bitstream/handle/2097/42890/EstherLee2023.pdf?sequence=1) E Lee - 2023 - krex.k-state.edu
 
-* [Back‐Arc Tectonics and Plate Reconstruction of the Philippine Sea‐South China Sea Region Since the Eocene](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022GL102154) J Liu, S Li, X Cao, H Dong, Y Suo… - Geophysical …, 2023 - Wiley Online Library
+- [Back‐Arc Tectonics and Plate Reconstruction of the Philippine Sea‐South China Sea Region Since the Eocene](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022GL102154) J Liu, S Li, X Cao, H Dong, Y Suo… - Geophysical …, 2023 - Wiley Online Library
 
-* [Basin formation, magmatism, and exhumation document southward migrating flat-slab subduction in the central Andes](https://www.sciencedirect.com/science/article/pii/S0012821X23000638) JE Saylor, KE Sundell, ND Perez, JB Hensley… - Earth and Planetary …, 2023 - Elsevier
+- [Basin formation, magmatism, and exhumation document southward migrating flat-slab subduction in the central Andes](https://www.sciencedirect.com/science/article/pii/S0012821X23000638) JE Saylor, KE Sundell, ND Perez, JB Hensley… - Earth and Planetary …, 2023 - Elsevier
 
-* [Breaking the Ring of Fire: How ridge collision, slab age, and convergence rate narrowed and terminated the Antarctic continental arc](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022TC007634) A Burton‐Johnson, J Bastias, S Kraus - Tectonics, 2023 - Wiley Online Library
+- [Breaking the Ring of Fire: How ridge collision, slab age, and convergence rate narrowed and terminated the Antarctic continental arc](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022TC007634) A Burton‐Johnson, J Bastias, S Kraus - Tectonics, 2023 - Wiley Online Library
 
-* [Carbon cycle during the late Aptian–early Albian OAE 1b: A focus on the Kilian–Paquier levels interval](https://www.sciencedirect.com/science/article/pii/S0921818123000474) S Bodin, M Charpentier, CV Ullmann, A Rudra… - Global and Planetary …, 2023 - Elsevier
+- [Carbon cycle during the late Aptian–early Albian OAE 1b: A focus on the Kilian–Paquier levels interval](https://www.sciencedirect.com/science/article/pii/S0921818123000474) S Bodin, M Charpentier, CV Ullmann, A Rudra… - Global and Planetary …, 2023 - Elsevier
 
-* [Cenozoic exhumation in the Mediterranean and the Middle East](https://www.sciencedirect.com/science/article/pii/S001282522300017X) R Lanari, A Boutoux, C Faccenna, F Herman… - Earth-Science …, 2023 - Elsevier
+- [Cenozoic exhumation in the Mediterranean and the Middle East](https://www.sciencedirect.com/science/article/pii/S001282522300017X) R Lanari, A Boutoux, C Faccenna, F Herman… - Earth-Science …, 2023 - Elsevier
 
-* [Cisuralian (Early Permian) paleogeographic evolution of South China Block and sea-level changes: Implications for the global Artinskian Warming Event](https://www.sciencedirect.com/science/article/pii/S0031018223000135) Z Hou, S Shen, CM Henderson, D Yuan… - Palaeogeography …, 2023 - Elsevier
+- [Cisuralian (Early Permian) paleogeographic evolution of South China Block and sea-level changes: Implications for the global Artinskian Warming Event](https://www.sciencedirect.com/science/article/pii/S0031018223000135) Z Hou, S Shen, CM Henderson, D Yuan… - Palaeogeography …, 2023 - Elsevier
 
-* [Comparing Plate Tectonics and Expansion Tectonics.](https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=22025685&AN=163297539&h=01bMjKGzeJCuX63UtqjP1VVDgFmuj0bsHvp1omvfrZK6nSoMDYQnEOYwD9axfhcwuTXRRo%2FNlTLk60rZvRiaFA%3D%3D&crl=c) J Maxlow - New Concepts in Global Tectonics Journal, 2023 - search.ebscohost.com
+- [Comparing Plate Tectonics and Expansion Tectonics.](https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=22025685&AN=163297539&h=01bMjKGzeJCuX63UtqjP1VVDgFmuj0bsHvp1omvfrZK6nSoMDYQnEOYwD9axfhcwuTXRRo%2FNlTLk60rZvRiaFA%3D%3D&crl=c) J Maxlow - New Concepts in Global Tectonics Journal, 2023 - search.ebscohost.com
 
-* [Comparison of Granites from the Eastern and Western Districts of the Gejiu Ore District in South China: Implication for Petrogenesis and Tin Metallogeny](https://www.mdpi.com/2075-163X/13/5/691) S Sun, J Zhang, S Li, H Niu, Z Wu, W Sun - Minerals, 2023 - mdpi.com
+- [Comparison of Granites from the Eastern and Western Districts of the Gejiu Ore District in South China: Implication for Petrogenesis and Tin Metallogeny](https://www.mdpi.com/2075-163X/13/5/691) S Sun, J Zhang, S Li, H Niu, Z Wu, W Sun - Minerals, 2023 - mdpi.com
 
-* [Contrasting transform and passive margin subsidence history and heat flow evolution: Insights from 3D thermo-mechanical modelling](https://www.lyellcollection.org/doi/pdf/10.1144/SP524-2021-94) A Balázs, T Gerya, D May, G Tari - Geological Society, London …, 2023 - lyellcollection.org
+- [Contrasting transform and passive margin subsidence history and heat flow evolution: Insights from 3D thermo-mechanical modelling](https://www.lyellcollection.org/doi/pdf/10.1144/SP524-2021-94) A Balázs, T Gerya, D May, G Tari - Geological Society, London …, 2023 - lyellcollection.org
 
-* [Correlations among large igneous provinces related to the West Gondwana breakup: A geochemical database reappraisal of Early Cretaceous plumbing …](https://www.sciencedirect.com/science/article/pii/S1674987122001323) AA Macêdo Filho, MHBM Hollanda, S Fraser… - Geoscience …, 2023 - Elsevier
+- [Correlations among large igneous provinces related to the West Gondwana breakup: A geochemical database reappraisal of Early Cretaceous plumbing …](https://www.sciencedirect.com/science/article/pii/S1674987122001323) AA Macêdo Filho, MHBM Hollanda, S Fraser… - Geoscience …, 2023 - Elsevier
 
-* [Coupling of geographic range and provincialism in Cambrian marine invertebrates](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/32789AB0084AA9F48DD2875ACA5DB85F/S0094837322000367a.pdf/coupling-of-geographic-range-and-provincialism-in-cambrian-marine-invertebrates.pdf) L Na, ÁT Kocsis, Q Li, W Kiessling - Paleobiology, 2023 - cambridge.org
+- [Coupling of geographic range and provincialism in Cambrian marine invertebrates](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/32789AB0084AA9F48DD2875ACA5DB85F/S0094837322000367a.pdf/coupling-of-geographic-range-and-provincialism-in-cambrian-marine-invertebrates.pdf) L Na, ÁT Kocsis, Q Li, W Kiessling - Paleobiology, 2023 - cambridge.org
 
-* [Cretaceous–Paleogene tectonic reconstructions of the South Scotia Ridge and implications for the initiation of subduction in the Scotia Sea](https://www.lyellcollection.org/doi/pdf/10.1144/jgs2023-013) TR Riley, A Burton-Johnson, KA Hogan… - Journal of the …, 2023 - lyellcollection.org
+- [Cretaceous–Paleogene tectonic reconstructions of the South Scotia Ridge and implications for the initiation of subduction in the Scotia Sea](https://www.lyellcollection.org/doi/pdf/10.1144/jgs2023-013) TR Riley, A Burton-Johnson, KA Hogan… - Journal of the …, 2023 - lyellcollection.org
 
-* [Deconstructing plate tectonic reconstructions](https://www.nature.com/articles/s43017-022-00384-8) M Seton, SE Williams, M Domeier, AS Collins… - Nature Reviews Earth & …, 2023 - nature.com
+- [Deconstructing plate tectonic reconstructions](https://www.nature.com/articles/s43017-022-00384-8) M Seton, SE Williams, M Domeier, AS Collins… - Nature Reviews Earth & …, 2023 - nature.com
 
-* [Deep structure of the Demerara Plateau and its two-fold tectonic evolution: from a volcanic margin to a Transform Marginal Plateau, insights from the conjugate Guinea …](https://www.lyellcollection.org/doi/pdf/10.1144/SP524-2021-96) D Graindorge, T Museur, F Klingelhoefer… - Geological Society …, 2023 - lyellcollection.org
+- [Deep structure of the Demerara Plateau and its two-fold tectonic evolution: from a volcanic margin to a Transform Marginal Plateau, insights from the conjugate Guinea …](https://www.lyellcollection.org/doi/pdf/10.1144/SP524-2021-96) D Graindorge, T Museur, F Klingelhoefer… - Geological Society …, 2023 - lyellcollection.org
 
-* [Deep time spatio‐temporal data analysis using py GP lates with P late T ectonic T ools and GP lately](https://rmets.onlinelibrary.wiley.com/doi/pdf/10.1002/gdj3.185) BR Mather, RD Müller, S Zahirovic… - Geoscience Data …, 2023 - Wiley Online Library
+- [Deep time spatio‐temporal data analysis using py GP lates with P late T ectonic T ools and GP lately](https://rmets.onlinelibrary.wiley.com/doi/pdf/10.1002/gdj3.185) BR Mather, RD Müller, S Zahirovic… - Geoscience Data …, 2023 - Wiley Online Library
 
-* [Determining Mid-Ocean Ridge Geography from Upper Mantle Temperature](https://www.authorea.com/doi/pdf/10.22541/essoar.167898504.49087820) X Bao, T Mittal, C Lithgow-Bertelloni - 2023 - authorea.com
+- [Determining Mid-Ocean Ridge Geography from Upper Mantle Temperature](https://www.authorea.com/doi/pdf/10.22541/essoar.167898504.49087820) X Bao, T Mittal, C Lithgow-Bertelloni - 2023 - authorea.com
 
-* [Detrital zircon U-Pb ages of Proterozoic and Cretaceous sandstones of Narmada region in Central India: Implications for provenance and the closure age of the …](https://eartharxiv.org/repository/object/5030/download/9953/) V Kumari, S Tandon, T Kallukalam, A Ghatak - 2023 - eartharxiv.org
+- [Detrital zircon U-Pb ages of Proterozoic and Cretaceous sandstones of Narmada region in Central India: Implications for provenance and the closure age of the …](https://eartharxiv.org/repository/object/5030/download/9953/) V Kumari, S Tandon, T Kallukalam, A Ghatak - 2023 - eartharxiv.org
 
-* [Dispersed spore assemblages from the Lower Devonian Rañeces-La Vid groups of Northern Spain: Palaeogeographical implications](https://www.sciencedirect.com/science/article/pii/S0034666722002238) CH Wellman, P Steemans, G Lopes - Review of Palaeobotany and …, 2023 - Elsevier
+- [Dispersed spore assemblages from the Lower Devonian Rañeces-La Vid groups of Northern Spain: Palaeogeographical implications](https://www.sciencedirect.com/science/article/pii/S0034666722002238) CH Wellman, P Steemans, G Lopes - Review of Palaeobotany and …, 2023 - Elsevier
 
-* [Dynamic modeling of tectonic carbon processes: State of the art and conceptual workflow](https://link.springer.com/article/10.1007/s11430-022-1038-5) L Zhao, Z Guo, H Yuan, X Wang, H Shen… - Science China Earth …, 2023 - Springer
+- [Dynamic modeling of tectonic carbon processes: State of the art and conceptual workflow](https://link.springer.com/article/10.1007/s11430-022-1038-5) L Zhao, Z Guo, H Yuan, X Wang, H Shen… - Science China Earth …, 2023 - Springer
 
-* [EaDz: A web-based, relational database for detrital zircons from East Asia](https://www.sciencedirect.com/science/article/pii/S0098300422002370) B Zhang, S Liu, C Zhang - Computers & Geosciences, 2023 - Elsevier
+- [EaDz: A web-based, relational database for detrital zircons from East Asia](https://www.sciencedirect.com/science/article/pii/S0098300422002370) B Zhang, S Liu, C Zhang - Computers & Geosciences, 2023 - Elsevier
 
-* [Early post-breakup kinematic adjustments of continental–oceanic transform fault zones: Cape Range, Coromandal and Romanche transform margin case study](https://www.lyellcollection.org/doi/pdf/10.1144/SP524-2021-110) M Nemčok, L Ledvényiová, A Henk… - Geological Society …, 2023 - lyellcollection.org
+- [Early post-breakup kinematic adjustments of continental–oceanic transform fault zones: Cape Range, Coromandal and Romanche transform margin case study](https://www.lyellcollection.org/doi/pdf/10.1144/SP524-2021-110) M Nemčok, L Ledvényiová, A Henk… - Geological Society …, 2023 - lyellcollection.org
 
-* [Editorial preface to special issue: Cenozoic tectonics and paleoclimate in Inner Asia: From case studies to climatic modelling](https://www.sciencedirect.com/science/article/pii/S0031018223002341) J Sun, W Xiao, BF Windley, Y Hu - Palaeogeography, Palaeoclimatology …, 2023 - Elsevier
+- [Editorial preface to special issue: Cenozoic tectonics and paleoclimate in Inner Asia: From case studies to climatic modelling](https://www.sciencedirect.com/science/article/pii/S0031018223002341) J Sun, W Xiao, BF Windley, Y Hu - Palaeogeography, Palaeoclimatology …, 2023 - Elsevier
 
-* [Environmental controls on the resilience of Scott Reefs since the Miocene (North West Shelf, Australia): Insights from 3D seismic data](https://www.sciencedirect.com/science/article/pii/S0264817223000946) C Williams, V Paumard, JM Webster, J Leonard… - Marine and Petroleum …, 2023 - Elsevier
+- [Environmental controls on the resilience of Scott Reefs since the Miocene (North West Shelf, Australia): Insights from 3D seismic data](https://www.sciencedirect.com/science/article/pii/S0264817223000946) C Williams, V Paumard, JM Webster, J Leonard… - Marine and Petroleum …, 2023 - Elsevier
 
-* [Eocene/Oligocene global disruption and the revolution of Caribbean mangroves](https://www.sciencedirect.com/science/article/pii/S1433831923000173) V Rull - Perspectives in Plant Ecology, Evolution and …, 2023 - Elsevier
+- [Eocene/Oligocene global disruption and the revolution of Caribbean mangroves](https://www.sciencedirect.com/science/article/pii/S1433831923000173) V Rull - Perspectives in Plant Ecology, Evolution and …, 2023 - Elsevier
 
-* [Evolution of an accretionary complex (LeMay Group) and terrane translation in the Antarctic Peninsula](https://nora.nerc.ac.uk/id/eprint/533168/1/Tectonics%20-%202023%20-%20Riley%20-%20Evolution%20of%20an%20Accretionary%20Complex%20%20LeMay%20Group%20%20and%20Terrane%20Translation%20in%20the%20Antarctic.pdf) TR Riley, IL Millar, A Carter, MJ Flowerdew… - Tectonics, 2023 - nora.nerc.ac.uk
+- [Evolution of an accretionary complex (LeMay Group) and terrane translation in the Antarctic Peninsula](https://nora.nerc.ac.uk/id/eprint/533168/1/Tectonics%20-%202023%20-%20Riley%20-%20Evolution%20of%20an%20Accretionary%20Complex%20%20LeMay%20Group%20%20and%20Terrane%20Translation%20in%20the%20Antarctic.pdf) TR Riley, IL Millar, A Carter, MJ Flowerdew… - Tectonics, 2023 - nora.nerc.ac.uk
 
-* [Evolution of the Exmouth-Barrow carbonate margin through the Miocene: Insights from 3D seismic data and field investigations (North West Shelf, Australia)](https://www.sciencedirect.com/science/article/pii/S003707382300043X) R Riera, V Paumard, J Bourget, T Allan, U Lebrec - Sedimentary Geology, 2023 - Elsevier
+- [Evolution of the Exmouth-Barrow carbonate margin through the Miocene: Insights from 3D seismic data and field investigations (North West Shelf, Australia)](https://www.sciencedirect.com/science/article/pii/S003707382300043X) R Riera, V Paumard, J Bourget, T Allan, U Lebrec - Sedimentary Geology, 2023 - Elsevier
 
-* [Evolution, systematics and historical biogeography of Palparini and Palparidiini antlions (Neuroptera: Myrmeleontidae): Old origin and in situ diversification in …](https://resjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/syen.12593) NMC Hévin, GJ Kergoat, AL Clamens… - Systematic …, 2023 - Wiley Online Library
+- [Evolution, systematics and historical biogeography of Palparini and Palparidiini antlions (Neuroptera: Myrmeleontidae): Old origin and in situ diversification in …](https://resjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/syen.12593) NMC Hévin, GJ Kergoat, AL Clamens… - Systematic …, 2023 - Wiley Online Library
 
-* [Geochemical and radiogenic isotope records of the Weissert Event in south Tethyan sediments](https://www.lyellcollection.org/doi/pdf/10.1144/jgs2022-023) M Shmeit, C Chauvel, F Giraud, E Jaillard… - Journal of the …, 2023 - lyellcollection.org
+- [Geochemical and radiogenic isotope records of the Weissert Event in south Tethyan sediments](https://www.lyellcollection.org/doi/pdf/10.1144/jgs2022-023) M Shmeit, C Chauvel, F Giraud, E Jaillard… - Journal of the …, 2023 - lyellcollection.org
 
-* [Ghost-arc geochemical anomaly at a spreading ridge caused by supersized flat subduction](https://www.nature.com/articles/s41467-023-37799-w) GM Gianni, J Likerman, CR Navarrete… - Nature …, 2023 - nature.com
+- [Ghost-arc geochemical anomaly at a spreading ridge caused by supersized flat subduction](https://www.nature.com/articles/s41467-023-37799-w) GM Gianni, J Likerman, CR Navarrete… - Nature …, 2023 - nature.com
 
-* [Glendonites throughout the Phanerozoic](https://www.sciencedirect.com/science/article/pii/S0012825223001198) M Rogov, V Ershova, C Gaina, O Vereshchagin… - Earth-Science …, 2023 - Elsevier
+- [Glendonites throughout the Phanerozoic](https://www.sciencedirect.com/science/article/pii/S0012825223001198) M Rogov, V Ershova, C Gaina, O Vereshchagin… - Earth-Science …, 2023 - Elsevier
 
-* [Global bioregions of reptiles confirm the consistency of bioregionalization processes across vertebrate clades](https://onlinelibrary.wiley.com/doi/pdf/10.1111/geb.13694) M Falaschi, S Marta, E Lo Parrino, U Roll… - Global Ecology and …, 2023 - Wiley Online Library
+- [Global bioregions of reptiles confirm the consistency of bioregionalization processes across vertebrate clades](https://onlinelibrary.wiley.com/doi/pdf/10.1111/geb.13694) M Falaschi, S Marta, E Lo Parrino, U Roll… - Global Ecology and …, 2023 - Wiley Online Library
 
-* [Global impact and selectivity of the Cretaceous-Paleogene mass extinction among sharks, skates, and rays](https://www.science.org/doi/full/10.1126/science.abn2080) G Guinot, FL Condamine - Science, 2023 - science.org
+- [Global impact and selectivity of the Cretaceous-Paleogene mass extinction among sharks, skates, and rays](https://www.science.org/doi/full/10.1126/science.abn2080) G Guinot, FL Condamine - Science, 2023 - science.org
 
-* [Gravity Anomalies and Implications for Shallow Mantle Processes of the Western Cocos‐Nazca Spreading Center](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022GL102133) T Zheng, J Lin, H Schouten, DK Smith… - Geophysical …, 2023 - Wiley Online Library
+- [Gravity Anomalies and Implications for Shallow Mantle Processes of the Western Cocos‐Nazca Spreading Center](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022GL102133) T Zheng, J Lin, H Schouten, DK Smith… - Geophysical …, 2023 - Wiley Online Library
 
-* [High-latitude Cretaceous–Paleogene transition: New paleoenvironmental and paleoclimatic insights from Seymour Island, Antarctica](https://www.sciencedirect.com/science/article/pii/S0377839823000130) LCF da Silva, A Santos, G Fauth, LME Manríquez… - Marine …, 2023 - Elsevier
+- [High-latitude Cretaceous–Paleogene transition: New paleoenvironmental and paleoclimatic insights from Seymour Island, Antarctica](https://www.sciencedirect.com/science/article/pii/S0377839823000130) LCF da Silva, A Santos, G Fauth, LME Manríquez… - Marine …, 2023 - Elsevier
 
-* [High‐Resolution Magnetic‐Geochemical Mapping of the Serpentinized and Carbonated Atlin Ophiolite, British Columbia: Toward Establishing Magnetometry as a …](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022GC010730) M Tominaga, A Beinlich, EA Lima… - Geochemistry …, 2023 - Wiley Online Library
+- [High‐Resolution Magnetic‐Geochemical Mapping of the Serpentinized and Carbonated Atlin Ophiolite, British Columbia: Toward Establishing Magnetometry as a …](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022GC010730) M Tominaga, A Beinlich, EA Lima… - Geochemistry …, 2023 - Wiley Online Library
 
-* [Hundred million years of landscape dynamics from catchment to global scale](https://www.science.org/doi/full/10.1126/science.add2541) T Salles, L Husson, P Rey, C Mallard, S Zahirovic… - Science, 2023 - science.org
+- [Hundred million years of landscape dynamics from catchment to global scale](https://www.science.org/doi/full/10.1126/science.add2541) T Salles, L Husson, P Rey, C Mallard, S Zahirovic… - Science, 2023 - science.org
 
-* [Impact of Deccan Volcanism on Reorganization of the Indian plate kinematics](https://www.authorea.com/doi/pdf/10.1002/essoar.10512728.1) A Bhagat, S Sangode - Authorea Preprints, 2023 - authorea.com
+- [Impact of Deccan Volcanism on Reorganization of the Indian plate kinematics](https://www.authorea.com/doi/pdf/10.1002/essoar.10512728.1) A Bhagat, S Sangode - Authorea Preprints, 2023 - authorea.com
 
-* [Importance of global spherical geometry to model slab dynamics and evolution in models with data assimilation](https://www.sciencedirect.com/science/article/pii/S0012825223001034) D Peng, L Liu - Earth-Science Reviews, 2023 - Elsevier
+- [Importance of global spherical geometry to model slab dynamics and evolution in models with data assimilation](https://www.sciencedirect.com/science/article/pii/S0012825223001034) D Peng, L Liu - Earth-Science Reviews, 2023 - Elsevier
 
-* [Into the future](/scholar?output=instlink&q=info:phQeOpG_jzcJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2023&scillfp=15656291886335765198&oi=lle) HS Davies, JC Duarte, M Green - A Journey Through Tides, 2023 - Elsevier
+- [Into the future](/scholar?output=instlink&q=info:phQeOpG_jzcJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2023&scillfp=15656291886335765198&oi=lle) HS Davies, JC Duarte, M Green - A Journey Through Tides, 2023 - Elsevier
 
-* [Kinematic reconstruction of the Tibetan-Himalayan orogen since the Cretaceous](https://meetingorganizer.copernicus.org/EGU23/EGU23-1136.html) T Schouten, L Boschman, S Li, S Willett - 2023 - meetingorganizer.copernicus.org
+- [Kinematic reconstruction of the Tibetan-Himalayan orogen since the Cretaceous](https://meetingorganizer.copernicus.org/EGU23/EGU23-1136.html) T Schouten, L Boschman, S Li, S Willett - 2023 - meetingorganizer.copernicus.org
 
-* [Kungurian sedimentary environments in the slope facies of the Xuyong area, South China, and a comparative analysis of low-latitude palaeogeography](https://link.springer.com/article/10.1007/s13146-023-00853-1) L Wu, H Jiang, M Pan, P Wang, J Hu, J Wu… - Carbonates and …, 2023 - Springer
+- [Kungurian sedimentary environments in the slope facies of the Xuyong area, South China, and a comparative analysis of low-latitude palaeogeography](https://link.springer.com/article/10.1007/s13146-023-00853-1) L Wu, H Jiang, M Pan, P Wang, J Hu, J Wu… - Carbonates and …, 2023 - Springer
 
-* [Late Cenozoic Sea Surface Temperature evolution of the South Atlantic Ocean](https://egusphere.copernicus.org/preprints/2023/egusphere-2023-291/egusphere-2023-291.pdf) FS Hoem, A López-Quirós… - …, 2023 - egusphere.copernicus.org
+- [Late Cenozoic Sea Surface Temperature evolution of the South Atlantic Ocean](https://egusphere.copernicus.org/preprints/2023/egusphere-2023-291/egusphere-2023-291.pdf) FS Hoem, A López-Quirós… - …, 2023 - egusphere.copernicus.org
 
-* [Linking Pacific Plate formation and Early Cretaceous metallogenic response on the circum-Pacific continental margins](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/doi/10.1130/B36717.1/5842201/b36717.pdf) C Wu, H Chen, M Chiaradia… - Geological Society of …, 2023 - pubs.geoscienceworld.org
+- [Linking Pacific Plate formation and Early Cretaceous metallogenic response on the circum-Pacific continental margins](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/doi/10.1130/B36717.1/5842201/b36717.pdf) C Wu, H Chen, M Chiaradia… - Geological Society of …, 2023 - pubs.geoscienceworld.org
 
-* [Lipid-biomarker-based sea surface temperature record<? xmltex\break?> offshore Tasmania over the last 23 million years](https://cp.copernicus.org/articles/19/787/2023/cp-19-787-2023.html) S Hou, F Lamprou, FS Hoem, MRN Hadju… - Climate of the …, 2023 - cp.copernicus.org
+- [Lipid-biomarker-based sea surface temperature record<? xmltex\break?> offshore Tasmania over the last 23 million years](https://cp.copernicus.org/articles/19/787/2023/cp-19-787-2023.html) S Hou, F Lamprou, FS Hoem, MRN Hadju… - Climate of the …, 2023 - cp.copernicus.org
 
-* [Long-term global sea-level change due to dynamic topography since 410 Ma](https://www.sciencedirect.com/science/article/pii/S0967063722002576) A Yang - Deep Sea Research Part I: Oceanographic Research …, 2023 - Elsevier
+- [Long-term global sea-level change due to dynamic topography since 410 Ma](https://www.sciencedirect.com/science/article/pii/S0967063722002576) A Yang - Deep Sea Research Part I: Oceanographic Research …, 2023 - Elsevier
 
-* [Mantle contribution to Late Paleozoic glaciations of SW Gondwana](https://www.sciencedirect.com/science/article/pii/S0921818122002855) FM Dávila, F Martina, P Ávila, M Ezpeleta - Global and Planetary Change, 2023 - Elsevier
+- [Mantle contribution to Late Paleozoic glaciations of SW Gondwana](https://www.sciencedirect.com/science/article/pii/S0921818122002855) FM Dávila, F Martina, P Ávila, M Ezpeleta - Global and Planetary Change, 2023 - Elsevier
 
-* [Megafossils of Betulaceae from the Oligocene of Qaidam Basin and their paleoenvironmental and phytogeographic implications](https://www.sciencedirect.com/science/article/pii/S2468265923000525) T Yang, JH Cai, YZ Dai, HY Chen, L Han, L Zhang… - Plant Diversity, 2023 - Elsevier
+- [Megafossils of Betulaceae from the Oligocene of Qaidam Basin and their paleoenvironmental and phytogeographic implications](https://www.sciencedirect.com/science/article/pii/S2468265923000525) T Yang, JH Cai, YZ Dai, HY Chen, L Han, L Zhang… - Plant Diversity, 2023 - Elsevier
 
-* [Modelos de reconstrução cinemática e paleogeográfica das bacias mesozóicas onshore do nordeste do Brasil](https://pantheon.ufrj.br/bitstream/11422/20016/1/AZAMBUJA%2C%20R.G.C.pdf) RGC Azambuja - 2023 - pantheon.ufrj.br
+- [Modelos de reconstrução cinemática e paleogeográfica das bacias mesozóicas onshore do nordeste do Brasil](https://pantheon.ufrj.br/bitstream/11422/20016/1/AZAMBUJA%2C%20R.G.C.pdf) RGC Azambuja - 2023 - pantheon.ufrj.br
 
-* [Named Landforms of the World: A Geomorphological and Physiographic Compilation](https://www.tandfonline.com/doi/pdf/10.1080/24694452.2023.2200548) C Frye, R Sayre, AB Murphy, D Karagülle… - Annals of the …, 2023 - Taylor & Francis
+- [Named Landforms of the World: A Geomorphological and Physiographic Compilation](https://www.tandfonline.com/doi/pdf/10.1080/24694452.2023.2200548) C Frye, R Sayre, AB Murphy, D Karagülle… - Annals of the …, 2023 - Taylor & Francis
 
-* [Neogene burial of organic carbon in the global ocean](https://www.nature.com/articles/s41586-022-05413-6) Z Li, YG Zhang, M Torres, BJW Mills - Nature, 2023 - nature.com
+- [Neogene burial of organic carbon in the global ocean](https://www.nature.com/articles/s41586-022-05413-6) Z Li, YG Zhang, M Torres, BJW Mills - Nature, 2023 - nature.com
 
-* [New Middle Jurassic Paleomagnetic and Geochronologic Results From the Lhasa Terrane: Contributions to the Closure of the Meso‐Tethys Ocean and Jurassic True …](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2023GL103343) S Wang, T Yang, J Ma, W Bian, X Jiao… - Geophysical …, 2023 - Wiley Online Library
+- [New Middle Jurassic Paleomagnetic and Geochronologic Results From the Lhasa Terrane: Contributions to the Closure of the Meso‐Tethys Ocean and Jurassic True …](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2023GL103343) S Wang, T Yang, J Ma, W Bian, X Jiao… - Geophysical …, 2023 - Wiley Online Library
 
-* [New U–Pb geochronology for the Central Atlantic Magmatic Province, critical reevaluation of high-precision ages and their impact on the end-Triassic …](https://www.nature.com/articles/s41598-023-32534-3) AL Oliveira, MD Schmitz, CJ Wall, JL Crowley… - Scientific Reports, 2023 - nature.com
+- [New U–Pb geochronology for the Central Atlantic Magmatic Province, critical reevaluation of high-precision ages and their impact on the end-Triassic …](https://www.nature.com/articles/s41598-023-32534-3) AL Oliveira, MD Schmitz, CJ Wall, JL Crowley… - Scientific Reports, 2023 - nature.com
 
-* [New paleomagnetic constraints on the amalgamation of the Tuva and Mongolia blocks from Late Carboniferous andesites in the Mongolia Block](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022TC007683) Q Ren, S Zhang, M Hou, A Chen, H Wu, T Yang… - Tectonics, 2023 - Wiley Online Library
+- [New paleomagnetic constraints on the amalgamation of the Tuva and Mongolia blocks from Late Carboniferous andesites in the Mongolia Block](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022TC007683) Q Ren, S Zhang, M Hou, A Chen, H Wu, T Yang… - Tectonics, 2023 - Wiley Online Library
 
-* [New records of dinosaur tracks in eastern Tibet and a review of Middle Jurassic dinosaur faunas from the eastern Tethys, southwest China](https://www.tandfonline.com/doi/pdf/10.1080/08912963.2023.2209784) L Xing, H Klein, MG Lockley, H Li, B Tong, Y Ye… - Historical …, 2023 - Taylor & Francis
+- [New records of dinosaur tracks in eastern Tibet and a review of Middle Jurassic dinosaur faunas from the eastern Tethys, southwest China](https://www.tandfonline.com/doi/pdf/10.1080/08912963.2023.2209784) L Xing, H Klein, MG Lockley, H Li, B Tong, Y Ye… - Historical …, 2023 - Taylor & Francis
 
-* [No Furongian Biodiversity Gap: Evidence from South China](https://www.sciencedirect.com/science/article/pii/S0031018223001104) Y Deng, J Fan, S Yang, Y Shi, Z Lu, H Xu, Z Sun… - Palaeogeography …, 2023 - Elsevier
+- [No Furongian Biodiversity Gap: Evidence from South China](https://www.sciencedirect.com/science/article/pii/S0031018223001104) Y Deng, J Fan, S Yang, Y Shi, Z Lu, H Xu, Z Sun… - Palaeogeography …, 2023 - Elsevier
 
-* [North Atlantic Drift Sediments Constrain Eocene Tidal Dissipation and the Evolution of the Earth‐Moon System](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022PA004555) D De Vleeschouwer, DE Penman… - Paleoceanography …, 2023 - Wiley Online Library
+- [North Atlantic Drift Sediments Constrain Eocene Tidal Dissipation and the Evolution of the Earth‐Moon System](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022PA004555) D De Vleeschouwer, DE Penman… - Paleoceanography …, 2023 - Wiley Online Library
 
-* [North Atlantic surface ocean warming and salinization in response to middle Eocene greenhouse warming](https://www.science.org/doi/full/10.1126/sciadv.abq0110) R Van Der Ploeg, MJ Cramwinckel, IJ Kocken… - Science …, 2023 - science.org
+- [North Atlantic surface ocean warming and salinization in response to middle Eocene greenhouse warming](https://www.science.org/doi/full/10.1126/sciadv.abq0110) R Van Der Ploeg, MJ Cramwinckel, IJ Kocken… - Science …, 2023 - science.org
 
-* [Observations and models of dynamic topography: Current status and future directions](https://eartharxiv.org/repository/object/3251/download/6523/) DR Davies, S Ghelichkhan, MJ Hoggard… - … of Plate Tectonics and …, 2023 - Elsevier
+- [Observations and models of dynamic topography: Current status and future directions](https://eartharxiv.org/repository/object/3251/download/6523/) DR Davies, S Ghelichkhan, MJ Hoggard… - … of Plate Tectonics and …, 2023 - Elsevier
 
-* [Oceanic Core Complex or not? When bathymetric structures challenge seafloor spreading models](https://www.sciencedirect.com/science/article/pii/S004019512300032X) F Szitkar, L Gernigon, A Lim, M Brönner - Tectonophysics, 2023 - Elsevier
+- [Oceanic Core Complex or not? When bathymetric structures challenge seafloor spreading models](https://www.sciencedirect.com/science/article/pii/S004019512300032X) F Szitkar, L Gernigon, A Lim, M Brönner - Tectonophysics, 2023 - Elsevier
 
-* [Oceanward rift migration during formation of Santos–Benguela ultra-wide rifted margins](https://www.lyellcollection.org/doi/pdf/10.1144/SP524-2021-123) MN Araujo, M Pérez-Gussinyé… - … Society, London, Special …, 2023 - lyellcollection.org
+- [Oceanward rift migration during formation of Santos–Benguela ultra-wide rifted margins](https://www.lyellcollection.org/doi/pdf/10.1144/SP524-2021-123) MN Araujo, M Pérez-Gussinyé… - … Society, London, Special …, 2023 - lyellcollection.org
 
-* [Oligo-Miocene radiation within South-west Pacific arc terranes underpinned repeated upstream continental dispersals in pigeons (Columbiformes)](https://academic.oup.com/biolinnean/article-pdf/138/4/437/49745676/blad003.pdf) PM Oliver, AF Hugall, A Prasteya… - Biological Journal of …, 2023 - academic.oup.com
+- [Oligo-Miocene radiation within South-west Pacific arc terranes underpinned repeated upstream continental dispersals in pigeons (Columbiformes)](https://academic.oup.com/biolinnean/article-pdf/138/4/437/49745676/blad003.pdf) PM Oliver, AF Hugall, A Prasteya… - Biological Journal of …, 2023 - academic.oup.com
 
-* [Ordovician Plate Tectonic and Paleogeographic Maps](https://www.lyellcollection.org/doi/pdf/10.1144/SP532-2022-311) CR Scotese - Geological Society, London, Special Publications, 2023 - lyellcollection.org
+- [Ordovician Plate Tectonic and Paleogeographic Maps](https://www.lyellcollection.org/doi/pdf/10.1144/SP532-2022-311) CR Scotese - Geological Society, London, Special Publications, 2023 - lyellcollection.org
 
-* [Origin of Late Triassic Granitoids of the Coastal Cordillera of Southern Central Chile (34°–37° S): Multi‐Isotopic Evidence of Slab Tearing Effects on Pre‐Andean …](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022TC007354) P Rossel, GM Gianni, V Reinoso, CM Fanning… - …, 2023 - Wiley Online Library
+- [Origin of Late Triassic Granitoids of the Coastal Cordillera of Southern Central Chile (34°–37° S): Multi‐Isotopic Evidence of Slab Tearing Effects on Pre‐Andean …](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022TC007354) P Rossel, GM Gianni, V Reinoso, CM Fanning… - …, 2023 - Wiley Online Library
 
-* [Palaeomagnetic investigations across Hinlopenstretet border zone: from Caledonian metamorphosed rocks of Ny Friesland to foreland facies of Nordaustlandet (NE …](https://www.lyellcollection.org/doi/pdf/10.1144/jgs2021-167) K Michalski, GM Manby, K Nejbert… - Journal of the …, 2023 - lyellcollection.org
+- [Palaeomagnetic investigations across Hinlopenstretet border zone: from Caledonian metamorphosed rocks of Ny Friesland to foreland facies of Nordaustlandet (NE …](https://www.lyellcollection.org/doi/pdf/10.1144/jgs2021-167) K Michalski, GM Manby, K Nejbert… - Journal of the …, 2023 - lyellcollection.org
 
-* [Paleogene evolution of the External Rif Zone (Morocco) and comparison with other western Tethyan margins](https://www.sciencedirect.com/science/article/pii/S0037073823000398) M Martín-Martín, F Guerrera, JC Cañaveras… - Sedimentary …, 2023 - Elsevier
+- [Paleogene evolution of the External Rif Zone (Morocco) and comparison with other western Tethyan margins](https://www.sciencedirect.com/science/article/pii/S0037073823000398) M Martín-Martín, F Guerrera, JC Cañaveras… - Sedimentary …, 2023 - Elsevier
 
-* [Paleogeographic reconstructions using QGIS: Introducing Terra Antiqua plugin and its application to 30 and 50 Ma maps](https://www.sciencedirect.com/science/article/pii/S0012825223000909) J Aminov, G Dupont-Nivet, D Ruiz, B Gailleton - Earth-Science Reviews, 2023 - Elsevier
+- [Paleogeographic reconstructions using QGIS: Introducing Terra Antiqua plugin and its application to 30 and 50 Ma maps](https://www.sciencedirect.com/science/article/pii/S0012825223000909) J Aminov, G Dupont-Nivet, D Ruiz, B Gailleton - Earth-Science Reviews, 2023 - Elsevier
 
-* [Paleoposition and Paleogeography of Egypt During the Phanerozoic Era](https://link.springer.com/chapter/10.1007/978-3-030-95637-0_4) U Kirscher, E Dallanave, V Bachtadse - The Phanerozoic Geology and …, 2023 - Springer
+- [Paleoposition and Paleogeography of Egypt During the Phanerozoic Era](https://link.springer.com/chapter/10.1007/978-3-030-95637-0_4) U Kirscher, E Dallanave, V Bachtadse - The Phanerozoic Geology and …, 2023 - Springer
 
-* [Peatland wildfires in the Lower Cretaceous Damoguaihe Formation, Hailar Basin, Northeast China](https://www.sciencedirect.com/science/article/pii/S0195667123001064) Z Wang, Y Xu, Q Zhao, M Zhang, W Li, B Panchal… - Cretaceous …, 2023 - Elsevier
+- [Peatland wildfires in the Lower Cretaceous Damoguaihe Formation, Hailar Basin, Northeast China](https://www.sciencedirect.com/science/article/pii/S0195667123001064) Z Wang, Y Xu, Q Zhao, M Zhang, W Li, B Panchal… - Cretaceous …, 2023 - Elsevier
 
-* [Phylogenomics of the Ancient and Species-Depauperate Gars Tracks 150 Million Years of Continental Fragmentation in the Northern Hemisphere](https://academic.oup.com/sysbio/article-pdf/72/1/213/50396805/syac080.pdf) C Doran Brownstein, L Yang, M Friedman… - Systematic …, 2023 - academic.oup.com
+- [Phylogenomics of the Ancient and Species-Depauperate Gars Tracks 150 Million Years of Continental Fragmentation in the Northern Hemisphere](https://academic.oup.com/sysbio/article-pdf/72/1/213/50396805/syac080.pdf) C Doran Brownstein, L Yang, M Friedman… - Systematic …, 2023 - academic.oup.com
 
-* [Planktonic foraminifera document palaeoceanographic changes across the middle Cenomanian carbon-isotope excursion MCE 1: new evidence from the UK chalk](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/12CC74F3C1F850A012333CC8C1318FA7/S0016756822000991a.pdf/div-class-title-planktonic-foraminifera-document-palaeoceanographic-changes-across-the-middle-cenomanian-carbon-isotope-excursion-mce-1-new-evidence-from-the-uk-chalk-div.pdf) MR Petrizzo, AS Gale - Geological Magazine, 2023 - cambridge.org
+- [Planktonic foraminifera document palaeoceanographic changes across the middle Cenomanian carbon-isotope excursion MCE 1: new evidence from the UK chalk](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/12CC74F3C1F850A012333CC8C1318FA7/S0016756822000991a.pdf/div-class-title-planktonic-foraminifera-document-palaeoceanographic-changes-across-the-middle-cenomanian-carbon-isotope-excursion-mce-1-new-evidence-from-the-uk-chalk-div.pdf) MR Petrizzo, AS Gale - Geological Magazine, 2023 - cambridge.org
 
-* [Plate rotation of the northern Antarctic Peninsula since the Late Cretaceous: Implications for the tectonic evolution of the Scotia Sea region](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022JB026110) L Gao, Y Zhao, Z Yang, J Pei, SH Zhang… - Journal of …, 2023 - Wiley Online Library
+- [Plate rotation of the northern Antarctic Peninsula since the Late Cretaceous: Implications for the tectonic evolution of the Scotia Sea region](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022JB026110) L Gao, Y Zhao, Z Yang, J Pei, SH Zhang… - Journal of …, 2023 - Wiley Online Library
 
-* [Plume-ridge interactions: ridgeward versus plate-drag plume flow](https://discovery.ucl.ac.uk/id/eprint/10168451/1/se-14-353-2023.pdf) F Pang, J Liao, MD Ballmer, L Li - Solid Earth, 2023 - discovery.ucl.ac.uk
+- [Plume-ridge interactions: ridgeward versus plate-drag plume flow](https://discovery.ucl.ac.uk/id/eprint/10168451/1/se-14-353-2023.pdf) F Pang, J Liao, MD Ballmer, L Li - Solid Earth, 2023 - discovery.ucl.ac.uk
 
-* [Plume–lithosphere interactions and LIP-triggered climate crises constrained by the origin of Karoo lamproites](https://www.sciencedirect.com/science/article/pii/S0016703723001680) S Tappe, NS Ngwenya, A Stracke, RL Romer… - … et Cosmochimica Acta, 2023 - Elsevier
+- [Plume–lithosphere interactions and LIP-triggered climate crises constrained by the origin of Karoo lamproites](https://www.sciencedirect.com/science/article/pii/S0016703723001680) S Tappe, NS Ngwenya, A Stracke, RL Romer… - … et Cosmochimica Acta, 2023 - Elsevier
 
-* [Poleward amplification, seasonal rainfall and forest heterogeneity in the Miocene of the eastern USA](https://www.sciencedirect.com/science/article/pii/S0921818123000462) T Reichgelt, A Baumgartner, R Feng… - Global and Planetary …, 2023 - Elsevier
+- [Poleward amplification, seasonal rainfall and forest heterogeneity in the Miocene of the eastern USA](https://www.sciencedirect.com/science/article/pii/S0921818123000462) T Reichgelt, A Baumgartner, R Feng… - Global and Planetary …, 2023 - Elsevier
 
-* [Populating a Continent: Phylogenomics Reveal the Timing of Australian Frog Diversification](https://www.biorxiv.org/content/10.1101/2023.05.03.539251.full.pdf) IG Brennan, AR Lemmon, E Lemmon, CJ Hoskin… - bioRxiv, 2023 - biorxiv.org
+- [Populating a Continent: Phylogenomics Reveal the Timing of Australian Frog Diversification](https://www.biorxiv.org/content/10.1101/2023.05.03.539251.full.pdf) IG Brennan, AR Lemmon, E Lemmon, CJ Hoskin… - bioRxiv, 2023 - biorxiv.org
 
-* [Precambrian History of the Pacific Mantle Domain: New Constraints from Woodsreef and Port Macquarie Serpentinized Spinel Harzburgites of the New England …](https://academic.oup.com/petrology/advance-article-pdf/doi/10.1093/petrology/egad028/50462907/egad028.pdf) LS Doucet, ZX Li, D Brennan, R Offler… - Journal of …, 2023 - academic.oup.com
+- [Precambrian History of the Pacific Mantle Domain: New Constraints from Woodsreef and Port Macquarie Serpentinized Spinel Harzburgites of the New England …](https://academic.oup.com/petrology/advance-article-pdf/doi/10.1093/petrology/egad028/50462907/egad028.pdf) LS Doucet, ZX Li, D Brennan, R Offler… - Journal of …, 2023 - academic.oup.com
 
-* [Present‐Day Caribbean‐North American Oblique Convergence Through the Ocoa‐Bonao‐La Guacara Fault Zone, Southern Central Hispaniola: A Transition Zone …](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022TC007618) J Escuder‐Viruete, FJ Fernández, FP Valera… - …, 2023 - Wiley Online Library
+- [Present‐Day Caribbean‐North American Oblique Convergence Through the Ocoa‐Bonao‐La Guacara Fault Zone, Southern Central Hispaniola: A Transition Zone …](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022TC007618) J Escuder‐Viruete, FJ Fernández, FP Valera… - …, 2023 - Wiley Online Library
 
-* [Progradation of a shallow carbonate platform developed on a fault-block in the Western Tethys (lower Aptian, Sierra de Bedmar-Jódar, Prebetic of Jaén, Spain …](https://link.springer.com/article/10.1007/s10347-023-00664-9) R Martínez-Rodríguez, LM Nieto, JM Castro… - Facies, 2023 - Springer
+- [Progradation of a shallow carbonate platform developed on a fault-block in the Western Tethys (lower Aptian, Sierra de Bedmar-Jódar, Prebetic of Jaén, Spain …](https://link.springer.com/article/10.1007/s10347-023-00664-9) R Martínez-Rodríguez, LM Nieto, JM Castro… - Facies, 2023 - Springer
 
-* [Proterozoic (2500–541 Ma)](/scholar?output=instlink&q=info:tqwVRVeDIaQJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2023&scillfp=8513258904410065173&oi=lle) M Green, C Scotese, HS Davies - A Journey Through Tides, 2023 - Elsevier
+- [Proterozoic (2500–541 Ma)](/scholar?output=instlink&q=info:tqwVRVeDIaQJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2023&scillfp=8513258904410065173&oi=lle) M Green, C Scotese, HS Davies - A Journey Through Tides, 2023 - Elsevier
 
-* [Proterozoic fold and thrust belt imaged on reflection seismic in Arabian plate basement](https://www.sciencedirect.com/science/article/pii/S0040195123001452) SA Stewart, AS Salem - Tectonophysics, 2023 - Elsevier
+- [Proterozoic fold and thrust belt imaged on reflection seismic in Arabian plate basement](https://www.sciencedirect.com/science/article/pii/S0040195123001452) SA Stewart, AS Salem - Tectonophysics, 2023 - Elsevier
 
-* [Provenance analysis of Paleozoic strata in the Falkland/Malvinas Islands: Implications for paleogeography and Gondwanan reconstructions](https://www.sciencedirect.com/science/article/pii/S1342937X23001156) JR Malone, IWD Dalziel, P Stone, BK Horton - Gondwana Research, 2023 - Elsevier
+- [Provenance analysis of Paleozoic strata in the Falkland/Malvinas Islands: Implications for paleogeography and Gondwanan reconstructions](https://www.sciencedirect.com/science/article/pii/S1342937X23001156) JR Malone, IWD Dalziel, P Stone, BK Horton - Gondwana Research, 2023 - Elsevier
 
-* [Quantifying climate conditions for the formation of coals and evaporites](https://academic.oup.com/nsr/article/10/6/nwad051/7059225) X Bao, Y Hu, CR Scotese, X Li, J Guo… - National Science …, 2023 - academic.oup.com
+- [Quantifying climate conditions for the formation of coals and evaporites](https://academic.oup.com/nsr/article/10/6/nwad051/7059225) X Bao, Y Hu, CR Scotese, X Li, J Guo… - National Science …, 2023 - academic.oup.com
 
-* [Quantitative methods for the analysis of comparative geological data: Large igneous province barcoding and supercontinent reconstruction](https://www.sciencedirect.com/science/article/pii/S030192682200393X) B Michaux, EM Dowding, MC Ebach - Precambrian Research, 2023 - Elsevier
+- [Quantitative methods for the analysis of comparative geological data: Large igneous province barcoding and supercontinent reconstruction](https://www.sciencedirect.com/science/article/pii/S030192682200393X) B Michaux, EM Dowding, MC Ebach - Precambrian Research, 2023 - Elsevier
 
-* [Radiolarian size and silicification across the Paleocene-Eocene boundary and into the early Eocene](https://www.sciencedirect.com/science/article/pii/S0031018222004588) S Westacott, CJ Hollis, KM Pascher, GR Dickens… - Palaeogeography …, 2023 - Elsevier
+- [Radiolarian size and silicification across the Paleocene-Eocene boundary and into the early Eocene](https://www.sciencedirect.com/science/article/pii/S0031018222004588) S Westacott, CJ Hollis, KM Pascher, GR Dickens… - Palaeogeography …, 2023 - Elsevier
 
-* [Reconstructing a dismembered Neogene basin along the active Hikurangi subduction margin, New Zealand](https://pubs.geoscienceworld.org/gsa/gsabulletin/article/135/3-4/1009/616259) BR Hines, H Seebeck, JS Crampton, KJ Bland… - …, 2023 - pubs.geoscienceworld.org
+- [Reconstructing a dismembered Neogene basin along the active Hikurangi subduction margin, New Zealand](https://pubs.geoscienceworld.org/gsa/gsabulletin/article/135/3-4/1009/616259) BR Hines, H Seebeck, JS Crampton, KJ Bland… - …, 2023 - pubs.geoscienceworld.org
 
-* [Reorganization of continent‐scale sediment routing based on detrital zircon and rutile multi‐proxy analysis](https://www.earthdoc.org/content/journals/10.1111/bre.12715?crawler=true) M Dröllner, M Barham, CL Kirkland - Basin Research, 2023 - earthdoc.org
+- [Reorganization of continent‐scale sediment routing based on detrital zircon and rutile multi‐proxy analysis](https://www.earthdoc.org/content/journals/10.1111/bre.12715?crawler=true) M Dröllner, M Barham, CL Kirkland - Basin Research, 2023 - earthdoc.org
 
-* [Retracing the Africa–Eurasia nascent convergent boundary in the Western Mediterranean based on earthquake and GNSS data](https://www.sciencedirect.com/science/article/pii/S0012821X22005428) A Billi, M Cuffaro, B Orecchio, M Palano, D Presti… - Earth and Planetary …, 2023 - Elsevier
+- [Retracing the Africa–Eurasia nascent convergent boundary in the Western Mediterranean based on earthquake and GNSS data](https://www.sciencedirect.com/science/article/pii/S0012821X22005428) A Billi, M Cuffaro, B Orecchio, M Palano, D Presti… - Earth and Planetary …, 2023 - Elsevier
 
-* [Review and critical assessment on plate reconstruction models for the South Atlantic](https://www.sciencedirect.com/science/article/pii/S0012825223000223) JF Bonifacio, CE Ganade, AC dos Santos… - Earth-Science …, 2023 - Elsevier
+- [Review and critical assessment on plate reconstruction models for the South Atlantic](https://www.sciencedirect.com/science/article/pii/S0012825223000223) JF Bonifacio, CE Ganade, AC dos Santos… - Earth-Science …, 2023 - Elsevier
 
-* [Rifting Continents](/scholar?output=instlink&q=info:OLo_RzIp1u4J:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2023&scillfp=3620978587873011009&oi=lle) SJH Buiter, S Brune, D Keir, G Peron-Pinvidic - Dynamics of Plate Tectonics …, 2023 - Elsevier
+- [Rifting Continents](/scholar?output=instlink&q=info:OLo_RzIp1u4J:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2023&scillfp=3620978587873011009&oi=lle) SJH Buiter, S Brune, D Keir, G Peron-Pinvidic - Dynamics of Plate Tectonics …, 2023 - Elsevier
 
-* [Satellite Magnetics Suggest a Complex Geothermal Heat Flux Pattern beneath the Greenland Ice Sheet](https://www.mdpi.com/2072-4292/15/5/1379/pdf) ME Kolster, A Døssing, SA Khan - Remote Sensing, 2023 - mdpi.com
+- [Satellite Magnetics Suggest a Complex Geothermal Heat Flux Pattern beneath the Greenland Ice Sheet](https://www.mdpi.com/2072-4292/15/5/1379/pdf) ME Kolster, A Døssing, SA Khan - Remote Sensing, 2023 - mdpi.com
 
-* [Seafloor Tectonics in Northeast Atlantic Ocean and South China Sea: Preface](https://www.sciencedirect.com/science/article/pii/S1342937X23000977) S Li, GR Foulger, Y Suo, M Zhao, W Ding, L Liu - Gondwana Research, 2023 - Elsevier
+- [Seafloor Tectonics in Northeast Atlantic Ocean and South China Sea: Preface](https://www.sciencedirect.com/science/article/pii/S1342937X23000977) S Li, GR Foulger, Y Suo, M Zhao, W Ding, L Liu - Gondwana Research, 2023 - Elsevier
 
-* [Silurian paleogeography in the framework of global plate tectonics](https://www.sciencedirect.com/science/article/pii/S0031018223002158) J Golonka, SJ Porębski, A Waśkowska - Palaeogeography …, 2023 - Elsevier
+- [Silurian paleogeography in the framework of global plate tectonics](https://www.sciencedirect.com/science/article/pii/S0031018223002158) J Golonka, SJ Porębski, A Waśkowska - Palaeogeography …, 2023 - Elsevier
 
-* [Structural configuration and tectonics of the Flemish Cap, offshore Newfoundland, from newly acquired seismic reflection data](https://pubs.geoscienceworld.org/jgs/article-pdf/doi/10.1144/jgs2022-115/5839593/jgs2022-115.pdf) P Yang, JK Welford - Journal of the Geological Society, 2023 - pubs.geoscienceworld.org
+- [Structural configuration and tectonics of the Flemish Cap, offshore Newfoundland, from newly acquired seismic reflection data](https://pubs.geoscienceworld.org/jgs/article-pdf/doi/10.1144/jgs2022-115/5839593/jgs2022-115.pdf) P Yang, JK Welford - Journal of the Geological Society, 2023 - pubs.geoscienceworld.org
 
-* [Structure and morphology of the Red Sea, from the mid-ocean ridge to the ocean-continent boundary](https://www.sciencedirect.com/science/article/pii/S0040195123000264) A Delaunay, G Baby, J Fedorik, AM Afifi, P Tapponnier… - Tectonophysics, 2023 - Elsevier
+- [Structure and morphology of the Red Sea, from the mid-ocean ridge to the ocean-continent boundary](https://www.sciencedirect.com/science/article/pii/S0040195123000264) A Delaunay, G Baby, J Fedorik, AM Afifi, P Tapponnier… - Tectonophysics, 2023 - Elsevier
 
-* [Synchronous exhumation episodes across Arctic Canada, North Greenland and Svalbard in relation to the Eurekan Orogeny](https://www.sciencedirect.com/science/article/pii/S1342937X23000333) P Japsen, PF Green, JA Chalmers - Gondwana Research, 2023 - Elsevier
+- [Synchronous exhumation episodes across Arctic Canada, North Greenland and Svalbard in relation to the Eurekan Orogeny](https://www.sciencedirect.com/science/article/pii/S1342937X23000333) P Japsen, PF Green, JA Chalmers - Gondwana Research, 2023 - Elsevier
 
-* [Tethys and Apulia (Adria), 100 years of reconstructions](https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.5802/crgeos.198/) L Jolivet - Comptes Rendus. Géoscience, 2023 - comptes-rendus.academie-sciences …
+- [Tethys and Apulia (Adria), 100 years of reconstructions](https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.5802/crgeos.198/) L Jolivet - Comptes Rendus. Géoscience, 2023 - comptes-rendus.academie-sciences …
 
-* [The Cretaceous stationary Lhasa terrane constrained by the paleolatitude of 103 Ma volcanic rocks from the Nima area](https://www.sciencedirect.com/science/article/pii/S092181812200265X) C Niu, Y Ma, H Wang, T Yang, H Li, F Han, C Xu… - Global and Planetary …, 2023 - Elsevier
+- [The Cretaceous stationary Lhasa terrane constrained by the paleolatitude of 103 Ma volcanic rocks from the Nima area](https://www.sciencedirect.com/science/article/pii/S092181812200265X) C Niu, Y Ma, H Wang, T Yang, H Li, F Han, C Xu… - Global and Planetary …, 2023 - Elsevier
 
-* [The Eocene carbonate platforms of the Ghomaride Domain (Internal Rif Zone, N Morocco): A segment of the westernmost Tethys](https://www.sciencedirect.com/science/article/pii/S0037073823000957) M Martín-Martín, J Tosquella, F Guerrera, A Maaté… - Sedimentary …, 2023 - Elsevier
+- [The Eocene carbonate platforms of the Ghomaride Domain (Internal Rif Zone, N Morocco): A segment of the westernmost Tethys](https://www.sciencedirect.com/science/article/pii/S0037073823000957) M Martín-Martín, J Tosquella, F Guerrera, A Maaté… - Sedimentary …, 2023 - Elsevier
 
-* [The Geological Setting of the Moroccan High Atlas and Its Plate Tectonics Context](https://link.springer.com/chapter/10.1007/978-3-031-16693-8_1) B Moussaid, H El-Ouardi, AM Casas-Sainz… - Tectonic Evolution of the …, 2023 - Springer
+- [The Geological Setting of the Moroccan High Atlas and Its Plate Tectonics Context](https://link.springer.com/chapter/10.1007/978-3-031-16693-8_1) B Moussaid, H El-Ouardi, AM Casas-Sainz… - Tectonic Evolution of the …, 2023 - Springer
 
-* [The High Arctic Large Igneous Province: first seismic-stratigraphic evidence for multiple Mesozoic volcanic pulses on the Lomonosov Ridge, central Arctic Ocean](https://www.lyellcollection.org/doi/pdf/10.1144/jgs2022-153) Y Kristoffersen, E Harris Nilsen… - Journal of the Geological …, 2023 - lyellcollection.org
+- [The High Arctic Large Igneous Province: first seismic-stratigraphic evidence for multiple Mesozoic volcanic pulses on the Lomonosov Ridge, central Arctic Ocean](https://www.lyellcollection.org/doi/pdf/10.1144/jgs2022-153) Y Kristoffersen, E Harris Nilsen… - Journal of the Geological …, 2023 - lyellcollection.org
 
-* [The Importance of Eurekan Mountains on Cenozoic Sediment Routing on the Western Barents Shelf](https://www.mdpi.com/2076-3263/13/3/91/pdf) MJ Flowerdew, EJ Fleming, DM Chew, AC Morton… - Geosciences, 2023 - mdpi.com
+- [The Importance of Eurekan Mountains on Cenozoic Sediment Routing on the Western Barents Shelf](https://www.mdpi.com/2076-3263/13/3/91/pdf) MJ Flowerdew, EJ Fleming, DM Chew, AC Morton… - Geosciences, 2023 - mdpi.com
 
-* [The Numidian formation and its Lateral Successions (Central-Western Mediterranean): a review](https://www.tandfonline.com/doi/pdf/10.1080/00206814.2023.2199429) H Belayouni, F Guerrera, M Martin-Martin… - International Geology …, 2023 - Taylor & Francis
+- [The Numidian formation and its Lateral Successions (Central-Western Mediterranean): a review](https://www.tandfonline.com/doi/pdf/10.1080/00206814.2023.2199429) H Belayouni, F Guerrera, M Martin-Martin… - International Geology …, 2023 - Taylor & Francis
 
-* [The Ordovician ocean circulation: a modern synthesis based on data and models](https://www.lyellcollection.org/doi/pdf/10.1144/SP532-2022-1) A Pohl, E Nardin, TRA Vandenbroucke… - Geological Society …, 2023 - lyellcollection.org
+- [The Ordovician ocean circulation: a modern synthesis based on data and models](https://www.lyellcollection.org/doi/pdf/10.1144/SP532-2022-1) A Pohl, E Nardin, TRA Vandenbroucke… - Geological Society …, 2023 - lyellcollection.org
 
-* [The Shkoder Peja Normal Fault system at the Dinaric-Hellenic Junction: a structural and thermochronological study](https://refubium.fu-berlin.de/bitstream/handle/fub188/38557/Dissertation_Grund_2023.pdf?sequence=3) MU Grund - 2023 - refubium.fu-berlin.de
+- [The Shkoder Peja Normal Fault system at the Dinaric-Hellenic Junction: a structural and thermochronological study](https://refubium.fu-berlin.de/bitstream/handle/fub188/38557/Dissertation_Grund_2023.pdf?sequence=3) MU Grund - 2023 - refubium.fu-berlin.de
 
-* [The amalgamation of Gondwana: calcite twinning and finite strains from the early–late Paleozoic Buzios, Ross, Kurgiakh and Gondwanide orogens](https://www.lyellcollection.org/doi/full/10.1144/SP531-2022-165) J Craddock, T Paulsen, R da Silva Schmitt… - Geological Society …, 2023 - lyellcollection.org
+- [The amalgamation of Gondwana: calcite twinning and finite strains from the early–late Paleozoic Buzios, Ross, Kurgiakh and Gondwanide orogens](https://www.lyellcollection.org/doi/full/10.1144/SP531-2022-165) J Craddock, T Paulsen, R da Silva Schmitt… - Geological Society …, 2023 - lyellcollection.org
 
-* [The forearc ophiolites of California formed during trench-parallel spreading: Kinematic reconstruction of the western USA Cordillera since the Jurassic](https://www.sciencedirect.com/science/article/pii/S0012825222003592) C Arkula, N Lom, J Wakabayashi, G Rea-Downing… - Earth-Science …, 2023 - Elsevier
+- [The forearc ophiolites of California formed during trench-parallel spreading: Kinematic reconstruction of the western USA Cordillera since the Jurassic](https://www.sciencedirect.com/science/article/pii/S0012825222003592) C Arkula, N Lom, J Wakabayashi, G Rea-Downing… - Earth-Science …, 2023 - Elsevier
 
-* [The geological, tectonic, and geodynamic fingerprint of the elusive Proto South China Sea back-arc basin in northern Borneo](https://meetingorganizer.copernicus.org/EGU23/EGU23-10720.html) S Zahirovic - 2023 - meetingorganizer.copernicus.org
+- [The geological, tectonic, and geodynamic fingerprint of the elusive Proto South China Sea back-arc basin in northern Borneo](https://meetingorganizer.copernicus.org/EGU23/EGU23-10720.html) S Zahirovic - 2023 - meetingorganizer.copernicus.org
 
-* [The oldest Gondwanan record of the extinct durophagous hybodontiform chondrichthyan, Strophodus from the Bajocian of Morocco](https://link.springer.com/article/10.1186/s13358-023-00270-w) S Stumpf, C Kettler, R Kindlimann, G Cuny… - Swiss Journal of …, 2023 - Springer
+- [The oldest Gondwanan record of the extinct durophagous hybodontiform chondrichthyan, Strophodus from the Bajocian of Morocco](https://link.springer.com/article/10.1186/s13358-023-00270-w) S Stumpf, C Kettler, R Kindlimann, G Cuny… - Swiss Journal of …, 2023 - Springer
 
-* [The reinstated identity of agglutinated foraminifer Campanellula capuensis from the Lower Cretaceous of southern Italy by means of a 3D model investigations](https://www.app.pan.pl/archive/published/app68/app010472022.pdf) F Schlagintweit, S Amodio, F Barattolo, M Septfontaine - 2023 - app.pan.pl
+- [The reinstated identity of agglutinated foraminifer Campanellula capuensis from the Lower Cretaceous of southern Italy by means of a 3D model investigations](https://www.app.pan.pl/archive/published/app68/app010472022.pdf) F Schlagintweit, S Amodio, F Barattolo, M Septfontaine - 2023 - app.pan.pl
 
-* [The role of crustal scale shear zones in Southwest Gondwana consolidation-Transatlantic correlation](https://www.lyellcollection.org/doi/pdf/10.1144/SP531-2022-278) RS Schmitt, RAJ Trouw, EA Da Silva… - Geological Society …, 2023 - lyellcollection.org
+- [The role of crustal scale shear zones in Southwest Gondwana consolidation-Transatlantic correlation](https://www.lyellcollection.org/doi/pdf/10.1144/SP531-2022-278) RS Schmitt, RAJ Trouw, EA Da Silva… - Geological Society …, 2023 - lyellcollection.org
 
-* [The role of the Ebro Block on the deformation experienced within the Pyrenean realm: Insights from deformable plate tectonic models](https://www.sciencedirect.com/science/article/pii/S0264370723000029) MT King, JK Welford, J Tugend - Journal of Geodynamics, 2023 - Elsevier
+- [The role of the Ebro Block on the deformation experienced within the Pyrenean realm: Insights from deformable plate tectonic models](https://www.sciencedirect.com/science/article/pii/S0264370723000029) MT King, JK Welford, J Tugend - Journal of Geodynamics, 2023 - Elsevier
 
-* [The spatial–temporal evolution of the Asian summer monsoon during the late Miocene and potential CO2 forcing: A data–model comparison](https://www.sciencedirect.com/science/article/pii/S0921818123000255) Z He, Z Zhang, Z Guo, N Tan, Z Zhang, Z Wu… - Global and Planetary …, 2023 - Elsevier
+- [The spatial–temporal evolution of the Asian summer monsoon during the late Miocene and potential CO2 forcing: A data–model comparison](https://www.sciencedirect.com/science/article/pii/S0921818123000255) Z He, Z Zhang, Z Guo, N Tan, Z Zhang, Z Wu… - Global and Planetary …, 2023 - Elsevier
 
-* [Thermo-tectonic evolution of the northern Erlian Basin (NE China): Evidence from fission track and (U–Th)/He thermochronology](https://www.sciencedirect.com/science/article/pii/S1367912023000810) W Xu, Y Zhou, J Zhang, Y Li - Journal of Asian Earth Sciences, 2023 - Elsevier
+- [Thermo-tectonic evolution of the northern Erlian Basin (NE China): Evidence from fission track and (U–Th)/He thermochronology](https://www.sciencedirect.com/science/article/pii/S1367912023000810) W Xu, Y Zhou, J Zhang, Y Li - Journal of Asian Earth Sciences, 2023 - Elsevier
 
-* [Time trees and clock genes: a systematic review and comparative analysis of contemporary avian migration genetics](https://onlinelibrary.wiley.com/doi/pdf/10.1111/brv.12943) LS Le Clercq, G Bazzi, JG Cecere… - Biological …, 2023 - Wiley Online Library
+- [Time trees and clock genes: a systematic review and comparative analysis of contemporary avian migration genetics](https://onlinelibrary.wiley.com/doi/pdf/10.1111/brv.12943) LS Le Clercq, G Bazzi, JG Cecere… - Biological …, 2023 - Wiley Online Library
 
-* [Timing the break-up of the Baltica and Laurentia connection in Nuna–Rapid plate motion oscillation and plate tectonics in the Mesoproterozoic](https://www.sciencedirect.com/science/article/pii/S0301926822003679) J Salminen, SÅ Elming, P Layer - Precambrian Research, 2023 - Elsevier
+- [Timing the break-up of the Baltica and Laurentia connection in Nuna–Rapid plate motion oscillation and plate tectonics in the Mesoproterozoic](https://www.sciencedirect.com/science/article/pii/S0301926822003679) J Salminen, SÅ Elming, P Layer - Precambrian Research, 2023 - Elsevier
 
-* [Tracing North Atlantic volcanism and seaway connectivity across the Paleocene–Eocene Thermal Maximum (PETM)](https://egusphere.copernicus.org/preprints/2023/egusphere-2023-36/egusphere-2023-36.pdf) MT Jones, EW Stokke, AD Rooney, J Frieling… - …, 2023 - egusphere.copernicus.org
+- [Tracing North Atlantic volcanism and seaway connectivity across the Paleocene–Eocene Thermal Maximum (PETM)](https://egusphere.copernicus.org/preprints/2023/egusphere-2023-36/egusphere-2023-36.pdf) MT Jones, EW Stokke, AD Rooney, J Frieling… - …, 2023 - egusphere.copernicus.org
 
-* [Two distinct Paleozoic metamorphic events in the Tarim-North China Collage](https://academic.oup.com/nsr/article/10/2/nwac133/6638993) J Soldner - National Science Review, 2023 - academic.oup.com
+- [Two distinct Paleozoic metamorphic events in the Tarim-North China Collage](https://academic.oup.com/nsr/article/10/2/nwac133/6638993) J Soldner - National Science Review, 2023 - academic.oup.com
 
-* [Utilization of continental transforms in break-up: observations, models, and a potential link to magmatism](https://www.lyellcollection.org/doi/pdf/10.1144/SP524-2021-119) ER Lundin, AG Doré, J Naliboff… - … Society, London, Special …, 2023 - lyellcollection.org
+- [Utilization of continental transforms in break-up: observations, models, and a potential link to magmatism](https://www.lyellcollection.org/doi/pdf/10.1144/SP524-2021-119) ER Lundin, AG Doré, J Naliboff… - … Society, London, Special …, 2023 - lyellcollection.org
 
-* [Volcanic passive margins and break-up processes in the southern Red Sea](https://www.sciencedirect.com/science/article/pii/S1342937X23000266) F Chauvet, L Geoffroy, B Le Gall, M Jaud - Gondwana Research, 2023 - Elsevier
+- [Volcanic passive margins and break-up processes in the southern Red Sea](https://www.sciencedirect.com/science/article/pii/S1342937X23000266) F Chauvet, L Geoffroy, B Le Gall, M Jaud - Gondwana Research, 2023 - Elsevier
 
-* [Wildfire activity driven by the 405-kyr orbital climate cycles in the Middle Jurassic](https://www.sciencedirect.com/science/article/pii/S0921818123000425) Z Zhang, D Lv, M Lu, Z Yu, Y Gao, T Wang… - Global and Planetary …, 2023 - Elsevier
+- [Wildfire activity driven by the 405-kyr orbital climate cycles in the Middle Jurassic](https://www.sciencedirect.com/science/article/pii/S0921818123000425) Z Zhang, D Lv, M Lu, Z Yu, Y Gao, T Wang… - Global and Planetary …, 2023 - Elsevier
 
-* [palaeoverse: A community‐driven R package to support palaeobiological analysis](https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.14099) LA Jones, W Gearty, BJ Allen… - Methods in Ecology …, 2023 - Wiley Online Library
-
+- [palaeoverse: A community‐driven R package to support palaeobiological analysis](https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.14099) LA Jones, W Gearty, BJ Allen… - Methods in Ecology …, 2023 - Wiley Online Library
 
 <span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2022"></span>
 
