@@ -475,9 +475,11 @@ const IndexPageTemplate = ({
               <p>
                 <cite style={{ display: "flex", alignItems: "center" }}>
                   Mather, B. R., Müller, R. D., Zahirovic, S., Cannon, J., Chin,
-                  M., Ilano, L., et al. Deep time spatio-temporal data analysis
-                  using pyGPlates with PlateTectonicTools and GPlately.
-                  Geoscience Data Journal, https://doi.org/10.1002/gdj3.185
+                  M., Ilano, L., Wright, N. M., Alfonso, C., Williams, S.,
+                  Tetley, M., Merdith, A. (2023) Deep time spatio-temporal data
+                  analysis using pyGPlates with PlateTectonicTools and GPlately.
+                  Geoscience Data Journal, 00, 1-8. Available from:
+                  https://doi.org/10.1002/gdj3.185
                   <div
                     style={{
                       textAlign: "center",
@@ -487,9 +489,11 @@ const IndexPageTemplate = ({
                   >
                     <CopyToClipboard
                       text="Mather, B. R., Müller, R. D., Zahirovic, S., Cannon, J., Chin,
-                  M., Ilano, L., et al. Deep time spatio-temporal data analysis
-                  using pyGPlates with PlateTectonicTools and GPlately.
-                  Geoscience Data Journal, https://doi.org/10.1002/gdj3.185"
+                  M., Ilano, L., Wright, N. M., Alfonso, C., Williams, S.,
+                  Tetley, M., Merdith, A. (2023) Deep time
+                  spatio-temporal data analysis using pyGPlates with
+                  PlateTectonicTools and GPlately. Geoscience Data Journal, 00,
+                  1-8. Available from: https://doi.org/10.1002/gdj3.185"
                     >
                       <button className="button is-small is-success">
                         <span className="icon">
