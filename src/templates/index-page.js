@@ -442,9 +442,10 @@ const IndexPageTemplate = ({
               <p>
                 <cite style={{ display: "flex", alignItems: "center" }}>
                   Müller, R. D., Cannon, J., Qin, X., Watson, R. J., Gurnis, M.,
-                  Williams, S., et al. 2018. GPlates: Building a virtual Earth
-                  through deep time. Geochemistry, Geophysics, Geosystems, 19.
-                  doi:10.1029/2018GC007584.
+                  Williams, S., Pfaffelmoser, T., Seton, M., Russell, S. H. J.
+                  ,Zahirovic S. (2018). GPlates: Building a virtual Earth
+                  through deep time. Geochemistry, Geophysics, Geosystems, 19,
+                  2243-2261. https://doi.org/10.1029/2018GC007584
                   <div
                     style={{
                       textAlign: "center",
@@ -452,7 +453,13 @@ const IndexPageTemplate = ({
                       marginRight: "10px",
                     }}
                   >
-                    <CopyToClipboard text="Müller, R. D., Cannon, J., Qin, X., Watson, R. J., Gurnis, M., Williams, S., et al. 2018. GPlates: Building a virtual Earth through deep time. Geochemistry, Geophysics, Geosystems, 19. doi:10.1029/2018GC007584.">
+                    <CopyToClipboard
+                      text="Müller, R. D., Cannon, J., Qin, X., Watson, R. J., Gurnis, M.,
+                  Williams, S., Pfaffelmoser, T., Seton, M., Russell, S. H. J.
+                  ,Zahirovic S. (2018). GPlates: Building a virtual Earth
+                  through deep time. Geochemistry, Geophysics, Geosystems, 19,
+                  2243-2261. https://doi.org/10.1029/2018GC007584"
+                    >
                       <button className="button is-small is-success">
                         <span className="icon">
                           <FontAwesomeIcon
