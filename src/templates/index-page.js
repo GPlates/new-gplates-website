@@ -431,55 +431,56 @@ const IndexPageTemplate = ({
     </div>
     {/*end of the second section*/}
 
-    <div className="container">
-      <div className="column is-12 is-offset-0">
-        <div className="column is-12">
-          <article className="message mc-message">
-            <div className="message-body">
-              <h4>
-                <strong>GPlates Citation:</strong>
-              </h4>
-              <p>
+    <div className="container ">
+      <article className="message mc-message">
+        <div className="message-body">
+          <div className="column is-12 is-offset-0">
+            <h4>
+              <strong>GPlates Citation:</strong>
+            </h4>
+            <div className="columns section">
+              <div className="column is-10">
                 <cite style={{ display: "flex", alignItems: "center" }}>
                   Müller, R. D., Cannon, J., Qin, X., Watson, R. J., Gurnis, M.,
                   Williams, S., Pfaffelmoser, T., Seton, M., Russell, S. H. J.
                   ,Zahirovic S. (2018). GPlates: Building a virtual Earth
                   through deep time. Geochemistry, Geophysics, Geosystems, 19,
                   2243-2261. https://doi.org/10.1029/2018GC007584
-                  <div
-                    style={{
-                      textAlign: "center",
-                      marginLeft: "10px",
-                      marginRight: "10px",
-                    }}
-                  >
-                    <CopyToClipboard
-                      text="Müller, R. D., Cannon, J., Qin, X., Watson, R. J., Gurnis, M.,
+                </cite>
+              </div>
+              <div className="column is-2">
+                <div
+                  style={{
+                    textAlign: "center",
+                    marginLeft: "10px",
+                    marginRight: "10px",
+                  }}
+                >
+                  <CopyToClipboard
+                    text="Müller, R. D., Cannon, J., Qin, X., Watson, R. J., Gurnis, M.,
                   Williams, S., Pfaffelmoser, T., Seton, M., Russell, S. H. J.
                   ,Zahirovic S. (2018). GPlates: Building a virtual Earth
                   through deep time. Geochemistry, Geophysics, Geosystems, 19,
                   2243-2261. https://doi.org/10.1029/2018GC007584"
-                    >
-                      <button className="button is-small is-success">
-                        <span className="icon">
-                          <FontAwesomeIcon
-                            icon={faClipboard}
-                            className="fa-spin"
-                          />
-                        </span>
-                        <span>Copy </span>
-                      </button>
-                    </CopyToClipboard>
-                  </div>
-                </cite>
-              </p>
-              <br></br>
-              <h4>
-                <strong>
-                  PyGPlates, PlateTectonicTools, GPlately Citation:
-                </strong>
-              </h4>
-              <p>
+                  >
+                    <button className="button is-small is-success">
+                      <span className="icon">
+                        <FontAwesomeIcon
+                          icon={faClipboard}
+                          className="fa-spin"
+                        />
+                      </span>
+                      <span>Copy </span>
+                    </button>
+                  </CopyToClipboard>
+                </div>
+              </div>
+            </div>
+            <h4>
+              <strong>PyGPlates, PlateTectonicTools, GPlately Citation:</strong>
+            </h4>
+            <div className="columns section">
+              <div className="column is-10">
                 <cite style={{ display: "flex", alignItems: "center" }}>
                   Mather, B. R., Müller, R. D., Zahirovic, S., Cannon, J., Chin,
                   M., Ilano, L., Wright, N. M., Alfonso, C., Williams, S.,
@@ -487,50 +488,51 @@ const IndexPageTemplate = ({
                   analysis using pyGPlates with PlateTectonicTools and GPlately.
                   Geoscience Data Journal, 00, 1-8. Available from:
                   https://doi.org/10.1002/gdj3.185
-                  <div
-                    style={{
-                      textAlign: "center",
-                      marginRight: "10px",
-                      marginLeft: "10px",
-                    }}
-                  >
-                    <CopyToClipboard
-                      text="Mather, B. R., Müller, R. D., Zahirovic, S., Cannon, J., Chin,
+                </cite>
+              </div>
+              <div className="column is-2">
+                <div
+                  style={{
+                    textAlign: "center",
+                    marginRight: "10px",
+                    marginLeft: "10px",
+                  }}
+                >
+                  <CopyToClipboard
+                    text="Mather, B. R., Müller, R. D., Zahirovic, S., Cannon, J., Chin,
                   M., Ilano, L., Wright, N. M., Alfonso, C., Williams, S.,
                   Tetley, M., Merdith, A. (2023) Deep time
                   spatio-temporal data analysis using pyGPlates with
                   PlateTectonicTools and GPlately. Geoscience Data Journal, 00,
                   1-8. Available from: https://doi.org/10.1002/gdj3.185"
-                    >
-                      <button className="button is-small is-success">
-                        <span className="icon">
-                          <FontAwesomeIcon
-                            icon={faClipboard}
-                            className="fa-spin"
-                          />
-                        </span>
-                        <span>Copy </span>
-                      </button>
-                    </CopyToClipboard>
-                  </div>
-                </cite>
-              </p>
-
-              <div style={{ marginTop: "15px" }}>
-                <a
-                  href="/publications"
-                  style={{
-                    fontSize: "80%",
-                    color: "blue",
-                  }}
-                >
-                  More GPlates Publications &gt;&gt;
-                </a>
+                  >
+                    <button className="button is-small is-success">
+                      <span className="icon">
+                        <FontAwesomeIcon
+                          icon={faClipboard}
+                          className="fa-spin"
+                        />
+                      </span>
+                      <span>Copy </span>
+                    </button>
+                  </CopyToClipboard>
+                </div>
               </div>
             </div>
-          </article>
+            <div>
+              <a
+                href="/publications"
+                style={{
+                  fontSize: "80%",
+                  color: "blue",
+                }}
+              >
+                More GPlates Publications &gt;&gt;
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
+      </article>
     </div>
 
     {/* start of gplates family section */}
