@@ -12,6 +12,4 @@ tags:
   - python3
 ---
 
-![John Cannon](./images/default-1200x650.png)
-
 John joined the GPlates development team in 2009. He is the current lead developer of GPlates.

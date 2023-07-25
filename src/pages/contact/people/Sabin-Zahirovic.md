@@ -12,8 +12,6 @@ tags:
   - python3
 ---
 
-![Sabin Zahirovic](./images/default-1200x650.png)
-
 Sabin Zahirovic is a GPlates scientist.
 
 Sabin Zahirovic's Sydney Uni page is at https://www.sydney.edu.au/science/about/our-people/academic-staff/sabin-zahirovic.html.
