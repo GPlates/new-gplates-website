@@ -15,4 +15,6 @@ tags:
 
 ![Dietmar Müller](./images/dietmar-muller-1200x650.png)
 
-Dietmar is the founder and current lead of the GPlates project.
+Dietmar Müller is the founder and current lead of the GPlates project.
+
+Dietmar Müller's Sydney Uni page is at http://sydney.edu.au/science/people/dietmar.muller.php.

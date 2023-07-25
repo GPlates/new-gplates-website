@@ -67,8 +67,8 @@ class ContactPage extends React.Component {
               <li>
                 If you have any scientific or organisational questions about
                 GPlates or the participation of the University of Sydney,
-                contact GPlates project director Dietmar Müller at{" "}
-                <a href="https://www.earthbyte.org/contact-us-3/">here</a>
+                contact GPlates project director <strong>Dietmar Müller</strong>{" "}
+                at <a href="https://www.earthbyte.org/contact-us-3/">here</a>
               </li>
               <li>
                 If you have any technical questions about GPlates or questions
@@ -79,8 +79,8 @@ class ContactPage extends React.Component {
               </li>
               <li>
                 If you have any questions about the linkage with geodynamic
-                models or the participation of Caltech, contact Michael Gurnis
-                at{" "}
+                models or the participation of Caltech, contact{" "}
+                <strong>Michael Gurnis </strong> at{" "}
                 <a href="https://web.gps.caltech.edu/~gurnis/contact/index.html">
                   here
                 </a>

@@ -13,3 +13,5 @@ tags:
 ---
 
 Mike Gurnis is a co-founder of GPlates project.
+
+Michael Gurnis' Caltech web page is at https://web.gps.caltech.edu/~gurnis/.

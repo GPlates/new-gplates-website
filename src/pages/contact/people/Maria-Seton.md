@@ -15,3 +15,5 @@ tags:
 ![Maria Seton](./images/default-1200x650.png)
 
 Maria Seton is a GPlates scientist.
+
+Maria Seton's Sydney Uni page is at http://sydney.edu.au/science/people/maria.seton.php.

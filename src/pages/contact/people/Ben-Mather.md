@@ -15,3 +15,5 @@ tags:
 ![Ben Mather](./images/default-1200x650.png)
 
 Ben Mather is a computational geophysicist.
+
+Ben Mather's Sydney Uni page is at https://www.sydney.edu.au/science/about/our-people/academic-staff/ben-mather.html.

@@ -11,3 +11,5 @@ tags:
   - release
   - python3
 ---
+
+Simon Williams' ResearchGate profile is at https://www.researchgate.net/profile/Simon_Williams9.
