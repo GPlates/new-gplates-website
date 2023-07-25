@@ -1,9 +1,9 @@
 ---
 templateKey: "people"
 name: "John Cannon"
-title: "Lead developer of GPlates"
+title: "Lead GPlates developer"
 date: 2016-11-16
-image: ./images/default-180x180.png
+image: ./images/john-cannon-360x360.png
 description: >-
   This is a description.
 tags:
@@ -12,4 +12,6 @@ tags:
   - python3
 ---
 
-John joined the GPlates development team in 2009. He is the current lead developer of GPlates.
+![John Cannon](./images/john-cannon-1200x650.png)
+
+John joined the GPlates development team in 2008. His focus is designing, developing, delivering and maintaining GPlates and pyGPlates.
