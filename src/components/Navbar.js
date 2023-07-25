@@ -12,6 +12,7 @@ import {
   faGraduationCap,
   faUsers,
   faScroll,
+  faUsersViewfinder,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = class extends React.Component {
@@ -156,6 +157,17 @@ const Navbar = class extends React.Component {
                 </span>
 
                 <span>Education</span>
+              </Link>
+              <Link className="navbar-item" to="/contact">
+                <span
+                  className="icon has-text-extensions"
+                  aria-hidden="true"
+                  style={{ color: "darkolivegreen" }}
+                >
+                  <FontAwesomeIcon icon={faUsersViewfinder} />
+                </span>
+
+                <span>People</span>
               </Link>
               <a
                 className="navbar-item"

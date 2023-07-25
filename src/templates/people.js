@@ -10,6 +10,7 @@ const PeopleTemplate = ({
   contentComponent,
   description,
   tags,
+  name,
   title,
   helmet,
 }) => {
@@ -23,6 +24,12 @@ const PeopleTemplate = ({
           <div className="column is-10 is-offset-1">
             <h1
               className="title is-size-2 has-text-weight-bold is-bold-light"
+              style={{ textAlign: "center" }}
+            >
+              {name}
+            </h1>
+            <h1
+              className="title is-size-4 has-text-weight-bold is-bold-light"
               style={{ textAlign: "center" }}
             >
               {title}
@@ -66,8 +73,8 @@ const People = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Screenshot">
-            <title>{`${post.frontmatter.title}`}</title>
+          <Helmet titleTemplate={"%s | " + post.frontmatter.title}>
+            <title>{`${post.frontmatter.name}`}</title>
             <meta
               name="description"
               content={`${post.frontmatter.description}`}
@@ -75,6 +82,7 @@ const People = ({ data }) => {
           </Helmet>
         }
         tags={post.frontmatter.tags}
+        name={post.frontmatter.name}
         title={post.frontmatter.title}
       />
     </Layout>
@@ -95,6 +103,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        name
         date(formatString: "MMMM DD, YYYY")
         title
         description
