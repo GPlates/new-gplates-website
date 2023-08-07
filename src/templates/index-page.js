@@ -101,6 +101,15 @@ const changeBGColor = () => {
 };
 setInterval(changeBGColor, 200);
 
+setTimeout(() => {
+  closeNotification();
+}, 15000);
+
+const closeNotification = () => {
+  let notification = document.getElementById("eureka-notification");
+  notification.parentNode.removeChild(notification);
+};
+
 const IndexPageTemplate = ({
   image,
   title,
@@ -113,6 +122,19 @@ const IndexPageTemplate = ({
   reasons,
 }) => (
   <div>
+    <div id="eureka-notification" className="notification is-primary is-light">
+      <button className="delete" onClick={closeNotification}></button>
+      Congratulations! GPlates has been shortlisted for{" "}
+      <a href="https://australian.museum/get-involved/eureka-prizes/2023-eureka-prizes-finalists/">
+        2023 Eureka Prize for Excellence in Research Software
+      </a>
+      <p>
+        And find our new home at{" "}
+        <a href="https://github.com/GPlates/GPlates">
+          https://github.com/GPlates/GPlates
+        </a>
+      </p>
+    </div>
     <div
       className="full-width-image margin-top-0 gp-header"
       style={{
