@@ -75,7 +75,7 @@ const timer = () => {
   }, 5000);
 };
 
-setInterval(timer, 20000);
+setInterval(timer, 15000);
 
 var done = false;
 const changeBGColor = () => {
@@ -107,7 +107,9 @@ setTimeout(() => {
 
 const closeNotification = () => {
   let notification = document.getElementById("eureka-notification");
-  notification.parentNode.removeChild(notification);
+  if(notification){
+    notification.parentNode.removeChild(notification);
+  }
 };
 
 const IndexPageTemplate = ({
@@ -123,6 +125,7 @@ const IndexPageTemplate = ({
 }) => (
   <div>
     <div id="eureka-notification" className="notification is-primary is-light">
+      {/* eslint-disable-next-line */}
       <button className="delete" onClick={closeNotification}></button>
       Congratulations! GPlates has been shortlisted for{" "}
       <a href="https://australian.museum/get-involved/eureka-prizes/2023-eureka-prizes-finalists/">
