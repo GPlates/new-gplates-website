@@ -247,7 +247,7 @@ const IndexPageTemplate = ({
 
             <div style={{ marginBottom: "1rem", marginTop: "1rem" }}>
               <a
-                href="https://www.earthbyte.org/download-gplates-2-3/"
+                href="https://www.earthbyte.org/download-gplates-2-4/"
                 style={{
                   color: "#333",
                   textDecoration: "underline",
@@ -261,7 +261,7 @@ const IndexPageTemplate = ({
                 >
                   <FontAwesomeIcon icon={faDownload} />
                 </span>
-                Latest GPlates release v2.3
+                Latest GPlates release v2.4
               </a>
             </div>
 

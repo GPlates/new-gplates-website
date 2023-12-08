@@ -12,4 +12,4 @@ tags:
 ---
 ![Builtin Colour Palettes](../../img/BuiltinColourPalettes.png)
 
-A variety of built-in colour palettes based on ColorBrewer sequential and diverging colour scales. Also the colour palette range can be remapped to a reasonable range of crustal thinning factors.
+A variety of built-in colour palettes based on ColorBrewer and Scientific Colour Maps by Fabio Crameri. And a few palettes for age grids and elevation data. Also the colour palette range can be remapped to your own range.
