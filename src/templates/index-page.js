@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import Layout from "../components/Layout";
-import LatestNews from "../components/LatestNews";
 import { HTMLContent } from "../components/Content";
+import LatestNews from "../components/LatestNews";
+import Layout from "../components/Layout";
 
 // The following import prevents a Font Awesome icon server-side rendering bug,
 // where the icons flash from a very large icon down to a properly sized one:
@@ -14,12 +14,12 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; /* eslint-disable import/first */
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faDownload,
-  faClipboard,
   faCheckCircle,
+  faClipboard,
+  faDownload,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getSrc } from "gatsby-plugin-image";
 
 import GPlatesMainScreenshot from "../img/SATL_ExponentialStretching_650x380.png";
@@ -28,9 +28,9 @@ import HeroImg2 from "../img/hero-img-2.png";
 import HeroImg3 from "../img/hero-img-3.png";
 import HeroImg4 from "../img/hero-img-4.png";
 
-import pygplatesLogo from "../img/pygplates-screenshot.png";
-import portalScreenshot from "../img/portal-screenshot.png";
 import gwsScreenshot from "../img/gws-screenshot.png";
+import portalScreenshot from "../img/portal-screenshot.png";
+import pygplatesLogo from "../img/pygplates-screenshot.png";
 
 import auscopeLogo from "../img/Auscope_log_simulation_modelling.png";
 import peoplePhoto from "../img/earthbyte_group_June2016.jpg";
@@ -145,11 +145,10 @@ const IndexPageTemplate = ({
     <div
       className="full-width-image margin-top-0 gp-header"
       style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp
-            ? getSrc(image.childImageSharp.gatsbyImageData)
-            : image
-        })`,
+        backgroundImage: `url(${!!image.childImageSharp
+          ? getSrc(image.childImageSharp.gatsbyImageData)
+          : image
+          })`,
         backgroundPosition: `left top`,
         backgroundAttachment: "fixed",
         textAlign: `center`,
@@ -300,7 +299,7 @@ const IndexPageTemplate = ({
                 >
                   <FontAwesomeIcon icon={faDownload} />
                 </span>
-                Latest GPlately release v1.1
+                Latest GPlately release v1.2.7
               </a>
             </div>
           </div>
@@ -608,7 +607,7 @@ const IndexPageTemplate = ({
                     className="has-text-weight-semibold is-size-4"
                     style={{ marginTop: "10px", color: "grey" }}
                   >
-                    pyGPlates
+                    PyGPlates
                   </h3>
                 </div>
                 {/*end of pygplates section*/}
