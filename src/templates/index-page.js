@@ -605,7 +605,7 @@ const IndexPageTemplate = ({
                   </div>
                   <h3
                     className="has-text-weight-semibold is-size-4"
-                    style={{ marginTop: "10px", color: "grey" }}
+                    style={{ marginTop: "10px" }}
                   >
                     PyGPlates
                   </h3>
@@ -653,7 +653,7 @@ const IndexPageTemplate = ({
                   </div>
                   <h3
                     className="has-text-weight-semibold is-size-4"
-                    style={{ marginTop: "10px", color: "grey" }}
+                    style={{ marginTop: "10px" }}
                   >
                     GPlates Web Portal
                   </h3>
@@ -701,7 +701,7 @@ const IndexPageTemplate = ({
                   </div>
                   <h3
                     className="has-text-weight-semibold is-size-4"
-                    style={{ marginTop: "10px", color: "grey" }}
+                    style={{ marginTop: "10px" }}
                   >
                     GPlates Web Service
                   </h3>
