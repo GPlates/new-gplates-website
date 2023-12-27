@@ -9,7 +9,15 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       sassOptions: { indentedSyntax: true },
-    },    
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-TCW6QG4F4X", // Google Analytics / GA
+        ]
+      }
+    },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -50,7 +58,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-relative-images',
             options: {
-              
+
             },
           },
           {

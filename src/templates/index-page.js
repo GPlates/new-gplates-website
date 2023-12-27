@@ -299,7 +299,7 @@ const IndexPageTemplate = ({
                 >
                   <FontAwesomeIcon icon={faDownload} />
                 </span>
-                Latest GPlately release v1.2.7
+                Latest GPlately release v1.3.0
               </a>
             </div>
           </div>
