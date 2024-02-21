@@ -28,6 +28,7 @@ import HeroImg2 from "../img/hero-img-2.png";
 import HeroImg3 from "../img/hero-img-3.png";
 import HeroImg4 from "../img/hero-img-4.png";
 
+import gplatelyScreenshot from "../img/gplately-screenshot-624x351.png";
 import gwsScreenshot from "../img/gws-screenshot.png";
 import portalScreenshot from "../img/portal-screenshot.png";
 import pygplatesLogo from "../img/pygplates-screenshot.png";
@@ -563,6 +564,8 @@ const IndexPageTemplate = ({
       </article>
     </div>
 
+    <h1 className="gp-landing-page-title title" style={{ marginBottom: "0", marginTop: "1.5rem" }}>GPlates Software Suite</h1>
+
     {/* start of gplates family section */}
     <div className="container-fliud" style={{}}>
       <div className="container">
@@ -571,7 +574,7 @@ const IndexPageTemplate = ({
             <div style={{ padding: "0" }}>
               <div className="columns section is-multiline">
                 {/*start of pygplates section*/}
-                <div className="column is-4 gp-card">
+                <div className="column is-3 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img src={pygplatesLogo} alt="pyGPlates Screenshot" />
@@ -612,8 +615,100 @@ const IndexPageTemplate = ({
                 </div>
                 {/*end of pygplates section*/}
 
+                {/*start of gplately section*/}
+                <div className="column is-3 gp-card">
+                  <div className="gp-card-container">
+                    <div className="gp-card-front">
+                      <img
+                        src={gplatelyScreenshot}
+                        alt="GPlately Screenshot"
+                      ></img>
+                    </div>
+
+                    <div
+                      className="gp-card-back"
+                      style={{ backgroundColor: "#5c7f71" }}
+                    >
+                      <div
+                        style={{
+                          textAlign: "center",
+                          flex: "1",
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div>
+                          <b>GPlately</b> is a Python package to interrogate tectonic plate reconstructions.
+                        </div>
+                      </div>
+                      <div style={{}}>
+                        <br></br>
+                        <a
+                          className="button is-link is-small"
+                          href="https://github.com/GPlates/gplately"
+                        >
+                          Learn More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <h3
+                    className="has-text-weight-semibold is-size-4"
+                    style={{ marginTop: "10px" }}
+                  >
+                    GPlately
+                  </h3>
+                </div>
+                {/*end of gplately section*/}
+
+                {/* start of gws card */}
+                <div className="column is-3 gp-card">
+                  <div className="gp-card-container">
+                    <div className="gp-card-front">
+                      <img
+                        src={gwsScreenshot}
+                        alt="GPlates Web Service Screenshot"
+                      />
+                    </div>
+
+                    <div
+                      className="gp-card-back"
+                      style={{ backgroundColor: "#c6632c" }}
+                    >
+                      <div
+                        style={{
+                          textAlign: "center",
+                          flex: "1",
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div>
+                          The <b>GPlates Web Service</b> interface allows users
+                          to access plate tectonics reconstruction services via
+                          Internet.{" "}
+                        </div>
+                      </div>
+                      <div style={{}}>
+                        <br></br>
+                        <a
+                          className="button is-link is-small"
+                          href="https://gws.gplates.org/"
+                        >
+                          Learn More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <h3
+                    className="has-text-weight-semibold is-size-4"
+                    style={{ marginTop: "10px" }}
+                  >
+                    GPlates Web Service
+                  </h3>
+                </div>
                 {/*start of portal section*/}
-                <div className="column is-4 gp-card">
+                <div className="column is-3 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img
@@ -660,52 +755,6 @@ const IndexPageTemplate = ({
                 </div>
                 {/*end of portal section*/}
 
-                {/* start of gws card */}
-                <div className="column is-4 gp-card">
-                  <div className="gp-card-container">
-                    <div className="gp-card-front">
-                      <img
-                        src={gwsScreenshot}
-                        alt="GPlates Web Service Screenshot"
-                      />
-                    </div>
-
-                    <div
-                      className="gp-card-back"
-                      style={{ backgroundColor: "#c6632c" }}
-                    >
-                      <div
-                        style={{
-                          textAlign: "center",
-                          flex: "1",
-                          display: "flex",
-                          alignItems: "center",
-                        }}
-                      >
-                        <div>
-                          The <b>GPlates Web Service</b> interface allows users
-                          to access plate tectonics reconstruction services via
-                          Internet.{" "}
-                        </div>
-                      </div>
-                      <div style={{}}>
-                        <br></br>
-                        <a
-                          className="button is-link is-small"
-                          href="https://gws.gplates.org/"
-                        >
-                          Learn More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <h3
-                    className="has-text-weight-semibold is-size-4"
-                    style={{ marginTop: "10px" }}
-                  >
-                    GPlates Web Service
-                  </h3>
-                </div>
                 {/* end of gws card */}
               </div>
             </div>
