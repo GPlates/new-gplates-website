@@ -64,8 +64,8 @@ GPlates and pyGPlates run on **Windows**, **macOS** and **Linux**.
                 </a>
             </td>
             <td class="content" >
-                <a href="https://github.com/GPlates/gplately" title="PyGPlates 0.36 packages">
-                <strong>Download GPlately 1.0</strong>
+                <a href="https://github.com/GPlates/gplately" title="GPlately GitHub Repository">
+                <strong>Download GPlately 1.3.0</strong>
                 </a>
                 <p>(the latest “stable” release)</p>
             </td>
