@@ -3,7 +3,7 @@ templateKey: 'news'
 title: 'GPlates 2.4 released'
 date: 2023-12-08T15:04:10.000Z
 featuredpost: false
-featuredimage: ../../img/TectonicSubsidence.png
+featuredimage: ../../img/BuiltinColourPalettes.png
 description: >-
   Adds tectonic subsidence.
 tags:

@@ -8,20 +8,20 @@ title: Download GPlates and Data
 
 ---
 
-The current stable release of GPlates is [GPlates 2.4](/news/2023-12-08-GPlates-2-4-released/), released in December 2023...
+The current stable release of GPlates is [GPlates 2.5](/news/2024-04-15-GPlates-2-5-released/), released in April 2024...
 
 <div class="download-box">
     <table>
     <tbody>
         <tr>
             <td class="icon">
-                <a href="https://www.earthbyte.org/download-gplates-2-4/">
+                <a href="https://www.earthbyte.org/download-gplates-2-5/">
                     <img src="./img/GPlates-tango-actions-go-down-48.png" alt="Download GPlates">
                 </a>
             </td>
             <td class="content" >
-                <a href="https://www.earthbyte.org/download-gplates-2-4/" title="GPlates 2.4 packages">
-                <strong>Download GPlates 2.4</strong>
+                <a href="https://www.earthbyte.org/download-gplates-2-5/" title="GPlates 2.5 packages">
+                <strong>Download GPlates 2.5</strong>
                 </a>
                 <p>(the latest “stable” release)</p>
             </td>
@@ -52,7 +52,7 @@ The current beta release of pyGPlates is [pyGPlates 0.36](/news/2022-05-06-PyGPl
     </table>
 </div><br>
 
-GPlates and pyGPlates run on **Windows**, **macOS** and **Linux**.
+The current stable release of GPlately:
 
 <div class="download-box">
     <table>
@@ -84,7 +84,12 @@ Ready-to-use binary packages are available to install GPlates on Windows, macOS 
 - For **Ubuntu**, we provide `.deb` **packages** for 64-bit Ubuntu versions (that are currently under support).
   - If you are using a different Linux distribution please use the source code package instead.
 
-Installation instructions for GPlates can be found on the [download page](https://www.earthbyte.org/download-gplates-2-4/).
+Installation instructions for GPlates can be found on the [download page](https://www.earthbyte.org/download-gplates-2-5/).
+
+You can also download older versions of GPlates:
+- [GPlates 2.4](https://www.earthbyte.org/download-gplates-2-4/)
+- [GPlates 2.3](https://www.earthbyte.org/download-gplates-2-3/)
+- [GPlates 2.2 and older](https://sourceforge.net/projects/gplates/files/gplates/)
 
 #### PyGPlates binary packages
 
@@ -102,6 +107,9 @@ Ready-to-use binary packages are available to install pyGPlates on Windows, macO
   - If you are using a different Linux distribution please use the source code package instead.
 
 Installation instructions for pyGPlates can be found in the [pyGPlates documentation](/docs/pygplates/pygplates_getting_started.html#installing-pygplates).
+
+You can also download older versions of pyGPlates:
+- [PyGPlates 0.28 and older](https://sourceforge.net/projects/gplates/files/pygplates/)
 
 #### GPlates and pyGPlates source code
 
@@ -193,9 +201,9 @@ pip install .
 
 ---
 
-Researchers in the [EarthByte Project](https://www.earthbyte.org/) have made [GPlates-compatible data](http://www.earthbyte.org/gplates-2-4-software-and-data-sets/) available for use with GPlates.
+Researchers in the [EarthByte Project](https://www.earthbyte.org/) have made [GPlates-compatible data](http://www.earthbyte.org/gplates-2-5-software-and-data-sets/) available for use with GPlates.
 
-A [sample set](http://www.earthbyte.org/gplates-2-4-software-and-data-sets/) of these data-files are also contained within the GPlates installation packages, and will be automatically installed with GPlates. This data has been updated for the GPlates 2.4 release. Thanks to the EarthByte Project for making these data-files available!
+A [sample set](http://www.earthbyte.org/gplates-2-5-software-and-data-sets/) of these data-files are also contained within the GPlates installation packages, and will be automatically installed with GPlates. This data has been updated for the GPlates 2.5 release. Thanks to the EarthByte Project for making these data-files available!
 
 Go to [EarthByte website](https://www.earthbyte.org/category/resources/data-models/) for more data and models.
 
