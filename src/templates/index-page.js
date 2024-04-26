@@ -29,9 +29,11 @@ import HeroImg3 from "../img/hero-img-3.png";
 import HeroImg4 from "../img/hero-img-4.png";
 
 import gplatelyScreenshot from "../img/gplately-screenshot-624x351.png";
+import gplatesAppScreenshot from "../img/gplates-app-624x351.png";
 import gwsScreenshot from "../img/gws-screenshot.png";
 import portalScreenshot from "../img/portal-screenshot.png";
 import pygplatesLogo from "../img/pygplates-screenshot.png";
+import webGPlatesScreenshot from "../img/web-gplates-624x351.png";
 
 import auscopeLogo from "../img/Auscope_log_simulation_modelling.png";
 import peoplePhoto from "../img/earthbyte_group_June2016.jpg";
@@ -574,7 +576,7 @@ const IndexPageTemplate = ({
             <div style={{ padding: "0" }}>
               <div className="columns section is-multiline">
                 {/*start of pygplates section*/}
-                <div className="column is-3 gp-card">
+                <div className="column is-4 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img src={pygplatesLogo} alt="pyGPlates Screenshot" />
@@ -616,7 +618,7 @@ const IndexPageTemplate = ({
                 {/*end of pygplates section*/}
 
                 {/*start of gplately section*/}
-                <div className="column is-3 gp-card">
+                <div className="column is-4 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img
@@ -662,7 +664,7 @@ const IndexPageTemplate = ({
                 {/*end of gplately section*/}
 
                 {/* start of gws card */}
-                <div className="column is-3 gp-card">
+                <div className="column is-4 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img
@@ -707,8 +709,9 @@ const IndexPageTemplate = ({
                     GPlates Web Service
                   </h3>
                 </div>
+                {/* end of gws card */}
                 {/*start of portal section*/}
-                <div className="column is-3 gp-card">
+                <div className="column is-4 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img
@@ -755,7 +758,97 @@ const IndexPageTemplate = ({
                 </div>
                 {/*end of portal section*/}
 
-                {/* end of gws card */}
+                {/*start of gplates app section*/}
+                <div className="column is-4 gp-card">
+                  <div className="gp-card-container">
+                    <div className="gp-card-front">
+                      <img
+                        src={gplatesAppScreenshot}
+                        alt="GPlates App Screenshot"
+                      ></img>
+                    </div>
+
+                    <div
+                      className="gp-card-back"
+                      style={{ backgroundColor: "#c6632c" }}
+                    >
+                      <div
+                        style={{
+                          textAlign: "center",
+                          flex: "1",
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div>
+                          The <b>GPlates Mobile App</b> is a powerful tool designed to enable users to reconstruct and visualise spatial data through geological time.
+                        </div>
+                      </div>
+                      <div style={{}}>
+                        <br></br>
+                        <a
+                          className="button is-link is-small"
+                          href="https://apps.apple.com/ly/app/gplates/id6447170583"
+                        >
+                          Learn More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <h3
+                    className="has-text-weight-semibold is-size-4"
+                    style={{ marginTop: "10px" }}
+                  >
+                    GPlates Mobile App
+                  </h3>
+                </div>
+                {/*end of gplates mobile app section*/}
+
+                {/*start of web gplates section*/}
+                <div className="column is-4 gp-card">
+                  <div className="gp-card-container">
+                    <div className="gp-card-front">
+                      <img
+                        src={webGPlatesScreenshot}
+                        alt="Web GPlates Screenshot"
+                      ></img>
+                    </div>
+
+                    <div
+                      className="gp-card-back"
+                    >
+                      <div
+                        style={{
+                          textAlign: "center",
+                          flex: "1",
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div>
+                          The <b>Web GPlates</b> is a cloud-based platform, revolutionizing geoscience research by offering comprehensive tools for analyzing and visualizing deep-time datasets.
+                        </div>
+                      </div>
+                      <div style={{}}>
+                        <br></br>
+                        <a
+                          className="button is-link is-small"
+                          href="https://dplanet.deep-time.org/DPlanet/"
+                        >
+                          Learn More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <h3
+                    className="has-text-weight-semibold is-size-4"
+                    style={{ marginTop: "10px" }}
+                  >
+                    Web GPlates
+                  </h3>
+                </div>
+                {/*end of web gplates section*/}
+
               </div>
             </div>
           </div>
