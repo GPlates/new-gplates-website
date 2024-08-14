@@ -33,7 +33,6 @@ import gplatesAppScreenshot from "../img/gplates-app-624x351.png";
 import gwsScreenshot from "../img/gws-screenshot.png";
 import portalScreenshot from "../img/portal-screenshot.png";
 import pygplatesLogo from "../img/pygplates-screenshot.png";
-import rgplatesBanner from "../img/rgplates_gplates_suite_banner.png";
 import webGPlatesScreenshot from "../img/web-gplates-624x351.png";
 
 import auscopeLogo from "../img/Auscope_log_simulation_modelling.png";
@@ -712,7 +711,7 @@ const IndexPageTemplate = ({
                 </div>
                 {/* end of gws card */}
                 {/*start of portal section*/}
-                <div className="column is-3 gp-card">
+                <div className="column is-4 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img
@@ -760,7 +759,7 @@ const IndexPageTemplate = ({
                 {/*end of portal section*/}
 
                 {/*start of gplates app section*/}
-                <div className="column is-3 gp-card">
+                <div className="column is-4 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img
@@ -806,7 +805,7 @@ const IndexPageTemplate = ({
                 {/*end of gplates mobile app section*/}
 
                 {/*start of web gplates section*/}
-                <div className="column is-3 gp-card">
+                <div className="column is-4 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img
@@ -849,51 +848,6 @@ const IndexPageTemplate = ({
                   </h3>
                 </div>
                 {/*end of web gplates section*/}
-
-                {/*start of rgplates section*/}
-                <div className="column is-3 gp-card">
-                  <div className="gp-card-container">
-                    <div className="gp-card-front">
-                      <img
-                        src={rgplatesBanner}
-                        alt="rgplates banner"
-                      ></img>
-                    </div>
-
-                    <div
-                      className="gp-card-back"
-                    >
-                      <div
-                        style={{
-                          textAlign: "center",
-                          flex: "1",
-                          display: "flex",
-                          alignItems: "center",
-                        }}
-                      >
-                        <div>
-                          The <b>rgplates</b> is a R interface for the GPlates Web Service and the GPlates Application.
-                        </div>
-                      </div>
-                      <div style={{}}>
-                        <br></br>
-                        <a
-                          className="button is-link is-small"
-                          href="https://gplates.github.io/rgplates/"
-                        >
-                          Learn More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <h3
-                    className="has-text-weight-semibold is-size-4"
-                    style={{ marginTop: "10px" }}
-                  >
-                    rgplates
-                  </h3>
-                </div>
-                {/*end of rgplates section*/}
 
               </div>
             </div>
