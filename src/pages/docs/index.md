@@ -1,9 +1,11 @@
 ---
-templateKey: 'simple-page'
+templateKey: "simple-page"
 path: /docs
 title: User Docs
 ---
-### GPlates 
+
+### GPlates
+
 ---
 
 <table class ="doc-list">
@@ -73,7 +75,8 @@ title: User Docs
       </tr>
 </table>
 
-### GPlately 
+### GPlately
+
 ---
 
 <table class ="doc-list">
@@ -99,18 +102,45 @@ title: User Docs
       </tr>
 </table>
 
+### rgplates
 
+---
 
+<table class ="doc-list">
+   <tbody>
+      <tr>
+         <td class="icon">
+            <a href="https://gplates.github.io/rgplates/reference/index.html"><img src="./img/GPlates-Manual.png" alt="rgplates Documentation"></a>
+         </td>
+         <td class="content" >
+            <h4><a href="https://gplates.github.io/rgplates/reference/index.html">rgplates Documentation</a></h4>  
+            <p>The rgplates documentation can be found at <a href="https://gplates.github.io/rgplates/reference/index.html">https://gplates.github.io/rgplates/reference/index.html</a>.</p>   
+         </td>
+      </tr>
+   </tbody>
+   <tr>
+         <td class="icon">
+            <a href="https://gplates.github.io/rgplates/articles/"><img src="./img/GPlates-Tutorial.png" alt="rgplates Tutorials"></a>
+         </td>
+         <td class="content" >
+            <h4><a href="https://gplates.github.io/rgplates/articles/">rgplates Tutorials</a></h4>         
+            <p>The rgplates tutorials can be found at <a href="https://gplates.github.io/rgplates/articles/">https://gplates.github.io/rgplates/articles/</a>.</p>
+         </td>
+      </tr>
+</table>
 
 ### GPML
+
 ---
+
 Click [here](/gpml) to find out more about the **GPlates Markup Language**(GPML), the “native” file format of GPlates.
 
 ### Compiling GPlates
+
 ---
 
 Instructions on how to compile GPlates from source may be found in the [GPlates source-code releases](https://www.gplates.org/download), in the files:
 
-* DEPS.Linux and BUILD.Linux (on Linux)
-* DEPS.OSX and BUILD.OSX (on macOS)
-* DEPS.Windows and BUILD.Windows (on Windows)
+- DEPS.Linux and BUILD.Linux (on Linux)
+- DEPS.OSX and BUILD.OSX (on macOS)
+- DEPS.Windows and BUILD.Windows (on Windows)
