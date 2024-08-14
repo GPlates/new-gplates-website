@@ -46,7 +46,8 @@ title: User Docs
    </tbody>
 </table>
  
-### pyGPlates 
+### pyGPlates
+
 ---
 
 <table class ="doc-list">
