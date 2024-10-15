@@ -20,7 +20,7 @@ _This web page was created by a Python script automatically using the data retri
 
 - [The Cretaceous world: plate tectonics, palaeogeography and palaeoclimate](https://www.lyellcollection.org/doi/pdf/10.1144/SP544-2024-28) CR Scotese, C Vérard, L Burgener… - Geological Society …, 2024 - lyellcollection.org
 
-- [-driven and orbitally driven oxygen isotope variability in the Early Eocene](https://cp.copernicus.org/articles/20/495/2024/cp-20-495-2024.html) J Campbell, CJ Poulsen, J Zhu, JE Tierney… - Climate of the …, 2024 - cp.copernicus.org
+- [CO2-driven and orbitally driven oxygen isotope variability in the Early Eocene](https://cp.copernicus.org/articles/20/495/2024/cp-20-495-2024.html) J Campbell, CJ Poulsen, J Zhu, JE Tierney… - Climate of the …, 2024 - cp.copernicus.org
 
 - [2‐D Geodynamic Modeling of the Central South Atlantic Wide Rifted Margins, Implications for Evaporite Deposition](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023JB027985) T Theunissen, RS Huismans… - Journal of Geophysical …, 2024 - Wiley Online Library
 
