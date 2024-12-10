@@ -5,7 +5,7 @@ date: 2022-05-06T15:04:10.000Z
 featuredpost: false
 featuredimage: ../../img/pygplates_0-36_doc_contents.png
 description: >-
-  Adds tectonic subsidence.
+  Adds reconstructing points using topologies.
 tags:
   - pyGPlates
   - release

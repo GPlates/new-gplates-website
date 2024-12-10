@@ -60,12 +60,12 @@ The current stable release of GPlately:
         <tr>
             <td class="icon">
                 <a href="https://github.com/GPlates/gplately">
-                    <img src="./img/GPlates-tango-actions-go-down-48.png" alt="Download GPlately">
+                    <img src="./img/GPlates-tango-actions-go-down-48.png" alt="Install GPlately">
                 </a>
             </td>
             <td class="content" >
                 <a href="https://github.com/GPlates/gplately" title="GPlately GitHub Repository">
-                <strong>Download GPlately 1.3.0</strong>
+                <strong>Install GPlately 1.3.0</strong>
                 </a>
                 <p>(the latest “stable” release)</p>
             </td>
@@ -74,128 +74,46 @@ The current stable release of GPlately:
     </table>
 </div><br>
 
-#### GPlates binary packages
+#### GPlates
 
-Ready-to-use binary packages are available to install GPlates on Windows, macOS and Ubuntu. These also include the GPlates-compatible geodata described below.
+Ready-to-use binary packages are available to install GPlates on Windows, macOS and Ubuntu.
+These also include the GPlates-compatible geodata described below.
 
-- For **Windows**, we provide an `.exe` **installer** for a 64-bit version of GPlates on a 64-bit version of Windows. We also provide a `.zip` file for users who wish to use GPlates without installing it.
+- For **Windows**, we provide an `.exe` **installer** for a 64-bit version of GPlates on a 64-bit version of Windows.
+  We also provide a `.zip` file for users who wish to use GPlates without installing it.
 - For **macOS** on **Intel** (x86_64), we provide a `.dmg` **disk image** containing a 64-bit version of GPlates for **Catalina** (10.15) or above.
 - For **macOS** on **Apple Silicon** (arm64), we provide a `.dmg` **disk image** containing a 64-bit version of GPlates for **Big Sur** (11) or above.
 - For **Ubuntu**, we provide `.deb` **packages** for 64-bit Ubuntu versions (that are currently under support).
   - If you are using a different Linux distribution please use the source code package instead.
 
-Installation instructions for GPlates can be found on the [download page](https://www.earthbyte.org/download-gplates-2-5/).
+These binary packages, and their installation instructions, can be found on the [download page](https://www.earthbyte.org/download-gplates-2-5/).
+
+Source-code packages are also available for Windows (in a zip-file) and Linux and macOS (in a tarball) on the [download page](https://www.earthbyte.org/download-gplates-2-5/).
+Instructions on how to compile GPlates from source code can be found [here](https://github.com/GPlates/GPlates).
+
+> __Note:__ The source-code packages do __not__ contain geodata. But there is a zip-file containing just the geodata.
 
 You can also download older versions of GPlates:
 - [GPlates 2.4](https://www.earthbyte.org/download-gplates-2-4/)
 - [GPlates 2.3](https://www.earthbyte.org/download-gplates-2-3/)
 - [GPlates 2.2 and older](https://sourceforge.net/projects/gplates/files/gplates/)
 
-#### PyGPlates binary packages
+#### PyGPlates
 
-Ready-to-use binary packages are available to install pyGPlates on Windows, macOS and Ubuntu. These do **not** include the GPlates-compatible geodata.
+PyGPlates can be installed using [conda](https://anaconda.org/conda-forge/pygplates) or [pip](https://pypi.org/project/pygplates).
 
-- For **Windows**, we provide a `.zip` file for each Python version (3.7, 3.8, 3.9 and 3.10).
-  - Containing 64-bit pyGPlates for use on a 64-bit version of Windows.
-- For **macOS** on **Intel** (x86_64), we provide a `.zip` file for each Python version (3.7, 3.8, 3.9 and 3.10).
-  - Containing 64-bit pyGPlates for use on an **Intel** Mac running macOS **Catalina** (10.15) or above.
-- For **macOS** on **Apple Silicon** (arm64), we provide a `.zip` file for each Python version (3.7, 3.8, 3.9 and 3.10).
-  - Containing 64-bit pyGPlates for use on an **Apple Silicon** Mac running macOS **Big Sur** (11) or above.
-- For **Ubuntu** on **Intel** (amd64) and **ARM** (arm64), we provide a `.deb` **package** for each 64-bit Ubuntu version.
-  - Packages are provided for Ubuntu versions under [standard](https://en.wikipedia.org/wiki/Ubuntu_version_history#Table_of_versions) support.
-  - The Ubuntu version determines the Python version (eg, Ubuntu Jammy 22.04 uses Python 3.10).
-  - If you are using a different Linux distribution please use the source code package instead.
-
-Installation instructions for pyGPlates can be found in the [pyGPlates documentation](/docs/pygplates/pygplates_getting_started.html#installing-pygplates).
+Please see the installation instructions in the [pyGPlates documentation](/docs/pygplates/pygplates_getting_started.html).
 
 You can also download older versions of pyGPlates:
 - [PyGPlates 0.28 and older](https://sourceforge.net/projects/gplates/files/pygplates/)
 
-#### GPlates and pyGPlates source code
+> __Note:__ These older packages are __not__ installed using `conda` or `pip`.
 
-We provide source-code packages for Windows (in a zip-file), and Linux and macOS (in a tarball).
-The source-code packages do not contain geodata (described below) which will need to be downloaded separately.
+#### GPlately
 
-To compile GPlates (or pyGPlates) from source, you will require:
+GPlately can be installed using [conda](https://anaconda.org/conda-forge/gplately) and [pip](https://pypi.org/project/gplately).
 
-- [**Boost**](https://www.boost.org/) 1.35 or above
-- [**CGAL**](https://www.cgal.org/) 4.7 or above (preferably 4.12 or above)
-- [**CMake**](https://cmake.org/) 3.10 or above
-- [**GDAL**](https://gdal.org/) 1.3.2 or above (preferably 2 or above)
-- [**GLEW**](http://glew.sourceforge.net/)
-- [**PROJ**](https://proj.org/) 4.6 or above (preferably 6 or above)
-- [**Python**](http://python.org/) 3.7 or above (or 2.7)
-- [**Qt**](https://www.qt.io/) 5.6 - 5.15 (**note**: 6.x will only be supported for GPlates 3.0)
-- [**Qwt**](https://qwt.sourceforge.io/) 6.0.1 or above (preferably 6.1 or above)
-
-Instructions on how to compile GPlates (or pyGPlates) from source may be found in the source-code releases, in the files:
-
-- `DEPS.Linux` and `BUILD.Linux` (on Linux)
-- `DEPS.OSX` and `BUILD.OSX` (on macOS)
-- `DEPS.Windows` and `BUILD.Windows` (on Windows)
-
-Please note that you should not attempt to compile GPlates from the pyGPlates source code. Or attempt to compile pyGPlates from the GPlates source code.
-
-GPlates (and pyGPlates) is [free software](https://www.gnu.org/philosophy/free-sw.html) (also known as [open-source](https://opensource.org/docs/definition.php) software), licensed for distribution under the GNU [General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) (GPL) version 2.
-
-#### GPlately installation
-
-**1. Using conda (recommended)**
-
-You can install the latest stable public release of `GPlately` and all of its dependencies using conda.
-This is the preferred method to install `GPlately` which downloads binaries from the conda-forge channel.
-
-```sh
-conda install -c conda-forge gplately
-```
-
-**Creating a new conda environment**
-
-We recommend creating a new conda environment inside which to install `GPlately`. This avoids any potential conflicts in your base Python environment. In the example below we create a new environment called "`my-env`":
-
-```sh
-conda create -n my-env
-conda activate my-env
-conda install -c conda-forge gplately
-```
-
-`my-env` needs to be activated whenever you use `GPlately`: i.e. `conda activate my-env`.
-
-**2. Using pip**
-
-Alternatively, you can install the latest stable public release of `GPlately` using the pip package manager.
-
-```sh
-pip install gplately
-```
-
-or from this GitHub repository:
-
-```sh
-pip install git+https://github.com/GPlates/gplately.git
-```
-
-**Pull from repository**
-
-**First-time installation:** To install the latest version of GPlately from a specific repository branch (e.g. `master`), copy the following commands into your terminal:
-
-```sh
-cd /path/to/desired/directory #Change your command directory to where you'd like to clone GPlately
-git clone https://github.com/GPlates/gplately.git
-cd gplately # navigate within the gplately folder
-git checkout master # or the name of whichever branch you need
-git pull # fetch all recent changes from this branch
-pip install .
-```
-
-**Update installation from cloned repo:** To update your installation of GPlately by fetching the latest pushes from a specific repository branch (e.g. `master`), copy the following commands into your terminal:
-
-```sh
-cd /path/to/gplately/directory #Should be where gplately is cloned - must end in /.../gplately
-git checkout master # or the name of whichever branch you need
-git pull # fetch all recent changes from this branch
-pip install .
-```
+Please see the installation instructions in the [GPlately GitHub Repository](https://github.com/GPlates/gplately).
 
 ### Download GPlates-compatible Data
 

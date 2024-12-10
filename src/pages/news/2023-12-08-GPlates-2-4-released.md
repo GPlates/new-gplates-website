@@ -5,7 +5,7 @@ date: 2023-12-08T15:04:10.000Z
 featuredpost: false
 featuredimage: ../../img/BuiltinColourPalettes.png
 description: >-
-  Adds tectonic subsidence.
+  Adds Scientific Colour Maps.
 tags:
   - GPlates
   - release
