@@ -16,6 +16,7 @@
       ~FeatureType.__init__
       ~FeatureType.create_from_qualified_string
       ~FeatureType.create_gpml
+      ~FeatureType.get_default_geometry_property_name
       ~FeatureType.get_name
       ~FeatureType.get_namespace
       ~FeatureType.get_namespace_alias

@@ -1,21 +1,22 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pygplates.FeaturesFunctionArgument &mdash; pygplates 0.36.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <title>pygplates.FeaturesFunctionArgument &mdash; pygplates 1.0.0-rc.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=78492a5e" />
+
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -28,14 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> pygplates
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pygplates
           </a>
-              <div class="version">
-                0.36
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -44,12 +46,12 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_primer.html">Primer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../pygplates_reference.html">Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#reconstruction">Reconstruction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#topology">Topology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#velocity">Velocity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#velocity-and-strain">Velocity and strain</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#rotation">Rotation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#plate-partitioning">Plate Partitioning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#file-i-o">File I/O</a></li>
@@ -62,7 +64,10 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../pygplates_reference.html#utility">Utility</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="pygplates.DateLineWrapper.html">pygplates.DateLineWrapper</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.Earth.html">pygplates.Earth</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">pygplates.FeaturesFunctionArgument</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">pygplates.FeaturesFunctionArgument</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pygplates.FeaturesFunctionArgument"><code class="docutils literal notranslate"><span class="pre">FeaturesFunctionArgument</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.GeoTimeInstant.html">pygplates.GeoTimeInstant</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.Version.html">pygplates.Version</a></li>
 </ul>
@@ -84,9 +89,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../pygplates_reference.html">Reference</a> &raquo;</li>
-      <li>pygplates.FeaturesFunctionArgument</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../pygplates_reference.html">Reference</a></li>
+      <li class="breadcrumb-item active">pygplates.FeaturesFunctionArgument</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/generated/pygplates.FeaturesFunctionArgument.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -97,17 +102,17 @@
            <div itemprop="articleBody">
              
   <section id="pygplates-featuresfunctionargument">
-<h1>pygplates.FeaturesFunctionArgument<a class="headerlink" href="#pygplates-featuresfunctionargument" title="Permalink to this headline"></a></h1>
+<h1>pygplates.FeaturesFunctionArgument<a class="headerlink" href="#pygplates-featuresfunctionargument" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="pygplates.FeaturesFunctionArgument">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pygplates.</span></span><span class="sig-name descname"><span class="pre">FeaturesFunctionArgument</span></span><a class="headerlink" href="#pygplates.FeaturesFunctionArgument" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Boost.Python.instance</span></code></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pygplates.</span></span><span class="sig-name descname"><span class="pre">FeaturesFunctionArgument</span></span><a class="headerlink" href="#pygplates.FeaturesFunctionArgument" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">instance</span></code></p>
 <p>A utility class for extracting features from collections and files.</p>
 <p>This is useful when defining your own function that accepts features from a variety of sources. It avoids the hassle of having to explicitly test for each source type.</p>
 <p>The currently supported source types are:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="pygplates.FeatureCollection.html#pygplates.FeatureCollection" title="pygplates.FeatureCollection"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureCollection</span></code></a></p></li>
-<li><p>filename (string)</p></li>
+<li><p>filename (string/<code class="docutils literal notranslate"><span class="pre">os.PathLike</span></code>)</p></li>
 <li><p><a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a></p></li>
 <li><p>sequence of <a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a></p></li>
 <li><p>sequence of any combination of the above four types</p></li>
@@ -129,20 +134,25 @@
 <span class="n">my_function</span><span class="p">([</span><span class="n">feature_collection</span><span class="p">,</span>  <span class="n">feature1</span><span class="p">,</span> <span class="n">feature2</span> <span class="p">])</span>
 <span class="n">my_function</span><span class="p">([</span><span class="n">feature_collection</span><span class="p">,</span> <span class="p">[</span><span class="n">feature1</span><span class="p">,</span> <span class="n">feature2</span><span class="p">]])</span>
 <span class="n">my_function</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="n">my_function</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s1">&#39;file.gpml&#39;</span><span class="p">)</span>
 </pre></div>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 0.44: </span>Filenames can be <a class="reference external" href="https://docs.python.org/3/library/os.html#os.PathLike">os.PathLike</a> (such as <a class="reference external" href="https://docs.python.org/3/library/pathlib.html">pathlib.Path</a>) in addition to strings.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.FeaturesFunctionArgument.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function_argument</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FeaturesFunctionArgument.__init__" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function_argument</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FeaturesFunctionArgument.__init__" title="Link to this definition"></a></dt>
 <dd><p>Extract features from files and/or collections of features.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>function_argument</strong> (<a class="reference internal" href="pygplates.FeatureCollection.html#pygplates.FeatureCollection" title="pygplates.FeatureCollection"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureCollection</span></code></a>, or string, or <a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>, or sequence of <a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>, or sequence of any combination of those four types) – A feature collection, or filename, or feature, or sequence of features, or a sequence (eg, <code class="docutils literal notranslate"><span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">tuple</span></code>) of any combination of those four types</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>function_argument</strong> (<a class="reference internal" href="pygplates.FeatureCollection.html#pygplates.FeatureCollection" title="pygplates.FeatureCollection"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureCollection</span></code></a>, or string/<code class="docutils literal notranslate"><span class="pre">os.PathLike</span></code>, or <a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>, or sequence of <a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>, or sequence of any combination of those four types) – A feature collection, or filename, or feature, or sequence of features, or a sequence (eg, <code class="docutils literal notranslate"><span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">tuple</span></code>) of any combination of those four types</p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p>OpenFileForReadingError if any file is not readable (when filenames specified)</p>
 </dd>
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p>FileFormatNotSupportedError if any file format (identified by the filename extensions) does not support reading (when filenames specified)</p>
 </dd>
 </dl>
@@ -160,14 +170,13 @@
 <span class="n">my_function</span><span class="p">([</span><span class="s1">&#39;file1.gpml&#39;</span><span class="p">,</span> <span class="s1">&#39;file2.gpml&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 0.44: </span>Filenames can be <a class="reference external" href="https://docs.python.org/3/library/os.html#os.PathLike">os.PathLike</a> (such as <a class="reference external" href="https://docs.python.org/3/library/pathlib.html">pathlib.Path</a>) in addition to strings.</p>
+</div>
 </dd></dl>
 
 <p class="rubric">Methods</p>
 <table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.FeaturesFunctionArgument.__init__" title="pygplates.FeaturesFunctionArgument.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(function_argument)</p></td>
 <td><p>Extract features from files and/or collections of features.</p></td>
@@ -185,10 +194,10 @@
 </table>
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.FeaturesFunctionArgument.contains_features">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">contains_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function_argument</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FeaturesFunctionArgument.contains_features" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">contains_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function_argument</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FeaturesFunctionArgument.contains_features" title="Link to this definition"></a></dt>
 <dd><p>[<em>staticmethod</em>] Return whether <em>function_argument</em> contains features.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>function_argument</strong> – the function argument to test for features</p>
 </dd>
 </dl>
@@ -208,10 +217,10 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.FeaturesFunctionArgument.get_features">
-<span class="sig-name descname"><span class="pre">get_features</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FeaturesFunctionArgument.get_features" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_features</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FeaturesFunctionArgument.get_features" title="Link to this definition"></a></dt>
 <dd><p>Returns a list of all features specified in the <a class="reference internal" href="#pygplates.FeaturesFunctionArgument.__init__" title="pygplates.FeaturesFunctionArgument.__init__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">constructor</span></code></a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>list of <a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a></p>
 </dd>
 </dl>
@@ -233,13 +242,13 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.FeaturesFunctionArgument.get_files">
-<span class="sig-name descname"><span class="pre">get_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FeaturesFunctionArgument.get_files" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.FeaturesFunctionArgument.get_files" title="Link to this definition"></a></dt>
 <dd><p>Returns a list of feature collections that were loaded from files specified in the <a class="reference internal" href="#pygplates.FeaturesFunctionArgument.__init__" title="pygplates.FeaturesFunctionArgument.__init__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">constructor</span></code></a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a list of (feature collection, filename) tuples</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>list of (<a class="reference internal" href="pygplates.FeatureCollection.html#pygplates.FeatureCollection" title="pygplates.FeatureCollection"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureCollection</span></code></a>, string) tuples</p>
 </dd>
 </dl>
@@ -283,9 +292,9 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
-(C) 2004-2022 California Institute of Technology
-(C) 2007-2022 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
+(C) 2004-2024 California Institute of Technology
+(C) 2007-2024 The Geological Survey of Norway
 .</p>
   </div>
 

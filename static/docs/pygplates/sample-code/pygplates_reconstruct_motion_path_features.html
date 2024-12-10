@@ -1,21 +1,22 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reconstruct motion path features &mdash; pygplates 0.36.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <title>Reconstruct motion path features &mdash; pygplates 1.0.0-rc.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=78492a5e" />
+
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -28,14 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> pygplates
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pygplates
           </a>
-              <div class="version">
-                0.36
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -44,6 +46,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_primer.html">Primer</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#import">Import</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#load-save">Load/Save</a></li>
@@ -65,7 +68,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#isochrons">Isochrons</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_reference.html">Reference</a></li>
 </ul>
 
@@ -82,9 +84,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../pygplates_sample_code.html">Sample code</a> &raquo;</li>
-      <li>Reconstruct motion path features</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../pygplates_sample_code.html">Sample code</a></li>
+      <li class="breadcrumb-item active">Reconstruct motion path features</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/sample-code/pygplates_reconstruct_motion_path_features.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -95,7 +97,7 @@
            <div itemprop="articleBody">
              
   <section id="reconstruct-motion-path-features">
-<span id="pygplates-reconstruct-motion-path-features"></span><h1>Reconstruct motion path features<a class="headerlink" href="#reconstruct-motion-path-features" title="Permalink to this headline"></a></h1>
+<span id="pygplates-reconstruct-motion-path-features"></span><h1>Reconstruct motion path features<a class="headerlink" href="#reconstruct-motion-path-features" title="Link to this heading"></a></h1>
 <p>This example shows a couple of different scenarios involving the reconstruction of
 <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:MotionPath">motion path</a> features to geological times.</p>
 <div class="admonition seealso">
@@ -106,7 +108,7 @@
 <p class="admonition-title">See also</p>
 <p><a class="reference internal" href="pygplates_reconstruct_regular_features.html#pygplates-reconstruct-regular-features"><span class="std std-ref">Reconstruct regular features</span></a></p>
 </div>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#exported-reconstructed-motion-paths-to-a-file" id="id5">Exported reconstructed motion paths to a file</a></p>
 <ul>
@@ -123,9 +125,9 @@
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="exported-reconstructed-motion-paths-to-a-file">
-<span id="pygplates-export-reconstructed-motion-paths-to-a-file"></span><h2><a class="toc-backref" href="#id5">Exported reconstructed motion paths to a file</a><a class="headerlink" href="#exported-reconstructed-motion-paths-to-a-file" title="Permalink to this headline"></a></h2>
+<span id="pygplates-export-reconstructed-motion-paths-to-a-file"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Exported reconstructed motion paths to a file</a><a class="headerlink" href="#exported-reconstructed-motion-paths-to-a-file" title="Link to this heading"></a></h2>
 <p>In this example we reconstruct <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:MotionPath">motion path</a>
 features and export the results to a Shapefile.</p>
 <div class="admonition seealso">
@@ -133,15 +135,15 @@ features and export the results to a Shapefile.</p>
 <p><a class="reference internal" href="pygplates_create_common_feature_types.html#pygplates-create-motion-path-feature"><span class="std std-ref">Create a motion path feature</span></a> and <a class="reference internal" href="pygplates_query_common_feature_types.html#pygplates-query-motion-path-feature"><span class="std std-ref">Query a motion path feature</span></a></p>
 </div>
 <section id="sample-code">
-<h3><a class="toc-backref" href="#id6">Sample code</a><a class="headerlink" href="#sample-code" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Sample code</a><a class="headerlink" href="#sample-code" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
 <span class="c1"># Load one or more rotation files into a rotation model.</span>
 <span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
 
-<span class="c1"># Load some motion path features.</span>
-<span class="n">motion_path_features</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="s1">&#39;motion_path_features.gpml&#39;</span><span class="p">)</span>
+<span class="c1"># Create a reconstruct model from some motion path features and the rotation model.</span>
+<span class="n">reconstruct_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructModel</span><span class="p">(</span><span class="s1">&#39;motion_path_features.gpml&#39;</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">)</span>
 
 <span class="c1"># Reconstruct features to this geological time.</span>
 <span class="n">reconstruction_time</span> <span class="o">=</span> <span class="mi">50</span>
@@ -151,19 +153,20 @@ features and export the results to a Shapefile.</p>
 <span class="n">export_filename</span> <span class="o">=</span> <span class="s1">&#39;motion_path_output_</span><span class="si">{0}</span><span class="s1">Ma.shp&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">reconstruction_time</span><span class="p">)</span>
 
 <span class="c1"># Reconstruct the motion paths to the reconstruction time and export them to a shapefile.</span>
-<span class="n">pygplates</span><span class="o">.</span><span class="n">reconstruct</span><span class="p">(</span><span class="n">motion_path_features</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">,</span> <span class="n">export_filename</span><span class="p">,</span> <span class="n">reconstruction_time</span><span class="p">,</span>
+<span class="n">reconstruct_snapshot</span> <span class="o">=</span> <span class="n">reconstruct_model</span><span class="o">.</span><span class="n">reconstruct_snapshot</span><span class="p">(</span><span class="n">reconstruction_time</span><span class="p">)</span>
+<span class="n">reconstruct_snapshot</span><span class="o">.</span><span class="n">export_reconstructed_geometries</span><span class="p">(</span><span class="n">export_filename</span><span class="p">,</span>
     <span class="n">reconstruct_type</span><span class="o">=</span><span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructType</span><span class="o">.</span><span class="n">motion_path</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="details">
-<h3><a class="toc-backref" href="#id7">Details</a><a class="headerlink" href="#details" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Details</a><a class="headerlink" href="#details" title="Link to this heading"></a></h3>
 <p>The rotations are loaded from a rotation file into a <a class="reference internal" href="../generated/pygplates.RotationModel.html#pygplates.RotationModel" title="pygplates.RotationModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.RotationModel</span></code></a>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The motion path features are loaded into a <a class="reference internal" href="../generated/pygplates.FeatureCollection.html#pygplates.FeatureCollection" title="pygplates.FeatureCollection"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.FeatureCollection</span></code></a>.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">motion_path_features</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="s1">&#39;motion_path_features.gpml&#39;</span><span class="p">)</span>
+<p>Create a <a class="reference internal" href="../generated/pygplates.ReconstructModel.html#pygplates.ReconstructModel" title="pygplates.ReconstructModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">reconstruct</span> <span class="pre">model</span></code></a> from the motion path features and the rotation model.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconstruct_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructModel</span><span class="p">(</span><span class="s1">&#39;motion_path_features.gpml&#39;</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The motion path features will be reconstructed to their 50Ma positions.</p>
@@ -171,27 +174,28 @@ features and export the results to a Shapefile.</p>
 </pre></div>
 </div>
 <div class="line-block">
-<div class="line">All motion path features are reconstructed to 50Ma using <a class="reference internal" href="../generated/pygplates.reconstruct.html#pygplates.reconstruct" title="pygplates.reconstruct"><code class="xref py py-func docutils literal notranslate"><span class="pre">pygplates.reconstruct()</span></code></a>.</div>
+<div class="line">All motion path features are <a class="reference internal" href="../generated/pygplates.ReconstructModel.html#pygplates.ReconstructModel.reconstruct_snapshot" title="pygplates.ReconstructModel.reconstruct_snapshot"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reconstructed</span></code></a> to 50Ma.</div>
+<div class="line">We then <a class="reference internal" href="../generated/pygplates.ReconstructSnapshot.html#pygplates.ReconstructSnapshot.export_reconstructed_geometries" title="pygplates.ReconstructSnapshot.export_reconstructed_geometries"><code class="xref py py-meth docutils literal notranslate"><span class="pre">export</span> <span class="pre">the</span> <span class="pre">reconstructed</span> <span class="pre">geometries</span></code></a> to a file.</div>
 <div class="line">We specify we only want to reconstruct motion path features by specifying
 <code class="docutils literal notranslate"><span class="pre">pygplates.ReconstructType.motion_path</span></code> for the <em>reconstruct_type</em> argument.</div>
-<div class="line">We specify a filename to export the reconstructed geometries to.</div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pygplates</span><span class="o">.</span><span class="n">reconstruct</span><span class="p">(</span><span class="n">motion_path_features</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">,</span> <span class="n">export_filename</span><span class="p">,</span> <span class="n">reconstruction_time</span><span class="p">,</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconstruct_snapshot</span> <span class="o">=</span> <span class="n">reconstruct_model</span><span class="o">.</span><span class="n">reconstruct_snapshot</span><span class="p">(</span><span class="n">reconstruction_time</span><span class="p">)</span>
+<span class="n">reconstruct_snapshot</span><span class="o">.</span><span class="n">export_reconstructed_geometries</span><span class="p">(</span><span class="n">export_filename</span><span class="p">,</span>
     <span class="n">reconstruct_type</span><span class="o">=</span><span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructType</span><span class="o">.</span><span class="n">motion_path</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="output">
-<h3><a class="toc-backref" href="#id8">Output</a><a class="headerlink" href="#output" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Output</a><a class="headerlink" href="#output" title="Link to this heading"></a></h3>
 <p>We should now have a file called <code class="docutils literal notranslate"><span class="pre">motion_path_output_50Ma.shp</span></code> containing the motion paths
 reconstructed to their 50Ma positions.</p>
 </section>
 </section>
 <section id="query-a-reconstructed-motion-path">
-<span id="pygplates-query-reconstructed-motion-path"></span><h2><a class="toc-backref" href="#id9">Query a reconstructed motion path</a><a class="headerlink" href="#query-a-reconstructed-motion-path" title="Permalink to this headline"></a></h2>
+<span id="pygplates-query-reconstructed-motion-path"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Query a reconstructed motion path</a><a class="headerlink" href="#query-a-reconstructed-motion-path" title="Link to this heading"></a></h2>
 <p>In this example we print out the point locations in a reconstructed motion path.</p>
 <section id="id2">
-<h3><a class="toc-backref" href="#id10">Sample code</a><a class="headerlink" href="#id2" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Sample code</a><a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -216,13 +220,16 @@ reconstructed to their 50Ma positions.</p>
 <span class="c1"># Load one or more rotation files into a rotation model.</span>
 <span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
 
+<span class="c1"># Create a reconstruct model from the motion path feature and the rotation model.</span>
+<span class="n">reconstruct_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructModel</span><span class="p">(</span><span class="n">motion_path_feature</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">)</span>
+
 <span class="c1"># Reconstruct features to this geological time.</span>
 <span class="n">reconstruction_time</span> <span class="o">=</span> <span class="mi">50</span>
 
 <span class="c1"># Reconstruct the motion path feature to the reconstruction time.</span>
-<span class="n">reconstructed_motion_paths</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">pygplates</span><span class="o">.</span><span class="n">reconstruct</span><span class="p">(</span><span class="n">motion_path_feature</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">,</span> <span class="n">reconstructed_motion_paths</span><span class="p">,</span> <span class="n">reconstruction_time</span><span class="p">,</span>
-    <span class="n">reconstruct_type</span><span class="o">=</span><span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructType</span><span class="o">.</span><span class="n">motion_path</span><span class="p">)</span>
+<span class="n">reconstruct_snapshot</span> <span class="o">=</span> <span class="n">reconstruct_model</span><span class="o">.</span><span class="n">reconstruct_snapshot</span><span class="p">(</span><span class="n">reconstruction_time</span><span class="p">)</span>
+<span class="n">reconstructed_motion_paths</span> <span class="o">=</span> <span class="n">reconstruct_snapshot</span><span class="o">.</span><span class="n">get_reconstructed_geometries</span><span class="p">(</span>
+    <span class="n">reconstruct_types</span><span class="o">=</span><span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructType</span><span class="o">.</span><span class="n">motion_path</span><span class="p">)</span>
 
 <span class="c1"># Iterate over all reconstructed motion paths.</span>
 <span class="c1"># There will be two (one for each seed point).</span>
@@ -254,7 +261,7 @@ reconstructed to their 50Ma positions.</p>
 </div>
 </section>
 <section id="id3">
-<h3><a class="toc-backref" href="#id11">Details</a><a class="headerlink" href="#id3" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Details</a><a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <div class="line-block">
 <div class="line">The first part of this example comes from <a class="reference internal" href="pygplates_create_common_feature_types.html#pygplates-create-motion-path-feature"><span class="std std-ref">Create a motion path feature</span></a>.</div>
 <div class="line">It creates a motion path feature specifying the seed point locations that each motion path emanates
@@ -274,20 +281,23 @@ from as well as a list of times to plot points in the path.</div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The features will be reconstructed to their 50Ma positions.</p>
+<p>Create a <a class="reference internal" href="../generated/pygplates.ReconstructModel.html#pygplates.ReconstructModel" title="pygplates.ReconstructModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">reconstruct</span> <span class="pre">model</span></code></a> from the motion path feature and the rotation model.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconstruct_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructModel</span><span class="p">(</span><span class="n">motion_path_feature</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The motion path feature will be reconstructed to its 50Ma position.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconstruction_time</span> <span class="o">=</span> <span class="mi">50</span>
 </pre></div>
 </div>
 <div class="line-block">
-<div class="line">The motion path feature is reconstructed to 50Ma using <a class="reference internal" href="../generated/pygplates.reconstruct.html#pygplates.reconstruct" title="pygplates.reconstruct"><code class="xref py py-func docutils literal notranslate"><span class="pre">pygplates.reconstruct()</span></code></a>.</div>
-<div class="line">We specify a <code class="docutils literal notranslate"><span class="pre">list</span></code> for <em>reconstructed_motion_paths</em> instead of a filename so that we
-can query the reconstructed motion paths easily.</div>
+<div class="line">The motion path feature is <a class="reference internal" href="../generated/pygplates.ReconstructModel.html#pygplates.ReconstructModel.reconstruct_snapshot" title="pygplates.ReconstructModel.reconstruct_snapshot"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reconstructed</span></code></a> to 50Ma.</div>
+<div class="line">We then <a class="reference internal" href="../generated/pygplates.ReconstructSnapshot.html#pygplates.ReconstructSnapshot.get_reconstructed_geometries" title="pygplates.ReconstructSnapshot.get_reconstructed_geometries"><code class="xref py py-meth docutils literal notranslate"><span class="pre">query</span> <span class="pre">the</span> <span class="pre">reconstructed</span> <span class="pre">geometries</span></code></a>.</div>
 <div class="line">We also specify we only want to reconstruct motion path features by specifying
-<code class="docutils literal notranslate"><span class="pre">pygplates.ReconstructType.motion_path</span></code> for the <em>reconstruct_type</em> argument.</div>
+<code class="docutils literal notranslate"><span class="pre">pygplates.ReconstructType.motion_path</span></code> for the <em>reconstruct_types</em> argument.</div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconstructed_motion_paths</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">pygplates</span><span class="o">.</span><span class="n">reconstruct</span><span class="p">(</span><span class="n">motion_path_feature</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">,</span> <span class="n">reconstructed_motion_paths</span><span class="p">,</span> <span class="n">reconstruction_time</span><span class="p">,</span>
-    <span class="n">reconstruct_type</span><span class="o">=</span><span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructType</span><span class="o">.</span><span class="n">motion_path</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconstruct_snapshot</span> <span class="o">=</span> <span class="n">reconstruct_model</span><span class="o">.</span><span class="n">reconstruct_snapshot</span><span class="p">(</span><span class="n">reconstruction_time</span><span class="p">)</span>
+<span class="n">reconstructed_motion_paths</span> <span class="o">=</span> <span class="n">reconstruct_snapshot</span><span class="o">.</span><span class="n">get_reconstructed_geometries</span><span class="p">(</span>
+    <span class="n">reconstruct_types</span><span class="o">=</span><span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructType</span><span class="o">.</span><span class="n">motion_path</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="line-block">
@@ -306,7 +316,7 @@ So our time indices are <code class="docutils literal notranslate"><span class="
 </div>
 </section>
 <section id="id4">
-<h3><a class="toc-backref" href="#id12">Output</a><a class="headerlink" href="#id4" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Output</a><a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>Our time range is 90Ma to 0Ma, but since the reconstruction time is 50Ma the output is only
 from 90Ma to 50Ma.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Motion</span> <span class="n">path</span><span class="p">:</span> <span class="mi">701</span> <span class="n">relative</span> <span class="n">to</span> <span class="mi">201</span> <span class="n">at</span> <span class="mf">50.000000</span><span class="n">Ma</span>
@@ -416,9 +426,9 @@ from 90Ma to 50Ma.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
-(C) 2004-2022 California Institute of Technology
-(C) 2007-2022 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
+(C) 2004-2024 California Institute of Technology
+(C) 2007-2024 The Geological Survey of Norway
 .</p>
   </div>
 

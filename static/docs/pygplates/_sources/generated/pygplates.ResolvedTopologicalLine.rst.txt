@@ -21,6 +21,8 @@
       ~ResolvedTopologicalLine.get_reconstruction_time
       ~ResolvedTopologicalLine.get_resolved_feature
       ~ResolvedTopologicalLine.get_resolved_geometry
+      ~ResolvedTopologicalLine.get_resolved_geometry_point_velocities
+      ~ResolvedTopologicalLine.get_resolved_geometry_points
       ~ResolvedTopologicalLine.get_resolved_line
    
    

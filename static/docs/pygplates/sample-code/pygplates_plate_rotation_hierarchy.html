@@ -1,21 +1,22 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hierarchy of plate rotations &mdash; pygplates 0.36.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <title>Hierarchy of plate rotations &mdash; pygplates 1.0.0-rc.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=78492a5e" />
+
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -28,14 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> pygplates
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pygplates
           </a>
-              <div class="version">
-                0.36
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -44,6 +46,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_primer.html">Primer</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#import">Import</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#load-save">Load/Save</a></li>
@@ -58,6 +61,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates_plate_circuits_to_anchored_plate.html">Plate circuits to anchored plate</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates_modify_reconstruction_pole.html">Modify a reconstruction pole</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates_calculate_net_rotation.html">Calculate net rotation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#topologies">Topologies</a></li>
@@ -66,7 +70,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#isochrons">Isochrons</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_reference.html">Reference</a></li>
 </ul>
 
@@ -83,9 +86,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../pygplates_sample_code.html">Sample code</a> &raquo;</li>
-      <li>Hierarchy of plate rotations</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../pygplates_sample_code.html">Sample code</a></li>
+      <li class="breadcrumb-item active">Hierarchy of plate rotations</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/sample-code/pygplates_plate_rotation_hierarchy.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -96,8 +99,8 @@
            <div itemprop="articleBody">
              
   <section id="hierarchy-of-plate-rotations">
-<span id="pygplates-plate-rotation-hierarchy"></span><h1>Hierarchy of plate rotations<a class="headerlink" href="#hierarchy-of-plate-rotations" title="Permalink to this headline"></a></h1>
-<p>This example traverses the <a class="reference internal" href="../pygplates_foundations.html#pygplates-foundations-plate-reconstruction-hierarchy"><span class="std std-ref">plate rotation hierarchy</span></a>
+<span id="pygplates-plate-rotation-hierarchy"></span><h1>Hierarchy of plate rotations<a class="headerlink" href="#hierarchy-of-plate-rotations" title="Link to this heading"></a></h1>
+<p>This example traverses the <a class="reference internal" href="../pygplates_primer.html#pygplates-primer-plate-reconstruction-hierarchy"><span class="std std-ref">plate rotation hierarchy</span></a>
 (for a particular reconstruction time) and prints the equivalent and relative total rotations at each plate.</p>
 <p>The output of this example is similar to the output of the <code class="docutils literal notranslate"><span class="pre">Total</span> <span class="pre">Reconstruction</span> <span class="pre">Poles</span></code> dialog
 (under the <code class="docutils literal notranslate"><span class="pre">Reconstruction</span> <span class="pre">Tree</span></code> tab) in <a class="reference external" href="http://www.gplates.org">GPlates</a>.</p>
@@ -105,15 +108,15 @@
 <p class="admonition-title">See also</p>
 <p><a class="reference internal" href="pygplates_plate_circuits_to_anchored_plate.html#pygplates-plate-circuits-to-anchored-plate"><span class="std std-ref">Plate circuits to anchored plate</span></a></p>
 </div>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#sample-code" id="id1">Sample code</a></p></li>
 <li><p><a class="reference internal" href="#details" id="id2">Details</a></p></li>
 <li><p><a class="reference internal" href="#output" id="id3">Output</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="sample-code">
-<h2><a class="toc-backref" href="#id1">Sample code</a><a class="headerlink" href="#sample-code" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Sample code</a><a class="headerlink" href="#sample-code" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -165,13 +168,13 @@
 </div>
 </section>
 <section id="details">
-<h2><a class="toc-backref" href="#id2">Details</a><a class="headerlink" href="#details" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Details</a><a class="headerlink" href="#details" title="Link to this heading"></a></h2>
 <p>The rotations are loaded from a rotation file into a <a class="reference internal" href="../generated/pygplates.RotationModel.html#pygplates.RotationModel" title="pygplates.RotationModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.RotationModel</span></code></a>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="line-block">
-<div class="line">The <a class="reference internal" href="../pygplates_foundations.html#pygplates-foundations-plate-reconstruction-hierarchy"><span class="std std-ref">plate rotation hierarchy</span></a>
+<div class="line">The <a class="reference internal" href="../pygplates_primer.html#pygplates-primer-plate-reconstruction-hierarchy"><span class="std std-ref">plate rotation hierarchy</span></a>
 is encapsulated in a <a class="reference internal" href="../generated/pygplates.ReconstructionTree.html#pygplates.ReconstructionTree" title="pygplates.ReconstructionTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">reconstruction</span> <span class="pre">tree</span></code></a> which we obtain
 from the <a class="reference internal" href="../generated/pygplates.RotationModel.html#pygplates.RotationModel" title="pygplates.RotationModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">rotation</span> <span class="pre">model</span></code></a> using
 <a class="reference internal" href="../generated/pygplates.RotationModel.html#pygplates.RotationModel.get_reconstruction_tree" title="pygplates.RotationModel.get_reconstruction_tree"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.RotationModel.get_reconstruction_tree()</span></code></a> and the desired reconstruction time.</div>
@@ -182,7 +185,7 @@ are arranged in the rotation file(s).</div>
 </pre></div>
 </div>
 <div class="line-block">
-<div class="line">An edge in a <a class="reference internal" href="../pygplates_foundations.html#pygplates-foundations-plate-reconstruction-hierarchy"><span class="std std-ref">plate rotation hierarchy</span></a>
+<div class="line">An edge in a <a class="reference internal" href="../pygplates_primer.html#pygplates-primer-plate-reconstruction-hierarchy"><span class="std std-ref">plate rotation hierarchy</span></a>
 represents the rotation of a moving plate relative to a fixed plate. These edges are arranged in
 a tree-like structure (hierarchy) rooted at the anchor plate (usually plate ID zero).</div>
 <div class="line">The anchor plate edges represent those edges emanating from the anchor plate and are obtained
@@ -213,8 +216,8 @@ is used purely to control the amount of indentation used in the <code class="doc
 </pre></div>
 </div>
 <div class="line-block">
-<div class="line">Get the <a class="reference internal" href="../pygplates_foundations.html#pygplates-foundations-relative-total-rotation"><span class="std std-ref">relative</span></a> and
-<a class="reference internal" href="../pygplates_foundations.html#pygplates-foundations-equivalent-total-rotation"><span class="std std-ref">equivalent</span></a> total rotations of an edge
+<div class="line">Get the <a class="reference internal" href="../pygplates_primer.html#pygplates-primer-relative-total-rotation"><span class="std std-ref">relative</span></a> and
+<a class="reference internal" href="../pygplates_primer.html#pygplates-primer-equivalent-total-rotation"><span class="std std-ref">equivalent</span></a> total rotations of an edge
 in the reconstruction tree using <a class="reference internal" href="../generated/pygplates.ReconstructionTreeEdge.html#pygplates.ReconstructionTreeEdge.get_relative_total_rotation" title="pygplates.ReconstructionTreeEdge.get_relative_total_rotation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.ReconstructionTreeEdge.get_relative_total_rotation()</span></code></a>
 and <a class="reference internal" href="../generated/pygplates.ReconstructionTreeEdge.html#pygplates.ReconstructionTreeEdge.get_equivalent_total_rotation" title="pygplates.ReconstructionTreeEdge.get_equivalent_total_rotation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.ReconstructionTreeEdge.get_equivalent_total_rotation()</span></code></a>.</div>
 <div class="line">The relative rotation is the total rotation of the edge’s moving plate relative to its fixed plate.</div>
@@ -265,7 +268,7 @@ relative to the (moving) plate of that edge.</div>
 </div>
 </section>
 <section id="output">
-<h2><a class="toc-backref" href="#id3">Output</a><a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Output</a><a class="headerlink" href="#output" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Plate</span> <span class="n">ID</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Fixed</span> <span class="n">Plate</span> <span class="n">ID</span><span class="p">:</span> <span class="mi">0</span><span class="p">:</span>
   <span class="n">Rotation</span> <span class="n">rel</span><span class="o">.</span> <span class="n">fixed</span> <span class="p">(</span><span class="n">parent</span><span class="p">)</span> <span class="n">plate</span><span class="p">:</span> <span class="n">lat</span><span class="p">:</span> <span class="mf">90.000000</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">0.000000</span><span class="p">:,</span> <span class="n">angle</span><span class="p">:</span><span class="mf">0.000000</span>
   <span class="n">Equivalent</span> <span class="n">rotation</span> <span class="n">rel</span><span class="o">.</span> <span class="n">anchored</span> <span class="n">plate</span><span class="p">:</span> <span class="n">lat</span><span class="p">:</span> <span class="mf">90.000000</span><span class="p">,</span> <span class="n">lon</span><span class="p">:</span> <span class="mf">0.000000</span><span class="p">:,</span> <span class="n">angle</span><span class="p">:</span><span class="mf">0.000000</span>
@@ -340,9 +343,9 @@ relative to the (moving) plate of that edge.</div>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
-(C) 2004-2022 California Institute of Technology
-(C) 2007-2022 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
+(C) 2004-2024 California Institute of Technology
+(C) 2007-2024 The Geological Survey of Norway
 .</p>
   </div>
 

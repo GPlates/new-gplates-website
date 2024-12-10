@@ -1,26 +1,28 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sample code &mdash; pygplates 0.36.0 documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <title>Sample code &mdash; pygplates 1.0.0-rc.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=78492a5e" />
+
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Import geometries and assign plate IDs" href="sample-code/pygplates_import_geometries_and_assign_plate_ids.html" />
-    <link rel="prev" title="Getting started" href="pygplates_getting_started.html" /> 
+    <link rel="prev" title="Primer" href="pygplates_primer.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -28,14 +30,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> pygplates
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            pygplates
           </a>
-              <div class="version">
-                0.36
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -44,6 +47,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="pygplates_introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pygplates_primer.html">Primer</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Sample code</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#import">Import</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_import_geometries_and_assign_plate_ids.html">Import geometries and assign plate IDs</a></li>
@@ -56,6 +60,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#create-query-features">Create/query features</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_common_feature_types.html">Create common feature types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_query_common_feature_types.html">Query common feature types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html">Create topological features</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#reconstruct-features">Reconstruct features</a><ul>
@@ -68,14 +73,16 @@
 <li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_plate_rotation_hierarchy.html">Hierarchy of plate rotations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_plate_circuits_to_anchored_plate.html">Plate circuits to anchored plate</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_modify_reconstruction_pole.html">Modify a reconstruction pole</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_calculate_net_rotation.html">Calculate net rotation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#topologies">Topologies</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_find_average_area_and_subducting_boundary_proportion_of_topologies.html">Find average area and subducting boundary proportion of topologies</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_find_total_ridge_and_subduction_zone_lengths.html">Find the total length of ridges and subduction zones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_find_divergence_at_subduction_zones_and_convergence_at_ridges.html">Find divergence at subduction zones and convergence at ridges</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_detect_topology_gaps_and_overlaps.html">Find gaps and overlaps in global topological boundaries</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_reconstruct_crustal_thickness_and_tectonic_subsidence.html">Reconstruct crustal thickness and tectonic subsidence</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html">Create topological features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_reconstruct_strain_and_strain_rate.html">Reconstruct strain and strain rate</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#velocities">Velocities</a><ul>
@@ -96,7 +103,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="pygplates_foundations.html">Foundations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pygplates_reference.html">Reference</a></li>
 </ul>
 
@@ -113,8 +119,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Sample code</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Sample code</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/pygplates_sample_code.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -125,7 +131,7 @@
            <div itemprop="articleBody">
              
   <section id="sample-code">
-<span id="pygplates-sample-code"></span><h1>Sample code<a class="headerlink" href="#sample-code" title="Permalink to this headline"></a></h1>
+<span id="pygplates-sample-code"></span><h1>Sample code<a class="headerlink" href="#sample-code" title="Link to this heading"></a></h1>
 <p>This document contains sample code that shows pyGPlates solving common plate tectonic problems.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -133,7 +139,7 @@
 <a class="reference internal" href="pygplates_getting_started.html#pygplates-getting-started-tutorial"><span class="std std-ref">Getting Started tutorial</span></a> as well as an
 <a class="reference internal" href="pygplates_getting_started.html#pygplates-getting-started-installation"><span class="std std-ref">installation guide</span></a> to help get started.</p>
 </div>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#import" id="id1">Import</a></p></li>
 <li><p><a class="reference internal" href="#load-save" id="id2">Load/Save</a></p></li>
@@ -145,9 +151,9 @@
 <li><p><a class="reference internal" href="#spatial-proximity" id="id8">Spatial proximity</a></p></li>
 <li><p><a class="reference internal" href="#isochrons" id="id9">Isochrons</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="import">
-<h2><a class="toc-backref" href="#id1">Import</a><a class="headerlink" href="#import" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Import</a><a class="headerlink" href="#import" title="Link to this heading"></a></h2>
 <p>This section covers how to get geometry data into a state where it can be reconstructed by pyGPlates.</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -182,7 +188,7 @@
 </div>
 </section>
 <section id="load-save">
-<h2><a class="toc-backref" href="#id2">Load/Save</a><a class="headerlink" href="#load-save" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Load/Save</a><a class="headerlink" href="#load-save" title="Link to this heading"></a></h2>
 <p>This section covers how to load and save collections of features from/to files.</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -203,7 +209,7 @@
 </div>
 </section>
 <section id="create-query-features">
-<h2><a class="toc-backref" href="#id3">Create/query features</a><a class="headerlink" href="#create-query-features" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Create/query features</a><a class="headerlink" href="#create-query-features" title="Link to this heading"></a></h2>
 <p>This section covers how to create features from scratch and how to query their properties.</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -311,11 +317,26 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html">Create topological features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#sample-code">Sample code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#details">Details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#create-a-topological-line-feature">Create a topological line feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#create-a-topological-polygon-feature">Create a topological polygon feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#create-a-topological-network-feature">Create a topological network feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#find-features-referenced-by-a-topology">Find features referenced by a topology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#create-a-topological-section-for-each-referenced-feature">Create a topological section for each referenced feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#create-a-topological-network-interior-for-each-referenced-feature">Create a topological network interior for each referenced feature</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#input">Input</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#output">Output</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </section>
 <section id="reconstruct-features">
-<h2><a class="toc-backref" href="#id4">Reconstruct features</a><a class="headerlink" href="#reconstruct-features" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Reconstruct features</a><a class="headerlink" href="#reconstruct-features" title="Link to this heading"></a></h2>
 <p>This section covers how to reconstruct regular features, motion path features and flowline features
 to past geological times.</p>
 <div class="toctree-wrapper compound">
@@ -369,7 +390,7 @@ to past geological times.</p>
 </div>
 </section>
 <section id="rotations">
-<h2><a class="toc-backref" href="#id5">Rotations</a><a class="headerlink" href="#rotations" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Rotations</a><a class="headerlink" href="#rotations" title="Link to this heading"></a></h2>
 <p>This section covers querying and modifying the rotations that are used to reconstruct features to
 past geological times.</p>
 <div class="toctree-wrapper compound">
@@ -392,11 +413,16 @@ past geological times.</p>
 <li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_modify_reconstruction_pole.html#output">Output</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="sample-code/pygplates_calculate_net_rotation.html">Calculate net rotation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_calculate_net_rotation.html#sample-code">Sample code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_calculate_net_rotation.html#details">Details</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </section>
 <section id="topologies">
-<h2><a class="toc-backref" href="#id6">Topologies</a><a class="headerlink" href="#topologies" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Topologies</a><a class="headerlink" href="#topologies" title="Link to this heading"></a></h2>
 <p>This section covers how to reconstruct (or resolve) dynamic geometries (such as topological plate boundaries)
 at past geological times, and how to query their topologies.</p>
 <div class="toctree-wrapper compound">
@@ -413,6 +439,11 @@ at past geological times, and how to query their topologies.</p>
 <li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_find_total_ridge_and_subduction_zone_lengths.html#output">Output</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="sample-code/pygplates_find_divergence_at_subduction_zones_and_convergence_at_ridges.html">Find divergence at subduction zones and convergence at ridges</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_find_divergence_at_subduction_zones_and_convergence_at_ridges.html#sample-code">Sample code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_find_divergence_at_subduction_zones_and_convergence_at_ridges.html#details">Details</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="sample-code/pygplates_detect_topology_gaps_and_overlaps.html">Find gaps and overlaps in global topological boundaries</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_detect_topology_gaps_and_overlaps.html#sample-code">Sample code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_detect_topology_gaps_and_overlaps.html#details">Details</a></li>
@@ -424,26 +455,16 @@ at past geological times, and how to query their topologies.</p>
 <li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_reconstruct_crustal_thickness_and_tectonic_subsidence.html#details">Details</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html">Create topological features</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#sample-code">Sample code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#details">Details</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#create-a-topological-line-feature">Create a topological line feature</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#create-a-topological-polygon-feature">Create a topological polygon feature</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#create-a-topological-network-feature">Create a topological network feature</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#find-features-referenced-by-a-topology">Find features referenced by a topology</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#create-a-topological-section-for-each-referenced-feature">Create a topological section for each referenced feature</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#create-a-topological-network-interior-for-each-referenced-feature">Create a topological network interior for each referenced feature</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#input">Input</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_create_topological_features.html#output">Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sample-code/pygplates_reconstruct_strain_and_strain_rate.html">Reconstruct strain and strain rate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_reconstruct_strain_and_strain_rate.html#sample-code">Sample code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sample-code/pygplates_reconstruct_strain_and_strain_rate.html#details">Details</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </section>
 <section id="velocities">
-<h2><a class="toc-backref" href="#id7">Velocities</a><a class="headerlink" href="#velocities" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Velocities</a><a class="headerlink" href="#velocities" title="Link to this heading"></a></h2>
 <p>This section covers how to calculate velocities of features as they move through geological time
 and also how to calculate velocities of plates at non-moving point locations.</p>
 <div class="toctree-wrapper compound">
@@ -472,7 +493,7 @@ and also how to calculate velocities of plates at non-moving point locations.</p
 </div>
 </section>
 <section id="spatial-proximity">
-<h2><a class="toc-backref" href="#id8">Spatial proximity</a><a class="headerlink" href="#spatial-proximity" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Spatial proximity</a><a class="headerlink" href="#spatial-proximity" title="Link to this heading"></a></h2>
 <p>This section covers queries involving distances between geometries.</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -501,7 +522,7 @@ and also how to calculate velocities of plates at non-moving point locations.</p
 </div>
 </section>
 <section id="isochrons">
-<h2><a class="toc-backref" href="#id9">Isochrons</a><a class="headerlink" href="#isochrons" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Isochrons</a><a class="headerlink" href="#isochrons" title="Link to this heading"></a></h2>
 <p>This section covers some use cases specific to the isochron feature type.</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -525,16 +546,16 @@ and also how to calculate velocities of plates at non-moving point locations.</p
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="pygplates_getting_started.html" class="btn btn-neutral float-left" title="Getting started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pygplates_primer.html" class="btn btn-neutral float-left" title="Primer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="sample-code/pygplates_import_geometries_and_assign_plate_ids.html" class="btn btn-neutral float-right" title="Import geometries and assign plate IDs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
-(C) 2004-2022 California Institute of Technology
-(C) 2007-2022 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
+(C) 2004-2024 California Institute of Technology
+(C) 2007-2024 The Geological Survey of Norway
 .</p>
   </div>
 

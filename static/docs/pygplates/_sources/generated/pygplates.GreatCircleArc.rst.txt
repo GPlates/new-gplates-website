@@ -24,6 +24,7 @@
       ~GreatCircleArc.get_start_point
       ~GreatCircleArc.is_zero_length
       ~GreatCircleArc.to_tessellated
+      ~GreatCircleArc.to_uniform_points
    
    
 

@@ -69,6 +69,11 @@
       ~PropertyName.gpml_reconstruction_method
       ~PropertyName.gpml_reconstruction_plate_id
       ~PropertyName.gpml_relative_plate
+      ~PropertyName.gpml_rift_edgeLength_threshold_degrees
+      ~PropertyName.gpml_rift_exponential_stretching_constant
+      ~PropertyName.gpml_rift_left_plate
+      ~PropertyName.gpml_rift_right_plate
+      ~PropertyName.gpml_rift_strain_rate_resolution_log10
       ~PropertyName.gpml_right_plate
       ~PropertyName.gpml_seed_points
       ~PropertyName.gpml_shapefile_attributes

@@ -1,21 +1,22 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pygplates.DateLineWrapper &mdash; pygplates 0.36.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <title>pygplates.DateLineWrapper &mdash; pygplates 1.0.0-rc.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=78492a5e" />
+
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -28,14 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> pygplates
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pygplates
           </a>
-              <div class="version">
-                0.36
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -44,12 +46,12 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_primer.html">Primer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../pygplates_reference.html">Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#reconstruction">Reconstruction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#topology">Topology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#velocity">Velocity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#velocity-and-strain">Velocity and strain</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#rotation">Rotation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#plate-partitioning">Plate Partitioning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#file-i-o">File I/O</a></li>
@@ -60,7 +62,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#vector">Vector</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#string">String</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../pygplates_reference.html#utility">Utility</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">pygplates.DateLineWrapper</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">pygplates.DateLineWrapper</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pygplates.DateLineWrapper"><code class="docutils literal notranslate"><span class="pre">DateLineWrapper</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.Earth.html">pygplates.Earth</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.FeaturesFunctionArgument.html">pygplates.FeaturesFunctionArgument</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.GeoTimeInstant.html">pygplates.GeoTimeInstant</a></li>
@@ -84,9 +89,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../pygplates_reference.html">Reference</a> &raquo;</li>
-      <li>pygplates.DateLineWrapper</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../pygplates_reference.html">Reference</a></li>
+      <li class="breadcrumb-item active">pygplates.DateLineWrapper</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/generated/pygplates.DateLineWrapper.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -97,20 +102,20 @@
            <div itemprop="articleBody">
              
   <section id="pygplates-datelinewrapper">
-<h1>pygplates.DateLineWrapper<a class="headerlink" href="#pygplates-datelinewrapper" title="Permalink to this headline"></a></h1>
+<h1>pygplates.DateLineWrapper<a class="headerlink" href="#pygplates-datelinewrapper" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="pygplates.DateLineWrapper">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pygplates.</span></span><span class="sig-name descname"><span class="pre">DateLineWrapper</span></span><a class="headerlink" href="#pygplates.DateLineWrapper" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Boost.Python.instance</span></code></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pygplates.</span></span><span class="sig-name descname"><span class="pre">DateLineWrapper</span></span><a class="headerlink" href="#pygplates.DateLineWrapper" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">instance</span></code></p>
 <p>Wraps geometries to the dateline.</p>
 <p>The motivation for this class is to remove horizontal lines when polylines and polygons are displayed in 2D map projections. The horizontal lines occur when the longitude of two adjacent points change from approximately <code class="docutils literal notranslate"><span class="pre">-180</span></code> degrees to <code class="docutils literal notranslate"><span class="pre">180</span></code> degrees (or vice versa) causing the line segment between the adjacent points to take the long path right across the map display instead of the short path.</p>
 <p>Date line wrapping avoids this by splitting a polyline/polygon into multiple polylines/polygons at the dateline.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.DateLineWrapper.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">central_meridian=0</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.DateLineWrapper.__init__" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">central_meridian=0</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.DateLineWrapper.__init__" title="Link to this definition"></a></dt>
 <dd><p>Create a dateline wrapper with a central meridian (longitude).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>central_meridian</strong> (<em>float</em>) – Longitude of the central meridian. Defaults to zero.</p>
 </dd>
 </dl>
@@ -128,10 +133,6 @@
 
 <p class="rubric">Methods</p>
 <table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.DateLineWrapper.__init__" title="pygplates.DateLineWrapper.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([central_meridian=0])</p></td>
 <td><p>Create a dateline wrapper with a central meridian (longitude).</p></td>
@@ -143,23 +144,25 @@
 </table>
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.DateLineWrapper.wrap">
-<span class="sig-name descname"><span class="pre">wrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">geometry</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">tessellate_degrees</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.DateLineWrapper.wrap" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">wrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">geometry</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">tessellate_degrees</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.DateLineWrapper.wrap" title="Link to this definition"></a></dt>
 <dd><p>Wrap a geometry to the range <code class="docutils literal notranslate"><span class="pre">[central_meridian</span> <span class="pre">-</span> <span class="pre">180,</span> <span class="pre">central_meridian</span> <span class="pre">+</span> <span class="pre">180]</span></code>.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>geometry</strong> (<a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a>) – the geometry to wrap</p></li>
-<li><p><strong>tessellate_degrees</strong> (<em>float</em><em> or </em><em>None</em>) – optional tessellation threshold (in degrees)</p></li>
-</ul>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p>the geometry to wrap</p>
+</dd>
+<dt class="field-even">type geometry<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a></p>
+</dd>
+<dt class="field-odd">param tessellate_degrees<span class="colon">:</span></dt>
+<dd class="field-odd"><p>optional tessellation threshold (in degrees) - threshold is clamped to the range [0, 180] if specified</p>
+</dd>
+<dt class="field-even">type tessellate_degrees<span class="colon">:</span></dt>
+<dd class="field-even"><p>float or None</p>
 </dd>
 </dl>
 <p>The following table maps the input geometry type to the return type:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 32%" />
-<col style="width: 49%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Input Geometry</p></th>
 <th class="head"><p>Returns</p></th>
@@ -333,6 +336,10 @@ interior) are generally <em>not</em> the same. This is similar to
 <li><p>get_is_original_interior_point_flags(interior_ring_index)</p></li>
 </ul>
 </div>
+</div></blockquote>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 0.41: </span>tessellation threshold is clamped to the range [0, 180] to avoid an exception.</p>
+</div>
 </dd></dl>
 
 </dd></dl>
@@ -350,9 +357,9 @@ interior) are generally <em>not</em> the same. This is similar to
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
-(C) 2004-2022 California Institute of Technology
-(C) 2007-2022 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
+(C) 2004-2024 California Institute of Technology
+(C) 2007-2024 The Geological Survey of Norway
 .</p>
   </div>
 

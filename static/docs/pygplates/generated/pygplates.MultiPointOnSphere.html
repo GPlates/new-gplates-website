@@ -1,21 +1,22 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pygplates.MultiPointOnSphere &mdash; pygplates 0.36.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <title>pygplates.MultiPointOnSphere &mdash; pygplates 1.0.0-rc.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=78492a5e" />
+
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -28,14 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> pygplates
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pygplates
           </a>
-              <div class="version">
-                0.36
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -44,12 +46,12 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_primer.html">Primer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../pygplates_reference.html">Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#reconstruction">Reconstruction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#topology">Topology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#velocity">Velocity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#velocity-and-strain">Velocity and strain</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#rotation">Rotation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#plate-partitioning">Plate Partitioning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#file-i-o">File I/O</a></li>
@@ -58,7 +60,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#feature-property-value">Feature property value</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../pygplates_reference.html#geometry">Geometry</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="pygplates.PointOnSphere.html">pygplates.PointOnSphere</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">pygplates.MultiPointOnSphere</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">pygplates.MultiPointOnSphere</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pygplates.MultiPointOnSphere"><code class="docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.PolylineOnSphere.html">pygplates.PolylineOnSphere</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.PolygonOnSphere.html">pygplates.PolygonOnSphere</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.GeometryOnSphere.html">pygplates.GeometryOnSphere</a></li>
@@ -86,9 +91,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../pygplates_reference.html">Reference</a> &raquo;</li>
-      <li>pygplates.MultiPointOnSphere</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../pygplates_reference.html">Reference</a></li>
+      <li class="breadcrumb-item active">pygplates.MultiPointOnSphere</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/generated/pygplates.MultiPointOnSphere.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -99,11 +104,11 @@
            <div itemprop="articleBody">
              
   <section id="pygplates-multipointonsphere">
-<h1>pygplates.MultiPointOnSphere<a class="headerlink" href="#pygplates-multipointonsphere" title="Permalink to this headline"></a></h1>
+<h1>pygplates.MultiPointOnSphere<a class="headerlink" href="#pygplates-multipointonsphere" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="pygplates.MultiPointOnSphere">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pygplates.</span></span><span class="sig-name descname"><span class="pre">MultiPointOnSphere</span></span><a class="headerlink" href="#pygplates.MultiPointOnSphere" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.GeometryOnSphere</span></code></a></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pygplates.</span></span><span class="sig-name descname"><span class="pre">MultiPointOnSphere</span></span><a class="headerlink" href="#pygplates.MultiPointOnSphere" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a></p>
 <p>Represents a multi-point (collection of points) on the surface of the unit length sphere. Multi-points are equality (<code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">!=</span></code>) comparable (but not hashable - cannot be used as a key in a <code class="docutils literal notranslate"><span class="pre">dict</span></code>). See <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> for an overview of equality in the presence of limited floating-point precision.</p>
 <p>A multi-point instance is iterable over its points:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">multi_point</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">MultiPointOnSphere</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
@@ -113,10 +118,6 @@
 </div>
 <p>The following operations for accessing the points are supported:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 32%" />
-<col style="width: 68%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Operation</p></th>
 <th class="head"><p>Result</p></th>
@@ -151,26 +152,30 @@
 <p>Since a <em>MultiPointOnSphere</em> is <strong>immutable</strong> it contains no operations or methods that modify its state (such as adding or removing points).</p>
 </div>
 <p>There are also methods that return the sequence of points as (latitude,longitude) values and (x,y,z) values contained in lists and numpy arrays (<a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere.to_lat_lon_list" title="pygplates.GeometryOnSphere.to_lat_lon_list"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GeometryOnSphere.to_lat_lon_list()</span></code></a>, <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere.to_lat_lon_array" title="pygplates.GeometryOnSphere.to_lat_lon_array"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GeometryOnSphere.to_lat_lon_array()</span></code></a>, <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere.to_xyz_list" title="pygplates.GeometryOnSphere.to_xyz_list"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GeometryOnSphere.to_xyz_list()</span></code></a> and <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere.to_xyz_array" title="pygplates.GeometryOnSphere.to_xyz_array"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GeometryOnSphere.to_xyz_array()</span></code></a>).</p>
+<p>A <em>MultiPointOnSphere</em> can also be <a class="reference external" href="https://docs.python.org/3/library/pickle.html">pickled</a>.</p>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 0.42: </span>Added pickle support.</p>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.MultiPointOnSphere.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">...</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.MultiPointOnSphere.__init__" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">...</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.MultiPointOnSphere.__init__" title="Link to this definition"></a></dt>
 <dd><p>A <em>MultiPointOnSphere</em> object can be constructed in more than one way…</p>
 <dl>
 <dt>__init__(points)</dt><dd><p>Create a multi-point from a sequence of (x,y,z) or (latitude,longitude) points.</p>
 <dl class="field-list simple">
-<dt class="field-odd">param points</dt>
+<dt class="field-odd">param points<span class="colon">:</span></dt>
 <dd class="field-odd"><p>A sequence of (x,y,z) points, or (latitude,longitude) points (in degrees).</p>
 </dd>
-<dt class="field-even">type points</dt>
-<dd class="field-even"><p>Any sequence of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (float,float,float) or tuple (float,float)</p>
+<dt class="field-even">type points<span class="colon">:</span></dt>
+<dd class="field-even"><p>any sequence of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (float,float,float) or tuple (float,float)</p>
 </dd>
-<dt class="field-odd">raises</dt>
+<dt class="field-odd">raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p>InvalidLatLonError if any <em>latitude</em> or <em>longitude</em> is invalid</p>
 </dd>
-<dt class="field-even">raises</dt>
+<dt class="field-even">raises<span class="colon">:</span></dt>
 <dd class="field-even"><p>ViolatedUnitVectorInvariantError if any (x,y,z) is not unit magnitude</p>
 </dd>
-<dt class="field-odd">raises</dt>
+<dt class="field-odd">raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p>InsufficientPointsForMultiPointConstructionError if point sequence is empty</p>
 </dd>
 </dl>
@@ -220,10 +225,10 @@
 </dd>
 <dt>__init__(geometry)</dt><dd><p>Create a multipoint from a <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">param geometry</dt>
+<dt class="field-odd">param geometry<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The point, multi-point, polyline or polygon geometry to convert from.</p>
 </dd>
-<dt class="field-even">type geometry</dt>
+<dt class="field-even">type geometry<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a></p>
 </dd>
 </dl>
@@ -241,10 +246,6 @@
 
 <p class="rubric">Methods</p>
 <table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.MultiPointOnSphere.__init__" title="pygplates.MultiPointOnSphere.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(...)</p></td>
 <td><p>A <em>MultiPointOnSphere</em> object can be constructed in more than one way...</p></td>
@@ -280,10 +281,10 @@
 </table>
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.MultiPointOnSphere.get_centroid">
-<span class="sig-name descname"><span class="pre">get_centroid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.MultiPointOnSphere.get_centroid" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_centroid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.MultiPointOnSphere.get_centroid" title="Link to this definition"></a></dt>
 <dd><p>Returns the centroid of this multi-point.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a></p>
 </dd>
 </dl>
@@ -305,9 +306,9 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
-(C) 2004-2022 California Institute of Technology
-(C) 2007-2022 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
+(C) 2004-2024 California Institute of Technology
+(C) 2007-2024 The Geological Survey of Norway
 .</p>
   </div>
 

@@ -21,6 +21,7 @@
       ~Feature.create_reconstructable_feature
       ~Feature.create_tectonic_section
       ~Feature.create_topological_feature
+      ~Feature.create_topological_network_feature
       ~Feature.create_total_reconstruction_sequence
       ~Feature.get
       ~Feature.get_all_geometries

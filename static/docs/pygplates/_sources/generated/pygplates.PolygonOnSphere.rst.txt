@@ -36,6 +36,7 @@
       ~PolygonOnSphere.to_lat_lon_list
       ~PolygonOnSphere.to_lat_lon_point_list
       ~PolygonOnSphere.to_tessellated
+      ~PolygonOnSphere.to_uniform_points
       ~PolygonOnSphere.to_xyz_array
       ~PolygonOnSphere.to_xyz_list
    

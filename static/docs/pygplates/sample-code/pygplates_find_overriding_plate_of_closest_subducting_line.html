@@ -1,21 +1,22 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Find overriding plate of closest subducting line &mdash; pygplates 0.36.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <title>Find overriding plate of closest subducting line &mdash; pygplates 1.0.0-rc.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=78492a5e" />
+
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -28,14 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> pygplates
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pygplates
           </a>
-              <div class="version">
-                0.36
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -44,6 +46,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_primer.html">Primer</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#import">Import</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#load-save">Load/Save</a></li>
@@ -66,7 +69,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#isochrons">Isochrons</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_reference.html">Reference</a></li>
 </ul>
 
@@ -83,9 +85,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../pygplates_sample_code.html">Sample code</a> &raquo;</li>
-      <li>Find overriding plate of closest subducting line</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../pygplates_sample_code.html">Sample code</a></li>
+      <li class="breadcrumb-item active">Find overriding plate of closest subducting line</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/sample-code/pygplates_find_overriding_plate_of_closest_subducting_line.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -96,7 +98,7 @@
            <div itemprop="articleBody">
              
   <section id="find-overriding-plate-of-closest-subducting-line">
-<span id="pygplates-find-overriding-plate-of-closest-subducting-line"></span><h1>Find overriding plate of closest subducting line<a class="headerlink" href="#find-overriding-plate-of-closest-subducting-line" title="Permalink to this headline"></a></h1>
+<span id="pygplates-find-overriding-plate-of-closest-subducting-line"></span><h1>Find overriding plate of closest subducting line<a class="headerlink" href="#find-overriding-plate-of-closest-subducting-line" title="Link to this heading"></a></h1>
 <p>This example finds the overriding plate of the nearest subducting line over time by:</p>
 <ul class="simple">
 <li><p>reconstructing regular features,</p></li>
@@ -104,23 +106,23 @@
 <li><p>finding the nearest subducting line (in the topological plate boundaries) to each regular feature,</p></li>
 <li><p>determining the overriding plate of that subducting line.</p></li>
 </ul>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#sample-code" id="id1">Sample code</a></p></li>
 <li><p><a class="reference internal" href="#details" id="id2">Details</a></p></li>
 <li><p><a class="reference internal" href="#output" id="id3">Output</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="sample-code">
-<h2><a class="toc-backref" href="#id1">Sample code</a><a class="headerlink" href="#sample-code" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Sample code</a><a class="headerlink" href="#sample-code" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
 <span class="c1"># Load one or more rotation files into a rotation model.</span>
 <span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
 
-<span class="c1"># Load some features to test for closeness to subducting lines.</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="s1">&#39;features.gpml&#39;</span><span class="p">)</span>
+<span class="c1"># Create a reconstruct model from some regular (non-topological) features and the rotation model.</span>
+<span class="n">reconstruct_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructModel</span><span class="p">(</span><span class="s1">&#39;features.gpml&#39;</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">)</span>
 
 <span class="c1"># Create a topological model from the topological plate polygon features (can also include deforming networks)</span>
 <span class="c1"># and the rotation model.</span>
@@ -134,9 +136,9 @@
 
     <span class="nb">print</span> <span class="s1">&#39;Time </span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">time</span>
 
-    <span class="c1"># Reconstruct the features to the current &#39;time&#39;.</span>
-    <span class="n">reconstructed_features</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">pygplates</span><span class="o">.</span><span class="n">reconstruct</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">,</span> <span class="n">reconstructed_features</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">group_with_feature</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1"># Reconstruct the regular features to the current &#39;time&#39;.</span>
+    <span class="n">reconstruct_snapshot</span> <span class="o">=</span> <span class="n">reconstruct_model</span><span class="o">.</span><span class="n">reconstruct_snapshot</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+    <span class="n">reconstructed_features</span> <span class="o">=</span> <span class="n">reconstruct_snapshot</span><span class="o">.</span><span class="n">get_reconstructed_features</span><span class="p">()</span>
 
     <span class="c1"># Get a snapshot of our resolved topologies at the current &#39;time&#39;.</span>
     <span class="n">topological_snapshot</span> <span class="o">=</span> <span class="n">topological_model</span><span class="o">.</span><span class="n">topological_snapshot</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
@@ -191,47 +193,8 @@
             <span class="nb">print</span> <span class="s1">&#39;      either feature has no geometries or there are no subducting lines in topologies.&#39;</span>
             <span class="k">continue</span>
 
-        <span class="c1">#</span>
         <span class="c1"># Determine the overriding plate of the subducting line.</span>
-        <span class="c1">#</span>
-
-        <span class="c1"># Get the subduction polarity of the nearest subducting line.</span>
-        <span class="n">subduction_polarity</span> <span class="o">=</span> <span class="n">nearest_shared_sub_segment</span><span class="o">.</span><span class="n">get_feature</span><span class="p">()</span><span class="o">.</span><span class="n">get_enumeration</span><span class="p">(</span><span class="n">pygplates</span><span class="o">.</span><span class="n">PropertyName</span><span class="o">.</span><span class="n">gpml_subduction_polarity</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">subduction_polarity</span> <span class="ow">or</span>
-            <span class="n">subduction_polarity</span> <span class="o">==</span> <span class="s1">&#39;Unknown&#39;</span><span class="p">):</span>
-            <span class="nb">print</span> <span class="s1">&#39;    Unable to find the overriding plate of the nearest subducting line &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="n">nearest_shared_sub_segment</span><span class="o">.</span><span class="n">get_feature</span><span class="p">()</span><span class="o">.</span><span class="n">get_name</span><span class="p">()</span>
-            <span class="nb">print</span> <span class="s1">&#39;      subduction zone feature is missing subduction polarity property or it is set to &quot;Unknown&quot;.&#39;</span>
-            <span class="k">continue</span>
-
-        <span class="n">overriding_plate</span> <span class="o">=</span> <span class="kc">None</span>
-
-        <span class="c1"># Iterate over the topologies that are sharing the part (sub-segment) of the subducting line that is closest to the feature.</span>
-        <span class="n">sharing_resolved_topologies</span> <span class="o">=</span> <span class="n">nearest_shared_sub_segment</span><span class="o">.</span><span class="n">get_sharing_resolved_topologies</span><span class="p">()</span>
-        <span class="n">geometry_reversal_flags</span> <span class="o">=</span> <span class="n">nearest_shared_sub_segment</span><span class="o">.</span><span class="n">get_sharing_resolved_topology_geometry_reversal_flags</span><span class="p">()</span>
-        <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sharing_resolved_topologies</span><span class="p">)):</span>
-
-            <span class="n">sharing_resolved_topology</span> <span class="o">=</span> <span class="n">sharing_resolved_topologies</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
-            <span class="n">geometry_reversal_flag</span> <span class="o">=</span> <span class="n">geometry_reversal_flags</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
-
-            <span class="k">if</span> <span class="n">sharing_resolved_topology</span><span class="o">.</span><span class="n">get_resolved_boundary</span><span class="p">()</span><span class="o">.</span><span class="n">get_orientation</span><span class="p">()</span> <span class="o">==</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">PolygonOnSphere</span><span class="o">.</span><span class="n">Orientation</span><span class="o">.</span><span class="n">clockwise</span><span class="p">:</span>
-                <span class="c1"># The current topology sharing the subducting line has clockwise orientation (when viewed from above the Earth).</span>
-                <span class="c1"># If the overriding plate is to the &#39;left&#39; of the subducting line (when following its vertices in order) and</span>
-                <span class="c1"># the subducting line is reversed when contributing to the topology then that topology is the overriding plate.</span>
-                <span class="c1"># A similar test applies to the &#39;right&#39; but with the subducting line not reversed in the topology.</span>
-                <span class="k">if</span> <span class="p">((</span><span class="n">subduction_polarity</span> <span class="o">==</span> <span class="s1">&#39;Left&#39;</span> <span class="ow">and</span> <span class="n">geometry_reversal_flag</span><span class="p">)</span> <span class="ow">or</span>
-                    <span class="p">(</span><span class="n">subduction_polarity</span> <span class="o">==</span> <span class="s1">&#39;Right&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">geometry_reversal_flag</span><span class="p">)):</span>
-                    <span class="n">overriding_plate</span> <span class="o">=</span> <span class="n">sharing_resolved_topology</span>
-                    <span class="k">break</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="c1"># The current topology sharing the subducting line has counter-clockwise orientation (when viewed from above the Earth).</span>
-                <span class="c1"># If the overriding plate is to the &#39;left&#39; of the subducting line (when following its vertices in order) and</span>
-                <span class="c1"># the subducting line is not reversed when contributing to the topology then that topology is the overriding plate.</span>
-                <span class="c1"># A similar test applies to the &#39;right&#39; but with the subducting line reversed in the topology.</span>
-                <span class="k">if</span> <span class="p">((</span><span class="n">subduction_polarity</span> <span class="o">==</span> <span class="s1">&#39;Left&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">geometry_reversal_flag</span><span class="p">)</span> <span class="ow">or</span>
-                    <span class="p">(</span><span class="n">subduction_polarity</span> <span class="o">==</span> <span class="s1">&#39;Right&#39;</span> <span class="ow">and</span> <span class="n">geometry_reversal_flag</span><span class="p">)):</span>
-                    <span class="n">overriding_plate</span> <span class="o">=</span> <span class="n">sharing_resolved_topology</span>
-                    <span class="k">break</span>
-
+        <span class="n">overriding_plate</span> <span class="o">=</span> <span class="n">nearest_shared_sub_segment</span><span class="o">.</span><span class="n">get_overriding_plate</span><span class="p">()</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">overriding_plate</span><span class="p">:</span>
             <span class="nb">print</span> <span class="s1">&#39;    Unable to find the overriding plate of the nearest subducting line &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="n">nearest_shared_sub_segment</span><span class="o">.</span><span class="n">get_feature</span><span class="p">()</span><span class="o">.</span><span class="n">get_name</span><span class="p">()</span>
             <span class="nb">print</span> <span class="s1">&#39;      topology on overriding side of subducting line is missing.&#39;</span>
@@ -245,13 +208,14 @@
 </div>
 </section>
 <section id="details">
-<h2><a class="toc-backref" href="#id2">Details</a><a class="headerlink" href="#details" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Details</a><a class="headerlink" href="#details" title="Link to this heading"></a></h2>
 <p>The rotations are loaded from a rotation file into a <a class="reference internal" href="../generated/pygplates.RotationModel.html#pygplates.RotationModel" title="pygplates.RotationModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.RotationModel</span></code></a>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotation_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">RotationModel</span><span class="p">(</span><span class="s1">&#39;rotations.rot&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Load the regular features that we want to see which subducting lines (in the topologies) are closest to.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="s1">&#39;features.gpml&#39;</span><span class="p">)</span>
+<p>Create a <a class="reference internal" href="../generated/pygplates.ReconstructModel.html#pygplates.ReconstructModel" title="pygplates.ReconstructModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">reconstruct</span> <span class="pre">model</span></code></a> from the regular (non-topological) features and the rotation model.
+These are the regular features that we want to see which subducting lines (in the topologies) are closest to.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconstruct_model</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">ReconstructModel</span><span class="p">(</span><span class="s1">&#39;features.gpml&#39;</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Create a <a class="reference internal" href="../generated/pygplates.TopologicalModel.html#pygplates.TopologicalModel" title="pygplates.TopologicalModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">topological</span> <span class="pre">model</span></code></a> from topological features and the rotation model.</p>
@@ -259,14 +223,13 @@
 </pre></div>
 </div>
 <div class="line-block">
-<div class="line">All regular features are reconstructed to the current <code class="docutils literal notranslate"><span class="pre">time</span></code> using <a class="reference internal" href="../generated/pygplates.reconstruct.html#pygplates.reconstruct" title="pygplates.reconstruct"><code class="xref py py-func docutils literal notranslate"><span class="pre">pygplates.reconstruct()</span></code></a>.</div>
-<div class="line">We specify a <code class="docutils literal notranslate"><span class="pre">list</span></code> for <em>reconstructed_features</em> instead of a filename.</div>
-<div class="line">We also set the output parameter <em>group_with_feature</em> to <code class="docutils literal notranslate"><span class="pre">True</span></code> (it defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>)
-so that our <a class="reference internal" href="../generated/pygplates.ReconstructedFeatureGeometry.html#pygplates.ReconstructedFeatureGeometry" title="pygplates.ReconstructedFeatureGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">reconstructed</span> <span class="pre">feature</span> <span class="pre">geometries</span></code></a>
-are grouped with their <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">feature</span></code></a>.</div>
+<div class="line">All regular features are reconstructed to the current <code class="docutils literal notranslate"><span class="pre">time</span></code> using <a class="reference internal" href="../generated/pygplates.ReconstructModel.html#pygplates.ReconstructModel.reconstruct_snapshot" title="pygplates.ReconstructModel.reconstruct_snapshot"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.ReconstructModel.reconstruct_snapshot()</span></code></a>
+that returns a <a class="reference internal" href="../generated/pygplates.ReconstructSnapshot.html#pygplates.ReconstructSnapshot" title="pygplates.ReconstructSnapshot"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.ReconstructSnapshot</span></code></a>.</div>
+<div class="line">We then call <a class="reference internal" href="../generated/pygplates.ReconstructSnapshot.html#pygplates.ReconstructSnapshot.get_reconstructed_features" title="pygplates.ReconstructSnapshot.get_reconstructed_features"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.ReconstructSnapshot.get_reconstructed_features()</span></code></a> so that our
+<a class="reference internal" href="../generated/pygplates.ReconstructedFeatureGeometry.html#pygplates.ReconstructedFeatureGeometry" title="pygplates.ReconstructedFeatureGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">reconstructed</span> <span class="pre">feature</span> <span class="pre">geometries</span></code></a> are grouped with their <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">feature</span></code></a>.</div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconstructed_features</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">pygplates</span><span class="o">.</span><span class="n">reconstruct</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">rotation_model</span><span class="p">,</span> <span class="n">reconstructed_features</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">group_with_feature</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconstruct_snapshot</span> <span class="o">=</span> <span class="n">reconstruct_model</span><span class="o">.</span><span class="n">reconstruct_snapshot</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+<span class="n">reconstructed_features</span> <span class="o">=</span> <span class="n">reconstruct_snapshot</span><span class="o">.</span><span class="n">get_reconstructed_features</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="line-block">
@@ -339,62 +302,13 @@ in subducting lines that are nearer than the closest one encountered so far.</di
 </pre></div>
 </div>
 <div class="line-block">
-<div class="line">Now that we have found the nearest subducting line we can find its overriding plate.</div>
-<div class="line">First we need to get the subduction polarity of the nearest subducting line.</div>
-<div class="line">This determines which side of the subducting line the overriding plate is on (when following its vertices in order).</div>
+<div class="line">Now that we have found the nearest subducting line we can find its overriding plate using
+<a class="reference internal" href="../generated/pygplates.ResolvedTopologicalSharedSubSegment.html#pygplates.ResolvedTopologicalSharedSubSegment.get_overriding_plate" title="pygplates.ResolvedTopologicalSharedSubSegment.get_overriding_plate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.ResolvedTopologicalSharedSubSegment.get_overriding_plate()</span></code></a>.</div>
+<div class="line">This uses the subduction polarity of the subducting line to determine whether the overriding
+plate is on its left or right side, and then it searches the resolved topologies attached to
+the subducting line to find the single plate (or deforming network) on the overriding side.</div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">subduction_polarity</span> <span class="o">=</span> <span class="n">nearest_shared_sub_segment</span><span class="o">.</span><span class="n">get_feature</span><span class="p">()</span><span class="o">.</span><span class="n">get_enumeration</span><span class="p">(</span><span class="n">pygplates</span><span class="o">.</span><span class="n">PropertyName</span><span class="o">.</span><span class="n">gpml_subduction_polarity</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="line-block">
-<div class="line">The nearest subducting line is a <a class="reference internal" href="../generated/pygplates.ResolvedTopologicalSharedSubSegment.html#pygplates.ResolvedTopologicalSharedSubSegment" title="pygplates.ResolvedTopologicalSharedSubSegment"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.ResolvedTopologicalSharedSubSegment</span></code></a>.</div>
-<div class="line">It is uniquely shared by topological boundaries. And it is the part of the subducting line that is closest to the feature.</div>
-<div class="line">It has a list of topologies that share it - it also has a same-size list of boolean flags indicating whether its geometry
-vertices were reversed when contributing to the those topologies.</div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sharing_resolved_topologies</span> <span class="o">=</span> <span class="n">nearest_shared_sub_segment</span><span class="o">.</span><span class="n">get_sharing_resolved_topologies</span><span class="p">()</span>
-<span class="n">geometry_reversal_flags</span> <span class="o">=</span> <span class="n">nearest_shared_sub_segment</span><span class="o">.</span><span class="n">get_sharing_resolved_topology_geometry_reversal_flags</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>We iterate over the two above-mentioned lists and retrieve items from them.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sharing_resolved_topologies</span><span class="p">)):</span>
-
-    <span class="n">sharing_resolved_topology</span> <span class="o">=</span> <span class="n">sharing_resolved_topologies</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
-    <span class="n">geometry_reversal_flag</span> <span class="o">=</span> <span class="n">geometry_reversal_flags</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>To determine if the current topology in the sharing list is the overriding plate we need to look at:</p>
-<ul class="simple">
-<li><p>the polarity of the subducting line,</p></li>
-<li><p>the topology’s boundary polygon <a class="reference internal" href="../generated/pygplates.PolygonOnSphere.html#pygplates.PolygonOnSphere.get_orientation" title="pygplates.PolygonOnSphere.get_orientation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">orientation</span></code></a> and</p></li>
-<li><p>the geometry reversal flag of the subducting line sub-segment (for that topology).</p></li>
-</ul>
-<p>If the current topology (sharing the subducting line) has <em>clockwise</em> orientation (when viewed from above the Earth)
-and either:</p>
-<ul class="simple">
-<li><p>the overriding plate is <em>left</em> of the subducting line and the subducting line is <em>reversed</em> in the topology, or</p></li>
-<li><p>the overriding plate is <em>right</em> of the subducting line and the subducting line is <em>not reversed</em> in the topology</p></li>
-</ul>
-<p>…then that topology is the overriding plate.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">sharing_resolved_topology</span><span class="o">.</span><span class="n">get_resolved_boundary</span><span class="p">()</span><span class="o">.</span><span class="n">get_orientation</span><span class="p">()</span> <span class="o">==</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">PolygonOnSphere</span><span class="o">.</span><span class="n">Orientation</span><span class="o">.</span><span class="n">clockwise</span><span class="p">:</span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">subduction_polarity</span> <span class="o">==</span> <span class="s1">&#39;Left&#39;</span> <span class="ow">and</span> <span class="n">geometry_reversal_flag</span><span class="p">)</span> <span class="ow">or</span>
-        <span class="p">(</span><span class="n">subduction_polarity</span> <span class="o">==</span> <span class="s1">&#39;Right&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">geometry_reversal_flag</span><span class="p">)):</span>
-        <span class="n">overriding_plate</span> <span class="o">=</span> <span class="n">sharing_resolved_topology</span>
-        <span class="k">break</span>
-</pre></div>
-</div>
-<p>If the current topology (sharing the subducting line) has <em>counter-clockwise</em> orientation (when viewed from above the Earth)
-and either:</p>
-<ul class="simple">
-<li><p>the overriding plate is <em>left</em> of the subducting line and the subducting line is <em>not reversed</em> in the topology, or</p></li>
-<li><p>the overriding plate is <em>right</em> of the subducting line and the subducting line is <em>reversed</em> in the topology</p></li>
-</ul>
-<p>…then that topology is the overriding plate.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">else</span><span class="p">:</span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">subduction_polarity</span> <span class="o">==</span> <span class="s1">&#39;Left&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">geometry_reversal_flag</span><span class="p">)</span> <span class="ow">or</span>
-        <span class="p">(</span><span class="n">subduction_polarity</span> <span class="o">==</span> <span class="s1">&#39;Right&#39;</span> <span class="ow">and</span> <span class="n">geometry_reversal_flag</span><span class="p">)):</span>
-        <span class="n">overriding_plate</span> <span class="o">=</span> <span class="n">sharing_resolved_topology</span>
-        <span class="k">break</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">overriding_plate</span> <span class="o">=</span> <span class="n">nearest_shared_sub_segment</span><span class="o">.</span><span class="n">get_overriding_plate</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>When we’ve found the overriding plate of the nearest subduction zone to the current feature we print out
@@ -405,7 +319,7 @@ the overriding plate ID and the distance to nearest subducting line.</p>
 </div>
 </section>
 <section id="output">
-<h2><a class="toc-backref" href="#id3">Output</a><a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Output</a><a class="headerlink" href="#output" title="Link to this heading"></a></h2>
 <p>When spreading ridges are used as the regular input features then we get output like the following:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Time 0.000000
   Feature: IS  GRN_EUR, RI Fram Strait
@@ -465,9 +379,9 @@ the overriding plate ID and the distance to nearest subducting line.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
-(C) 2004-2022 California Institute of Technology
-(C) 2007-2022 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
+(C) 2004-2024 California Institute of Technology
+(C) 2007-2024 The Geological Survey of Norway
 .</p>
   </div>
 

@@ -26,6 +26,7 @@
       ~PolylineOnSphere.to_lat_lon_list
       ~PolylineOnSphere.to_lat_lon_point_list
       ~PolylineOnSphere.to_tessellated
+      ~PolylineOnSphere.to_uniform_points
       ~PolylineOnSphere.to_xyz_array
       ~PolylineOnSphere.to_xyz_list
    

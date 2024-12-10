@@ -1,21 +1,22 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Create common feature types &mdash; pygplates 0.36.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <title>Create common feature types &mdash; pygplates 1.0.0-rc.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=78492a5e" />
+
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -28,14 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> pygplates
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pygplates
           </a>
-              <div class="version">
-                0.36
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -44,6 +46,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_primer.html">Primer</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#import">Import</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#load-save">Load/Save</a></li>
@@ -60,6 +63,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates_query_common_feature_types.html">Query common feature types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates_create_topological_features.html">Create topological features</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#reconstruct-features">Reconstruct features</a></li>
@@ -70,7 +74,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#isochrons">Isochrons</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_reference.html">Reference</a></li>
 </ul>
 
@@ -87,9 +90,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../pygplates_sample_code.html">Sample code</a> &raquo;</li>
-      <li>Create common feature types</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../pygplates_sample_code.html">Sample code</a></li>
+      <li class="breadcrumb-item active">Create common feature types</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/sample-code/pygplates_create_common_feature_types.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -100,7 +103,7 @@
            <div itemprop="articleBody">
              
   <section id="create-common-feature-types">
-<span id="pygplates-create-common-feature-types"></span><h1>Create common feature types<a class="headerlink" href="#create-common-feature-types" title="Permalink to this headline"></a></h1>
+<span id="pygplates-create-common-feature-types"></span><h1>Create common feature types<a class="headerlink" href="#create-common-feature-types" title="Link to this heading"></a></h1>
 <div class="line-block">
 <div class="line">This example shows how to create various <a class="reference internal" href="../generated/pygplates.FeatureType.html#pygplates.FeatureType" title="pygplates.FeatureType"><code class="xref py py-class docutils literal notranslate"><span class="pre">types</span></code></a> of
 <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">features</span></code></a>.</div>
@@ -116,7 +119,7 @@ as opposed to creating the generic <em>unclassified</em> feature type (<code cla
 <p class="admonition-title">See also</p>
 <p><a class="reference internal" href="pygplates_create_topological_features.html#pygplates-create-topological-features"><span class="std std-ref">Create topological features</span></a></p>
 </div>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#create-a-coastline-feature-from-present-day-geometry" id="id43">Create a <em>coastline</em> feature from present-day geometry</a></p>
 <ul>
@@ -183,9 +186,9 @@ as opposed to creating the generic <em>unclassified</em> feature type (<code cla
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="create-a-coastline-feature-from-present-day-geometry">
-<span id="pygplates-create-coastline-feature"></span><h2><a class="toc-backref" href="#id43">Create a <em>coastline</em> feature from present-day geometry</a><a class="headerlink" href="#create-a-coastline-feature-from-present-day-geometry" title="Permalink to this headline"></a></h2>
+<span id="pygplates-create-coastline-feature"></span><h2><a class="toc-backref" href="#id43" role="doc-backlink">Create a <em>coastline</em> feature from present-day geometry</a><a class="headerlink" href="#create-a-coastline-feature-from-present-day-geometry" title="Link to this heading"></a></h2>
 <p>In this example we create a <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:Coastline">coastline</a> from
 <em>present day</em> geometry and save it to a file.</p>
 <div class="admonition seealso">
@@ -193,7 +196,7 @@ as opposed to creating the generic <em>unclassified</em> feature type (<code cla
 <p><a class="reference internal" href="pygplates_query_common_feature_types.html#pygplates-query-coastline-feature"><span class="std std-ref">Query a coastline feature</span></a></p>
 </div>
 <section id="sample-code">
-<h3><a class="toc-backref" href="#id44">Sample code</a><a class="headerlink" href="#sample-code" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id44" role="doc-backlink">Sample code</a><a class="headerlink" href="#sample-code" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -243,7 +246,7 @@ as opposed to creating the generic <em>unclassified</em> feature type (<code cla
 </div>
 </section>
 <section id="details">
-<h3><a class="toc-backref" href="#id45">Details</a><a class="headerlink" href="#details" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id45" role="doc-backlink">Details</a><a class="headerlink" href="#details" title="Link to this heading"></a></h3>
 <div class="line-block">
 <div class="line">A <a class="reference internal" href="../generated/pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.PolylineOnSphere</span></code></a> geometry is created from a sequence (in our case a <code class="docutils literal notranslate"><span class="pre">list</span></code>)
 of (latitude, longitude) tuples. This is possible because when the polyline
@@ -309,7 +312,7 @@ of many feature types than can be used with <a class="reference internal" href="
 </div>
 </section>
 <section id="alternate-sample-code">
-<h3><a class="toc-backref" href="#id46">Alternate sample code</a><a class="headerlink" href="#alternate-sample-code" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id46" role="doc-backlink">Alternate sample code</a><a class="headerlink" href="#alternate-sample-code" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -358,7 +361,7 @@ of many feature types than can be used with <a class="reference internal" href="
 </div>
 </section>
 <section id="id4">
-<h3><a class="toc-backref" href="#id47">Details</a><a class="headerlink" href="#id4" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id47" role="doc-backlink">Details</a><a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>Instead of using the <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.create_reconstructable_feature" title="pygplates.Feature.create_reconstructable_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.Feature.create_reconstructable_feature()</span></code></a> function, here we first
 create an empty <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:Coastline">pygplates.FeatureType.gpml_coastline</a>
 feature and then set its properties one by one.</p>
@@ -372,7 +375,7 @@ feature and then set its properties one by one.</p>
 </section>
 </section>
 <section id="create-an-isochron-feature-from-geometry-at-a-past-geological-time">
-<span id="pygplates-create-isochron-feature"></span><h2><a class="toc-backref" href="#id48">Create an <em>isochron</em> feature from geometry at a past geological time</a><a class="headerlink" href="#create-an-isochron-feature-from-geometry-at-a-past-geological-time" title="Permalink to this headline"></a></h2>
+<span id="pygplates-create-isochron-feature"></span><h2><a class="toc-backref" href="#id48" role="doc-backlink">Create an <em>isochron</em> feature from geometry at a past geological time</a><a class="headerlink" href="#create-an-isochron-feature-from-geometry-at-a-past-geological-time" title="Link to this heading"></a></h2>
 <p>In this example we create an <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:Isochron">isochron</a> from
 geometry that represents its location at a past geological time (not present day).</p>
 <div class="admonition seealso">
@@ -384,7 +387,7 @@ geometry that represents its location at a past geological time (not present day
 <p><a class="reference internal" href="pygplates_create_conjugate_isochrons_from_ridge.html#pygplates-create-conjugate-isochrons-from-ridge"><span class="std std-ref">Create conjugate isochrons from a ridge</span></a></p>
 </div>
 <section id="id5">
-<h3><a class="toc-backref" href="#id49">Sample code</a><a class="headerlink" href="#id5" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id49" role="doc-backlink">Sample code</a><a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -419,7 +422,7 @@ geometry that represents its location at a past geological time (not present day
 </div>
 </section>
 <section id="id6">
-<h3><a class="toc-backref" href="#id50">Details</a><a class="headerlink" href="#id6" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id50" role="doc-backlink">Details</a><a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <div class="line-block">
 <div class="line">A <a class="reference internal" href="../generated/pygplates.PolylineOnSphere.html#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.PolylineOnSphere</span></code></a> geometry is created from a sequence (in our case a <code class="docutils literal notranslate"><span class="pre">list</span></code>)
 of (latitude, longitude) tuples. This is possible because when the polyline
@@ -477,7 +480,7 @@ and a reconstruction plate ID. The valid time period ends in the
 </div>
 </section>
 <section id="id7">
-<h3><a class="toc-backref" href="#id51">Alternate sample code</a><a class="headerlink" href="#id7" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id51" role="doc-backlink">Alternate sample code</a><a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -512,7 +515,7 @@ and a reconstruction plate ID. The valid time period ends in the
 </div>
 </section>
 <section id="id8">
-<h3><a class="toc-backref" href="#id52">Details</a><a class="headerlink" href="#id8" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id52" role="doc-backlink">Details</a><a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>Instead of using the <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.create_reconstructable_feature" title="pygplates.Feature.create_reconstructable_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.Feature.create_reconstructable_feature()</span></code></a> function, here we first
 create an empty <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:Isochron">pygplates.FeatureType.gpml_isochron</a>
 feature and then set its properties one by one.</p>
@@ -558,7 +561,7 @@ properties to determine how to reverse reconstruct.</p>
 </section>
 </section>
 <section id="create-a-mid-ocean-ridge-feature-from-geometry-at-a-past-geological-time">
-<span id="pygplates-create-mid-ocean-ridge-feature"></span><h2><a class="toc-backref" href="#id53">Create a <em>mid-ocean ridge</em> feature from geometry at a past geological time</a><a class="headerlink" href="#create-a-mid-ocean-ridge-feature-from-geometry-at-a-past-geological-time" title="Permalink to this headline"></a></h2>
+<span id="pygplates-create-mid-ocean-ridge-feature"></span><h2><a class="toc-backref" href="#id53" role="doc-backlink">Create a <em>mid-ocean ridge</em> feature from geometry at a past geological time</a><a class="headerlink" href="#create-a-mid-ocean-ridge-feature-from-geometry-at-a-past-geological-time" title="Link to this heading"></a></h2>
 <p>This is example is similar to <a class="reference internal" href="#pygplates-create-isochron-feature"><span class="std std-ref">Create an isochron feature from geometry at a past geological time</span></a> except we are creating
 a type of <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:TectonicSection">tectonic section</a> known as a
 <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:MidOceanRidge">mid-ocean ridge</a>.</p>
@@ -571,7 +574,7 @@ a type of <a class="reference external" href="http://www.gplates.org/docs/gpgim/
 <p><a class="reference internal" href="#pygplates-create-isochron-feature"><span class="std std-ref">Create an isochron feature from geometry at a past geological time</span></a></p>
 </div>
 <section id="id9">
-<h3><a class="toc-backref" href="#id54">Sample code</a><a class="headerlink" href="#id9" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id54" role="doc-backlink">Sample code</a><a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -596,7 +599,7 @@ a type of <a class="reference external" href="http://www.gplates.org/docs/gpgim/
 </div>
 </section>
 <section id="id10">
-<h3><a class="toc-backref" href="#id55">Details</a><a class="headerlink" href="#id10" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id55" role="doc-backlink">Details</a><a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
 <div class="line-block">
 <div class="line">This is similar to <a class="reference internal" href="#pygplates-create-isochron-feature"><span class="std std-ref">Create an isochron feature from geometry at a past geological time</span></a> except we use
 <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.create_tectonic_section" title="pygplates.Feature.create_tectonic_section"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.Feature.create_tectonic_section()</span></code></a> since a
@@ -622,7 +625,7 @@ a type of <a class="reference external" href="http://www.gplates.org/docs/gpgim/
 </div>
 </section>
 <section id="id13">
-<h3><a class="toc-backref" href="#id56">Alternate sample code</a><a class="headerlink" href="#id13" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id56" role="doc-backlink">Alternate sample code</a><a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -648,7 +651,7 @@ a type of <a class="reference external" href="http://www.gplates.org/docs/gpgim/
 </div>
 </section>
 <section id="id14">
-<h3><a class="toc-backref" href="#id57">Details</a><a class="headerlink" href="#id14" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id57" role="doc-backlink">Details</a><a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
 <p>This is similar to the alternate sample code in <a class="reference internal" href="#pygplates-create-isochron-feature"><span class="std std-ref">Create an isochron feature from geometry at a past geological time</span></a>. Here we
 create an empty <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:MidOceanRidge">pygplates.FeatureType.gpml_mid_ocean_ridge</a>
 feature and then set its properties one by one.</p>
@@ -672,7 +675,7 @@ properties to determine how to reverse reconstruct.</p>
 </section>
 </section>
 <section id="create-a-subduction-zone-feature-from-present-day-geometry">
-<span id="pygplates-create-subduction-zone-feature"></span><h2><a class="toc-backref" href="#id58">Create a <em>subduction zone</em> feature from present-day geometry</a><a class="headerlink" href="#create-a-subduction-zone-feature-from-present-day-geometry" title="Permalink to this headline"></a></h2>
+<span id="pygplates-create-subduction-zone-feature"></span><h2><a class="toc-backref" href="#id58" role="doc-backlink">Create a <em>subduction zone</em> feature from present-day geometry</a><a class="headerlink" href="#create-a-subduction-zone-feature-from-present-day-geometry" title="Link to this heading"></a></h2>
 <p>This is example is similar to <a class="reference internal" href="#pygplates-create-coastline-feature"><span class="std std-ref">Create a coastline feature from present-day geometry</span></a> except we are also setting
 an enumeration property on a <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:SubductionZone">subduction zone</a>.</p>
 <div class="admonition seealso">
@@ -684,7 +687,7 @@ an enumeration property on a <a class="reference external" href="http://www.gpla
 <p><a class="reference internal" href="#pygplates-create-coastline-feature"><span class="std std-ref">Create a coastline feature from present-day geometry</span></a></p>
 </div>
 <section id="id15">
-<h3><a class="toc-backref" href="#id59">Sample code</a><a class="headerlink" href="#id15" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id59" role="doc-backlink">Sample code</a><a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 <span class="c1"># Create the subduction zone feature.</span>
@@ -703,7 +706,7 @@ an enumeration property on a <a class="reference external" href="http://www.gpla
 </div>
 </section>
 <section id="id16">
-<h3><a class="toc-backref" href="#id60">Details</a><a class="headerlink" href="#id16" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id60" role="doc-backlink">Details</a><a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
 <div class="line-block">
 <div class="line">This is similar to <a class="reference internal" href="#pygplates-create-coastline-feature"><span class="std std-ref">Create a coastline feature from present-day geometry</span></a> except we also use
 <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.set_enumeration" title="pygplates.Feature.set_enumeration"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.Feature.set_enumeration()</span></code></a> to set the
@@ -745,7 +748,7 @@ use the <em>other_properties</em> argument would have looked like:</p>
 </div>
 </section>
 <section id="id18">
-<h3><a class="toc-backref" href="#id61">Alternate sample code</a><a class="headerlink" href="#id18" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id61" role="doc-backlink">Alternate sample code</a><a class="headerlink" href="#id18" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -761,7 +764,7 @@ use the <em>other_properties</em> argument would have looked like:</p>
 </div>
 </section>
 <section id="id19">
-<h3><a class="toc-backref" href="#id62">Details</a><a class="headerlink" href="#id19" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id62" role="doc-backlink">Details</a><a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
 <p>Instead of using the <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.create_reconstructable_feature" title="pygplates.Feature.create_reconstructable_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.Feature.create_reconstructable_feature()</span></code></a> function, here we first
 create an empty <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:SubductionZone">pygplates.FeatureType.gpml_subduction_zone</a>
 feature and then set its properties one by one.</p>
@@ -776,7 +779,7 @@ feature and then set its properties one by one.</p>
 </section>
 </section>
 <section id="create-a-virtual-geomagnetic-pole-feature">
-<span id="pygplates-create-virtual-geomagnetic-pole-feature"></span><h2><a class="toc-backref" href="#id63">Create a <em>virtual geomagnetic pole</em> feature</a><a class="headerlink" href="#create-a-virtual-geomagnetic-pole-feature" title="Permalink to this headline"></a></h2>
+<span id="pygplates-create-virtual-geomagnetic-pole-feature"></span><h2><a class="toc-backref" href="#id63" role="doc-backlink">Create a <em>virtual geomagnetic pole</em> feature</a><a class="headerlink" href="#create-a-virtual-geomagnetic-pole-feature" title="Link to this heading"></a></h2>
 <p>This is example is similar to <a class="reference internal" href="#pygplates-create-coastline-feature"><span class="std std-ref">Create a coastline feature from present-day geometry</span></a> except we are also setting
 some floating-point values on a <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:VirtualGeomagneticPole">virtual geomagnetic pole</a> feature.</p>
 <div class="admonition seealso">
@@ -788,7 +791,7 @@ some floating-point values on a <a class="reference external" href="http://www.g
 <p><a class="reference internal" href="#pygplates-create-coastline-feature"><span class="std std-ref">Create a coastline feature from present-day geometry</span></a></p>
 </div>
 <section id="id20">
-<h3><a class="toc-backref" href="#id64">Sample code</a><a class="headerlink" href="#id20" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id64" role="doc-backlink">Sample code</a><a class="headerlink" href="#id20" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 <span class="c1"># The pole position and the average sample site position.</span>
@@ -827,7 +830,7 @@ some floating-point values on a <a class="reference external" href="http://www.g
 </div>
 </section>
 <section id="id21">
-<h3><a class="toc-backref" href="#id65">Details</a><a class="headerlink" href="#id21" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id65" role="doc-backlink">Details</a><a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
 <p>A <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:VirtualGeomagneticPole">virtual geomagnetic pole</a> feature
 contains two geometries. One is the <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:polePosition">position of the virtual geomagnetic pole</a>
 and the other is the <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:averageSampleSitePosition">average sample site position</a>.</p>
@@ -884,7 +887,7 @@ are all of type <a class="reference external" href="http://www.gplates.org/docs/
 </div>
 </section>
 <section id="id25">
-<h3><a class="toc-backref" href="#id66">Alternate sample code</a><a class="headerlink" href="#id25" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id66" role="doc-backlink">Alternate sample code</a><a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -925,7 +928,7 @@ are all of type <a class="reference external" href="http://www.gplates.org/docs/
 </div>
 </section>
 <section id="id26">
-<h3><a class="toc-backref" href="#id67">Details</a><a class="headerlink" href="#id26" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id67" role="doc-backlink">Details</a><a class="headerlink" href="#id26" title="Link to this heading"></a></h3>
 <p>Instead of using the <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.create_reconstructable_feature" title="pygplates.Feature.create_reconstructable_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.Feature.create_reconstructable_feature()</span></code></a> function, here we first
 create an empty <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:VirtualGeomagneticPole">pygplates.FeatureType.gpml_virtual_geomagnetic_pole</a>
 feature and then set its properties one by one.</p>
@@ -946,7 +949,7 @@ feature and then set its properties one by one.</p>
 </section>
 </section>
 <section id="create-a-motion-path-feature">
-<span id="pygplates-create-motion-path-feature"></span><h2><a class="toc-backref" href="#id68">Create a <em>motion path</em> feature</a><a class="headerlink" href="#create-a-motion-path-feature" title="Permalink to this headline"></a></h2>
+<span id="pygplates-create-motion-path-feature"></span><h2><a class="toc-backref" href="#id68" role="doc-backlink">Create a <em>motion path</em> feature</a><a class="headerlink" href="#create-a-motion-path-feature" title="Link to this heading"></a></h2>
 <p>In this example we create a <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:MotionPath">motion path</a>
 feature that tracks plate motion over time.</p>
 <div class="admonition seealso">
@@ -958,7 +961,7 @@ feature that tracks plate motion over time.</p>
 <p><a class="reference internal" href="pygplates_reconstruct_motion_path_features.html#pygplates-reconstruct-motion-path-features"><span class="std std-ref">Reconstruct motion path features</span></a></p>
 </div>
 <section id="id27">
-<h3><a class="toc-backref" href="#id69">Sample code</a><a class="headerlink" href="#id27" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id69" role="doc-backlink">Sample code</a><a class="headerlink" href="#id27" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -983,7 +986,7 @@ feature that tracks plate motion over time.</p>
 </div>
 </section>
 <section id="id28">
-<h3><a class="toc-backref" href="#id70">Details</a><a class="headerlink" href="#id28" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id70" role="doc-backlink">Details</a><a class="headerlink" href="#id28" title="Link to this heading"></a></h3>
 <div class="line-block">
 <div class="line">We specify two seed point locations somewhere on the coastline of Africa (701).</div>
 <div class="line">These are the points the that motion path will track over time.</div>
@@ -1020,7 +1023,7 @@ feature using the seed points, time samples, valid time period and relative/reco
 </div>
 </section>
 <section id="id31">
-<h3><a class="toc-backref" href="#id71">Alternate sample code</a><a class="headerlink" href="#id31" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id71" role="doc-backlink">Alternate sample code</a><a class="headerlink" href="#id31" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -1045,7 +1048,7 @@ feature using the seed points, time samples, valid time period and relative/reco
 </div>
 </section>
 <section id="id32">
-<h3><a class="toc-backref" href="#id72">Details</a><a class="headerlink" href="#id32" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id72" role="doc-backlink">Details</a><a class="headerlink" href="#id32" title="Link to this heading"></a></h3>
 <p>Instead of using the <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.create_motion_path" title="pygplates.Feature.create_motion_path"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.Feature.create_motion_path()</span></code></a> function, here we first
 create an empty <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:MotionPath">pygplates.FeatureType.gpml_motion_path</a>
 feature and then set its properties one by one.</p>
@@ -1060,7 +1063,7 @@ feature and then set its properties one by one.</p>
 </section>
 </section>
 <section id="create-a-flowline-feature">
-<span id="pygplates-create-flowline-feature"></span><h2><a class="toc-backref" href="#id73">Create a <em>flowline</em> feature</a><a class="headerlink" href="#create-a-flowline-feature" title="Permalink to this headline"></a></h2>
+<span id="pygplates-create-flowline-feature"></span><h2><a class="toc-backref" href="#id73" role="doc-backlink">Create a <em>flowline</em> feature</a><a class="headerlink" href="#create-a-flowline-feature" title="Link to this heading"></a></h2>
 <p>In this example we create a <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:Flowline">flowline</a>
 feature that tracks plate motion away from a spreading ridge over time.</p>
 <div class="admonition seealso">
@@ -1068,7 +1071,7 @@ feature that tracks plate motion away from a spreading ridge over time.</p>
 <p><a class="reference internal" href="pygplates_query_common_feature_types.html#pygplates-query-flowline-feature"><span class="std std-ref">Query a flowline feature</span></a></p>
 </div>
 <section id="id33">
-<h3><a class="toc-backref" href="#id74">Sample code</a><a class="headerlink" href="#id33" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id74" role="doc-backlink">Sample code</a><a class="headerlink" href="#id33" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -1093,7 +1096,7 @@ feature that tracks plate motion away from a spreading ridge over time.</p>
 </div>
 </section>
 <section id="id34">
-<h3><a class="toc-backref" href="#id75">Details</a><a class="headerlink" href="#id34" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id75" role="doc-backlink">Details</a><a class="headerlink" href="#id34" title="Link to this heading"></a></h3>
 <div class="line-block">
 <div class="line">We specify two seed point locations on the present-day mid-ocean ridge.</div>
 <div class="line">These are the mid-ocean ridge points that the flowline will track spreading over time.</div>
@@ -1130,7 +1133,7 @@ feature using the seed points, time samples, valid time period and left/right pl
 </div>
 </section>
 <section id="id36">
-<h3><a class="toc-backref" href="#id76">Alternate sample code</a><a class="headerlink" href="#id36" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id76" role="doc-backlink">Alternate sample code</a><a class="headerlink" href="#id36" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -1156,7 +1159,7 @@ feature using the seed points, time samples, valid time period and left/right pl
 </div>
 </section>
 <section id="id37">
-<h3><a class="toc-backref" href="#id77">Details</a><a class="headerlink" href="#id37" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id77" role="doc-backlink">Details</a><a class="headerlink" href="#id37" title="Link to this heading"></a></h3>
 <p>Instead of using the <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.create_flowline" title="pygplates.Feature.create_flowline"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.Feature.create_flowline()</span></code></a> function, here we first
 create an empty <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:Flowline">pygplates.FeatureType.gpml_flowline</a>
 feature and then set its properties one by one.</p>
@@ -1177,7 +1180,7 @@ set up a half-stage rotation since that is what <a class="reference internal" hr
 </section>
 </section>
 <section id="create-a-total-reconstruction-sequence-rotation-feature">
-<span id="pygplates-create-total-reconstruction-sequence-feature"></span><h2><a class="toc-backref" href="#id78">Create a <em>total reconstruction sequence</em> (rotation) feature</a><a class="headerlink" href="#create-a-total-reconstruction-sequence-rotation-feature" title="Permalink to this headline"></a></h2>
+<span id="pygplates-create-total-reconstruction-sequence-feature"></span><h2><a class="toc-backref" href="#id78" role="doc-backlink">Create a <em>total reconstruction sequence</em> (rotation) feature</a><a class="headerlink" href="#create-a-total-reconstruction-sequence-rotation-feature" title="Link to this heading"></a></h2>
 <div class="line-block">
 <div class="line">In this example we create a <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:TotalReconstructionSequence">total reconstruction sequence</a>
 feature representing a time sequence of total rotation poles of a moving plate relative to a fixed plate.</div>
@@ -1192,7 +1195,7 @@ feature representing a time sequence of total rotation poles of a moving plate r
 <p><a class="reference internal" href="pygplates_modify_reconstruction_pole.html#pygplates-modify-reconstruction-pole"><span class="std std-ref">Modify a reconstruction pole</span></a></p>
 </div>
 <section id="id38">
-<h3><a class="toc-backref" href="#id79">Sample code</a><a class="headerlink" href="#id38" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id79" role="doc-backlink">Sample code</a><a class="headerlink" href="#id38" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 <span class="kn">import</span> <span class="nn">math</span>
 
@@ -1243,7 +1246,7 @@ feature representing a time sequence of total rotation poles of a moving plate r
 </div>
 </section>
 <section id="id39">
-<h3><a class="toc-backref" href="#id80">Details</a><a class="headerlink" href="#id39" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id80" role="doc-backlink">Details</a><a class="headerlink" href="#id39" title="Link to this heading"></a></h3>
 <div class="line-block">
 <div class="line">First we collect some rotation pole data that we want to build a rotation feature from.</div>
 <div class="line">The data is essentially in the same format as you’d find in a PLATES4 rotation file (<code class="docutils literal notranslate"><span class="pre">.rot</span></code>)
@@ -1294,7 +1297,7 @@ before we can pass the time samples to <a class="reference internal" href="../ge
 </div>
 </section>
 <section id="id41">
-<h3><a class="toc-backref" href="#id81">Alternate sample code</a><a class="headerlink" href="#id41" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id81" role="doc-backlink">Alternate sample code</a><a class="headerlink" href="#id41" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 <span class="kn">import</span> <span class="nn">math</span>
 
@@ -1343,7 +1346,7 @@ before we can pass the time samples to <a class="reference internal" href="../ge
 </div>
 </section>
 <section id="id42">
-<h3><a class="toc-backref" href="#id82">Details</a><a class="headerlink" href="#id42" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id82" role="doc-backlink">Details</a><a class="headerlink" href="#id42" title="Link to this heading"></a></h3>
 <p>Instead of using the <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.create_total_reconstruction_sequence" title="pygplates.Feature.create_total_reconstruction_sequence"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.Feature.create_total_reconstruction_sequence()</span></code></a> function, here we first
 create an empty <a class="reference external" href="http://www.gplates.org/docs/gpgim/#gpml:TotalReconstructionSequence">pygplates.FeatureType.gpml_total_reconstruction_sequence</a>
 feature and then set its <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.set_name" title="pygplates.Feature.set_name"><code class="xref py py-meth docutils literal notranslate"><span class="pre">name</span></code></a> and
@@ -1368,9 +1371,9 @@ feature and then set its <a class="reference internal" href="../generated/pygpla
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
-(C) 2004-2022 California Institute of Technology
-(C) 2007-2022 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
+(C) 2004-2024 California Institute of Technology
+(C) 2007-2024 The Geological Survey of Norway
 .</p>
   </div>
 

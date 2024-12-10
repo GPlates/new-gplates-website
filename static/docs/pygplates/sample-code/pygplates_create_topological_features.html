@@ -1,26 +1,27 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Create topological features &mdash; pygplates 0.36.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <title>Create topological features &mdash; pygplates 1.0.0-rc.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=78492a5e" />
+
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Calculate velocities by plate ID" href="pygplates_calculate_velocities_by_plate_id.html" />
-    <link rel="prev" title="Reconstruct crustal thickness and tectonic subsidence" href="pygplates_reconstruct_crustal_thickness_and_tectonic_subsidence.html" /> 
+    <link rel="next" title="Reconstruct regular features" href="pygplates_reconstruct_regular_features.html" />
+    <link rel="prev" title="Query common feature types" href="pygplates_query_common_feature_types.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -28,14 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> pygplates
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pygplates
           </a>
-              <div class="version">
-                0.36
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -44,17 +46,13 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_primer.html">Primer</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#import">Import</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#load-save">Load/Save</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#create-query-features">Create/query features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#reconstruct-features">Reconstruct features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#rotations">Rotations</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../pygplates_sample_code.html#topologies">Topologies</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="pygplates_find_average_area_and_subducting_boundary_proportion_of_topologies.html">Find average area and subducting boundary proportion of topologies</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pygplates_find_total_ridge_and_subduction_zone_lengths.html">Find the total length of ridges and subduction zones</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pygplates_detect_topology_gaps_and_overlaps.html">Find gaps and overlaps in global topological boundaries</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pygplates_reconstruct_crustal_thickness_and_tectonic_subsidence.html">Reconstruct crustal thickness and tectonic subsidence</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../pygplates_sample_code.html#create-query-features">Create/query features</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pygplates_create_common_feature_types.html">Create common feature types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygplates_query_common_feature_types.html">Query common feature types</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Create topological features</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#sample-code">Sample code</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#details">Details</a></li>
@@ -64,12 +62,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#reconstruct-features">Reconstruct features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#rotations">Rotations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#topologies">Topologies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#velocities">Velocities</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#spatial-proximity">Spatial proximity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_sample_code.html#isochrons">Isochrons</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_reference.html">Reference</a></li>
 </ul>
 
@@ -86,9 +86,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../pygplates_sample_code.html">Sample code</a> &raquo;</li>
-      <li>Create topological features</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../pygplates_sample_code.html">Sample code</a></li>
+      <li class="breadcrumb-item active">Create topological features</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/sample-code/pygplates_create_topological_features.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -99,7 +99,7 @@
            <div itemprop="articleBody">
              
   <section id="create-topological-features">
-<span id="pygplates-create-topological-features"></span><h1>Create topological features<a class="headerlink" href="#create-topological-features" title="Permalink to this headline"></a></h1>
+<span id="pygplates-create-topological-features"></span><h1>Create topological features<a class="headerlink" href="#create-topological-features" title="Link to this heading"></a></h1>
 <p>This example uses existing regular features to create the following new topological features:</p>
 <ul class="simple">
 <li><p>topological line feature</p></li>
@@ -112,7 +112,7 @@
 them to a specific reconstruction time. Typically topological features are created/built using GPlates,
 but they can also be created using pyGPlates and this section shows how to do that.</p>
 </div>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#sample-code" id="id1">Sample code</a></p></li>
 <li><p><a class="reference internal" href="#details" id="id2">Details</a></p>
@@ -128,9 +128,9 @@ but they can also be created using pyGPlates and this section shows how to do th
 <li><p><a class="reference internal" href="#input" id="id9">Input</a></p></li>
 <li><p><a class="reference internal" href="#output" id="id10">Output</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="sample-code">
-<h2><a class="toc-backref" href="#id1">Sample code</a><a class="headerlink" href="#sample-code" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Sample code</a><a class="headerlink" href="#sample-code" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygplates</span>
 
 
@@ -218,8 +218,7 @@ but they can also be created using pyGPlates and this section shows how to do th
 <span class="k">def</span> <span class="nf">create_topological_network_feature</span><span class="p">(</span>
         <span class="n">features</span><span class="p">,</span>
         <span class="n">topological_network_boundary_referenced_feature_id_strings</span><span class="p">,</span>
-        <span class="n">topological_network_interior_referenced_feature_id_strings</span><span class="p">,</span>
-        <span class="n">topological_network_feature_type</span><span class="p">):</span>
+        <span class="n">topological_network_interior_referenced_feature_id_strings</span><span class="p">):</span>
 
     <span class="n">topological_network_boundary_referenced_features</span> <span class="o">=</span> <span class="n">find_referenced_features</span><span class="p">(</span>
         <span class="n">features</span><span class="p">,</span>
@@ -234,8 +233,7 @@ but they can also be created using pyGPlates and this section shows how to do th
     <span class="n">topological_network_interiors</span> <span class="o">=</span> <span class="n">create_topological_network_interiors</span><span class="p">(</span>
         <span class="n">topological_network_interior_referenced_features</span><span class="p">)</span>
 
-    <span class="n">topological_network_feature</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Feature</span><span class="o">.</span><span class="n">create_topological_feature</span><span class="p">(</span>
-        <span class="n">topological_network_feature_type</span><span class="p">,</span>
+    <span class="n">topological_network_feature</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Feature</span><span class="o">.</span><span class="n">create_topological_network_feature</span><span class="p">(</span>
         <span class="n">pygplates</span><span class="o">.</span><span class="n">GpmlTopologicalNetwork</span><span class="p">(</span>
             <span class="n">topological_network_boundary_sections</span><span class="p">,</span>
             <span class="n">topological_network_interiors</span><span class="p">))</span>
@@ -297,8 +295,7 @@ but they can also be created using pyGPlates and this section shows how to do th
 <span class="n">topological_network_feature</span> <span class="o">=</span> <span class="n">create_topological_network_feature</span><span class="p">(</span>
     <span class="n">features</span><span class="p">,</span>
     <span class="n">topological_network_boundary_referenced_feature_id_strings</span><span class="p">,</span>
-    <span class="n">topological_network_interior_referenced_feature_id_strings</span><span class="p">,</span>
-    <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureType</span><span class="o">.</span><span class="n">gpml_topological_network</span><span class="p">)</span>
+    <span class="n">topological_network_interior_referenced_feature_id_strings</span><span class="p">)</span>
 <span class="n">topological_features</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">topological_network_feature</span><span class="p">)</span>
 
 <span class="c1"># Save the topological features we created.</span>
@@ -307,7 +304,7 @@ but they can also be created using pyGPlates and this section shows how to do th
 </div>
 </section>
 <section id="details">
-<h2><a class="toc-backref" href="#id2">Details</a><a class="headerlink" href="#details" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Details</a><a class="headerlink" href="#details" title="Link to this heading"></a></h2>
 <p>First we load the GPML file <cite>features.gpml</cite> containing the regular features (see <a class="reference internal" href="#pygplates-create-topological-features-input"><span class="std std-ref">Input</span></a>):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="s1">&#39;features.gpml&#39;</span><span class="p">)</span>
 </pre></div>
@@ -379,16 +376,15 @@ So we have two lists of feature ID strings:</p>
 </div>
 <p>Then we create the topological <em>network</em> feature by calling our own function <a class="reference internal" href="#pygplates-create-topological-network-feature"><span class="std std-ref">create_topological_network_feature</span></a>,
 passing the regular features (and topological <em>line</em>), the list of features referenced by the topological network <em>boundary</em>, the list of features referenced
-by the topological network <em>interior</em> and the feature type of the topological network:</p>
+by the topological network <em>interior</em>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">topological_network_feature</span> <span class="o">=</span> <span class="n">create_topological_network_feature</span><span class="p">(</span>
     <span class="n">features</span><span class="p">,</span>
     <span class="n">topological_network_boundary_referenced_feature_id_strings</span><span class="p">,</span>
-    <span class="n">topological_network_interior_referenced_feature_id_strings</span><span class="p">,</span>
-    <span class="n">pygplates</span><span class="o">.</span><span class="n">FeatureType</span><span class="o">.</span><span class="n">gpml_topological_network</span><span class="p">)</span>
+    <span class="n">topological_network_interior_referenced_feature_id_strings</span><span class="p">)</span>
 </pre></div>
 </div>
 <section id="create-a-topological-line-feature">
-<span id="pygplates-create-topological-line-feature"></span><h3><a class="toc-backref" href="#id3">Create a topological line feature</a><a class="headerlink" href="#create-a-topological-line-feature" title="Permalink to this headline"></a></h3>
+<span id="pygplates-create-topological-line-feature"></span><h3><a class="toc-backref" href="#id3" role="doc-backlink">Create a topological line feature</a><a class="headerlink" href="#create-a-topological-line-feature" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_topological_line_feature</span><span class="p">(</span>
         <span class="n">features</span><span class="p">,</span>
         <span class="n">topological_line_referenced_feature_id_strings</span><span class="p">,</span>
@@ -430,7 +426,7 @@ We then pass that, along with the feature type, into <a class="reference interna
 </div>
 </section>
 <section id="create-a-topological-polygon-feature">
-<span id="pygplates-create-topological-polygon-feature"></span><h3><a class="toc-backref" href="#id4">Create a topological polygon feature</a><a class="headerlink" href="#create-a-topological-polygon-feature" title="Permalink to this headline"></a></h3>
+<span id="pygplates-create-topological-polygon-feature"></span><h3><a class="toc-backref" href="#id4" role="doc-backlink">Create a topological polygon feature</a><a class="headerlink" href="#create-a-topological-polygon-feature" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_topological_polygon_feature</span><span class="p">(</span>
         <span class="n">features</span><span class="p">,</span>
         <span class="n">topological_polygon_referenced_feature_id_strings</span><span class="p">,</span>
@@ -472,12 +468,11 @@ We then pass that, along with the feature type, into <a class="reference interna
 </div>
 </section>
 <section id="create-a-topological-network-feature">
-<span id="pygplates-create-topological-network-feature"></span><h3><a class="toc-backref" href="#id5">Create a topological network feature</a><a class="headerlink" href="#create-a-topological-network-feature" title="Permalink to this headline"></a></h3>
+<span id="pygplates-create-topological-network-feature"></span><h3><a class="toc-backref" href="#id5" role="doc-backlink">Create a topological network feature</a><a class="headerlink" href="#create-a-topological-network-feature" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_topological_network_feature</span><span class="p">(</span>
         <span class="n">features</span><span class="p">,</span>
         <span class="n">topological_network_boundary_referenced_feature_id_strings</span><span class="p">,</span>
-        <span class="n">topological_network_interior_referenced_feature_id_strings</span><span class="p">,</span>
-        <span class="n">topological_network_feature_type</span><span class="p">):</span>
+        <span class="n">topological_network_interior_referenced_feature_id_strings</span><span class="p">):</span>
 
     <span class="n">topological_network_boundary_referenced_features</span> <span class="o">=</span> <span class="n">find_referenced_features</span><span class="p">(</span>
         <span class="n">features</span><span class="p">,</span>
@@ -492,8 +487,7 @@ We then pass that, along with the feature type, into <a class="reference interna
     <span class="n">topological_network_interiors</span> <span class="o">=</span> <span class="n">create_topological_network_interiors</span><span class="p">(</span>
         <span class="n">topological_network_interior_referenced_features</span><span class="p">)</span>
 
-    <span class="n">topological_network_feature</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Feature</span><span class="o">.</span><span class="n">create_topological_feature</span><span class="p">(</span>
-        <span class="n">topological_network_feature_type</span><span class="p">,</span>
+    <span class="n">topological_network_feature</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Feature</span><span class="o">.</span><span class="n">create_topological_network_feature</span><span class="p">(</span>
         <span class="n">pygplates</span><span class="o">.</span><span class="n">GpmlTopologicalNetwork</span><span class="p">(</span>
             <span class="n">topological_network_boundary_sections</span><span class="p">,</span>
             <span class="n">topological_network_interiors</span><span class="p">))</span>
@@ -527,9 +521,8 @@ but specific to the network <em>interior</em>), passing the features referenced 
 </div>
 <p>Finally we take our topological <em>boundary</em> sections (that join together to form a polygon boundary) and our topological <em>interior</em> sections
 (that form interior constraints within the deforming region) and create a <a class="reference internal" href="../generated/pygplates.GpmlTopologicalNetwork.html#pygplates.GpmlTopologicalNetwork" title="pygplates.GpmlTopologicalNetwork"><code class="xref py py-class docutils literal notranslate"><span class="pre">topological</span> <span class="pre">network</span> <span class="pre">geometry</span></code></a>.
-We then pass that, along with the feature type, into <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.create_topological_feature" title="pygplates.Feature.create_topological_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.Feature.create_topological_feature()</span></code></a> to create our topological network feature:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">topological_network_feature</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Feature</span><span class="o">.</span><span class="n">create_topological_feature</span><span class="p">(</span>
-    <span class="n">topological_network_feature_type</span><span class="p">,</span>
+We then pass that into <a class="reference internal" href="../generated/pygplates.Feature.html#pygplates.Feature.create_topological_network_feature" title="pygplates.Feature.create_topological_network_feature"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pygplates.Feature.create_topological_network_feature()</span></code></a> to create our topological network feature:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">topological_network_feature</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">Feature</span><span class="o">.</span><span class="n">create_topological_network_feature</span><span class="p">(</span>
     <span class="n">pygplates</span><span class="o">.</span><span class="n">GpmlTopologicalNetwork</span><span class="p">(</span>
         <span class="n">topological_network_boundary_sections</span><span class="p">,</span>
         <span class="n">topological_network_interiors</span><span class="p">))</span>
@@ -537,7 +530,7 @@ We then pass that, along with the feature type, into <a class="reference interna
 </div>
 </section>
 <section id="find-features-referenced-by-a-topology">
-<span id="pygplates-find-referenced-features"></span><h3><a class="toc-backref" href="#id6">Find features referenced by a topology</a><a class="headerlink" href="#find-features-referenced-by-a-topology" title="Permalink to this headline"></a></h3>
+<span id="pygplates-find-referenced-features"></span><h3><a class="toc-backref" href="#id6" role="doc-backlink">Find features referenced by a topology</a><a class="headerlink" href="#find-features-referenced-by-a-topology" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">find_referenced_features</span><span class="p">(</span>
         <span class="n">features</span><span class="p">,</span>
         <span class="n">referenced_feature_id_strings</span><span class="p">):</span>
@@ -557,7 +550,7 @@ We then pass that, along with the feature type, into <a class="reference interna
 in the list of feature IDs referenced by the topological geometry. Any features that match are returned.</p>
 </section>
 <section id="create-a-topological-section-for-each-referenced-feature">
-<span id="pygplates-create-topological-sections"></span><h3><a class="toc-backref" href="#id7">Create a topological section for each referenced feature</a><a class="headerlink" href="#create-a-topological-section-for-each-referenced-feature" title="Permalink to this headline"></a></h3>
+<span id="pygplates-create-topological-sections"></span><h3><a class="toc-backref" href="#id7" role="doc-backlink">Create a topological section for each referenced feature</a><a class="headerlink" href="#create-a-topological-section-for-each-referenced-feature" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_topological_sections</span><span class="p">(</span>
         <span class="n">referenced_features</span><span class="p">,</span>
         <span class="n">topological_geometry_type</span><span class="p">):</span>
@@ -591,7 +584,7 @@ intersecting both its neighbouring line sections (known as <em>rubber banding</e
 </div>
 </section>
 <section id="create-a-topological-network-interior-for-each-referenced-feature">
-<span id="pygplates-create-topological-network-interiors"></span><h3><a class="toc-backref" href="#id8">Create a topological network interior for each referenced feature</a><a class="headerlink" href="#create-a-topological-network-interior-for-each-referenced-feature" title="Permalink to this headline"></a></h3>
+<span id="pygplates-create-topological-network-interiors"></span><h3><a class="toc-backref" href="#id8" role="doc-backlink">Create a topological network interior for each referenced feature</a><a class="headerlink" href="#create-a-topological-network-interior-for-each-referenced-feature" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_topological_network_interiors</span><span class="p">(</span>
         <span class="n">referenced_features</span><span class="p">):</span>
 
@@ -624,7 +617,7 @@ If the geometry happened to be in a non-default geometry property then we would 
 </section>
 </section>
 <section id="input">
-<span id="pygplates-create-topological-features-input"></span><h2><a class="toc-backref" href="#id9">Input</a><a class="headerlink" href="#input" title="Permalink to this headline"></a></h2>
+<span id="pygplates-create-topological-features-input"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Input</a><a class="headerlink" href="#input" title="Link to this heading"></a></h2>
 <p>The contents of the input file <cite>features.gpml</cite>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;gpml:FeatureCollection xmlns:gpml=&quot;http://www.gplates.org/gplates&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot; xmlns:xsi=&quot;http://www.w3.org/XMLSchema-instance&quot; gpml:version=&quot;1.6.0339&quot; xsi:schemaLocation=&quot;http://www.gplates.org/gplates ../xsd/gpml.xsd http://www.opengis.net/gml ../../../gml/current/base&quot;&gt;
@@ -1297,7 +1290,7 @@ If the geometry happened to be in a non-default geometry property then we would 
 </div>
 </section>
 <section id="output">
-<h2><a class="toc-backref" href="#id10">Output</a><a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Output</a><a class="headerlink" href="#output" title="Link to this heading"></a></h2>
 <p>The contents of the output file <cite>topologies.gpml</cite>. Note that the feature IDs of the topological features will differ for each run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;gpml:FeatureCollection xmlns:gpml=&quot;http://www.gplates.org/gplates&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot; xmlns:xsi=&quot;http://www.w3.org/XMLSchema-instance&quot; gpml:version=&quot;1.6.0339&quot; xsi:schemaLocation=&quot;http://www.gplates.org/gplates ../xsd/gpml.xsd http://www.opengis.net/gml ../../../gml/current/base&quot;&gt;
@@ -1561,16 +1554,16 @@ If the geometry happened to be in a non-default geometry property then we would 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="pygplates_reconstruct_crustal_thickness_and_tectonic_subsidence.html" class="btn btn-neutral float-left" title="Reconstruct crustal thickness and tectonic subsidence" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="pygplates_calculate_velocities_by_plate_id.html" class="btn btn-neutral float-right" title="Calculate velocities by plate ID" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="pygplates_query_common_feature_types.html" class="btn btn-neutral float-left" title="Query common feature types" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pygplates_reconstruct_regular_features.html" class="btn btn-neutral float-right" title="Reconstruct regular features" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
-(C) 2004-2022 California Institute of Technology
-(C) 2007-2022 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
+(C) 2004-2024 California Institute of Technology
+(C) 2007-2024 The Geological Survey of Norway
 .</p>
   </div>
 

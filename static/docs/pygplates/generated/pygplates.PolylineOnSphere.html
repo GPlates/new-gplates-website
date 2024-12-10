@@ -1,21 +1,22 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pygplates.PolylineOnSphere &mdash; pygplates 0.36.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <title>pygplates.PolylineOnSphere &mdash; pygplates 1.0.0-rc.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=78492a5e" />
+
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -28,14 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> pygplates
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pygplates
           </a>
-              <div class="version">
-                0.36
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -44,12 +46,12 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygplates_primer.html">Primer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pygplates_sample_code.html">Sample code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pygplates_foundations.html">Foundations</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../pygplates_reference.html">Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#reconstruction">Reconstruction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#topology">Topology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#velocity">Velocity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#velocity-and-strain">Velocity and strain</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#rotation">Rotation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#plate-partitioning">Plate Partitioning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pygplates_reference.html#file-i-o">File I/O</a></li>
@@ -59,7 +61,10 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../pygplates_reference.html#geometry">Geometry</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="pygplates.PointOnSphere.html">pygplates.PointOnSphere</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.MultiPointOnSphere.html">pygplates.MultiPointOnSphere</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">pygplates.PolylineOnSphere</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">pygplates.PolylineOnSphere</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pygplates.PolylineOnSphere"><code class="docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.PolygonOnSphere.html">pygplates.PolygonOnSphere</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.GeometryOnSphere.html">pygplates.GeometryOnSphere</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pygplates.GreatCircleArc.html">pygplates.GreatCircleArc</a></li>
@@ -86,9 +91,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../pygplates_reference.html">Reference</a> &raquo;</li>
-      <li>pygplates.PolylineOnSphere</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../pygplates_reference.html">Reference</a></li>
+      <li class="breadcrumb-item active">pygplates.PolylineOnSphere</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/generated/pygplates.PolylineOnSphere.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -99,11 +104,11 @@
            <div itemprop="articleBody">
              
   <section id="pygplates-polylineonsphere">
-<h1>pygplates.PolylineOnSphere<a class="headerlink" href="#pygplates-polylineonsphere" title="Permalink to this headline"></a></h1>
+<h1>pygplates.PolylineOnSphere<a class="headerlink" href="#pygplates-polylineonsphere" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="pygplates.PolylineOnSphere">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pygplates.</span></span><span class="sig-name descname"><span class="pre">PolylineOnSphere</span></span><a class="headerlink" href="#pygplates.PolylineOnSphere" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.GeometryOnSphere</span></code></a></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pygplates.</span></span><span class="sig-name descname"><span class="pre">PolylineOnSphere</span></span><a class="headerlink" href="#pygplates.PolylineOnSphere" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a></p>
 <p>Represents a polyline on the surface of the unit length sphere. Polylines are equality (<code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">!=</span></code>) comparable (but not hashable - cannot be used as a key in a <code class="docutils literal notranslate"><span class="pre">dict</span></code>). See <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> for an overview of equality in the presence of limited floating-point precision.</p>
 <p>A polyline instance is both:</p>
 <ul class="simple">
@@ -118,10 +123,6 @@
 </div>
 <p>…and so the following operations for accessing the points are supported:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 32%" />
-<col style="width: 68%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Operation</p></th>
 <th class="head"><p>Result</p></th>
@@ -166,26 +167,30 @@
 <span class="n">polyline</span> <span class="o">=</span> <span class="n">pygplates</span><span class="o">.</span><span class="n">PolylineOnSphere</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>A <em>PolylineOnSphere</em> can also be <a class="reference external" href="https://docs.python.org/3/library/pickle.html">pickled</a>.</p>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 0.42: </span>Added pickle support.</p>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.PolylineOnSphere.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">...</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.__init__" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">...</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.__init__" title="Link to this definition"></a></dt>
 <dd><p>A <em>PolylineOnSphere</em> object can be constructed in more than one way…</p>
 <dl>
 <dt>__init__(points)</dt><dd><p>Create a polyline from a sequence of (x,y,z) or (latitude,longitude) points.</p>
 <dl class="field-list simple">
-<dt class="field-odd">param points</dt>
+<dt class="field-odd">param points<span class="colon">:</span></dt>
 <dd class="field-odd"><p>A sequence of (x,y,z) points, or (latitude,longitude) points (in degrees).</p>
 </dd>
-<dt class="field-even">type points</dt>
-<dd class="field-even"><p>Any sequence of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (float,float,float) or tuple (float,float)</p>
+<dt class="field-even">type points<span class="colon">:</span></dt>
+<dd class="field-even"><p>any sequence of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (float,float,float) or tuple (float,float)</p>
 </dd>
-<dt class="field-odd">raises</dt>
+<dt class="field-odd">raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p>InvalidLatLonError if any <em>latitude</em> or <em>longitude</em> is invalid</p>
 </dd>
-<dt class="field-even">raises</dt>
+<dt class="field-even">raises<span class="colon">:</span></dt>
 <dd class="field-even"><p>ViolatedUnitVectorInvariantError if any (x,y,z) is not unit magnitude</p>
 </dd>
-<dt class="field-odd">raises</dt>
+<dt class="field-odd">raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p>InvalidPointsForPolylineConstructionError if sequence has less than two points or if any two points (adjacent in the <em>points</em> sequence) are antipodal to each other (on opposite sides of the globe)</p>
 </dd>
 </dl>
@@ -237,19 +242,19 @@
 </dd>
 <dt>__init__(geometry, [allow_one_point=True])</dt><dd><p>Create a polyline from a <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">param geometry</dt>
+<dt class="field-odd">param geometry<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The point, multi-point, polyline or polygon geometry to convert from.</p>
 </dd>
-<dt class="field-even">type geometry</dt>
+<dt class="field-even">type geometry<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a></p>
 </dd>
-<dt class="field-odd">param allow_one_point</dt>
+<dt class="field-odd">param allow_one_point<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Whether <em>geometry</em> is allowed to be a <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or a <a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a> containing only a single point - if allowed then that single point is duplicated since a PolylineOnSphere requires at least two points - default is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 </dd>
-<dt class="field-even">type allow_one_point</dt>
+<dt class="field-even">type allow_one_point<span class="colon">:</span></dt>
 <dd class="field-even"><p>bool</p>
 </dd>
-<dt class="field-odd">raises</dt>
+<dt class="field-odd">raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p>InvalidPointsForPolylineConstructionError if <em>geometry</em> is a <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> (and <em>allow_one_point</em> is <code class="docutils literal notranslate"><span class="pre">False</span></code>), or a <a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a> with one point (and <em>allow_one_point</em> is <code class="docutils literal notranslate"><span class="pre">False</span></code>), or if any two consecutive points in a <a class="reference internal" href="pygplates.MultiPointOnSphere.html#pygplates.MultiPointOnSphere" title="pygplates.MultiPointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiPointOnSphere</span></code></a> are antipodal to each other (on opposite sides of the globe)</p>
 </dd>
 </dl>
@@ -269,7 +274,10 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If <em>geometry</em> is a polygon then only its exterior ring is converted (interior rings are ignored).</p>
+<div class="line-block">
+<div class="line">If <em>geometry</em> is a polygon then only its exterior ring is converted (interior rings are ignored).</div>
+<div class="line">And the last point in the created polyline matches the first point to ensure the polyline forms a closed ring.</div>
+</div>
 </div>
 </dd>
 </dl>
@@ -277,10 +285,6 @@
 
 <p class="rubric">Methods</p>
 <table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PolylineOnSphere.__init__" title="pygplates.PolylineOnSphere.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(...)</p></td>
 <td><p>A <em>PolylineOnSphere</em> object can be constructed in more than one way...</p></td>
@@ -319,22 +323,25 @@
 <td><p>Returns the sequence of points, in this geometry, as <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">lat</span> <span class="pre">lon</span> <span class="pre">points</span></code></a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PolylineOnSphere.to_tessellated" title="pygplates.PolylineOnSphere.to_tessellated"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_tessellated</span></code></a>(tessellate_radians)</p></td>
-<td><p>Returns a new polyline that is tessellated version of this polyline.</p></td>
+<td><p>Returns a new polyline that is a tessellated version of this polyline.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_xyz_array</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PolylineOnSphere.to_uniform_points" title="pygplates.PolylineOnSphere.to_uniform_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_uniform_points</span></code></a>(point_spacing_radians, ...)</p></td>
+<td><p>Returns a sequence of points uniformly spaced along this polyline.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_xyz_array</span></code>()</p></td>
 <td><p>Returns the sequence of points, in this geometry, as a numpy array of (x,y,z) triplets.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_xyz_list</span></code>()</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_xyz_list</span></code>()</p></td>
 <td><p>Returns the sequence of points, in this geometry, as (x,y,z) cartesian coordinate tuples.</p></td>
 </tr>
 </tbody>
 </table>
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.PolylineOnSphere.get_arc_length">
-<span class="sig-name descname"><span class="pre">get_arc_length</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.get_arc_length" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_arc_length</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.get_arc_length" title="Link to this definition"></a></dt>
 <dd><p>Returns the total arc length of this polyline (in radians).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>float</p>
 </dd>
 </dl>
@@ -346,10 +353,10 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.PolylineOnSphere.get_centroid">
-<span class="sig-name descname"><span class="pre">get_centroid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.get_centroid" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_centroid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.get_centroid" title="Link to this definition"></a></dt>
 <dd><p>Returns the centroid of this polyline.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a></p>
 </dd>
 </dl>
@@ -358,19 +365,15 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.PolylineOnSphere.get_segments">
-<span class="sig-name descname"><span class="pre">get_segments</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.get_segments" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_segments</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.get_segments" title="Link to this definition"></a></dt>
 <dd><p>Returns a <em>read-only</em> sequence of <a class="reference internal" href="pygplates.GreatCircleArc.html#pygplates.GreatCircleArc" title="pygplates.GreatCircleArc"><code class="xref py py-class docutils literal notranslate"><span class="pre">segments</span></code></a> in this polyline.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a read-only sequence of <a class="reference internal" href="pygplates.GreatCircleArc.html#pygplates.GreatCircleArc" title="pygplates.GreatCircleArc"><code class="xref py py-class docutils literal notranslate"><span class="pre">GreatCircleArc</span></code></a></p>
 </dd>
 </dl>
 <p>The following operations for accessing the great circle arcs in the returned read-only sequence are supported:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 30%" />
-<col style="width: 70%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Operation</p></th>
 <th class="head"><p>Result</p></th>
@@ -427,23 +430,23 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.PolylineOnSphere.join">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">geometries</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">distance_threshold_radians</span></span></em><span class="optional">]</span><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">polyline_conversion=PolylineConversion.ignore_non_polyline</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.join" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">geometries</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">distance_threshold_radians</span></span></em><span class="optional">]</span><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">polyline_conversion=PolylineConversion.ignore_non_polyline</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.join" title="Link to this definition"></a></dt>
 <dd><p>Joins geometries that have end points closer than a distance threshold.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>geometries</strong> (sequence (eg, <code class="docutils literal notranslate"><span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">tuple</span></code>) of <a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a>) – the geometries to join</p></li>
 <li><p><strong>distance_threshold_radians</strong> (<em>float</em>) – optional closeness distance threshold in radians for joining to occur     (if not specified then end point <em>equality</em> is used)</p></li>
 <li><p><strong>polyline_conversion</strong> (<em>PolylineConversion.convert_to_polyline</em>, <em>PolylineConversion.ignore_non_polyline</em>     or <em>PolylineConversion.raise_if_non_polyline</em>) – whether to raise error, convert to <a class="reference internal" href="#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> or ignore     those geometries in <em>geometries</em> that are not <a class="reference internal" href="#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> - defaults to     <em>PolylineConversion.ignore_non_polyline</em></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>a list of joined polylines</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>list of <a class="reference internal" href="#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a></p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p>GeometryTypeError if <em>polyline_conversion</em> is <em>PolylineConversion.raise_if_non_polyline</em> and     any geometry in <em>geometries</em> is not a <a class="reference internal" href="#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a></p>
 </dd>
 </dl>
@@ -486,15 +489,15 @@ of joined polylines.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.PolylineOnSphere.rotation_interpolate">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rotation_interpolate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_polyline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_polyline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotation_pole</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interpolate</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">minimum_latitude_overlap_radians=0</span></span></em><span class="optional">]</span><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">maximum_latitude_non_overlap_radians=0</span></span></em><span class="optional">]</span><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">maximum_distance_threshold_radians</span></span></em><span class="optional">]</span><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">flatten_longitude_overlaps=FlattenLongitudeOverlaps.no</span></span></em><span class="optional">]</span><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">polyline_conversion=PolylineConversion.ignore_non_polyline</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.rotation_interpolate" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rotation_interpolate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_polyline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_polyline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotation_pole</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interpolate</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">minimum_latitude_overlap_radians=0</span></span></em><span class="optional">]</span><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">maximum_latitude_non_overlap_radians=0</span></span></em><span class="optional">]</span><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">maximum_distance_threshold_radians</span></span></em><span class="optional">]</span><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">flatten_longitude_overlaps=FlattenLongitudeOverlaps.no</span></span></em><span class="optional">]</span><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">polyline_conversion=PolylineConversion.ignore_non_polyline</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.rotation_interpolate" title="Link to this definition"></a></dt>
 <dd><p>[<em>staticmethod</em>] Interpolates between two polylines about a rotation pole.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>from_polyline</strong> (<a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a>) – the polyline to interpolate <em>from</em></p></li>
 <li><p><strong>to_polyline</strong> (<a class="reference internal" href="pygplates.GeometryOnSphere.html#pygplates.GeometryOnSphere" title="pygplates.GeometryOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryOnSphere</span></code></a>) – the polyline to interpolate <em>to</em></p></li>
 <li><p><strong>rotation_pole</strong> (<a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a> or <a class="reference internal" href="pygplates.LatLonPoint.html#pygplates.LatLonPoint" title="pygplates.LatLonPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatLonPoint</span></code></a> or tuple (latitude,longitude), in degrees, or tuple (x,y,z)) – the rotation axis to interpolate around</p></li>
-<li><p><strong>interpolate</strong> (<em>float</em><em>, or </em><em>list of float</em>) – if a single number then <em>interpolate</em> is the interval spacing, in radians, between <em>from_polyline</em> and <em>to_polyline</em> at which to generate interpolated polylines - otherwise if a sequence of numbers (eg, list or tuple) then <em>interpolate</em> is the sequence of interpolate ratios, in the range [0,1], at which to generate interpolated polylines (with 0 meaning <em>from_polyline</em> and 1 meaning <em>to_polyline</em>)</p></li>
+<li><p><strong>interpolate</strong> (<em>float</em><em>, or </em><em>list</em><em> of </em><em>float</em>) – if a single number then <em>interpolate</em> is the interval spacing, in radians, between <em>from_polyline</em> and <em>to_polyline</em> at which to generate interpolated polylines - otherwise if a sequence of numbers (eg, list or tuple) then <em>interpolate</em> is the sequence of interpolate ratios, in the range [0,1], at which to generate interpolated polylines (with 0 meaning <em>from_polyline</em> and 1 meaning <em>to_polyline</em>)</p></li>
 <li><p><strong>minimum_latitude_overlap_radians</strong> (<em>float - defaults to zero</em>) – required amount of latitude overlap of polylines</p></li>
 <li><p><strong>maximum_latitude_non_overlap_radians</strong> (<em>float - defaults to zero</em>) – allowed non-overlapping latitude region</p></li>
 <li><p><strong>maximum_distance_threshold_radians</strong> (<em>float - default is no threshold detection</em>) – maximum distance (in radians) between <em>from_polyline</em> and <em>to_polyline</em> - if specified and if exceeded then <code class="docutils literal notranslate"><span class="pre">None</span></code> is returned</p></li>
@@ -502,13 +505,13 @@ of joined polylines.</p>
 <li><p><strong>polyline_conversion</strong> (<em>PolylineConversion.convert_to_polyline</em>, <em>PolylineConversion.ignore_non_polyline</em> or <em>PolylineConversion.raise_if_non_polyline</em>) – whether to raise error, convert to <a class="reference internal" href="#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> or ignore <em>from_polyline</em> and <em>to_polyline</em> if they are not <a class="reference internal" href="#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> (ignoring equates to returning <code class="docutils literal notranslate"><span class="pre">None</span></code>) - defaults to <em>PolylineConversion.ignore_non_polyline</em></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>list of interpolated polylines - or <code class="docutils literal notranslate"><span class="pre">None</span></code> if polylines do not have overlapping latitude ranges or if maximum distance threshold exceeded or if either polyline is not a <a class="reference internal" href="#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> (and <em>polyline_conversion</em> is <em>PolylineConversion.ignore_non_polyline</em>)</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>list of <a class="reference internal" href="#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> or None</p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p>GeometryTypeError if <em>from_polyline</em> or <em>to_polyline</em> are not of type <a class="reference internal" href="#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a> (and <em>polyline_conversion</em> is <em>PolylineConversion.raise_if_non_polyline</em>)</p>
 </dd>
 </dl>
@@ -640,14 +643,17 @@ of joined polylines.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pygplates.PolylineOnSphere.to_tessellated">
-<span class="sig-name descname"><span class="pre">to_tessellated</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tessellate_radians</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.to_tessellated" title="Permalink to this definition"></a></dt>
-<dd><p>Returns a new polyline that is tessellated version of this polyline.</p>
+<span class="sig-name descname"><span class="pre">to_tessellated</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tessellate_radians</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.to_tessellated" title="Link to this definition"></a></dt>
+<dd><p>Returns a new polyline that is a tessellated version of this polyline.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>tessellate_radians</strong> (<em>float</em>) – maximum tessellation angle (in radians)</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#pygplates.PolylineOnSphere" title="pygplates.PolylineOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineOnSphere</span></code></a></p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ValueError if <em>tessellate_radians</em> is negative or zero</p>
 </dd>
 </dl>
 <p>Adjacent points (in the returned tessellated polyline) are separated by no more than <em>tessellate_radians</em> on the globe.</p>
@@ -665,7 +671,68 @@ of joined polylines.</p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="pygplates.GreatCircleArc.html#pygplates.GreatCircleArc.to_tessellated" title="pygplates.GreatCircleArc.to_tessellated"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GreatCircleArc.to_tessellated()</span></code></a></p>
+<p><a class="reference internal" href="#pygplates.PolylineOnSphere.to_uniform_points" title="pygplates.PolylineOnSphere.to_uniform_points"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_uniform_points()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pygplates.PolylineOnSphere.to_uniform_points">
+<span class="sig-name descname"><span class="pre">to_uniform_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point_spacing_radians</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">first_point_spacing_radians=0.0</span></span></em><span class="optional">]</span><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">return_segment_informations=False</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#pygplates.PolylineOnSphere.to_uniform_points" title="Link to this definition"></a></dt>
+<dd><p>Returns a sequence of points uniformly spaced along this polyline.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>point_spacing_radians</strong> (<em>float</em>) – spacing between points (in radians)</p></li>
+<li><p><strong>first_point_spacing_radians</strong> (<em>float</em>) – Spacing of first uniform point from this polyline’s first vertex (in radians). By default the first uniform point <em>coincides</em> with this polyline’s first vertex. Ideally this is non-negative (but, for example, if it’s slightly negative then the first uniform point will be slightly off the first arc near its start point but still on its great circle).</p></li>
+<li><p><strong>return_segment_informations</strong> (<em>bool</em>) – whether to also return information about the polyline segment that each uniform point is on - default is <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>list of points, or (if <em>return_segment_informations</em> is <code class="docutils literal notranslate"><span class="pre">True</span></code>) a 2-tuple containing a list of points and a list of segment informations (which are 2-tuples identifying the index of the <a class="reference internal" href="pygplates.GreatCircleArc.html#pygplates.GreatCircleArc" title="pygplates.GreatCircleArc"><code class="xref py py-class docutils literal notranslate"><span class="pre">segment</span></code></a> containing the point, and where the point is located <em>on</em> that segment in the range [0,1])</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>, or tuple (list of <a class="reference internal" href="pygplates.PointOnSphere.html#pygplates.PointOnSphere" title="pygplates.PointOnSphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointOnSphere</span></code></a>, list of tuple (int, float)) if <em>return_segment_informations</em> is <code class="docutils literal notranslate"><span class="pre">True</span></code></p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p>ValueError if <em>point_spacing_radians</em> is negative or zero</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The distance (along the polyline) between the last uniform point and the last vertex of the polyline can be less than <em>point_spacing_radians</em> (since the length of the polyline minus <em>first_point_spacing_radians</em> might not be an integer multiple of <em>point_spacing_radians</em>).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">If <em>first_point_spacing_radians</em> is greater than the <a class="reference internal" href="#pygplates.PolylineOnSphere.get_arc_length" title="pygplates.PolylineOnSphere.get_arc_length"><code class="xref py py-meth docutils literal notranslate"><span class="pre">polyline's</span> <span class="pre">length</span></code></a> then no uniform points will be generated.</div>
+<div class="line">And if the polyline length is zero and <em>first_point_spacing_radians</em> is zero then a single uniform point will be generated.</div>
+</div>
+</div>
+<p>Create points uniformly spaced by 1 degree along a polyline starting 0.5 degrees from the first polyline vertex:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">uniform_points</span> <span class="o">=</span> <span class="n">polyline</span><span class="o">.</span><span class="n">to_uniform_points</span><span class="p">(</span>
+    <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+    <span class="n">first_point_spacing_radians</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Next, we extend the above example by associating a segment normal (from great circle arc) with each uniform point:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">uniform_points</span><span class="p">,</span> <span class="n">uniform_point_segment_informations</span> <span class="o">=</span> <span class="n">polyline</span><span class="o">.</span><span class="n">to_uniform_points</span><span class="p">(</span>
+    <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+    <span class="n">first_point_spacing_radians</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mf">0.5</span><span class="p">),</span>
+    <span class="n">return_segment_informations</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Each uniform point is on a segment, so retrieve a segment normal for each point.</span>
+<span class="c1"># We end up with a list of normals (with a list length equal to the number of uniform points).</span>
+<span class="n">polyline_segments</span> <span class="o">=</span> <span class="n">polyline</span><span class="o">.</span><span class="n">get_segments</span><span class="p">()</span>
+<span class="n">uniform_point_normals</span> <span class="o">=</span> <span class="p">[</span><span class="n">polyline_segments</span><span class="p">[</span><span class="n">segment_index</span><span class="p">]</span><span class="o">.</span><span class="n">get_great_circle_normal</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">segment_index</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">uniform_point_segment_informations</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates.PolylineOnSphere.to_tessellated" title="pygplates.PolylineOnSphere.to_tessellated"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_tessellated()</span></code></a></p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 0.47.</span></p>
 </div>
 </dd></dl>
 
@@ -684,9 +751,9 @@ of joined polylines.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2022 The University of Sydney, Australia
-(C) 2004-2022 California Institute of Technology
-(C) 2007-2022 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
+(C) 2004-2024 California Institute of Technology
+(C) 2007-2024 The Geological Survey of Norway
 .</p>
   </div>
 
