@@ -270,7 +270,7 @@ const IndexPageTemplate = ({
 
             <div style={{ marginBottom: "1rem" }}>
               <a
-                href="https://www.earthbyte.org/download-pygplates-0-36/"
+                href="/docs/pygplates/pygplates_getting_started.html"
                 style={{
                   color: "#333",
                   textDecoration: "underline",
@@ -284,7 +284,7 @@ const IndexPageTemplate = ({
                 >
                   <FontAwesomeIcon icon={faDownload} />
                 </span>
-                Latest pyGPlates release v0.36
+                Latest pyGPlates release v1.0.0rc1
               </a>
             </div>
             <div style={{ marginBottom: "1rem" }}>

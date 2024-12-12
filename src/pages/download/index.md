@@ -30,22 +30,23 @@ The current stable release of GPlates is [GPlates 2.5](/news/2024-04-15-GPlates-
     </table>
 </div><br>
 
-The current beta release of pyGPlates is [pyGPlates 0.36](/news/2022-05-06-PyGPlates-0-36-released/), released in May 2022...
+The current stable release of pyGPlates is [pyGPlates 1.0.0rc1](/news/2024-12-13-PyGPlates-1-0-0rc1-released/), released in Dec 2024...
 
 <div class="download-box">
     <table>
     <tbody>
         <tr>
             <td class="icon">
-                <a href="https://www.earthbyte.org/download-pygplates-0-36/">
-                    <img src="./img/GPlates-tango-actions-go-down-48.png" alt="Download pyGPlates">
+                <a href="/docs/pygplates/pygplates_getting_started.html">
+                    <img src="./img/GPlates-tango-actions-go-down-48.png" alt="Install pyGPlates">
                 </a>
             </td>
             <td class="content" >
-                <a href="https://www.earthbyte.org/download-pygplates-0-36/" title="PyGPlates 0.36 packages">
-                <strong>Download pyGPlates 0.36</strong>
+                <a href="/docs/pygplates/pygplates_getting_started.html"
+                    title="PyGPlates installation instructions">
+                <strong>Install pyGPlates 1.0.0rc1</strong>
                 </a>
-                <p>(the latest “beta” release)</p>
+                <p>(the latest “stable” release)</p>
             </td>
         </tr>
     </tbody>
@@ -100,11 +101,12 @@ You can also download older versions of GPlates:
 
 #### PyGPlates
 
-PyGPlates can be installed using [conda](https://anaconda.org/conda-forge/pygplates) or [pip](https://pypi.org/project/pygplates).
+PyGPlates can be installed using [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html) or [pip](https://pip.pypa.io/en/stable/).
 
-Please see the installation instructions in the [pyGPlates documentation](/docs/pygplates/pygplates_getting_started.html).
+Please see the [installation instructions](/docs/pygplates/pygplates_getting_started.html) in the pyGPlates documentation.
 
-You can also download older versions of pyGPlates:
+You can also download older versions of pyGPlates (prior to version 1.0):
+- [PyGPlates 0.36](https://www.earthbyte.org/download-pygplates-0-36/)
 - [PyGPlates 0.28 and older](https://sourceforge.net/projects/gplates/files/pygplates/)
 
 > __Note:__ These older packages are __not__ installed using `conda` or `pip`.
