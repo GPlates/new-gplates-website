@@ -113,7 +113,7 @@ You can also download older versions of pyGPlates (prior to version 1.0):
 
 #### GPlately
 
-GPlately can be installed using [conda](https://anaconda.org/conda-forge/gplately) and [pip](https://pypi.org/project/gplately).
+GPlately can be installed using [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html) or [pip](https://pip.pypa.io/en/stable/).
 
 Please see the installation instructions in the [GPlately GitHub Repository](https://github.com/GPlates/gplately).
 

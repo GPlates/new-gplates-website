@@ -29,12 +29,12 @@ Please see the [installation instructions](/docs/pygplates/pygplates_getting_sta
 
 - Can now install pyGPlates using [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html):
   - PyGPlates [conda-forge packages](https://anaconda.org/conda-forge/pygplates/files) can be installed with:  
-  `conda install -c conda-forge pygplates`
+    `conda install -c conda-forge pygplates`
     > __Note:__ For this *pre-release* (`1.0.0rc1`) it's actually:  
-    `conda install -c conda-forge/label/pygplates_rc -c conda-forge pygplates`
+      `conda install -c conda-forge/label/pygplates_rc -c conda-forge pygplates`
 - Can now install pyGPlates using [pip](https://pip.pypa.io/en/stable/):
   - PyGPlates [pip wheels](https://pypi.org/project/pygplates/#files) can be installed with:  
-  `pip install pygplates`
+    `pip install pygplates`
 - Added a new [Primer](/docs/pygplates/pygplates_primer.html) chapter in the pyGPlates documentation:
   - Currently documents how to use [topologies](/docs/pygplates/pygplates_primer.html#topologies) and [deformation](/docs/pygplates/pygplates_primer.html#deformation).
     - Still a work in progress.
