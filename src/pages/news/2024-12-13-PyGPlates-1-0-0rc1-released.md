@@ -28,10 +28,13 @@ Please see the [installation instructions](/docs/pygplates/pygplates_getting_sta
 > __Note:__ This version (`1.0.0rc1`) is a *pre-release* of version `1.0.0` (the `rc` means it's a *release candidate*). The final version `1.0.0` will have the same functionality (when it is released in January 2025). This release is mainly to ensure there are no issues caused by the introduction of `pip` support (and to a lesser extent `conda` support) when the final version `1.0.0` is released.
 
 - Can now install pyGPlates using [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html):
-  - PyGPlates [conda-forge packages](https://anaconda.org/conda-forge/pygplates/files) can be installed with `conda install -c conda-forge pygplates`.
-    > __Note:__ For this *pre-release* (`1.0.0rc1`) it's actually `conda install -c conda-forge/label/pygplates_rc -c conda-forge pygplates`.
+  - PyGPlates [conda-forge packages](https://anaconda.org/conda-forge/pygplates/files) can be installed with:  
+  `conda install -c conda-forge pygplates`
+    > __Note:__ For this *pre-release* (`1.0.0rc1`) it's actually:  
+    `conda install -c conda-forge/label/pygplates_rc -c conda-forge pygplates`
 - Can now install pyGPlates using [pip](https://pip.pypa.io/en/stable/):
-  - PyGPlates [pip wheels](https://pypi.org/project/pygplates/#files) can be installed with `pip install pygplates`.
+  - PyGPlates [pip wheels](https://pypi.org/project/pygplates/#files) can be installed with:  
+  `pip install pygplates`
 - Added a new [Primer](/docs/pygplates/pygplates_primer.html) chapter in the pyGPlates documentation:
   - Currently documents how to use [topologies](/docs/pygplates/pygplates_primer.html#topologies) and [deformation](/docs/pygplates/pygplates_primer.html#deformation).
     - Still a work in progress.
@@ -64,11 +67,12 @@ Please see the [installation instructions](/docs/pygplates/pygplates_getting_sta
     - See the [sample code](/docs/pygplates/sample-code/pygplates_calculate_net_rotation.html).
   - Manually accumulate your own net rotation from points and their finite rotations.
 - Can generate [statistics along plate boundaries](/docs/pygplates/pygplates_primer.html#plate-boundary-statistics) (at uniformly spaced points):
-  - `TopologicalSnapshot.`[calculate_plate_boundary_statistics()](/docs/pygplates/generated/pygplates.TopologicalSnapshot.calculate_plate_boundary_statistics) returns a [PlateBoundaryStatistic](/docs/pygplates/generated/pygplates.PlateBoundaryStatistic) at *each* point that contains:
+  - `TopologicalSnapshot.`[calculate_plate_boundary_statistics()](/docs/pygplates/generated/pygplates.TopologicalSnapshot#pygplates.TopologicalSnapshot.calculate_plate_boundary_statistics) returns a [PlateBoundaryStatistic](/docs/pygplates/generated/pygplates.PlateBoundaryStatistic) at *each* point that contains:
     - boundary normal/length/velocity,
     - convergence velocity/obliquity/etc,
     - left/right plate velocity/etc (including strain rate), and
     - distances to start/end of plate boundary section (eg, trench).
+  - See the [sample code](/docs/pygplates/sample-code/pygplates_find_divergence_at_subduction_zones_and_convergence_at_ridges.html).
 - Improved velocities and deformation:
   - Added [Strain](/docs/pygplates/generated/pygplates.Strain) and [StrainRate](/docs/pygplates/generated/pygplates.StrainRate) classes.
     - Can query *strain* quantities like dilatation and principal strain.
@@ -86,6 +90,7 @@ Please see the [installation instructions](/docs/pygplates/pygplates_getting_sta
     - Can *directly* extract crustal thickness, stretching factor, thinning factor and tectonic subsidence.
     - Can calculate velocities.
     - Can query strain rate and strain.
+    - See the [sample code](/docs/pygplates/sample-code/pygplates_reconstruct_strain_and_strain_rate.html).
   - Can incrementally reconstruct a point [using a deforming network](/docs/pygplates/generated/pygplates.ResolvedTopologicalNetwork.html#pygplates.ResolvedTopologicalNetwork.reconstruct_point) (or [using a rigid plate](/docs/pygplates/generated/pygplates.ResolvedTopologicalBoundary.html#pygplates.ResolvedTopologicalBoundary.reconstruct_point)):
     - Same functionality as `TopologicalModel.reconstruct_geometry()` but at a finer granularity:
       - *One* network (or plate) topology reconstructs *one* point over *one* time step, rather than
