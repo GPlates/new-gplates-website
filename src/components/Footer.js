@@ -134,7 +134,7 @@ const Footer = class extends React.Component {
             }}
           >
             <i>
-              Copyright © 2020-2023 The University of Sydney. All rights
+              Copyright © 2020-2025 The University of Sydney. All rights
               reserved.
             </i>
           </div>
