@@ -70,6 +70,7 @@ title: User Docs
          <td class="content" >
             <h4><a href="https://github.com/GPlates/pygplates-tutorials">pyGPlates Tutorials</a></h4>
             <p>There are <a href="https://github.com/GPlates/pygplates-tutorials">PyGPlates tutorials</a> in the form of Jupyter Notebooks that analyse and visualise real-world data using pyGPlates.</p>
+            <p>There are also PyGPlates tutorials linked to courses, including the <a href="https://github.com/GPlates/pygplates-course-2022">pyGPlates course 2022</a>, that may be useful.</p>
             <p>These tutorials complement the sample code in the pyGPlates documentation by providing a more research-oriented focus.</p>
          </td>
       </tr>
