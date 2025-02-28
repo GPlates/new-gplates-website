@@ -1,7 +1,7 @@
+import { graphql, Link, StaticQuery } from "gatsby";
+import PropTypes from "prop-types";
 import React from "react";
 import Layout from "../../components/Layout";
-import PropTypes from "prop-types";
-import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "../../components/PreviewCompatibleImage";
 
 class ContactPage extends React.Component {
@@ -62,7 +62,7 @@ class ContactPage extends React.Component {
             <li>
               the Geodynamics Team at the Geological Survey of Norway (NGU)
             </li>
-            <div>
+            <div id="contact-us">
               <strong>Contact Us</strong>
               <li>
                 If you have any scientific or organisational questions about

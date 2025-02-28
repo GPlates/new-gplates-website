@@ -1,11 +1,11 @@
-import React from "react";
 import { Link } from "gatsby";
+import React from "react";
 
+import auscopeIcon from "../img/AuScope-Logo-Icon.png";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
 import youtube from "../img/social/youtube.svg";
-import auscopeIcon from "../img/AuScope-Logo-Icon.png";
 
 const Footer = class extends React.Component {
   render() {
@@ -43,7 +43,7 @@ const Footer = class extends React.Component {
                 <section>
                   <ul className="menu-list">
                     <li>
-                      <Link className="navbar-item" to="/contact">
+                      <Link className="navbar-item" to="/contact#contact-us">
                         Contact
                       </Link>
                     </li>
