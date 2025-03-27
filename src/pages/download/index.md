@@ -30,7 +30,7 @@ The current stable release of GPlates is [GPlates 2.5](/news/2024-04-15-GPlates-
     </table>
 </div><br>
 
-The current stable release of pyGPlates is [pyGPlates 1.0.0rc1](/news/2024-12-13-PyGPlates-1-0-0rc1-released/), released in Dec 2024...
+The current stable release of pyGPlates is [pyGPlates 1.0.0](/news/2025-03-27-PyGPlates-1-0-0-released/), released in March 2025...
 
 <div class="download-box">
     <table>
@@ -44,7 +44,7 @@ The current stable release of pyGPlates is [pyGPlates 1.0.0rc1](/news/2024-12-13
             <td class="content" >
                 <a href="/docs/pygplates/pygplates_getting_started.html"
                     title="PyGPlates installation instructions">
-                <strong>Install pyGPlates 1.0.0rc1</strong>
+                <strong>Install pyGPlates 1.0.0</strong>
                 </a>
                 <p>(the latest “stable” release)</p>
             </td>

@@ -284,7 +284,7 @@ const IndexPageTemplate = ({
                 >
                   <FontAwesomeIcon icon={faDownload} />
                 </span>
-                Latest pyGPlates release v1.0.0rc1
+                Latest pyGPlates release v1.0.0
               </a>
             </div>
             <div style={{ marginBottom: "1rem" }}>
