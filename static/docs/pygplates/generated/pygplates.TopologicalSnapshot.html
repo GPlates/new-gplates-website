@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pygplates.TopologicalSnapshot &mdash; pygplates 1.0.0-rc.1 documentation</title>
+  <title>pygplates.TopologicalSnapshot &mdash; pygplates 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=78492a5e" />
@@ -14,7 +14,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -208,7 +208,7 @@
 <li><p><strong>velocity_delta_time</strong> (<em>float</em>) – The time delta used to calculate velocities (defaults to 1 Myr).</p></li>
 <li><p><strong>velocity_delta_time_type</strong> (<em>VelocityDeltaTimeType.t_plus_delta_t_to_t</em>, <em>VelocityDeltaTimeType.t_to_t_minus_delta_t</em> or <em>VelocityDeltaTimeType.t_plus_minus_half_delta_t</em>) – How the two velocity times are calculated relative to the reconstruction time. This includes [t+dt, t], [t, t-dt] and [t+dt/2, t-dt/2]. Defaults to [t+dt, t].</p></li>
 <li><p><strong>velocity_units</strong> (<em>VelocityUnits.kms_per_my</em> or <em>VelocityUnits.cms_per_yr</em>) – whether to return velocities as <em>kilometres per million years</em> or <em>centimetres per year</em> (defaults to <em>kilometres per million years</em>)</p></li>
-<li><p><strong>earth_radius_in_kms</strong> (<em>float</em>) – the radius of the Earth in <em>kilometres</em> (defaults to <code class="docutils literal notranslate"><span class="pre">pygplates.Earth.mean_radius_in_kms</span></code>)</p></li>
+<li><p><strong>earth_radius_in_kms</strong> (<em>float</em>) – The radius of the Earth in <em>kilometres</em> (defaults to <code class="docutils literal notranslate"><span class="pre">pygplates.Earth.mean_radius_in_kms</span></code>). This is only used to calculate velocities (strain rates always use <code class="docutils literal notranslate"><span class="pre">pygplates.Earth.equatorial_radius_in_kms</span></code>).</p></li>
 <li><p><strong>include_network_boundaries</strong> (<em>bool</em>) – Whether to calculate statistics along <em>network</em> boundaries that are <strong>not</strong> also plate boundaries (defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>). If a deforming network shares a boundary with a plate then it’ll get included regardless of this option.</p></li>
 <li><p><strong>boundary_section_filter</strong> (<a class="reference internal" href="pygplates.FeatureType.html#pygplates.FeatureType" title="pygplates.FeatureType"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureType</span></code></a>, or list of <a class="reference internal" href="pygplates.FeatureType.html#pygplates.FeatureType" title="pygplates.FeatureType"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureType</span></code></a>, or callable (accepting a single <a class="reference internal" href="pygplates.ResolvedTopologicalSection.html#pygplates.ResolvedTopologicalSection" title="pygplates.ResolvedTopologicalSection"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalSection</span></code></a>)) – Optionally restrict boundary sections to those that match a feature type, or match one of several feature types, or match a filter function. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code> (meaning accept all boundary sections).</p></li>
 <li><p><strong>return_shared_sub_segment_dict</strong> (<em>bool</em>) – Whether to return a <code class="docutils literal notranslate"><span class="pre">dict</span></code> mapping each <a class="reference internal" href="pygplates.ResolvedTopologicalSharedSubSegment.html#pygplates.ResolvedTopologicalSharedSubSegment" title="pygplates.ResolvedTopologicalSharedSubSegment"><code class="xref py py-class docutils literal notranslate"><span class="pre">shared</span> <span class="pre">sub-segment</span></code></a> (ie, a boundary section shared by one or more plates) to a <code class="docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="pygplates.PlateBoundaryStatistic.html#pygplates.PlateBoundaryStatistic" title="pygplates.PlateBoundaryStatistic"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlateBoundaryStatistic</span></code></a> associated with it. If <code class="docutils literal notranslate"><span class="pre">False</span></code> then just returns one large <code class="docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="pygplates.PlateBoundaryStatistic.html#pygplates.PlateBoundaryStatistic" title="pygplates.PlateBoundaryStatistic"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlateBoundaryStatistic</span></code></a> for all plate boundaries. Defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
@@ -445,6 +445,10 @@
 <p class="admonition-title">Note</p>
 <p>It is more efficient to call <code class="docutils literal notranslate"><span class="pre">topological_snapshot.get_point_strain_rates(points,</span> <span class="pre">return_point_locations=True)</span></code> to get both strain rates and point locations than it is to call both <code class="docutils literal notranslate"><span class="pre">topological_snapshot.get_point_strain_rates(points)</span></code> and <code class="docutils literal notranslate"><span class="pre">topological_snapshot.get_point_locations(points)</span></code>.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Strain rates in deforming networks are calculated from the spatial gradients of velocity where the velocities are calculated over a 1 Myr time interval and using the <em>equatorial</em> Earth radius <a class="reference internal" href="pygplates.Earth.html#pygplates.Earth" title="pygplates.Earth"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.Earth.equatorial_radius_in_kms</span></code></a>.</p>
+</div>
 <div class="versionadded">
 <p><span class="versionmodified added">Added in version 0.50.</span></p>
 </div>
@@ -596,9 +600,9 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
-(C) 2004-2024 California Institute of Technology
-(C) 2007-2024 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2025 The University of Sydney, Australia
+(C) 2004-2025 California Institute of Technology
+(C) 2007-2025 The Geological Survey of Norway
 .</p>
   </div>
 

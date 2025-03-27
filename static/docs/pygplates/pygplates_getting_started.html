@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Getting started &mdash; pygplates 1.0.0-rc.1 documentation</title>
+  <title>Getting started &mdash; pygplates 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=78492a5e" />
@@ -14,7 +14,7 @@
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -181,29 +181,17 @@ For example, if you downloaded pyGPlates 0.36 then also download <code class="do
 </ul>
 <p>To install the latest stable version of pyGPlates type the following in a terminal or command window
 (on macOS and Ubuntu this is a <em>Terminal</em> window, and on Windows you’ll need to open an <em>Anaconda prompt</em> from the Start menu):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span><span class="o">/</span><span class="n">label</span><span class="o">/</span><span class="n">pygplates_rc</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">pygplates</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">pygplates</span>
 </pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Since the current release is a <em>pre-release</em> (release candidate <code class="docutils literal notranslate"><span class="pre">1.0.0rc1</span></code>), it is in a special <em>release candidate</em>
-channel <code class="docutils literal notranslate"><span class="pre">conda-forge/label/pygplates_rc</span></code> (which must be specified <strong>before</strong> the <em>main</em> channel <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>).
-If you don’t do this then you’ll install the older unofficial version <code class="docutils literal notranslate"><span class="pre">0.39</span></code> from the <em>main</em> channel.</p>
 </div>
 <p>We recommend installing pyGPlates into a new conda environment.
 For example, the following creates and activates a Python 3.12 environment named <code class="docutils literal notranslate"><span class="pre">pygplates_py312</span></code> containing pyGPlates and all its dependency libraries:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">pygplates_py312</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span><span class="o">/</span><span class="n">label</span><span class="o">/</span><span class="n">pygplates_rc</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.12</span> <span class="n">pygplates</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">pygplates_py312</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.12</span> <span class="n">pygplates</span>
 <span class="n">conda</span> <span class="n">activate</span> <span class="n">pygplates_py312</span>
 </pre></div>
 </div>
 <p>Now you can use pyGPlates. For example, to see the pyGPlates version:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;import pygplates; print(pygplates.__version__)&quot;</span>
-</pre></div>
-</div>
-<p>And packages that <em>depend</em> on pyGPlates can still use the <em>release candidate</em> of pyGPlates.
-For example, if you want <code class="docutils literal notranslate"><span class="pre">gplately</span></code> to use <code class="docutils literal notranslate"><span class="pre">pygplates-1.0.0rc1</span></code> (instead of <code class="docutils literal notranslate"><span class="pre">pygplates-0.39</span></code>):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">gplately_env</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span><span class="o">/</span><span class="n">label</span><span class="o">/</span><span class="n">pygplates_rc</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">gplately</span>
-<span class="n">conda</span> <span class="n">activate</span> <span class="n">gplately_env</span>
 </pre></div>
 </div>
 </section>
@@ -234,12 +222,7 @@ For example, if you want <code class="docutils literal notranslate"><span class=
 </li>
 <li><p>NumPy:</p>
 <ul>
-<li><p>Version 1.24+ (for Python 3.8):</p>
-<ul>
-<li><p>Make sure your NumPy version is 1.24+ to avoid a binary incompatible error.</p></li>
-<li><p>This will be fixed in the final release <cite>1.0.0</cite>. The current release is a <em>pre-release</em> (<cite>1.0.0rc1</cite>).</p></li>
-</ul>
-</li>
+<li><p>Version 1.x (for Python 3.8):</p></li>
 <li><p>Version 2.x and 1.x (for Python 3.9 and later).</p></li>
 </ul>
 </li>
@@ -546,9 +529,9 @@ to see these locations on the globe.</div>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
-(C) 2004-2024 California Institute of Technology
-(C) 2007-2024 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2025 The University of Sydney, Australia
+(C) 2004-2025 California Institute of Technology
+(C) 2007-2025 The Geological Survey of Norway
 .</p>
   </div>
 

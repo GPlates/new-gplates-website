@@ -23,6 +23,7 @@
 
    .. autosummary::
    
+      ~PlateBoundaryStatistic.boundary_feature
       ~PlateBoundaryStatistic.boundary_length
       ~PlateBoundaryStatistic.boundary_normal
       ~PlateBoundaryStatistic.boundary_normal_azimuth
@@ -56,6 +57,7 @@
       ~PlateBoundaryStatistic.right_plate_velocity_obliquity
       ~PlateBoundaryStatistic.right_plate_velocity_orthogonal
       ~PlateBoundaryStatistic.right_plate_velocity_parallel
+      ~PlateBoundaryStatistic.shared_sub_segment
       ~PlateBoundaryStatistic.signed_distance_from_start_of_topological_section
       ~PlateBoundaryStatistic.signed_distance_to_end_of_topological_section
    

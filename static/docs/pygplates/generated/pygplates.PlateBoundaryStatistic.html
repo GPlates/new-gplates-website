@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pygplates.PlateBoundaryStatistic &mdash; pygplates 1.0.0-rc.1 documentation</title>
+  <title>pygplates.PlateBoundaryStatistic &mdash; pygplates 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=78492a5e" />
@@ -14,7 +14,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=4b0c7688"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -136,104 +136,110 @@ This class cannot be instantiated from Python</p>
 <p class="rubric">Attributes</p>
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_length" title="pygplates.PlateBoundaryStatistic.boundary_length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_length</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_feature" title="pygplates.PlateBoundaryStatistic.boundary_feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_feature</span></code></a></p></td>
+<td><p>Boundary feature associated with the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_length" title="pygplates.PlateBoundaryStatistic.boundary_length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_length</span></code></a></p></td>
 <td><p>Length (in radians) subtended on the plate boundary (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_normal" title="pygplates.PlateBoundaryStatistic.boundary_normal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_normal</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_normal" title="pygplates.PlateBoundaryStatistic.boundary_normal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_normal</span></code></a></p></td>
 <td><p>Normal to the plate boundary (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_normal_azimuth" title="pygplates.PlateBoundaryStatistic.boundary_normal_azimuth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_normal_azimuth</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_normal_azimuth" title="pygplates.PlateBoundaryStatistic.boundary_normal_azimuth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_normal_azimuth</span></code></a></p></td>
 <td><p>Clockwise (East-wise) angle in radians (in the range <span class="math notranslate nohighlight">\([0, 2\pi]\)</span>) from North to the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_normal" title="pygplates.PlateBoundaryStatistic.boundary_normal"><code class="xref py py-attr docutils literal notranslate"><span class="pre">plate</span> <span class="pre">boundary</span> <span class="pre">normal</span></code></a> (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_point</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_point</span></code></a></p></td>
 <td><p>Position of the point on a plate boundary.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_velocity" title="pygplates.PlateBoundaryStatistic.boundary_velocity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_velocity</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_velocity" title="pygplates.PlateBoundaryStatistic.boundary_velocity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_velocity</span></code></a></p></td>
 <td><p>Velocity vector of the plate boundary (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_velocity_magnitude" title="pygplates.PlateBoundaryStatistic.boundary_velocity_magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_velocity_magnitude</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_velocity_magnitude" title="pygplates.PlateBoundaryStatistic.boundary_velocity_magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_velocity_magnitude</span></code></a></p></td>
 <td><p>Magnitude of velocity vector of the plate boundary (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_velocity_obliquity" title="pygplates.PlateBoundaryStatistic.boundary_velocity_obliquity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_velocity_obliquity</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_velocity_obliquity" title="pygplates.PlateBoundaryStatistic.boundary_velocity_obliquity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_velocity_obliquity</span></code></a></p></td>
 <td><p>Obliquity (in radians) of velocity vector of the plate boundary (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_velocity_orthogonal" title="pygplates.PlateBoundaryStatistic.boundary_velocity_orthogonal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_velocity_orthogonal</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_velocity_orthogonal" title="pygplates.PlateBoundaryStatistic.boundary_velocity_orthogonal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_velocity_orthogonal</span></code></a></p></td>
 <td><p>Orthogonal component (in direction of boundary normal) of velocity vector of the plate boundary (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_velocity_parallel" title="pygplates.PlateBoundaryStatistic.boundary_velocity_parallel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_velocity_parallel</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_velocity_parallel" title="pygplates.PlateBoundaryStatistic.boundary_velocity_parallel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary_velocity_parallel</span></code></a></p></td>
 <td><p>Parallel component (in direction along boundary line) of velocity vector of the plate boundary (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.convergence_velocity" title="pygplates.PlateBoundaryStatistic.convergence_velocity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convergence_velocity</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.convergence_velocity" title="pygplates.PlateBoundaryStatistic.convergence_velocity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convergence_velocity</span></code></a></p></td>
 <td><p>Convergence velocity vector (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.convergence_velocity_magnitude" title="pygplates.PlateBoundaryStatistic.convergence_velocity_magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convergence_velocity_magnitude</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.convergence_velocity_magnitude" title="pygplates.PlateBoundaryStatistic.convergence_velocity_magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convergence_velocity_magnitude</span></code></a></p></td>
 <td><p>Magnitude of convergence velocity vector (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.convergence_velocity_obliquity" title="pygplates.PlateBoundaryStatistic.convergence_velocity_obliquity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convergence_velocity_obliquity</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.convergence_velocity_obliquity" title="pygplates.PlateBoundaryStatistic.convergence_velocity_obliquity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convergence_velocity_obliquity</span></code></a></p></td>
 <td><p>Obliquity (in radians) of the convergence velocity vector (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.convergence_velocity_orthogonal" title="pygplates.PlateBoundaryStatistic.convergence_velocity_orthogonal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convergence_velocity_orthogonal</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.convergence_velocity_orthogonal" title="pygplates.PlateBoundaryStatistic.convergence_velocity_orthogonal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convergence_velocity_orthogonal</span></code></a></p></td>
 <td><p>Orthogonal component (in direction of boundary normal) of convergence velocity vector (at the v).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.convergence_velocity_parallel" title="pygplates.PlateBoundaryStatistic.convergence_velocity_parallel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convergence_velocity_parallel</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.convergence_velocity_parallel" title="pygplates.PlateBoundaryStatistic.convergence_velocity_parallel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convergence_velocity_parallel</span></code></a></p></td>
 <td><p>Parallel component (in direction along boundary line) of convergence velocity vector (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.convergence_velocity_signed_magnitude" title="pygplates.PlateBoundaryStatistic.convergence_velocity_signed_magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convergence_velocity_signed_magnitude</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.convergence_velocity_signed_magnitude" title="pygplates.PlateBoundaryStatistic.convergence_velocity_signed_magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convergence_velocity_signed_magnitude</span></code></a></p></td>
 <td><p>Signed magnitude of convergence velocity vector (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.distance_from_start_of_shared_sub_segment" title="pygplates.PlateBoundaryStatistic.distance_from_start_of_shared_sub_segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">distance_from_start_of_shared_sub_segment</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.distance_from_start_of_shared_sub_segment" title="pygplates.PlateBoundaryStatistic.distance_from_start_of_shared_sub_segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">distance_from_start_of_shared_sub_segment</span></code></a></p></td>
 <td><p>Distance (in radians) from the <em>start</em> of the shared sub-segment geometry.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.distance_from_start_of_topological_section" title="pygplates.PlateBoundaryStatistic.distance_from_start_of_topological_section"><code class="xref py py-obj docutils literal notranslate"><span class="pre">distance_from_start_of_topological_section</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.distance_from_start_of_topological_section" title="pygplates.PlateBoundaryStatistic.distance_from_start_of_topological_section"><code class="xref py py-obj docutils literal notranslate"><span class="pre">distance_from_start_of_topological_section</span></code></a></p></td>
 <td><p>Distance (in radians) from the <em>start</em> of the resolved topological section geometry.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.distance_to_end_of_shared_sub_segment" title="pygplates.PlateBoundaryStatistic.distance_to_end_of_shared_sub_segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">distance_to_end_of_shared_sub_segment</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.distance_to_end_of_shared_sub_segment" title="pygplates.PlateBoundaryStatistic.distance_to_end_of_shared_sub_segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">distance_to_end_of_shared_sub_segment</span></code></a></p></td>
 <td><p>Distance (in radians) to the <em>end</em> of the shared sub-segment geometry.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.distance_to_end_of_topological_section" title="pygplates.PlateBoundaryStatistic.distance_to_end_of_topological_section"><code class="xref py py-obj docutils literal notranslate"><span class="pre">distance_to_end_of_topological_section</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.distance_to_end_of_topological_section" title="pygplates.PlateBoundaryStatistic.distance_to_end_of_topological_section"><code class="xref py py-obj docutils literal notranslate"><span class="pre">distance_to_end_of_topological_section</span></code></a></p></td>
 <td><p>Distance (in radians) to the <em>end</em> of the resolved topological section geometry.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate" title="pygplates.PlateBoundaryStatistic.left_plate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate" title="pygplates.PlateBoundaryStatistic.left_plate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate</span></code></a></p></td>
 <td><p>The left plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_strain_rate" title="pygplates.PlateBoundaryStatistic.left_plate_strain_rate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate_strain_rate</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_strain_rate" title="pygplates.PlateBoundaryStatistic.left_plate_strain_rate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate_strain_rate</span></code></a></p></td>
 <td><p>Strain rate of the left plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_velocity" title="pygplates.PlateBoundaryStatistic.left_plate_velocity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate_velocity</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_velocity" title="pygplates.PlateBoundaryStatistic.left_plate_velocity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate_velocity</span></code></a></p></td>
 <td><p>Velocity vector of the left plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_velocity_magnitude" title="pygplates.PlateBoundaryStatistic.left_plate_velocity_magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate_velocity_magnitude</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_velocity_magnitude" title="pygplates.PlateBoundaryStatistic.left_plate_velocity_magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate_velocity_magnitude</span></code></a></p></td>
 <td><p>Magnitude of velocity vector of the left plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_velocity_obliquity" title="pygplates.PlateBoundaryStatistic.left_plate_velocity_obliquity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate_velocity_obliquity</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_velocity_obliquity" title="pygplates.PlateBoundaryStatistic.left_plate_velocity_obliquity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate_velocity_obliquity</span></code></a></p></td>
 <td><p>Obliquity (in radians) of velocity vector of the left plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_velocity_orthogonal" title="pygplates.PlateBoundaryStatistic.left_plate_velocity_orthogonal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate_velocity_orthogonal</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_velocity_orthogonal" title="pygplates.PlateBoundaryStatistic.left_plate_velocity_orthogonal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate_velocity_orthogonal</span></code></a></p></td>
 <td><p>Orthogonal component (in direction of boundary normal) of velocity vector of the left plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_velocity_parallel" title="pygplates.PlateBoundaryStatistic.left_plate_velocity_parallel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate_velocity_parallel</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_velocity_parallel" title="pygplates.PlateBoundaryStatistic.left_plate_velocity_parallel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">left_plate_velocity_parallel</span></code></a></p></td>
 <td><p>Parallel component (in direction along boundary line) of velocity vector of the left plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate" title="pygplates.PlateBoundaryStatistic.right_plate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate" title="pygplates.PlateBoundaryStatistic.right_plate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate</span></code></a></p></td>
 <td><p>The right plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_strain_rate" title="pygplates.PlateBoundaryStatistic.right_plate_strain_rate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate_strain_rate</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_strain_rate" title="pygplates.PlateBoundaryStatistic.right_plate_strain_rate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate_strain_rate</span></code></a></p></td>
 <td><p>Strain rate of the right plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_velocity" title="pygplates.PlateBoundaryStatistic.right_plate_velocity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate_velocity</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_velocity" title="pygplates.PlateBoundaryStatistic.right_plate_velocity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate_velocity</span></code></a></p></td>
 <td><p>Velocity vector of the right plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_velocity_magnitude" title="pygplates.PlateBoundaryStatistic.right_plate_velocity_magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate_velocity_magnitude</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_velocity_magnitude" title="pygplates.PlateBoundaryStatistic.right_plate_velocity_magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate_velocity_magnitude</span></code></a></p></td>
 <td><p>Magnitude of velocity vector of the right plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_velocity_obliquity" title="pygplates.PlateBoundaryStatistic.right_plate_velocity_obliquity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate_velocity_obliquity</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_velocity_obliquity" title="pygplates.PlateBoundaryStatistic.right_plate_velocity_obliquity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate_velocity_obliquity</span></code></a></p></td>
 <td><p>Obliquity (in radians) of velocity vector of the right plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_velocity_orthogonal" title="pygplates.PlateBoundaryStatistic.right_plate_velocity_orthogonal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate_velocity_orthogonal</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_velocity_orthogonal" title="pygplates.PlateBoundaryStatistic.right_plate_velocity_orthogonal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate_velocity_orthogonal</span></code></a></p></td>
 <td><p>Orthogonal component (in direction of boundary normal) of velocity vector of the right plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_velocity_parallel" title="pygplates.PlateBoundaryStatistic.right_plate_velocity_parallel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate_velocity_parallel</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_velocity_parallel" title="pygplates.PlateBoundaryStatistic.right_plate_velocity_parallel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_plate_velocity_parallel</span></code></a></p></td>
 <td><p>Parallel component (in direction along boundary line) of velocity vector of the right plate (at the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.shared_sub_segment" title="pygplates.PlateBoundaryStatistic.shared_sub_segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">shared_sub_segment</span></code></a></p></td>
+<td><p>Shared sub-segment containing the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.signed_distance_from_start_of_topological_section" title="pygplates.PlateBoundaryStatistic.signed_distance_from_start_of_topological_section"><code class="xref py py-obj docutils literal notranslate"><span class="pre">signed_distance_from_start_of_topological_section</span></code></a></p></td>
 <td><p>Signed distance (in radians) from the <em>start</em> of the resolved topological section geometry.</p></td>
@@ -243,6 +249,31 @@ This class cannot be instantiated from Python</p>
 </tr>
 </tbody>
 </table>
+<dl class="py property">
+<dt class="sig sig-object py" id="pygplates.PlateBoundaryStatistic.boundary_feature">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">boundary_feature</span></span><a class="headerlink" href="#pygplates.PlateBoundaryStatistic.boundary_feature" title="Link to this definition"></a></dt>
+<dd><p>Boundary feature associated with the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pygplates.Feature.html#pygplates.Feature" title="pygplates.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a></p>
+</dd>
+</dl>
+<p>If the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.shared_sub_segment" title="pygplates.PlateBoundaryStatistic.shared_sub_segment"><code class="xref py py-attr docutils literal notranslate"><span class="pre">shared</span> <span class="pre">sub-segment</span></code></a> containing the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a> is from a <a class="reference internal" href="pygplates.ReconstructedFeatureGeometry.html#pygplates.ReconstructedFeatureGeometry" title="pygplates.ReconstructedFeatureGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReconstructedFeatureGeometry</span></code></a> then the returned feature matches the shared sub-segment’s feature. However, if the shared sub-segment is from a <a class="reference internal" href="pygplates.ResolvedTopologicalLine.html#pygplates.ResolvedTopologicalLine" title="pygplates.ResolvedTopologicalLine"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalLine</span></code></a> then the returned feature matches one of the resolved topological line’s <a class="reference internal" href="pygplates.ResolvedTopologicalLine.html#pygplates.ResolvedTopologicalLine.get_line_sub_segments" title="pygplates.ResolvedTopologicalLine.get_line_sub_segments"><code class="xref py py-meth docutils literal notranslate"><span class="pre">sub-segments</span></code></a> (the one containing the boundary point).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An example where this is useful is along a deforming trench line when you need to know the reconstruction plate ID associated with the sub-segment of the trench line that the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a> is on, since that plate ID more accurately represents motion of the trench near the boundary point.</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.shared_sub_segment" title="pygplates.PlateBoundaryStatistic.shared_sub_segment"><code class="xref py py-attr docutils literal notranslate"><span class="pre">shared_sub_segment</span></code></a></p>
+</div>
+</div></blockquote>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
+</div>
+</dd></dl>
+
 <dl class="py property">
 <dt class="sig sig-object py" id="pygplates.PlateBoundaryStatistic.boundary_length">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">boundary_length</span></span><a class="headerlink" href="#pygplates.PlateBoundaryStatistic.boundary_length" title="Link to this definition"></a></dt>
@@ -754,6 +785,10 @@ This class cannot be instantiated from Python</p>
 </dd>
 </dl>
 <p>Returns <code class="docutils literal notranslate"><span class="pre">pygplates.StrainRate.zero</span></code> (no deformation) if there’s no left deforming network (eg, there’s just a rigid plate with no deforming network overlaid on top) or if <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a> is inside an interior rigid block of the left deforming network. See <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate" title="pygplates.PlateBoundaryStatistic.left_plate"><code class="xref py py-attr docutils literal notranslate"><span class="pre">left_plate</span></code></a> for details on how the left plate is determined.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Strain rate in a deforming network is calculated from the spatial gradients of velocity where the velocities are calculated over a 1 Myr time interval and using the <em>equatorial</em> Earth radius <a class="reference internal" href="pygplates.Earth.html#pygplates.Earth" title="pygplates.Earth"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.Earth.equatorial_radius_in_kms</span></code></a>.</p>
+</div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate" title="pygplates.PlateBoundaryStatistic.left_plate"><code class="xref py py-attr docutils literal notranslate"><span class="pre">left_plate</span></code></a> and <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.left_plate_velocity" title="pygplates.PlateBoundaryStatistic.left_plate_velocity"><code class="xref py py-attr docutils literal notranslate"><span class="pre">left_plate_velocity</span></code></a></p>
@@ -937,6 +972,10 @@ This class cannot be instantiated from Python</p>
 </dd>
 </dl>
 <p>Returns <code class="docutils literal notranslate"><span class="pre">pygplates.StrainRate.zero</span></code> (no deformation) if there’s no right deforming network (eg, there’s just a rigid plate with no deforming network overlaid on top) or if <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a> is inside an interior rigid block of the right deforming network. See <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate" title="pygplates.PlateBoundaryStatistic.right_plate"><code class="xref py py-attr docutils literal notranslate"><span class="pre">right_plate</span></code></a> for details on how the right plate is determined.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Strain rate in a deforming network is calculated from the spatial gradients of velocity where the velocities are calculated over a 1 Myr time interval and using the <em>equatorial</em> Earth radius <a class="reference internal" href="pygplates.Earth.html#pygplates.Earth" title="pygplates.Earth"><code class="xref py py-class docutils literal notranslate"><span class="pre">pygplates.Earth.equatorial_radius_in_kms</span></code></a>.</p>
+</div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate" title="pygplates.PlateBoundaryStatistic.right_plate"><code class="xref py py-attr docutils literal notranslate"><span class="pre">right_plate</span></code></a> and <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.right_plate_velocity" title="pygplates.PlateBoundaryStatistic.right_plate_velocity"><code class="xref py py-attr docutils literal notranslate"><span class="pre">right_plate_velocity</span></code></a></p>
@@ -1081,6 +1120,30 @@ This class cannot be instantiated from Python</p>
 </dd></dl>
 
 <dl class="py property">
+<dt class="sig sig-object py" id="pygplates.PlateBoundaryStatistic.shared_sub_segment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shared_sub_segment</span></span><a class="headerlink" href="#pygplates.PlateBoundaryStatistic.shared_sub_segment" title="Link to this definition"></a></dt>
+<dd><p>Shared sub-segment containing the <a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_point" title="pygplates.PlateBoundaryStatistic.boundary_point"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary</span> <span class="pre">point</span></code></a>.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pygplates.ResolvedTopologicalSharedSubSegment.html#pygplates.ResolvedTopologicalSharedSubSegment" title="pygplates.ResolvedTopologicalSharedSubSegment"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResolvedTopologicalSharedSubSegment</span></code></a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Another way to get the shared sub-segment is to call <a class="reference internal" href="pygplates.TopologicalSnapshot.html#pygplates.TopologicalSnapshot.calculate_plate_boundary_statistics" title="pygplates.TopologicalSnapshot.calculate_plate_boundary_statistics"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TopologicalSnapshot.calculate_plate_boundary_statistics()</span></code></a> with <code class="docutils literal notranslate"><span class="pre">return_shared_sub_segment_dict=True</span></code> (which associates each shared sub-segment with a list of boundary point statistics).</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#pygplates.PlateBoundaryStatistic.boundary_feature" title="pygplates.PlateBoundaryStatistic.boundary_feature"><code class="xref py py-attr docutils literal notranslate"><span class="pre">boundary_feature</span></code></a></p>
+</div>
+</div></blockquote>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
 <dt class="sig sig-object py" id="pygplates.PlateBoundaryStatistic.signed_distance_from_start_of_topological_section">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">signed_distance_from_start_of_topological_section</span></span><a class="headerlink" href="#pygplates.PlateBoundaryStatistic.signed_distance_from_start_of_topological_section" title="Link to this definition"></a></dt>
 <dd><p>Signed distance (in radians) from the <em>start</em> of the resolved topological section geometry.</p>
@@ -1137,9 +1200,9 @@ This class cannot be instantiated from Python</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright (C) 2003-2024 The University of Sydney, Australia
-(C) 2004-2024 California Institute of Technology
-(C) 2007-2024 The Geological Survey of Norway
+    <p>&#169; Copyright (C) 2003-2025 The University of Sydney, Australia
+(C) 2004-2025 California Institute of Technology
+(C) 2007-2025 The Geological Survey of Norway
 .</p>
   </div>
 

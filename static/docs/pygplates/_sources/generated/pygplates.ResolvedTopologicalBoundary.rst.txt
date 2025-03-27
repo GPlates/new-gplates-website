@@ -25,6 +25,7 @@
       ~ResolvedTopologicalBoundary.get_resolved_boundary
       ~ResolvedTopologicalBoundary.get_resolved_feature
       ~ResolvedTopologicalBoundary.get_resolved_geometry
+      ~ResolvedTopologicalBoundary.get_resolved_geometry_point_features
       ~ResolvedTopologicalBoundary.get_resolved_geometry_point_velocities
       ~ResolvedTopologicalBoundary.get_resolved_geometry_points
       ~ResolvedTopologicalBoundary.reconstruct_point
