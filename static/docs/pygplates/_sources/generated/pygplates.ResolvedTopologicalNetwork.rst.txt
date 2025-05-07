@@ -25,6 +25,7 @@
       ~ResolvedTopologicalNetwork.get_resolved_boundary
       ~ResolvedTopologicalNetwork.get_resolved_feature
       ~ResolvedTopologicalNetwork.get_resolved_geometry
+      ~ResolvedTopologicalNetwork.get_resolved_geometry_point_features
       ~ResolvedTopologicalNetwork.get_resolved_geometry_point_velocities
       ~ResolvedTopologicalNetwork.get_resolved_geometry_points
       ~ResolvedTopologicalNetwork.get_rigid_blocks

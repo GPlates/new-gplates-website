@@ -19,6 +19,7 @@
       ~Version.get_minor
       ~Version.get_patch
       ~Version.get_prerelease_suffix
+      ~Version.get_release_suffix
       ~Version.get_revision
    
    

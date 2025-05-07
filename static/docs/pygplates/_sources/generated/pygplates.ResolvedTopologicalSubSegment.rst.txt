@@ -18,6 +18,7 @@
       ~ResolvedTopologicalSubSegment.get_geometry
       ~ResolvedTopologicalSubSegment.get_resolved_feature
       ~ResolvedTopologicalSubSegment.get_resolved_geometry
+      ~ResolvedTopologicalSubSegment.get_resolved_geometry_point_features
       ~ResolvedTopologicalSubSegment.get_resolved_geometry_point_velocities
       ~ResolvedTopologicalSubSegment.get_resolved_geometry_points
       ~ResolvedTopologicalSubSegment.get_sub_segments
