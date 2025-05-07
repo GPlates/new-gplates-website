@@ -1,3 +1,4 @@
+import { withPrefix } from 'gatsby'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
@@ -5,14 +6,13 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 import './gplates.sass'
 import useSiteMetadata from './SiteMetadata'
-import { withPrefix } from 'gatsby'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
     <div>
       <Helmet>
-        <html lang="en" className='has-navbar-fixed-top'/>
+        <html lang="en" className='has-navbar-fixed-top' />
         <title>{title}</title>
         <meta name="description" content={description} />
 
@@ -21,6 +21,7 @@ const TemplateWrapper = ({ children }) => {
           sizes="180x180"
           href={`${withPrefix('/')}img/apple-touch-icon.png`}
         />
+        <link rel="shortcut icon" href={`${withPrefix('/')}img/favicon.ico`} />
         <link
           rel="icon"
           type="image/png"
