@@ -1,5 +1,6 @@
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
+import React from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import { HTMLContent } from "../components/Content";
