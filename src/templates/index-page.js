@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
-import React from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import { HTMLContent } from "../components/Content";
@@ -303,7 +302,7 @@ const IndexPageTemplate = ({
                 >
                   <FontAwesomeIcon icon={faDownload} />
                 </span>
-                Latest GPlately release v1.3.0
+                Latest GPlately release v2.0.0
               </a>
             </div>
           </div>
