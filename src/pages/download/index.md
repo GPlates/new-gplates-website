@@ -66,7 +66,7 @@ The current stable release of GPlately:
             </td>
             <td class="content" >
                 <a href="https://github.com/GPlates/gplately" title="GPlately GitHub Repository">
-                <strong>Install GPlately 1.3.0</strong>
+                <strong>Install GPlately 2.0.0</strong>
                 </a>
                 <p>(the latest “stable” release)</p>
             </td>

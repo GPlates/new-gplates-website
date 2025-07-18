@@ -84,20 +84,20 @@ title: User Docs
    <tbody>
       <tr>
          <td class="icon">
-            <a href="https://gplates.github.io/gplately/v1.3.0/"><img src="./img/GPlates-Manual.png" alt="GPlately user manual"></a>
+            <a href="https://gplates.github.io/gplately/v2.0.0/sphinx/html/index.html"><img src="./img/GPlates-Manual.png" alt="GPlately user manual"></a>
          </td>
          <td class="content" >
-            <h4><a href="https://gplates.github.io/gplately/v1.3.0/">GPlately User Manual</a></h4>
+            <h4><a href="https://gplates.github.io/gplately/v2.0.0/sphinx/html/index.html">GPlately User Manual</a></h4>
             <p>GPlately was created to accelerate spatio-temporal data analysis leveraging pyGPlates and PlateTectonicTools within a simplified Python interface. The user manual contains rich documentation on all Python functions and objects within GPlately.</p>   
          </td>
       </tr>
    </tbody>
    <tr>
          <td class="icon">
-            <a href="https://gplates.github.io/gplately/v1.3.0/#notebooks-examples"><img src="./img/GPlates-Tutorial.png" alt="GPlately Tutorials"></a>
+            <a href="https://gplates.github.io/gplately/v2.0.0/sphinx/html/examples.html"><img src="./img/GPlates-Tutorial.png" alt="GPlately Tutorials"></a>
          </td>
          <td class="content" >
-            <h4><a href="https://gplates.github.io/gplately/v1.3.0/#notebooks-examples">GPlately Tutorials</a></h4>
+            <h4><a href="https://gplates.github.io/gplately/v2.0.0/sphinx/html/examples.html">GPlately Tutorials</a></h4>
             <p>GPlately tutorials are in the form of Jupyter Notebooks which document common workflows to reconstruct data, interrogate and compare different plate models, and plotting data on maps. The Jupyter Notebooks are rendered in HTML for quick reference, alternatively download the GPlately GitHub repository to run the notebooks on your own computer.</p>
          </td>
       </tr>
