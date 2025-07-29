@@ -66,7 +66,7 @@ The current stable release of GPlately:
             </td>
             <td class="content" >
                 <a href="https://github.com/GPlates/gplately" title="GPlately GitHub Repository">
-                <strong>Install GPlately 1.3.0</strong>
+                <strong>Install GPlately 2.0.0</strong>
                 </a>
                 <p>(the latest “stable” release)</p>
             </td>
@@ -92,9 +92,10 @@ These binary packages, and their installation instructions, can be found on the 
 Source-code packages are also available for Windows (in a zip-file) and Linux and macOS (in a tarball) on the [download page](https://www.earthbyte.org/download-gplates-2-5/).
 Instructions on how to compile GPlates from source code can be found [here](https://github.com/GPlates/GPlates).
 
-> __Note:__ The source-code packages do __not__ contain geodata. But there is a zip-file containing just the geodata.
+> **Note:** The source-code packages do **not** contain geodata. But there is a zip-file containing just the geodata.
 
 You can also download older versions of GPlates:
+
 - [GPlates 2.4](https://www.earthbyte.org/download-gplates-2-4/)
 - [GPlates 2.3](https://www.earthbyte.org/download-gplates-2-3/)
 - [GPlates 2.2 and older](https://sourceforge.net/projects/gplates/files/gplates/)
@@ -106,10 +107,11 @@ PyGPlates can be installed using [conda](https://docs.conda.io/projects/conda/en
 Please see the [installation instructions](/docs/pygplates/pygplates_getting_started.html) in the pyGPlates documentation.
 
 You can also download older versions of pyGPlates (prior to version 1.0):
+
 - [PyGPlates 0.36](https://www.earthbyte.org/download-pygplates-0-36/)
 - [PyGPlates 0.28 and older](https://sourceforge.net/projects/gplates/files/pygplates/)
 
-> __Note:__ These older packages are __not__ installed using `conda` or `pip`.
+> **Note:** These older packages are **not** installed using `conda` or `pip`.
 
 #### GPlately
 

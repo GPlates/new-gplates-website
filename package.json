@@ -5,7 +5,7 @@
   "author": "GPlates developers",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^7.0.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "bulma": "^0.9.4",
     "gatsby-image": "^3.11.0",
@@ -33,7 +33,7 @@
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
-    "uuid": "^9.0.0"
+    "uuid": "^11.1.0"
   },
   "keywords": [
     "gatsby"
@@ -51,6 +51,6 @@
   "devDependencies": {
     "ajv": "^8.17.1",
     "gatsby": "^5.14.5",
-    "prettier": "^2.8.7"
+    "prettier": "^3.6.2"
   }
 }
