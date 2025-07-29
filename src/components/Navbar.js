@@ -35,11 +35,11 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: "is-active",
-            })
+            navBarActiveClass: "is-active",
+          })
           : this.setState({
-              navBarActiveClass: "",
-            });
+            navBarActiveClass: "",
+          });
       }
     );
   }
@@ -63,6 +63,7 @@ const Navbar = class extends React.Component {
             {/* Hamburger menu */}
             <div
               role="button"
+              aria-label="Toggle Hamburger"
               tabIndex="0"
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"

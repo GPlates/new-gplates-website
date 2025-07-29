@@ -49,7 +49,7 @@ class ContactPage extends React.Component {
                 professional software developers at:
               </strong>
               <li>
-                the <a href="https://www.earthbyte.org" target="_blank">EarthByte</a> group in the school of Geosciences at the University
+                the <a href="https://www.earthbyte.org" target="_blank" rel="noreferrer">EarthByte</a> group in the school of Geosciences at the University
                 of Sydney{" "}
               </li>
             </div>
@@ -57,14 +57,14 @@ class ContactPage extends React.Component {
             <div>
               <strong>with past contributions from:</strong>
               <li>
-                the <a href="https://www.gps.caltech.edu/" target="_blank">Division of Geological and Planetary Sciences (GPS)</a> at Caltech{" "}
+                the <a href="https://www.gps.caltech.edu/" target="_blank" rel="noreferrer">Division of Geological and Planetary Sciences (GPS)</a> at Caltech{" "}
               </li>
               <li>
-                the <a href="https://www.mn.uio.no/ceed/english/" target="_blank">Centre for Earth Evolution and Dynamics (CEED)</a> at the
+                the <a href="https://www.mn.uio.no/ceed/english/" target="_blank" rel="noreferrer">Centre for Earth Evolution and Dynamics (CEED)</a> at the
                 Department of Geosciences, University of Oslo, Norway{" "}
               </li>
               <li>
-                the Geodynamics Team at the <a href="https://www.ngu.no/en" target="_blank">Geological Survey of Norway (NGU)</a>
+                the Geodynamics Team at the <a href="https://www.ngu.no/en" target="_blank" rel="noreferrer">Geological Survey of Norway (NGU)</a>
               </li>
             </div>
             <br></br>

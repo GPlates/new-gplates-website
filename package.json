@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "author": "GPlates developers",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/fontawesome-svg-core": "^7.0.0",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "bulma": "^0.9.4",
     "gatsby-image": "^3.11.0",
