@@ -8,7 +8,6 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "bulma": "^0.9.4",
-    "gatsby": "^5.8.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-fontawesome-css": "^1.2.0",
     "gatsby-plugin-google-gtag": "^5.13.0",
@@ -30,9 +29,9 @@
     "node-sass": "^8.0.0",
     "postcss": "^8.4.22",
     "prop-types": "^15.8.1",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-copy-to-clipboard": "^5.1.0",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "uuid": "^9.0.0"
   },
@@ -50,6 +49,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "ajv": "^8.17.1",
+    "gatsby": "^5.14.5",
     "prettier": "^2.8.7"
   }
 }
