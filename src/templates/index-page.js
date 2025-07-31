@@ -495,7 +495,7 @@ const IndexPageTemplate = ({
                   through deep time. Geochemistry, Geophysics, Geosystems, 19,
                   2243-2261. https://doi.org/10.1029/2018GC007584"
                   >
-                    <button className="button is-small is-success">
+                    <button className="button is-small is-success has-text-white-ter">
                       <span className="icon">
                         <FontAwesomeIcon
                           icon={faClipboard}
@@ -538,7 +538,7 @@ const IndexPageTemplate = ({
                   PlateTectonicTools and GPlately. Geoscience Data Journal, 00,
                   1-8. Available from: https://doi.org/10.1002/gdj3.185"
                   >
-                    <button className="button is-small is-success">
+                    <button className="button is-small is-success has-text-white-ter">
                       <span className="icon">
                         <FontAwesomeIcon
                           icon={faClipboard}

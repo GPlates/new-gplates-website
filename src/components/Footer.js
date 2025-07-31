@@ -18,18 +18,18 @@ const Footer = class extends React.Component {
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
-                      <Link to="/" className="navbar-item">
+                      <Link to="/" className="navbar-item has-text-white-ter">
                         Home
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/news">
+                      <Link className="navbar-item has-text-white-ter" to="/news">
                         News
                       </Link>
                     </li>
                     <li>
                       <a
-                        className="navbar-item"
+                        className="navbar-item has-text-white-ter"
                         href="https://www.earthbyte.org"
                       >
                         EarthByte Group
