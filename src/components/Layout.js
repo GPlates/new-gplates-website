@@ -3,8 +3,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import './all.sass'
-import './gplates.sass'
+import './all.scss'
+import './gplates.scss'
 import useSiteMetadata from './SiteMetadata'
 
 const TemplateWrapper = ({ children }) => {
