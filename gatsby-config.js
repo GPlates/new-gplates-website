@@ -5,7 +5,6 @@ module.exports = {
       'This is the GPlates project website.',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-sass',
       sassOptions: { indentedSyntax: true },
