@@ -4,9 +4,9 @@ path: /publications
 title: GPlates Publications
 ---
 
-<span style="display: block;height: 192px; margin-top: -192px; visibility: hidden;" id="top"></span><button style="position:fixed; bottom:10px;right:10px;"><a href="#top">Go back to top</a></button> <a href="#2025" style="margin-left:10px;">2025(<strong><i>37</i></strong>)</a>; <a href="#2024" style="margin-left:10px;">2024(<strong><i>273</i></strong>)</a>;<a href="#2023" style="margin-left:10px;">2023(<strong><i>285</i></strong>)</a>;<a href="#2022" style="margin-left:10px;">2022(<strong><i>304</i></strong>)</a>; <a href="#2021" style="margin-left:10px;">2021(<strong><i>278</i></strong>)</a>; <a href="#2020" style="margin-left:10px;">2020(<strong><i>110</i></strong>)</a>; <a href="#2019" style="margin-left:10px;">2019(<strong><i>136</i></strong>)</a>; <a href="#2018" style="margin-left:10px;">2018(<strong><i>127</i></strong>)</a>; <a href="#2017" style="margin-left:10px;">2017(<strong><i>87</i></strong>)</a>; <a href="#2016" style="margin-left:10px;">2016(<strong><i>72</i></strong>)</a>; <a href="#2015" style="margin-left:10px;">2015(<strong><i>71</i></strong>)</a>; <a href="#2014" style="margin-left:10px;">2014(<strong><i>52</i></strong>)</a>; <a href="#2013" style="margin-left:10px;">2013(<strong><i>56</i></strong>)</a>; <a href="#2012" style="margin-left:10px;">2012(<strong><i>57</i></strong>)</a>; <a href="#2011" style="margin-left:10px;">2011(<strong><i>27</i></strong>)</a>; <a href="#2010" style="margin-left:10px;">2010(<strong><i>14</i></strong>)</a>; <a href="#2009" style="margin-left:10px;">2009(<strong><i>8</i></strong>)</a>; <a href="#2008" style="margin-left:10px;">2008(<strong><i>10</i></strong>)</a>; <a href="#2007" style="margin-left:10px;">2007(<strong><i>3</i></strong>)</a>; <a href="#2006" style="margin-left:10px;">2006(<strong><i>1</i></strong>)</a>;
+<span style="display: block;height: 192px; margin-top: -192px; visibility: hidden;" id="top"></span><button style="position:fixed; bottom:10px;right:10px;"><a href="#top">Go back to top</a></button> <a href="#2025" style="margin-left:10px;">2025(<strong><i>152</i></strong>)</a>; <a href="#2024" style="margin-left:10px;">2024(<strong><i>273</i></strong>)</a>;<a href="#2023" style="margin-left:10px;">2023(<strong><i>285</i></strong>)</a>;<a href="#2022" style="margin-left:10px;">2022(<strong><i>304</i></strong>)</a>; <a href="#2021" style="margin-left:10px;">2021(<strong><i>278</i></strong>)</a>; <a href="#2020" style="margin-left:10px;">2020(<strong><i>110</i></strong>)</a>; <a href="#2019" style="margin-left:10px;">2019(<strong><i>136</i></strong>)</a>; <a href="#2018" style="margin-left:10px;">2018(<strong><i>127</i></strong>)</a>; <a href="#2017" style="margin-left:10px;">2017(<strong><i>87</i></strong>)</a>; <a href="#2016" style="margin-left:10px;">2016(<strong><i>72</i></strong>)</a>; <a href="#2015" style="margin-left:10px;">2015(<strong><i>71</i></strong>)</a>; <a href="#2014" style="margin-left:10px;">2014(<strong><i>52</i></strong>)</a>; <a href="#2013" style="margin-left:10px;">2013(<strong><i>56</i></strong>)</a>; <a href="#2012" style="margin-left:10px;">2012(<strong><i>57</i></strong>)</a>; <a href="#2011" style="margin-left:10px;">2011(<strong><i>27</i></strong>)</a>; <a href="#2010" style="margin-left:10px;">2010(<strong><i>14</i></strong>)</a>; <a href="#2009" style="margin-left:10px;">2009(<strong><i>8</i></strong>)</a>; <a href="#2008" style="margin-left:10px;">2008(<strong><i>10</i></strong>)</a>; <a href="#2007" style="margin-left:10px;">2007(<strong><i>3</i></strong>)</a>; <a href="#2006" style="margin-left:10px;">2006(<strong><i>1</i></strong>)</a>;
 
-**Total: 1981** (_as of 2025-02-21_)
+**Total: 2096** (_as of 2025-08-01_)
 
 _This web page was created by a Python script automatically using the data retrieved from [Google Scholar](https://scholar.google.com.au/). Your publications are listed here because we believe you have used GPlates/pyGPlates in your publications directly or indirectly(such as GPlates being used in your references). If you believe that any of the papers has been listed here mistakenly, you may [contact us](https://www.earthbyte.org/contact-us-3/)._
 
@@ -14,43 +14,189 @@ _This web page was created by a Python script automatically using the data retri
 
 <span style="display: block;height: 92px; margin-top: -92px; visibility: hidden;" id="2025"></span>
 
-<strong id="2025">2025(37)</strong>
+<strong id="2025">2025(152)</strong>
 
-- [A Review of Paleomagnetic Studies from Northern Alaska and Yukon: Implications for Terrane Reconstructions](https://cdnsciencepub.com/doi/pdf/10.1139/cjes-2024-0125) JA Biasi, JV Strauss - Canadian Journal of Earth Sciences, 2025 - cdnsciencepub.com
+- [40Ar/39Ar dating reveals over 30 million years of plume-ridge interaction formed the Rio Grande Rise](https://www.nature.com/articles/s43247-025-02572-y.pdf) PC Davidson, AAP Koppers, C Class… - … Earth & Environment, 2025 - nature.com
 
-- [A westerly dominated Early Cretaceous eolian system in the Hami Basin, NW China](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/doi/10.1130/B37436.1/6532196/b37436.pdf) D Zhang, G Wang, A Pullen… - Geological …, 2025 - pubs.geoscienceworld.org
+- [A 125 million-year-old freshwater isopod shines new light on the origin of subterranean freshwater species](https://royalsocietypublishing.org/doi/pdf/10.1098/rsos.241512?download=true) M Schädel, D Azar, L El Hajj… - Royal Society Open …, 2025 - royalsocietypublishing.org
+
+- [A database of conodont occurrences between the Changhsingian (Late Permian) and the Spathian (Olenekian, Early Triassic)](https://hal.science/hal-04951445v2/file/Guenser%20et%20al_data%20paper_manucript.pdf) P Guenser, M Leu, A Zacaï, N Goudemand, E Gilles - 2025 - hal.science
+
+- [A hell ant from the Lower Cretaceous of Brazil](/scholar?output=instlink&q=info:P5kfd9dwffIJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2025&scillfp=14787176112292588885&oi=lle) A Lepeco, OM Meira, DM Matielo, CRF Brandão… - Current Biology, 2025 - cell.com
+
+- [A review of paleomagnetic studies from Northern Alaska and Yukon: implications for terrane reconstructions](https://cdnsciencepub.com/doi/pdf/10.1139/cjes-2024-0125) J Biasi, JV Strauss - Canadian Journal of Earth Sciences, 2025 - cdnsciencepub.com
+
+- [A robust matrix-free approach for large-scale non-isothermal high-contrast viscosity Stokes flow on blended domains with applications to geophysics](https://arxiv.org/pdf/2506.04157) A Burkhart, N Kohl, B Wohlmuth, J Zawallich - arXiv preprint arXiv …, 2025 - arxiv.org
+
+- [A westerly dominated Early Cretaceous eolian system in the Hami Basin, NW China](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/137/1-2/137/7082078/b37436.1.pdf) D Zhang, G Wang, A Pullen… - Geological …, 2025 - pubs.geoscienceworld.org
 
 - [Accounting for sampling heterogeneity suggests a low paleolatitude origin for dinosaurs](<https://www.cell.com/current-biology/pdfExtended/S0960-9822(24)01722-6>) JA Heath, N Cooper, P Upchurch, PD Mannion - Current Biology, 2025 - cell.com
 
+- [Acritarchs and prasinophytes from the Upper Devonian of Armenia: biostratigraphical and palaeobiogeographical implications](https://www.tandfonline.com/doi/pdf/10.1080/01916122.2024.2445040) M Yeghiazaryan, DM Kroeck, T Danelian, A Grigoryan… - …, 2025 - Taylor & Francis
+
+- [Age-controlled south polar floral trends show a staggered Early Triassic gymnosperm recovery following the end-Permian event](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/137/7-8/3255/7264337/b38017.1.pdf) M Amores, TD Frank, CR Fielding… - … Society of America …, 2025 - pubs.geoscienceworld.org
+
+- [Amazonia in Cambrian times: reconciling discordant paleomagnetic dataset with a geocentric axial dipole?](https://pubs.geoscienceworld.org/gsl/jgs/article-pdf/doi/10.1144/jgs2025-026/7283827/jgs2025-026.pdf) PYJ Antonio, C Rossignol, L Gallo… - Journal of the …, 2025 - lyellcollection.org
+
 - [An Ordovician Assemblage of Cool Water‐Adapted Paleotropical Ostracods Suggests an Early Psychrosphere](https://onlinelibrary.wiley.com/doi/pdf/10.1111/iar.70001) A McGairy, PD Nguyen, M Williams, CP Stocker… - Island Arc, 2025 - Wiley Online Library
 
-- [Ancient scars and rotating ribbons: Appalachian–Caledonian orogenic influence on the genesis of the Flemish Cap and the Porcupine Bank during Mesozoic North …](https://www.lyellcollection.org/doi/pdf/10.1144/SP557-2023-212) JK Welford, S Brune, D Neuharth… - … Society, London, Special …, 2025 - lyellcollection.org
+- [Around the World in 26 Million Years](https://openresearch-repository.anu.edu.au/bitstreams/ae0f5aa9-0027-455d-a589-29860d98f2e5/download) JV Leong, P Matos-Maravi, R Nunez, R Nunes… - 2025 - openresearch-repository.anu.edu.au
+
+- [Bone microstructure supports a Mesozoic origin for a semiaquatic burrowing lifestyle in monotremes (Mammalia)](https://www.pnas.org/doi/pdf/10.1073/pnas.2413569122) SJ Hand, LAB Wilson, C López-Aguirre… - Proceedings of the …, 2025 - pnas.org
+
+- [Central American slab tearing controlled by lateral pressure force due to former Farallon subduction](https://www.eppcgs.org/en/article/pdf/preview/10.26464/epp2025077.pdf) J Wang, LJ Liu, YC Li, ZB Cao, H Dong - Earth and Planetary Physics, 2025 - eppcgs.org
+
+- [Champ magnétique précambrien et reconstructions paléogéographiques](https://books.google.com/books?hl=en&lr=&id=swVSEQAAQBAJ&oi=fnd&pg=PA79&dq=gplates+tectonic&ots=QPYI27M1Sr&sig=pVhA08GsybyevKvCqPnN-uHaQII) J CARLUT, M MACOUIN - … Enfance et adolescence de la planète …, 2025 - books.google.com
+
+- [Chitinozoans from the upper Frasnian (Upper Devonian) of Armenia: biostratigraphical and palaeobiogeographical implications](https://www.tandfonline.com/doi/pdf/10.1080/01916122.2025.2537704) V Lokteva, G Kirakosyan, SC Camina, T De Backer… - …, 2025 - Taylor & Francis
+
+- [Climate evolution and its driving factors in the Tethys Sea region during the Cenozoic](https://www.researchgate.net/profile/Shu-Feng-Li-2/publication/391956487_Climate_evolution_and_its_driving_factors_in_the_Tethys_Sea_region_during_the_Cenozoic/links/683154d08a76251f22e6870e/Climate-evolution-and-its-driving-factors-in-the-Tethys-Sea-region-during-the-Cenozoic.pdf) J Meng, J Zhao, L Chen, PJ Valdes… - Science China Earth …, 2025 - Springer
+
+- [Compositional and Numerical Geomorphology Along a Basement–Foreland Transition, SE Germany, with Special Reference to Landscape-Forming Indices …](https://www.researchgate.net/profile/Harald-Dill/publication/388339018_Compositional_and_Numerical_Geomorphology_Along_a_Basement-Foreland_Transition_SE_Germany_with_Special_Reference_to_Landscape-Forming_Indices_and_Parameters_in_Genetic_and_Applied_Terrain_Analyses/links/679915508311ce680c3f1a6f/Compositional-and-Numerical-Geomorphology-Along-a-Basement-Foreland-Transition-SE-Germany-with-Special-Reference-to-Landscape-Forming-Indices-and-Parameters-in-Genetic-and-Applied-Terrain-Analyses.pdf) HG Dill, A Buzatu, SI Balaban… - Geosciences (2076-3263 …, 2025 - researchgate.net
 
 - [Confirmation and significance of high quality and oil prone source rocks in the southeast African offshore](https://www.sciencedirect.com/science/article/pii/S1464343X24003650) Z Wang, Z Wen, C Song, R Chen, Z He, X Liu… - Journal of African Earth …, 2025 - Elsevier
 
+- [Constraining the relationship between mantle circulation and supercontinent cycles](https://orca.cardiff.ac.uk/id/eprint/178324/12/2025plimmeraphd.pdf) A Plimmer - 2025 - orca.cardiff.ac.uk
+
 - [Continental drift triggered the Early Permian aridification of North China](https://www.nature.com/articles/s41467-024-55804-8.pdf) Q Ren, S Zhang, M Hou, D Zheng, H Wu… - Nature …, 2025 - nature.com
 
-- [Crustal structure of the Hikurangi subduction zone revealed by four decades of Onshore‐Offshore seismic data: Implications for the dimensions and slip behavior of …](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024JB030268) D Bassett, S Henrys, B Tozer… - Journal of …, 2025 - Wiley Online Library
+- [Continental-Scale Evaluation of Geodynamic, Tectonic and Climate Drivers of Exhumation](https://www.authorea.com/doi/pdf/10.22541/au.174111208.84464085) S Boone, S Glorie, S Zahirovic, A Nixon, F Meeuws… - 2025 - authorea.com
 
-- [Evaluating migration hypotheses for the extinct Glyptotherium using ecological niche modeling](https://nsojournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ecog.07499) KM Magoulick, EE Saupe, A Farnsworth, PJ Valdes… - …, 2025 - Wiley Online Library
+- [Controls on Palaeogene deep-sea diatom-bearing sediment deposition and comparison with shallow marine environments](https://bg.copernicus.org/articles/22/3029/2025/bg-22-3029-2025.pdf) C Figus, J Renaudie, OM Bialik, J Witkowski - Biogeosciences, 2025 - bg.copernicus.org
+
+- [Cross-Shelf transport by (storm-modified, sandy) hyperpycnal flows in the Eastern Rhenish Massif during the Upper Eifelian, Middle Devonian](https://eartharxiv.org/repository/object/8560/download/16005/) R Schaumann, T McCann - 2025 - eartharxiv.org
+
+- [Crustal structure of the Hikurangi subduction zone revealed by four decades of onshore‐offshore seismic data: Implications for the dimensions and slip behavior of the …](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024JB030268) D Bassett, S Henrys, B Tozer… - Journal of …, 2025 - Wiley Online Library
+
+- [Deciphering Paleogene platforms from a “Lost Domain” in the Western Neo-Tethys](https://www.sciencedirect.com/science/article/pii/S0012825225001138) M Martín-Martín, F Guerrera, S Talmat - Earth-Science Reviews, 2025 - Elsevier
+
+- [Decoding the geological evolution of Tengchong Block: A big data analysis of zircon from the Late Permian to Early Cretaceous](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2025TC008882) X Yang, Z Zhang, Y Zhou, J Yang, Y Wang - Tectonics, 2025 - Wiley Online Library
+
+- [Deep carbon sink in the East Asian mantle and its impact on atmospheric CO2 drawdown since the Cretaceous](https://www.sciencedirect.com/science/article/pii/S0012821X25003395) C Yang, SA Liu, HY Li, YG Xu - Earth and Planetary Science Letters, 2025 - Elsevier
+
+- [Deep-Time Geostress Prediction Based on Plate Motion Model](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202510527) J Liu, R Zhang - 86th EAGE Annual Conference & Exhibition, 2025 - earthdoc.org
+
+- [Development of a Web-Based 3D Visualization Tool That Can Be Used in Geoscience Studies.](https://sciendo.com/pdf/10.2478/minrv-2025-0017) E Ülker, A Turanboy, İ Uysal, GR Arik - Mining Revue/Revista Minelor, 2025 - sciendo.com
+
+- [Discovery of the William's Ridge and Rig Seismic Seamount microcontinents, Kerguelen Plateau: Signatures of a fragmented rifted margin](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025TC008958) JL Asimus, JA Halpin, NR Daczko, JM Whittaker… - …, 2025 - Wiley Online Library
+
+- [Discussion on the Role of Plate Tectonics in Shaping Earth's Surface Feature](https://thercsas.com/wp-content/uploads/2025/02/rcsas5022025004.pdf) DR Sharma - 2025 - thercsas.com
+
+- [Dynamic interplay between niche variation and flight adaptability drove a hundred million years' dispersion in iconic lacewings](https://www.pnas.org/doi/pdf/10.1073/pnas.2414549122) H Ou, J Yang, H Wang, N Kang, S Li, Y Chen… - Proceedings of the …, 2025 - pnas.org
+
+- [Early Palaeozoic (Ordovician-Silurian) Ostracoda of northeast Vietnam](https://figshare.le.ac.uk/articles/thesis/Early_Palaeozoic_Ordovician-Silurian_Ostracoda_of_northeast_Vietnam/28902878/1/files/54093371.pdf) A McGairy - 2025 - figshare.le.ac.uk
+
+- [Early Permian longitudinal position of the South China Block from brachiopod paleobiogeography](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-1018/egusphere-2025-1018.pdf) RJ Marks, N Flament, S Lee, GR Shi - EGUsphere, 2025 - egusphere.copernicus.org
+
+- [Early Triassic super-greenhouse climate driven by vegetation collapse](https://www.nature.com/articles/s41467-025-60396-y.pdf) Z Xu, J Yu, H Yin, AS Merdith, J Hilton, BJ Allen… - Nature …, 2025 - nature.com
+
+- [Early stages of ocean formation between Australia and Antarctica](https://pmi.spmi.ru/pmi/article/download/16594/16469) VM Sergeeva, GL Leitchenkov - Journal of Mining Institute, 2025 - pmi.spmi.ru
+
+- [Earth hit twice-The hypothesis of planetary rearrangement of the lithosphere by impact and interference waves](https://eartharxiv.org/repository/object/9063/download/16931/) RJ Kütz - 2025 - eartharxiv.org
+
+- [Earth orbital rhythms links timing of Deccan trap volcanism phases and global climate change](https://www.science.org/doi/pdf/10.1126/sciadv.adr8584) T Westerhold, E Dallanave, D Penman, B Schoene… - Science …, 2025 - science.org
+
+- [Ediacaran coupling of climate and biosphere dynamics](https://eartharxiv.org/repository/object/8749/download/16311/) TWW Hearing, B Tindal, TM Vandyk, L Na, A Pohl… - 2025 - eartharxiv.org
+
+- [Effects of subduction history on true polar wander driven by perturbations of Earth's inertial moment from mantle convection](https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.2024.0196) CM Calvelage, L Colli, J Wu, YA Lin… - … of the Royal …, 2025 - royalsocietypublishing.org
+
+- [Enhanced global terrestrial moisture from the Early Triassic to the Late Triassic: Evidence from extensive Neocalamites forests in North China](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/doi/10.1130/B37522.1/7002387/b37522.pdf) Y Wang, H Kuang, Y Liu, F Zhao… - Geological …, 2025 - pubs.geoscienceworld.org
+
+- [Enhancing astronomical signal detection in cyclostratigraphy by superimposed averaging of paleoclimate proxies](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2025PA005135) R Huang, M Li, R Qiu, Y Wang… - Paleoceanography …, 2025 - Wiley Online Library
+
+- [Environmental filtering, not dispersal history, explains global patterns of phylogenetic turnover in seed plants at deep evolutionary timescales](https://www.nature.com/articles/s41559-024-02599-y.pdf) L Cai, H Kreft, P Denelle, A Taylor, D Craven… - Nature Ecology & …, 2025 - nature.com
+
+- [Eocene contractional deformation in the NW corner of the Arabian plate and its relation to Arabia-Eurasia collision in SE Türkiye](https://www.tandfonline.com/doi/full/10.1080/00206814.2024.2400696) AHF Robertson, O Parlak - International Geology Review, 2025 - Taylor & Francis
+
+- [Equatorial Atlantic Conjugate Margins: Comparing Early Stratigraphic Architectures and Depositional Histories](https://www.earthdoc.org/content/papers/10.3997/2214-4609.2025639043) K Reuber, H Houllevigue - First EAGE Atlantic Geoscience Resource …, 2025 - earthdoc.org
+
+- [Evolution of Dras arc in the backdrop of the India-Eurasia collision: evidence from the discovery of ammonite from Indus Suture Zone, Ladakh Himalaya, India](/scholar?output=instlink&q=info:-he7Sy4ZsVIJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2025&scillfp=4614619791512302438&oi=lle) P Barman, SR Mishra, NK Swami, A Roy… - Proceedings of the Indian …, 2025 - Springer
 
 - [Evolution of terrestrial aridity and dryland since Pangea](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024PA004886) Z Li, Y Hu, Q Fu, X Bao, J Zhang, X Li… - Paleoceanography …, 2025 - Wiley Online Library
 
+- [Evolution of the South Pacific's iron cycle over the Cenozoic](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2025PA005149) LA Tegler, TJ Horner, SG Nielsen… - Paleoceanography …, 2025 - Wiley Online Library
+
+- [Extensive fluvial surfaces at the East Antarctic margin have modulated ice-sheet evolution](https://www.nature.com/articles/s41561-025-01734-z.pdf) GJG Paxman, SSR Jamieson, N Ross, MJ Bentley… - Nature …, 2025 - nature.com
+
+- [Fault Activity in the Anatolia, Arabia, Africa Triple Junction Region](/scholar?output=instlink&q=info:AVgrZtxoJBwJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2025&scillfp=15334040547208422664&oi=lle) A Karataş - Seismotectonics of the East Mediterranean-Red Sea …, 2025 - Springer
+
+- [Fingerprints of El Niño-Southern Oscillation and solar activity cycles recorded in the middle Eocene Bohai Bay Basin (East China)](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/137/7-8/3283/7227316/b37981.1.pdf) Y Han, Y Cao, C Liang, AJ van Loon… - Geological …, 2025 - pubs.geoscienceworld.org
+
+- [First paleomagnetic and geochronological results from the early Cretaceous volcanic rocks in the western Tethyan Himalaya: Contribution to the breakup of eastern …](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024JB031095) X Jiao, T Yang, W Bian, S Wang… - Journal of …, 2025 - Wiley Online Library
+
+- [Geological and Geophysical Constraints Guide New Tectonic Reconstruction of the Gulf of Mexico](https://www.researchgate.net/profile/Irina-Filina-2/publication/390724531_Geological_and_Geophysical_Constraints_Guide_New_Tectonic_Reconstruction_of_the_Gulf_of_Mexico/links/6825e46cdf0e3f544f549c00/Geological-and-Geophysical-Constraints-Guide-New-Tectonic-Reconstruction-of-the-Gulf-of-Mexico.pdf) I Filina, E Beutel - … Tectonics: Rifting and Continental Extension, 2025 - Wiley Online Library
+
+- [Geology of Svalbard: Deep-time and Deep-Earth (SVALGEOL)](https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/3187354/SESS2024_SVALGEOL.pdf?sequence=1) K Senger, F Ammerlaan, P Betlem… - The State of …, 2025 - ntnuopen.ntnu.no
+
+- [Geophysically-BASED structural framework and tectonic evolution of the Brazilian equatorial margin](https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=4705869) FGF LIMA, E de Sá, W Medeiros - 2025 - papers.ssrn.com
+
 - [Global Acritarch Database (> 110 000 occurrences)](https://essd.copernicus.org/preprints/essd-2024-577/essd-2024-577.pdf) X Shu, H Song, Y Lei, D Chu… - Earth System …, 2025 - essd.copernicus.org
+
+- [Global Tectonics and Earthquake Dynamics: From Data to Visualization](/scholar?output=instlink&q=info:0yUxTQ-6XQ4J:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2025&scillfp=2870719860851585487&oi=lle) Ł Pawlik - R Applications in Earth Sciences: From Soil Data to …, 2025 - Springer
 
 - [Global plate model choice impacts reconstructions of the latitudinal biodiversity gradient](https://www.biorxiv.org/content/biorxiv/early/2025/01/14/2025.01.09.632144.full.pdf) LA Jones, W Gearty, L Buffan, BJ Allen - bioRxiv, 2025 - biorxiv.org
 
+- [Heavy boron isotopes in plume-derived magmas trace recycled water in deep-mantle reservoir](https://www.nature.com/articles/s43247-025-02596-4.pdf) J Xu, XP Xia, O Bartoli, L Zhang, Y Wang… - … Earth & Environment, 2025 - nature.com
+
+- [Hydrous regions of the mantle transition zone lie beneath areas of continental intraplate volcanism](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024GC011901) H Wang, V Magni, CP Conrad… - Geochemistry …, 2025 - Wiley Online Library
+
+- [Iguanas rafted more than 8,000 km from North America to Fiji](https://www.pnas.org/doi/pdf/10.1073/pnas.2318622122) SG Scarpetta, RN Fisher, BR Karin, JB Niukula… - Proceedings of the …, 2025 - pnas.org
+
+- [Impact hypothesis as the cause of the formation of the Mariana Trench and the uplift of the Mid-Atlantic Ridge](https://eartharxiv.org/repository/object/9020/download/16849/) RJ Kütz - 2025 - eartharxiv.org
+
+- [Improving Accessibility of in-situ Paleontological Geoheritage Via Digital Conservation: A Case-Study Using iPad-Based LiDAR in the Niagara Aspiring Geopark](/scholar?output=instlink&q=info:xYPgoxqreJYJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2025&scillfp=8743777215016210711&oi=lle) D Dick, K Hum, L Smith, K Street, J Hansen… - Geoheritage, 2025 - Springer
+
+- [Investigating the Exposure and Thermal History of Enstatite (E) Chondrites and Improving Cosmogenic Noble Gas Production Rate Calculations for Terrestrial and …](https://hammer.purdue.edu/articles/thesis/Investigating_the_Exposure_and_Thermal_History_of_Enstatite_E_Chondrites_and_Improving_Cosmogenic_Noble_Gas_Production_Rate_Calculations_for_Terrestrial_and_Extraterrestrial_Applications/29620064/1/files/56491463.pdf) M Mijjum - 2025 - hammer.purdue.edu
+
+- [Jurassic constraints on the chaotic Mars–Earth eccentricity cycle linked to the volcanically induced Jenkyns event](https://www.pnas.org/doi/pdf/10.1073/pnas.2419902122) Y Fang, PE Olsen, J Sha, JH Whiteside, C Guan… - Proceedings of the …, 2025 - pnas.org
+
+- [LITHOFACIES AND GEOCHEMICAL ANALYSIS OF THE LATE PALEOZOIC TOBRA FORMATION, SALT RANGE, PAKISTAN: IMPLICATIONS FOR THE …](https://pubs.geoscienceworld.org/nsu/rgg/article-pdf/doi/10.2113/RGG20254780/7286395/rahim.pdf) HU Rahim, SW Haider, M Jamil… - Russian GeoloGy …, 2025 - pubs.geoscienceworld.org
+
+- [Large volcanic eruptions are mostly sourced above mobile basal mantle structures](https://www.nature.com/articles/s43247-025-02482-z.pdf) A Cucchiaro, N Flament, M Arnould… - Communications Earth & …, 2025 - nature.com
+
+- [Linking detrital zircon record and supercontinent over the past 3.5 billion years](https://www.sciencedirect.com/science/article/pii/S0301926825000063) D Jian, SE Williams, G Zhao, S Yu - Precambrian Research, 2025 - Elsevier
+
+- [Machine learning‐based spatio‐temporal prospectivity modeling of porphyry systems in the New Guinea and Solomon Islands region](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024TC008362) E Farahbakhsh, S Zahirovic, B McInnes, S Polanco… - …, 2025 - Wiley Online Library
+
+- [Macroevolutionary coupling of marine biomass and biodiversity across the Phanerozoic](https://www.sciencedirect.com/science/article/pii/S0960982225007353) P Singh, J Ferré, B Thrasher, PM Monarrez… - Current Biology, 2025 - cell.com
+
+- [Magnetization of oceanic lithosphere from modeling of satellite observations](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024JB030370) S Williams, D Gubbins, J Whittaker… - Journal of Geophysical …, 2025 - Wiley Online Library
+
+- [Magnetization of oceanic lithosphere from modelling of satellite observations](https://essopenarchive.org/doi/pdf/10.22541/essoar.174371621.15559464) S Williams, D Gubbins, J Whittaker… - Authorea …, 2025 - essopenarchive.org
+
+- [Mantle convection and melt experiment located at the transition zone](https://eprints.soton.ac.uk/501229/1/Thesis_YuhangDai_Pure.pdf) Y Dai - 2025 - eprints.soton.ac.uk
+
+- [Mantle-driven plate convergence due to slab detachment](https://www.nature.com/articles/s43247-025-02484-x.pdf) Y Wu, M Faccenda, J Liao, J Fan, F Guo… - Communications Earth & …, 2025 - nature.com
+
+- [Marine biological responses to abrupt climate change in deep time](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AA2E06A402AF8344F44FDF3EEF44E3D0/S0094837324000204a.pdf/div-class-title-marine-biological-responses-to-abrupt-climate-change-in-deep-time-div.pdf) W Kiessling, CJ Reddin, EM Dowding, D Dimitrijević… - Paleobiology, 2025 - cambridge.org
+
 - [Marine species and assemblage change foreshadowed by their thermal bias over Early Jurassic warming](https://www.nature.com/articles/s41467-025-56589-0.pdf) CJ Reddin, JP Landwehrs, GH Mathes… - Nature …, 2025 - nature.com
+
+- [Milankovitch Cycles Recorded in Terrestrial Mudstones from the Middle to Late Triassic](https://www.diva-portal.org/smash/get/diva2:1954744/FULLTEXT01.pdf) J Kaplin - 2025 - diva-portal.org
 
 - [Mobility of South America's transcontinental drainage divide and shrinkage of the Paraná river basin linked to lithologic and geodynamic controls](https://www.nature.com/articles/s41598-025-87470-1.pdf) C Crelier, A Zumba, D Peifer, P Val - Scientific Reports, 2025 - nature.com
 
+- [Mélanges against the background of the geodynamic development of the Pieniny Klippen Belt](https://geojournals.pgi.gov.pl/asgp/article/download/34470/25852) A Waśkowska, J Golonka - Annales Societatis Geologorum …, 2025 - geojournals.pgi.gov.pl
+
 - [New dance flies from Burmese amber providing the new insight to early evolution of feeding habits in Atelestidae (Diptera: Empidoidea)](https://www.sciencedirect.com/science/article/pii/S0195667124001988) H Zhang, Y Hong, C Shih, D Ren, Y Wang - Cretaceous Research, 2025 - Elsevier
+
+- [New insights into western Antarctic Peninsula magmatism from joint inversion of UAV magnetic and gravity data](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024JB030909) TA Jordan, M Lowe, TR Riley - Journal of Geophysical …, 2025 - Wiley Online Library
+
+- [New kinematic model of the early opening of the Equatorial Atlantic Realm](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024TC008713) T Lesourd—Laux, C Basile, W Roest… - …, 2025 - Wiley Online Library
+
+- [New progress in the study of hydrocarbon accumulation and exploration insights in Central and Western African Rift System](http://www.cped.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=2275) S Zhongsheng, M Feng, P Wenzhu, C Bintao… - China Petroleum …, 2025 - cped.cn
 
 - [Northward drift of the Burma Terrane with India during the Cenozoic and implications for the India–Asia collision](https://www.lyellcollection.org/doi/pdf/10.1144/SP549-2024-18) J Westerweel, P Roperch, Z Win… - Geological Society …, 2025 - lyellcollection.org
 
-- [Oligocene Odyssey: Molecular Phylogenetic Analyses Describe the Origin and Diversification of Freshwater Gammarus in Eastern North America](https://onlinelibrary.wiley.com/doi/pdf/10.1111/jbi.15081) AG Cannizzaro, DJ Berg - Journal of Biogeography, 2025 - Wiley Online Library
+- [Occupancy history influences extinction risk of fossil marine microplankton groups](https://bg.copernicus.org/articles/22/3503/2025/bg-22-3503-2025.pdf) IE Smith, ÁT Kocsis, W Kiessling - Biogeosciences, 2025 - bg.copernicus.org
 
-- [Paleocene-Eocene evolution of the Prebetics (South Iberian Margin, South Spain) and comparison with other western Tethyan margins](https://www.sciencedirect.com/science/article/pii/S0264817225000170) M Martín-Martín, C Miclăuș, JE Tent, J Tosquella… - Marine and Petroleum …, 2025 - Elsevier
+- [Oceanographic and Biotic Changes in Australia During Cretaceous Oceanic Anoxic Events](http://ore.exeter.ac.uk/repository/bitstream/handle/10871/140859/Walker-TrivettC_Thesis_withdataDOI.pdf?sequence=1) C Walker-Trivett - 2025 - ore.exeter.ac.uk
+
+- [OneDZ: A Global Detrital Zircon Database and Implications for Constructing Giant Geoscience Database](https://essd.copernicus.org/preprints/essd-2025-157/essd-2025-157.pdf) K Li, X Hu, R Chai, J Yang, W Xue… - Earth System …, 2025 - essd.copernicus.org
+
+- [Onychophoran Phylogeography Reveals Resilience of Soil Ecosystems to the Chicxulub Impact Event](https://www.preprints.org/frontend/manuscript/5b4caac7f9f1d8f29d87124d1126fcb9/download_pub) J Monge-Nájera, Y Añino - 2025 - preprints.org
+
+- [Paleo-to Mesoproterozoic supercontinent cycle–emphasizing Fennoscandia](https://helda.helsinki.fi/bitstreams/1ff4ba21-958d-4d39-8f86-fa1c02c81e27/download) T Luoto - 2025 - helda.helsinki.fi
 
 - [Paleogeographic significance of unknown hyperextended continental crust in South Atlantic conjugated margin](https://www.sciencedirect.com/science/article/pii/S1674987124001580) CD Teixeira, TJ Girelli, H Serratt, HOS Oliveira… - Geoscience …, 2025 - Elsevier
 
@@ -60,33 +206,117 @@ _This web page was created by a Python script automatically using the data retri
 
 - [Paleozoic tectonothermal history of the amalgamation of the Tarim–North China and Mongolian collages](https://pubs.geoscienceworld.org/gsl/jgs/article-pdf/doi/10.1144/jgs2024-100/7000495/jgs2024-100.pdf) J Soldner, K Schulmann… - Journal of the …, 2025 - pubs.geoscienceworld.org
 
+- [Periodicity and Kinematics of the Formation of Porphyry Copper Deposits in the Pacific Belt over the Past 125 Ma](/scholar?output=instlink&q=info:DQFE4rXqH3oJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2025&scillfp=10210436522344617425&oi=lle) AN Didenko, MY Nosyrev, GZ Gilmanova - Geology of Ore Deposits, 2025 - Springer
+
+- [Periodicity and kinematics of the formation of porphyry copper deposits in the pacific belt over the past 125 million years](https://journals.eco-vector.com/0016-7770/article/download/682816/197573) AN Didenko, MY Nosyrev… - Геология рудных …, 2025 - journals.eco-vector.com
+
 - [Phanerozoic icehouse climates as the result of multiple solid-Earth cooling mechanisms](https://www.science.org/doi/pdf/10.1126/sciadv.adm9798) AS Merdith, TM Gernon, P Maffre, Y Donnadieu… - Science …, 2025 - science.org
+
+- [Phylogenetic Paleoecology and Evolutionary Niche Conservatism in Diploporan Blastozoans (Echinodermata)](https://search.proquest.com/openview/6b5dd10d51aab696a08d251467087528/1.pdf?pq-origsite=gscholar&cbl=18750&diss=y) EB Altier - 2025 - search.proquest.com
+
+- [Plate drift velocity controls on the levels of hydrocarbon source rock development taking the palaeozoic as an example](https://www.nature.com/articles/s41598-025-01366-8.pdf) Y Zhuang, F Yang, M Xu, P Hu, X Liao - Scientific Reports, 2025 - nature.com
+
+- [Plate tectonics through Earth's history: constraints from the thermal evolution of Earth's upper mantle](https://www.tandfonline.com/doi/pdf/10.1080/00206814.2024.2394994) S Dash, E Babu, J Ganne… - International Geology …, 2025 - Taylor & Francis
+
+- [Plate‐scale strike‐slip fault system in the Barbados accretionary wedge of the Lesser Antilles subduction zone](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024JB030059) G Bénâtre, N Feuillet, H Carton… - Journal of …, 2025 - Wiley Online Library
 
 - [Pliocene warmth and patterns of climate change inferred from paleoclimate data assimilation](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024AV001356) JE Tierney, J King, MB Osman, JT Abell… - AGU …, 2025 - Wiley Online Library
 
-- [Pollen morphology, deep learning, phylogenetics, and the evolution of environmental adaptations in Podocarpus](https://www.biorxiv.org/content/10.1101/2025.01.07.631571.full.pdf) MÉ Adaimé, MA Urban, S Kong, C Jaramillo… - bioRxiv, 2025 - biorxiv.org
+- [Polar wander leads to large differences in past climate reconstructions](https://www.nature.com/articles/s43247-025-02485-w.pdf) J Leonard, S Zahirovic, PB Holden, T Salles… - … Earth & Environment, 2025 - nature.com
+
+- [Pollen morphology, deep learning, phylogenetics, and the evolution of environmental adaptations in Podocarpus](https://nph.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/nph.70250) MÉ Adaimé, MA Urban, S Kong, C Jaramillo… - New …, 2025 - Wiley Online Library
+
+- [Precession-paced late Maastrichtian bottom-water dynamics](https://www.nature.com/articles/s43247-025-02219-y.pdf) A Fischer, SJ Batenburg, A Bahr, S Voigt… - … Earth & Environment, 2025 - nature.com
+
+- [Preliminary description of the first saurischian tracksite from the Lower Jurassic Kota Formation, Pranhita-Godavari Basin, Southern India](https://www.tandfonline.com/doi/pdf/10.1080/08912963.2025.2482185) A Paul Rozario, S Dasgupta - Historical Biology, 2025 - Taylor & Francis
 
 - [Present‐day shortening accommodated by folding, thrusting and strike‐slip faulting in the Enriquillo basin of southern central Hispaniola: Implications for the regional …](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024TC008376) J Escuder‐Viruete, FJ Fernández, FP Valera… - …, 2025 - Wiley Online Library
 
+- [Quantification of palaeo-reconstruction models](https://harvest.usask.ca/bitstreams/27a72da7-0368-4917-8d6d-3d7b9ff83db1/download) HATL Nguyen - 2025 - harvest.usask.ca
+
 - [Recognition of a cryptic maximum flooding surface in shallow marine carbonate sequences using geochemical (Y/Ho) proxy data](https://onlinelibrary.wiley.com/doi/pdf/10.1111/sed.13229) SP Sreenivasan, MK Bera, A Samanta - Sedimentology, 2025 - Wiley Online Library
+
+- [Reconstrucción de topografía y batimetría para la construcción de PaleoDEMs](https://repositorio.uchile.cl/xmlui/bitstream/handle/2250/205272/Reconstruccion-de-topografia-y-batimetria-para-la-construccion-de-PaleoDEMs.pdf?sequence=1) LF Amion Arenas - 2025 - repositorio.uchile.cl
 
 - [Reconstruction of the Cenozoic Deformation of the Yinggehai Basin and Beibu Gulf Basin, South China Sea](https://www.mdpi.com/2077-1312/13/2/322) J Zhao, C Liu, J Zhao, Q Xu - Journal of Marine Science and Engineering, 2025 - mdpi.com
 
+- [Recycled arc mantle underneath the Carlsberg Ridge, Indian Ocean: Caused by intraoceanic subduction of the Neo-Tethys Ocean](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/doi/10.1130/B37729.1/7116830/b37729.pdf) Q Huang, W Chen, H Yu, Y Cao… - Geological …, 2025 - pubs.geoscienceworld.org
+
+- [Reevaluating the phylogenetic relationships of zosterophylls with a comprehensively sampled dataset and a combination of traditional and new alternative methods](https://academic.oup.com/aob/advance-article-pdf/doi/10.1093/aob/mcaf146/63724667/mcaf146.pdf) P Claisse, B Cascales-Miñana, E Capel… - Annals of …, 2025 - academic.oup.com
+
+- [Revising the late Cambrian time scale and the duration of the SPICE event using a novel Bayesian age modeling approach](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/doi/10.1130/B37919.1/7123333/b37919.pdf) TP Farrell, HR Cothren… - Geological …, 2025 - pubs.geoscienceworld.org
+
+- [Slab underthrusting is the primary control on flat-slab size](https://www.science.org/doi/pdf/10.1126/sciadv.adv8872) GM Gianni, LC Gallo, J Likerman, A Echaurren… - Science …, 2025 - science.org
+
 - [Spatio-temporal copper prospectivity in the American Cordillera predicted by positive-unlabeled machine learning](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/137/1-2/702/7082726/b37614.1.pdf) CP Alfonso, RD Müller, B Mather… - Geological Society of …, 2025 - pubs.geoscienceworld.org
+
+- [Spatio-temporal evolution of the main-phase Columbia River Basalt Group and its genetic link to the Yellowstone hotspot](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/137/7-8/3317/7227381/b38098.1.pdf) VE Camp, JA Wolff - Geological Society of America …, 2025 - pubs.geoscienceworld.org
 
 - [Spatio-temporal interpolation of~ 530 Ma paleo-DEM to quantify denudation of a terrestrial impact crater](https://www.sciencedirect.com/science/article/pii/S0169555X25000546) J Aswathi, S James, S Keerthy, A Rajaneesh, VR Rani… - Geomorphology, 2025 - Elsevier
 
+- [Subducting seafloor anomalies promote porphyry copper formation](https://www.tandfonline.com/doi/pdf/10.1080/00206814.2025.2508791) BR Mather, RD Müller, CP Alfonso… - International Geology …, 2025 - Taylor & Francis
+
+- [Subduction of an oceanic triple junction: Geodynamic implications of successive mid-ocean ridge subduction](https://www.sciencedirect.com/science/article/pii/S0012821X25002432) J Sanhueza, G Yáñez, S Lagarrigue - Earth and Planetary Science Letters, 2025 - Elsevier
+
 - [Sustainability of regional Antarctic ice sheets under late Eocene seasonal atmospheric conditions](https://cp.copernicus.org/articles/21/95/2025/cp-21-95-2025.html) DHA Vermeulen, MLJ Baatsen… - Climate of the …, 2025 - cp.copernicus.org
 
-- [The Central American Seaway: do Magdalena River flocculates mimic deep water neodymium?](https://www.lyellcollection.org/doi/pdf/10.1144/SP553-2023-218) C Montes, G Bayona - Geological Society, London, Special …, 2025 - lyellcollection.org
+- [Tectonic Shockwave Conductance Across the Himalayan-Alpine Belt: Seismic Implications of Large-Scale Events in Southeastern Asia for Western Asia and …](https://www.researchgate.net/profile/Theodor-Nicolae-Carp/publication/393452707_Tectonic_Shockwave_Conductance_Across_the_Himalayan-Alpine_Belt_Seismic_Implications_of_Large-Scale_Events_in_Southeastern_Asia_for_Western_Asia_and_Europe/links/686acc09e4632b045dca34ec/Tectonic-Shockwave-Conductance-Across-the-Himalayan-Alpine-Belt-Seismic-Implications-of-Large-Scale-Events-in-Southeastern-Asia-for-Western-Asia-and-Europe.pdf) TN Carp - 2025 - researchgate.net
+
+- [Temporal variations of the oldest Emperor‐Hawaiian plume signature influenced by interaction with shallow mantle features](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2025GC012208) PD Kempton, C Adam, AD Saunders… - Geochemistry …, 2025 - Wiley Online Library
+
+- [Tetrapod species–area relationships across the Cretaceous–Paleogene mass extinction](https://www.pnas.org/doi/pdf/10.1073/pnas.2419052122) RA Close, BR Reijenga - Proceedings of the National Academy of …, 2025 - pnas.org
+
+- [The Conjugate East and North Anatolian](https://books.google.com/books?hl=en&lr=&id=N_5iEQAAQBAJ&oi=fnd&pg=PA112&dq=gplates+tectonic&ots=R5UtpZz7HW&sig=BQb4CFpq_kBQgJ438_zMCkDp13c) AR Fowler, Z Hamimi - … of the East Mediterranean-Red Sea …, 2025 - books.google.com
+
+- [The Conjugate East and North Anatolian Faults and the Westward Movement of Anatolian Block: Seismotectonic Approach](/scholar?output=instlink&q=info:gcNKPLb9l6QJ:scholar.google.com/&hl=en&as_sdt=0,5&as_ylo=2025&scillfp=17121840127778295171&oi=lle) AR Fowler, Z Hamimi - Seismotectonics of the East Mediterranean-Red …, 2025 - Springer
 
 - [The Contemporary Distribution of Scincine Lizards Does Not Reflect Their Biogeographic Origin](https://onlinelibrary.wiley.com/doi/pdf/10.1111/jbi.15061) A Datta‐Roy, MC Brandley, CC Austin… - Journal of …, 2025 - Wiley Online Library
 
 - [The Cretaceous world: plate tectonics, palaeogeography and palaeoclimate](https://www.lyellcollection.org/doi/pdf/10.1144/SP544-2024-28) CR Scotese, C Vérard, L Burgener… - Geological Society …, 2025 - lyellcollection.org
 
+- [The Eocene carbonate platforms of the westernmost Tethys: a review](https://www.tandfonline.com/doi/full/10.1080/00206814.2024.2397804) M Martín-Martín, J Tosquella, F Guerrera… - International Geology …, 2025 - Taylor & Francis
+
+- [The Ironian Ocean and the 2.2–1.8 Ga Introversion Process in the Formation of the Columbia (Nuna) Supercontinent](https://journals.nasspublishing.com/index.php/eps/article/download/2161/1089) A de Oliveira Chaves - Earth and Planetary Science, 2025 - journals.nasspublishing.com
+
+- [The global database of deep-time marine nitrogen isotope data](https://essd.copernicus.org/preprints/essd-2025-377/essd-2025-377.pdf) Y Du, H Song, TJ Algeo, H Zhang… - Earth System …, 2025 - essd.copernicus.org
+
+- [The impact hypothesis as a mechanism for the origin of the Amazon basin-analysis of antipodal impacts of celestial bodies and their impact on global morphotectonics](https://eartharxiv.org/repository/object/9030/download/16867/) RJ Kütz - 2025 - eartharxiv.org
+
+- [The initial opening of the drake passage occurred during ca. 62‐59 Ma](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024GL111455) L Gao, X Guo, J Pei, JN Gelfo, X Hu, S Li… - Geophysical …, 2025 - Wiley Online Library
+
+- [The myth of the De Geer Zone: a change of paradigm for the opening of the Fram Strait](https://pmc.ncbi.nlm.nih.gov/articles/PMC12033982/) JBP Koehl - Open Research Europe, 2025 - pmc.ncbi.nlm.nih.gov
+
+- [The oldest Gondwanan record of durophagous shark Strophodus Agassiz, 1838 (Hybodontiformes) from the Kachchh Basin, western India](https://www.tandfonline.com/doi/pdf/10.1080/08912963.2024.2324430) S Bhosale, N Rakshit, A Natarajan, G Chauhan… - Historical …, 2025 - Taylor & Francis
+
+- [The role of reunion mantle plume in resetting the subductions and drifts of the indian plate during late cretaceous](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024TC008483) AR Bhagat, SJ Sangode, A Dongre, PD Nalawade - Tectonics, 2025 - Wiley Online Library
+
 - [The triple orogenic junction of central Gondwana](https://www.tandfonline.com/doi/pdf/10.1080/00206814.2025.2457564) IV Gomes, RS Schmitt, G Rosenbaum… - International Geology …, 2025 - Taylor & Francis
 
-- [Unexpected pathway for intercontinental movement into the Nearctic revealed by phylogenetic analyses](https://onlinelibrary.wiley.com/doi/pdf/10.1111/zsc.12717) K Tomoyasu, AG Cannizzaro, DJ Berg - Zoologica Scripta, 2025 - Wiley Online Library
+- [Tomographic consistency in imaging lower-mantle plumes and their link to European Cenozoic Rift Volcanism](https://www.eppcgs.org/en/article/pdf/preview/10.26464/epp2025056.pdf) C Civiero, A De Min - Earth and Planetary Physics, 2025 - eppcgs.org
+
+- [Tomopac2: an unfolded-slab plate reconstruction validated via mantle circulation models in a closed-loop experiment](https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.2024.0726) YW Chen, J Wu, HP Bunge, I Stotz… - … of the Royal …, 2025 - royalsocietypublishing.org
+
+- [Topographic Diversity in Subduction-Related Mountains Driven by Plate Tectonics and Mantle Dynamics](https://essopenarchive.org/doi/pdf/10.22541/essoar.174646990.01802371) SP Singh, M Seton, S Zahirovic, NM Wright… - Authorea …, 2025 - essopenarchive.org
+
+- [Toward a more stable supercontinent Columbia in the Statherian](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025GL116097) C Wang, P Peng, RN Mitchell, C Deng… - Geophysical …, 2025 - Wiley Online Library
+
+- [Tracking a common mantle source: From southwest Iberia to the Madeira-Canarias Islands](https://pubs.geoscienceworld.org/gsa/geology/article-pdf/doi/10.1130/G52930.1/7138682/g52930.pdf) R Pereira, B Araújo, JC Duarte, J Mata - Geology, 2025 - pubs.geoscienceworld.org
+
+- [Twin Cradles of Diversity: Parallel In‐Situ Radiations in India and Africa Drive the Evolution of Hemidactylus Geckos](https://onlinelibrary.wiley.com/doi/pdf/10.1111/jbi.15165) M Agashe, J Šmíd, V Janák, A Biswas… - Journal of …, 2025 - Wiley Online Library
+
+- [Variable mantle redox states driven by deeply subducted carbon](https://www.science.org/doi/pdf/10.1126/sciadv.adu4985) M Gao, Y Wang, SF Foley, YG Xu - Science Advances, 2025 - science.org
+
+- [Volcanism and climate recorded in giant grains from dust of the late Paleozoic Panthalassic Ocean](https://pubs.geoscienceworld.org/sepm/jsedres/article-pdf/doi/10.2110/jsr.2024.053/7127654/soreghan.pdf) PR Kelly, H Sano, K Ueno… - Journal of …, 2025 - pubs.geoscienceworld.org
+
+- [Where has the Aptian Source Rock Gon (dwana): A Journey from Brazil (Pelotas) to Mozambique (Angoche)](https://www.earthdoc.org/content/papers/10.3997/2214-4609.2025639040) W Prendergast, R Teehan - First EAGE Atlantic Geoscience Resource …, 2025 - earthdoc.org
+
+- [Whole-mantle tomography beneath eastern Mediterranean and adjacent regions](https://academic.oup.com/gji/article-pdf/241/2/1155/62339907/ggaf086.pdf) G Toyokuni, D Zhao - Geophysical Journal International, 2025 - academic.oup.com
+
+- [Whole‐mantle isotropic and anisotropic tomography beneath Japan and adjacent regions](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024JB029593) G Toyokuni, D Zhao, D Takada - Journal of Geophysical …, 2025 - Wiley Online Library
+
+- [Why Are Plume Excess Temperatures Much Less Than the Temperature Drop Across the Lowermost‐Mantle Thermal Boundary Layer?](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024JB030111) B Steinberger, P Roy, M Pons… - Journal of Geophysical …, 2025 - Wiley Online Library
+
+- [Первые данные об изотопном составе углерода конодонтовых элементов из средней перми (казанский ярус) в разрезе Чимбулат (Вятские дислокации …](https://www.lithosphere.ru/jour/article/download/2305/1526) АВ Журавлев - Литосфера, 2025 - lithosphere.ru
 
 - [中西非裂谷系油气成藏研究新进展与勘探启示](http://www.cped.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=2275) 史忠生， 马峰， 庞文珠， 陈彬滔， 薛罗， 代寒松， 徐飞… - 中国石油勘探, 2025 - cped.cn
 

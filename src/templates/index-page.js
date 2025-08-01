@@ -1,6 +1,7 @@
+import React from "react";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
-import React from "react";
+
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import { HTMLContent } from "../components/Content";
@@ -712,7 +713,7 @@ const IndexPageTemplate = ({
                 </div>
                 {/* end of gws card */}
                 {/*start of portal section*/}
-                <div className="column is-3 gp-card">
+                <div className="column is-4 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img
@@ -760,7 +761,7 @@ const IndexPageTemplate = ({
                 {/*end of portal section*/}
 
                 {/*start of gplates app section*/}
-                <div className="column is-3 gp-card">
+                <div className="column is-4 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img
@@ -806,7 +807,7 @@ const IndexPageTemplate = ({
                 {/*end of gplates mobile app section*/}
 
                 {/*start of web gplates section*/}
-                <div className="column is-3 gp-card">
+                <div className="column is-4 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img
@@ -851,7 +852,7 @@ const IndexPageTemplate = ({
                 {/*end of web gplates section*/}
 
                 {/*start of rgplates section*/}
-                <div className="column is-3 gp-card">
+                <div className="column is-4 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
                       <img
