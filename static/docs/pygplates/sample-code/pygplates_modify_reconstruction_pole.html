@@ -425,7 +425,7 @@ from <a class="reference internal" href="../pygplates_primer.html#pygplates-prim
 R(0 \rightarrow t,P_{A} \rightarrow P_{F}) \times R(0 \rightarrow t,P_{F} \rightarrow P_{M})_{adjusted} &amp;= R(\text{reconstructed_position} \rightarrow \text{desired_reconstructed_position}) \times R(0 \rightarrow t,P_{A} \rightarrow P_{F}) \times R(0 \rightarrow t,P_{F} \rightarrow P_{M})\end{split}\]</div>
 <p>Pre-multiplying both sides by <span class="math notranslate nohighlight">\(R(0 \rightarrow t,P_{A} \rightarrow P_{F})^{-1}\)</span> gives:</p>
 <div class="math notranslate nohighlight">
-\[R(0 \rightarrow t,P_{F} \rightarrow P_{M})_{adjusted} &amp;= R(0 \rightarrow t,P_{A} \rightarrow P_{F})^{-1} \times R(\text{reconstructed_position} \rightarrow \text{desired_reconstructed_position}) \times R(0 \rightarrow t,P_{A} \rightarrow P_{F}) \times R(0 \rightarrow t,P_{F} \rightarrow P_{M})\]</div>
+\[R(0 \rightarrow t,P_{F} \rightarrow P_{M})_{adjusted} = R(0 \rightarrow t,P_{A} \rightarrow P_{F})^{-1} \times R(\text{reconstructed_position} \rightarrow \text{desired_reconstructed_position}) \times R(0 \rightarrow t,P_{A} \rightarrow P_{F}) \times R(0 \rightarrow t,P_{F} \rightarrow P_{M})\]</div>
 <p>…which represents the <em>adjusted</em> relative rotation <span class="math notranslate nohighlight">\(R(0 \rightarrow t,P_{F} \rightarrow P_{M})_{adjusted}\)</span>
 in terms of the <em>original</em> relative rotation <span class="math notranslate nohighlight">\(R(0 \rightarrow t,P_{F} \rightarrow P_{M})\)</span>.</p>
 <p>This is written in pyGPlates as:</p>
