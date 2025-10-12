@@ -812,7 +812,7 @@ const IndexPageTemplate = ({
                     <div className="gp-card-front">
                       <img
                         src={webGPlatesScreenshot}
-                        alt="Web GPlates Screenshot"
+                        alt="Time Machine Screenshot"
                       ></img>
                     </div>
 
@@ -828,14 +828,14 @@ const IndexPageTemplate = ({
                         }}
                       >
                         <div>
-                          The <b>Web GPlates</b> is a cloud-based platform, revolutionizing geoscience research by offering comprehensive tools for analyzing and visualizing deep-time datasets.
+                          <b>Time Machine</b> offers an integrated platform for the visualization and analysis of plate tectonic models, raster data, online databases, and analytical tools.
                         </div>
                       </div>
                       <div style={{}}>
                         <br></br>
                         <a
                           className="button is-link is-small"
-                          href="https://dplanet.deep-time.org/DPlanet/"
+                          href="https://docs.deeptime.world/"
                         >
                           Learn More
                         </a>
@@ -846,7 +846,7 @@ const IndexPageTemplate = ({
                     className="has-text-weight-semibold is-size-4"
                     style={{ marginTop: "10px" }}
                   >
-                    Web GPlates
+                    Time Machine
                   </h3>
                 </div>
                 {/*end of web gplates section*/}
