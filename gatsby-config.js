@@ -1,8 +1,8 @@
 // GitHub Pages project sites are served below the repository name. The deploy
 // workflow supplies this value (for example, `/new-gplates-website`); it is
 // intentionally empty for local development and custom-domain deployments.
-const pathPrefix = process.env.PAGES_BASE_PATH || ''
-
+//const pathPrefix = process.env.PAGES_BASE_PATH || ''
+const pathPrefix = ''
 module.exports = {
   pathPrefix,
   siteMetadata: {
