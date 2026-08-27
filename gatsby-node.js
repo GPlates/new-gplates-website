@@ -3,6 +3,36 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 //const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
+// Gatsby prefixes its own assets and <Link> components, but Markdown and raw
+// HTML can still contain root-relative URLs such as `/docs`. Convert those
+// URLs in generated HTML when the site is deployed as a GitHub Pages project
+// site (which lives below the repository-name path).
+exports.onPostBuild = ({ reporter }) => {
+  const basePath = process.env.PAGES_BASE_PATH
+  if (!basePath) return
+
+  const fs = require('fs')
+  const publicDir = path.join(__dirname, 'public')
+  const files = []
+  const visit = (directory) => {
+    fs.readdirSync(directory, { withFileTypes: true }).forEach((entry) => {
+      const entryPath = path.join(directory, entry.name)
+      if (entry.isDirectory()) visit(entryPath)
+      else if (entry.name.endsWith('.html')) files.push(entryPath)
+    })
+  }
+
+  visit(publicDir)
+  const rootRelativeUrl = /\b(href|src)=(['\"])\/(?!\/)/g
+  files.forEach((file) => {
+    const html = fs.readFileSync(file, 'utf8')
+    const updatedHtml = html.replace(rootRelativeUrl, `$1=$2${basePath}/`)
+    if (updatedHtml !== html) fs.writeFileSync(file, updatedHtml)
+  })
+
+  reporter.info(`Prefixed root-relative URLs in ${files.length} HTML files for ${basePath}`)
+}
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
