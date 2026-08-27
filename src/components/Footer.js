@@ -6,6 +6,7 @@ import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
 import youtube from "../img/social/youtube.svg";
+import animatedlogo from "../img/animated-gplates-logo.svg";
 
 const getRandomDelay = (minimum, maximum) =>
   Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
@@ -31,7 +32,7 @@ const Footer = () => {
     <footer className="footer has-background-black has-text-white-ter">
       <img
         className={`footer-logo${isLogoOnRight ? " is-right" : ""}`}
-        src="/animated-gplates-logo.svg"
+        src={animatedlogo}
         width="35"
         alt="Animated GPlates logo"
       />
