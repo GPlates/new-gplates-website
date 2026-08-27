@@ -1,5 +1,5 @@
 import { Link } from "gatsby";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import auscopeIcon from "../img/AuScope-Logo-Icon.png";
 import facebook from "../img/social/facebook.svg";
@@ -7,141 +7,128 @@ import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
 import youtube from "../img/social/youtube.svg";
 
-const Footer = class extends React.Component {
-  render() {
-    return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div style={{ maxWidth: "100vw" }} className="columns">
-              <div className="column is-3">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item has-text-white-ter">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item has-text-white-ter" to="/news">
-                        News
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item has-text-white-ter"
-                        href="https://www.earthbyte.org"
-                      >
-                        EarthByte Group
-                      </a>
-                    </li>
-                  </ul>
-                </section>
-              </div>
+const getRandomDelay = (minimum, maximum) =>
+  Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 
-              <div className="column is-3">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/contact#contact-us">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              </div>
+const Footer = () => {
+  const [isLogoOnRight, setIsLogoOnRight] = useState(false);
 
-              <div className="column is-3">
-                <section style={{ paddingTop: "1.2rem" }}>
-                  <a title="AuScope" href="https://www.auscope.org.au/">
-                    <img
-                      src={auscopeIcon}
-                      alt="AuScope Logo"
-                      style={{
-                        maxWidth: "60px",
-                        filter: "invert(20%)",
-                        marginLeft: "5px",
-                        marginBottom: "0px",
-                        borderRadius: "15px",
-                        verticalAlign: "middle",
-                      }}
-                    />
+  useEffect(() => {
+    let timeout;
+
+    const schedulePositionChange = () => {
+      const delay = getRandomDelay(12000, 25000);
+      timeout = window.setTimeout(() => {
+        setIsLogoOnRight((isOnRight) => !isOnRight);
+      }, delay);
+    };
+
+    schedulePositionChange();
+    return () => window.clearTimeout(timeout);
+  }, [isLogoOnRight]);
+
+  return (
+    <footer className="footer has-background-black has-text-white-ter">
+      <img
+        className={`footer-logo${isLogoOnRight ? " is-right" : ""}`}
+        src="/animated-gplates-logo.svg"
+        width="35"
+        alt="Animated GPlates logo"
+      />
+      <div className="content has-text-centered">
+        <div className="container">
+          <div className="footer-layout">
+          <div className="footer-menu">
+            <section className="menu">
+              <ul className="menu-list">
+                <li>
+                  <Link to="/" className="navbar-item has-text-white-ter">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link className="navbar-item has-text-white-ter" to="/news">
+                    News
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    className="navbar-item has-text-white-ter"
+                    href="https://www.earthbyte.org"
+                  >
+                    EarthByte Group
                   </a>
-                  <div style={{ paddingTop: ".5rem" }}>
-                    <b>Funded by AuScope</b>
-                  </div>
-                </section>
-              </div>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <ul className="menu-list">
+                <li>
+                  <Link
+                    className="navbar-item has-text-white-ter"
+                    to="/contact#contact-us"
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </section>
+          </div>
 
-              <div className="column is-3 social">
-                <a title="facebook" href="https://www.facebook.com/earthbyte">
-                  <object
-                    type="image/svg+xml"
-                    data={facebook}
-                    aria-labelledby="facebook"
-                  ></object>
-                </a>
-                <a title="twitter" href="https://twitter.com/earthbytegroup">
-                  <object
-                    type="image/svg+xml"
-                    data={twitter}
-                    aria-labelledby="twitter"
-                  ></object>
-                </a>
-                <a
-                  title="instagram"
-                  href="https://www.instagram.com/explore/tags/earthbyte/top/"
-                >
-                  <object
-                    type="image/svg+xml"
-                    data={instagram}
-                    aria-labelledby="instagram"
-                  ></object>
-                </a>
-                <a
-                  title="youtube"
-                  href="https://www.youtube.com/channel/UCa41IQEhmmuXmz9J6iMfsnA"
-                >
-                  <object
-                    type="image/svg+xml"
-                    data={youtube}
-                    aria-labelledby="youtube"
-                  ></object>
-                </a>
-              </div>
-            </div>
+          <div className="footer-funder">
+            <section>
+              <a title="AuScope" href="https://www.auscope.org.au/">
+                <img
+                  src={auscopeIcon}
+                  alt="AuScope Logo"
+                  className="footer-auscope-logo"
+                />
+              </a>
+              <div className="footer-funder-label">Funded by AuScope</div>
+            </section>
           </div>
-        </div>
-        <div
-          className="container"
-          style={{ display: "flex", flexDirection: "column" }}
-        >
-          {/*<div style={{margin:"auto"}}>
-            <a title="AuScope" href="https://www.auscope.org.au/">
-              <img
-                src={auscopeLogo}
-                alt="AuScope Logo"
-                style={{ maxWidth:"120px", filter: "invert(20%)", marginLeft:"5px", marginBottom:"0px", borderRadius:"15px", verticalAlign:"middle"}}
-              />
+
+          <div className="social">
+            <a
+              title="Facebook"
+              aria-label="Facebook"
+              href="https://www.facebook.com/earthbyte"
+            >
+              <object type="image/svg+xml" data={facebook} aria-hidden="true" />
             </a>
-          </div>*/}
-          <div
-            style={{
-              margin: "auto",
-              textAlign: "center",
-              padding: "0.2rem",
-              fontSize: "80%",
-            }}
-          >
-            <i>
-              Copyright © 2020-2025 The University of Sydney. All rights
-              reserved.
-            </i>
+            <a
+              title="Twitter"
+              aria-label="Twitter"
+              href="https://twitter.com/earthbytegroup"
+            >
+              <object type="image/svg+xml" data={twitter} aria-hidden="true" />
+            </a>
+            <a
+              title="Instagram"
+              aria-label="Instagram"
+              href="https://www.instagram.com/explore/tags/earthbyte/top/"
+            >
+              <object type="image/svg+xml" data={instagram} aria-hidden="true" />
+            </a>
+            <a
+              title="YouTube"
+              aria-label="YouTube"
+              href="https://www.youtube.com/channel/UCa41IQEhmmuXmz9J6iMfsnA"
+            >
+              <object type="image/svg+xml" data={youtube} aria-hidden="true" />
+            </a>
+          </div>
           </div>
         </div>
-      </footer>
-    );
-  }
+
+        <p style={{ fontSize: "80%", marginTop: "1.5rem" }}>
+          <i>
+            Copyright © 2020-2026 The University of Sydney. All rights reserved.
+          </i>
+        </p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

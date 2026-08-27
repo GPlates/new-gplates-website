@@ -91,8 +91,59 @@ $white: #f2f4fa;
   padding: 0 1rem;
 }
 footer.footer {
-  padding: 2rem 0rem 0rem;
+  position: relative;
+  padding: 2rem 0 0;
   background-color: transparent;
+}
+
+.footer-logo {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.footer-logo.is-right {
+  right: 1rem;
+  left: auto;
+}
+
+.footer-layout {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.footer-menu,
+.footer-funder,
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-menu {
+  gap: 2rem;
+  text-align: left;
+}
+
+.footer-funder {
+  text-align: center;
+}
+
+.footer-auscope-logo {
+  max-width: 60px;
+  border-radius: 15px;
+  filter: invert(20%);
+  vertical-align: middle;
+}
+
+.footer-funder-label {
+  padding-top: 0.5rem;
+  font-weight: 700;
 }
 
 .menu-label {
@@ -104,13 +155,24 @@ footer.footer {
   text-align: left;
 }
 .social {
-  padding: 2em;
-  padding-top: 2em !important;
+  padding: 0;
 }
 .social a {
   padding: 0.5em 0.5em 0.3em 0.5em;
   vertical-align: middle;
   display: inline;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-menu {
+    justify-content: center;
+  }
 }
 
 .blog-list-item.is-featured {
