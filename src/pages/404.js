@@ -1,7 +1,35 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../components/Layout'
+import { withPrefix } from 'gatsby'
+import pygplatesDocIndex from '../data/pygplates-doc-index.json'
 
-const NotFoundPage = () => (
+const PYGPLATES_DOCS_PATH = /^\/docs\/pygplates\/generated\/([^/]+)\/?$/i
+
+// Old (pre-migration) search-engine-indexed URLs for the pygplates docs were
+// lowercase and had no .html extension, e.g. pygplates.rotationmodel instead
+// of pygplates.RotationModel.html. GitHub Pages can't rewrite or redirect
+// server-side, so we catch the resulting 404 here and send the browser to
+// the correctly-cased file.
+const redirectLegacyPygplatesDocUrl = () => {
+  const match = PYGPLATES_DOCS_PATH.exec(window.location.pathname)
+  if (!match) return
+
+  const actualFile = pygplatesDocIndex[match[1].toLowerCase()]
+  if (!actualFile) return
+
+  window.location.replace(
+    withPrefix(`/docs/pygplates/generated/${actualFile}`) +
+      window.location.search +
+      window.location.hash
+  )
+}
+
+const NotFoundPage = () => {
+  useEffect(() => {
+    redirectLegacyPygplatesDocUrl()
+  }, [])
+
+  return (
   <Layout>
     <div>
       <h1 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
@@ -87,6 +115,7 @@ const NotFoundPage = () => (
        </div>
     </div>
   </Layout>
-)
+  )
+}
 
 export default NotFoundPage
