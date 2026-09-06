@@ -57,7 +57,7 @@ const Footer = () => {
                     className="navbar-item has-text-white-ter"
                     href="https://www.earthbyte.org"
                   >
-                    EarthByte Group
+                    EarthByte
                   </a>
                 </li>
               </ul>
