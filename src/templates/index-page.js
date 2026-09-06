@@ -24,15 +24,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getSrc } from "gatsby-plugin-image";
 
 import GPlatesMainScreenshot from "../img/SATL_ExponentialStretching_650x380.png";
-import HeroImg1 from "../img/hero-img-1.png";
-import HeroImg2 from "../img/hero-img-2.png";
-import HeroImg3 from "../img/hero-img-3.png";
-import HeroImg4 from "../img/hero-img-4.png";
+import HeroImg1 from "../img/hero-img-1.webp";
+import HeroImg2 from "../img/hero-img-2.webp";
+import HeroImg3 from "../img/hero-img-3.webp";
+import HeroImg4 from "../img/hero-img-4.webp";
 
 import gplatelyScreenshot from "../img/gplately-screenshot-624x351.png";
 import gplatesAppScreenshot from "../img/gplates-app-624x351.png";
-import gwsScreenshot from "../img/gws-screenshot.png";
-import portalScreenshot from "../img/portal-screenshot.png";
+import gwsScreenshot from "../img/gws-screenshot.webp";
+import portalScreenshot from "../img/portal-screenshot.webp";
 import pygplatesLogo from "../img/pygplates-screenshot.png";
 import rgplatesBanner from "../img/rgplates_gplates_suite_banner.png";
 import webGPlatesScreenshot from "../img/web-gplates-624x351.png";
@@ -582,7 +582,11 @@ const IndexPageTemplate = ({
                 <div className="column is-4 gp-card">
                   <div className="gp-card-container">
                     <div className="gp-card-front">
-                      <img src={pygplatesLogo} alt="pyGPlates Screenshot" />
+                      <img
+                        src={pygplatesLogo}
+                        alt="pyGPlates Screenshot"
+                        loading="lazy"
+                      />
                     </div>
 
                     <div className="gp-card-back">
@@ -627,6 +631,7 @@ const IndexPageTemplate = ({
                       <img
                         src={gplatelyScreenshot}
                         alt="GPlately Screenshot"
+                        loading="lazy"
                       ></img>
                     </div>
 
@@ -673,6 +678,7 @@ const IndexPageTemplate = ({
                       <img
                         src={gwsScreenshot}
                         alt="GPlates Web Service Screenshot"
+                        loading="lazy"
                       />
                     </div>
 
@@ -720,6 +726,7 @@ const IndexPageTemplate = ({
                       <img
                         src={portalScreenshot}
                         alt="GPlates Portal Screenshot"
+                        loading="lazy"
                       ></img>
                     </div>
 
@@ -768,6 +775,7 @@ const IndexPageTemplate = ({
                       <img
                         src={gplatesAppScreenshot}
                         alt="GPlates App Screenshot"
+                        loading="lazy"
                       ></img>
                     </div>
 
@@ -814,6 +822,7 @@ const IndexPageTemplate = ({
                       <img
                         src={webGPlatesScreenshot}
                         alt="Time Machine Screenshot"
+                        loading="lazy"
                       ></img>
                     </div>
 
@@ -859,6 +868,7 @@ const IndexPageTemplate = ({
                       <img
                         src={rgplatesBanner}
                         alt="rgplates banner"
+                        loading="lazy"
                       ></img>
                     </div>
 
@@ -930,7 +940,11 @@ const IndexPageTemplate = ({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={peoplePhoto} alt="EarthByte People" />
+                  <img
+                    src={peoplePhoto}
+                    alt="EarthByte People"
+                    loading="lazy"
+                  />
                 </a>
               </div>
             </div>
@@ -955,7 +969,7 @@ const IndexPageTemplate = ({
                   rel="noreferrer"
                   style={{ margin: "auto" }}
                 >
-                  <img src={auscopeLogo} alt="AuScope Logo" />
+                  <img src={auscopeLogo} alt="AuScope Logo" loading="lazy" />
                 </a>
               </div>
             </div>
