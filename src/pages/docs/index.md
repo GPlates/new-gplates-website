@@ -135,13 +135,3 @@ title: User Docs
 ---
 
 Click [here](/gpml) to find out more about the **GPlates Markup Language**(GPML), the “native” file format of GPlates.
-
-### Compiling GPlates
-
----
-
-Instructions on how to compile GPlates from source may be found in the [GPlates source-code releases](https://www.gplates.org/download), in the files:
-
-- DEPS.Linux and BUILD.Linux (on Linux)
-- DEPS.OSX and BUILD.OSX (on macOS)
-- DEPS.Windows and BUILD.Windows (on Windows)
