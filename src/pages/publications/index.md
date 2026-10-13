@@ -8,7 +8,7 @@ title: GPlates Publications
 
 **Total: 2429** (*as of 2026-08-20*)
 
-_This web page was created by a Python script automatically using the data retrieved from [Google Scholar](https://scholar.google.com.au/). Your publications are listed here because we believe you have used GPlates/pyGPlates in your publications directly or indirectly(such as GPlates being used in your references). If you believe that any of the papers has been listed here mistakenly, you may [contact us](https://www.earthbyte.org/contact-us-3/)._
+_This page lists publications compiled from publicly available bibliographic records. We do our best to keep the list accurate, but errors and omissions are possible. If you notice an error, or would like an entry corrected, added or removed, please [contact us](https://www.earthbyte.org/contact-us-3/)._
 
 ![](images/gplates-word-cloud.png)
 
