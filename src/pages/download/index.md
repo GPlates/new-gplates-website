@@ -37,12 +37,12 @@ The current stable release of pyGPlates is [pyGPlates 1.0.0](/news/2025-03-27-Py
     <tbody>
         <tr>
             <td class="icon">
-                <a href="/docs/pygplates/pygplates_getting_started.html">
+                <a href="https://gplates.github.io/GPlates/pygplates/stable/pygplates_getting_started.html">
                     <img src="./img/GPlates-tango-actions-go-down-48.png" alt="Install pyGPlates">
                 </a>
             </td>
             <td class="content" >
-                <a href="/docs/pygplates/pygplates_getting_started.html"
+                <a href="https://gplates.github.io/GPlates/pygplates/stable/pygplates_getting_started.html"
                     title="PyGPlates installation instructions">
                 <strong>Install pyGPlates 1.0.0</strong>
                 </a>
@@ -104,7 +104,7 @@ You can also download older versions of GPlates:
 
 PyGPlates can be installed using [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html) or [pip](https://pip.pypa.io/en/stable/).
 
-Please see the [installation instructions](/docs/pygplates/pygplates_getting_started.html) in the pyGPlates documentation.
+Please see the [installation instructions](https://gplates.github.io/GPlates/pygplates/stable/pygplates_getting_started.html) in the pyGPlates documentation.
 
 You can also download older versions of pyGPlates (prior to version 1.0):
 

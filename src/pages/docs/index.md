@@ -54,12 +54,12 @@ title: User Docs
    <tbody>
       <tr>
          <td class="icon">
-            <a href="/docs/pygplates/index.html"><img src="./img/GPlates-Manual.png" alt="GPlates Python Documentation"></a>
+            <a href="https://gplates.github.io/GPlates/pygplates/stable/"><img src="./img/GPlates-Manual.png" alt="GPlates Python Documentation"></a>
          </td>
          <td class="content" >
-            <h4><a href="/docs/pygplates/index.html">pyGPlates Documentation</a></h4>
+            <h4><a href="https://gplates.github.io/GPlates/pygplates/stable/">pyGPlates Documentation</a></h4>
             <p>PyGPlates is a Python library enabling access to GPlates functionality. This may be of particular use to researchers requiring more flexibility than is provided by the GPlates user interface.</p>
-            <p>Read the <a href="/docs/pygplates/index.html">PyGPlates documentation</a> if you wish to write <a href="https://www.python.org/">Python</a> source code that uses pyGPlates. The documentation includes an installation guide, sample code for common plate tectonic problems and a library reference.</p>
+            <p>Read the <a href="https://gplates.github.io/GPlates/pygplates/stable/">PyGPlates documentation</a> if you wish to write <a href="https://www.python.org/">Python</a> source code that uses pyGPlates. The documentation includes an installation guide, sample code for common plate tectonic problems and a library reference.</p>
          </td>
       </tr>
    </tbody>
