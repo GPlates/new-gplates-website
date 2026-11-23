@@ -271,7 +271,7 @@ const IndexPageTemplate = ({
 
             <div style={{ marginBottom: "1rem" }}>
               <a
-                href="/docs/pygplates/pygplates_getting_started.html"
+                href="https://gplates.github.io/GPlates/pygplates/stable/pygplates_getting_started.html"
                 style={{
                   color: "#333",
                   textDecoration: "underline",
@@ -608,7 +608,7 @@ const IndexPageTemplate = ({
                         <br></br>
                         <a
                           className="button is-link is-small"
-                          href="https://www.gplates.org/docs/pygplates/"
+                          href="https://gplates.github.io/GPlates/pygplates/stable/"
                         >
                           Learn More
                         </a>

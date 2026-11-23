@@ -1,6 +1,0 @@
-﻿pygplates.calculate\_velocities
-===============================
-
-.. currentmodule:: pygplates
-
-.. autofunction:: calculate_velocities

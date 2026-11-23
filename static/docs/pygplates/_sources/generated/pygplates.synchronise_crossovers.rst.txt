@@ -1,6 +1,0 @@
-﻿pygplates.synchronise\_crossovers
-=================================
-
-.. currentmodule:: pygplates
-
-.. autofunction:: synchronise_crossovers
